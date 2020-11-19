@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LCX SchemaVersion="6.0" Name="S:\output\loc\Azure Blockchain\Workbench Troubleshooting.resjson" PsrId="306" FileType="1" SrcCul="en-US" TgtCul="pl-PL" xmlns="http://schemas.microsoft.com/locstudio/2006/6/lcx">
+  <OwnedComments>
+    <Cmt Name="Dev" />
+    <Cmt Name="LcxAdmin" />
+    <Cmt Name="Rccx" />
+  </OwnedComments>
+  <Item ItemId=";String Table" ItemType="0" PsrId="306" Leaf="false">
+    <Disp Icon="Expand" Expand="true" Disp="true" LocTbl="false" />
+    <Item ItemId=";Strings" ItemType="0" PsrId="306" Leaf="false">
+      <Disp Icon="Str" Disp="true" LocTbl="false" />
+      <Item ItemId=";items.0.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[## Azure Blockchain Workbench Logs & Troubleshooting Guide]A;---]A;]A;This workbook is designed to give you some ways to root cause your failures. ]A;Plug in the requestId to follow the request's flow and view its logs.<br/>]A;To understand some of the common errors, please view the "Common errors seen in logs" section of our [Github troubleshooting guide]5D;(https://aka.ms/workbenchtroubleshooting).]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.1.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[## Logs Table]A;---]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.3.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Please enter a valid requestId above.]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.3.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Workbench Logs]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.4.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[##### How to export:]A;Click on the icon to the top right of the Workbench logs table below and click on 'Export' on the top right panel.]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.5.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[<br/>]A;<br/>]A;<br/>]A;<br/>]A;]A;## Potential Liveness Issues]A;---]A;In the below tables you can see whether any of your requests from Workbench has gotten the system in a state with a liveness issue. This means that the requests are not being processed as expected and will continue to try submitting infinitely.]A;Note that these issues are generally not caused by bugs in the Workbench codebase, but rather issues that arise from services being down.]A;]A;### TryCommitContractAction counter]A;If there has been over 10 tries to commit the contract/contract action to the blockchain and the transaction receipt had not arrived, then one of two things could be happening:]A;1. The eth-watcher is down.]A;2. The blockchain is unresponsive or taking a long time to process.]A;]A;This table shows the requests that could have such issues, along with the number of times the system (eth-tx-submitter) has tried to commit the contract action to the blockchain. ]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.7.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[<span style="color:SpringGreen; font-size:2em;">There are no liveness issues in the last 24 hours!</span>]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.8.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[<span style="color:red; font-size:2em;">There are potential liveness issues :(</span>]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.9.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[No liveness issues detected!]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.9.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[TryCommitContractAction Counter]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Workbench Troubleshooting]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+    </Item>
+  </Item>
+</LCX>
