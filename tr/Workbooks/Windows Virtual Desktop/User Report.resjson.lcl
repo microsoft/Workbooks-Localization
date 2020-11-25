@@ -28,9 +28,6 @@
             <Val><![CDATA[Connecting to {CorrelationHost}]]></Val>
           </Str>
           <Disp Icon="Str" />
-          <Cmts>
-            <Cmt Name="Dev"><![CDATA[{Locked={CorrelationHost}}]]></Cmt>
-          </Cmts>
         </Item>
         <Item ItemId=";(...) text1.content.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
@@ -64,9 +61,6 @@
             <Val><![CDATA[Connection activity browser for {TimeRange:label}]]></Val>
           </Str>
           <Disp Icon="Str" />
-          <Cmts>
-            <Cmt Name="Dev"><![CDATA[{Locked={TimeRange:label}}]]></Cmt>
-          </Cmts>
         </Item>
       </Item>
       <Item ItemId=";@items.UserGroup.content.items.UserSelectedGroup.content.items.ErrorRankingGroup.content.items.RankingErrors.conte" ItemType="0" PsrId="306" Leaf="false">
@@ -92,12 +86,18 @@
         <Item ItemId=";(...) nt.gridSettings.labelSettings.TotalActivitiesImpacted.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Activities]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Etkinlikler]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) nt.gridSettings.labelSettings.TotalHostsImpacted.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Hosts]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Konaklar]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -112,9 +112,6 @@
             <Val><![CDATA[Ranking of errors impacting {wvdActivityType} activities for {UserName} in {TimeRange:label}]]></Val>
           </Str>
           <Disp Icon="Str" />
-          <Cmts>
-            <Cmt Name="Dev"><![CDATA[{Locked={wvdActivityType},{UserName},{TimeRange:label}}]]></Cmt>
-          </Cmts>
         </Item>
       </Item>
       <Item ItemId=";@items.UserGroup.content.items.UserSelectedGroup.content.items.ErrorRankingGroup.content.items.parameters12.conten" ItemType="0" PsrId="306" Leaf="false">
@@ -140,6 +137,9 @@
         <Item ItemId=";(...) t.parameters.8809818d1aa34a27ac0bb1808000be06.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Activity Type]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Etkinlik Türü]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -161,9 +161,6 @@
           <Val><![CDATA[Connections over time for {UserName}]]></Val>
         </Str>
         <Disp Icon="Str" />
-        <Cmts>
-          <Cmt Name="Dev"><![CDATA[{Locked={UserName}}]]></Cmt>
-        </Cmts>
       </Item>
       <Item ItemId=";items.UserGroup.content.items.UserSelectedGroup.content.items.HostUsageByUser.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
@@ -218,45 +215,30 @@
           <Val><![CDATA[Feed refreshes over time for {UserName}]]></Val>
         </Str>
         <Disp Icon="Str" />
-        <Cmts>
-          <Cmt Name="Dev"><![CDATA[{Locked={UserName}}]]></Cmt>
-        </Cmts>
       </Item>
       <Item ItemId=";items.UserGroup.content.items.UserSelectedGroup.content.items.text17.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[{UserStatus:label}]]></Val>
         </Str>
         <Disp Icon="Str" />
-        <Cmts>
-          <Cmt Name="Dev"><![CDATA[{Locked={UserStatus:label}}]]></Cmt>
-        </Cmts>
       </Item>
       <Item ItemId=";items.UserGroup.content.items.UserSelectedGroup.content.items.text18.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[{UserStatus:label}]]></Val>
         </Str>
         <Disp Icon="Str" />
-        <Cmts>
-          <Cmt Name="Dev"><![CDATA[{Locked={UserStatus:label}}]]></Cmt>
-        </Cmts>
       </Item>
       <Item ItemId=";items.UserGroup.content.items.UserSelectedGroup.content.items.text19.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[{UserStatus:label}]]></Val>
         </Str>
         <Disp Icon="Str" />
-        <Cmts>
-          <Cmt Name="Dev"><![CDATA[{Locked={UserStatus:label}}]]></Cmt>
-        </Cmts>
       </Item>
       <Item ItemId=";items.UserGroup.content.items.UserSelectedGroup.content.items.text20.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[**No connections** found for **{UserName}** in the last **30 days**.]]></Val>
         </Str>
         <Disp Icon="Str" />
-        <Cmts>
-          <Cmt Name="Dev"><![CDATA[{Locked={UserName}}]]></Cmt>
-        </Cmts>
       </Item>
       <Item ItemId=";items.UserGroup.content.items.parameters1.content.parameters.8d92d80e75b9429cacd9182fcc3a6eb0.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
@@ -297,6 +279,9 @@
       <Item ItemId=";items.parameters2.content.parameters.04a8ead21fb24666a7b06d92e3c29b46.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Time range]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Zaman aralığı]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
