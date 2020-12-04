@@ -12,66 +12,99 @@
       <Item ItemId=";items.0.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Azure Blockchain Workbench Logs & Troubleshooting Guide]A;---]A;]A;This workbook is designed to give you some ways to root cause your failures. ]A;Plug in the requestId to follow the request's flow and view its logs.<br/>]A;To understand some of the common errors, please view the "Common errors seen in logs" section of our [Github troubleshooting guide]5D;(https://aka.ms/workbenchtroubleshooting).]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Registros de Azure Blockchain Workbench y guía de solución de problemas]A;---]A;]A;Este libro está diseñado para proporcionarle algunas maneras de determinar la causa principal de los errores. ]A;Conecte el elemento requestId para seguir el flujo de la solicitud y ver sus registros.<br/>]A;Para comprender algunos de los errores comunes, consulte la sección sobre errores comunes que se observan en los registros de nuestra [guía de solución de problemas de GitHub]5D;(https://aka.ms/workbenchtroubleshooting).]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.1.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Logs Table]A;---]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Tabla de registros]A;---]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.3.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Please enter a valid requestId above.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Escriba un id. de solicitud válido arriba.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.3.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Workbench Logs]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Registros de Workbench]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.4.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[##### How to export:]A;Click on the icon to the top right of the Workbench logs table below and click on 'Export' on the top right panel.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[##### Procedimiento de exportación:]A;Haga clic en el icono situado en la parte superior derecha de la siguiente tabla de registros de Workbench y haga clic en "Exportar" en el panel superior derecho.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.5.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<br/>]A;<br/>]A;<br/>]A;<br/>]A;]A;## Potential Liveness Issues]A;---]A;In the below tables you can see whether any of your requests from Workbench has gotten the system in a state with a liveness issue. This means that the requests are not being processed as expected and will continue to try submitting infinitely.]A;Note that these issues are generally not caused by bugs in the Workbench codebase, but rather issues that arise from services being down.]A;]A;### TryCommitContractAction counter]A;If there has been over 10 tries to commit the contract/contract action to the blockchain and the transaction receipt had not arrived, then one of two things could be happening:]A;1. The eth-watcher is down.]A;2. The blockchain is unresponsive or taking a long time to process.]A;]A;This table shows the requests that could have such issues, along with the number of times the system (eth-tx-submitter) has tried to commit the contract action to the blockchain. ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<br/>]A;<br/>]A;<br/>]A;<br/>]A;]A;## Problemas de ejecución potenciales]A;---]A;En las tablas siguientes, puede ver si alguna de sus solicitudes de Workbench ha llegado al sistema en un estado con un problema de ejecución. Esto significa que las solicitudes no se están procesando como se esperaba y que seguirán intentando enviarse indefinidamente.]A;Tenga en cuenta que estos problemas no suelen deberse a errores en el código base de Workbench, sino a problemas derivados de servicios inactivos.]A;]A;### Contador de TryCommitContractAction]A;Si se han producido más de 10 intentos para confirmar la acción del contrato o el contrato en la cadena de bloques y el recibo de la transacción no ha llegado, puede darse una de estas dos situaciones:]A;1. eth-watcher está inactivo.]A;2. La cadena de bloques no responde o tarda mucho tiempo en procesarse.]A;]A;En esta tabla se muestran las solicitudes que podrían tener estos problemas, junto con el número de veces que el sistema (eth-tx-submitter) ha intentado confirmar la acción del contrato en la cadena de bloques. ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.7.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<span style="color:SpringGreen; font-size:2em;">There are no liveness issues in the last 24 hours!</span>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<span style="color:SpringGreen; font-size:2em;">No existe ningún problema de ejecución en las últimas 24 horas.</span>]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.8.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<span style="color:red; font-size:2em;">There are potential liveness issues :(</span>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<span style="color:red; font-size:2em;">Existen problemas de ejecución potenciales :(</span>]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.9.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No liveness issues detected!]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[No se detectó ningún problema de ejecución.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.9.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[TryCommitContractAction Counter]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Contador de TryCommitContractAction]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Workbench Troubleshooting]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Solución de problemas de Workbench]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
