@@ -12,84 +12,126 @@
       <Item ItemId=";items.0.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# SQL Database Resource Limits]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# Ограничения ресурса Базы данных SQL]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.10.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Total Database Size]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Общий размер базы данных]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.13.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[When encountering high space utilization, mitigation options include:]A;]A;* Increasing the max size of the database or elastic pool, or add more storage. See [Scale single database resources]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-single-database-scale) and [Scale elastic pool resources]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-elastic-pool-scale).]A;* If the database is in an elastic pool, then alternatively the database can be moved outside of the pool so that its storage space is not shared with other databases.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[При достижении высокого уровня использования ресурсов хранения можно выполнить следующие действия.]A;]A;* Увеличить максимальный размер базы данных или эластичного пула либо добавить дополнительный ресурс хранения. См. статьи [Масштабирование ресурсов отдельной базы данных]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-single-database-scale) и [Масштабирование ресурсов эластичного пула]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-elastic-pool-scale).]A;* Если база данных находится в эластичном пуле, ее можно переместить за пределы пула, чтобы ее хранилище было недоступно другим базам данных.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.14.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Sessions and workers]A;The maximum number of sessions and workers are determined by the service tier and performance level (DTUs and eDTUs). New requests are rejected when session or worker limits are reached, and clients receive an error message. While the number of connections available can be controlled by the application, the number of concurrent workers is often harder to estimate and control. This is especially true during peak load periods when database resource limits are reached and workers pile up due to longer running queries.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Сеансы и рабочие процессы]A;Максимальное число сеансов и рабочих процессов определяется уровнем обслуживания и уровнем производительности (единицами DTU и eDTU). Новые запросы отклоняются при достижении пределов сеанса или рабочего процесса, а клиенты получают сообщение об ошибке. Если число доступных подключений может управляться приложением, число одновременных рабочих процессов зачастую трудно оценивать и контролировать. Это особенно очевидно в периоды пиковой нагрузки, когда достигаются пределы ресурсов базы данных и число рабочих процессов растет из-за продолжительных запросов.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.15.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Sessions Percentage]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Процент сеансов]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.16.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Workers Percentage]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Процент рабочих процессов]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.19.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[When encountering high session or worker utilization, mitigation options include:]A;* Increasing the service tier or performance level of the database or elastic pool. See [Scale single database resources]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-single-database-scale) and [Scale elastic pool resources]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-elastic-pool-scale).]A;* Optimizing queries to reduce the resource utilization of each query if the cause of increased worker utilization is due to contention for compute resources. For more information, see [Query Tuning/Hinting]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-performance-guidance#query-tuning-and-hinting).]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[При достижении высокого уровня использования сеансов или рабочих процессов можно выполнить следующие действия.]A;* Повысить уровень обслуживания или уровень производительности базы данных либо эластичного пула. См. статьи [Масштабирование ресурсов отдельной базы данных]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-single-database-scale) и [Масштабирование ресурсов эластичного пула]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-elastic-pool-scale).]A;* Оптимизировать запросы для сокращения использования ресурсов каждым запросом, если причина увеличения использования рабочих процессов обусловлена состязанием за вычислительные ресурсы. Дополнительные сведения см. в разделе [Настройка запросов и указания на них]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-performance-guidance#query-tuning-and-hinting).]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.2.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Compute]A;When database compute utilization (measured by DTUs and eDTUs, or vCores) becomes high, query latency increases and can even time out. Under these conditions, queries may be queued by the service and are provided resources for execution as resource become free. ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Вычисление]A;При достижении высокого уровня использования вычислительных ресурсов базы данных (измеряемого единицами DTU и eDTU или виртуальными ядрами) происходит увеличение задержки запросов или даже превышение времени ожидания. В этом случае служба может поместить запросы в очередь и предоставить им высвобождающиеся ресурсы для выполнения. ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.3.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### DTU Percentage]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Процент DTU]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.4.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### CPU Percentage]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Процент загрузки ЦП]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.7.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[When encountering high compute utilization, mitigation options include:]A;]A;* Increasing the performance level of the database or elastic pool to provide the database with more compute resources. See [Scale single database resources]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-single-database-scale) and [Scale elastic pool resources]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-elastic-pool-scale).]A;* Optimizing queries to reduce the resource utilization of each query. For more information, see [Query Tuning/Hinting]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-performance-guidance#query-tuning-and-hinting).]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[При достижении высокого уровня использования вычислительных ресурсов можно выполнить следующие действия.]A;]A;* Повысить уровень производительности базы данных или эластичного пула, чтобы предоставить базе данных больше вычислительных ресурсов. См. статьи [Масштабирование ресурсов отдельной базы данных]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-single-database-scale) и [Масштабирование ресурсов эластичного пула]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-elastic-pool-scale).]A;* Оптимизировать запросы для сокращения использования ресурсов каждым запросом. Дополнительные сведения см. в разделе [Настройка запросов и указания на них]5D; (https://docs.microsoft.com/en-us/azure/sql-database/sql-database-performance-guidance#query-tuning-and-hinting).]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.8.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Storage]A;When database space used reaches the max size limit, database inserts and updates that increase the data size fail and clients receive an [error message]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-develop-error-messages). Database SELECTS and DELETES continue to succeed.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Хранилище]A;Когда используемое пространство базы данных достигает максимального размера, операции вставки и обновления в базе данных, которые увеличивают размер данных, завершаются сбоем, а клиенты получают [сообщение об ошибке]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-develop-error-messages). Операции выбора и удаления в базе данных продолжают выполняться.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.9.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Database Size Percentage]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Размер базы данных в процентах]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[SQL Database Resource Limits]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Ограничения ресурса Базы данных SQL]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

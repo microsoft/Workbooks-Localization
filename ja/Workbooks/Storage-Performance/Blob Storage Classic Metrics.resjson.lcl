@@ -24,18 +24,27 @@
       <Item ItemId=";items.13.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[*Total Requests* is the number of requests made to a storage service or the specified API operation. This number includes successful and failed requests, as well as requests which produced errors.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[*要求の合計数* は、ストレージ サービスに対して行われた要求または指定した API 操作の数です。この数には、成功および失敗した要求のほか、エラーを生成した要求も含まれます。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.14.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[*Availability* is the percentage of availability for the storage service or the specified API operation. Availability is calculated by taking the TotalBillableRequests value and dividing it by the number of applicable requests, including those that produced unexpected errors. All unexpected errors result in reduced availability for the storage service or the specified API operation. ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[*可用性* は、ストレージ サービスまたは指定した API 操作の可用性の割合です。可用性は、TotalBillableRequests 値を該当する要求の数 (予期しないエラーが発生したものを含む) で除算することによって計算されます。予期しないエラーはすべて、ストレージ サービスまたは指定した API 操作の可用性の低下につながります。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.16.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Total Ingress]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## イングレスの合計]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -48,6 +57,9 @@
       <Item ItemId=";items.2.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Object Count]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## オブジェクト数]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -72,42 +84,63 @@
       <Item ItemId=";items.24.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Average Server Latency]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## サーバーの平均待機時間]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.27.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[*Average E2E latency* is the average end-to-end latency of successful requests made to a storage service or the specified API operation, in milliseconds. This value includes the required processing time within Azure Storage to read the request, send the response, and receive acknowledgment of the response.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[*E2E の平均待機時間* は、ストレージ サービスまたは指定された API 操作に対して行われ、成功した要求のエンド ツー エンドの平均待機時間 (ミリ秒単位) です。この値には、Azure Storage 内で要求を読み取り、応答を送信し、応答の受信確認を受信するのに要した処理時間が含まれています。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.28.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[*Average server latency* is the average latency used by Azure Storage to process a successful request, in milliseconds. This value does not include the network latency specified in AverageE2ELatency.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[*サーバーの平均待機時間* は、成功した要求を処理するために Azure Storage で使用された平均待機時間です (ミリ秒)。この値には、AverageE2ELatency で指定されたネットワーク待機時間は含まれません。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.3.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Capacity]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## 容量]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.6.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[*Object count* is the number of committed and uncommitted blobs in the storage account’s Blob service.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[*オブジェクト数* は、ストレージ アカウントの BLOB サービスにおけるコミット済みおよびコミットされていない BLOB の数です。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.7.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[*Capacity* is the amount of storage used by the storage account’s Blob service, in bytes.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[*容量* は、ストレージ アカウントの BLOB サービスで使用されているストレージ容量 (バイト単位) です。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.9.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Total Requests]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## 要求の合計数]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

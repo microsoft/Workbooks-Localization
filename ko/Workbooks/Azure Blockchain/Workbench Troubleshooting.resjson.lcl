@@ -12,66 +12,99 @@
       <Item ItemId=";items.0.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Azure Blockchain Workbench Logs & Troubleshooting Guide]A;---]A;]A;This workbook is designed to give you some ways to root cause your failures. ]A;Plug in the requestId to follow the request's flow and view its logs.<br/>]A;To understand some of the common errors, please view the "Common errors seen in logs" section of our [Github troubleshooting guide]5D;(https://aka.ms/workbenchtroubleshooting).]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Azure Blockchain Workbench 로그 및 문제 해결 가이드]A;---]A;]A;이 통합 문서는 오류를 일으키는 근본 원인을 파악하는 방법을 제공하기 위해 작성되었습니다. ]A;RequestId에 연결하여 요청의 흐름을 추적하고 해당 로그를 확인합니다.<br/>]A;일반적인 오류를 파악하려면 [Github 문제 해결 가이드]5D;(https://aka.ms/workbenchtroubleshooting)의 "로그에 표시된 일반적인 오류" 섹션을 참조하세요.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.1.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Logs Table]A;---]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## 로그 테이블]A;---]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.3.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Please enter a valid requestId above.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[위의 유효한 requestId를 입력하세요.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.3.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Workbench Logs]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Workbench 로그]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.4.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[##### How to export:]A;Click on the icon to the top right of the Workbench logs table below and click on 'Export' on the top right panel.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[##### 내보내는 방법:]A;아래 Workbench 로그 테이블 오른쪽 위에 있는 아이콘을 클릭하고 오른쪽 위 패널에서 '내보내기'를 클릭합니다.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.5.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<br/>]A;<br/>]A;<br/>]A;<br/>]A;]A;## Potential Liveness Issues]A;---]A;In the below tables you can see whether any of your requests from Workbench has gotten the system in a state with a liveness issue. This means that the requests are not being processed as expected and will continue to try submitting infinitely.]A;Note that these issues are generally not caused by bugs in the Workbench codebase, but rather issues that arise from services being down.]A;]A;### TryCommitContractAction counter]A;If there has been over 10 tries to commit the contract/contract action to the blockchain and the transaction receipt had not arrived, then one of two things could be happening:]A;1. The eth-watcher is down.]A;2. The blockchain is unresponsive or taking a long time to process.]A;]A;This table shows the requests that could have such issues, along with the number of times the system (eth-tx-submitter) has tried to commit the contract action to the blockchain. ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<br/>]A;<br/>]A;<br/>]A;<br/>]A;]A;## 잠재적인 활동성 문제]A;---]A;아래 테이블에서는 Workbench의 요청으로 인해 시스템이 활동성 문제가 있는 상태가 되었는지 여부를 확인할 수 있습니다. 이는 요청이 예상대로 처리되지 않고 계속해서 무한히 제출하려고 함을 의미합니다.]A;이러한 문제는 일반적으로 Workbench 코드베이스의 버그 때문에 발생하며 다운되는 서비스로 인해 발생하는 문제가 아닙니다.]A;]A;### TryCommitContractAction 카운터]A;계약/계약 작업을 블록체인으로 커밋하려고 10회 이상 시도했거나 트랜잭션 확인이 도착하지 않은 경우 다음 두 가지 중 하나가 발생할 수 있습니다.]A;1. eth-watcher가 다운되었습니다.]A;2. 블록체인이 응답하지 않거나 처리하는 데 오래 걸립니다.]A;]A;이 테이블에서는 이러한 문제가 있을 수 있는 요청과 함께 시스템(eth-tx-submitter)에서 계약 작업을 블록체인으로 커밋하려고 시도한 횟수를 보여 줍니다. ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.7.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<span style="color:SpringGreen; font-size:2em;">There are no liveness issues in the last 24 hours!</span>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<span style="color:SpringGreen; font-size:2em;">지난 24시간 내에 활동성 문제가 없었습니다.</span>]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.8.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<span style="color:red; font-size:2em;">There are potential liveness issues :(</span>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<span style="color:red; font-size:2em;">잠재적인 활동성 문제가 있음:(</span>]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.9.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No liveness issues detected!]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[활동성 문제가 검색되지 않았습니다.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.9.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[TryCommitContractAction Counter]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[TryCommitContractAction 카운터]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Workbench Troubleshooting]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Workbench 문제 해결]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

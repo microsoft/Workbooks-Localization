@@ -48,42 +48,63 @@
       <Item ItemId=";items.19.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[When encountering high session or worker utilization, mitigation options include:]A;* Increasing the service tier or performance level of the database or elastic pool. See [Scale single database resources]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-single-database-scale) and [Scale elastic pool resources]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-elastic-pool-scale).]A;* Optimizing queries to reduce the resource utilization of each query if the cause of increased worker utilization is due to contention for compute resources. For more information, see [Query Tuning/Hinting]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-performance-guidance#query-tuning-and-hinting).]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[セッションまたはワーカー使用率が高い場合の軽減策のオプションには次のものが含まれます。]A;* データベースまたはエラスティック プールのサービス レベルまたはパフォーマンス レベルを上げる。[単一データベースのリソースのスケーリング]5D;(https://docs.microsoft.com/ja-jp/azure/sql-database/sql-database-single-database-scale) に関するページと、[エラスティック プールのリソースのスケーリング]5D;(https://docs.microsoft.com/ja-jp/azure/sql-database/sql-database-elastic-pool-scale) に関するページを参照してください。]A;* ワーカー使用率が上がった原因がコンピューティング リソースの競合にある場合、クエリを最適化して各クエリのリソース使用率を下げる。詳細については、[クエリの調整とヒント]5D;(https://docs.microsoft.com/ja-jp/azure/sql-database/sql-database-performance-guidance#query-tuning-and-hinting) に関するページを参照してください。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.2.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Compute]A;When database compute utilization (measured by DTUs and eDTUs, or vCores) becomes high, query latency increases and can even time out. Under these conditions, queries may be queued by the service and are provided resources for execution as resource become free. ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## コンピューティング]A;データベースのコンピューティング使用率 (DTU、eDTU、または仮想コアによって測定されます) が高くなると、クエリ待機時間が増加し、タイムアウトになるおそれがあります。このような条件下では、クエリはサービスによってキューに入れられて、実行用のリソースが割り振られるのは、リソースが解放され次第となる場合があります。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.3.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### DTU Percentage]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### DTU の割合]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.4.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### CPU Percentage]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### CPU の割合]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.7.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[When encountering high compute utilization, mitigation options include:]A;]A;* Increasing the performance level of the database or elastic pool to provide the database with more compute resources. See [Scale single database resources]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-single-database-scale) and [Scale elastic pool resources]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-elastic-pool-scale).]A;* Optimizing queries to reduce the resource utilization of each query. For more information, see [Query Tuning/Hinting]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-performance-guidance#query-tuning-and-hinting).]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[高いコンピューティング使用率が検出された場合、軽減オプションは次のとおりです。]A;]A;* データベースに提供するコンピューティング リソースを増やすために、データベースまたはエラスティック プールのパフォーマンス レベルを上げます。[単一データベースのリソースのスケーリング]5D;(https://docs.microsoft.com/ja-jp/azure/sql-database/sql-database-single-database-scale) に関するページと、[エラスティック プールのリソースのスケーリング]5D;(https://docs.microsoft.com/ja-jp/azure/sql-database/sql-database-elastic-pool-scale) に関するページを参照してください。]A;* クエリを最適化して、各クエリのリソース使用率を下げます。詳細については、[クエリの調整とヒント]5D;(https://docs.microsoft.com/ja-jp/azure/sql-database/sql-database-performance-guidance#query-tuning-and-hinting) に関するページを参照してください。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.8.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Storage]A;When database space used reaches the max size limit, database inserts and updates that increase the data size fail and clients receive an [error message]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-develop-error-messages). Database SELECTS and DELETES continue to succeed.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## ストレージ]A;使用されているデータベース領域が最大サイズの制限値に達すると、データ サイズを増加させるデータベースの挿入と更新が失敗し、クライアントに [エラー メッセージ]5D;(https://docs.microsoft.com/ja-jp/azure/sql-database/sql-database-develop-error-messages) が出されます。データベースの SELECT と DELETE は、これまでと同様に成功します。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.9.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Database Size Percentage]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### データベース サイズの割合]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

@@ -11,7 +11,10 @@
       <Disp Icon="Str" Disp="true" LocTbl="false" />
       <Item ItemId=";items.aksenginebillabledatashownappliestoentireworkspacenotjusttheclusterinfomessage.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[]D83D;]DCA1; Please note that the Container Insights Usage workbook for AKS Engine clusters shows your billable data usage for your cluster's entire workspace ({resource:name}), and not just the cluster itself ({clusterId}). ]]></Val>
+          <Val><![CDATA[Please note that the Container Insights Usage workbook for AKS Engine clusters shows your billable data usage for your cluster's entire workspace ({resource:name}), and not just the cluster itself ({clusterId}). ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Pamiętaj, że skoroszyt użycia usługi Container Insights dla klastrów aparatów usługi AKS wskazuje użycie danych do rozliczenia dla całego obszaru roboczego klastra ({resource:name}), a nie tylko samego klastra ({clusterId}). ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -45,6 +48,9 @@
       <Item ItemId=";items.tabs.content.links.3434a63bf3d54c1196201e731983041c.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[By Diagnostic Master Node ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Według węzła wzorca diagnostyki ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -60,18 +66,27 @@
       <Item ItemId=";items.tabs.content.links.7163b7647ab248b3b41741af3eea7ef0.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[By Table]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Według tabeli]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.tabs.content.links.7fbcc5bd62d64aebb55e7b1fab65716a.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[By Log Source]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Według źródła dziennika]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.tabs.content.links.960bbeea357f4c07bdd96f3f123d56fd.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[By Namespace]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Według przestrzeni nazw]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -84,18 +99,27 @@
       <Item ItemId=";items.workbookexplanation.content.items.workbooksexplanationtext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<br/>]D;]A;This workbook provides you a summary and source for billable data collected by [Container Insights solution.]5D;(https://docs.microsoft.com/en-us/azure/azure-monitor/insights/container-insights-overview)]D;]A;]D;]A;The best way to understand how Container Insights ingests data in Log Analytics workspace is from this [article.]5D;(https://medium.com/microsoftazure/azure-monitor-for-containers-optimizing-data-collection-settings-for-cost-ce6f848aca32)]D;]A;]D;]A;In this workbook you can:]D;]A;]D;]A;* View billable data ingested by **solution**.]D;]A;* View billable data ingested by **Container logs (application logs)**]D;]A;* View billable container logs data ingested segregated by **Kubernetes namespace**]D;]A;* View billable container logs data ingested segregated by **Cluster name**]D;]A;* View billable container log data ingested by **logsource entry**]D;]A;* View billable diagnostic data ingested by **diagnostic master node logs**]D;]A;]D;]A;You can fine tune and control logging by turning off logging on the above mentioned vectors. [Learn how to fine-tune logging]5D;(https://docs.microsoft.com/en-us/azure/azure-monitor/insights/container-insights-agent-config)]D;]A;]D;]A;You can control your master node's logs by updating diagnostic settings. [Learn how to update diagnostic settings]5D;(https://docs.microsoft.com/en-us/azure/aks/view-master-logs)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<br/>]D;]A;Ten skoroszyt udostępnia podsumowanie i źródło danych do rozliczeń zebranych przez [rozwiązanie Container Insights.]5D;(https://docs.microsoft.com/pl-pl/azure/azure-monitor/insights/container-insights-overview)]D;]A;]D;]A;Najlepszy sposób na zrozumienie, jak usługa Container Insights pozyskuje dane w obszarze roboczym usługi Log Analytics, zapewnia ten [artykuł.]5D;(https://medium.com/microsoftazure/azure-monitor-for-containers-optimizing-data-collection-settings-for-cost-ce6f848aca32)]D;]A;]D;]A;W tym skoroszycie możesz:]D;]A;]D;]A;* Wyświetlić dane do rozliczenia uzyskane przez **rozwiązanie**.]D;]A;* Wyświetlić dane do rozliczenia uzyskane przez **dzienniki kontenera (dzienniki aplikacji)**]D;]A;* Wyświetlić dane do rozliczenia dotyczące dzienników kontenera, które zostały pozyskane jako segregowane przez **przestrzeń nazw Kubernetes**]D;]A;* Wyświetlić dane do rozliczenia dotyczące dzienników kontenera, które zostały pozyskane jako segregowane przez **nazwa klastra**]D;]A;* Wyświetlić dane dziennika podlegające rozliczeniu uzyskane przez **wpis logsource**]D;]A;* Wyświetlić dane diagnostyczne do rozliczenia uzyskane przez **dzienniki głównego węzła diagnostycznego**]D;]A;]D;]A;Możesz dokładniej dostrajać i kontrolować rejestrowanie, wyłączając rejestrowanie na wyżej wymienionych wektorach. [Dowiedz się, jak dokładniej dostroić rejestrowanie]5D;(https://docs.microsoft.com/pl-pl/azure/azure-monitor/insights/container-insights-agent-config)]D;]A;]D;]A;Możesz kontrolować dzienniki węzła głównego przez aktualizowanie ustawień diagnostycznych. [Dowiedz się, jak aktualizować ustawienia diagnostyczne]5D;(https://docs.microsoft.com/pl-pl/azure/aks/view-master-logs)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.workbookexplanation.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Container Insights Billing Usage]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Użycie rozliczeniowe usługi Container Insights]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Container Insights Usage]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Użycie usługi Container Insights]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

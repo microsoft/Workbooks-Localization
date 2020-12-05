@@ -12,18 +12,27 @@
       <Item ItemId=";items.0.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# SQL Database Resource Limits]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# Limity zasobów usługi SQL Database]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.10.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Total Database Size]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Łączny rozmiar bazy danych]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.13.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[When encountering high space utilization, mitigation options include:]A;]A;* Increasing the max size of the database or elastic pool, or add more storage. See [Scale single database resources]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-single-database-scale) and [Scale elastic pool resources]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-elastic-pool-scale).]A;* If the database is in an elastic pool, then alternatively the database can be moved outside of the pool so that its storage space is not shared with other databases.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[W przypadku wystąpienia wysokiego wykorzystania miejsca opcje mitygacji są następujące:]A;]A;* Zwiększenie maksymalnego rozmiaru bazy danych lub puli elastycznej bądź zwiększenie magazynu. Zobacz [Skalowanie zasobów pojedynczej bazy danych]5D;(https://docs.microsoft.com/pl-pl/azure/sql-database/sql-database-single-database-scale) i [Skalowanie zasobów pul elastycznych]5D;(https://docs.microsoft.com/pl-pl/azure/sql-database/sql-database-elastic-pool-scale).]A;* Jeśli baza danych znajduje się w puli elastycznej, możesz również przenieść bazę danych poza pulę, tak aby jej miejsce w magazynie nie było współużytkowane z innymi bazami danych.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -42,18 +51,27 @@
       <Item ItemId=";items.16.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Workers Percentage]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Procent procesów roboczych]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.19.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[When encountering high session or worker utilization, mitigation options include:]A;* Increasing the service tier or performance level of the database or elastic pool. See [Scale single database resources]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-single-database-scale) and [Scale elastic pool resources]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-elastic-pool-scale).]A;* Optimizing queries to reduce the resource utilization of each query if the cause of increased worker utilization is due to contention for compute resources. For more information, see [Query Tuning/Hinting]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-performance-guidance#query-tuning-and-hinting).]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[W przypadku napotkania wysokiego wykorzystania sesji lub procesów roboczych obliczeniowych opcje mitygacji są następujące:]A;* Podwyższenie poziomu usługi lub zwiększenie wydajności bazy danych bądź puli elastycznej. Zobacz [Skalowanie pojedynczych zasobów baz danych]5D;(https://docs.microsoft.com/pl-pl/azure/sql-database/sql-database-single-database-scale) i [Skalowanie zasobów pul elastycznych]5D;(https://docs.microsoft.com/pl-pl/azure/sql-database/sql-database-elastic-pool-scale).]A;* Optymalizacja zapytań w celu zmniejszenia wykorzystania zasobów przez poszczególne zapytania, jeśli przyczyną zwiększonego wykorzystania procesów roboczych jest rywalizacja o zasoby obliczeniowe. Aby uzyskać więcej informacji, zobacz [Dostrajanie zapytań/podpowiedzi dla zapytań]5D;(https://docs.microsoft.com/pl-pl/azure/sql-database/sql-database-performance-guidance#query-tuning-and-hinting).]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.2.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Compute]A;When database compute utilization (measured by DTUs and eDTUs, or vCores) becomes high, query latency increases and can even time out. Under these conditions, queries may be queued by the service and are provided resources for execution as resource become free. ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Obliczenia]A;Gdy wykorzystanie zasobów obliczeniowych bazy danych (mierzone za pomocą jednostek DTU i eDTU lub rdzeni wirtualnych) staje się wysokie, opóźnienie zapytań wzrasta i może nawet przekroczyć limit czasu. W takich warunkach zapytania mogą zostać umieszczone w kolejce przez usługę i są im udostępniane zasoby na potrzeby wykonywania wraz z ich zwalnianiem. ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -72,12 +90,18 @@
       <Item ItemId=";items.7.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[When encountering high compute utilization, mitigation options include:]A;]A;* Increasing the performance level of the database or elastic pool to provide the database with more compute resources. See [Scale single database resources]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-single-database-scale) and [Scale elastic pool resources]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-elastic-pool-scale).]A;* Optimizing queries to reduce the resource utilization of each query. For more information, see [Query Tuning/Hinting]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-performance-guidance#query-tuning-and-hinting).]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[W przypadku napotkania wysokiego wykorzystania zasobów obliczeniowych opcje mitygacji są następujące:]A;]A;* Zwiększenie poziomu wydajności bazy danych lub puli elastycznej w celu udostępnienia dla bazy danych większej ilości zasobów obliczeniowych. Zobacz [Skalowanie pojedynczych zasobów baz danych]5D;(https://docs.microsoft.com/pl-pl/azure/sql-database/sql-database-single-database-scale) i [Skalowanie zasobów pul elastycznych]5D;(https://docs.microsoft.com/pl-pl/azure/sql-database/sql-database-elastic-pool-scale).]A;* Optymalizacja zapytań w celu zmniejszenia wykorzystania zasobów przez poszczególne zapytania. Aby uzyskać więcej informacji, zobacz [Dostrajanie zapytań/podpowiedzi dla zapytań]5D;(https://docs.microsoft.com/pl-pl/azure/sql-database/sql-database-performance-guidance#query-tuning-and-hinting).]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.8.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Storage]A;When database space used reaches the max size limit, database inserts and updates that increase the data size fail and clients receive an [error message]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-develop-error-messages). Database SELECTS and DELETES continue to succeed.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[##Magazyn]A;Gdy miejsce dla bazy danych osiągnie maksymalny limit, to instrukcje INSERT i UPDATE bazy danych powodujące zwiększenie rozmiaru danych zakończą się niepowodzeniem, a klientom zostanie wyświetlony [komunikat o błędzie]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-develop-error-messages). W bazie danych instrukcje SELECT i DELETE nadal będą wykonywane pomyślnie.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -90,6 +114,9 @@
       <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[SQL Database Resource Limits]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Limity zasobów usługi SQL Database]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

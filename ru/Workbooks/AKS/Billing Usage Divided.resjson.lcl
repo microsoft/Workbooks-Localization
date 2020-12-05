@@ -11,19 +11,25 @@
       <Disp Icon="Str" Disp="true" LocTbl="false" />
       <Item ItemId=";items.aksenginebillabledatashownappliestoentireworkspacenotjusttheclusterinfomessage.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[]D83D;]DCA1; Please note that the Container Insights Usage workbook for AKS Engine clusters shows your billable data usage for your cluster's entire workspace ({resource:name}), and not just the cluster itself ({clusterId}). ]]></Val>
+          <Val><![CDATA[Please note that the Container Insights Usage workbook for AKS Engine clusters shows your billable data usage for your cluster's entire workspace ({resource:name}), and not just the cluster itself ({clusterId}). ]]></Val>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.pills.content.parameters.1b826776ab9945ab86dbcced05e8b36d.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Used to identify the cluster name when the cluster type is AKS Engine]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Используется для определения имени кластера, если кластер имеет тип AKS Engine.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.pills.content.parameters.670aac260ffe4f2981c2d48911bc64b6.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Select time-range for data selection]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Выбор диапазона времени для выбора данных]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -39,12 +45,18 @@
       <Item ItemId=";items.pills.content.parameters.8d48ec94fde6487c98bff1295f5d8b81.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Resource type of resource]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Тип ресурса]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.tabs.content.links.3434a63bf3d54c1196201e731983041c.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[By Diagnostic Master Node ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[По диагностике главного узла ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -60,42 +72,63 @@
       <Item ItemId=";items.tabs.content.links.7163b7647ab248b3b41741af3eea7ef0.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[By Table]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[По таблицам]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.tabs.content.links.7fbcc5bd62d64aebb55e7b1fab65716a.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[By Log Source]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[По источникам журналов]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.tabs.content.links.960bbeea357f4c07bdd96f3f123d56fd.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[By Namespace]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[По пространствам имен]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.workbookexplanation.content.items.masternodelogsarenotenabledmsg.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[`Master node logs` are not enabled. [Learn how to enable]5D;(https://docs.microsoft.com/en-us/azure/aks/view-master-logs)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA["Журналы главного узла" не включены. [Узнайте, как включить журналы]5D;(https://docs.microsoft.com/en-us/azure/aks/view-master-logs)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.workbookexplanation.content.items.workbooksexplanationtext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<br/>]D;]A;This workbook provides you a summary and source for billable data collected by [Container Insights solution.]5D;(https://docs.microsoft.com/en-us/azure/azure-monitor/insights/container-insights-overview)]D;]A;]D;]A;The best way to understand how Container Insights ingests data in Log Analytics workspace is from this [article.]5D;(https://medium.com/microsoftazure/azure-monitor-for-containers-optimizing-data-collection-settings-for-cost-ce6f848aca32)]D;]A;]D;]A;In this workbook you can:]D;]A;]D;]A;* View billable data ingested by **solution**.]D;]A;* View billable data ingested by **Container logs (application logs)**]D;]A;* View billable container logs data ingested segregated by **Kubernetes namespace**]D;]A;* View billable container logs data ingested segregated by **Cluster name**]D;]A;* View billable container log data ingested by **logsource entry**]D;]A;* View billable diagnostic data ingested by **diagnostic master node logs**]D;]A;]D;]A;You can fine tune and control logging by turning off logging on the above mentioned vectors. [Learn how to fine-tune logging]5D;(https://docs.microsoft.com/en-us/azure/azure-monitor/insights/container-insights-agent-config)]D;]A;]D;]A;You can control your master node's logs by updating diagnostic settings. [Learn how to update diagnostic settings]5D;(https://docs.microsoft.com/en-us/azure/aks/view-master-logs)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<br/>]D;]A;В этой книге содержатся сводные данные по оплачиваемым данным, собираемым [решением аналитики для контейнеров.]5D;(https://docs.microsoft.com/en-us/azure/azure-monitor/insights/container-insights-overview)]D;]A;]D;]A;Подробные сведения о том, как аналитика для контейнеров принимает данные в рабочей области Log Analytics, можно найти в этой [статье.]5D;(https://medium.com/microsoftazure/azure-monitor-for-containers-optimizing-data-collection-settings-for-cost-ce6f848aca32)]D;]A;]D;]A;В этой книге можно выполнять следующие задачи.]D;]A;]D;]A;* Просматривать принимаемые оплачиваемые данные по **решениям**.]D;]A;* Просматривать принимаемые оплачиваемые данные по **журналам контейнеров (журналам приложений)**.]D;]A;* Просматривать принимаемые оплачиваемые данные журналов контейнеров, разделенные по **пространствам имен Kubernetes**.]D;]A;* Просматривать принимаемые оплачиваемые данные журналов контейнеров, разделенные по **именам кластеров**.]D;]A;* Просматривать принимаемые оплачиваемые данные журналов контейнеров, разделенные по **записям источников журналов**.]D;]A;* Просматривать принимаемые оплачиваемые данные журналов контейнеров по **журналам диагностики главного узла*.]D;]A;]D;]A;Вы можете выполнить тонкую настройку и управлять ведением журнала, отключив ведение журналов по указанным выше направлениям. [Дополнительные сведения о точной настройке ведения журналов]5D;(https://docs.microsoft.com/en-us/azure/azure-monitor/insights/container-insights-agent-config)]D;]A;]D;]A;Вы можете управлять журналами главного узла, обновляя параметры диагностики. [Дополнительные сведения об обновлении параметров диагностики]5D;(https://docs.microsoft.com/en-us/azure/aks/view-master-logs)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.workbookexplanation.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Container Insights Billing Usage]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Использование выставления счетов в аналитике для контейнеров]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Container Insights Usage]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Использование аналитики для контейнеров]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
