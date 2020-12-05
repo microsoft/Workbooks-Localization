@@ -768,30 +768,45 @@
       <Item ItemId=";items.AllocatedUDPPorts.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Allocated UDP Ports]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Przydzielone porty UDP]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.BackendPoolmetricVMLB.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[	No Virtual machine resources are configured in backend pool.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[	W puli zaplecza nie skonfigurowano żadnych zasobów maszyny wirtualnej.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.BackendPoolmetricVMSSLB.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[	No Virtual machine scale set resources are configured in backend pool.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[	W puli zaplecza nie skonfigurowano żadnych zasobów zestawu skalowania maszyn wirtualnych.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.BasicLBnotsupported.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<h6>Standard Load Balancer required</h6>]D;]A;]D;]A;Basic Load Balancers don’t support metrics. Follow [our guide]5D;(https://docs.microsoft.com/azure/load-balancer/upgrade-basic-standard) to switch to Standard for this and other production level features today!]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<h6>Wymagany jest moduł równoważenia obciążenia w warstwie Standardowa</h6>]D;]A;]D;]A;Moduły równoważenia obciążenia w warstwie Podstawowa nie obsługują metryk. Postępuj zgodnie z [naszym przewodnikiem]5D;(https://docs.microsoft.com/azure/load-balancer/upgrade-basic-standard), aby już dziś przełączyć się do warstwy Standardowa dla tej i innych funkcji poziomu produkcyjnego.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.CMhelp.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Connection Monitor Help]D;]A;Connection Monitors are used to test the latency of traffic to your Load Balancer Frontend IPs from regions all over the globe. If you have Connection Monitors configured, review the above map to see the latency of traffic to your Load Balancer from all regions with sources configured.]D;]A;]D;]A;If you do not have any Connection Monitors configured, [create Connection Monitors]5D;(https://docs.microsoft.com/en-us/azure/network-watcher/connection-monitor) with source VMs in your regions of interest and set your destination to the Frontend IP address of your Load Balancer to analyze your round-trip latencies.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# Monitor połączeń — pomoc ]D;]A;Monitory połączeń służą do testowania opóźnień ruchu do adresów IP frontonu modułu równoważenia obciążenia z regionów na całym świecie. Jeśli masz skonfigurowane monitory połączeń, przejrzyj powyższą mapę, aby zobaczyć opóźnienia ruchu do Twojego modułu równoważenia obciążenia ze wszystkich regionów ze skonfigurowanymi źródłami.]D;]A;]D;]A;Jeśli nie masz skonfigurowanych żadnych monitorów połączeń, [utwórz monitory połączeń]5D;(https://docs.microsoft.com/pl-pl/azure/network-watcher/connection-monitor) ze źródłowymi maszynami wirtualnymi w regionach, które Cię interesują, i ustaw miejsce docelowe na adres IP frontonu Twojego modułu równoważenia obciążenia, aby przeanalizować opóźnienia rundy.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -804,30 +819,45 @@
       <Item ItemId=";items.Chartoflatencies.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Round-Trip Time (ms), Average - Destination Address Split]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Czas rundy (ms), średnia — podział adresu docelowego]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.DataThroughput.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Load Balancer Data Throughput]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Przepływność danych modułu równoważenia obciążenia]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.DataThroughputHelp.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Data Throughput Help]D;]A;This page is intended to allow customers to visualize the amount of data flowing through their load balancer and filter this to specific services or load balancer rules.]D;]A;* Review your total inbound and outbound Data Throughput to identify if your traffic patterns are as expected]D;]A;	+ If unexpected, view by Frontend IP and Port to see if a specific service is seeing higher than usual traffic]D;]A;]D;]A;* View by Frontend IP and/or Port to monitor specific services and load balancing rules]D;]A;]D;]A;**Note:** Graphs may have slight refresh time offset from each other, so graph totals may not match up. Please highlight specific time to get most accurate comparison.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# Pomoc dotycząca przepływności danych]D;]A;Ta strona ma umożliwić klientom wizualizowanie ilości danych wysyłanych przez moduł równoważenia obciążenia i filtrowanie ich do konkretnych usług lub reguł modułu równoważenia obciążenia.]D;]A;* Przejrzyj łączną przepływność danych przychodzących i wychodzących, aby określić, czy wzorce ruchu są zgodne z oczekiwanymi]D;]A;	+ Jeśli odbiegają od oczekiwanych, wyświetl według adresu IP i portu frontonu sieci, aby sprawdzić, czy określona usługa doświadcza ruchu większego niż zwykły]D;]A;]D;]A;* Wyświetl dane według adresu IP i/lub portu frontonu, aby monitorować określone usługi i reguły równoważenia obciążenia]D;]A;]D;]A;**Uwaga:** czas odświeżania poszczególnych wykresów może być nieznaczne przesunięty, przez co sumy wykresów mogą nie być zgodne. Wyróżnij konkretny czas, aby uzyskać dokładniejsze porównanie.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.FailedSNATConnectionsbyBackendIP.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Failed SNAT Connections by Backend IP]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Nieudane połączenia SNAT według adresu IP zaplecza]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Filter.content.parameters.00edc28ae143444bb815338a9cb136c5.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Frontend Public IPs]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Publiczne adresy IP frontonu]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -876,30 +906,45 @@
       <Item ItemId=";items.FlowDistributionHelp.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Flow Distribution Help]D;]A;This page is intended to help customers visualize and manage the number of flows their backend VMs and VMSS instances are receiving and producing. ]D;]A;* See the number of inbound and outbound flows and creation rate for each VM and VMSS instance to ensure the number of flows is not approaching the [per VM flow limit]5D;(https://docs.microsoft.com/azure/virtual-network/virtual-machine-network-throughput#flow-limits-and-recommendations)]D;]A;	+ If approaching the flow limit, you  consider scaling out to more instances in your backend pool ]D;]A;]D;]A;* Use the inbound flows to visualize the load distribution of your load balancer]D;]A;]D;]A;* Use the outbound flows to determine if the processes running within your VM are creating significant outbound connections]D;]A;]D;]A;* Use the network throughput to see if there are indiviudal flows that are transmitting significantly larger than average data throughput]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# Pomoc dotycząca rozkładu przepływu]D;]A;Ta strona ma ułatwić klientom wizualizowanie i zarządzanie liczbą przepływów odbieranych przez ich maszyny wirtualne zaplecza i wystąpienia zestawów skalowania maszyn wirtualnych. ]D;]A;* Zobacz liczbę przepływów przychodzących i wychodzących oraz współczynnik tworzenia dla każdej maszyny wirtualnej i wystąpienia zestawu skalowania maszyn wirtualnych, aby upewnić się, że liczba przepływów nie zbliża się do [limitu przepływów na maszynę wirtualną]5D;(https://docs.microsoft.com/azure/virtual-network/virtual-machine-network-throughput#flow-limits-and-recommendations)]D;]A;	+ Jeśli zbliża się ona do limitu przepływów, rozważ skalowanie do większej liczby wystąpień w puli zaplecza ]D;]A;]D;]A;* Użyj przepływów przychodzących, aby zwizualizować rozkład obciążenia modułu równoważenia obciążenia]D;]A;]D;]A;* Użyj przepływów wychodzących, aby określić, czy procesy uruchomione na maszynie wirtualnej tworzą znaczące połączenia wychodzące]D;]A;]D;]A;* Użyj przepustowości sieci, aby sprawdzić, czy istnieją pojedyncze przepływy, które transmitują przepływność danych znacznie większą niż średnia]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.FrontendBackendAvailabilityHelp.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Frontend & Backend Availability Help]D;]A;First, confirm that the Data Path Availability for your Load Balancer Frontends is showing 100. If Data Path Availability is less than 100, this implies an Azure issue creating Load Balancer connection issues. Check the Summary field in the load balancer status grid at the top of this page to learn if there is a known issue impacting your Load Balancer.]D;]A;]D;]A;After confirming Data Path Availability, review your Health Probe Status metrics to determine if your backend instances are responding. ]D;]A;* Check by VM to see if the problem is specific to a VM]D;]A;	+ If specific to a VM, check with this VM to make sure it is healthy]D;]A;	]D;]A;* Check by Port to see if the problem is specific to a Port]D;]A;	+ If specific to a Port, your application may not be listening to this port or there may be an NSG rule blocking this port ]D;]A;	]D;]A;* Check by Frontend IP or Frontend Port to monitor the backend pool for a specific load balancing rule or service]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# Pomoc dotycząca dostępności frontonu i zaplecza]D;]A;Najpierw upewnij się, że dostępność ścieżki danych dla frontonów modułu równoważenia obciążenia wyświetla wartość 100. Jeśli dostępność ścieżki danych jest mniejsza niż 100, oznacza to problem z platformą Azure podczas tworzenia połączenia modułu równoważenia obciążenia. Sprawdź pole podsumowania w siatce stanu modułu równoważenia obciążenia w górnej części tej strony, aby dowiedzieć się, czy istnieje znany problem wpływający na moduł równoważenia obciążenia.]D;]A;]D;]A;Po potwierdzeniu dostępności ścieżki danych sprawdź metryki stanu sondowania kondycji, aby określić, czy Twoje wystąpienia zaplecza odpowiadają. ]D;]A;* Sprawdź według maszyny wirtualnej, aby zobaczyć, czy problem dotyczy maszyny wirtualnej]D;]A;	+ Jeśli problem dotyczy konkretnej maszyny wirtualnej, sprawdź tę maszynę wirtualną, aby upewnić się, że jest w dobrej kondycji]D;]A;	]D;]A;* Sprawdź według portów, aby sprawdzić, czy problem dotyczy portu]D;]A;	+ Jeśli dotyczy konkretnego portu, aplikacja może nie nasłuchiwać na tym porcie lub może istnieć reguła sieciowej grupy zabezpieczeń blokująca ten port ]D;]A;	]D;]A;* Sprawdź według adresu IP frontonu lub portu frontonu, aby monitorować pulę zaplecza dla konkretnej reguły lub modułu równoważenia obciążenia]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.FrontendIPmetricBasicLB.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Basic Load Balancers don’t support metrics. Follow [our guide]5D;(https://docs.microsoft.com/azure/load-balancer/upgrade-basic-standard) to switch to Standard for this and other production level features today!]D;]A;]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Moduły równoważenia obciążenia w warstwie Podstawowa nie obsługują metryk. Postępuj zgodnie z [naszym przewodnikiem]5D;(https://docs.microsoft.com/azure/load-balancer/upgrade-basic-standard), aby już dziś przełączyć się do warstwy Standardowa dla tej i innych funkcji poziomu produkcyjnego.]D;]A;]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.FrontendPublicIPAddresses.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No Frontend Public IP Addresses are configured]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Nie skonfigurowano publicznych adresów IP frontonu]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.FrontendPublicIPAddresses.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Frontend Public IP Addresses]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Publiczne adresy IP frontonu]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -933,30 +978,45 @@
       <Item ItemId=";items.InboundDataThroughputPerFrontendIP.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Inbound Data Throughput Per Frontend IP]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Przepływność danych przychodzących na adres IP frontonu]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.InboundDataThroughputPerFrontendPort.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Inbound Data Throughput Per Frontend Port]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Przepływność danych przychodzących na port frontonu]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.LBBackendhealthprobeBackendport.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Health Probe Status by Backend Port]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Stan sondy kondycji według portu zaplecza]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.LBBackendhealthprobeFronendIP.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Health Probe Status by Frontend IP Address]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Stan sondy kondycji według adresu IP frontonu]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.LBBackendhealthprobeFrontendport.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Health Probe Status by Frontend Port]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Stan sondy kondycji według portu frontonu]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -969,36 +1029,54 @@
       <Item ItemId=";items.LBHealth.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Load Balancer Status]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Stan modułu równoważenia obciążenia]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.MetricHelp.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[| **Metric** | **Resource type** | **Description** | **Recommended aggregation** |]D;]A;| --- | --- | --- | --- |]D;]A;| Data path availability | Public and internal load balancer | Standard Load Balancer continuously exercises the data path from within a region to the load balancer front end, all the way to the SDN stack that supports your VM. As long as healthy instances remain, the measurement follows the same path as your application&#39;s load-balanced traffic. The data path that your customers use is also validated. The measurement is invisible to your application and does not interfere with other operations. | Average |]D;]A;| Health probe status | Public and internal load balancer | Standard Load Balancer uses a distributed health-probing service that monitors your application endpoint&#39;s health according to your configuration settings. This metric provides an aggregate or per-endpoint filtered view of each instance endpoint in the load balancer pool. You can see how Load Balancer views the health of your application, as indicated by your health probe configuration. | Average |]D;]A;| SYN (synchronize) packets | Public and internal load balancer | Standard Load Balancer does not terminate Transmission Control Protocol (TCP) connections or interact with TCP or UDP packet flows. Flows and their handshakes are always between the source and the VM instance. To better troubleshoot your TCP protocol scenarios, you can make use of SYN packets counters to understand how many TCP connection attempts are made. The metric reports the number of TCP SYN packets that were received. | Average |]D;]A;| SNAT connections | Public load balancer | Standard Load Balancer reports the number of outbound flows that are masqueraded to the Public IP address front end. Source network address translation (SNAT) ports are an exhaustible resource. This metric can give an indication of how heavily your application is relying on SNAT for outbound originated flows. Counters for successful and failed outbound SNAT flows are reported and can be used to troubleshoot and understand the health of your outbound flows. | Average |]D;]A;| Byte counters | Public and internal load balancer | Standard Load Balancer reports the data processed per front end. You may notice that the bytes are not distributed equally across the backend instances. This is expected as Azure&#39;s Load Balancer algorithm is based on flows | Average |]D;]A;| Packet counters | Public and internal load balancer | Standard Load Balancer reports the packets processed per front end. | Average |]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[| **Metryka** | **Typ zasobu** | **Opis** | **Zalecana agregacja** |]D;]A;| --- | --- | --- | --- |]D;]A;| Dostępność ścieżki danych | Publiczny i wewnętrzny moduł równoważenia obciążenia | Moduł równoważenia obciążenia w warstwie Standardowa w sposób ciągły sprawdza ścieżkę danych z regionu do frontonu modułu równoważenia obciążenia, aż do stosu SDN obsługującego maszynę wirtualną. Dopóki wystąpienia pozostają w dobrej kondycji, pomiar przebiega tą samą ścieżką, co ruch ze zrównoważonym obciążeniem aplikacji. Jest również weryfikowana ścieżka danych używana przez klientów. Pomiar jest niewidoczny dla aplikacji i nie zakłóca innych operacji. | Średnia |]D;]A;| Stan sondy kondycji | Publiczny i wewnętrzny moduł równoważenia obciążenia | Moduł równoważenia obciążenia w warstwie Standardowa używa rozproszonej usługi sondowania kondycji, która monitoruje kondycję punktu końcowego aplikacji zgodnie z ustawieniami konfiguracji. Ta metryka udostępnia zagregowany lub przefiltrowany według punktu końcowego widok dla każdego punktu końcowego wystąpienia w puli modułu równoważenia obciążenia. Możesz zobaczyć, jak moduł równoważenia obciążenia wyświetla kondycję aplikacji, zgodnie z konfiguracją sondy kondycji. | Średnia |]D;]A;| Pakiety SYN (synchronizacji) | Publiczny i wewnętrzny moduł równoważenia obciążenia | Moduł równoważenia obciążenia w warstwie Standardowa nie kończy połączeń protokołu TCP (Transmission Control Protocol) ani nie wchodzi w interakcje z przepływami pakietów protokołu TCP lub UDP. Przepływy i ich uzgodnienia są zawsze między źródłem a wystąpieniem maszyny wirtualnej. Aby ułatwić rozwiązywanie problemów ze scenariuszami protokołu TCP, możesz użyć liczników pakietów SYN, aby poznać liczbę prób połączeń protokołu TCP. Metryka zgłasza liczbę odebranych pakietów SYN protokołu TCP. | Średnia |]D;]A;| Połączenia źródłowego translatora adresów sieciowych | Publiczny moduł równoważenia obciążenia | Moduł równoważenia obciążenia w warstwie Standardowa zgłasza liczbę przepływów wychodzących, które są maskowane na fronton publicznego adresu IP. Porty źródłowego translatora adresów sieciowych to zasób wyczerpywalny. Ta metryka może wskazywać na to, jak silnie aplikacja jest zależna od źródłowego translatora adresów sieciowych dla przepływów wychodzących. Liczniki zakończonych pomyślnie i zakończonych niepowodzeniem przepływów SNAT są raportowane i mogą być używane do rozwiązywania problemów i zrozumienia kondycji przepływów wychodzących. | Średnia |]D;]A;| Liczniki bajtów | Publiczny i wewnętrzny moduł równoważenia obciążenia | Moduł równoważenia obciążenia w warstwie Standardowa raportuje przetworzone dane na fronton. Można zauważyć, że liczba bajtów nie jest rozłożona równo między wystąpieniami zaplecza. Jest to oczekiwane, ponieważ algorytm modułu równoważenia obciążenia platformy Azure jest oparty na przepływach | Średnia |]D;]A;| Liczniki pakietu | Publiczny i wewnętrzny moduł równoważenia obciążenia | Moduł równoważnia obciążenia w warstwie Standardowa zgłasza pakiety przetwarzane na fronton. | Średnia |]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.OutboundDataThroughputPerFrontendIP.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Outbound Data Throughput Per Frontend IP]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Przepływność danych wychodzących na adres IP frontonu]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.OutboundDataThroughputPerFrontendPort.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Outbound Data Throughput Per Frontend Port]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Przepływność danych wychodzących na port frontonu]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.OverviewHelp.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Overview Help]D;]A;The Overview tab is intended as an entry point to monitor your Load Balancer. It outlines data throughput and frontend/backend availability.]D;]A;]D;]A;To get started:]D;]A;1. Configure the time range at the top of the workbook to your desired range]D;]A;]D;]A;1. Review data throughput to ensure values are within your expected range for the configured time span ]D;]A;	+ If detailed analysis is warranted view the Data Throughput tab]D;]A;	]D;]A;1. Review Data Path and Backend Availability to ensure your load balancer is reachable and your backend instances are responding to health probes]D;]A;	+ If either of these are below 100 and this is not expected, view the Frontend and Backend Availability tab ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# Pomoc dotycząca karty Przegląd]D;]A;Karta Przegląd ma służyć jako punkt wejścia do monitorowania modułu równoważenia obciążenia. Przedstawia przepustowość danych oraz dostępność frontonu/zaplecza.]D;]A;]D;]A;Aby rozpocząć:]D;]A;1. Skonfiguruj zakres czasu w górnej części skoroszytu na żądany zakres.]D;]A;]D;]A;1. Sprawdź przepływność danych, aby zapewnić, że wartości mieszczą się w oczekiwanym zakresie dla skonfigurowanego przedział czasu ]D;]A;	+ Jeśli wymagana jest szczegółowa analiza, przejrzyj kartę Przepływność danych]D;]A;	]D;]A;1. Przejrzyj ścieżkę danych i dostępność zaplecza, aby upewnić się, że moduł równoważenia obciążenia jest dostępny, a wystąpienia zaplecza odpowiadają na sondy kondycji]D;]A;	+ Jeśli którykolwiek z tych elementów ma wartość poniżej 100 i nie jest to oczekiwane, przejrzyj kartę Dostępność frontonu i zaplecza ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.RoundTripTimemsAverage.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[	No running Connection Monitors found]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[	Nie znaleziono żadnych uruchomionych monitorów połączeń]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1020,6 +1098,9 @@
       <Item ItemId=";items.RoundTripTimemsAverageGrid.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Round-Trip Time (ms), Average - Chart]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Czas rundy (ms), średnia — wykres]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1032,12 +1113,18 @@
       <Item ItemId=";items.RoundTripTimemsAverageMap.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Round-Trip Time (ms), Average - Map]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Czas rundy (ms), średnia — mapa]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.SumofSNATConnectionStates.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Sum of SNAT Connection States]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Suma stanów połączeń źródłowego translatora adresów sieciowych (SNAT)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1053,18 +1140,27 @@
       <Item ItemId=";items.Tabselector.content.links.1.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Frontend & Backend Availability]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Dostępność frontonu i zaplecza]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Tabselector.content.links.2.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Data Throughput]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Przepływność danych]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Tabselector.content.links.3.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Flow Distribution]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Rozkład przepływu]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1089,24 +1185,36 @@
       <Item ItemId=";items.TotalDataThroughputbyDirection.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Total Data Throughput by Direction]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Całkowita przepływność danych według kierunku]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.UsedUDPPortsbyBackendIP.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Used UDP Ports by Backend IP]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Używane porty UDP według adresu IP zaplecza]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.UsefulDocuments.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Useful documents]D;]A;* [Overview of the Azure Load Balancer]5D;(https://docs.microsoft.com/azure/load-balancer/load-balancer-overview)]D;]A;* [Frequently asked questions]5D;(https://docs.microsoft.com/azure/load-balancer/load-balancer-faqs)]D;]A;* [Guidance on Standard Load Balancer metrics]5D;(https://docs.microsoft.com/azure/load-balancer/load-balancer-standard-diagnostics)]D;]A;* [Troubleshoot your Azure Load Balancer]5D;(https://docs.microsoft.com/azure/load-balancer/load-balancer-troubleshoot)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Przydatne dokumenty]D;]A;* [Omówienie usługi Azure Load Balancer]5D;(https://docs.microsoft.com/azure/load-balancer/load-balancer-overview)]D;]A;* [Często zadawane pytania]5D;(https://docs.microsoft.com/azure/load-balancer/load-balancer-faqs)]D;]A;* [Wskazówki dotyczące modułu równoważenia obciążenia w warstwie Standardowa]5D;(https://docs.microsoft.com/azure/load-balancer/load-balancer-standard-diagnostics)]D;]A;* [Rozwiązywanie problemów z usługą Azure Load Balancer]5D;(https://docs.microsoft.com/azure/load-balancer/load-balancer-troubleshoot)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.VMFlowandTrafficGroup.content.items.InboundFlowsBackendVM.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Inbound Flow Count and Creation Rate]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Liczba przepływów przychodzących i współczynnik tworzenia]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1137,12 +1245,18 @@
       <Item ItemId=";items.VMFlowandTrafficGroup.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[VM Flow Creation and Network Traffic]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Tworzenie przepływu maszyny wirtualnej i ruch sieciowy]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.VMSSFlowandTrafficGroup.content.items.InboundFlowsBackendVMSS.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Inbound Flow Count and Creation Rate ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Liczba przepływów przychodzących i współczynnik tworzenia ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1173,6 +1287,9 @@
       <Item ItemId=";items.VMSSFlowandTrafficGroup.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[VMSS Flow Creation and Network Traffic]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Tworzenie przepływu zestawu skalowania maszyn wirtualnych i ruch sieciowy]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1185,12 +1302,18 @@
       <Item ItemId=";items.metric36.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Allocated TCP Ports]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Przydzielone porty TCP]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.metric37.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Used TCP Ports by Backend IP]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Używane porty TCP według adresu IP zaplecza]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

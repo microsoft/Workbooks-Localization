@@ -786,36 +786,54 @@
       <Item ItemId=";items.BasicLBnotsupported.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<h6>Standard Load Balancer required</h6>]D;]A;]D;]A;Basic Load Balancers don’t support metrics. Follow [our guide]5D;(https://docs.microsoft.com/azure/load-balancer/upgrade-basic-standard) to switch to Standard for this and other production level features today!]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<h6>Standard Load Balancer が必要です</h6>]D;]A;]D;]A;Basic Load Balancer ではメトリックはサポートされていません。[ガイド]5D;(https://docs.microsoft.com/azure/load-balancer/upgrade-basic-standard) に従って Standard に切り替え、その他の運用レベルの機能を今すぐご利用ください。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.CMhelp.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Connection Monitor Help]D;]A;Connection Monitors are used to test the latency of traffic to your Load Balancer Frontend IPs from regions all over the globe. If you have Connection Monitors configured, review the above map to see the latency of traffic to your Load Balancer from all regions with sources configured.]D;]A;]D;]A;If you do not have any Connection Monitors configured, [create Connection Monitors]5D;(https://docs.microsoft.com/en-us/azure/network-watcher/connection-monitor) with source VMs in your regions of interest and set your destination to the Frontend IP address of your Load Balancer to analyze your round-trip latencies.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# 接続モニターのヘルプ]D;]A;接続モニターは、世界中のリージョンからご使用のロード バランサーのフロントエンド IP へのトラフィックの待機時間をテストするために使用します。接続モニターが構成されている場合、上のマップで、ソースが構成されているすべてのリージョンからご使用のロード バランサーへのトラフィックの待機時間を確認します。]D;]A;]D;]A;接続モニターが構成されていない場合、[接続モニターを作成]5D;(https://docs.microsoft.com/ja-jp/azure/network-watcher/connection-monitor) してください、その際、調査対象のリージョンのソース VM を指定し、宛先をご使用のロード バランサーのフロントエンド IP アドレスに設定して、ラウンドトリップの待機時間を分析します。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Chartoflatencies.content.gridSettings.labelSettings.Segment.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[FrontEnd IP]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[フロントエンド IP]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Chartoflatencies.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Round-Trip Time (ms), Average - Destination Address Split]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[ラウンドトリップ時間 (ms)、平均 - 宛先アドレス分割]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.DataThroughput.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Load Balancer Data Throughput]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[ロード バランサーのデータ スループット]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.DataThroughputHelp.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Data Throughput Help]D;]A;This page is intended to allow customers to visualize the amount of data flowing through their load balancer and filter this to specific services or load balancer rules.]D;]A;* Review your total inbound and outbound Data Throughput to identify if your traffic patterns are as expected]D;]A;	+ If unexpected, view by Frontend IP and Port to see if a specific service is seeing higher than usual traffic]D;]A;]D;]A;* View by Frontend IP and/or Port to monitor specific services and load balancing rules]D;]A;]D;]A;**Note:** Graphs may have slight refresh time offset from each other, so graph totals may not match up. Please highlight specific time to get most accurate comparison.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# データ スループットのヘルプ]D;]A;このページを使用すると、お客様はロード バランサーを通過するデータの量を視覚化し、これを特定のサービスまたはロード バランサー規則でフィルター処理できます。]D;]A;* トラフィック パターンが予期したとおりであるかどうかを識別するために、受信と送信のデータの合計スループットを確認します]D;]A;	+ 予期したとおりでない場合は、フロントエンド IP とポートごとに表示し、通常のトラフィックよりも高い値を示す特定のサービスがあるかどうかを確認します]D;]A;]D;]A;* フロントエンド IP またはポートごとに表示すると、特定のサービスと負荷分散規則を監視できます]D;]A;]D;]A;**注:** グラフどうしの間には若干の更新時間のオフセットがあるため、グラフの合計が一致しない可能性があります。正確な比較を行うには、特定の時間を強調表示してください。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -906,6 +924,9 @@
       <Item ItemId=";items.FrontendandBackendAvailability.content.gridSettings.labelSettings.Segment.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[FrontEnd IP]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[フロントエンド IP]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

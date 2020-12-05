@@ -12,24 +12,36 @@
       <Item ItemId=";items.Commonparameterblock.content.parameters.4548f4fe013042c9b796385cd12ccb24.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Use this parameter to essentially set the number of user sessions to use in calculations (sampling). This allows you to find the right balance between performance and accuracy for your analysis. Optimize for: Performance = 10,000 sessions, Balance = 100,000 samples, Accuracy = 1,000,000 sessions]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Gebruik deze parameter om het aantal gebruikerssessies in te stellen dat in berekeningen (steekproeven) moet worden gebruikt. Hiermee kunt u de juiste balans vinden tussen prestatie en nauwkeurigheid van uw analyse. Optimaliseren voor: prestaties = 10.000 sessies, saldo = 100.000 samples, nauwkeurigheid = 1.000.000 sessies]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Descriptiontext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Analysis of Page Views]A;Page views correspond to user activity in your app. Understanding how your users interact with your pages will give you good insights into what is working in your app and what aspects need improvements. ]A;]A;This report will help you understand common page view behaviors like:]A;* Usage]A;* Time spent on page]A;* Time to first interaction]A;* Exit rates ]A;]A;If your telemetry does not include page views, then follow these [instructions]5D;(https://docs.microsoft.com/en-us/azure/application-insights/app-insights-javascript) to begin collecting -- it is relatively straightforward.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# Analyse van paginaweergaven]A;De paginaweergaven komen overeen met de gebruikersactiviteit in uw app. Inzicht in de wijze waarop gebruikers met uw pagina's werken, geeft u een goed beeld van wat er werkt in uw app en welke aspecten moeten worden verbeterd. ]A;]A;Dit rapport biedt u inzicht in algemeen gedrag voor de paginaweergaven, zoals:]A;* Gebruik]A;* Tijd doorgebracht op de pagina]A;* Tijd tot de eerste interactie]A;* Afsluitingsratio's ]A;]A;Als uw telemetrie geen paginaweergaven omvat, voer dan de volgende [instructies]5D;(https://docs.microsoft.com/nl-nl/azure/application-insights/app-insights-javascript) uit om te beginnen met verzamelen. Het is betrekkelijk eenvoudig.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.PageExitRatesfooter.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[- The calculation may use sampling based on the `OptimizeCalculationsFor` parameter. ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[- De berekening kan gebruikmaken van steekproeven op basis van de parameter OptimizeCalculationsFor. ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.PageExitRatestext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[---]A;## Page Exit Rates]A;A page view is said to have contributed to an _exit_ when it is the last page viewed in the session. The user is presumed to have exited your app -- either by navigating to another app or closing the app/browser. ]A;]A;A page's _exit rate_ is the percentages of views that were the last in the session. ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[---]A;## Afsluitingsratio's van pagina's]A;Een paginaweergave heeft een bijdrage geleverd aan een _afsluiting_ wanneer deze de laatste pagina is die in de sessie wordt weergegeven. Er wordt verondersteld dat de gebruiker uw app heeft afgesloten door naar een andere app te gaan of door de app/browser te sluiten. ]A;]A;De _afsluitingsratio_ van een pagina is het percentage weergaven die het laatste zijn getoond in een sessie. ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -38,55 +50,76 @@
           <Val><![CDATA[- The calculations may use sampling based on the `OptimizeCalculationsFor` parameter. ]A;- Time Spent on Page does not consider exit pages (last page of the session) in this calculations. The `Sampled Page Views` column may be fewer than the sampling count of {OptimizeCalculationsFor} because of this.]A;]]></Val>
         </Str>
         <Disp Icon="Str" />
-        <Cmts>
-          <Cmt Name="Dev"><![CDATA[{Locked={OptimizeCalculationsFor}}]]></Cmt>
-        </Cmts>
       </Item>
       <Item ItemId=";items.Timespentonpageparameterblock.content.parameters.0411936a4cb944dd946db449ce3b284e.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Use this parameter to filter our page views that took more time that is possible (for example left open in a non-active tab). The default is 1 hour. ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Met deze parameter filtert u onze paginaweergaven die meer tijd in beslag namen (bijvoorbeeld opengelaten op een niet-actief tabblad). De standaardwaarde is 1 uur. ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Timespentonpagetext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[---]A;## Time Spent on Page]A;This report helps you understand the time spent by customers in your pages. Longer time spent pages usually indicates good engagement and is generally the desired behavior.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[---]A;## Tijd die op de pagina wordt doorgebracht]A;Met dit rapport krijgt u een beter inzicht in de tijd die klanten op uw pagina's hebben doorgebracht. Wanneer langere tijd is doorgebracht op pagina’s duidt dit meestal op meer betrokkenheid en dit is over het algemeen het gewenste gedrag.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.TimetoFirstInteractionfooter.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[- The calculation may use sampling based on the `OptimizeCalculationsFor` parameter. ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[- De berekening kan gebruikmaken van steekproeven op basis van de parameter OptimizeCalculationsFor. ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.TimetoFirstInteractionparameterblock.content.parameters.65e9a4922e89477aa041e99a61481c65.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[For users, the first use is calculated as the first use within the time range. It is possible that the user started using your app before the time range.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Voor gebruikers wordt het eerste gebruik berekend als het eerste gebruik binnen het tijdsbereik. Mogelijk is de gebruiker uw app gaan gebruiken vóór het tijdsbereik.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.TimetoFirstInteractiontext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[---]A;## Time to First Interaction]A;This report helps you understand the time taken by customers to first interact with critical features of your app. It can help you uncover issues with discoverability of your features or the intuitiveness of your app's UI/flow.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[---]A;## Tijd tot eerste interactie]A;In dit rapport kunt u zien hoe lang het duurt voordat klanten voor het eerst belangrijke functies van uw app gaan gebruiken. U kunt hiermee problemen op het spoor komen met betrekking tot de vindbaarheid van de functies of de intuïtiviteit van de gebruikersinterface/stroom van uw app.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Usagefootertext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[- The `As % of App Users/Sessions/Views` columns compare the usage of the selected page view with that of the whole app.]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[- Met de kolommen 'Als % van app-gebruikers/-sessies/weergaven' wordt het gebruik van de geselecteerde paginaweergave vergeleken met die van de hele app.]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Usagesectiontext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[---]A;## Usage]A;This section helps you understand how the pages of your app are used -- in terms of # of users, sessions and views. ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[---]A;## Gebruik]A;In deze sectie vindt u meer informatie over de manier waarop de pagina's van uw app worden gebruikt op het gebied van aantallen gebruikers, sessies en weergaven. ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Analysis of Page Views]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Analyse van paginaweergaven]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

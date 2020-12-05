@@ -12,36 +12,54 @@
       <Item ItemId=";items.0.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Cohort Analysis]A;]A;Cohort Analysis measures how many of your users come back to perform one of the `RetainingActivities` in a particular period after they perform one of the `CohortingActivities` in your app - split by a dimension you choose. For instance, you could be measuring the number of users who returned to use your app on the 10th day from the day they first downloaded it, split by the country they are from. Seeing the retention trend for days 1-10 will give you an indication of the stickiness of your app. ]A;]A;Cohort Analysis is similar to N-day or Bracket retention and is only different in how the cohorts are defined. ]A;]A;This type of analysis is well-suited for gaming apps, or other kinds of app where you are trying to get users to develop a daily habit. Cohort Analysis will help you see differences in user retention across standard dimensions like country, app version, etc. or custom dimensions like 'Is Premium Customer' or 'Flight name in an experiment group'.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# Analiza kohortowa]A;]A;Analiza kohortowa mierzy, ilu z Twoich użytkowników wraca, aby wykonać jedno z działań utrzymujących („RetainingActivities”) w określonym czasie od momentu, gdy wykonali jedno z działań wyznaczających kohortę („CohortingActivities”) w Twojej aplikacji — z podziałem według wybranego wymiaru. Na przykład możesz mierzyć liczbę użytkowników, którzy powrócili do korzystania z Twojej aplikacji w dziesiątym dniu od dnia, w którym raz pierwszy ją pobrali, z podziałem według kraju, z którego pochodzą. Obserwacja trendu utrzymania dla dni 1–10 da Ci wskazanie lepkości Twojej aplikacji. ]A;]A;Analiza kohortowa jest podobna do utrzymania dla dnia N lub utrzymania dla przedziału, różni się jedynie sposobem definiowania kohort. ]A;]A;Ten typ analizy dobrze sprawdza się w przypadku aplikacji do gier lub innych rodzajów aplikacji, w których próbujesz nakłonić użytkowników do wyrobienia sobie codziennego nawyku. Analiza kohortowa pomoże Ci zobaczyć różnice w utrzymaniu użytkowników w wymiarach standardowych, takich jak kraj, wersja aplikacji itp. lub wymiarach niestandardowych, na przykład „Jest klientem warstwy Premium” lub „Nazwa pakietu testowego w grupie eksperymentu”.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.1.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Activity Selection]A;Use these fields to set events that that correspond to interesting user activities. The `Understanding Cohort Analysis Parameters` section at the bottom describes these parameters in detail.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Wybór działań]A;Te pola służą do ustawiania zdarzeń odpowiadających interesującym działaniom użytkownika. Sekcja „Omówienie parametrów analizy kohortowej” zawiera szczegółowy opis tych parametrów.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.10.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Understanding Cohort Analysis Parameters]A;| Parameter | Used for |]A;| ----- | ----- |]A;| Cohort Type | The dimension by which to split the retention numbers |]A;| Retention Period | The period to use in retention calculation. Can be Daily, Weekly or Monthly |]A;| Periods To Analyze  | The number of retention periods to analyze.  |]A;| Cohorting Activities  | The activities that selects a cohort of users. Example: Users who used event *Read Product Review* (cohorting activity). |]A;| Retaining Activities  | The activities that indicates retention of a cohorted user selected above. Example: Users who used event *Read Product Review* (cohorting activity) and returned to use *Purchase Product* (retaining activity). |]A;| Cohorting/Retaining Filters  | An analytics query snippet to further filter the cohorting activity. Example: *&#124; where application_Version = '1.0'* |]A;| Show  | The metric to visualize in the table. *Retention Rate* shows the rate at which users returned for the time period in the column. *Retained Users* is raw number of retained users for the time period. *Potentially Retainable Users* is the number of users who could potentially have been retained for that period.' |]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Omówienie parametrów analizy kohortowej]A;| Parametr | Używany dla |]A;| ----- | ----- |]A;| Typ kohorty | Wymiar, według którego mają być podzielone liczby utrzymania |]A;| Okres utrzymania | Okres używany do obliczania utrzymania. Możliwe wartości: Dziennie, Tygodniowo lub Miesięcznie |]A;| Liczba okresów do analizy | Liczba okresów utrzymania do przeanalizowania. |]A;| Działania wyznaczające kohortę | Działania, które wybierają kohortę użytkowników. Przykład: użytkownicy, którzy użyli zdarzenia *Przeczytaj recenzję produktu* (działanie wyznaczające kohortę). |]A;| Działania utrzymujące | Działania, które wskazują na utrzymywanie użytkownika włączonego do kohorty wybranego powyżej. Przykład: użytkownicy, którzy użyli zdarzenia *Przeczytaj recenzję produktu* (działanie wyznaczające kohortę) i wrócili, aby użyć działania *Kup produkt* (działanie utrzymujące). |]A;| Filtry wyznaczania kohort/utrzymywania | Fragment zapytania analizy służący do dodatkowego filtrowania działania wyznaczającego kohortę. Przykład: *&#124; gdzie application_Version = „1.0”* |]A;| Pokaż | Metryka do zwizualizowania w tabeli. *Współczynnik utrzymania* pokazuje współczynnik powrotu użytkowników dla okresu podanego w kolumnie. *Utrzymani użytkownicy* to nieprzetworzona liczba utrzymanych użytkowników dla okresu. *Użytkownicy potencjalnie możliwi do utrzymania* to liczba użytkowników, którzy potencjalnie mogli być utrzymani dla tego okresu.' |]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.11.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## What is a week for a user?]A;The short answer is that it is unique for each user. Our analysis treats each user's retention window seperately - giving an accurate view of their actual behavior with your app. ]A;]A;Consider the example below of two users X and Y: ]A;]A;| User | First use of app | Weeks for user |]A;| ----- | :----- | :----- |]A;| X | April 3 | w1 = April 10, w2 = April 17, w3 = April 24  |]A;| Y | April 5 | w1 = April 12, w2 = April 19, w3 = April 26  |]A;]A;Each user gets a seperate retention window. So, if both users came back on April 18, then it considered as Week 2 usage for User X but Week 1 usage for User Y. ]A;]A;This allows the normalization their app use over the retention window - making it seem as if all users in a cohort used the app on the same day. This allow for better analysis and comparision of user behavior.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Co to jest tydzień dla użytkownika?]A;Krótka odpowiedź jest taka, że jest unikatowy dla każdego użytkownika. Nasza analiza traktuje okno utrzymania każdego użytkownika osobno, zapewniając dokładny widok ich rzeczywistego zachowania w aplikacji. ]A;]A;Rozważmy poniższy przykład dwóch użytkowników X i Y: ]A;]A;| Użytkownik | Pierwsze użycie aplikacji | Tygodnie dla użytkownika |]A;| ----- | :----- | :----- |]A;| X | 3 kwietnia | t1 = 10 kwietnia, t2 = 17 kwietnia, t3 = 24 kwietnia |]A;| Y | 5 kwietnia | t1 = 12 kwietnia, t2 = 19 kwietnia, t3 = 26 kwietnia  |]A;]A;Każdy użytkownik uzyskuje osobne okno utrzymania. Zatem jeśli obaj użytkownicy wrócili do korzystania z aplikacji 18 kwietnia, to w przypadku użytkownika X jest to traktowane jako użycie w tygodniu 2, ale w przypadku użytkownika Y jako użycie w tygodniu 1. ]A;]A;Umożliwia to normalizację ich użycia aplikacji w oknie utrzymania — tak, jakby wszyscy użytkownicy w kohorcie używali aplikacji w tym samym dniu. Pozwala to na lepszą analizę i porównanie zachowania użytkowników.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.12.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Related Workbook Templates]A;* Retention - N-Period]A;* Retention - Unbounded]A;* Retention - Bracket]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Powiązane szablony skoroszytów]A;* Utrzymanie — N-okres]A;* Utrzymanie — niezwiązane]A;* Utrzymanie — dla przedziału]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.3.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Cohort Analysis Parameters]A;Use these fields to customize your retention settings.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Parametry analizy kohortowej]A;Te pola służą do dostosowywania ustawień utrzymania.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -60,24 +78,36 @@
       <Item ItemId=";items.5.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Cohort Analysis Table]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Tabela analizy kohortowej]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.7.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Interpreting the table]A;This section shows how to read and interpret a retention table. The section below shows a row from a weekly retention report that we will try to read.]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Interpretowanie tabeli]A;W tej sekcji pokazano, jak czytać i interpretować tabelę utrzymania. W poniższej sekcji przedstawiono wiersz z tygodniowego raportu utrzymania, który spróbujemy odczytać.]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.9.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[| Column | Explanation | Interpretation in the example |]A;| ----- | :----- | :----- |]A;| Cohort | Identifies the cohorting criteria specified by the CohortType parameter. | This row explains the retention behavior of users who used the 'Add to Cart' event. |]A;| Total Users | Number of unique users who used the Add to Cart feature  | 1000 unique users added an item to their cart in your app |]A;| <1 week | Percentage of cohort users who returned between 1 and 6 days after using 'Add to Cart' (using it again the same day does not count towards retention)  | 50% or 500 users returned to use your app within the first week after they added an item to their cart |]A;| +1 week | Percentage of cohort users who returned between 7 and 13 days after using 'Add to Cart'  | 30% or 300 users returned to use your app a week later |]A;| +N week | Percentage of cohort users who returned in the Nth week after 'Add to Cart'  | 15% or 150 users, when N = 3  |]A;]A;]A;]A;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[| Kolumna | Wyjaśnienie | Interpretacja w przykładzie |]A;| ----- | :----- | :----- |]A;| Kohorta | Identyfikuje kryteria wyznaczania kohorty określone przez parametr CohortType. | W tym wierszu wyjaśniono zachowanie utrzymania użytkowników, którzy korzystanie ze zdarzenia „Dodaj do koszyka”. |]A;| Łączna liczba użytkowników | Liczba unikatowych użytkowników, którzy używali funkcji Dodaj do koszyka | 1000 unikatowych użytkowników dodało element do swojego koszyka w Twojej aplikacji |]A;| < 1 tydzień | Odsetek użytkowników w kohorcie, którzy powrócili w ciągu 1–6 dni po użyciu funkcji „Dodaj do koszyka” (ponowne użycie jej tego samego dnia nie liczy się do utrzymania) | 50% lub 500 użytkowników powróciło do korzystania z aplikacji w ciągu pierwszego tygodnia po dodaniu elementu do swojego koszyka |]A;| + 1 tydzień | Odsetek użytkowników w kohorcie, którzy powrócili w ciągu 7–13 dni po użyciu funkcji „Dodaj do koszyka" | 30% lub 300 użytkowników powróciło do korzystania z aplikacji tydzień później |]A;| + N tydzień | Odsetek użytkowników w kohorcie, którzy powrócili w N-tym tygodniu po użyciu funkcji „Dodaj do koszyka” | 15% lub 150 użytkowników, gdy N = 3  |]A;]A;]A;]A;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Cohort Analysis]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Analiza kohortowa]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

@@ -48,12 +48,18 @@
       <Item ItemId=";items.2.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Active Users]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## アクティブなユーザー]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.4.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[| Metric | Definition |]A;| ----- |: ----- |: ----- |]A;| Active users | Count of how many people used your app at least once this period. Active Users = Returning users + New users. |]A;| Returning users | Count of how many people used your app at least once this period and the previous period. |]A;| New users | Count of how many people used your app at least once in the last period, but did not use it the previous period. |]A;| Lost users | Count of how many people used your app the previous period but not this period. |]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[| メトリック | 定義 |]A;| ----- |: ----- |: ----- |]A;| アクティブなユーザー | 今期に 1 回以上お客様のアプリを使用した人の数。アクティブなユーザーは、復帰ユーザーと新規ユーザーの合計です。|]A;| 復帰ユーザー | 今期および前期に 1 回以上お客様のアプリを使用した人の数。|]A;| 新規ユーザー | 最新の期間に 1 回以上お客様のアプリを使用したものの、前期には使用しなかった人の数。|]A;| 離れたユーザー | 前期にお客様のアプリを使用したものの、今期には使用しなかった人の数。|]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -62,19 +68,22 @@
           <Val><![CDATA[## Usage Growth]A;This chart shows you the trend of the {Period} growth rates of your app. This allows you to analyze how your New, Returning, Lost and Overall users growth rates change over time -- for instance see if growth is accelerating, decelerating or holding steady. ]A;]A;The metrics at the bottow show the current growth rate. The `Active Users` series shows the overall usage growth rate.]]></Val>
         </Str>
         <Disp Icon="Str" />
-        <Cmts>
-          <Cmt Name="Dev"><![CDATA[{Locked={Period}}]]></Cmt>
-        </Cmts>
       </Item>
       <Item ItemId=";items.7.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Retention Rate]A;Your app's retention rate, defined as returning users as percentage of total users.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## リテンション率]A;アプリのリテンション率。これは、ユーザー合計に対する戻ってきたユーザーの割合として定義されます。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.9.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Ratio of Returning to New Users]A;This ratio indicates how much of your usage comes from existing users vs. new users. Smaller ratios indicate larger amounts of churn, with usage primarily coming from new users.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## 戻ってきた新規ユーザーの比率]A;この比率は、既存のユーザーに由来する使用率が新規ユーザーに比べてどれほどかを示します。この比率が低い場合は、使用率が主として新規ユーザーに由来しており、チャーンの量が多いことを示します。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
