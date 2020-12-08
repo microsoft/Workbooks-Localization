@@ -225,6 +225,12 @@
           <Disp Icon="Str" />
         </Item>
       </Item>
+      <Item ItemId=";items.CacheTabMainGroup.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Cache Data]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.ClusterGroup.content.items.CPU.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[CPU]]></Val>
@@ -702,84 +708,21 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Overview.content.items.HelpGroup.content.items.CPUHelp.content.json" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Overview.content.items.HelpContentLink.content.links.0.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[##### CPU]D;]A;Percentage of allocated compute resources currently in use by machines in the cluster.<br><br>]D;]A;An average CPU of 80% or less is sustainable for a cluster. The maximum value of CPU is 100%, which means there are no additional compute resources to process data.<br><br>]D;]A;When a cluster isn't performing well, check the usage tab to to determine if there are specific users or applications that are consuming high CPU. ]D;]A;]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[##### CPU]D;]A;Kümedeki makineler tarafından şu anda kullanılmakta olan ayrılan işlem kaynaklarının yüzdesi.<br><br>]D;]A;Ortalama %80'lik veya daha az bir CPU, küme için sürdürülebilirdir. CPU'nun en yüksek değeri olan %100, verileri işlemek için daha fazla bilgi işlem kaynağı olmadığı anlamına gelir.<br><br>]D;]A;Bir küme iyi performans göstermiyorsa, yüksek CPU tüketen belirli kullanıcılar veya uygulamalar olup olmadığını belirlemek için kullanım sekmesini denetleyin. ]D;]A;]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Overview.content.items.HelpGroup.content.items.CacheutilizationHelp.content.json" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[##### Cache Utilization]D;]A;]D;]A;Percentage of allocated cache resources currently in use by the cluster. Cache is the size of SSD allocated for user activity according to the defined cache policy.]D;]A;]D;]A;An average cache utilization of 80% or less is a sustainable state for a cluster. If the average cache utilization is above 80%, the cluster should be]D;]A;[scaled up]5D;(https://docs.microsoft.com/azure/data-explorer/manage-cluster-vertical-scaling) to a storage optimized pricing tier <br> or]D;]A;[scaled out]5D;(https://docs.microsoft.com/azure/data-explorer/manage-cluster-horizontal-scaling) to more instances. <br>It's recommended to use [optimized autoscale]5D;(https://docs.microsoft.com/azure/data-explorer/manage-cluster-horizontal-scaling#optimized-autoscale) configuration.<br><br>Alternatively, adapt the cache policy (fewer days in cache). <br> <br>If cache utilization is over 100%, the size of data to be cached, according to the caching policy, is larger that the total size of cache on the cluster.]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[##### Önbellek Kullanımı]D;]A;]D;]A;Küme tarafından kullanılmakta olan ayrılmış önbellek kaynaklarının yüzdesi. Önbellek, tanımlanan önbellek ilkesine göre kullanıcı etkinliği için ayrılan SSD boyutudur.]D;]A;]D;]A;%80 veya daha az ortalama önbellek kullanımı, bir küme için sürdürülebilir bir durumdur. Ortalama önbellek kullanımı %80'den büyükse, küme ölçeğinin depolama için iyileştirilmiş bir]D;]A;fiyatlandırma katmanına [artırılması]5D;(https://docs.microsoft.com/azure/data-explorer/manage-cluster-vertical-scaling) <br> veya]D;]A;daha fazla örneğe [genişletilmesi]5D;(https://docs.microsoft.com/azure/data-explorer/manage-cluster-horizontal-scaling) gerekir. <br>[İyileştirilmiş otomatik ölçeklendirme]5D;(https://docs.microsoft.com/azure/data-explorer/manage-cluster-horizontal-scaling#optimized-autoscale) yapılandırmasının kullanılması önerilir.<br><br>Alternatif olarak, önbellek ilkesini (önbellekte daha az gün) uyarlayabilirsiniz. <br> <br>Önbellek kullanımı %100'den fazlaysa önbelleğe alma ilkesine göre, önbelleğe alınacak verilerin boyutu kümedeki önbelleğin toplam boyutundan daha büyüktür.]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Overview.content.items.HelpGroup.content.items.FailedIngestionsHelp.content.json" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[##### Failed Ingestions]D;]A;]D;]A;Total number of ingestion operations that failed.<br><br>]D;]A;If this tile is not visible, it means that no failed ingestions detected. <br><br>]D;]A;For more information, you can check the ingestion metrics at the "Key Metrics" tab or use the [.show ingestion failures command]5D;(https://docs.microsoft.com/azure/data-explorer/kusto/management/ingestionfailures).<br>]D;]A;Ingestion failures that occur during other parts of the ingestion flow will not appear in the result set of this command. Such a failure may occur, for example, before data ingestion control commands are sent to the Azure Data Explorer Data Engine service.]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[##### Başarısız Alımlar]D;]A;]D;]A;Başarısız alım işlemlerinin toplam sayısı.<br><br>]D;]A;Bu kutucuğun görünmemesi, başarısız alım işlemi algılanmadığı anlamına gelir. <br><br>]D;]A;Daha fazla bilgi için, "Temel Ölçümler" sekmesinden alım ölçümlerini denetleyebilir veya [.show ingestion failures komutunu]5D;(https://docs.microsoft.com/azure/data-explorer/kusto/management/ingestionfailures) kullanabilirsiniz.<br>]D;]A;Alım akışının diğer bölümleri sırasında oluşan alım hataları bu komutun sonuç kümesinde görünmez. Örneğin, veri alma denetimi komutları Azure Veri Gezgini Veri Altyapısı hizmetine gönderilmeden önce böyle bir hata oluşabilir.]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Overview.content.items.HelpGroup.content.items.IngestionLatencyHelp.content.json" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[##### Ingestion Latency]D;]A;]D;]A;Latency of data ingested, from the time the data was received in the cluster until it's ready for query. <br><br>The ingestion latency period depends on the ingestion scenario. <br>As a general rule, an average Ingestion Latency above 15 minutes (over a long period) may indicate a problem]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[##### Alım Gecikme Süresi]D;]A;]D;]A;Verilerin kümede alındığı zamandan sorgu için hazır olduğu zamana kadar geçen, alınan verilerin gecikme süresi. <br><br>Alım gecikme süresi, alım senaryosuna bağlıdır. <br>Genel bir kural olarak, uzun bir süre boyunca 15 dakikanın üzerinde bir ortalama Alım Gecikmesi olması, bir soruna işaret edebilir]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Overview.content.items.HelpGroup.content.items.IngestionutilizationHelp.content.json" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[##### Ingestion utilization]D;]A;]D;]A;Percentage of actual resources used to ingest data from the total resources allocated, in the capacity policy, to perform ingestion.<br><br>The default capacity policy is no more than 512 concurrent ingestion operations or 75% of the cluster resources invested in ingestion.<br><br>]D;]A;Average ingestion utilization of 80% or less is a sustainable state for a cluster. Maximum value of ingestion utilization is 100%, which means all cluster ingestion ability is used and an ingestion queue may result.]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[##### Alım kullanımı]D;]A;]D;]A;Kapasite ilkesinde, alımı gerçekleştirmek için ayrılan toplam kaynaktan veri alımı için kullanılan gerçek kaynakların yüzdesi.<br><br>Varsayılan kapasite ilkesi en fazla, 512 eşzamanlı alım işlemi ya da alım için ayrılan küme kaynaklarının %75'idir.<br><br>]D;]A;Ortalama %80 veya daha az alım kullanımı, bir küme için sürdürülebilir bir durumdur. Alım kullanımının en yüksek değeri olan %100, küme alım yeteneğinin tümüyle kullanıldığı ve bir alım kuyruğunun oluşabileceği anlamına gelir.]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Overview.content.items.HelpGroup.content.items.KeepAliveHelp.content.json" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[##### Keep Alive]D;]A;Tracks the responsiveness of the cluster. <br><br>]D;]A;A fully responsive cluster returns value 1 and a blocked or disconnected cluster returns 0.<br><br>]D;]A;An average Keep Alive below 0.995 (over a long period) may indicate a health issue or may indicate that your cluster was suspended (Pay attention to your time range. This rule is important over a long period). <br><br>This tile shows up to 4 significant digits.]D;]A;]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[##### Etkin Tutma]D;]A;Kümenin yanıt verebilirliğini izler. <br><br>]D;]A;Tam duyarlı bir küme 1 değerini döndürür ve engellenmiş veya bağlantısı kesilmiş bir küme 0 döndürür.<br><br>]D;]A;Ortalama Etkin Tutma değerinin 0,995'in altında olması (uzun bir süre içinde), bir sistem sorununa veya kümenizin askıya alındığına işaret edebilir (Zaman aralığınıza dikkat edin. Bu kural uzun süreler için önemlidir). <br><br>Bu kutucuk 4 anlamlı basamağa kadar gösterir.]D;]A;]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Overview.content.items.HelpGroup.content.items.SucceededIngestionsHelp.content.json" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[##### Succeeded Ingestions]D;]A;]D;]A;Total number of ingestion operations that succeeded.]D;]A;]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[##### Başarılı Alımlar]D;]A;]D;]A;Başarılı alım işlemlerinin toplam sayısı.]D;]A;]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Overview.content.items.Hhelpparameter.content.parameters.bb21d008530e48a4bf2c41f9b20e9986.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Metrics help]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Ölçüm yardımı]]></Val>
-          </Tgt>
+          <Val><![CDATA[Show Metrics Help]]></Val>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overview.content.items.expander.content.items.HeaviestUserCountHeader.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[###### Heaviest Resource Consumers ]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[###### Top Resource Consumers ]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[###### En Yoğun Kaynak Tüketicileri ]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[###### Heaviest Resource Consumers ]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -828,15 +771,6 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.TablesTabMainGroup.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Table Details (Coming Soon)]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Tablo Ayrıntıları (Çok Yakında)]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
       <Item ItemId=";items.Tabs.content.links.0.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Overview]]></Val>
@@ -869,6 +803,15 @@
           <Val><![CDATA[Tables]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Tablolar]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Tabs.content.links.4.linkLabel" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Cache]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Önbellek]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
