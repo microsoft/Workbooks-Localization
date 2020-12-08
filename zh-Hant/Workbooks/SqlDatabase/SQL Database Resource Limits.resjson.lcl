@@ -12,84 +12,126 @@
       <Item ItemId=";items.0.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# SQL Database Resource Limits]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# SQL 資料庫資源限制]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.10.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Total Database Size]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### 資料庫大小總計]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.13.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[When encountering high space utilization, mitigation options include:]A;]A;* Increasing the max size of the database or elastic pool, or add more storage. See [Scale single database resources]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-single-database-scale) and [Scale elastic pool resources]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-elastic-pool-scale).]A;* If the database is in an elastic pool, then alternatively the database can be moved outside of the pool so that its storage space is not shared with other databases.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[遇到空間有高使用率時，風險降低選項包括:]A;]A;* 增加資料庫或彈性集區的大小上限，或新增更多儲存體。請參閱[調整單一資料庫資源]5D;(https://docs.microsoft.com/zh-tw/azure/sql-database/sql-database-single-database-scale)及[調整彈性集區資源]5D;(https://docs.microsoft.com/zh-tw/azure/sql-database/sql-database-elastic-pool-scale)。]A;* 如果資料庫在彈性集區中，則可以將資料庫移到集區之外，讓儲存空間不會與其他資料庫共用。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.14.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Sessions and workers]A;The maximum number of sessions and workers are determined by the service tier and performance level (DTUs and eDTUs). New requests are rejected when session or worker limits are reached, and clients receive an error message. While the number of connections available can be controlled by the application, the number of concurrent workers is often harder to estimate and control. This is especially true during peak load periods when database resource limits are reached and workers pile up due to longer running queries.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## 工作階段和背景工作角色]A;工作階段和背景工作角色的上限由服務層級與效能等級 (DTU 與 eDTU) 決定。如果工作階段或背景工作角色達到上限，則會拒絕新的要求，且用戶端會收到錯誤訊息。雖然應用程式可以控制可用的連線數目，但並行背景工作角色的數目通常較難以估計及控制。這在高峰載入期間尤其如此，像是資料庫資源達到上限，以及因執行中的查詢較久導致背景工作角色堆積。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.15.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Sessions Percentage]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### 工作階段百分比]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.16.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Workers Percentage]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### 背景工作角色百分比]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.19.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[When encountering high session or worker utilization, mitigation options include:]A;* Increasing the service tier or performance level of the database or elastic pool. See [Scale single database resources]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-single-database-scale) and [Scale elastic pool resources]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-elastic-pool-scale).]A;* Optimizing queries to reduce the resource utilization of each query if the cause of increased worker utilization is due to contention for compute resources. For more information, see [Query Tuning/Hinting]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-performance-guidance#query-tuning-and-hinting).]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[遇到工作階段或背景工作角色有高使用率時，風險降低選項包括:]A;* 增加資料庫或彈性集區的服務層級或效能等級。請參閱[調整單一資料庫資源]5D;(https://docs.microsoft.com/zh-tw/azure/sql-database/sql-database-single-database-scale)及[調整彈性集區資源]5D;(https://docs.microsoft.com/zh-tw/azure/sql-database/sql-database-elastic-pool-scale)。]A;* 如果工作背景角色是因為計算資源爭用而增加使用率，請將查詢最佳化以降低每個查詢的資源使用量。如需詳細資訊，請參閱[查詢微調和提示]5D;(https://docs.microsoft.com/zh-tw/azure/sql-database/sql-database-performance-guidance#query-tuning-and-hinting)。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.2.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Compute]A;When database compute utilization (measured by DTUs and eDTUs, or vCores) becomes high, query latency increases and can even time out. Under these conditions, queries may be queued by the service and are provided resources for execution as resource become free. ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## 計算]A;當資料庫計算使用率 (由 DTU、eDTU 或 vCore 測量) 變高時，查詢延遲會增加，甚至可能逾時。在這些情況下，查詢可能會由服務排入佇列，並在資源有可用空間時提供資源以執行。 ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.3.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### DTU Percentage]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### DTU 百分比]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.4.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### CPU Percentage]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### CPU 百分比]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.7.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[When encountering high compute utilization, mitigation options include:]A;]A;* Increasing the performance level of the database or elastic pool to provide the database with more compute resources. See [Scale single database resources]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-single-database-scale) and [Scale elastic pool resources]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-elastic-pool-scale).]A;* Optimizing queries to reduce the resource utilization of each query. For more information, see [Query Tuning/Hinting]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-performance-guidance#query-tuning-and-hinting).]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[遇到計算有高使用率時，風險降低選項包括:]A;]A;* 增加資料庫或彈性集區的效能等級，以提供具有更多計算資源的資料庫。請參閱[調整單一資料庫資源]5D;(https://docs.microsoft.com/zh-tw/azure/sql-database/sql-database-single-database-scale)及[調整彈性集區資源]5D;(https://docs.microsoft.com/zh-tw/azure/sql-database/sql-database-elastic-pool-scale。]A;* 將查詢最佳化以降低每個查詢的資源使用量。如需詳細資訊，請參閱[查詢微調和提示]5D;(https://docs.microsoft.com/zh-tw/azure/sql-database/sql-database-performance-guidance#query-tuning-and-hinting)。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.8.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Storage]A;When database space used reaches the max size limit, database inserts and updates that increase the data size fail and clients receive an [error message]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-develop-error-messages). Database SELECTS and DELETES continue to succeed.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## 儲存體]A;當使用的資料庫空間達到大小上限時，增加資料大小的資料庫插入和更新會失敗，而用戶端會收到[錯誤訊息]5D;(https://docs.microsoft.com/zh-tw/azure/sql-database/sql-database-develop-error-messages)。資料庫 SELECTS 及 DELETES 會繼續成功。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.9.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Database Size Percentage]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### 資料庫大小百分比]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[SQL Database Resource Limits]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[SQL 資料庫資源限制]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

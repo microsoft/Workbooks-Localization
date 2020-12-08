@@ -225,6 +225,12 @@
           <Disp Icon="Str" />
         </Item>
       </Item>
+      <Item ItemId=";items.CacheTabMainGroup.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Cache Data]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.ClusterGroup.content.items.CPU.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[CPU]]></Val>
@@ -681,84 +687,21 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Overview.content.items.HelpGroup.content.items.CPUHelp.content.json" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Overview.content.items.HelpContentLink.content.links.0.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[##### CPU]D;]A;Percentage of allocated compute resources currently in use by machines in the cluster.<br><br>]D;]A;An average CPU of 80% or less is sustainable for a cluster. The maximum value of CPU is 100%, which means there are no additional compute resources to process data.<br><br>]D;]A;When a cluster isn't performing well, check the usage tab to to determine if there are specific users or applications that are consuming high CPU. ]D;]A;]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[##### Processeur]D;]A;Pourcentage de ressources de calcul allouées actuellement utilisées par les machines du cluster.<br><br>]D;]A;Une moyenne d'utilisation du processeur de 80 % ou moins est viable pour un cluster. La valeur maximale d'utilisation du processeur est 100 %, ce qui signifie qu'il n'y a plus de ressources de calcul pour traiter les données.<br><br>]D;]A;Quand un cluster ne fonctionne pas correctement, consultez l'onglet d'utilisation pour déterminer si des utilisateurs ou des applications spécifiques ont une consommation élevée du processeur. ]D;]A;]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Overview.content.items.HelpGroup.content.items.CacheutilizationHelp.content.json" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[##### Cache Utilization]D;]A;]D;]A;Percentage of allocated cache resources currently in use by the cluster. Cache is the size of SSD allocated for user activity according to the defined cache policy.]D;]A;]D;]A;An average cache utilization of 80% or less is a sustainable state for a cluster. If the average cache utilization is above 80%, the cluster should be]D;]A;[scaled up]5D;(https://docs.microsoft.com/azure/data-explorer/manage-cluster-vertical-scaling) to a storage optimized pricing tier <br> or]D;]A;[scaled out]5D;(https://docs.microsoft.com/azure/data-explorer/manage-cluster-horizontal-scaling) to more instances. <br>It's recommended to use [optimized autoscale]5D;(https://docs.microsoft.com/azure/data-explorer/manage-cluster-horizontal-scaling#optimized-autoscale) configuration.<br><br>Alternatively, adapt the cache policy (fewer days in cache). <br> <br>If cache utilization is over 100%, the size of data to be cached, according to the caching policy, is larger that the total size of cache on the cluster.]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[##### Utilisation du cache]D;]A;]D;]A;Pourcentage de ressources de cache allouées actuellement utilisées par le cluster. Le cache correspond à la taille du SSD alloué à l'activité utilisateur, en fonction de la stratégie de cache définie.]D;]A;]D;]A;Une utilisation moyenne de 80 % ou moins est un état viable pour un cluster. Si l'utilisation moyenne du cache est supérieure à 80 %, le cluster doit faire l'objet d'un]D;]A;[scale-up]5D;(https://docs.microsoft.com/azure/data-explorer/manage-cluster-vertical-scaling) vers le niveau tarifaire à stockage optimisé <br> ou d'un]D;]A;[scale-out]5D;(https://docs.microsoft.com/azure/data-explorer/manage-cluster-horizontal-scaling) en ajoutant des instances. <br>Nous vous recommandons d'utiliser la configuration de [mise à l'échelle automatique optimisée]5D;(https://docs.microsoft.com/azure/data-explorer/manage-cluster-horizontal-scaling#optimized-autoscale). <br><br>Sinon, adaptez la stratégie de cache (moins de jours dans le cache). <br> <br>Si l'utilisation du cache dépasse 100 %, la taille des données à mettre en cache, en fonction de la stratégie de mise en cache, dépasse la taille totale du cache sur le cluster.]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Overview.content.items.HelpGroup.content.items.FailedIngestionsHelp.content.json" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[##### Failed Ingestions]D;]A;]D;]A;Total number of ingestion operations that failed.<br><br>]D;]A;If this tile is not visible, it means that no failed ingestions detected. <br><br>]D;]A;For more information, you can check the ingestion metrics at the "Key Metrics" tab or use the [.show ingestion failures command]5D;(https://docs.microsoft.com/azure/data-explorer/kusto/management/ingestionfailures).<br>]D;]A;Ingestion failures that occur during other parts of the ingestion flow will not appear in the result set of this command. Such a failure may occur, for example, before data ingestion control commands are sent to the Azure Data Explorer Data Engine service.]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[##### Ingestions ayant échoué]D;]A;]D;]A;Nombre total d'opérations d'ingestion ayant échoué.<br><br>]D;]A;Si cette vignette n'est pas visible, c'est qu'aucune ingestion ayant échoué n'a été détectée. <br><br>]D;]A;Pour plus d'informations, vous pouvez consulter les métriques d'ingestion sous l'onglet « Métriques clés » ou utiliser la [commande .show ingestion failures]5D;(https://docs.microsoft.com/azure/data-explorer/kusto/management/ingestionfailures).<br>]D;]A;Les échecs d'ingestion qui se produisent pendant les autres parties du flux d'ingestion n'apparaissent pas dans le jeu de résultats de cette commande. Ce problème peut se produire, par exemple, avant l'envoi des commandes de contrôle d'ingestion de données au service de moteur de données Azure Data Explorer.]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Overview.content.items.HelpGroup.content.items.IngestionLatencyHelp.content.json" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[##### Ingestion Latency]D;]A;]D;]A;Latency of data ingested, from the time the data was received in the cluster until it's ready for query. <br><br>The ingestion latency period depends on the ingestion scenario. <br>As a general rule, an average Ingestion Latency above 15 minutes (over a long period) may indicate a problem]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[##### Latence d'ingestion]D;]A;]D;]A;Latence des données ingérées, depuis la réception des données dans le cluster jusqu'au moment où elles sont prêtes pour l'interrogation. <br><br>La période de latence d'ingestion dépend du scénario d'ingestion. <br>En règle générale, une latence d'ingestion moyenne supérieure à 15 minutes (sur une longue période) peut indiquer un problème]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Overview.content.items.HelpGroup.content.items.IngestionutilizationHelp.content.json" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[##### Ingestion utilization]D;]A;]D;]A;Percentage of actual resources used to ingest data from the total resources allocated, in the capacity policy, to perform ingestion.<br><br>The default capacity policy is no more than 512 concurrent ingestion operations or 75% of the cluster resources invested in ingestion.<br><br>]D;]A;Average ingestion utilization of 80% or less is a sustainable state for a cluster. Maximum value of ingestion utilization is 100%, which means all cluster ingestion ability is used and an ingestion queue may result.]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[##### Utilisation d'ingestion]D;]A;]D;]A;Pourcentage de ressources réelles utilisées pour ingérer les données du total des ressources allouées, dans la stratégie de capacité, pour effectuer l'ingestion.<br><br>La stratégie de capacité par défaut ne dépasse pas 512 opérations d'ingestion simultanées ou 75 % des ressources de cluster investies dans l'ingestion.<br><br>]D;]A;Une utilisation moyenne d'ingestion de 80 % ou moins est un état viable pour un cluster. La valeur maximale de l'utilisation d'ingestion est 100 %, ce qui signifie que toute la capacité d'ingestion du cluster est utilisée et qu'il peut y avoir une file d'attente d'ingestion.]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Overview.content.items.HelpGroup.content.items.KeepAliveHelp.content.json" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[##### Keep Alive]D;]A;Tracks the responsiveness of the cluster. <br><br>]D;]A;A fully responsive cluster returns value 1 and a blocked or disconnected cluster returns 0.<br><br>]D;]A;An average Keep Alive below 0.995 (over a long period) may indicate a health issue or may indicate that your cluster was suspended (Pay attention to your time range. This rule is important over a long period). <br><br>This tile shows up to 4 significant digits.]D;]A;]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[##### Persistant]D;]A;Effectue le suivi de la réactivité du cluster. <br><br>]D;]A;Un cluster complètement réactif retourne la valeur 1, et un cluster bloqué ou déconnecté retourne 0.<br><br>]D;]A;Une persistance moyenne en dessous de 0,995 (sur une longue période) peut indiquer un problème d'intégrité ou indiquer que votre cluster a été suspendu (surveillez votre intervalle de temps, cette règle est importante sur une longue période). <br><br>Cette vignette affiche jusqu'à 4 chiffres significatifs.]D;]A;]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Overview.content.items.HelpGroup.content.items.SucceededIngestionsHelp.content.json" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[##### Succeeded Ingestions]D;]A;]D;]A;Total number of ingestion operations that succeeded.]D;]A;]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[##### Ingestion ayant réussi]D;]A;]D;]A;Nombre total d'opérations d'ingestion ayant réussi.]D;]A;]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Overview.content.items.Hhelpparameter.content.parameters.bb21d008530e48a4bf2c41f9b20e9986.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Metrics help]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Aide des métriques]]></Val>
-          </Tgt>
+          <Val><![CDATA[Show Metrics Help]]></Val>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overview.content.items.expander.content.items.HeaviestUserCountHeader.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[###### Heaviest Resource Consumers ]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[###### Top Resource Consumers ]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[###### Consommateurs des ressources les plus lourdes ]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[###### Heaviest Resource Consumers ]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -801,15 +744,6 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.TablesTabMainGroup.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Table Details (Coming Soon)]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Détails de la table (bientôt disponible)]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
       <Item ItemId=";items.Tabs.content.links.0.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Overview]]></Val>
@@ -842,6 +776,15 @@
           <Val><![CDATA[Tables]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Tables]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Tabs.content.links.4.linkLabel" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Cache]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Cache]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />

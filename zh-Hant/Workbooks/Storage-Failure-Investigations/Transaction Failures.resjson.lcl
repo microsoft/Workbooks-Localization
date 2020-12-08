@@ -12,6 +12,9 @@
       <Item ItemId=";items.0.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Investigating Transaction Failures]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# 調查交易失敗次數]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -27,48 +30,72 @@
       <Item ItemId=";items.2.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Transactions by Response Type]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## 依回應類型的交易數目]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.4.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[*Transactions* - the number of requests made to a storage service. This number includes successful and failed requests, as well as requests that produced errors. ]A;]A;*Response type* - the transaction response type. The available values include: ]A;]A;* __ServerOtherError__: All other server-side errors except described ones]A;* __ServerBusyError__: Authenticated request that returned an HTTP 503 status code.]A;* __ServerTimeoutError__: Timed-out authenticated request that returned an HTTP 500 status code. The timeout occurred due to a server error.]A;* __AuthorizationError__: Authenticated request that failed due to unauthorized access of data or an authorization failure.]A;* __NetworkError__: Authenticated request that failed due to network errors. Most commonly occurs when a client prematurely closes a connection before timeout expiration.]A;* __ClientThrottlingError__: Client-side throttling error.]A;* __ClientTimeoutError__: Timed-out authenticated request that returned an HTTP 500 status code. If the client's network timeout or the request timeout is set to a lower value than expected by the storage service, it is an expected timeout. Otherwise, it is reported as a ServerTimeoutError.]A;* __ClientOtherError__: All other client-side errors except described ones.]A;* __Success__: Successful request]A;]A;The following resources are useful for understanding storage-related status and error codes:]A;]A;* [Common REST API Error Codes]5D;(https://docs.microsoft.com/en-us/rest/api/storageservices/Common-REST-API-Error-Codes?redirectedfrom=MSDN).]A;* [Blob Service Error Codes]5D;(https://docs.microsoft.com/en-us/rest/api/storageservices/Blob-Service-Error-Codes?redirectedfrom=MSDN).]A;* [Queue Service Error Codes]5D;(https://docs.microsoft.com/en-us/rest/api/storageservices/Queue-Service-Error-Codes?redirectedfrom=MSDN).]A;* [Table Service Error Codes]5D;(https://docs.microsoft.com/en-us/rest/api/storageservices/Table-Service-Error-Codes?redirectedfrom=MSDN).]A;* [File Service Error Codes]5D;(https://docs.microsoft.com/en-us/rest/api/storageservices/File-Service-Error-Codes?redirectedfrom=MSDN).]A;]A;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[*交易* - 對儲存體服務發出的要求數。此數目包括成功和失敗的要求，以及產生錯誤的要求。]A;]A;*回應類型* - 交易回應類型。可用的值包括: ]A;]A;* __ServerOtherError__: 除了說明以外的其他伺服器端錯誤]A;* __ServerBusyError__: 傳回 HTTP 503 狀態碼的驗證要求。]A;* __ServerTimeoutError__: 傳回 HTTP 500 狀態碼的逾時驗證要求。因伺服器錯誤導致的逾時。]A;* __AuthorizationError__: 因未經授權存取資料或授權失敗而失敗的驗證要求。]A;* __NetworkError__: 因網路錯誤而失敗的驗證要求。通常發生在用戶端於逾時到期前提前關閉連線。]A;* __ClientThrottlingError__: 用戶端節流錯誤。]A;* __ClientTimeoutError__: 傳回 HTTP 500 狀態碼的逾時驗證要求。如果用戶端的網路逾時，或要求逾時設定為比儲存體服務預期的值低，則為預期的逾時。否則，會將其回報為 ServerTimeoutError。]A;* __ClientOtherError__: 除了說明以外的其他所有用戶端錯誤。]A;* __Success__: 成功的要求]A;]A;下列資源有助於理解與儲存體相關的狀態和錯誤代碼: ]A;]A;* [常見的 REST API 錯誤碼]5D;(https://docs.microsoft.com/zh-tw/rest/api/storageservices/Common-REST-API-Error-Codes?redirectedfrom=MSDN)。]A;* [Blob 服務錯誤碼]5D;(https://docs.microsoft.com/zh-tw/rest/api/storageservices/Blob-Service-Error-Codes?redirectedfrom=MSDN)。]A;* [佇列服務錯誤碼]5D;(https://docs.microsoft.com/zh-tw/rest/api/storageservices/Queue-Service-Error-Codes?redirectedfrom=MSDN)。]A;* [資料表服務錯誤碼]5D;(https://docs.microsoft.com/zh-tw/rest/api/storageservices/Table-Service-Error-Codes?redirectedfrom=MSDN)。]A;* [檔服務錯誤碼]5D;(https://docs.microsoft.com/zh-tw/rest/api/storageservices/File-Service-Error-Codes?redirectedfrom=MSDN)。]A;]A;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.5.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Common Issues]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## 常見問題]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.6.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### The client is receiving HTTP 403 (Forbidden) messages]A;If your client application is throwing HTTP 403 (Forbidden) errors, a likely cause is that the client is using an expired Shared Access Signature (SAS) when it sends a storage request (although other possible causes include clock skew, invalid keys, and empty headers). If an expired SAS key is the cause, you will not see any entries in the server-side Storage Logging log data.]A;]A;If the issue is related to SAS tokens, you should investigate why the SAS token is expiring before the client sends the token to the server:]A;* Typically, you should not set a start time when you create a SAS for a client to use immediately. If there are small clock differences between the host generating the SAS using the current time and the storage service, then it is possible for the storage service to receive a SAS that is not yet valid.]A;* Do not set a very short expiry time on a SAS. Again, small clock differences between the host generating the SAS and the storage service can lead to a SAS apparently expiring earlier than anticipated.]A;* Does the version parameter in the SAS key (for example sv=2015-04-05) match the version of the Storage Client Library you are using? We recommend that you always use the latest version of the Storage Client Library.]A;* If you regenerate your storage access keys, any existing SAS tokens may be invalidated. This issue may arise if you generate SAS tokens with a long expiry time for client applications to cache.]A;* If you are using the Storage Client Library to generate SAS tokens, then it is easy to build a valid token. However, if you are using the Storage REST API and constructing the SAS tokens by hand, see Delegating Access with a Shared Access Signature.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### 用戶端正在接收 HTTP 403 (禁止) 訊息]A;若您的用戶端應用程式擲回 HTTP 403 (禁止) 錯誤，可能是因為用戶端在傳送儲存體要求時使用了過期的共用存取簽章 (SAS)，其他可能的原因包括時鐘誤差、金鑰無效和空標頭。如果原因為 SAS 金鑰已過期，您在伺服器端儲存體記錄資料中將不會看到任何項目。]A;]A;如果問題與 SAS 權杖有關，您應該調查 SAS 權杖在用戶端將權杖傳送到伺服器前即到期的原因:]A;* 通常，為用戶端建立要立即使用的 SAS 時，不應設定開始時間。如果在使用目前時間與儲存體服務產生 SAS 的主機之間有小的時鐘誤差，儲存體服務可能會收到尚未生效的 SAS。]A;* 請勿在 SAS 上設定非常短的到期時間。同樣，產生 SAS 與儲存體服務的主機之間的微小時鐘誤差，可能會導致 SAS 比預期還早過期。]A;* SAS 金鑰的版本參數 (例如: sv=2015-04-05) 符合您所使用的儲存體用戶端程式庫版本嗎? 建議您一律使用最新版本的儲存體用戶端程式庫。]A;* 如果您重新產生儲存體存取金鑰，任何現有的 SAS 權杖可能都會失效。如果您產生 SAS 權杖花費較長的時間讓用戶端應用程式進行快取，則可能發生此問題。]A;* 如果您使用儲存體用戶端程式庫來產生 SAS 權杖，則可以輕鬆地建立有效的權杖。不過，如果您使用儲存體 REST API 並手動建立 SAS 權杖，請參閱《使用共用存取簽章來委派存取權》]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.7.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### The client is receiving HTTP 404 (Not found) messages]A;If the client application receives an HTTP 404 (Not found) message from the server, this implies that the object the client was attempting to use (such as an entity, table, blob, container, or queue) does not exist in the storage service. There are a number of possible reasons for this, such as:]A;]A;* [The client or another process previously deleted the object]5D;(https://docs.microsoft.com/en-us/azure/storage/common/storage-monitoring-diagnosing-troubleshooting?toc=%2fazure%2fstorage%2fqueues%2ftoc.json#client-previously-deleted-the-object)]A;* [A Shared Access Signature (SAS) authorization issue]5D;(https://docs.microsoft.com/en-us/azure/storage/common/storage-monitoring-diagnosing-troubleshooting?toc=%2fazure%2fstorage%2fqueues%2ftoc.json#SAS-authorization-issue)]A;* [Client-side JavaScript code does not have permission to access the object]5D;(https://docs.microsoft.com/en-us/azure/storage/common/storage-monitoring-diagnosing-troubleshooting?toc=%2fazure%2fstorage%2fqueues%2ftoc.json#JavaScript-code-does-not-have-permission)]A;* [Network failure]5D;(https://docs.microsoft.com/en-us/azure/storage/common/storage-monitoring-diagnosing-troubleshooting?toc=%2fazure%2fstorage%2fqueues%2ftoc.json#network-failure)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### 用戶端正在接收 HTTP 404 (找不到) 訊息]A;如果用戶端應用程式收到來自伺服器的 HTTP 404 (找不到) 訊息，這表示用戶端嘗試使用的物件 (例如: 實體、資料表、Blob、容器或佇列) 不存在於儲存體服務中。有多種可能的原因，例如:]A;]A;* [用戶端或其他程序先前刪除了該物件]5D;(https://docs.microsoft.com/zh-tw/azure/storage/common/storage-monitoring-diagnosing-troubleshooting?toc=%2Fazure%2Fstorage%2Fqueues%2Ftoc.json&tabs=dotnet#client-previously-deleted-the-object)]A;* [共用存取簽章 (SAS) 授權問題]5D;(https://docs.microsoft.com/zh-tw/azure/storage/common/storage-monitoring-diagnosing-troubleshooting?toc=%2Fazure%2Fstorage%2Fqueues%2Ftoc.json&tabs=dotnet#SAS-authorization-issue)]A;* [用戶端 JavaScript 程式碼無權存取該物件]5D;(https://docs.microsoft.com/zh-tw/azure/storage/common/storage-monitoring-diagnosing-troubleshooting?toc=%2Fazure%2Fstorage%2Fqueues%2Ftoc.json&tabs=dotnet#JavaScript-code-does-not-have-permission)]A;* [網路失敗]5D;(https://docs.microsoft.com/zh-tw/azure/storage/common/storage-monitoring-diagnosing-troubleshooting?toc=%2Fazure%2Fstorage%2Fqueues%2Ftoc.json&tabs=dotnet#network-failure)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.8.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### The client is receiving HTTP 409 (Conflict) messages]A;The common cause of this error is a client application deleting and then immediately recreating a storage unit using the same name. When a client deletes blob containers, tables, or queues there is a brief period before the name becomes available again.]A;]A;The client application should use unique container names whenever it creates new containers if the delete/recreate pattern is common.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### 用戶端正在接收 HTTP 409 (衝突) 訊息]A;此錯誤的常見原因為用戶端應用程式刪除後立即使用相同的名稱重新建立儲存體單位。用戶端刪除 Blob 容器、資料表或佇列後，會有一小段期間才能再次使用該名稱。]A;]A;如果用戶端應用程式經常刪除/重新建立，則每次建立新的容器時，應使用唯一的容器名稱。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.9.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Troubleshooting guidence]A;More information to diagnose and solves issues can be found in this [document]5D;(https://docs.microsoft.com/en-us/azure/storage/common/storage-monitoring-diagnosing-troubleshooting?toc=%2fazure%2fstorage%2fqueues%2ftoc.json#troubleshooting-guidance)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### 疑難排解指引]A;如需診斷及解決問題的詳細資訊，請參閱此[文件]5D;(https://docs.microsoft.com/zh-tw/azure/storage/common/storage-monitoring-diagnosing-troubleshooting?toc=%2Fazure%2Fstorage%2Fqueues%2Ftoc.json&tabs=dotnet#troubleshooting-guidance)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Transaction Failures]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[交易失敗數]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

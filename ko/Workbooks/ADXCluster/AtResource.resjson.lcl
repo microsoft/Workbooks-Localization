@@ -228,6 +228,12 @@
           <Disp Icon="Str" />
         </Item>
       </Item>
+      <Item ItemId=";items.CacheTabMainGroup.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Cache Data]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.ClusterGroup.content.items.CPU.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[CPU]]></Val>
@@ -705,84 +711,21 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Overview.content.items.HelpGroup.content.items.CPUHelp.content.json" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Overview.content.items.HelpContentLink.content.links.0.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[##### CPU]D;]A;Percentage of allocated compute resources currently in use by machines in the cluster.<br><br>]D;]A;An average CPU of 80% or less is sustainable for a cluster. The maximum value of CPU is 100%, which means there are no additional compute resources to process data.<br><br>]D;]A;When a cluster isn't performing well, check the usage tab to to determine if there are specific users or applications that are consuming high CPU. ]D;]A;]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[##### CPU]D;]A;클러스터의 머신에서 현재 사용 중인 할당된 컴퓨팅 리소스의 백분율입니다.<br><br>]D;]A;평균 CPU가 80% 이하이면 클러스터가 지속 가능합니다. CPU의 최댓값인 100%이면 데이터를 처리할 추가 컴퓨팅 리소스가 없는 것입니다.<br><br>]D;]A;클러스터가 제대로 작동하지 않는 경우 사용량 탭을 확인하여 CPU를 많이 사용하는 특정 사용자 또는 애플리케이션이 있는지 확인합니다. ]D;]A;]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Overview.content.items.HelpGroup.content.items.CacheutilizationHelp.content.json" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[##### Cache Utilization]D;]A;]D;]A;Percentage of allocated cache resources currently in use by the cluster. Cache is the size of SSD allocated for user activity according to the defined cache policy.]D;]A;]D;]A;An average cache utilization of 80% or less is a sustainable state for a cluster. If the average cache utilization is above 80%, the cluster should be]D;]A;[scaled up]5D;(https://docs.microsoft.com/azure/data-explorer/manage-cluster-vertical-scaling) to a storage optimized pricing tier <br> or]D;]A;[scaled out]5D;(https://docs.microsoft.com/azure/data-explorer/manage-cluster-horizontal-scaling) to more instances. <br>It's recommended to use [optimized autoscale]5D;(https://docs.microsoft.com/azure/data-explorer/manage-cluster-horizontal-scaling#optimized-autoscale) configuration.<br><br>Alternatively, adapt the cache policy (fewer days in cache). <br> <br>If cache utilization is over 100%, the size of data to be cached, according to the caching policy, is larger that the total size of cache on the cluster.]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[##### 캐시 사용률]D;]A;]D;]A;클러스터에서 현재 사용 중인 할당된 캐시 리소스의 백분율입니다. 캐시는 정의된 캐시 정책에 따라 사용자 활동에 할당된 SSD의 크기입니다.]D;]A;]D;]A;평균 캐시 사용률이 80% 이하이면 클러스터의 지속 가능한 상태입니다. 평균 캐시 사용률이 80% 이상인 경우 클러스터를]D;]A;스토리지 최적화 가격 책정 계층으로 [스케일 업]5D;(https://docs.microsoft.com/azure/data-explorer/manage-cluster-vertical-scaling) <br> 또는]D;]A;더 많은 인스턴스로 [스케일 아웃]5D;(https://docs.microsoft.com/azure/data-explorer/manage-cluster-horizontal-scaling)해야 합니다. <br>[최적화된 자동 스케일링]5D;(https://docs.microsoft.com/azure/data-explorer/manage-cluster-horizontal-scaling#optimized-autoscale) 구성을 사용하는 것이 좋습니다.<br><br>또는 캐시 정책을 조정합니다(캐시에서 일수 줄이기). <br> <br>캐시 사용률이 100%를 초과하는 경우 캐싱 정책에 따라 캐시되는 데이터 크기가 클러스터의 총 캐시 크기보다 큽니다.]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Overview.content.items.HelpGroup.content.items.FailedIngestionsHelp.content.json" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[##### Failed Ingestions]D;]A;]D;]A;Total number of ingestion operations that failed.<br><br>]D;]A;If this tile is not visible, it means that no failed ingestions detected. <br><br>]D;]A;For more information, you can check the ingestion metrics at the "Key Metrics" tab or use the [.show ingestion failures command]5D;(https://docs.microsoft.com/azure/data-explorer/kusto/management/ingestionfailures).<br>]D;]A;Ingestion failures that occur during other parts of the ingestion flow will not appear in the result set of this command. Such a failure may occur, for example, before data ingestion control commands are sent to the Azure Data Explorer Data Engine service.]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[##### 실패한 수집]D;]A;]D;]A;실패한 총 수집 작업 수입니다.<br><br>]D;]A;이 타일이 표시되지 않으면 검색된 실패한 수집이 없음을 의미합니다. <br><br>]D;]A;자세한 내용을 보려면 "주요 메트릭" 탭에서 수집 메트릭을 확인하거나 [.show ingestion failures 명령]5D;(https://docs.microsoft.com/azure/data-explorer/kusto/management/ingestionfailures)을 사용할 수 있습니다.<br>]D;]A;수집 흐름의 다른 부분에서 발생하는 수집 오류는 이 명령의 결과 집합에 표시되지 않습니다. 예를 들어 해당 오류는 데이터 수집 제어 명령이 Azure Data Explorer 데이터 엔진 서비스로 전송되기 전에 발생할 수 있습니다.]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Overview.content.items.HelpGroup.content.items.IngestionLatencyHelp.content.json" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[##### Ingestion Latency]D;]A;]D;]A;Latency of data ingested, from the time the data was received in the cluster until it's ready for query. <br><br>The ingestion latency period depends on the ingestion scenario. <br>As a general rule, an average Ingestion Latency above 15 minutes (over a long period) may indicate a problem]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[##### 수집 대기 시간]D;]A;]D;]A;수집된 데이터의 대기 시간, 즉 클러스터에서 데이터가 수신된 시간부터 쿼리할 준비가 될 때까지의 시간입니다. <br><br>수집 대기 시간은 수집 시나리오에 따라 달라집니다. <br>일반적으로 평균 수집 대기 시간이 장기간 15분 이상이면 문제를 나타낼 수 있습니다.]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Overview.content.items.HelpGroup.content.items.IngestionutilizationHelp.content.json" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[##### Ingestion utilization]D;]A;]D;]A;Percentage of actual resources used to ingest data from the total resources allocated, in the capacity policy, to perform ingestion.<br><br>The default capacity policy is no more than 512 concurrent ingestion operations or 75% of the cluster resources invested in ingestion.<br><br>]D;]A;Average ingestion utilization of 80% or less is a sustainable state for a cluster. Maximum value of ingestion utilization is 100%, which means all cluster ingestion ability is used and an ingestion queue may result.]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[##### 수집 이용률]D;]A;]D;]A;수집을 수행하기 위해 용량 정책에서 할당된 총 리소스 중 데이터를 수집하는 데 사용되는 실제 리소스의 백분율입니다.<br><br>기본 용량 정책은 동시 수집 작업 수 512개 이하 또는 수집에 투입된 클러스터 리소스의 75% 이하입니다.<br><br>]D;]A;평균 수집 이용률이 80% 미만이면 클러스터의 지속 가능한 상태입니다. 수집 이용률이 최댓값인 100%이면 클러스터 수집 능력을 모두 사용하는 것이며 수집 큐가 발생할 수 있습니다.]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Overview.content.items.HelpGroup.content.items.KeepAliveHelp.content.json" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[##### Keep Alive]D;]A;Tracks the responsiveness of the cluster. <br><br>]D;]A;A fully responsive cluster returns value 1 and a blocked or disconnected cluster returns 0.<br><br>]D;]A;An average Keep Alive below 0.995 (over a long period) may indicate a health issue or may indicate that your cluster was suspended (Pay attention to your time range. This rule is important over a long period). <br><br>This tile shows up to 4 significant digits.]D;]A;]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[##### 연결유지]D;]A;클러스터의 응답성을 추적합니다. <br><br>]D;]A;응답성이 뛰어난 클러스터는 값 1을 반환하고 차단되거나 연결이 끊긴 클러스터는 0을 반환합니다.<br><br>]D;]A;평균 연결 유지가 장기간 0.995 이하이면 상태 문제를 나타내거나 클러스터가 일시 중단되었음을 나타낼 수 있습니다(시간 범위에 주의하세요. 이 규칙은 장기간에 걸쳐 중요합니다.) <br><br>이 타일에서는 최대 4개의 유효 숫자를 표시합니다.]D;]A;]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Overview.content.items.HelpGroup.content.items.SucceededIngestionsHelp.content.json" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[##### Succeeded Ingestions]D;]A;]D;]A;Total number of ingestion operations that succeeded.]D;]A;]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[##### 성공한 수집]D;]A;]D;]A;성공한 총 수집 작업 수입니다.]D;]A;]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Overview.content.items.Hhelpparameter.content.parameters.bb21d008530e48a4bf2c41f9b20e9986.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Metrics help]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[메트릭 도움말]]></Val>
-          </Tgt>
+          <Val><![CDATA[Show Metrics Help]]></Val>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overview.content.items.expander.content.items.HeaviestUserCountHeader.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[###### Heaviest Resource Consumers ]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[###### Top Resource Consumers ]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[###### 리소스를 가장 많이 사용하는 소비자 ]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[###### Heaviest Resource Consumers ]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -831,15 +774,6 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.TablesTabMainGroup.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Table Details (Coming Soon)]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[테이블 세부 정보(제공 예정)]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
       <Item ItemId=";items.Tabs.content.links.0.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Overview]]></Val>
@@ -872,6 +806,15 @@
           <Val><![CDATA[Tables]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[테이블]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Tabs.content.links.4.linkLabel" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Cache]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[캐시]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
