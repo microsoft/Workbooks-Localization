@@ -12,6 +12,9 @@
       <Item ItemId=";items.0.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# N-Period Retention]A;]A;N-period retention measures how many of your users come back to perform one of the `RetainingActivities` in a particular period after they perform one of the `CohortingActivities` in your app. For instance, you could be measuring the number of users who returned to use your app on the 10th day from the day they first downloaded it. Seeing the retention trend for days 1-10 will give you an indication of the stickiness of your app. ]A;]A;N-day retention is well-suited for gaming apps, or other kinds of app where you are trying to get users to develop a daily habit.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# Klantbehoud voor periode N]A;]A;Bij klantbehoud voor periode N wordt gemeten hoeveel gebruikers terugkeren om een van de RetainingActivities uit te voeren in een bepaalde periode nadat ze een van de CohortingActivities hebben uitgevoerd in uw app. U kunt bijvoorbeeld het aantal gebruikers meten dat op de tiende dag nadat ze uw app voor het eerst hebben gedownload deze weer gebruiken. Wanneer u de klantbehoudtrend voor de dagen 1-10 bekijkt, krijgt u een beeld van de betrokkenheid bij uw app. ]A;]A;Klantbehoud voor periode N is geschikt voor gaming-apps of andere soorten apps waarbij u ernaar streeft dat gebruikers een dagelijkse gewoonte ontwikkelen.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -27,12 +30,18 @@
       <Item ItemId=";items.10.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## What is a week for a user?]A;]A;The short answer is that it is unique for each user. Our analysis treats each user's retention window seperately - giving an accurate view of their actual behavior with your app. ]A;]A;Consider the example below of two users X and Y in the cohort of April 1-6: ]A;]A;| User | First use of app | Weeks for user |]A;| ----- | :----- | :----- |]A;| X | April 3 | w1 = April 10, w2 = April 17, w3 = April 24  |]A;| Y | April 5 | w1 = April 12, w2 = April 19, w3 = April 26  |]A;]A;Each user gets a seperate retention window. So, if both users came back on April 18, then it considered as Week 2 usage for User X but Week 1 usage for User Y. ]A;]A;This allows the normalization their app use over the retention window - making it seem as if all users in a cohort used the app on the same day. This allow for better analysis and comparision of user behavior.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Wat is een week voor een gebruiker?]A;]A;Het korte antwoord is dat het uniek is voor elke gebruiker. In onze analyse wordt het retentievenster van elke gebruiker afzonderlijk behandeld en wordt een nauwkeurig beeld gegeven van hun gedrag met betrekking tot uw app. ]A;]A;Stelt u zich het onderstaande voorbeeld van twee gebruikers X en Y voor in het cohort van 1-6 april: ]A;]A;| Gebruiker | Eerste gebruik van app | Weken voor gebruiker |]A;| ----- | :----- | :----- |]A;| X | 3 april | w1 = 10 april, w2 = 17 april, w3 = 24 april  |]A;| Y | 5 april | w1 = 12 april, w2 = 19 april, w3 = 26 april  |]A;]A;Elke gebruiker krijgt een afzonderlijk retentievenster. Dus als beide gebruikers op 18 april zijn teruggekeerd, wordt dit beschouwd als gebruik voor week 2 voor gebruiker X, maar als gebruik voor week 1 voor gebruiker Y. ]A;]A;Op deze manier kan hun gebruik van de app voor het retentievenster worden genormaliseerd en lijkt het alsof alle gebruikers in een cohort de app op dezelfde dag hebben gebruikt. Gevolg is dat gebruikersgedrag beter kan worden geanalyseerd en vergeleken.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.11.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Related Workbook Templates]A;* Retention - Bracket]A;* Retention - Unbounded]A;* Cohort Analysis]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Gerelateerde werkmapsjablonen]A;* Klantbehoud - met intervallen]A;* Klantbehoud - onbegrensd]A;* Cohortanalyse]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -66,24 +75,36 @@
       <Item ItemId=";items.6.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Interpreting the data]A;The section below shows a row from a weekly retention report:]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## De gegevens interpreteren]A;In de onderstaande sectie wordt een rij weergegeven uit een wekelijks retentierapport:]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.8.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[| Column | Explanation | Interpretation in the example |]A;| ----- | :----- | :----- |]A;| Cohort | Identifies the cohorting period. | This row explains the retention behavior of users who used your app in the week of April 1 to April 7 |]A;| Users | Number of unique users who used your app in the cohorting period  | 1000 unique users used your app in the week of April 1 to April 7 |]A;| <1 week | Percentage of cohort users who returned to use the app between 1 and 6 days (using it again the same day does not count towards retention)  | 50% or 500 users returned to use your app within the first week |]A;| +1 week | Percentage of cohort users who returned to use the app between 7 and 13 days  | 30% or 300 users returned to use your app a week later |]A;| +N week | Percentage of cohort users who returned to use the app in the Nth week  | 15% or 150 users, when N = 3  |]A;]A;]A;]A;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[| Kolom | Uitleg | Interpretatie in het voorbeeld |]A;| ----- | :----- | :----- |]A;| Cohort | Hiermee wordt de cohortperiode aangegeven. | In deze rij vindt u uitleg over het retentiegedrag van gebruikers die uw app hebben gebruikt in de week van 1 april tot en met 7 april]A;| Gebruikers | Het aantal unieke gebruikers dat uw app heeft gebruikt in de cohortperiode | 1000 unieke gebruikers hebben uw app gebruikt in de week van 1 april tot en met 7 april |]A;| <1 week | Percentage cohortgebruikers die de app tussen 1 en 6 dagen terugkerend hebben gebruikt (gebruik ervan op dezelfde dag telt niet mee voor de retentieperiode) | 50%-of 500-gebruikers gebruikten uw app opnieuw binnen de eerste week |]A;| + 1 week | Percentage cohortgebruikers die de app tussen 7 en 13 dagen opnieuw hebben gebruikt | 30% of 300 gebruikers gebruikten uw app een week later opnieuw |]A;| + N week | Percentage cohortgebruikers die de app opnieuw gebruikten in de Ne week | 15%-of 150-gebruikers, wanneer N = 3 |]A;]A;]A;]A;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.9.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Understanding Retention Parameters]A;| Parameter | Used for |]A;| ----- | ----- |]A;| Retention Period | The period to use in retention calculation. Can be Daily, Weekly or Monthly |]A;| Cohorts To Analyze  | The number of cohorts to analyze. This corresponds to the N in N-period retention |]A;| Cohorting Activities  | The activities that selects a cohort of users. Example: Users who used event *Read Product Review* (cohorting activity). |]A;| Retaining Activities  | The activities that indicates retention of a cohorted user selected above. Example: Users who used event *Read Product Review* (cohorting activity) and returned to use *Purchase Product* (retaining activity). |]A;| Cohorting/Retaining Filters  | An analytics query snippet to further filter the cohorting activity. Example: *&#124; where application_Version = '1.0'* |]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## De parameters voor klantbehoud]A;| Parameter | Gebruikt voor |]A;| ----- | ----- |]A;| Klantbehoudsperiode | De periode die moet worden gebruikt in de berekening van het klantbehoud. Dit kan Dagelijks, Wekelijks of Maandelijks zijn |]A;| Cohorten die moeten worden geanalyseerd  | Het aantal cohorten dat moet worden geanalyseerd. Dit komt overeen met de N in klantbehoud voor periode N |]A;| Cohortactiviteiten  | De activiteiten op basis waarvan een cohort gebruikers wordt geselecteerd. Voorbeeld: gebruikers die de gebeurtenis *Productbeoordeling lezen* (cohortactiviteit) hebben gebruikt. |]A;| Vervolgactiviteiten  | De activiteiten die duiden op klantbehoud van een gebruiker uit een cohort die hierboven is geselecteerd. Voorbeeld: gebruikers die de gebeurtenis *Productbeoordeling lezen* (cohortactiviteit) hebben gebruikt en zijn teruggekeerd om *Product aanschaffen* (vervolgactiviteit) te gebruiken. |]A;| Filters voor cohort- en vervolgactiviteiten  | Een analytisch queryfragment om de cohortactiviteit verder te filteren. Voorbeeld: *&#124; where application_Version = '1.0'* |]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[N-Period Retention]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Retentie periode N]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
