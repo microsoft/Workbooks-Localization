@@ -21,6 +21,9 @@
       <Item ItemId=";items.AgentHealthOverviewGroup.content.items.AgentDetailsQuery.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Agent Details]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Detalhes do Agente]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -42,24 +45,36 @@
       <Item ItemId=";items.AgentHealthOverviewGroup.content.items.AgentTop10ProcessorUtilizationQuery.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Top 10 Machines - High Windows Agent Processor Utilization]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Dez Principais Computadores – Utilização Alta do Processador do Agente do Windows]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.AgentHealthOverviewGroup.content.items.DirectAgentsSumQuery.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Direct Agents]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Agentes Diretos]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.AgentHealthOverviewGroup.content.items.OpsMgrAgentSumQuery.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[SCOM Agents]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Agentes do SCOM]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.AgentHealthOverviewGroup.content.items.OpsMgrMSSumQuery.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[SCOM Mgmt Servers]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Servidores de Gerenciamento do SCOM]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -75,12 +90,18 @@
       <Item ItemId=";items.AgentHealthOverviewGroup.content.items.SelectedAgentProcUtilTrendQuery.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Windows Agent processor utilization trend]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Tendência de utilização do processador do Agente do Windows]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.AgentHealthOverviewGroup.content.items.text10.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[This chart returns the top 10 machines when the Log Analytics Windows agent is using too much processor time in the last 24 hours. It calculates the total CPU utlization of the Windows agent by sampling the CPU utilization for the agent process (HealthService.exe) and its child monitoring host process (MonitoringHost.exe). Our recommendation is the agent should not exceed 25% total processor utilization for greater than 30 minutes. ]D;]A;]D;]A;]D83D;]DCA1; *Click on a row to see more details about the machine.*]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Esse gráfico retornará os dez principais computadores quando o agente do Windows do Log Analytics estiver usando muito tempo de processador nas últimas 24 horas. Ele calcula o total de utilização de CPU do agente do Windows realizando uma amostragem da utilização de CPU para o processo de agente (HealthService.exe) e o respectivo processo de host de monitoramento filho (MonitoringHost.exe). Nossa recomendação é que o agente não deve exceder 25% da utilização total do processador por mais de 30 minutos. ]D;]A;]D;]A;]D83D;]DCA1; *Clique em uma linha para ver mais detalhes sobre o computador.*]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -93,12 +114,18 @@
       <Item ItemId=";items.AgentHealthOverviewGroup.content.items.text14.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[**Agent summary details**]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[**Detalhes do resumo do agente**]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.GetStartedGroup.content.items.GetStartedText.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Get started]D;]A;]D;]A;Welcome to the Azure Monitor Log Analytics agent workbook. This workbook is designed to provide you with an understanding of:]D;]A;* How many agents are reporting to my workspace and how are they connected?]D;]A;* What is the agent connected state? How many are actively connected and reporting and how many aren't?]D;]A;* Are any Windows agents affecting the resource utlization of the host?]D;]A;]D;]A;You can drill-down to review the heartbeat trend for a selected agent machine, and its performance utilization (only available on Windows operating system at this time).]D;]A;]D;]A;The following tabs include performance charts that show resource utilization from the agent's related processes:]D;]A;]D;]A;1. **Health Service** - The *HealthService* is the primary agent process responsible for maintaining communication between the agent and Azure Monitor, downloading configuration based on insights and solutions enabled in the workspace, processing the configuration, and sending data collected to a Log Analytics workspace. ]D;]A;2. **Monitoring Host** - The *MonitoringHost* is a child monitoring host process responsible for performing monitoring activities defined in the downloaded configuration from Azure Monitor, such as:]D;]A;]D;]A;    * Monitoring and collecting Windows event log data.]D;]A;    * Monitoring and collecting Log-based file data.]D;]A;    * Monitoring and collecting performance counter data.]D;]A;]D;]A;For additional information about the Log Analytics agent, see [agent overview]5D;(https://docs.microsoft.com/azure/azure-monitor/platform/agents-overview#log-analytics-agent).]D;]A;]D;]A;]D;]A;## Requirements]D;]A;]D;]A;* A [Log Analytics workspace]5D;(https://docs.microsoft.com/azure/azure-monitor/platform/design-logs-deployment).]D;]A;]D;]A;In order to analyze the performance utlization of the Log Analytics Windows agent, you need to enable the collection of the following performance counters:]D;]A;* Health Service Management Groups(*)\Send Queue % Used ]D;]A;* Health Service(*)\Module Count]D;]A;* Health Service(*)\Workflow Count ]D;]A;* Process(HealthService)\% Processor Time ]D;]A;* Process(HealthService)\Handle Count ]D;]A;* Process(HealthService)\Private Bytes ]D;]A;* Process(MonitoringHost*)\% Processor Time ]D;]A;* Process(MonitoringHost*)\Private Bytes ]D;]A;]D;]A;If you are unfamiliar with how to enable performance counters in your workspace, see [Configure performance data source]5D;(https://docs.microsoft.com/azure/azure-monitor/platform/data-sources-performance-counters#configuring-data-sources).]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# Introdução]D;]A;]D;]A;Bem-vindo(a) à pasta de trabalho do agente do Log Analytics do Azure Monitor. Essa pasta de trabalho foi criada para fornecer uma compreensão de:]D;]A;* Quantos agentes estão relatando para o meu workspace e como eles estão conectados?]D;]A;* O que é o estado conectado do agente? Quantos deles estão conectados e relatando ativamente e quantos não estão?]D;]A;* Algum agente do Windows está afetando a utilização de recursos do host?]D;]A;]D;]A;Você pode fazer busca detalhada para examinar a tendência da pulsação de um computador de agente selecionado e a utilização de desempenho dele (disponível apenas no sistema operacional Windows neste momento).]D;]A;]D;]A;As guias a seguir incluem gráficos de desempenho que mostram a utilização de recursos dos processos relacionados do agente:]D;]A;]D;]A;1. **Serviço de Integridade** – o *HealthService* é o processo de agente primário responsável por manter a comunicação entre o agente e Azure Monitor, baixar a configuração com base em insights e soluções habilitadas no workspace, processar a configuração e enviar os dados coletados para um workspace do Log Analytics. ]D;]A;2. **Host de Monitoramento** – O *MonitoringHost * é um processo de host de monitoramento filho responsável pela execução de atividades de monitoramento definidas na configuração baixada do Azure Monitor, como:]D;]A;]D;]A;    * Monitoramento e coleta de dados do log de eventos do Windows.]D;]A;    * Monitoramento e coleta de dados de arquivos baseados em Log.]D;]A;    * Monitoramento e coleta de dados do contador de desempenho.]D;]A;]D;]A;Para obter informações adicionais sobre o agente do Log Analytics, confira [visão geral do agente]5D;(https://docs.microsoft.com/azure/azure-monitor/platform/agents-overview#log-analytics-agent).]D;]A;]D;]A;]D;]A;## Requisitos]D;]A;]D;]A;* Um [workspace do Log Analytics]5D;(https://docs.microsoft.com/azure/azure-monitor/platform/design-logs-deployment).]D;]A;]D;]A;Para analisar o utilização de desempenho do agente do Windows do Log Analytics, é necessário habilitar a coleta dos seguintes contadores de desempenho:]D;]A;* Grupos de Gerenciamento do Serviço de Integridade(*)\% da Fila de Envio Usada ]D;]A;* Serviço de Integridade(*)\Contagem de Módulos]D;]A;* Serviço de Integridade(*)\Contagem de Fluxos de Trabalho ]D;]A;* Processo(HealthService)\% de Tempo de Processador ]D;]A;* Processo(HealthService)\Contagem de Identificadores ]D;]A;* Processo(HealthService)\Bytes Privados ]D;]A;* Processo(MonitoringHost*)\% de Tempo de Processador ]D;]A;* Processo(MonitoringHost*)\Bytes Privados ]D;]A;]D;]A;Se você não estiver familiarizado com o procedimento para habilitação de contadores de desempenho no workspace, confira [Configurar fonte de dados de desempenho]5D;(https://docs.microsoft.com/azure/azure-monitor/platform/data-sources-performance-counters#configuring-data-sources).]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -123,12 +150,18 @@
       <Item ItemId=";items.Navigationlinks.content.links.2.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[ Health Service]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[ Serviço de Integridade]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Navigationlinks.content.links.3.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[ Monitoring Host]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[ Host de Monitoramento]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -144,12 +177,18 @@
       <Item ItemId=";items.text0.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Log Analytics Agent Health]D;]A;Use this report to analyze the the health of the Log Analytics agent deployed in your workspace. ]D;]A;<br/>]D;]A;<br/>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Integridade do Agente do Log Analytics]D;]A;Use esse relatório para analisar a integridade do agente do Log Analytics implantado no workspace. ]D;]A;<br/>]D;]A;<br/>]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Log Analytics Agent Health]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Integridade do Agente do Log Analytics]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

@@ -21,30 +21,45 @@
       <Item ItemId=";items.1.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Activity Selection]A;Use these fields to set events that that correspond to interesting user activities. The `Understanding Cohort Analysis Parameters` section at the bottom describes these parameters in detail.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Tevékenységkiválasztás]A;Ezekkel a mezőkkel állíthatja be az Önt érdeklő felhasználói tevékenységeknek megfelelő eseményeket. A lenti, A kohorszelemzési paraméterek áttekintése című szakasz részletesen leírja ezeket a paramétereket.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.10.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Understanding Cohort Analysis Parameters]A;| Parameter | Used for |]A;| ----- | ----- |]A;| Cohort Type | The dimension by which to split the retention numbers |]A;| Retention Period | The period to use in retention calculation. Can be Daily, Weekly or Monthly |]A;| Periods To Analyze  | The number of retention periods to analyze.  |]A;| Cohorting Activities  | The activities that selects a cohort of users. Example: Users who used event *Read Product Review* (cohorting activity). |]A;| Retaining Activities  | The activities that indicates retention of a cohorted user selected above. Example: Users who used event *Read Product Review* (cohorting activity) and returned to use *Purchase Product* (retaining activity). |]A;| Cohorting/Retaining Filters  | An analytics query snippet to further filter the cohorting activity. Example: *&#124; where application_Version = '1.0'* |]A;| Show  | The metric to visualize in the table. *Retention Rate* shows the rate at which users returned for the time period in the column. *Retained Users* is raw number of retained users for the time period. *Potentially Retainable Users* is the number of users who could potentially have been retained for that period.' |]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## A kohorszelemzési paraméterek áttekintése]A;| Paraméter | Használati mód |]A;| ----- | ----- |]A;| Kohorsztípus | A megtartási számok felosztására használt dimenzió |]A;| Megtartási időszak | A megtartási számításhoz használt időszak. Lehet napi, heti vagy havi |]A;| Elemzendő időszakok | Az elemezni kívánt megtartási időszakok száma.  |]A;| Kohorsztevékenységek | A felhasználók egy kohorszát kijelölő tevékenységek. Példa: a *Termékértékelést olvasott* (kohorsztevékenység) eseményt kiváltó felhasználók. |]A;| Megtartó tevékenységek | A fent kiválasztott kohorszba tartozó felhasználó megtartását jelző tevékenységek. Példa: a *Termékértékelést olvasott* (kohorsztevékenység) és *Termékvásárlás* (megtartótevékenység) eseményt kiváltó felhasználók.  |]A;| Kohorsz- és megtartási szűrők | Egy Analytics-lekérdezési kódrészlet a kohorsztevékenység további szűréséhez. Példa: *&#124; where application_Version = '1.0'* |]A;| Megjelenítés | A táblában megjelenítendő metrika. A *Megtartási arány* az oszlopban szereplő időszakban visszatérő felhasználók arányát mutatja. A *Megtartott felhasználók* a megtartott felhasználók nyers számát mutatja az adott időszakban. A *Potenciálisan megtartható felhasználók* az adott időszakban esetlegesen megtartható felhasználók számát mutatja. |]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.11.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## What is a week for a user?]A;The short answer is that it is unique for each user. Our analysis treats each user's retention window seperately - giving an accurate view of their actual behavior with your app. ]A;]A;Consider the example below of two users X and Y: ]A;]A;| User | First use of app | Weeks for user |]A;| ----- | :----- | :----- |]A;| X | April 3 | w1 = April 10, w2 = April 17, w3 = April 24  |]A;| Y | April 5 | w1 = April 12, w2 = April 19, w3 = April 26  |]A;]A;Each user gets a seperate retention window. So, if both users came back on April 18, then it considered as Week 2 usage for User X but Week 1 usage for User Y. ]A;]A;This allows the normalization their app use over the retention window - making it seem as if all users in a cohort used the app on the same day. This allow for better analysis and comparision of user behavior.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Mit jelent egy hét a felhasználók számára?]A;A rövid válasz az, hogy ez minden felhasználó esetében egyedi. Az elemzésünk minden felhasználó megtartási időablakát külön kezeli – így pontos áttekintést ad az alkalmazással kapcsolatos tényleges viselkedésükről.]A;]A;Tekintse meg az alábbi példát, amelyben X és Y felhasználó adatai szerepelnek:]A;]A;| Felhasználó | Alkalmazás első használata | Felhasználói hetek |]A;| ----- | :----- | :----- |]A;| X | Április 3. | w1 = április 10., w2 = április 17., w3 = április 24. |]A;| Y | Április 5. | w1 = április 12., w2 = április 19., w3 = április 26. |]A;]A;Minden felhasználó külön megtartási időablakot kap. Tehát, ha mindkét felhasználó visszatér április 18-án is, akkor ez az X felhasználó esetében második heti használatnak, míg Y felhasználó esetében első heti használatnak minősül.]A;]A;Ez a beállítás lehetővé teszi az alkalmazás használatának normalizálását a megtartási időablakban – így úgy tűnhet, mintha egy kohorsz összes felhasználója ugyanazon a napon használta volna az alkalmazást. Ez a beállítás lehetővé teszi a felhasználói viselkedés jobb elemzését és összehasonlítását.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.12.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Related Workbook Templates]A;* Retention - N-Period]A;* Retention - Unbounded]A;* Retention - Bracket]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Kapcsolódó munkafüzetsablonok]A;* Megtartás – N-időszak]A;* Megtartás – határolatlan]A;* Megtartás – időszak]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.3.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Cohort Analysis Parameters]A;Use these fields to customize your retention settings.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Kohorszelemzés paraméterei]A;Ezeket a mezőket a megtartási beállítások testreszabására használhatja.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -69,18 +84,27 @@
       <Item ItemId=";items.5.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Cohort Analysis Table]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Kohorszelemzési tábla]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.7.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Interpreting the table]A;This section shows how to read and interpret a retention table. The section below shows a row from a weekly retention report that we will try to read.]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## A tábla értelmezése]A;Ez a szakasz a megtartási táblák olvasását és értelmezését szemlélteti. Az alábbi szakasz a heti megtartási jelentés egy sorát jeleníti meg, amelyen szemléltetjük az olvasás módját.]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.9.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[| Column | Explanation | Interpretation in the example |]A;| ----- | :----- | :----- |]A;| Cohort | Identifies the cohorting criteria specified by the CohortType parameter. | This row explains the retention behavior of users who used the 'Add to Cart' event. |]A;| Total Users | Number of unique users who used the Add to Cart feature  | 1000 unique users added an item to their cart in your app |]A;| <1 week | Percentage of cohort users who returned between 1 and 6 days after using 'Add to Cart' (using it again the same day does not count towards retention)  | 50% or 500 users returned to use your app within the first week after they added an item to their cart |]A;| +1 week | Percentage of cohort users who returned between 7 and 13 days after using 'Add to Cart'  | 30% or 300 users returned to use your app a week later |]A;| +N week | Percentage of cohort users who returned in the Nth week after 'Add to Cart'  | 15% or 150 users, when N = 3  |]A;]A;]A;]A;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[| Oszlop | Magyarázat | Értelmezés a példában |]A;| ----- | :----- | :----- |]A;| Kohorsz | Azonosítja a CohortType paraméter által megadott kohorszfeltételeket. | Ez a sor a „Kosárba helyezés” eseményt használó felhasználók megtartási viselkedését ismerteti. |]A;| Összes felhasználó | A kosárba helyezés funkciót használó egyedi felhasználók száma | 1000 egyedi felhasználó helyezett elemeket a kosárba az alkalmazásban |]A;| <1 hét | Azon kohorszbeli felhasználók százalékos aránya, akik visszatértek 1–6 napon belül azt követően, hogy a kosárba helyeztek valamit (a kosárba helyezési esemény napján visszatérés nem számít bele a megtartásba) | 50%, azaz 500 felhasználó tért vissza az alkalmazásba, miután a kosárba helyezett egy elemet |]A;| +1 hét | A „Kosárba helyezés” eseményt követő 7–13 napon belül visszatérő kohorszbeli felhasználók százalékos aránya | 30%, azaz 300 felhasználó tért vissza az alkalmazásba egy héttel később |]A;| +N hét | Azon kohorszbeli felhasználók százalékos aránya, akik visszatértek N héttel később azt követően, hogy a kosárba helyeztek valamit | 15%, azaz 150 felhasználó, ha N = 3 |]A;]A;]A;]A;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

@@ -12,24 +12,36 @@
       <Item ItemId=";items.Commonparameterblock.content.parameters.4548f4fe013042c9b796385cd12ccb24.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Use this parameter to essentially set the number of user sessions to use in calculations (sampling). This allows you to find the right balance between performance and accuracy for your analysis. Optimize for: Performance = 10,000 sessions, Balance = 100,000 samples, Accuracy = 1,000,000 sessions]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[이 매개 변수를 사용하여 계산에 사용할 사용자 세션 수를 설정합니다(샘플링). 그러면 분석 정확도와 성능 간의 적절한 균형을 찾을 수 있습니다. 다음에 대해 최적화합니다. 성능 = 세션 10,000개, 균형 = 샘플 100,000개, 정확도 = 세션 1,000,000개]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Descriptiontext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Analysis of Page Views]A;Page views correspond to user activity in your app. Understanding how your users interact with your pages will give you good insights into what is working in your app and what aspects need improvements. ]A;]A;This report will help you understand common page view behaviors like:]A;* Usage]A;* Time spent on page]A;* Time to first interaction]A;* Exit rates ]A;]A;If your telemetry does not include page views, then follow these [instructions]5D;(https://docs.microsoft.com/en-us/azure/application-insights/app-insights-javascript) to begin collecting -- it is relatively straightforward.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# 페이지 보기 분석]A;페이지 보기는 앱의 사용자 활동에 해당합니다. 사용자의 페이지 조작 현황을 파악하면 앱에서 잘 구현된 부분과 개선해야 할 부분에 대한 유용한 인사이트를 얻을 수 있습니다. ]A;]A;이 보고서는 다음과 같은 일반적인 페이지 보기 동작을 파악하는 데 도움이 됩니다.]A;* 사용량]A;* 페이지에 소요된 시간]A;* 첫 번째 조작까지의 시간]A;* 종료율 ]A;]A;원격 분석에 페이지 보기가 포함되지 않는 경우에는 이 [지침]5D;(https://docs.microsoft.com/en-us/azure/application-insights/app-insights-javascript)에 따라 수집을 시작하세요. 비교적 간단합니다.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.PageExitRatesfooter.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[- The calculation may use sampling based on the `OptimizeCalculationsFor` parameter. ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[- 'OptimizeCalculationsFor' 매개 변수 기반의 샘플링이 계산에 사용될 수도 있습니다. ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.PageExitRatestext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[---]A;## Page Exit Rates]A;A page view is said to have contributed to an _exit_ when it is the last page viewed in the session. The user is presumed to have exited your app -- either by navigating to another app or closing the app/browser. ]A;]A;A page's _exit rate_ is the percentages of views that were the last in the session. ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[---]A;## 페이지 종료율]A;페이지 보기가 세션에서 마지막으로 본 페이지인 경우 '종료'에 기여했다고 말합니다. 사용자가 다른 앱으로 이동하거나 앱/브라우저를 닫아 앱을 종료한 것으로 간주됩니다. ]A;]A;페이지 _종료율_은 세션의 마지막 보기 백분율입니다. ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -38,55 +50,76 @@
           <Val><![CDATA[- The calculations may use sampling based on the `OptimizeCalculationsFor` parameter. ]A;- Time Spent on Page does not consider exit pages (last page of the session) in this calculations. The `Sampled Page Views` column may be fewer than the sampling count of {OptimizeCalculationsFor} because of this.]A;]]></Val>
         </Str>
         <Disp Icon="Str" />
-        <Cmts>
-          <Cmt Name="Dev"><![CDATA[{Locked={OptimizeCalculationsFor}}]]></Cmt>
-        </Cmts>
       </Item>
       <Item ItemId=";items.Timespentonpageparameterblock.content.parameters.0411936a4cb944dd946db449ce3b284e.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Use this parameter to filter our page views that took more time that is possible (for example left open in a non-active tab). The default is 1 hour. ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[이 매개 변수를 사용하여 가능한 시간보다 오래 사용된 페이지 보기(예: 비활성 탭에 열려 있는 보기)를 필터링할 수 있습니다. 기본값은 1시간입니다. ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Timespentonpagetext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[---]A;## Time Spent on Page]A;This report helps you understand the time spent by customers in your pages. Longer time spent pages usually indicates good engagement and is generally the desired behavior.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[---]A;## 페이지에 소요된 시간]A;이 보고서는 고객이 페이지에 소요한 시간을 파악하는 데 도움이 됩니다. 페이지에 소요된 시간이 길수록 참여도가 높음을 나타내며, 일반적으로 바람직한 동작입니다.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.TimetoFirstInteractionfooter.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[- The calculation may use sampling based on the `OptimizeCalculationsFor` parameter. ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[- 'OptimizeCalculationsFor' 매개 변수 기반의 샘플링이 계산에 사용될 수도 있습니다. ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.TimetoFirstInteractionparameterblock.content.parameters.65e9a4922e89477aa041e99a61481c65.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[For users, the first use is calculated as the first use within the time range. It is possible that the user started using your app before the time range.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[사용자의 첫 번째 사용은 시간 범위 내의 첫 번째 사용으로 계산됩니다. 사용자가 시간 범위 이전에 앱 사용을 시작했을 수 있습니다.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.TimetoFirstInteractiontext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[---]A;## Time to First Interaction]A;This report helps you understand the time taken by customers to first interact with critical features of your app. It can help you uncover issues with discoverability of your features or the intuitiveness of your app's UI/flow.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[---]A;## 첫 번째 조작까지의 시간]A;이 보고서는 고객이 앱의 중요 기능을 처음 조작하기까지 걸린 시간을 파악하는 데 도움이 됩니다. 이 보고서를 통해 기능 검색이나 앱 UI/흐름의 직관성과 관련된 이슈를 찾아낼 수 있습니다.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Usagefootertext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[- The `As % of App Users/Sessions/Views` columns compare the usage of the selected page view with that of the whole app.]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[- '앱 사용자/세션/보기의 % 기준' 열은 선택한 페이지 보기의 사용량과 전체 앱의 사용량을 비교합니다.]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Usagesectiontext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[---]A;## Usage]A;This section helps you understand how the pages of your app are used -- in terms of # of users, sessions and views. ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[---]A;## 사용량]A;이 섹션은 사용자, 세션, 보기 수 측면에서 앱 페이지의 사용 현황을 파악하는 데 도움이 됩니다. ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Analysis of Page Views]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[페이지 보기 분석]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

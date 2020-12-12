@@ -12,12 +12,18 @@
       <Item ItemId=";items.AgentHealthOverviewGroup.content.items.AgentDetailsQuery.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Looks like you have no agents sending heartbeat information to this workspace. Pick a different workspace.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[このワークスペースに対してハートビート情報を送信しているエージェントはないようです。別のワークスペースを選択してください。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.AgentHealthOverviewGroup.content.items.AgentDetailsQuery.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Agent Details]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[エージェントの詳細]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -30,48 +36,72 @@
       <Item ItemId=";items.AgentHealthOverviewGroup.content.items.AgentHealthStateQuery.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Looks like you have no agents sending heartbeat information in this time range. Pick a larger time range or a different workspace.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[この時間の範囲ではハートビート情報を送信しているエージェントはないようです。より大きい時間の範囲または別のワークスペースを選択してください。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.AgentHealthOverviewGroup.content.items.AgentTop10ProcessorUtilizationQuery.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Top 10 Machines - High Windows Agent Processor Utilization]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[上位 10 台のマシン - Windows エージェントのプロセッサ使用率が高い]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.AgentHealthOverviewGroup.content.items.DirectAgentsSumQuery.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Direct Agents]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[直接エージェント]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.AgentHealthOverviewGroup.content.items.OpsMgrAgentSumQuery.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[SCOM Agents]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[SCOM エージェント]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.AgentHealthOverviewGroup.content.items.OpsMgrMSSumQuery.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[SCOM Mgmt Servers]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[SCOM 管理サーバー]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.AgentHealthOverviewGroup.content.items.SelectedAgentHeartbeatTrendQuery.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Heartbeat volume trend]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[ハートビート ボリュームの傾向]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.AgentHealthOverviewGroup.content.items.SelectedAgentProcUtilTrendQuery.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Windows Agent processor utilization trend]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Windows エージェントのプロセッサ使用率の傾向]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.AgentHealthOverviewGroup.content.items.text10.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[This chart returns the top 10 machines when the Log Analytics Windows agent is using too much processor time in the last 24 hours. It calculates the total CPU utlization of the Windows agent by sampling the CPU utilization for the agent process (HealthService.exe) and its child monitoring host process (MonitoringHost.exe). Our recommendation is the agent should not exceed 25% total processor utilization for greater than 30 minutes. ]D;]A;]D;]A;]D83D;]DCA1; *Click on a row to see more details about the machine.*]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Log Analytics の Windows エージェントによる過去 24 時間のプロセッサ時間の使用が多すぎる場合、上位 10 台のマシンがこのグラフに返されます。Windows エージェントの合計 CPU 使用率は、エージェント プロセス (HealthService.exe) とその子の監視ホスト プロセス (MonitoringHost.exe) の CPU 使用率をサンプリングして計算されます。エージェントが合計プロセッサ使用率の 25% を上回った状態が 30 分を超えないようにすることをお勧めします。]D;]A;]D;]A;]D83D;]DCA1; "*マシンの詳細を表示するには、行をクリックしてください。*"]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -84,12 +114,18 @@
       <Item ItemId=";items.AgentHealthOverviewGroup.content.items.text14.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[**Agent summary details**]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[**エージェントの概要の詳細**]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.GetStartedGroup.content.items.GetStartedText.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Get started]D;]A;]D;]A;Welcome to the Azure Monitor Log Analytics agent workbook. This workbook is designed to provide you with an understanding of:]D;]A;* How many agents are reporting to my workspace and how are they connected?]D;]A;* What is the agent connected state? How many are actively connected and reporting and how many aren't?]D;]A;* Are any Windows agents affecting the resource utlization of the host?]D;]A;]D;]A;You can drill-down to review the heartbeat trend for a selected agent machine, and its performance utilization (only available on Windows operating system at this time).]D;]A;]D;]A;The following tabs include performance charts that show resource utilization from the agent's related processes:]D;]A;]D;]A;1. **Health Service** - The *HealthService* is the primary agent process responsible for maintaining communication between the agent and Azure Monitor, downloading configuration based on insights and solutions enabled in the workspace, processing the configuration, and sending data collected to a Log Analytics workspace. ]D;]A;2. **Monitoring Host** - The *MonitoringHost* is a child monitoring host process responsible for performing monitoring activities defined in the downloaded configuration from Azure Monitor, such as:]D;]A;]D;]A;    * Monitoring and collecting Windows event log data.]D;]A;    * Monitoring and collecting Log-based file data.]D;]A;    * Monitoring and collecting performance counter data.]D;]A;]D;]A;For additional information about the Log Analytics agent, see [agent overview]5D;(https://docs.microsoft.com/azure/azure-monitor/platform/agents-overview#log-analytics-agent).]D;]A;]D;]A;]D;]A;## Requirements]D;]A;]D;]A;* A [Log Analytics workspace]5D;(https://docs.microsoft.com/azure/azure-monitor/platform/design-logs-deployment).]D;]A;]D;]A;In order to analyze the performance utlization of the Log Analytics Windows agent, you need to enable the collection of the following performance counters:]D;]A;* Health Service Management Groups(*)\Send Queue % Used ]D;]A;* Health Service(*)\Module Count]D;]A;* Health Service(*)\Workflow Count ]D;]A;* Process(HealthService)\% Processor Time ]D;]A;* Process(HealthService)\Handle Count ]D;]A;* Process(HealthService)\Private Bytes ]D;]A;* Process(MonitoringHost*)\% Processor Time ]D;]A;* Process(MonitoringHost*)\Private Bytes ]D;]A;]D;]A;If you are unfamiliar with how to enable performance counters in your workspace, see [Configure performance data source]5D;(https://docs.microsoft.com/azure/azure-monitor/platform/data-sources-performance-counters#configuring-data-sources).]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# はじめに]D;]A;]D;]A;Azure Monitor Log Analytics エージェント ブックへようこそ。このブックは、次の点に関する情報を提供するために設計されています。]D;]A;* 自分のワークスペースに報告しているエージェントの数とその接続方法。]D;]A;* エージェントの接続の状態。アクティブに接続および報告しているエージェントの数と、そうでないエージェントの数。]D;]A;* ホストのリソース使用率に影響を与えている Windows エージェントが存在するかどうか。]D;]A;]D;]A;ドリルダウンして、選択したエージェント マシンのハートビートの傾向とそのパフォーマンス使用率を確認できます (現在 Windows オペレーティング システムでのみ利用可能)。]D;]A;]D;]A;次のタブには、エージェントの関連プロセスからのリソース使用率を示すパフォーマンス グラフが含まれています。]D;]A;]D;]A;1. **ヘルス サービス** - *HealthService* は、エージェントと Azure Monitor 間の通信を維持し、ワークスペースで有効な分析情報やソリューションに基づく構成をダウンロードし、構成を処理し、収集されたデータを Log Analytics ワークスペースに送信するためのプライマリ エージェント プロセスです。]D;]A;2. **監視ホスト** - *MonitoringHost* は、ダウンロード済みの構成で定義された監査アクティビティを Azure Monitor から実行するための子監査ホスト プロセスです。これに含まれるのは以下のとおりです。]D;]A;]D;]A;    * Windows イベント ログ データの監査と収集。]D;]A;    * ログベースのファイル データの監査と収集。]D;]A;    * パフォーマンス カウンター データの監査と収集。]D;]A;]D;]A;Log Analytics エージェントの詳細については、[エージェントの概要]5D;(https://docs.microsoft.com/azure/azure-monitor/platform/agents-overview#log-analytics-agent) に関するページを参照してください。]D;]A;]D;]A;]D;]A;## 要件]D;]A;]D;]A;* [Log Analytics ワークスペース]5D;(https://docs.microsoft.com/azure/azure-monitor/platform/design-logs-deployment)。]D;]A;]D;]A;Log Analytics Windows エージェントのパフォーマンス使用率を分析するには、次のパフォーマンス カウンターの収集を有効にする必要があります。]D;]A;* Health Service Management Groups(*)\Send Queue % Used ]D;]A;* Health Service(*)\Module Count]D;]A;* Health Service(*)\Workflow Count ]D;]A;* Process(HealthService)\% プロセッサ時間 ]D;]A;* Process(HealthService)\ハンドルの数 ]D;]A;* Process(HealthService)\プライベート バイト ]D;]A;* Process(MonitoringHost*)\% プロセッサ時間 ]D;]A;* Process(MonitoringHost*)\プライベート バイト ]D;]A;]D;]A;ワークスペースでパフォーマンス カウンターを有効にする方法がわからない場合は、[パフォーマンス データ ソースの構成]5D;(https://docs.microsoft.com/azure/azure-monitor/platform/data-sources-performance-counters#configuring-data-sources) に関するページを参照してください。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -97,7 +133,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Get Started]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[概要]]></Val>
+            <Val><![CDATA[開始する]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -114,18 +150,27 @@
       <Item ItemId=";items.Navigationlinks.content.links.2.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[ Health Service]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[ ヘルス サービス]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Navigationlinks.content.links.3.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[ Monitoring Host]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[監視ホスト]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.parameters1.content.parameters.15920bec4a724e23a0eec7b4e0b7acb4.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Unhealthy Criteria]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[異常な条件]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

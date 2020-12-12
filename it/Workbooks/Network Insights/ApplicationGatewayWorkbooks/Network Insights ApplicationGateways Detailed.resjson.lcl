@@ -276,48 +276,72 @@
       <Item ItemId=";items.text17.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Throughput]D;]A;*Throughput* is average Megabits/sec processed by the Application Gateway.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Velocità effettiva]D;]A;La *Velocità effettiva* è costituita dalla media di megabit/sec elaborati dal gateway applicazione.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text17Copy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### CPU Utilization]D;]A;Displays the utilization of the CPUs allocated to the Application Gateway. Under normal conditions, CPU usage should not regularly exceed 90%, as this may cause latency in the websites hosted behind the Application Gateway and disrupt the client experience. You can indirectly control or improve CPU utilization by modifying the configuration of the Application Gateway by increasing the instance count or by moving to a larger SKU size, or doing both.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Utilizzo CPU]D;]A;Visualizza l'utilizzo delle CPU allocate al gateway applicazione. In condizioni normali, l'utilizzo della CPU non deve superare regolarmente il 90%, in quanto ciò può causare latenza nei siti Web ospitati dietro il gateway applicazione e danneggiando l'esperienza client. Per controllare o migliorare indirettamente l'utilizzo della CPU, è possibile modificare la configurazione del gateway applicazione aumentando il numero di istanze, passando a uno SKU con prestazioni superiori o eseguire entrambe le operazioni.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text17CopyCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Capacity Units]D;]A;The capacity units consumed by your Application Gateway is determined by 3 dimensions: *compute unit*, *current connections*, and *throughput*. Each capacity unit is composed of at most: 1 *compute unit*, or 2500 *current connections*, or 2.22-Mbps *throughput*. Check the value of the 3 metrics below to infer variation in which of the three dimensions led to the changes in *Capacity Units*]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Unità di capacità]D;]A;Le unità di capacità utilizzate dal gateway applicazione sono determinate da 3 dimensioni: *unità di calcolo*, *connessioni correnti* e *velocità effettiva*. Ogni unità di capacità è costituita da un massimo di: 1 *unità di calcolo*, 2500 *connessioni correnti* o da una *velocità effettiva* di 2,22-Mbps. Controllare il valore delle 3 metriche sotto per dedurre la variazione in base a cui le tre dimensioni hanno generato le modifiche in *Unità di capacità*]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text17CopyCopyCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Compute Units]D;]A;*Compute unit* is a measure of processor capacity consumed. Factors affecting compute unit are TLS connections/sec, URL Rewrite computations, and WAF rule processing.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Unità di calcolo]D;]A;Le *unità di calcolo* sono una misura della capacità del processore utilizzata. I fattori che influiscono sull'unità di calcolo sono le connessioni TLS/sec, i calcoli di riscrittura URL e l'elaborazione delle regole WAF.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text17CopyCopyCopyCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Current connections]D;]A;*Current connections* is a measure of established TCP connections to the application gateway.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Connessioni correnti]D;]A;Le *connessioni correnti* sono una misura delle connessioni TCP stabilite con il gateway applicazione.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text17CopyCopyb.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[#### Received bytes]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[#### Byte ricevuti]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text17Copyb.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[#### Sent bytes]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[#### Byte inviati]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text1Copy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[#### Application gateway total time vs Backend last byte response time]D;]A;]D;]A;*Application gateway total time* is the interval from the time when Application Gateway receives the first byte of the HTTP request to the time when the last response byte has been sent to the client. This equals the *Backend last byte response time* + the processing time taken by Application Gateway + *Client rtt* (only when the window size of the client TCP request is small relative to the response). Compare the 2 metrics to determine whether the issue is with the Application Gateway or the backend.]D;]A;If the *Application gateway total time* has a spike but the Backend last byte response time is stable, then it can either be a sign of performance bottleneck at the Application Gateway or a bottleneck in the network between the client and Application Gateway (only when the window size of the client TCP request is small relative to the response). ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[#### Tempo totale del gateway applicazione e Tempo di risposta ultimo byte del back-end]D;]A;]D;]A;Il *Tempo totale del gateway applicazione* è l'intervallo dal momento in cui il gateway applicazione riceve il primo byte della richiesta HTTP fino al momento in cui l'ultimo byte di risposta è stato inviato al client. Questo equivale al *Tempo di risposta ultimo byte del back-end* + il tempo di elaborazione impiegato dal gateway applicazione + *Tempo di round trip client* (solo quando l'intervallo della finestra della richiesta TCP client è piccolo rispetto alla risposta). Confrontare le 2 metriche per determinare se il problema riscontrato è relativo al gateway applicazione o al back-end.]D;]A;Se il *Tempo totale del gateway applicazione* mostra un picco ma il tempo di risposta dell'ultimo byte del back-end è stabile, è possibile che si sia verificato un collo di bottiglia delle prestazioni a livello del gateway applicazione o un collo di bottiglia nella rete tra il client e il gateway applicazione (solo quando l'intervallo della finestra della richiesta TCP client è piccolo rispetto alla risposta). ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

@@ -146,6 +146,9 @@
         <Item ItemId=";(...) json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[<span style="color: #000000; font-family: Babas; font-size: 2em;">Get more visibility into the usage and performance of your cluster</span>]D;]A;]D;]A;This section provides additional monitoring coverage that is based on platform logs (diagnostic logs).</br>]D;]A;To activate additional monitoring, you must enable the "Command" and "Query" diagnostic settings and send them to Log Analytics. [Learn more]5D;(https://docs.microsoft.com/en-us/azure/data-explorer/using-diagnostic-logs?tabs=commands-and-queries#set-up-diagnostic-logs-for-an-azure-data-explorer-cluster)</div>]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[<span style="color: #000000; font-family: Babas; font-size: 2em;">Obtenir une meilleure visibilité de l'utilisation et des performances de votre cluster</span>]D;]A;]D;]A;Cette section fournit une couverture de supervision supplémentaire basée sur les journaux de plateforme (journaux de diagnostic).</br>]D;]A;Pour activer la supervision supplémentaire, vous devez activer les paramètres de diagnostic « Commande » et « Requête » et les envoyer à Log Analytics. [En savoir plus]5D;(https://docs.microsoft.com/fr-fr/azure/data-explorer/using-diagnostic-logs?tabs=commands-and-queries#set-up-diagnostic-logs-for-an-azure-data-explorer-cluster)</div>]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -195,7 +198,7 @@
           <Str Cat="Text">
             <Val><![CDATA[Principal]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Entité de sécurité]]></Val>
+              <Val><![CDATA[Principal]]></Val>
             </Tgt>
             <Prev Cat="Text">
               <Val><![CDATA[User]]></Val>
@@ -489,24 +492,36 @@
       <Item ItemId=";items.Commands.content.items.ByUsers.content.items.QueryCountbyUser.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Query Count by Principal]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Nombre de requêtes par principal]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Commands.content.items.ByUsers.content.items.TotalCPUbyUser.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Total CPU by Principal]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Processeur total par principal]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Commands.content.items.ByUsers.content.items.TotalMemorybyUser.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Total Memory by Principal]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Mémoire totale par principal]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Commands.content.items.ByUsers.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Count, Memory, and CPU By Principal]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Nombre, mémoire et processeur par principal]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -558,6 +573,9 @@
       <Item ItemId=";items.Commands.content.items.ChangesinQueryCountbyUser.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Changes in Query Count by Principal (Not affected by the Time Range)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Changements du nombre de requêtes par principal (non affecté par l'intervalle de temps)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -627,12 +645,18 @@
       <Item ItemId=";items.Commands.content.items.expanderforcommands.content.items.TopUsersbyCommandandQueryCount.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Top Principals by Command and Query Count]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Premiers principaux par commande et nombre de requêtes]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Commands.content.items.expanderforcommands.content.items.TopUsersbyCommandandQueryCountCopy.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Top Principals and Applications by Command and Query Count]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Premiers principaux et applications par commande et nombre de requêtes]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -702,8 +726,8 @@
       <Item ItemId=";items.Overview.content.items.expander.content.items.HeaviestUserCountHeader.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[###### Top Resource Consumers ]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[###### Consommateurs des ressources les plus lourdes ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[###### Principaux consommateurs de ressources ]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[###### Heaviest Resource Consumers ]]></Val>
@@ -723,6 +747,9 @@
       <Item ItemId=";items.Overview.content.items.expander.content.items.TopResourceConsumersOverview.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[]D83D;]DC64; Top Resource Consumers]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[]D83D;]DC64; Principaux consommateurs de ressources]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -738,6 +765,9 @@
       <Item ItemId=";items.Overview.content.items.expander.content.items.queryusage.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[]D83D;]DC65; Unique User Count  (Over a sliding timeline window. Not affected by the Time Range)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[]D83D;]DC65; Nombre d'utilisateurs uniques (sur une fenêtre de chronologie glissante. Non affecté par l'intervalle de temps)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

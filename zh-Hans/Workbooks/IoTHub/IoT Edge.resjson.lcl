@@ -450,6 +450,9 @@
       <Item ItemId=";items.devicegroup.content.items.devicedetailsgroup.content.items.allmodulescpu.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Average CPU usage across all cores]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[所有核心的平均 CPU 使用量]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -474,6 +477,9 @@
       <Item ItemId=";items.devicegroup.content.items.devicedetailsgroup.content.items.hostdiskquery.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Available disk space]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[可用磁盘空间]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -516,12 +522,18 @@
       <Item ItemId=";items.devicegroup.content.items.devicedetailsgroup.content.items.messagingrouting.content.items.text2.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[ParentId: {pid}, qlen: {qlen}, msgCount: {mstCount}, latency: {latency}, id: {id}]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[ParentId: {pid}，qlen: {qlen}，msgCount: {mstCount}，latency: {latency}，id: {id}]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.devicegroup.content.items.devicedetailsgroup.content.items.text16.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[**OS info<br>**]A;{hostInfoOs}<br>]A;{hostInfoOstype} {hostInfoArch}<br>]A;]A;**IoT Edge daemon version<br>**]A;{hostInfoEdgedVer}<br>]A;]A;**Docker daemon version<br>**]A;{hostInfoDockerVer}<br>]A;]A;**# CPUs<br>**]A;{hostInfoNumCpus}<br>]A;]A;]A;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[** OS 信息<br>**]A;{hostInfoOs}<br>]A;{hostInfoOstype} {hostInfoArch}<br>]A;]A;**IoT Edge 守护程序版本<br>**]A;{hostInfoEdgedVer}<br>]A;]A;**Docker 守护程序版本<br>**]A;{hostInfoDockerVer}<br>]A;]A;**# CPU 数<br>**]A;{hostInfoNumCpus}<br>]A;]A;]A;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -540,18 +552,27 @@
       <Item ItemId=";items.devicegroup.content.items.devicedetailsgroup.content.items.text5b.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<br><br><br><br><br>]A;]A;]D83D;]DCA1; **Select a row on the left to further drill-in**]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<br><br><br><br><br>]A;]A;]D83D;]DCA1; **在左侧选择一行以进一步钻取**]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.devicegroup.content.items.links5.content.links.64bc16b861444172894fb9f4d21b9522.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Memory (p95)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[内存(p95)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.devicegroup.content.items.links5.content.links.c1fa00aa4f7043a59d0b87c86fbf4658.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Queue length (p95)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[队列长度(p95)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -567,6 +588,9 @@
       <Item ItemId=";items.devicegroup.content.items.query4.content.gridSettings.labelSettings.cpuusedpercent.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[% CPU use]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[CPU 使用百分比]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -582,30 +606,45 @@
       <Item ItemId=";items.devicegroup.content.items.query4.content.gridSettings.labelSettings.devicemessagestotal.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Msgs]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# 消息数]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.devicegroup.content.items.query4.content.gridSettings.labelSettings.devicemessagestrend.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Processed messages]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[已处理的消息数]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.devicegroup.content.items.query4.content.gridSettings.labelSettings.diskusedtrend.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[% Disk use]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[磁盘使用百分比]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.devicegroup.content.items.query4.content.gridSettings.labelSettings.memusedpercent.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[% Memory use]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[内存使用百分比]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.devicegroup.content.items.query4.content.gridSettings.labelSettings.p95Qlen.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[QLen (p95)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[QLen (p95)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

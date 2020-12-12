@@ -12,36 +12,54 @@
       <Item ItemId=";items.0.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# SQL Database Resource Limits]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# SQL データベース リソースの制限]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.10.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Total Database Size]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### データベースの合計サイズ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.13.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[When encountering high space utilization, mitigation options include:]A;]A;* Increasing the max size of the database or elastic pool, or add more storage. See [Scale single database resources]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-single-database-scale) and [Scale elastic pool resources]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-elastic-pool-scale).]A;* If the database is in an elastic pool, then alternatively the database can be moved outside of the pool so that its storage space is not shared with other databases.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[領域使用率が高い場合の軽減策の選択肢には、以下が含まれます。]A;]A;* データベースまたはエラスティック プールの最大サイズを増やすか、ストレージを追加します。[単一データベースのリソースのスケーリング]5D;(https://docs.microsoft.com/ja-jp/azure/sql-database/sql-database-single-database-scale) に関するページと、[エラスティック プールのリソースのスケーリング]5D;(https://docs.microsoft.com/ja-jp/azure/sql-database/sql-database-elastic-pool-scale) に関するページを参照してください。]A;* データベースがエラスティック プール内にある場合は、別の方法として、そのストレージ領域が他のデータベースと共有されないように、データベースをそのプールの外部に移動できます。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.14.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Sessions and workers]A;The maximum number of sessions and workers are determined by the service tier and performance level (DTUs and eDTUs). New requests are rejected when session or worker limits are reached, and clients receive an error message. While the number of connections available can be controlled by the application, the number of concurrent workers is often harder to estimate and control. This is especially true during peak load periods when database resource limits are reached and workers pile up due to longer running queries.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## セッションとワーカー]A;セッションとワーカーの最大数は、サービス レベルとパフォーマンス レベル (DTU と eDTU) によって決定されます。セッションまたはワーカー制限に達すると、新しい要求が拒否され、クライアントにエラー メッセージが表示されます。使用可能な接続数はアプリケーションによって制御できますが、同時実行ワーカーの数の推定と制御はより困難な場合が少なくありません。これが特に当てはまるのは、データベースのリソース制限に達し、クエリ実行の長期化が原因でワーカーが累積する、ピーク負荷期間です。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.15.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Sessions Percentage]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### セッションのパーセンテージ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.16.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Workers Percentage]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### ワーカーのパーセンテージ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
