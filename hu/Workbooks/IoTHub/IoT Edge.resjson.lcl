@@ -498,6 +498,9 @@
       <Item ItemId=";items.devicegroup.content.items.devicedetailsgroup.content.items.allmodulescpu.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Average CPU usage across all cores]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Az összes mag átlagos CPU-használata]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -514,7 +517,7 @@
         <Str Cat="Text">
           <Val><![CDATA[CPU utilization]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Processzorkihasználtság]]></Val>
+            <Val><![CDATA[CPU-kihasználtság]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -522,6 +525,9 @@
       <Item ItemId=";items.devicegroup.content.items.devicedetailsgroup.content.items.hostdiskquery.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Available disk space]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Rendelkezésre álló lemezterület]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -546,24 +552,36 @@
       <Item ItemId=";items.devicegroup.content.items.devicedetailsgroup.content.items.messagedetails.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No messages were routed]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Nincs továbbított üzenet]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.devicegroup.content.items.devicedetailsgroup.content.items.messagegraph.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No messages were routed]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Nincs továbbított üzenet]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.devicegroup.content.items.devicedetailsgroup.content.items.messagingrouting.content.items.text2.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[ParentId: {pid}, qlen: {qlen}, msgCount: {mstCount}, latency: {latency}, id: {id}]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Szülőazonosító (pid): {pid}, várólista hossza (qlen): {qlen}, üzenetek száma (msgCount): {mstCount}, késés (latency): {latency}, azonosító (id): {id}]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.devicegroup.content.items.devicedetailsgroup.content.items.text16.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[**OS info<br>**]A;{hostInfoOs}<br>]A;{hostInfoOstype} {hostInfoArch}<br>]A;]A;**IoT Edge daemon version<br>**]A;{hostInfoEdgedVer}<br>]A;]A;**Docker daemon version<br>**]A;{hostInfoDockerVer}<br>]A;]A;**# CPUs<br>**]A;{hostInfoNumCpus}<br>]A;]A;]A;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[**Operációs rendszer adatai<br>**]A;{hostInfoOs}<br>]A;{hostInfoOstype} {hostInfoArch}<br>]A;]A;**IoT Edge-démon verziója<br>**]A;{hostInfoEdgedVer}<br>]A;]A;**Docker-démon verziója<br>**]A;{hostInfoDockerVer}<br>]A;]A;**CPU-k száma<br>**]A;{hostInfoNumCpus}<br>]A;]A;]A;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -582,18 +600,27 @@
       <Item ItemId=";items.devicegroup.content.items.devicedetailsgroup.content.items.text5b.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<br><br><br><br><br>]A;]A;]D83D;]DCA1; **Select a row on the left to further drill-in**]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<br><br><br><br><br>]A;]A;]D83D;]DCA1; **A további részletekért válasszon egy sort a bal oldalon**]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.devicegroup.content.items.links5.content.links.64bc16b861444172894fb9f4d21b9522.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Memory (p95)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Memória (95%)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.devicegroup.content.items.links5.content.links.c1fa00aa4f7043a59d0b87c86fbf4658.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Queue length (p95)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Várólista hossza (95%)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -609,6 +636,9 @@
       <Item ItemId=";items.devicegroup.content.items.query4.content.gridSettings.labelSettings.cpuusedpercent.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[% CPU use]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[CPU-használat (%)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -624,36 +654,54 @@
       <Item ItemId=";items.devicegroup.content.items.query4.content.gridSettings.labelSettings.devicemessagestotal.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Msgs]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# Üzenetek]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.devicegroup.content.items.query4.content.gridSettings.labelSettings.devicemessagestrend.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Processed messages]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Feldolgozott üzenetek]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.devicegroup.content.items.query4.content.gridSettings.labelSettings.diskusedtrend.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[% Disk use]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Lemezhasználat (%)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.devicegroup.content.items.query4.content.gridSettings.labelSettings.memusedpercent.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[% Memory use]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Memóriahasználat (%)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.devicegroup.content.items.query4.content.gridSettings.labelSettings.p95Qlen.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[QLen (p95)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Várólista hossza (QLen) (95%)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.devicegroup.content.items.text6.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[⚠️ *Please select a device from the list or bird's eye view before drilling into its details*]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[⚠️ * Válasszon egy eszközt a listáról vagy a madártávlat nézetből a részletek feltárása előtt*]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

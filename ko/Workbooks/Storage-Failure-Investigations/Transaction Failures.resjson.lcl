@@ -12,6 +12,9 @@
       <Item ItemId=";items.0.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Investigating Transaction Failures]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# 트랜잭션 실패 조사]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -27,48 +30,72 @@
       <Item ItemId=";items.2.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Transactions by Response Type]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## 응답 유형별 트랜잭션]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.4.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[*Transactions* - the number of requests made to a storage service. This number includes successful and failed requests, as well as requests that produced errors. ]A;]A;*Response type* - the transaction response type. The available values include: ]A;]A;* __ServerOtherError__: All other server-side errors except described ones]A;* __ServerBusyError__: Authenticated request that returned an HTTP 503 status code.]A;* __ServerTimeoutError__: Timed-out authenticated request that returned an HTTP 500 status code. The timeout occurred due to a server error.]A;* __AuthorizationError__: Authenticated request that failed due to unauthorized access of data or an authorization failure.]A;* __NetworkError__: Authenticated request that failed due to network errors. Most commonly occurs when a client prematurely closes a connection before timeout expiration.]A;* __ClientThrottlingError__: Client-side throttling error.]A;* __ClientTimeoutError__: Timed-out authenticated request that returned an HTTP 500 status code. If the client's network timeout or the request timeout is set to a lower value than expected by the storage service, it is an expected timeout. Otherwise, it is reported as a ServerTimeoutError.]A;* __ClientOtherError__: All other client-side errors except described ones.]A;* __Success__: Successful request]A;]A;The following resources are useful for understanding storage-related status and error codes:]A;]A;* [Common REST API Error Codes]5D;(https://docs.microsoft.com/en-us/rest/api/storageservices/Common-REST-API-Error-Codes?redirectedfrom=MSDN).]A;* [Blob Service Error Codes]5D;(https://docs.microsoft.com/en-us/rest/api/storageservices/Blob-Service-Error-Codes?redirectedfrom=MSDN).]A;* [Queue Service Error Codes]5D;(https://docs.microsoft.com/en-us/rest/api/storageservices/Queue-Service-Error-Codes?redirectedfrom=MSDN).]A;* [Table Service Error Codes]5D;(https://docs.microsoft.com/en-us/rest/api/storageservices/Table-Service-Error-Codes?redirectedfrom=MSDN).]A;* [File Service Error Codes]5D;(https://docs.microsoft.com/en-us/rest/api/storageservices/File-Service-Error-Codes?redirectedfrom=MSDN).]A;]A;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[*트랜잭션* - 스토리지 서비스와 관련된 요청 수입니다. 이 개수에는 성공한 요청과 실패한 요청뿐 아니라 오류가 발생한 요청도 포함됩니다. ]A;]A;*응답 유형* - 트랜잭션 응답 유형입니다. 사용 가능한 값은 다음과 같습니다. ]A;]A;* __ServerOtherError__: 설명한 오류를 제외한 다른 모든 서버 쪽 오류입니다.]A;* __ServerBusyError__: HTTP 503 상태 코드를 반환한 인증된 요청입니다.]A;* __ServerTimeoutError__: HTTP 500 상태 코드를 반환한 인증된 요청으로, 시간이 초과되었습니다. 시간 초과는 서버 오류로 인해 발생했습니다.]A;* __AuthorizationError__: 무단 데이터 액세스 또는 권한 부여 실패로 인해 실패한 인증된 요청입니다.]A;* __NetworkError__: 네트워크 오류로 인해 실패한 인증된 요청입니다. 이 문제는 일반적으로 시간 제한이 만료되기 전에 클라이언트가 중간에 연결을 닫은 경우에 발생합니다.]A;* __ClientThrottlingError__: 클라이언트 쪽 제한 오류입니다.]A;* __ClientTimeoutError__: HTTP 500 상태 코드를 반환한 인증된 요청으로, 시간이 초과되었습니다. 클라이언트의 네트워크 시간 제한 또는 요청 시간 제한이 스토리지 서비스에 필요한 값보다 낮게 설정된 경우 예상된 시간 초과입니다. 그렇지 않으면 ServerTimeoutError로 보고됩니다.]A;* __ClientOtherError__: 설명된 오류를 제외한 다른 모든 클라이언트 쪽 오류입니다.]A;* __Success__: 성공한 요청입니다.]A;]A;다음 리소스는 스토리지 관련 상태와 오류 코드를 파악하는 데 유용합니다.]A;]A;* [일반적인 REST API 오류 코드]5D;(https://docs.microsoft.com/en-us/rest/api/storageservices/Common-REST-API-Error-Codes?redirectedfrom=MSDN).]A;* [Blob service 오류 코드]5D;(https://docs.microsoft.com/en-us/rest/api/storageservices/Blob-Service-Error-Codes?redirectedfrom=MSDN).]A;* [큐 서비스 오류 코드]5D;(https://docs.microsoft.com/en-us/rest/api/storageservices/Queue-Service-Error-Codes?redirectedfrom=MSDN).]A;* [Table service 오류 코드]5D;(https://docs.microsoft.com/en-us/rest/api/storageservices/Table-Service-Error-Codes?redirectedfrom=MSDN).]A;* [파일 서비스 오류 코드]5D;(https://docs.microsoft.com/en-us/rest/api/storageservices/File-Service-Error-Codes?redirectedfrom=MSDN).]A;]A;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.5.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Common Issues]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## 일반적인 이슈]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.6.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### The client is receiving HTTP 403 (Forbidden) messages]A;If your client application is throwing HTTP 403 (Forbidden) errors, a likely cause is that the client is using an expired Shared Access Signature (SAS) when it sends a storage request (although other possible causes include clock skew, invalid keys, and empty headers). If an expired SAS key is the cause, you will not see any entries in the server-side Storage Logging log data.]A;]A;If the issue is related to SAS tokens, you should investigate why the SAS token is expiring before the client sends the token to the server:]A;* Typically, you should not set a start time when you create a SAS for a client to use immediately. If there are small clock differences between the host generating the SAS using the current time and the storage service, then it is possible for the storage service to receive a SAS that is not yet valid.]A;* Do not set a very short expiry time on a SAS. Again, small clock differences between the host generating the SAS and the storage service can lead to a SAS apparently expiring earlier than anticipated.]A;* Does the version parameter in the SAS key (for example sv=2015-04-05) match the version of the Storage Client Library you are using? We recommend that you always use the latest version of the Storage Client Library.]A;* If you regenerate your storage access keys, any existing SAS tokens may be invalidated. This issue may arise if you generate SAS tokens with a long expiry time for client applications to cache.]A;* If you are using the Storage Client Library to generate SAS tokens, then it is easy to build a valid token. However, if you are using the Storage REST API and constructing the SAS tokens by hand, see Delegating Access with a Shared Access Signature.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### 클라이언트가 HTTP 403(금지됨) 메시지를 받고 있습니다.]A;클라이언트 애플리케이션이 HTTP 403(금지됨) 오류를 throw하는 경우 클라이언트가 스토리지 요청을 보낼 때 만료된 SAS(공유 액세스 서명)를 사용하기 때문일 수 있습니다(다른 가능한 원인에는 클록 스큐(clock skew), 잘못된 키, 빈 헤더 등이 포함됨). 만료된 SAS 키가 원인이면 서버 쪽 스토리지 로깅 로그 데이터에 아무 항목도 표시되지 않습니다.]A;]A;이슈가 SAS 토큰과 관련된 경우 클라이언트가 토큰을 서버에 보내기 전에 SAS 토큰이 만료되는 이유를 조사해야 합니다.]A;* 일반적으로 클라이언트에서 사용할 SAS를 즉시 만드는 경우에는 시작 시간을 설정하지 않아야 합니다. 현재 시간을 사용하여 SAS를 생성하는 호스트와 스토리지 서비스 간에 작은 클록 차이가 있는 경우 스토리지 서비스가 아직 유효하지 않은 SAS를 받을 수 있습니다.]A;* SAS의 만료 시간을 너무 짧게 설정하면 안 됩니다. SAS를 생성하는 호스트와 스토리지 서비스 간에 작은 클록 차이가 있으면 SAS가 예상보다 일찍 만료될 수 있습니다.]A;* SAS 키의 버전 매개 변수(예: sv=2015-04-05)가 사용 중인 Storage Client Library 버전과 일치합니까? 항상 최신 버전의 Storage Client Library를 사용하는 것이 좋습니다.]A;* 스토리지 액세스 키를 다시 생성하는 경우 기존 SAS 토큰이 무효화될 수 있습니다. 해당 이슈는 클라이언트 애플리케이션에서 캐시할 SAS 토큰을 긴 만료 시간으로 생성하는 경우에 발생할 수 있습니다.]A;* Storage Client Library를 사용하여 SAS 토큰을 생성하는 경우 유효한 토큰을 쉽게 빌드할 수 있습니다. 그러나 Storage REST API를 사용하여 SAS 토큰을 직접 생성하는 경우에는 공유 액세스 서명을 사용하여 액세스 위임을 참조하세요.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.7.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### The client is receiving HTTP 404 (Not found) messages]A;If the client application receives an HTTP 404 (Not found) message from the server, this implies that the object the client was attempting to use (such as an entity, table, blob, container, or queue) does not exist in the storage service. There are a number of possible reasons for this, such as:]A;]A;* [The client or another process previously deleted the object]5D;(https://docs.microsoft.com/en-us/azure/storage/common/storage-monitoring-diagnosing-troubleshooting?toc=%2fazure%2fstorage%2fqueues%2ftoc.json#client-previously-deleted-the-object)]A;* [A Shared Access Signature (SAS) authorization issue]5D;(https://docs.microsoft.com/en-us/azure/storage/common/storage-monitoring-diagnosing-troubleshooting?toc=%2fazure%2fstorage%2fqueues%2ftoc.json#SAS-authorization-issue)]A;* [Client-side JavaScript code does not have permission to access the object]5D;(https://docs.microsoft.com/en-us/azure/storage/common/storage-monitoring-diagnosing-troubleshooting?toc=%2fazure%2fstorage%2fqueues%2ftoc.json#JavaScript-code-does-not-have-permission)]A;* [Network failure]5D;(https://docs.microsoft.com/en-us/azure/storage/common/storage-monitoring-diagnosing-troubleshooting?toc=%2fazure%2fstorage%2fqueues%2ftoc.json#network-failure)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### 클라이언트가 HTTP 404(찾을 수 없음) 메시지를 받고 있습니다.]A;클라이언트가 서버에서 HTTP 404(찾을 수 없음) 메시지를 받는 경우 클라이언트가 사용하려는 개체(예: 엔터티, 테이블, Blob, 컨테이너 또는 큐)가 스토리지 서비스에 없음을 의미합니다. 이 문제는 다음과 같은 다양한 이유로 발생할 수 있습니다.]A;]A;* [클라이언트 또는 다른 프로세스에서 이전에 개체를 삭제함]5D;(https://docs.microsoft.com/en-us/azure/storage/common/storage-monitoring-diagnosing-troubleshooting?toc=%2fazure%2fstorage%2fqueues%2ftoc.json#client-previously-deleted-the-object)]A;* [SAS(공유 액세스 서명) 권한 부여 이슈]5D;(https://docs.microsoft.com/en-us/azure/storage/common/storage-monitoring-diagnosing-troubleshooting?toc=%2fazure%2fstorage%2fqueues%2ftoc.json#SAS-authorization-issue)]A;* [클라이언트 쪽 JavaScript 코드에 개체 액세스 권한이 없음]5D;(https://docs.microsoft.com/en-us/azure/storage/common/storage-monitoring-diagnosing-troubleshooting?toc=%2fazure%2fstorage%2fqueues%2ftoc.json#JavaScript-code-does-not-have-permission)]A;* [네트워크 오류]5D;(https://docs.microsoft.com/en-us/azure/storage/common/storage-monitoring-diagnosing-troubleshooting?toc=%2fazure%2fstorage%2fqueues%2ftoc.json#network-failure)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.8.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### The client is receiving HTTP 409 (Conflict) messages]A;The common cause of this error is a client application deleting and then immediately recreating a storage unit using the same name. When a client deletes blob containers, tables, or queues there is a brief period before the name becomes available again.]A;]A;The client application should use unique container names whenever it creates new containers if the delete/recreate pattern is common.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### 클라이언트가 HTTP 409(충돌) 메시지를 받고 있습니다.]A;이 오류는 일반적으로 클라이언트 애플리케이션에서 스토리지 단위를 삭제한 후 동일한 이름으로 즉시 다시 만드는 경우에 발생합니다. 클라이언트가 Blob 컨테이너, 테이블 또는 큐를 삭제하는 경우 짧은 기간 후에 해당 이름을 다시 사용할 수 있게 됩니다.]A;]A;삭제/다시 만들기 패턴이 일반적인 경우 클라이언트 애플리케이션에서 새 컨테이너를 만들 때마다 고유한 컨테이너 이름을 사용해야 합니다.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.9.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Troubleshooting guidence]A;More information to diagnose and solves issues can be found in this [document]5D;(https://docs.microsoft.com/en-us/azure/storage/common/storage-monitoring-diagnosing-troubleshooting?toc=%2fazure%2fstorage%2fqueues%2ftoc.json#troubleshooting-guidance)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### 문제 해결 지침]A;이슈를 진단하고 해결하기 위한 자세한 정보는 이 [문서]5D;(https://docs.microsoft.com/en-us/azure/storage/common/storage-monitoring-diagnosing-troubleshooting?toc=%2fazure%2fstorage%2fqueues%2ftoc.json#troubleshooting-guidance)에서 확인할 수 있습니다.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Transaction Failures]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[트랜잭션 실패]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

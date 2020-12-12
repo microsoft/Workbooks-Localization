@@ -14,12 +14,18 @@
         <Item ItemId=";(...) RunContext.description" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[![SQL logo]5D;(https://raw.githubusercontent.com/acearun/managedsolutions/master/Templates/Logos/sql-logo.jpg)]D;]A;]D;]A;<br/>]D;]A;<br/>]D;]A;We're ready to enable Azure Monitor for SQL Server to your virtual machine! Choose **Enable monitoring** to start monitoring with the recommended settings.]D;]A;]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[![SQL ロゴ]5D;(https://raw.githubusercontent.com/acearun/managedsolutions/master/Templates/Logos/sql-logo.jpg)]D;]A;]D;]A;<br/>]D;]A;<br/>]D;]A;ご利用の仮想マシンに対して SQL Server 用の Azure Monitor を有効にする準備ができました。推奨設定を使用して監視を開始するには、**[監視を有効にする]5D;** を選択します。]D;]A;]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) RunContext.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Enable Azure Monitor for Microsoft SQL Server]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Microsoft SQL Server 用の Azure Monitor を有効にする]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -39,6 +45,9 @@
       <Item ItemId=";items.Overviewgroup.content.items.Configuregroup.content.items.checkconfigvalidity.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Please update the `servers` array in the MSSQL Telegraf config to enable monitoring.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[監視を有効にするには、MSSQL Telegraf 構成の 'servers ' 配列を更新してください。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -54,36 +63,54 @@
       <Item ItemId=";items.Overviewgroup.content.items.Configuregroup.content.items.mysqlsampleconnectionstring.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<br />]D;]A;**Learn about connection strings**]D;]A;]D;]A;Provide one ore more connection strings as a comma seperated collection of strings (within double-quotes):]D;]A;]D;]A;```]D;]A;"Server=sqlserver.database.windows.net;Port=1433;database=mydb;User Id=<user>;Password=<pw>;app name=telegraf;log=1;",]D;]A;"Server=myothersqlserver.database.windows.net;Port=1433;database=mydb3;User Id=<user>;Password=<pw>;app name=telegraf;log=1;"]D;]A;```]D;]A;Or,]D;]A;```]D;]A;"Server=127.0.0.1;Port=1433;database=mydb;User Id=<user>;Password=<pw>;app name=telegraf;log=1;"]D;]A;```]D;]A;]D;]A;]D;]A;See https://github.com/denisenkom/go-mssqldb for detailed connection parameters.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<br />]D;]A;**接続文字列の詳細情報**]D;]A;]D;]A;1 つまたは複数の接続文字列をコンマ区切りの文字列のコレクションとして (二重引用符で囲んで) 指定します:]D;]A;]D;]A;```]D;]A;"Server=sqlserver.database.windows.net;Port=1433;database=mydb;User Id=<user>;Password=<pw>;app name=telegraf;log=1;",]D;]A;"Server=myothersqlserver.database.windows.net;Port=1433;database=mydb3;User Id=<user>;Password=<pw>;app name=telegraf;log=1;"]D;]A;```]D;]A;または]D;]A;```]D;]A;"Server=127.0.0.1;Port=1433;database=mydb;User Id=<user>;Password=<pw>;app name=telegraf;log=1;"]D;]A;```]D;]A;]D;]A;]D;]A;接続パラメーターの詳細については、https://github.com/denisenkom/go-mssqldb をご覧ください。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overviewgroup.content.items.Configuregroup.content.items.samplemysqlconnectionstring.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Azure Monitor needs access to the health information stored in SQL Server dynamic management view tables. Please provide the *connection string* to allow this access below. More information about the format of connection strings can be found below.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Azure Monitor は SQL Server 動的管理ビューのテーブルに格納されている正常性情報にアクセスする必要があります。このアクセスを許可するには、以下で "*接続文字列*" を指定してください。接続文字列の形式の詳細については、以下をご覧ください。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overviewgroup.content.items.Overviewgroup.content.items.mssqlinformation.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[SQL Server environments are becoming more complex while remaining a critical component of your application architecture. It’s a struggle to keep up with this continual growth without the right SQL monitoring tools. What if you could proactively manage your SQL Server environment and diagnose database performance issues by viewing the health of all your SQL Server instances on a single screen, anytime, anywhere on any device? You can with the right SQL Server monitoring tool.]A;]A;With Azure Monitor for SQL Server, you can manage your SQL Server environment while also gaining visibility into your operating system – Windows or Linux – and also monitor your virtualization infrastructure. Make configuration a breeze with templates, automated alerts and customizable actions. Spend less time fighting fires by accurately diagnosing real-time and historical database performance issues, and focus on more proactive measures like query tuning.]A;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[SQL Server 環境はますます複雑になりつつ、お客様のアプリケーション アーキテクチャの重要なコンポーネントであり続けています。適切な SQL 監視ツールなくして、この継続的な成長に付いて行くのは大変です。すべての SQL Server インスタンスの正常性をいつでもどこでもお好きなデバイスの画面 1 つで確認することにより、SQL Server 環境をプロアクティブに管理し、データベース パフォーマンスの問題を診断できるとしたらどうでしょう。適切な SQL Server 監視ツールを使用すれば、それが可能になります。]A;]A;SQL Server 用の Azure Monitor を使用すると、オペレーティング システム (Windows または Linux) も可視化しながら SQL Server 環境を管理でき、仮想化インフラストラクチャも監視できます。テンプレート、自動化されたアラート、カスタマイズ可能なアクションを使用して、構成を簡略化できます。リアルタイムの、または過去に発生したデータベースのパフォーマンス問題を正確に診断して、問題解決にかかる時間を短縮し、クエリ調整などのよりプロアクティブな対策に集中できます。]A;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overviewgroup.content.items.Prerequisitesgroup.content.items.prerequisitesmssqlremote.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[#### Create SQL user accounts]A;You have to create a login on every instance you want to monitor, with following script:]A;]A;```]A;USE master;]A;GO]A;CREATE LOGIN [telegraf]5D; WITH PASSWORD = N'mystrongpassword';]A;GO]A;GRANT VIEW SERVER STATE TO [telegraf]5D;;]A;GO]A;GRANT VIEW ANY DEFINITION TO [telegraf]5D;;]A;GO]A;```]A;]A;For Azure SQL Database, you require the View Database State permission and can create a user with a password directly in the database.]A;]A;```]A;CREATE USER [telegraf]5D; WITH PASSWORD = N'mystrongpassword';]A;GO]A;GRANT VIEW DATABASE STATE TO [telegraf]5D;;]A;GO]A;```]A;]A;#### Firewall and networking rules for SQL Computer]A;Update the Windows and NSG firewall settings to allow the port specified in the MSSQL connection strings in next step for the remote virtual machine's IP address.]A;]A;#### Outbound network settings for the remote virtual machine]A;Verify that the virtual machine has the outbound port as specified in the MSSQL connection strings in the next step.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[#### SQL ユーザー アカウントを作成する]A;次のスクリプトを使用して、監視対象のすべてのインスタンスでログインを作成する必要があります。]A;]A;```]A;USE master;]A;GO]A;CREATE LOGIN [telegraf]5D; WITH PASSWORD = N'mystrongpassword';]A;GO]A;GRANT VIEW SERVER STATE TO [telegraf]5D;;]A;GO]A;GRANT VIEW ANY DEFINITION TO [telegraf]5D;;]A;GO]A;```]A;]A;Azure SQL Database の場合、"データベースの状態の表示" アクセス許可を必須にします。パスワードを持つユーザーを直接データベースの中に作成できます。]A;]A;```]A;CREATE USER [telegraf]5D; WITH PASSWORD = N'mystrongpassword';]A;GO]A;GRANT VIEW DATABASE STATE TO [telegraf]5D;;]A;GO]A;```]A;]A;#### SQL コンピューター用のファイアウォールとネットワークの規則]A;次の手順で Windows と NSG のファイアウォール設定を更新し、MSSQL 接続文字列に指定されたポートをリモート仮想マシンの IP アドレスに対して許可します。]A;]A;#### リモート仮想マシンの送信ネットワーク設定]A;MSSQL 接続文字列に指定された送信ポートが仮想マシンにあることを次の手順でご確認ください。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overviewgroup.content.items.infoText.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Azure Monitor for Microsoft SQL Server]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Microsoft SQL Server 用の Azure Monitor]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overviewgroup.content.items.mssqllogo.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[![SQL logo]5D;(https://raw.githubusercontent.com/acearun/managedsolutions/master/Templates/Logos/sql-logo.jpg)]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[![SQL ロゴ]5D;(https://raw.githubusercontent.com/acearun/managedsolutions/master/Templates/Logos/sql-logo.jpg)]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -100,7 +127,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Prerequisites]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[必要なコンポーネント]]></Val>
+            <Val><![CDATA[前提条件]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -108,6 +135,9 @@
       <Item ItemId=";items.Overviewgroup.content.items.tabs.content.links.2.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Configure monitoring]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[監視を構成する]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

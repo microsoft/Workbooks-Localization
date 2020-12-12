@@ -12,72 +12,108 @@
       <Item ItemId=";items.0.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Cohort Analysis]A;]A;Cohort Analysis measures how many of your users come back to perform one of the `RetainingActivities` in a particular period after they perform one of the `CohortingActivities` in your app - split by a dimension you choose. For instance, you could be measuring the number of users who returned to use your app on the 10th day from the day they first downloaded it, split by the country they are from. Seeing the retention trend for days 1-10 will give you an indication of the stickiness of your app. ]A;]A;Cohort Analysis is similar to N-day or Bracket retention and is only different in how the cohorts are defined. ]A;]A;This type of analysis is well-suited for gaming apps, or other kinds of app where you are trying to get users to develop a daily habit. Cohort Analysis will help you see differences in user retention across standard dimensions like country, app version, etc. or custom dimensions like 'Is Premium Customer' or 'Flight name in an experiment group'.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# 코호트 분석]A;]A;코호트 분석은 앱에서 'CohortingActivities' 중 하나를 수행한 후 특정 기간 동안 'RetainingActivities' 중 하나를 수행하기 위해 재방문한 사용자 수를 선택한 차원으로 분할하여 측정합니다. 예를 들어 앱을 처음 다운로드한 날부터 10일째 되는 날에 앱을 사용하려고 재방문한 사용자 수를 해당 국가로 분할하여 측정할 수 있습니다. 1~10일 동안의 재방문 주기 추세를 살펴보면 앱의 현재 연결 유지를 확인할 수 있습니다. ]A;]A;코호트 분석은 N일 또는 브래킷 재방문 주기와 유사하며 코호트 정의 방식에만 차이가 있습니다. ]A;]A;이 유형의 분석은 게임 앱이나 매일 습관적으로 사용하게 하려는 다른 종류의 앱에 적합합니다. 코호트 분석은 국가, 앱 버전 등의 표준 차원이나 'Is Premium Customer' 또는 'Flight name in an experiment group'과 같은 사용자 지정 차원에서 사용자 재방문 주기의 차이를 확인하는 데 도움이 됩니다.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.1.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Activity Selection]A;Use these fields to set events that that correspond to interesting user activities. The `Understanding Cohort Analysis Parameters` section at the bottom describes these parameters in detail.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### 활동 선택]A;관련 필드를 사용하여 관심 있는 사용자 활동에 해당하는 이벤트를 설정할 수 있습니다. 맨 아래에 있는 '코호트 분석 매개 변수 이해' 섹션에서 해당 매개 변수를 자세히 설명합니다.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.10.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Understanding Cohort Analysis Parameters]A;| Parameter | Used for |]A;| ----- | ----- |]A;| Cohort Type | The dimension by which to split the retention numbers |]A;| Retention Period | The period to use in retention calculation. Can be Daily, Weekly or Monthly |]A;| Periods To Analyze  | The number of retention periods to analyze.  |]A;| Cohorting Activities  | The activities that selects a cohort of users. Example: Users who used event *Read Product Review* (cohorting activity). |]A;| Retaining Activities  | The activities that indicates retention of a cohorted user selected above. Example: Users who used event *Read Product Review* (cohorting activity) and returned to use *Purchase Product* (retaining activity). |]A;| Cohorting/Retaining Filters  | An analytics query snippet to further filter the cohorting activity. Example: *&#124; where application_Version = '1.0'* |]A;| Show  | The metric to visualize in the table. *Retention Rate* shows the rate at which users returned for the time period in the column. *Retained Users* is raw number of retained users for the time period. *Potentially Retainable Users* is the number of users who could potentially have been retained for that period.' |]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## 코호트 분석 매개 변수 이해]A;| 매개 변수 | 용도 |]A;| ----- | ----- |]A;| 코호트 유형 | 재방문 주기 숫자를 분할할 차원입니다. |]A;| 재방문 주기 기간 | 재방문 주기 계산에 사용할 기간입니다. 매일, 매주 또는 매월로 지정할 수 있습니다. |]A;| 분석할 기간 | 분석할 재방문 주기 기간 수입니다. |]A;| 코호팅 활동 | 사용자 코호트를 선택하는 활동입니다. 예: *제품 리뷰 읽기*(코호팅 활동) 이벤트를 사용한 사용자 |]A;| 재방문 활동 | 위에서 선택한 코호트된 사용자의 재방문 주기를 나타내는 활동입니다. 예: *제품 리뷰 읽기*(코호팅 활동) 이벤트를 사용하고 *제품 구매*(재방문 활동)를 사용하기 위해 재방문한 사용자 |]A;| 코호팅/재방문 필터 | 코호팅 활동을 추가로 필터링하는 분석 쿼리 코드 조각입니다. 예: *&#124; where application_Version = '1.0'* |]A;| 표시  | 테이블에 시각화할 메트릭입니다. *재방문율*은 열에 지정된 기간 동안 사용자가 재방문한 비율을 표시합니다. *재방문한 사용자*는 해당 기간 동안 재방문한 사용자 수입니다. *잠재적 재방문 가능 사용자*는 해당 기간 동안 잠재적으로 재방문했을 수 있는 사용자 수입니다.' |]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.11.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## What is a week for a user?]A;The short answer is that it is unique for each user. Our analysis treats each user's retention window seperately - giving an accurate view of their actual behavior with your app. ]A;]A;Consider the example below of two users X and Y: ]A;]A;| User | First use of app | Weeks for user |]A;| ----- | :----- | :----- |]A;| X | April 3 | w1 = April 10, w2 = April 17, w3 = April 24  |]A;| Y | April 5 | w1 = April 12, w2 = April 19, w3 = April 26  |]A;]A;Each user gets a seperate retention window. So, if both users came back on April 18, then it considered as Week 2 usage for User X but Week 1 usage for User Y. ]A;]A;This allows the normalization their app use over the retention window - making it seem as if all users in a cohort used the app on the same day. This allow for better analysis and comparision of user behavior.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## 사용자 주간이란?]A;짧게 대답하면 각 사용자에게 고유하다는 것입니다. 분석 시 각 사용자의 재방문 주기 기간을 별도로 처리하므로 실제 앱 사용 동작을 정확하게 파악할 수 있습니다. ]A;]A;두 사용자 X와 Y의 아래 예제를 고려해 보세요. ]A;]A;| 사용자 | 첫 번째 앱 사용 | 사용자 주간 |]A;| ----- | :----- | :----- |]A;| X | 4월 3일 | w1 = 4월 10일, w2 = 4월 17일, w3 = 4월 24일 |]A;| Y | 4월 5일 | w1 = 4월 12일, w2 = 4월 19일, w3 = 4월 26일 |]A;]A;각 사용자에게 별도의 재방문 주기 기간이 지정됩니다. 따라서 두 사용자가 모두 4월 18일에 재방문할 경우 사용자 X는 2주차 사용량으로 간주되지만 사용자 Y는 1주차 사용량으로 간주됩니다. ]A;]A;그러면 재방문 주기 기간의 앱 사용을 정규화할 수 있으므로 코호트의 모든 사용자가 동일한 날짜에 앱을 사용한 것처럼 보입니다. 이 방법을 사용하면 사용자 동작의 분석과 비교를 개선할 수 있습니다.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.12.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Related Workbook Templates]A;* Retention - N-Period]A;* Retention - Unbounded]A;* Retention - Bracket]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## 관련 통합 문서 템플릿]A;* 재방문 주기 - N 기간]A;* 재방문 주기 - 제한 없음]A;* 재방문 주기 - 브래킷]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.3.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Cohort Analysis Parameters]A;Use these fields to customize your retention settings.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## 코호트 분석 매개 변수]A;이 필드를 사용하여 재방문 주기 설정을 사용자 지정할 수 있습니다.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.4.content.parameters.e62098aeac3f48008e623e7d9a052e56.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[1d: Daily, 7d: Weekly, 30/28d: Monthly]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[1일: 매일, 7일: 매주, 30/28일: 매월]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.4.content.parameters.fa4b29d9bfc146e398f13cba05afbea3.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Number of cohort periods to analyze]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[분석할 코호트 기간 수]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.5.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Cohort Analysis Table]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## 코호트 분석 테이블]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.7.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Interpreting the table]A;This section shows how to read and interpret a retention table. The section below shows a row from a weekly retention report that we will try to read.]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## 테이블 해석]A;이 섹션에서는 재방문 주기 테이블을 읽고 해석하는 방법을 보여 줍니다. 아래 섹션에는 읽으려는 주간 재방문 주기 보고서의 행이 표시됩니다.]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.9.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[| Column | Explanation | Interpretation in the example |]A;| ----- | :----- | :----- |]A;| Cohort | Identifies the cohorting criteria specified by the CohortType parameter. | This row explains the retention behavior of users who used the 'Add to Cart' event. |]A;| Total Users | Number of unique users who used the Add to Cart feature  | 1000 unique users added an item to their cart in your app |]A;| <1 week | Percentage of cohort users who returned between 1 and 6 days after using 'Add to Cart' (using it again the same day does not count towards retention)  | 50% or 500 users returned to use your app within the first week after they added an item to their cart |]A;| +1 week | Percentage of cohort users who returned between 7 and 13 days after using 'Add to Cart'  | 30% or 300 users returned to use your app a week later |]A;| +N week | Percentage of cohort users who returned in the Nth week after 'Add to Cart'  | 15% or 150 users, when N = 3  |]A;]A;]A;]A;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[| 열 | 설명 | 예제 해석 |]A;| ----- | :----- | :----- |]A;| 코호트 | CohortType 매개 변수에 지정된 코호팅 조건을 식별합니다. | 이 행은 '장바구니에 추가' 이벤트를 사용한 사용자의 재방문 주기 동작을 설명합니다. |]A;| 총 사용자 | 장바구니에 추가 기능을 사용한 고유 사용자 수입니다. | 고유 사용자 1000명이 앱에서 항목을 장바구니에 추가했습니다. |]A;| <1주 | '장바구니에 추가'를 사용한 후 1~6일 사이에 재방문한 코호트 사용자의 백분율(동일한 날짜에 다시 사용하는 경우는 재방문 주기에 계산되지 않음) | 50%, 즉 500명이 항목을 장바구니에 추가한 후 1주차 이내에 앱을 사용하기 위해 재방문했습니다. |]A;| +1주 | '장바구니에 추가'를 사용한 후 7~13일 사이에 재방문한 코호트 사용자의 백분율  | 30%, 즉 300명이 1주 후에 앱을 사용하기 위해 재방문했습니다. |]A;| +N주 | '장바구니에 추가'를 사용한 후 N주차에 재방문한 코호트 사용자의 백분율  | N = 3인 경우 15%, 즉 150명  |]A;]A;]A;]A;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Cohort Analysis]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[코호트 분석]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

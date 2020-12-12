@@ -12,12 +12,18 @@
       <Item ItemId=";items.Commonparameterblock.content.parameters.4548f4fe013042c9b796385cd12ccb24.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Use this parameter to essentially set the number of user sessions to use in calculations (sampling). This allows you to find the right balance between performance and accuracy for your analysis. Optimize for: Performance = 10,000 sessions, Balance = 100,000 samples, Accuracy = 1,000,000 sessions]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Ezzel a paraméterrel a számításokban használandó felhasználói munkamenetek számát állíthatja be (mintavétel). Ezzel kiegyensúlyozható az elemzés teljesítménye és pontossága. Optimalizálási lehetőségek: teljesítményre: 10 000 munkamenet, kiegyensúlyozottságra: 100 000 minta, pontosságra: 1 000 000 munkamenet]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Descriptiontext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Analysis of Page Views]A;Page views correspond to user activity in your app. Understanding how your users interact with your pages will give you good insights into what is working in your app and what aspects need improvements. ]A;]A;This report will help you understand common page view behaviors like:]A;* Usage]A;* Time spent on page]A;* Time to first interaction]A;* Exit rates ]A;]A;If your telemetry does not include page views, then follow these [instructions]5D;(https://docs.microsoft.com/en-us/azure/application-insights/app-insights-javascript) to begin collecting -- it is relatively straightforward.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# Oldalletöltések elemzése]A;Az oldalletöltések a felhasználók alkalmazásbeli tevékenységét jellemzik. Annak megismerésével, hogy a felhasználók hogyan használják az oldalakat, hasznos információkhoz juthat arról, hogy az alkalmazás mly részei működnek jól, és mely szempontokból van szüksége fejlesztésre. ]A;]A;Ez a jelentés segíthet megismerni a felhasználók viselkedését a következő szempontokból:]A;* Használat]A;* Oldalon töltött idő]A;* Az első tevékenységig eltelt idő]A;* Kilépési arány ]A;]A;Ha a telemetriai adatok nem tartalmaznak oldalletöltési adatokat, [részletes útmutatónk]5D;(https://docs.microsoft.com/en-us/azure/application-insights/app-insights-javascript) alapján viszonylag egyszerűen el tudja kezdeni a gyűjtésüket.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -38,9 +44,6 @@
           <Val><![CDATA[- The calculations may use sampling based on the `OptimizeCalculationsFor` parameter. ]A;- Time Spent on Page does not consider exit pages (last page of the session) in this calculations. The `Sampled Page Views` column may be fewer than the sampling count of {OptimizeCalculationsFor} because of this.]A;]]></Val>
         </Str>
         <Disp Icon="Str" />
-        <Cmts>
-          <Cmt Name="Dev"><![CDATA[{Locked={OptimizeCalculationsFor}}]]></Cmt>
-        </Cmts>
       </Item>
       <Item ItemId=";items.Timespentonpageparameterblock.content.parameters.0411936a4cb944dd946db449ce3b284e.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">

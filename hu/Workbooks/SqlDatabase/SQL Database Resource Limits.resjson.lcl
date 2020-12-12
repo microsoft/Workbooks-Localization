@@ -21,42 +21,63 @@
       <Item ItemId=";items.10.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Total Database Size]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Adatbázis teljes mérete]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.13.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[When encountering high space utilization, mitigation options include:]A;]A;* Increasing the max size of the database or elastic pool, or add more storage. See [Scale single database resources]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-single-database-scale) and [Scale elastic pool resources]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-elastic-pool-scale).]A;* If the database is in an elastic pool, then alternatively the database can be moved outside of the pool so that its storage space is not shared with other databases.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[A tárterület magas kihasználtsága esetén a enyhítési lehetőségek többek között a következők:]A;]A;* Az adatbázis vagy a rugalmas készlet maximális méretének növelése vagy további tárterület hozzáadása. Lásd: [Önálló adatbázis erőforrásainak skálázása]5D;(https://docs.microsoft.com/hu-hu/azure/sql-database/sql-database-single-database-scale) és [Rugalmas készlet erőforrásainak skálázása]5D;(https://docs.microsoft.com/hu-hu/azure/sql-database/sql-database-elastic-pool-scale).]A;* Ha az adatbázis egy rugalmas készletben található, másik lehetőségként az adatbázis eltávolítható a készletből, így nem osztozik a tárterülete más adatbázisokkal.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.14.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Sessions and workers]A;The maximum number of sessions and workers are determined by the service tier and performance level (DTUs and eDTUs). New requests are rejected when session or worker limits are reached, and clients receive an error message. While the number of connections available can be controlled by the application, the number of concurrent workers is often harder to estimate and control. This is especially true during peak load periods when database resource limits are reached and workers pile up due to longer running queries.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Munkamenetek és feldolgozók]A;A munkamenetek és a feldolgozók maximális számát a szolgáltatási szint és a teljesítményszint (DTU-k és eDTU-k száma) határozza meg. A rendszer elutasítja az új kérelmeket a munkamenet- vagy feldolgozói korlát elérésekor, az ügyfelek pedig hibaüzenetet kapnak. Bár a rendelkezésre álló kapcsolatok számát az alkalmazás képes vezérelni, az egyidejű feldolgozók számát gyakran nehezebb megbecsülni és kezelni. Ez különösen igaz a csúcsidőszakok során, amikor az adatbázis erőforráskorlátait elérik, és a feldolgozók feltorlódnak a hosszabb ideig futó lekérdezések miatt.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.15.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Sessions Percentage]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Munkamenetek százalékaránya]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.16.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Workers Percentage]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Feldolgozók százalékos aránya]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.19.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[When encountering high session or worker utilization, mitigation options include:]A;* Increasing the service tier or performance level of the database or elastic pool. See [Scale single database resources]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-single-database-scale) and [Scale elastic pool resources]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-elastic-pool-scale).]A;* Optimizing queries to reduce the resource utilization of each query if the cause of increased worker utilization is due to contention for compute resources. For more information, see [Query Tuning/Hinting]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-performance-guidance#query-tuning-and-hinting).]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[A munkamenetek vagy a feldolgozók magas kihasználtsága esetén a enyhítési lehetőségek többek között a következők:]A;* Az adatbázis vagy a rugalmas készlet szolgáltatási szintjének vagy teljesítményszintjének növelése. Lásd: [Önálló adatbázis erőforrásainak skálázása]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-single-database-scale) és [Rugalmas készlet erőforrásainak skálázása]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-elastic-pool-scale).]A;* A lekérdezések optimalizálása az egyes lekérdezések erőforrás-kihasználásának csökkentése érdekében, ha a feldolgozók megnövekedett kihasználtságát a számítási erőforrásokért való versengés okozza. További információért lásd: [Lekérdezések finomhangolása és javaslatai]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-performance-guidance#query-tuning-and-hinting).]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.2.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Compute]A;When database compute utilization (measured by DTUs and eDTUs, or vCores) becomes high, query latency increases and can even time out. Under these conditions, queries may be queued by the service and are provided resources for execution as resource become free. ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Számítás]A;Ha a (DTU, eDTU vagy virtuális magok alapján mért) adatbázis-számítási kihasználtság magassá válik, nő a lekérdezések késése, és akár időtúllépés is előfordulhat. Ilyen feltételek mellett a szolgáltatás várakozási sorba helyezheti a lekérdezéseket, majd erőforrásokat biztosít a végrehajtásukhoz, amint a szükséges erőforrások felszabadulnak. ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -81,12 +102,18 @@
       <Item ItemId=";items.7.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[When encountering high compute utilization, mitigation options include:]A;]A;* Increasing the performance level of the database or elastic pool to provide the database with more compute resources. See [Scale single database resources]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-single-database-scale) and [Scale elastic pool resources]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-elastic-pool-scale).]A;* Optimizing queries to reduce the resource utilization of each query. For more information, see [Query Tuning/Hinting]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-performance-guidance#query-tuning-and-hinting).]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[A számítási erőforrások magas kihasználtsága esetén a enyhítési lehetőségek többek között a következők:]A;]A;* Az adatbázis vagy a rugalmas készlet teljesítményszintjének növelése, hogy több számítási erőforrás legyen biztosítva az adatbázis számára. Lásd: [Önálló adatbázis erőforrásainak skálázása]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-single-database-scale) és [Rugalmas készlet erőforrásainak skálázása]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-elastic-pool-scale).]A;* A lekérdezések optimalizálása az egyes lekérdezések erőforrás-kihasználásának csökkentése érdekében. További információért lásd: [Lekérdezések finomhangolása és javaslatai]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-performance-guidance#query-tuning-and-hinting).]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.8.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Storage]A;When database space used reaches the max size limit, database inserts and updates that increase the data size fail and clients receive an [error message]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-develop-error-messages). Database SELECTS and DELETES continue to succeed.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Tárterület]A;Ha az adatbázis mérete eléri a méretkorlátot, az adatok méretét tovább növelő adatbázis-beszúrások és -frissítések sikertelenek lesznek, és az ügyfelek [hibaüzenetet kapnak]5D;(https://docs.microsoft.com/hu-hu/azure/sql-database/sql-database-develop-error-messages). Adatbázis-kijelölések (SELECT) és -törlések (DELETE) továbbra is végrehajthatók.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

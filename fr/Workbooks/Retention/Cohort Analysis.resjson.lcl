@@ -12,72 +12,108 @@
       <Item ItemId=";items.0.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Cohort Analysis]A;]A;Cohort Analysis measures how many of your users come back to perform one of the `RetainingActivities` in a particular period after they perform one of the `CohortingActivities` in your app - split by a dimension you choose. For instance, you could be measuring the number of users who returned to use your app on the 10th day from the day they first downloaded it, split by the country they are from. Seeing the retention trend for days 1-10 will give you an indication of the stickiness of your app. ]A;]A;Cohort Analysis is similar to N-day or Bracket retention and is only different in how the cohorts are defined. ]A;]A;This type of analysis is well-suited for gaming apps, or other kinds of app where you are trying to get users to develop a daily habit. Cohort Analysis will help you see differences in user retention across standard dimensions like country, app version, etc. or custom dimensions like 'Is Premium Customer' or 'Flight name in an experiment group'.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# Analyse de cohorte]A;]A;L'analyse de cohorte mesure le nombre de vos utilisateurs qui reviennent effectuer une des « RetainingActivities » dans une période donnée après avoir effectué une des « CohortingActivities » dans votre application, répartis selon une dimension que vous choisissez. Par exemple, vous pouvez mesurer le nombre d'utilisateurs qui sont revenus utiliser votre application 10 jours après l'avoir téléchargée, répartis selon le pays d'origine. La tendance de conservation du jour 1 au jour 10 vous donne une idée de l'adhérence de votre application. ]A;]A;L'analyse de cohorte est similaire à la conservation de n jours ou par tranche, sauf que vous définissez différemment les cohortes. ]A;]A;Ce type d'analyse convient aux applications de gaming ou à d'autres types d'application dans lesquels vous tentez d'amener les utilisateurs à développer une habitude quotidienne. L'analyse de cohorte vous permet de voir les différences de conservation des utilisateurs en fonction de dimensions standard comme le pays, la version de l'application, etc., ou de dimensions personnalisées comme « Est un client Premium » ou « Nom de la version d'évaluation dans un groupe d'essai ».]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.1.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Activity Selection]A;Use these fields to set events that that correspond to interesting user activities. The `Understanding Cohort Analysis Parameters` section at the bottom describes these parameters in detail.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Sélection d'activité]A;Utilisez ces champs pour définir les événements qui correspondent à des activités utilisateur intéressantes. La section « Présentation des paramètres de l'analyse de cohorte » en bas décrit ces paramètres en détail.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.10.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Understanding Cohort Analysis Parameters]A;| Parameter | Used for |]A;| ----- | ----- |]A;| Cohort Type | The dimension by which to split the retention numbers |]A;| Retention Period | The period to use in retention calculation. Can be Daily, Weekly or Monthly |]A;| Periods To Analyze  | The number of retention periods to analyze.  |]A;| Cohorting Activities  | The activities that selects a cohort of users. Example: Users who used event *Read Product Review* (cohorting activity). |]A;| Retaining Activities  | The activities that indicates retention of a cohorted user selected above. Example: Users who used event *Read Product Review* (cohorting activity) and returned to use *Purchase Product* (retaining activity). |]A;| Cohorting/Retaining Filters  | An analytics query snippet to further filter the cohorting activity. Example: *&#124; where application_Version = '1.0'* |]A;| Show  | The metric to visualize in the table. *Retention Rate* shows the rate at which users returned for the time period in the column. *Retained Users* is raw number of retained users for the time period. *Potentially Retainable Users* is the number of users who could potentially have been retained for that period.' |]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Présentation des paramètres d'analyse de cohorte]A;| Paramètre | Utilisé pour |]A;| ----- | ----- |]A;| Type de cohorte | Dimension en fonction de laquelle répartir les nombres de conservation |]A;| Période de conservation | Période à utiliser pour le calcul de conservation. Peut être quotidienne, hebdomadaire ou mensuelle |]A;| Périodes à analyser | Nombre de périodes de conservation à analyser.  |]A;| Activités de cohorte | Activités qui sélectionnent une cohorte d'utilisateurs. Exemple : utilisateurs qui ont utilisé l'événement *Read Product Review* (activité de cohorte). |]A;| Activités de conservation | Activités qui indiquent la conservation d'un utilisateur en cohorte sélectionné ci-dessus. Exemple : utilisateurs qui ont utilisé l'événement *Read Product Review* (activité de cohorte) et sont revenus utiliser *Purchase Product* (activité de conservation). |]A;| Filtres de cohorte/conservation | Extrait de requête analytique permettant de filtrer davantage l'activité de cohorte. Exemple : *&#124; où application_Version = « 1.0 »* |]A;| Afficher | Métrique à visualiser dans le tableau. Le *Taux de conservation* montre le taux de retour des utilisateurs pour la période dans la colonne. *Utilisateurs conservés* est le nombre brut d'utilisateurs conservés pendant la période de temps. *Utilisateurs potentiellement conservables* est le nombre d'utilisateurs susceptibles d'être conservés pendant cette période.' |]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.11.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## What is a week for a user?]A;The short answer is that it is unique for each user. Our analysis treats each user's retention window seperately - giving an accurate view of their actual behavior with your app. ]A;]A;Consider the example below of two users X and Y: ]A;]A;| User | First use of app | Weeks for user |]A;| ----- | :----- | :----- |]A;| X | April 3 | w1 = April 10, w2 = April 17, w3 = April 24  |]A;| Y | April 5 | w1 = April 12, w2 = April 19, w3 = April 26  |]A;]A;Each user gets a seperate retention window. So, if both users came back on April 18, then it considered as Week 2 usage for User X but Week 1 usage for User Y. ]A;]A;This allows the normalization their app use over the retention window - making it seem as if all users in a cohort used the app on the same day. This allow for better analysis and comparision of user behavior.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Que représente une semaine pour un utilisateur ?]A;La réponse courte est que ça dépend de chaque utilisateur. Notre analyse traite distinctement la fenêtre de conservation de chaque utilisateur pour donner une vue juste de son comportement réel avec votre application. ]A;]A;Prenons l'exemple ci-dessous de deux utilisateurs X et Y : ]A;]A;| Utilisateur | Première utilisation de l'application | Semaines pour l'utilisateur |]A;| ----- | :----- | :----- |]A;| X | 3 avril | s1 = 10 avril, s2 = 17 avril, s3 = 24 avril |]A;| Y | 5 avril | s1 = 12 avril, s2 = 19 avril, s3 = 26 avril |]A;]A;Chaque utilisateur obtient une fenêtre de conservation distincte. Ainsi, si les deux utilisateurs sont revenus le 18 avril, il s'agit de la semaine 2 d'utilisation pour l'utilisateur X, mais de la semaine 1 d'utilisation pour l'utilisateur Y. ]A;]A;Cela permet de normaliser leur utilisation de l'application dans la fenêtre de conservation, pour faire comme si tous les utilisateurs d'une cohorte avaient utilisé l'application le même jour. Cela permet aussi de mieux pouvoir analyser et comparer le comportement des utilisateurs.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.12.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Related Workbook Templates]A;* Retention - N-Period]A;* Retention - Unbounded]A;* Retention - Bracket]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Modèles de classeur associés]A;* Conservation - Période N]A;* Conservation - Illimitée]A;* Conservation - Tranche]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.3.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Cohort Analysis Parameters]A;Use these fields to customize your retention settings.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Paramètres d'analyse de la cohorte]A;Utilisez ces champs pour personnaliser vos paramètres de conservation.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.4.content.parameters.e62098aeac3f48008e623e7d9a052e56.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[1d: Daily, 7d: Weekly, 30/28d: Monthly]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[1j : Quotidien, 7j : Hebdomadaire, 30/28j : Mensuel]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.4.content.parameters.fa4b29d9bfc146e398f13cba05afbea3.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Number of cohort periods to analyze]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Nombre de périodes de cohorte à analyser]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.5.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Cohort Analysis Table]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Tableau d'analyse des cohortes]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.7.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Interpreting the table]A;This section shows how to read and interpret a retention table. The section below shows a row from a weekly retention report that we will try to read.]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Interprétation du tableau]A;Cette section montre comment lire et interpréter un tableau de conservation. La section ci-dessous montre une ligne d'un rapport de conservation hebdomadaire que nous allons essayer de lire.]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.9.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[| Column | Explanation | Interpretation in the example |]A;| ----- | :----- | :----- |]A;| Cohort | Identifies the cohorting criteria specified by the CohortType parameter. | This row explains the retention behavior of users who used the 'Add to Cart' event. |]A;| Total Users | Number of unique users who used the Add to Cart feature  | 1000 unique users added an item to their cart in your app |]A;| <1 week | Percentage of cohort users who returned between 1 and 6 days after using 'Add to Cart' (using it again the same day does not count towards retention)  | 50% or 500 users returned to use your app within the first week after they added an item to their cart |]A;| +1 week | Percentage of cohort users who returned between 7 and 13 days after using 'Add to Cart'  | 30% or 300 users returned to use your app a week later |]A;| +N week | Percentage of cohort users who returned in the Nth week after 'Add to Cart'  | 15% or 150 users, when N = 3  |]A;]A;]A;]A;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[| Colonne | Explication | Interprétation dans l'exemple |]A;| ----- | :----- | :----- |]A;| Cohort | Identifie le critère de cohorte spécifié par le paramètre CohortType. | Cette ligne décrit le comportement de conservation des utilisateurs qui ont utilisé l'événement « Add to Cart ». |]A;| Total Users | Nombre d'utilisateurs uniques ayant utilisé la fonctionnalité Add to Cart | 1000 utilisateurs uniques ont ajouté un élément à leur panier dans votre application |]A;| <1 week | Pourcentage d'utilisateurs de la cohorte qui sont revenus entre 1 et 6 jours après l'utilisation de « Add to Cart » (une réutilisation le même jour ne compte pas dans la conservation) | 50 % ou 500 utilisateurs ont réutilisé votre application dans la première semaine suivant l'ajout d'un élément dans leur panier |]A;| +1 week | Pourcentage d'utilisateurs de la cohorte qui sont revenus entre 7 et 13 jours après l'utilisation de « Add to Cart » | 30 % ou 300 utilisateurs ont réutilisé votre application une semaine plus tard |]A;| +N week | Pourcentage d'utilisateurs de la cohorte qui sont revenus dans la Nième semaine suivant « Add to Cart » | 15 % ou 150 utilisateurs, quand N = 3 |]A;]A;]A;]A;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Cohort Analysis]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Analyse de cohorte]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

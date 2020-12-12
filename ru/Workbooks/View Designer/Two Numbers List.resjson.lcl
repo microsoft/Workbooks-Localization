@@ -12,21 +12,27 @@
       <Item ItemId=";items.text3.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Two Numbers & List Template]D;]A;Use this report to model the Two Numbers & List tile from View Designer]D;]A;]D;]A;1. To replace the below views with your own queries, select the `Edit` button in the toolbar at the top of the page to enter the `Edit Mode`.]D;]A;]D;]A;2. Then select the `↑ Edit` option in the lower right hand corner of the parameter step below, choose the `Message` and `Message2nd` parameter and the ]D83D;]DD8A;️icon to open the context menu. From there, you can replace the number queries.]D;]A;*Make sure to include `| project Message = strcat('# ', Count)` for large text formatting.*]D;]A;]D;]A;]D;]A;3. Then choose the `↑ Edit` option in the lower right hand corner of the List cell and paste your query.]D;]A;]D;]A;]D83D;]DCA1; For an individual step-by-step instructions on how to make this workbook, follow our [guide]5D;(https://docs.microsoft.com/en-us/azure/azure-monitor/platform/view-designer-conversion-tiles) or read more about other features in the [Workbooks Documentation]5D;(https://docs.microsoft.com/azure/azure-monitor/app/usage-workbooks)]D;]A;<br/>]D;]A;<br/>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Шаблон "Два числа и список"]D;]A;Используйте этот отчет для моделирования плитки "Два числа и список" в конструкторе представлений.]D;]A;]D;]A;1. Чтобы заменить приведенные ниже представления собственными запросами, нажмите кнопку "Изменить" на панели инструментов в верхней части страницы для перехода в режим редактирования.]D;]A;]D;]A;2. Затем щелкните "↑ Изменить" в нижнем правом углу шага с параметрами, выберите параметры "Message" и "Message2nd" и щелкните значок ]D83D;]DD8A;️, чтобы открыть контекстное меню. С помощью его параметров можно заменить числовые запросы.]D;]A;* Обязательно включите "| project Message = strcat('# ', Count) для форматирования текста большого объема.*]D;]A;]D;]A;]D;]A;3. Затем нажмите кнопку "↑ Изменить" в правом нижнем углу ячейки списка и вставьте запрос.]D;]A;]D;]A;]D83D;]DCA1; Пошаговые инструкции по созданию книги приведены в этом [руководстве]5D;(https://docs.microsoft.com/ru-ru/azure/azure-monitor/platform/view-designer-conversion-tiles). Дополнительные сведения о других функциях можно найти в [документации по книгам]5D;(https://docs.microsoft.com/azure/azure-monitor/app/usage-workbooks).]D;]A;<br/>]D;]A;<br/>]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text5.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[_Average per hour_]D;]A;{Message}]D;]A;_Total entries_]D;]A;{Message2nd}]D;]A;<br />]D;]A;<br />]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[_Средн. в час_]D;]A;{Message}]D;]A;_Всего записей_]D;]A;{Message2nd}]D;]A;<br />]D;]A;<br />]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
-        <Cmts>
-          <Cmt Name="Dev"><![CDATA[{Locked={Message},{Message2nd}}]]></Cmt>
-        </Cmts>
       </Item>
       <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Two Numbers & List]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Два числа и список]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
