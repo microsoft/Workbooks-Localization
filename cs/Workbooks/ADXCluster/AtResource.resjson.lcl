@@ -14,6 +14,9 @@
         <Item ItemId=";(...) label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Historical Daily Average]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Historický denní průměr]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -86,6 +89,9 @@
         <Item ItemId=";(...) s.labelSettings.aggUser.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Count (Commands & Queries)]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Počet (příkazy a dotazy)]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -137,6 +143,9 @@
         <Item ItemId=";(...) json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[<span style="color: #000000; font-family: Babas; font-size: 2em;">Get more visibility into the usage and performance of your cluster</span>]D;]A;]D;]A;This section provides additional monitoring coverage that is based on platform logs (diagnostic logs).</br>]D;]A;To activate additional monitoring, you must enable the "Command" and "Query" diagnostic settings and send them to Log Analytics. [Learn more]5D;(https://docs.microsoft.com/en-us/azure/data-explorer/using-diagnostic-logs?tabs=commands-and-queries#set-up-diagnostic-logs-for-an-azure-data-explorer-cluster)</div>]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[<span style="color: #000000; font-family: Babas; font-size: 2em;">Mějte lepší přehled o využití a výkonu vašeho clusteru.</span>]D;]A;]D;]A;Tato část obsahuje další informace o monitorování, které jsou založeny na protokolech platformy (diagnostické protokoly).</br>]D;]A;Pokud chcete aktivovat další monitorování, musíte povolit nastavení diagnostiky Příkaz a Dotaz a odeslat je do Log Analytics. [Další informace]5D;(https://docs.microsoft.com/en-us/azure/data-explorer/using-diagnostic-logs?tabs=commands-and-queries#set-up-diagnostic-logs-for-an-azure-data-explorer-cluster)</div>]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -186,7 +195,7 @@
           <Str Cat="Text">
             <Val><![CDATA[Principal]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Objekt zabezpečení]]></Val>
+              <Val><![CDATA[Instanční objekt]]></Val>
             </Tgt>
             <Prev Cat="Text">
               <Val><![CDATA[User]]></Val>
@@ -200,12 +209,18 @@
         <Item ItemId=";(...) 14.description" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[System Operations (Data Management) are used for ingestion and other cluster management aspects]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Systémové operace (Správa dat) se používají k ingestování dat a pro další aspekty správy clusteru.]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) 14.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[System Operations]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Systémové operace]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -231,24 +246,36 @@
       <Item ItemId=";items.ClusterGroup.content.items.IngestionInternalGroup.content.items.IngestionLatency.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Ingestion Latency]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Latence ingestování dat]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.ClusterGroup.content.items.IngestionInternalGroup.content.items.IngestionResult.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Ingestion Result]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Výsledek ingestování dat]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.ClusterGroup.content.items.IngestionInternalGroup.content.items.IngestionVolume.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Ingestion Volume]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Objem ingestovaných dat]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.ClusterGroup.content.items.IngestionInternalGroup.content.items.ingestion.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Ingestion Utilization]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Využití ingestování dat]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -256,7 +283,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Ingestion]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Příjem]]></Val>
+            <Val><![CDATA[Ingestování]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -318,30 +345,45 @@
       <Item ItemId=";items.ClusterGroup.content.items.StreamingIngestion.content.items.StreamingIngestDataRate.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Streaming Ingest Data Rate]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Rychlost ingestování streamovaných dat]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.ClusterGroup.content.items.StreamingIngestion.content.items.StreamingIngestDuration.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Streaming Ingest Duration]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Doba trvání ingestování streamovaných dat]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.ClusterGroup.content.items.StreamingIngestion.content.items.StreamingIngestRequestRate.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Streaming Ingest Request Rate]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Četnost požadavků na ingestování streamovaných dat]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.ClusterGroup.content.items.StreamingIngestion.content.items.StreamingIngestResult.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Streaming Ingest Result]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Výsledek ingestování streamovaných dat]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.ClusterGroup.content.items.StreamingIngestion.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Streaming Ingestion]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Ingestování streamovaných dat]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -357,6 +399,9 @@
       <Item ItemId=";items.ClusterGroup.content.items.keepalive.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Keep Alive]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Udržování připojení]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -453,18 +498,27 @@
       <Item ItemId=";items.Commands.content.items.ByUsers.content.items.TotalCPUbyUser.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Total CPU by Principal]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Procesor celkem podle instančního objektu]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Commands.content.items.ByUsers.content.items.TotalMemorybyUser.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Total Memory by Principal]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Paměť celkem podle instančního objektu]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Commands.content.items.ByUsers.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Count, Memory, and CPU By Principal]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Počet, paměť a procesor podle instančního objektu]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -516,6 +570,9 @@
       <Item ItemId=";items.Commands.content.items.ChangesinQueryCountbyUser.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Changes in Query Count by Principal (Not affected by the Time Range)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Změny v počtu dotazů podle instančního objektu (není ovlivněno časovým rozsahem)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -549,6 +606,9 @@
       <Item ItemId=";items.Commands.content.items.OnboardingMessageCommands.content.items.text2.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Additional monitoring coverage is based on platform logs (diagnostic logs).</br>This tab surfaces usage telemetry on your monitored clusters to help you identify usage anomalies.</br></br>To activate additional monitoring, you must enable the "Command" and "Query" diagnostic settings and send them to Log Analytics. [Learn more]5D;(https://docs.microsoft.com/en-us/azure/data-explorer/using-diagnostic-logs?tabs=commands-and-queries#set-up-diagnostic-logs-for-an-azure-data-explorer-cluster)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Další pokrytí monitorování je založeno na protokolech platformy (diagnostické protokoly).</br>Na této kartě se zobrazuje telemetrie využití ve vámi monitorovaných clusterech, která vám pomůže identifikovat anomálie využití.</br></br>Pokud budete chtít aktivovat další monitorování, musíte povolit nastavení diagnostiky Příkaz a Dotaz a odeslat je do Log Analytics. [Další informace]5D;(https://docs.microsoft.com/en-us/azure/data-explorer/using-diagnostic-logs?tabs=commands-and-queries#set-up-diagnostic-logs-for-an-azure-data-explorer-cluster)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -582,18 +642,27 @@
       <Item ItemId=";items.Commands.content.items.expanderforcommands.content.items.TopUsersbyCommandandQueryCount.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Top Principals by Command and Query Count]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Hlavní instanční objekty podle počtu příkazů a dotazů]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Commands.content.items.expanderforcommands.content.items.TopUsersbyCommandandQueryCountCopy.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Top Principals and Applications by Command and Query Count]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Hlavní instanční objekty a aplikace podle počtu příkazů a dotazů]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Commands.content.items.parameters7.content.parameters.255d43af8d9e4b60a8a1335be810533f.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[System operations (Data Management) are used for ingestion and other cluster management aspects]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Systémové operace (Správa dat) se používají k ingestování dat a pro další aspekty správy clusteru.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -654,12 +723,18 @@
       <Item ItemId=";items.Overview.content.items.expander.content.items.HeaviestUserCountHeader.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[###### Top Resource Consumers ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[###### Hlavní uživatelé prostředků ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overview.content.items.expander.content.items.InnerHelp.content.items.MoreInfo.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[This table shows the distribution of the memory/CPU consumption, relative to the actual memory and CPU consumption of the cluster. </BR>For more usage information go to the Usage tab.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Z této tabulky lze zjistit rozložení spotřeby paměti/procesoru vzhledem ke skutečné spotřebě paměti a procesoru v clusteru. </BR>Další informace o využití najdete na kartě Využití.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -684,6 +759,9 @@
       <Item ItemId=";items.Overview.content.items.expander.content.items.queryusage.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[]D83D;]DC65; Unique User Count  (Over a sliding timeline window. Not affected by the Time Range)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[]D83D;]DC65; Počet jedinečných uživatelů (přes posuvné okno časové osy; není ovlivněno časovým rozsahem)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -744,6 +822,9 @@
       <Item ItemId=";items.metricshelptext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[*Information about metrics is available [here]5D;(https://docs.microsoft.com/en-us/azure/data-explorer/using-metrics#cluster-metrics)*]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[*Informace o metrikách jsou k dispozici [zde]5D;(https://docs.microsoft.com/en-us/azure/data-explorer/using-metrics#cluster-metrics)*]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -759,12 +840,18 @@
       <Item ItemId=";items.parameters0.content.parameters.f3c4e9cb8f5c45ef9ff99517d2a4aa19.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[ADX-Cluster]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[ADX-Cluster]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Azure Data Explorer Cluster Resource Overview]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Přehled prostředků clusteru služby Azure Data Explorer]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

@@ -12,18 +12,27 @@
       <Item ItemId=";items.0.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Bracket Retention]A;---]A;]A;Bracket retention measures how many of your users come back to perform one of the `RetainingActivities` in a particular period after they perform one of the `CohortingActivities` in your app. For instance, you could be measuring the number of users who returned to use your app one week from day from the day they first downloaded it. Seeing the retention trend for days 7-13 will give you an indication of the stickiness of your app. ]A;]A;Bracket retention is similar to N-period retention, except that the retention time ranges or buckets are not fixed. You are free to choose any time bucket that makes sense for your app. This gives app owners a lot more flexibility in analyzing their user retention.]A;]A;Bracket retention is well-suited for gaming apps, or other kinds of app where you are trying to get users to develop a daily habit.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# Retence za období]A;---]A;]A;Retence za období měří, kolik z vašich uživatelů se vrací za účelem provedení jedné z aktivit RetainingActivities v konkrétním období po provedení jedné z aktivit CohortingActivities ve vaší aplikaci. Můžete například měřit to, kolik uživatelů se vrátilo a použilo vaši aplikaci po týdnu od stažení aplikace. Zobrazením trendu retence pro dny 7 až 13 získáte informace o metrice „stickiness“ vaší aplikace. ]A;]A;Metrika Retence za období je podobná metrice Retence pro N období, až na to, že časové rozsahy (intervaly) retence nejsou konstantní. Můžete zvolit libovolný časový interval, který má pro vaši aplikaci smysl. To dává vlastníkům aplikací mnohem větší flexibilitu při analýze míry udržení (retence) uživatelů.]A;]A;Metrika Retence za období je vhodná pro herní aplikace nebo jiné druhy aplikací, ke kterým by se uživatelé měli každodenně vracet.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.1.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Activity Selection]A;Use these fields to set events that that correspond to interesting user activities. The `Understanding Retention Parameter` section at the bottom describes these parameters in detail.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Výběr aktivity]A;Pomocí těchto polí můžete nastavit události, které odpovídají zajímavým aktivitám uživatele. Tyto parametry jsou podrobně vysvětleny v níže uvedené části Vysvětlení parametrů retence.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.3.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Retention Parameters]A;Use these fields to customize your retention settings. ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Parametry retence]A;Pomocí těchto polí si můžete přizpůsobit nastavení retence. ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -39,6 +48,9 @@
       <Item ItemId=";items.4.content.parameters.3f79ef588e214d79923a2293888b0b0f.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Number of cohort periods to analyze]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Počet období kohorty k analýze]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -51,12 +63,18 @@
       <Item ItemId=";items.7.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Understanding the Retention Parameters]A;| Parameter | Used for |]A;| ----- | ----- |]A;| Retention Period | The period to use in retention calculation. Can be Daily, Weekly or Monthly |]A;| Cohorts To Analyze  | The number of cohorts to analyze. This corresponds to the N in N-period retention |]A;| Cohorting Activities  | The activities that selects a cohort of users. Example: Users who used event *Read Product Review* (cohorting activity). |]A;| Retaining Activities  | The activities that indicates retention of a cohorted user selected above. Example: Users who used event *Read Product Review* (cohorting activity) and returned to use *Purchase Product* (retaining activity). |]A;| Cohorting/Retaining Filters  | An analytics query snippet to further filter the cohorting activity. Example: *&#124; where application_Version = '1.0'* |]A;| SelectBrackets | Some example time brackets to get your started with |]A;| CustomBrackets | Use this field to set custom time brackets that make sense for your app. It contains is a comma seperated list of timespans that correspond to bracket boundaries. |]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Vysvětlení parametrů retence]A;| Parametr | Používáno pro |]A;| ----- | ----- |]A;| Období retence | Období, které se má používat v rámci výpočtu retence. Možné hodnoty: Denně, Týdně nebo Měsíčně |]A;| Kohorty pro analýzu  | Počet kohort, které se mají analyzovat. Tento počet odpovídá hodnotě N v parametru Retence pro N období |]A;| Aktivity kohortování  | Aktivity, které vybírají kohortu uživatelů. Příklad: Uživatelé, kteří použili událost *Přečtení recenze produktu* (aktivita kohortování) |]A;| Aktivity retence  | Aktivity, které indikují retenci kohortovaného uživatele vybraného výše. Příklad: Uživatelé, kteří použili událost *Přečtení recenze produktu* (aktivita kohortování) a vrátili se, aby použili událost *Zakoupení produktu* (aktivita retence) |]A;| Filtry kohortování/retence  | Fragment kódu dotazu analýzy pro další filtrování aktivity kohortování. Příklad: *&#124; where application_Version = '1.0'* |]A;| SelectBrackets | Několik ukázkových období, které vám pomohou začít |]A;| CustomBrackets | Toto pole slouží k nastavení vlastních období, která mají pro vaši aplikaci smysl. Obsahuje seznam časových intervalů oddělených čárkami, které odpovídají hranicím období. |]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.8.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Related Workbook Templates]A;* Retention - N-Period]A;* Retention - Unbounded]A;* Cohort Analysis]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Související šablony sešitu]A;* Retence – N období]A;* Retence – neomezené]A;* Kohortová analýza]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

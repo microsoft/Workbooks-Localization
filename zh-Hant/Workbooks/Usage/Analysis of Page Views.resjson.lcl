@@ -12,24 +12,36 @@
       <Item ItemId=";items.Commonparameterblock.content.parameters.4548f4fe013042c9b796385cd12ccb24.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Use this parameter to essentially set the number of user sessions to use in calculations (sampling). This allows you to find the right balance between performance and accuracy for your analysis. Optimize for: Performance = 10,000 sessions, Balance = 100,000 samples, Accuracy = 1,000,000 sessions]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[使用此參數，基本上就是在設定用於計算 (取樣) 中的使用者工作階段數目。您如此即可在分析的效能與正確性之間，找出最佳平衡。最佳化: 效能 = 10,000 個工作階段，平衡 = 100,000 個樣本，正確性 = 1,000,000 個工作階段]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Descriptiontext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Analysis of Page Views]A;Page views correspond to user activity in your app. Understanding how your users interact with your pages will give you good insights into what is working in your app and what aspects need improvements. ]A;]A;This report will help you understand common page view behaviors like:]A;* Usage]A;* Time spent on page]A;* Time to first interaction]A;* Exit rates ]A;]A;If your telemetry does not include page views, then follow these [instructions]5D;(https://docs.microsoft.com/en-us/azure/application-insights/app-insights-javascript) to begin collecting -- it is relatively straightforward.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# 網頁檢視分析]A;網頁檢視也就是應用程式中的使用者活動。了解使用者與您頁面之間的互動情況，將讓您對於應用程式中所執行的工作以及需要改進的方面，有更好的見解。]A;]A;此報表有助於您了解一般的網頁檢視行為，例如:]A;* 使用情況]A;* 停留在頁面上的時間]A;* 首次互動的時間]A;* 結束率]A;]A;若您的遙測未包含網頁檢視，請遵循這些[指示]5D;(https://docs.microsoft.com/zh-tw/azure/azure-monitor/app/javascript) (機器翻譯) 開始收集 -- 其相對地簡單明瞭。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.PageExitRatesfooter.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[- The calculation may use sampling based on the `OptimizeCalculationsFor` parameter. ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[- 此計算會依據 `OptimizeCalculationsFor` 參數，使用取樣。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.PageExitRatestext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[---]A;## Page Exit Rates]A;A page view is said to have contributed to an _exit_ when it is the last page viewed in the session. The user is presumed to have exited your app -- either by navigating to another app or closing the app/browser. ]A;]A;A page's _exit rate_ is the percentages of views that were the last in the session. ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[---]A;## 頁面結束率]A;網頁檢視可以視作為在工作階段中檢視最後一個頁面時，出現_結束_的情況。假設使用者已結束您的應用程式 -- 可能是瀏覽至其他應用程式或關閉此應用程式/瀏覽器。]A;]A;頁面的_結束率_是工作階段中最後一個檢視的百分比。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -38,55 +50,76 @@
           <Val><![CDATA[- The calculations may use sampling based on the `OptimizeCalculationsFor` parameter. ]A;- Time Spent on Page does not consider exit pages (last page of the session) in this calculations. The `Sampled Page Views` column may be fewer than the sampling count of {OptimizeCalculationsFor} because of this.]A;]]></Val>
         </Str>
         <Disp Icon="Str" />
-        <Cmts>
-          <Cmt Name="Dev"><![CDATA[{Locked={OptimizeCalculationsFor}}]]></Cmt>
-        </Cmts>
       </Item>
       <Item ItemId=";items.Timespentonpageparameterblock.content.parameters.0411936a4cb944dd946db449ce3b284e.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Use this parameter to filter our page views that took more time that is possible (for example left open in a non-active tab). The default is 1 hour. ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[使用此參數可篩選出會花費較可能時間更長的網頁檢視 (例如: 在非使用中索引標籤中維持開啟的頁面)。預設為 1 小時。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Timespentonpagetext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[---]A;## Time Spent on Page]A;This report helps you understand the time spent by customers in your pages. Longer time spent pages usually indicates good engagement and is generally the desired behavior.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[---]A;## 停留在頁面上的時間]A;此報告有助於您了解客戶在您頁面上所花費的時間。花費時間較長時間的頁面，通常表示反應良好，而且普遍為所需的行為。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.TimetoFirstInteractionfooter.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[- The calculation may use sampling based on the `OptimizeCalculationsFor` parameter. ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[- 此計算會依據 `OptimizeCalculationsFor` 參數，使用取樣。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.TimetoFirstInteractionparameterblock.content.parameters.65e9a4922e89477aa041e99a61481c65.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[For users, the first use is calculated as the first use within the time range. It is possible that the user started using your app before the time range.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[若為使用者，首次使用計為時間範圍內第一次使用。使用者有可能在此時間範圍前，就已開始使用您的應用程式。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.TimetoFirstInteractiontext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[---]A;## Time to First Interaction]A;This report helps you understand the time taken by customers to first interact with critical features of your app. It can help you uncover issues with discoverability of your features or the intuitiveness of your app's UI/flow.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[---]A;## 首次互動時間]A;此報告有助於您了解客戶第一次與應用程式關鍵功能進行互動的時間。您可藉此找出功能的可探索性問題，或是應用程式 UI/流程的直覺性問題。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Usagefootertext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[- The `As % of App Users/Sessions/Views` columns compare the usage of the selected page view with that of the whole app.]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[- 「為應用程式使用者/工作階段/檢視的 %」資料行會比較所選網頁檢視的使用情況與整個應用程式的使用情況。]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Usagesectiontext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[---]A;## Usage]A;This section helps you understand how the pages of your app are used -- in terms of # of users, sessions and views. ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[---]A;## 使用情況]A;此區段有助於您了解應用程式頁面在使用者人數、工作階段及檢視的使用情況。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Analysis of Page Views]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[網頁檢視分析]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
