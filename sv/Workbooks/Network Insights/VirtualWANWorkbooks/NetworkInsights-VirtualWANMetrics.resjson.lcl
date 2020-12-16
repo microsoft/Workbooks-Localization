@@ -117,12 +117,18 @@
       <Item ItemId=";items.Hublevelstatusandcapacitieswithoutfirewall.content.gridSettings.labelSettings.totalHubCapacityInGbps.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Total Hub Capacity (Gbps)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Total navkapacitet (Gbit/s)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Hublevelstatusandcapacitieswithoutfirewall.content.gridSettings.labelSettings.vpnGWScaleUnit.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[VPN Gateway Scale Units]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Skalenheter för VPN Gateway]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -189,6 +195,9 @@
       <Item ItemId=";items.S2SGatewayAverageBandwidth.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[S2S Gateway Average Bandwidth]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Genomsnittlig bandbredd för S2S Gateway]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -394,7 +403,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Virtual WAN]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Virtual WAN]]></Val>
+            <Val><![CDATA[Virtuell WAN]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -402,6 +411,9 @@
       <Item ItemId=";items.text17.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[]D;]A;## Hub Gateway Level Metrics]D;]A;| **Metric** | **Description** |]D;]A;| --- | --- |]D;]A;|Virtual WAN Connection Counts| Displays the total number of Virtual WAN Connections of type VPN, P2S, ER and Vnet|]D;]A;|S2S Gateway Average Bandwidth| Average site-to-site aggregate bandwidth of a gateway in bytes per second|]D;]A;|P2S Gateway Average Bandwidth| Average point-to-site aggregate bandwidth of a gateway in bytes per second|]D;]A;|Express Route Gateway BitsInPerSecond| Bits ingressing Azure per second|]D;]A;|Express Route Gateway BitsOutPerSecond| Bits egressing Azure per second|]D;]A;|Firewall Total Data Processed|Total Data Processed by Azure Firewall in Virtual Hub|]D;]A;]D;]A;## S2S VPN Connection Metrics]D;]A;| **Metric** | **Description** |]D;]A;| --- | --- |]D;]A;|Tunnel Bandwidth| Average bandwidth of a tunnel in bytes per second|]D;]A;|Tunnel Egress Bytes| Outgoing bytes of a tunnel|]D;]A;|Tunnel Egress Packets| Outgoing packet count of a tunnel|]D;]A;|Tunnel Egress TS Mismatch Packet Drop| Outgoing packet drop count from traffic selector mismatch of a tunnel|]D;]A;|Tunnel Ingress Bytes| Incoming bytes of a tunnel|]D;]A;|Tunnel Ingress Packet| Incoming packet count of a tunnel|]D;]A;|Tunnel Ingress TS Mismatch Packet Drop| Incoming packet drop count from traffic selector mismatch of a tunnel|]D;]A;]D;]A;## P2S VPN Connection Metrics]D;]A;| **Metric** | **Description** |]D;]A;| --- | --- |]D;]A;|P2S Connection Count| Point-to-site connection count of a gateway|]D;]A;]D;]A;## ER Circuit Metrics]D;]A;| **Metric** | **Description** |]D;]A;| --- | --- |]D;]A;|ExpressRoute Circuit BitsInPerSecond| Bits ingressing Azure per second|]D;]A;|ExpressRoute Circuit BitsOutPerSecond| Bits egressing Azure per second|]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[]D;]A;## Mått för hubbgatewaynivå]D;]A;| **Mått** | **Beskrivning** |]D;]A;| --- | --- |]D;]A;|Antal virtuella WAN-anslutningar| Visar det totala antalet virtuella WAN-anslutningar av typen VPN, P2S, ER och VNET|]D;]A;|Genomsnittlig bandbredd för S2S-Gateway| Genomsnittlig mängd bandbredd för plats-till-plats för en gateway i byte per sekund|]D;]A;|Genomsnittlig bandbredd för P2S-Gateway| Genomsnittlig aggregerad bandbredd punkt-till-plats för en gateway i byte per sekund|]D;]A;|ExpressRoute Gateway BitsInPerSecond| Inkommande bits till Azure per sekund|]D;]A;|ExpressRoute Gateway BitsOutPerSecond| Utgående bits från Azure per sekund|]D;]A;|Totalt antal bearbetade brandväggsdata|Totalt antal bearbetade data av Azure Firewall i den virtuella hubben|]D;]A;]D;]A;## Anslutningsmått för S2S VPN]D;]A;| **Mått** | **Beskrivning** |]D;]A;| --- | --- |]D;]A;|Tunnelbandbredd|Genomsnittlig bandbredd för en tunnel i byte per sekund|]D;]A;|Utgående byte för tunnel|Utgående byte för en tunnel |]D;]A;| Utgående paket för tunnel | Antal utgående paket för en tunnel |]D;]A;| Tunnel-ta bort TS-matchningsfel felaktigt paket | Antal utgående paket som inte matchar i trafik väljaren för en tunnel|]D;]A;|Tunnel ingående byte |Inkommande byte för en tunnel|]D;]A;|Tunnel ingående paketet| Antal inkommande paket för en tunnel|]D;]A;|Tunnel ingående TS-felmatchning vid ignorerade paket| Antal inkommande ignorerade paket från trafikväljaren matchar inte en tunnel|]D;]A;]D;]A;## P2S VPN-anslutningsmått]D;]A;| **Mått** | **Beskrivning** |]D;]A;| --- | --- |]D;]A;|Antal P2S-anslutningar| Antal anslutningar punkt-till-plats för en gateway|]D;]A;]D;]A;## ER-kretsmått]D;]A;| **Mått** | **Beskrivning** |]D;]A;| --- | --- |]D;]A;|ExpressRoute BitsInPerSecond| Inkommande bits till Azure per sekund|]D;]A;|ExpressRoute-BitsOutPerSecond| Utgående bits till Azure per sekund|]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
