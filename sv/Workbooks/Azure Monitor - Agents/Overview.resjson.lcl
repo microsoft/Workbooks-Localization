@@ -99,6 +99,9 @@
       <Item ItemId=";items.GetStartedGroup.content.items.GetStartedText.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Get started]D;]A;]D;]A;Welcome to the Azure Monitor Log Analytics agent workbook. This workbook is designed to provide you with an understanding of:]D;]A;* How many agents are reporting to my workspace and how are they connected?]D;]A;* What is the agent connected state? How many are actively connected and reporting and how many aren't?]D;]A;* Are any Windows agents affecting the resource utlization of the host?]D;]A;]D;]A;You can drill-down to review the heartbeat trend for a selected agent machine, and its performance utilization (only available on Windows operating system at this time).]D;]A;]D;]A;The following tabs include performance charts that show resource utilization from the agent's related processes:]D;]A;]D;]A;1. **Health Service** - The *HealthService* is the primary agent process responsible for maintaining communication between the agent and Azure Monitor, downloading configuration based on insights and solutions enabled in the workspace, processing the configuration, and sending data collected to a Log Analytics workspace. ]D;]A;2. **Monitoring Host** - The *MonitoringHost* is a child monitoring host process responsible for performing monitoring activities defined in the downloaded configuration from Azure Monitor, such as:]D;]A;]D;]A;    * Monitoring and collecting Windows event log data.]D;]A;    * Monitoring and collecting Log-based file data.]D;]A;    * Monitoring and collecting performance counter data.]D;]A;]D;]A;For additional information about the Log Analytics agent, see [agent overview]5D;(https://docs.microsoft.com/azure/azure-monitor/platform/agents-overview#log-analytics-agent).]D;]A;]D;]A;]D;]A;## Requirements]D;]A;]D;]A;* A [Log Analytics workspace]5D;(https://docs.microsoft.com/azure/azure-monitor/platform/design-logs-deployment).]D;]A;]D;]A;In order to analyze the performance utlization of the Log Analytics Windows agent, you need to enable the collection of the following performance counters:]D;]A;* Health Service Management Groups(*)\Send Queue % Used ]D;]A;* Health Service(*)\Module Count]D;]A;* Health Service(*)\Workflow Count ]D;]A;* Process(HealthService)\% Processor Time ]D;]A;* Process(HealthService)\Handle Count ]D;]A;* Process(HealthService)\Private Bytes ]D;]A;* Process(MonitoringHost*)\% Processor Time ]D;]A;* Process(MonitoringHost*)\Private Bytes ]D;]A;]D;]A;If you are unfamiliar with how to enable performance counters in your workspace, see [Configure performance data source]5D;(https://docs.microsoft.com/azure/azure-monitor/platform/data-sources-performance-counters#configuring-data-sources).]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# Kom igång]D;]A;]D;]A;Välkommen till arbetsboken för Azure Monitor Log Analytics-agenten. Den här arbetsboken ger dig en förståelse för:]D;]A;* Hur många agenter rapporterar till min arbetsyta och hur är de anslutna?]D;]A;* Vad är agentens anslutna status? Hur många är aktivt anslutna och rapporterar och hur många är det inte?]D;]A;* Påverkar några Windows-agenter värdens resursanvändning?]D;]A;]D;]A;Du kan detaljgranska för att kontrollera pulsslagstrenden för en vald agentdator och dess prestandaanvändning (endast tillgänglig på Windows-operativsystem just nu).]D;]A;]D;]A;Följande flikar innehåller prestandadiagram som visar resursutnyttjande från agentens relaterade processer:]D;]A;]D;]A;1. ** Health Service ** - * HealthService * är den primära agentprocessen som ansvarar för att upprätthålla kommunikationen mellan agenten och Azure Monitor, hämtning av konfiguration baserat på insikter och lösningar aktiverade på arbetsytan, bearbetar konfigurationen och skickar data som samlats in till en Log Analytics-arbetsyta. ]D;]A;2. **Övervakningsvärd** -  *MonitoringHost* är en underordnad övervakningsvärdprocess som ansvarar för att utföra övervakningsaktiviteter som har definierats i den hämtade konfigurationen från Azure Monitor, t.ex.:]D;]A;]D;]A;* Övervakning och insamling av Windows-händelseloggen.]D;]A;    * Övervakar och samlar in loggbaserade fildata.]D;]A;    * Övervakar och samlar in prestandaräknardata.]D;]A;]D;]A;Mer information om Log Analytics-agenten finns i [agentöversikt]5D; (https://docs.microsoft.com/azure/azure-monitor/platform/agents-overview#log-analytics-agent).]D;]A;]D;]A;# # Krav]D;]A;]D;]A;* EN [Log Analytics workspace]5D; (https://docs.microsoft.com/azure/azure-monitor/platform/design-logs-deployment).]D;]A;]D;]A;För att analysera prestandaanvändning för Log Analytics-Windows-agenten måste du aktivera samlingen av följande prestandaräknare:]D;]A;* Hanteringsgrupper för Health Service (*) \Överföringskö % används ]D;]A;* Health Service (*) \Modulantal]D;]A;* Health Service (*) \Arbetsflödesantal ]D;]A;* Process (Health Service) \% processor tid ]D;]A;* Process (tjänsten hälso tillstånd) antal \Hantera ]D;]A;* Process (Health Service) \Privat byte ]D;]A;* Process (MonitoringHost*) \% processortid ]D;]A;* Process (MonitoringHost *) \Privat byte ]D;]A;]D;]A;Om du inte känner till hur du aktiverar prestandaräknare i din arbetsyta, se [Konfigurera prestandadatakälla]5D; (https://docs.microsoft.com/azure/azure-monitor/platform/data-sources-performance-counters#configuring-data-sources).]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -123,24 +126,36 @@
       <Item ItemId=";items.Navigationlinks.content.links.2.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[ Health Service]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Hälsotjänst]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Navigationlinks.content.links.3.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[ Monitoring Host]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Övervakar värd]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.parameters1.content.parameters.15920bec4a724e23a0eec7b4e0b7acb4.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Unhealthy Criteria]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Defekta kriterier]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text0.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Log Analytics Agent Health]D;]A;Use this report to analyze the the health of the Log Analytics agent deployed in your workspace. ]D;]A;<br/>]D;]A;<br/>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Log Analytics-agenthälsa]D;]A;Använd den här rapporten för att analysera hälsotillståndet för Log Analytics-agent som distribueras på din arbetsyta.  ]D;]A;<br/>]D;]A;<br/>]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

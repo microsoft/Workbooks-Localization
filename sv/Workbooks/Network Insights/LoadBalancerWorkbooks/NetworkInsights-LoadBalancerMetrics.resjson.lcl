@@ -1137,12 +1137,18 @@
       <Item ItemId=";items.BackendPoolmetricVMLB.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[	No Virtual machine resources are configured in backend pool.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[	Inga virtuella datorresurser är konfigurerade i serverdelspoolen.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.BackendPoolmetricVMSSLB.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[	No Virtual machine scale set resources are configured in backend pool.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[	Inga skalningsuppsättningsresurser för virtuell dator har konfigurerats på serverdelspoolen.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1155,6 +1161,9 @@
       <Item ItemId=";items.CMhelp.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Connection Monitor Help]D;]A;Connection Monitors are used to test the latency of traffic to your Load Balancer Frontend IPs from regions all over the globe. If you have Connection Monitors configured, review the above map to see the latency of traffic to your Load Balancer from all regions with sources configured.]D;]A;]D;]A;If you do not have any Connection Monitors configured, [create Connection Monitors]5D;(https://docs.microsoft.com/en-us/azure/network-watcher/connection-monitor) with source VMs in your regions of interest and set your destination to the Frontend IP address of your Load Balancer to analyze your round-trip latencies.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# Hjälp om anslutningsövervakaren]D;]A;Anslutningsövervakare används för att testa trafikfördröjningen till din klientdels IP-adress för Load Balancer från regioner över hela världen. Om du har konfigurerat anslutningsövervakare granskar du ovanstående mappning för att se fördröjningen av trafik till din Load Balancer från alla regioner med konfigurerade källor.]D;]A;]D;]A;Om du inte har konfigurerat några anslutningsövervakare, [skapa anslutningsövervakare]5D;(https://docs.microsoft.com/en-us/azure/network-watcher/connection-monitor) med källdatorer i dina intresseregioner och ställ in målet till klientdelens IP-adress för din Load Balancer för att analysera tidsfördröjningarna för svar.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1182,6 +1191,9 @@
       <Item ItemId=";items.DataThroughputHelp.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Data Throughput Help]D;]A;This page is intended to allow customers to visualize the amount of data flowing through their load balancer and filter this to specific services or load balancer rules.]D;]A;* Review your total inbound and outbound Data Throughput to identify if your traffic patterns are as expected]D;]A;	+ If unexpected, view by Frontend IP and Port to see if a specific service is seeing higher than usual traffic]D;]A;]D;]A;* View by Frontend IP and/or Port to monitor specific services and load balancing rules]D;]A;]D;]A;**Note:** Graphs may have slight refresh time offset from each other, so graph totals may not match up. Please highlight specific time to get most accurate comparison.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# Hjälp om dataflöde]D;]A;Den här sidan är till för att låta att kunder visualisera mängden data som flödar via belastningsutjämnaren och filtrera det här efter specifika tjänster eller regler för belastningsutjämning.]D;]A;* Granska dina totala inkommande och utgående dataflöden för att identifiera om dina trafikmönster är som de ska]D;]A;	+ Om det inte finns något oväntat, visa efter klientdelens IP och port för att se om en specifik tjänst ses högre än den vanliga trafiken]D;]A;]D;]A;* Visa efter klientdels-IP och/eller port för övervakning av specifika tjänster och belastningsutjämningsregler]D;]A;]D;]A;**Obs!** Diagram kan ha en tidsförskjutning på ett annat sätt, vilket innebär att diagramsummor kanske inte överensstämmer. Markera specifik tid för att få mest exakt jämförelse.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1200,6 +1212,9 @@
       <Item ItemId=";items.Filter.content.parameters.02afd7424fdf4eb08a708615644f5531.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[To filter metrics]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Så här filtrerar du mått]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1242,18 +1257,27 @@
       <Item ItemId=";items.Filter.content.parameters.e91a52f28f314f0ca4c989dd3b6275dd.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[To filter metrics]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Så här filtrerar du mått]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.FlowDistributionHelp.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Flow Distribution Help]D;]A;This page is intended to help customers visualize and manage the number of flows their backend VMs and VMSS instances are receiving and producing. ]D;]A;* See the number of inbound and outbound flows and creation rate for each VM and VMSS instance to ensure the number of flows is not approaching the [per VM flow limit]5D;(https://docs.microsoft.com/azure/virtual-network/virtual-machine-network-throughput#flow-limits-and-recommendations)]D;]A;	+ If approaching the flow limit, you  consider scaling out to more instances in your backend pool ]D;]A;]D;]A;* Use the inbound flows to visualize the load distribution of your load balancer]D;]A;]D;]A;* Use the outbound flows to determine if the processes running within your VM are creating significant outbound connections]D;]A;]D;]A;* Use the network throughput to see if there are indiviudal flows that are transmitting significantly larger than average data throughput]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# Hjälp för flödesdistribution]D;]A;Den här sidan syftar till att hjälpa kunder att visualisera och hantera antalet flöden deras virtuella serverdelsdatorer och VMSS-instanser tar emot och tillverkar. ]D;]A;* Se antalet inkommande och utgående flöden och skapandefrekvens för varje virtuell dator och VMSS-instans för att säkerställa att antalet flöden inte närmar sig [flödesgräns per virtuell dator]5D; (https://docs.microsoft.com/azure/virtual-network/virtual-machine-network-throughput#flow-limits-and-recommendations)]D;]A;	+ Om du närmar dig flödesgränsen bör du skala ut till fler instanser i serverdelspoolen ]D;]A;]D;]A;* Använd de inkommande flödena för att visualisera belastningsfördelningen för belastningsutjämnaren]D;]A;]D;]A;* Använd de utgående flödena för att fastställa om de processer som körs på den virtuella datorn skapar viktiga utgående anslutningar]D;]A;]D;]A;* Använd nätverksdataflödet för att se om det finns indiviudella flöden som överför betydligt större flöde än genomsnittligt dataflöde]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.FrontendBackendAvailabilityHelp.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Frontend & Backend Availability Help]D;]A;First, confirm that the Data Path Availability for your Load Balancer Frontends is showing 100. If Data Path Availability is less than 100, this implies an Azure issue creating Load Balancer connection issues. Check the Summary field in the load balancer status grid at the top of this page to learn if there is a known issue impacting your Load Balancer.]D;]A;]D;]A;After confirming Data Path Availability, review your Health Probe Status metrics to determine if your backend instances are responding. ]D;]A;* Check by VM to see if the problem is specific to a VM]D;]A;	+ If specific to a VM, check with this VM to make sure it is healthy]D;]A;	]D;]A;* Check by Port to see if the problem is specific to a Port]D;]A;	+ If specific to a Port, your application may not be listening to this port or there may be an NSG rule blocking this port ]D;]A;	]D;]A;* Check by Frontend IP or Frontend Port to monitor the backend pool for a specific load balancing rule or service]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# Hjälp om klientdels- och serverdelstillgänglighet]D;]A;Kontrollera först att datasökvägstillgängligheten för Load Balancer-klientdelar visar 100. Om datasökvägstillgängligheten är mindre än 100, innebär detta ett Azure-problem som skapar Load Balancer-anslutningsproblem. Kontrollera sammanfattningsfältet i statusrutnätet överst på den här sidan för att ta reda på om det finns ett känt problem som påverkar din Load Balancer.]D;]A;]D;]A;När du har bekräftat tillgänglighet för datasökvägen kan du granska dina statusmått för hälsoavsökningen för att avgöra om serverdelsinstanserna svarar. ]D;]A;* Kontrollera efter virtuell dator för att se om problemet är specifikt för en virtuell dator]D;]A;	+ Om det är specifikt för en virtuell dator kontrollerar du med den här virtuella datorn för att se till att den är felfri]D;]A;	]D;]A;* Kontrollera efter port för att se om problemet är specifikt för en port]D;]A;	+ Om det är specifikt för en port lyssnar programmet kanske inte på den här porten eller så kan en NSG-regel blockera den här porten ]D;]A;	]D;]A;* Kontrollera klientdels-IP eller klientdelsport för övervakning av serverdelspoolen för en specifik belastningsutjämningsregel eller -tjänst]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1377,12 +1401,18 @@
       <Item ItemId=";items.OverviewHelp.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Overview Help]D;]A;The Overview tab is intended as an entry point to monitor your Load Balancer. It outlines data throughput and frontend/backend availability.]D;]A;]D;]A;To get started:]D;]A;1. Configure the time range at the top of the workbook to your desired range]D;]A;]D;]A;1. Review data throughput to ensure values are within your expected range for the configured time span ]D;]A;	+ If detailed analysis is warranted view the Data Throughput tab]D;]A;	]D;]A;1. Review Data Path and Backend Availability to ensure your load balancer is reachable and your backend instances are responding to health probes]D;]A;	+ If either of these are below 100 and this is not expected, view the Frontend and Backend Availability tab ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# Hjälp för Översikt]D;]A;Fliken Översikt är avsedd som en startpunkt för övervakning av din Load Balancer. Den sammanfattar dataflöde och tillgänglighet för klientdelen/serverdelen.]D;]A;]D;]A;För att komma igång:]D;]A;1. Ställ in tidsintervallet överst i arbetsboken till det önskade intervallet]D;]A;]D;]A;1. Granska datagenomströmningen för att se till att värdena ligger inom det förväntade intervallet för den konfigurerade tidsperioden ]D;]A;	+ Om detaljerad analys är motiverad visas fliken Dataflöde]D;]A;	]D;]A;1. Granska datasökvägen och tillgängligheten för att säkerställa att belastningsutjämnaren kan nås och att serverdelsinstanserna svarar på hälsoavsökningar]D;]A;	+ Om någon av dessa är under 100 och detta inte förväntas, kan du läsa fliken Tillgänglighet för klientdel och serverdel]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.RoundTripTimemsAverage.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[	No running Connection Monitors found]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[	Inga anslutningsövervakare hittades]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
