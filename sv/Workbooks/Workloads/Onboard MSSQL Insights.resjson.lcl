@@ -60,12 +60,18 @@
       <Item ItemId=";items.Overviewgroup.content.items.Configuregroup.content.items.mysqlsampleconnectionstring.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<br />]D;]A;**Learn about connection strings**]D;]A;]D;]A;Provide one ore more connection strings as a comma seperated collection of strings (within double-quotes):]D;]A;]D;]A;```]D;]A;"Server=sqlserver.database.windows.net;Port=1433;database=mydb;User Id=<user>;Password=<pw>;app name=telegraf;log=1;",]D;]A;"Server=myothersqlserver.database.windows.net;Port=1433;database=mydb3;User Id=<user>;Password=<pw>;app name=telegraf;log=1;"]D;]A;```]D;]A;Or,]D;]A;```]D;]A;"Server=127.0.0.1;Port=1433;database=mydb;User Id=<user>;Password=<pw>;app name=telegraf;log=1;"]D;]A;```]D;]A;]D;]A;]D;]A;See https://github.com/denisenkom/go-mssqldb for detailed connection parameters.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<br />]D;]A;**Läs om anslutningssträngar**]D;]A;]D;]A;Tillhandahåll en eller flera anslutningssträngar som en kommaavgränsad samling strängar (inom dubbla citat tecken)::]D;]A;]D;]A;```]D;]A;"Server=sqlserver.database.windows.net;Port=1433;database=mydb;User Id=<user>;Password=<pw>;app name=telegraf;log=1;",]D;]A;"Server=myothersqlserver.database.windows.net;Port=1433;database=mydb3;User Id=<user>;Password=<pw>;app name=telegraf;log=1;"]D;]A;```]D;]A;Or,]D;]A;```]D;]A;"Server=127.0.0.1;Port=1433;database=mydb;User Id=<user>;Password=<pw>;app name=telegraf;log=1;"]D;]A;```]D;]A;]D;]A;]D;]A;See https://github.com/denisenkom/go-mssqldb för detaljerade anslutningsparametrar.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overviewgroup.content.items.Configuregroup.content.items.samplemysqlconnectionstring.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Azure Monitor needs access to the health information stored in SQL Server dynamic management view tables. Please provide the *connection string* to allow this access below. More information about the format of connection strings can be found below.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Azure Monitor behöver åtkomst till hälsoinformationen som lagras i SQL Servers dynamiska hanteringstabeller. Ange *anslutningssträng* om du vill tillåta den här åtkomsten nedan. Mer information om formatet för anslutningssträngar finns nedan.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -81,6 +87,9 @@
       <Item ItemId=";items.Overviewgroup.content.items.Prerequisitesgroup.content.items.prerequisitesmssqlremote.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[#### Create SQL user accounts]A;You have to create a login on every instance you want to monitor, with following script:]A;]A;```]A;USE master;]A;GO]A;CREATE LOGIN [telegraf]5D; WITH PASSWORD = N'mystrongpassword';]A;GO]A;GRANT VIEW SERVER STATE TO [telegraf]5D;;]A;GO]A;GRANT VIEW ANY DEFINITION TO [telegraf]5D;;]A;GO]A;```]A;]A;For Azure SQL Database, you require the View Database State permission and can create a user with a password directly in the database.]A;]A;```]A;CREATE USER [telegraf]5D; WITH PASSWORD = N'mystrongpassword';]A;GO]A;GRANT VIEW DATABASE STATE TO [telegraf]5D;;]A;GO]A;```]A;]A;#### Firewall and networking rules for SQL Computer]A;Update the Windows and NSG firewall settings to allow the port specified in the MSSQL connection strings in next step for the remote virtual machine's IP address.]A;]A;#### Outbound network settings for the remote virtual machine]A;Verify that the virtual machine has the outbound port as specified in the MSSQL connection strings in the next step.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[#### Skapa SQL-användarkonton]A;Du måste skapa en inloggning för varje instans du vill övervaka, med följande skript:]A;]A;```]A;ANVÄND master;]A;GÅ]A;SKAPA INLOGGNING [telegraf]5D; MED LÖSENORD = N'mystrongpassword ';]A;GÅ]A;BEVILJA VISNING AV SERVERSTATUS TILL [telegraf]5D;;]A;GÅ]A;BEVILJA VISNING AV VALFRI DEFINITION TILL [telegraf]5D;;]A;GÅ]A;```]A;]A;För Azure SQL Database måste du ha behörighet att läsa databastillstånd och skapa en användare med ett lösenord direkt i databasen.]A;]A;```]A;SKAPA ANVÄNDARE [telegraf]5D; MED LÖSENORD = N'mystrongpassword ';]A;GÅ]A;BEVILJA VISNING AV DATABASSTATUS TILL [telegraf]5D;;]A;GÅ]A;```]A;]A;#### Brandväggs- och nätverksregler för SQL-datorer]A;Uppdatera brandväggsinställningarna för Windows och NSG för att tillåta porten som anges i anslutningssträngarna för MSSQL i nästa steg för den virtuella fjärrdatorns IP-adress.]A;]A;#### Utgående nätverksinställningar för den virtuella fjärrdatorn]A;Kontrollera att den virtuella datorn har den utgående port som anges i anslutningssträngarna för MSSQL i nästa steg.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
