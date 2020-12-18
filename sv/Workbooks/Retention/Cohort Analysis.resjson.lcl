@@ -102,12 +102,18 @@
       <Item ItemId=";items.9.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[| Column | Explanation | Interpretation in the example |]A;| ----- | :----- | :----- |]A;| Cohort | Identifies the cohorting criteria specified by the CohortType parameter. | This row explains the retention behavior of users who used the 'Add to Cart' event. |]A;| Total Users | Number of unique users who used the Add to Cart feature  | 1000 unique users added an item to their cart in your app |]A;| <1 week | Percentage of cohort users who returned between 1 and 6 days after using 'Add to Cart' (using it again the same day does not count towards retention)  | 50% or 500 users returned to use your app within the first week after they added an item to their cart |]A;| +1 week | Percentage of cohort users who returned between 7 and 13 days after using 'Add to Cart'  | 30% or 300 users returned to use your app a week later |]A;| +N week | Percentage of cohort users who returned in the Nth week after 'Add to Cart'  | 15% or 150 users, when N = 3  |]A;]A;]A;]A;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[| Kolumn | Förklaring | Tolkning i exemplet |]A;| ----- | :----- | :----- |]A;| Kohort | Identifierar de kohortkriterier som anges av parametern CohortType. | Den här raden förklarar kvarhållningsperioden för användare som använde händelsen Lägg till i vagnen. |]A;| Totalt antal användare | Antal unika användare som använde funktionen Lägg till i vagnen | 1000 unika användare har lagt till ett objekt i sin kundvagn i din app |]A;| <1 vecka | Procentandel kohortanvändare som returnerade mellan 1 och 6 dagar efter att ha använt Lägg till i vagnen (använda igen samma dag räknas inte om till kvarhållning) | 50 % eller 500 användare som återvände för att använda din app inom den första veckan efter det att de lade till ett objekt i sin kundvagn |]A;| + 1 vecka | Procentandel kohortanvändare som återvände mellan 7 och 13 dagar efter användning av Lägg till i vagnen | 30 % eller 300 användare återvände för att använda din app en vecka senare |]A;| + N-vecka | Procentandel kohortanvändare som återvände under den N:e veckan efter Lägg till i vagnen | 15 % eller 150 användare, när N = 3 |]A;]A;]A;]A;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Cohort Analysis]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Kohortanalys]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
