@@ -12,24 +12,36 @@
       <Item ItemId=";items.Commonparameterblock.content.parameters.4548f4fe013042c9b796385cd12ccb24.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Use this parameter to essentially set the number of user sessions to use in calculations (sampling). This allows you to find the right balance between performance and accuracy for your analysis. Optimize for: Performance = 10,000 sessions, Balance = 100,000 samples, Accuracy = 1,000,000 sessions]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Use este parámetro para establecer esencialmente el número de sesiones de usuario que se usarán en los cálculos (muestreo). Esto le permite encontrar el equilibrio adecuado entre rendimiento y precisión para el análisis. Optimícelo para: rendimiento = 10 000 sesiones; equilibrio = 100 000 muestras; precisión = 1 millón de sesiones.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Descriptiontext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Analysis of Page Views]A;Page views correspond to user activity in your app. Understanding how your users interact with your pages will give you good insights into what is working in your app and what aspects need improvements. ]A;]A;This report will help you understand common page view behaviors like:]A;* Usage]A;* Time spent on page]A;* Time to first interaction]A;* Exit rates ]A;]A;If your telemetry does not include page views, then follow these [instructions]5D;(https://docs.microsoft.com/en-us/azure/application-insights/app-insights-javascript) to begin collecting -- it is relatively straightforward.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# Análisis de las vistas de página]A;Las vistas de página se corresponden con la actividad de usuario de la aplicación. Si entiende cómo interactúan los usuarios con las páginas, obtendrá conclusiones útiles sobre qué funciona en la aplicación y qué aspectos se deben mejorar. ]A;]A;Este informe le ayudará a comprender los comportamientos de vista de página comunes, como:]A;* Uso]A;* Tiempo invertido en la página]A;* Tiempo hasta la primera interacción]A;* Velocidades de salida ]A;]A;Si la telemetría no incluye vistas de página, siga estas [instrucciones]5D;(https://docs.microsoft.com/en-us/azure/application-insights/app-insights-javascript) para empezar a recopilar; es relativamente sencillo.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.PageExitRatesfooter.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[- The calculation may use sampling based on the `OptimizeCalculationsFor` parameter. ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[- El cálculo puede usar el muestreo basado en el parámetro "OptimizeCalculationsFor". ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.PageExitRatestext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[---]A;## Page Exit Rates]A;A page view is said to have contributed to an _exit_ when it is the last page viewed in the session. The user is presumed to have exited your app -- either by navigating to another app or closing the app/browser. ]A;]A;A page's _exit rate_ is the percentages of views that were the last in the session. ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[---]A;## Velocidades de salida de página]A;Se dice que una vista de página ha contribuido a una _salida_ cuando es la última página vista en la sesión. Se supone que el usuario ha salido de la aplicación: ya sea desplazándose a otra aplicación o cerrando la aplicación o el explorador. ]A;]A;La _velocidad de salida_ de una página es el porcentaje de vistas que fueron las últimas de la sesión. ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -38,55 +50,76 @@
           <Val><![CDATA[- The calculations may use sampling based on the `OptimizeCalculationsFor` parameter. ]A;- Time Spent on Page does not consider exit pages (last page of the session) in this calculations. The `Sampled Page Views` column may be fewer than the sampling count of {OptimizeCalculationsFor} because of this.]A;]]></Val>
         </Str>
         <Disp Icon="Str" />
-        <Cmts>
-          <Cmt Name="Dev"><![CDATA[{Locked={OptimizeCalculationsFor}}]]></Cmt>
-        </Cmts>
       </Item>
       <Item ItemId=";items.Timespentonpageparameterblock.content.parameters.0411936a4cb944dd946db449ce3b284e.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Use this parameter to filter our page views that took more time that is possible (for example left open in a non-active tab). The default is 1 hour. ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Use este parámetro para filtrar las vistas de página que tardaron más tiempo del permitido (por ejemplo, que se dejaron abiertas en una pestaña no activa). El valor predeterminado es 1 hora. ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Timespentonpagetext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[---]A;## Time Spent on Page]A;This report helps you understand the time spent by customers in your pages. Longer time spent pages usually indicates good engagement and is generally the desired behavior.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[---]A;## Tiempo invertido en la página]A;Este informe le ayuda a comprender el tiempo que invierten los clientes en sus páginas. Las páginas en las que pasan más tiempo suelen indicar una buena interacción, que, en general, es el comportamiento deseado.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.TimetoFirstInteractionfooter.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[- The calculation may use sampling based on the `OptimizeCalculationsFor` parameter. ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[- El cálculo puede usar el muestreo basado en el parámetro "OptimizeCalculationsFor". ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.TimetoFirstInteractionparameterblock.content.parameters.65e9a4922e89477aa041e99a61481c65.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[For users, the first use is calculated as the first use within the time range. It is possible that the user started using your app before the time range.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Para los usuarios, el primer uso se calcula como el primer uso dentro del intervalo de tiempo. Es posible que el usuario haya empezado a usar la aplicación antes del intervalo de tiempo.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.TimetoFirstInteractiontext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[---]A;## Time to First Interaction]A;This report helps you understand the time taken by customers to first interact with critical features of your app. It can help you uncover issues with discoverability of your features or the intuitiveness of your app's UI/flow.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[---]A;## Tiempo hasta la primera interacción]A;Este informe le ayuda a comprender el tiempo que tardan los clientes en interactuar por primera vez con las características críticas de la aplicación. Puede ayudarle a desvelar problemas con la detectabilidad de sus características o el carácter intuitivo de la interfaz de usuario o el flujo de la aplicación.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Usagefootertext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[- The `As % of App Users/Sessions/Views` columns compare the usage of the selected page view with that of the whole app.]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[- Las columnas "Como % de usuarios de la aplicación/las sesiones/las vistas" comparan el uso de la vista de página seleccionada con la de toda la aplicación.]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Usagesectiontext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[---]A;## Usage]A;This section helps you understand how the pages of your app are used -- in terms of # of users, sessions and views. ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[---]A;## Uso]A;Esta sección le ayuda a comprender cómo se usan las páginas de la aplicación en términos de número de usuarios, sesiones y vistas. ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Analysis of Page Views]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Análisis de vistas de página]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

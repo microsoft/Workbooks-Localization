@@ -12,24 +12,36 @@
       <Item ItemId=";items.0.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# SQL Database Resource Limits]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# SQL-Datenbank-Ressourcenlimits]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.10.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Total Database Size]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Datenbankgröße gesamt]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.13.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[When encountering high space utilization, mitigation options include:]A;]A;* Increasing the max size of the database or elastic pool, or add more storage. See [Scale single database resources]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-single-database-scale) and [Scale elastic pool resources]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-elastic-pool-scale).]A;* If the database is in an elastic pool, then alternatively the database can be moved outside of the pool so that its storage space is not shared with other databases.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Bei hoher Speicherauslastung stehen zur Entschärfung folgende Optionen zur Verfügung:]A;]A;* Erhöhen Sie die maximale Größe der Datenbank oder des Pools für elastische Datenbanken, oder fügen Sie weiteren Speicherplatz hinzu. Informationen hierzu finden Sie unter [Skalieren von Einzeldatenbankressourcen in Azure SQL-Datenbank]5D;(https://docs.microsoft.com/de-de/azure/sql-database/sql-database-single-database-scale) und unter [Skalieren von Ressourcen für Pools für elastische Datenbanken in Azure SQL-Datenbank]5D;(https://docs.microsoft.com/de-de/azure/sql-database/sql-database-elastic-pool-scale).]A;* Wenn sich die Datenbank in einem Pool für elastische Datenbanken befindet, können Sie alternativ dazu die Datenbank aus dem Pool verschieben, sodass der zugehörige Speicherplatz nicht gemeinsam mit anderen Datenbanken genutzt wird.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.14.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Sessions and workers]A;The maximum number of sessions and workers are determined by the service tier and performance level (DTUs and eDTUs). New requests are rejected when session or worker limits are reached, and clients receive an error message. While the number of connections available can be controlled by the application, the number of concurrent workers is often harder to estimate and control. This is especially true during peak load periods when database resource limits are reached and workers pile up due to longer running queries.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Sitzungen und Worker]A;Die maximale Anzahl von Sitzungen und Workern wird durch den Diensttarif und die Leistungsebene (DTUs und eDTUs) bestimmt. Bei Erreichen von Sitzungs- oder Workerlimits werden neue Anforderungen abgelehnt, und Clients erhalten eine Fehlermeldung. Während die Anzahl verfügbarer Verbindungen von der Anwendung gesteuert werden kann, ist die Anzahl der gleichzeitigen Worker häufig schwieriger zu schätzen und zu steuern. Dies gilt insbesondere für Zeiten mit Spitzenauslastung, wenn die Grenzwerte für Datenbankressourcen erreicht werden und Worker sich aufgrund zeitintensiverer Abfragen ansammeln.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -45,18 +57,27 @@
       <Item ItemId=";items.16.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Workers Percentage]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Worker in Prozent]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.19.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[When encountering high session or worker utilization, mitigation options include:]A;* Increasing the service tier or performance level of the database or elastic pool. See [Scale single database resources]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-single-database-scale) and [Scale elastic pool resources]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-elastic-pool-scale).]A;* Optimizing queries to reduce the resource utilization of each query if the cause of increased worker utilization is due to contention for compute resources. For more information, see [Query Tuning/Hinting]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-performance-guidance#query-tuning-and-hinting).]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Bei einer hohen Sitzungs- oder Workerauslastung stehen zur Entschärfung folgende Optionen zur Verfügung:]A;* Erhöhen Sie den Diensttarif oder die Leistungsebene der Datenbank bzw. des Pools für elastische Datenbanken. Informationen hierzu finden Sie unter [Skalieren von Einzeldatenbankressourcen in Azure SQL-Datenbank]5D;(https://docs.microsoft.com/de-de/azure/sql-database/sql-database-single-database-scale) und unter [Skalieren von Ressourcen für Pools für elastische Datenbanken in Azure SQL-Datenbank]5D;(https://docs.microsoft.com/de-de/azure/sql-database/sql-database-elastic-pool-scale).]A;* Optimieren Sie Abfragen, um die Ressourcenauslastung für die einzelnen Abfragen zu verringern, falls die Ursache für die erhöhte Workerauslastung auf die Konkurrenz um Computeressourcen zurückzuführen ist. Weitere Informationen finden Sie unter [Abfrageoptimierung/Abfragehinweise]5D;(https://docs.microsoft.com/de-de/azure/sql-database/sql-database-performance-guidance#query-tuning-and-hinting).]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.2.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Compute]A;When database compute utilization (measured by DTUs and eDTUs, or vCores) becomes high, query latency increases and can even time out. Under these conditions, queries may be queued by the service and are provided resources for execution as resource become free. ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Compute]A;Wenn die Auslastung der Datenbankcomputeressourcen (gemessen in DTUs und eDTUs bzw. virtuellen Kernen) ansteigt, erhöht sich die Abfragelatenz, und sogar ein Timeout ist möglich. Unter diesen Bedingungen werden Abfragen vom Dienst möglicherweise in eine Warteschlange eingereiht, und es werden Ressourcen für die Ausführung bereitgestellt, sobald diese frei werden. ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -81,12 +102,18 @@
       <Item ItemId=";items.7.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[When encountering high compute utilization, mitigation options include:]A;]A;* Increasing the performance level of the database or elastic pool to provide the database with more compute resources. See [Scale single database resources]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-single-database-scale) and [Scale elastic pool resources]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-elastic-pool-scale).]A;* Optimizing queries to reduce the resource utilization of each query. For more information, see [Query Tuning/Hinting]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-performance-guidance#query-tuning-and-hinting).]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Bei einer hohen Computeauslastung stehen zur Entschärfung folgende Optionen zur Verfügung:]A;]A;* Erhöhen Sie die Leistungsebene der Datenbank bzw. des Pools für elastische Datenbanken, um der Datenbank weitere Computeressourcen bereitzustellen. Informationen hierzu finden Sie unter [Skalieren von Einzeldatenbankressourcen in Azure SQL-Datenbank]5D;(https://docs.microsoft.com/de-de/azure/sql-database/sql-database-single-database-scale) und unter [Skalieren von Ressourcen für Pools für elastische Datenbanken in Azure SQL-Datenbank]5D;(https://docs.microsoft.com/de-de/azure/sql-database/sql-database-elastic-pool-scale).]A;* Optimieren Sie Abfragen, um die Ressourcenauslastung für die einzelnen Abfragen zu verringern. Weitere Informationen finden Sie unter [Abfrageoptimierung/Abfragehinweise]5D;(https://docs.microsoft.com/de-de/azure/sql-database/sql-database-performance-guidance#query-tuning-and-hinting).]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.8.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Storage]A;When database space used reaches the max size limit, database inserts and updates that increase the data size fail and clients receive an [error message]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-develop-error-messages). Database SELECTS and DELETES continue to succeed.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Speicher]A;Wenn der verwendete Datenbankspeicher das maximale Größenlimit erreicht, verursachen Datenbankeinfügungen und -aktualisierungen, die zur Vergrößerung der Datenmenge führen, einen Fehler, und Clients erhalten eine [Fehlermeldung]5D;(https://docs.microsoft.com/de-de/azure/sql-database/sql-database-develop-error-messages). SELECT- und DELETE-Vorgänge für Datenbanken sind weiterhin erfolgreich.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -102,6 +129,9 @@
       <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[SQL Database Resource Limits]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Limits für SQL-Datenbankressourcen]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

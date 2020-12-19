@@ -12,24 +12,36 @@
       <Item ItemId=";items.0.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# SQL Database Resource Limits]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# Limites de ressource SQL Database]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.10.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Total Database Size]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Taille de base de données totale]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.13.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[When encountering high space utilization, mitigation options include:]A;]A;* Increasing the max size of the database or elastic pool, or add more storage. See [Scale single database resources]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-single-database-scale) and [Scale elastic pool resources]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-elastic-pool-scale).]A;* If the database is in an elastic pool, then alternatively the database can be moved outside of the pool so that its storage space is not shared with other databases.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[En cas d'utilisation élevée de l'espace, les options d'atténuation sont notamment :]A;]A;* Augmentation de la taille max. de la base de données ou du pool élastique, ou ajout de stockage supplémentaire. Consultez [Mettre à l'échelle des ressources de base de données unique]5D;(https://docs.microsoft.com/fr-fr/azure/sql-database/sql-database-single-database-scale) et [Mettre à l'échelle des ressources de pool élastique]5D;(https://docs.microsoft.com/fr-fr/azure/sql-database/sql-database-elastic-pool-scale).]A;* Si la base de données est dans un pool élastique, elle peut aussi être sortie du pool pour que son espace de stockage ne soit pas partagé avec d'autres bases de données.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.14.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Sessions and workers]A;The maximum number of sessions and workers are determined by the service tier and performance level (DTUs and eDTUs). New requests are rejected when session or worker limits are reached, and clients receive an error message. While the number of connections available can be controlled by the application, the number of concurrent workers is often harder to estimate and control. This is especially true during peak load periods when database resource limits are reached and workers pile up due to longer running queries.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Sessions et workers]A;Le nombre maximal de sessions et de workers est déterminé par le niveau de service et le niveau de performance (DTU et eDTU). Les nouvelles demandes sont rejetées quand les limites de sessions ou de workers sont atteintes, et les clients reçoivent un message d'erreur. Même si le nombre de connexions disponibles peut être contrôlé par l'application, le nombre de workers simultanés est souvent plus difficile à estimer et contrôler. Cela est particulièrement vrai pendant les périodes de pic de charge quand les limites des ressources de base de données sont atteintes et que les workers s'accumulent en raison de requêtes plus longues.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -45,18 +57,27 @@
       <Item ItemId=";items.16.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Workers Percentage]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Pourcentage de workers]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.19.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[When encountering high session or worker utilization, mitigation options include:]A;* Increasing the service tier or performance level of the database or elastic pool. See [Scale single database resources]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-single-database-scale) and [Scale elastic pool resources]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-elastic-pool-scale).]A;* Optimizing queries to reduce the resource utilization of each query if the cause of increased worker utilization is due to contention for compute resources. For more information, see [Query Tuning/Hinting]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-performance-guidance#query-tuning-and-hinting).]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[En cas d'utilisation élevée de session ou de worker, les options d'atténuation sont notamment :]A;* Augmentation du niveau de service ou du niveau de performance de la base de données ou du pool élastique. Consultez [Mettre à l'échelle des ressources de base de données unique]5D;(https://docs.microsoft.com/fr-fr/azure/sql-database/sql-database-single-database-scale) et [Mettre à l'échelle des ressources de pool élastique]5D;(https://docs.microsoft.com/fr-fr/azure/sql-database/sql-database-elastic-pool-scale).]A;* Optimisation des requêtes pour réduire l'utilisation des ressources de chaque requête si la cause de l'utilisation élevée du worker est due à la contention des ressources de calcul. Pour plus d'informations, consultez [Paramétrage/compréhension des requêtes]5D;(https://docs.microsoft.com/fr-fr/azure/sql-database/sql-database-performance-guidance#query-tuning-and-hinting).]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.2.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Compute]A;When database compute utilization (measured by DTUs and eDTUs, or vCores) becomes high, query latency increases and can even time out. Under these conditions, queries may be queued by the service and are provided resources for execution as resource become free. ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Calcul]A;En cas d'augmentation de l'utilisation du calcul de base de données (mesurée par les DTU, eDTU ou vCores), la latence des requêtes augmente et elles peuvent même expirer. Dans ces conditions, les requêtes peuvent être mises en file d'attente par le service et sont exécutées à mesure que des ressources sont libérées. ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -81,12 +102,18 @@
       <Item ItemId=";items.7.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[When encountering high compute utilization, mitigation options include:]A;]A;* Increasing the performance level of the database or elastic pool to provide the database with more compute resources. See [Scale single database resources]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-single-database-scale) and [Scale elastic pool resources]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-elastic-pool-scale).]A;* Optimizing queries to reduce the resource utilization of each query. For more information, see [Query Tuning/Hinting]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-performance-guidance#query-tuning-and-hinting).]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[En cas d'utilisation élevée de calcul, les options d'atténuation sont notamment :]A;]A;* Augmentation du niveau de performance de la base de données ou du pool élastique pour attribuer plus de ressources de calcul à la base de données. Consultez [Mettre à l'échelle des ressources de base de données unique]5D;(https://docs.microsoft.com/fr-fr/azure/sql-database/sql-database-single-database-scale) et [Mettre à l'échelle des ressources de pool élastique]5D;(https://docs.microsoft.com/fr-fr/azure/sql-database/sql-database-elastic-pool-scale).]A;* Optimisation des requêtes pour réduire l'utilisation des ressources de chaque requête. Pour plus d'informations, consultez [Paramétrage/compréhension des requêtes]5D;(https://docs.microsoft.com/fr-fr/azure/sql-database/sql-database-performance-guidance#query-tuning-and-hinting).]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.8.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Storage]A;When database space used reaches the max size limit, database inserts and updates that increase the data size fail and clients receive an [error message]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-develop-error-messages). Database SELECTS and DELETES continue to succeed.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Stockage]A;Quand l'espace de base de données utilisé atteint la limite max. de taille, les insertions et les mises à jour de base de données qui augmentent la taille des données échouent, et les clients reçoivent un [message d'erreur]5D;(https://docs.microsoft.com/fr-fr/azure/sql-database/sql-database-develop-error-messages). Les opérations SELECT et DELETE de base de données ne sont pas affectées.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -102,6 +129,9 @@
       <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[SQL Database Resource Limits]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Limites des ressources SQL Database]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

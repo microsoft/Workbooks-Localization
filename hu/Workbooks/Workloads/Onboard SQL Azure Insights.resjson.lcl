@@ -81,36 +81,54 @@
       <Item ItemId=";items.Overviewgroup.content.items.Configuregroup.content.items.checkconfigvalidity.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[]D83D;]DCA1; Add the correct user name and password in the `servers` section of the Telegraf config above.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[]D83D;]DCA1; Fentebb adja meg a megfelelő felhasználónevet és jelszót a Telegraf-konfiguráció servers szakaszában.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overviewgroup.content.items.Configuregroup.content.items.sqluserinformation.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[#### Choose monitoring virtual machine]D;]A;Azure Monitor will use this virtual machine to remotely collect health and performance metrics from your SQL databases.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[#### A monitorozást végző virtuális gép kiválasztása]D;]A;Az Azure Monitor ezen a virtuális gépen keresztül fogja távolról gyűjteni az SQL-adatbázisok állapotára és teljesítményére vonatkozó metrikákat.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overviewgroup.content.items.Configuregroup.content.items.text4.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[#### Setup SQL database monitoring]D;]A;    ]D;]A;SQL Server monitoring data collection is specified by Telegraf configuration below. Update the `servers` section with the correct connection strings to access your SQL databases. You can also customize your data collection settings using the config. Learn about [SQL Telegraf settings]5D;(https://github.com/influxdata/telegraf/tree/master/plugins/inputs/sqlserver#configuration).]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[#### Az SQL-adatbázisok monitorozásának beállítása]D;]A;    ]D;]A;Az SQL Server monitorozása során gyűjtött adatok körét a lenti Telegraf-konfiguráció határozza meg. Frissítse a servers szakaszt a megfelelő kapcsolati sztringekkel az SQL-adatbázisok eléréséhez. Az adatgyűjtési beállításokat is testre szabhatja a konfigurációban. További információ [az SQL Telegraf beállításairól]5D;(https://github.com/influxdata/telegraf/tree/master/plugins/inputs/sqlserver#configuration)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overviewgroup.content.items.Overviewgroup.content.items.sqlazureinformation.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[SQL Server environments are becoming more complex while remaining a critical component of your application architecture. It’s a struggle to keep up with this continual growth without the right SQL monitoring tools. What if you could proactively manage your SQL Server environment and diagnose database performance issues by viewing the health of all your SQL Server instances on a single screen, anytime, anywhere on any device? You can with the right SQL Server monitoring tool.]A;]A;With Azure Monitor for SQL Server, you can manage your SQL Server environment while also gaining visibility into your operating system – Windows or Linux – and also monitor your virtualization infrastructure. Make configuration a breeze with templates, automated alerts and customizable actions. Spend less time fighting fires by accurately diagnosing real-time and historical database performance issues, and focus on more proactive measures like query tuning.]A;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Az SQL Server-környezetek egyre összetettebbek, miközben továbbra is az alkalmazásarchitektúra kritikus összetevői. Nagyon nehéz lépést tartani a folyamatos növekedéssel a megfelelő SQL-monitorozási eszközök nélkül. Mi lenne, ha proaktív módon tudná kezelni az SQL Server-környezetet, és diagnosztizálni az adatbázis teljesítményével kapcsolatos problémákat, mivel az összes SQL Server-példány állapotát egyetlen képernyőn tekinthetné meg, bárhol, bármikor, bármilyen eszközön? A megfelelő SQL Server-monitorozási eszközzel ez lehetséges.]A;]A;Az Azure Monitor for SQL Server használatával kezelheti az SQL Server-környezetet, és közben az operációs rendszerre – a Windowsra vagy a Linuxra – is ráláthat, és a virtualizációs infrastruktúrát is monitorozhatja. A sablonokkal, az automatizált riasztásokkal és a testre szabható műveletekkel könnyedén konfigurálhatja a rendszert. Az adatbázis teljesítményével kapcsolatos valós idejű és a múltbeli problémák pontos diagnosztizálásának köszönhetően rövidebb időt kell tűzoltással töltenie, és így olyan proaktívabb műveletekre koncentrálhat, mint például a lekérdezések finomhangolása.]A;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overviewgroup.content.items.Prerequisitesgroup.content.items.prerequisitessqlazureremote.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[#### Create SQL user accounts]A;You have to create a login on every instance you want to monitor, with following script:]A;]A;```]A;CREATE USER [telegraf]5D; WITH PASSWORD = N'mystrongpassword';]A;GO]A;GRANT VIEW DATABASE STATE TO [telegraf]5D;;]A;GO]A;```]A;]A;#### Firewall rules for SQL database]A;Update firewall rules to allow the remote monitoring virtual machine to access the SQL Server instance.]A;]A;#### Outbound network settings for the remote virtual machine]A;Verify that the virtual machine has the outbound port as specified in the Sql Telegraf config in the next step.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[#### SQL-felhasználói fiókok létrehozása]A;Létre kell hoznia egy bejelentkezési azonosítót minden figyelni kívánt példányon a következő szkripttel:]A;]A;```]A;CREATE USER [telegraf]5D; WITH PASSWORD = N'mystrongpassword';]A;GO]A;GRANT VIEW DATABASE STATE TO [telegraf]5D;;]A;GO]A;```]A;]A;#### Az SQL Database tűzfalszabályai]A;Frissítse a tűzfalszabályokat, hogy lehetővé tegye a távoli monitorozási virtuális gép számára a SQL Server-példányhoz való hozzáférést.]A;]A;#### A távoli virtuális gép kimenő hálózati beállításai]A;A következő lépésben győződjön meg arról, hogy a virtuális gépen meg van adva a kimenő port az Sql Telegraf konfigurációjában.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overviewgroup.content.items.overviewinfologo.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Azure Monitor for Microsoft SQL Azure]D;]A;<br />]D;]A;]D;]A;![SQL logo]5D;(https://raw.githubusercontent.com/acearun/managedsolutions/master/Templates/Logos/sql-azure-logo.jpg)]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Azure Monitor for Microsoft SQL Azure]D;]A;<br />]D;]A;]D;]A;! [SQL-embléma]5D;(https://raw.githubusercontent.com/acearun/managedsolutions/master/Templates/Logos/sql-azure-logo.jpg)]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -135,6 +153,9 @@
       <Item ItemId=";items.Overviewgroup.content.items.tabs.content.links.2.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Configure monitoring]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Figyelés konfigurálása]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -142,7 +163,7 @@
         <Str Cat="Text">
           <Val><![CDATA[SQL Server]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[SQL Server]]></Val>
+            <Val><![CDATA[SQL-kiszolgáló]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -150,6 +171,9 @@
       <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Onboard SQL Azure Insights]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[SQL Azure-elemzések regisztrálása]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

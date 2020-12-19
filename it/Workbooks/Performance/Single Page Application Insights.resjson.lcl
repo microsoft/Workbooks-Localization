@@ -12,6 +12,9 @@
       <Item ItemId=";items.0.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Initial Load Performance Insights of Single Page Applications]D;]A;This Workbook template allows you to view your Single Page Application (SPA) performance data logged by the <a href="https://github.com/Microsoft/Mezzurite">Mezzurite Timing Library</a> and the <a href="https://github.com/Microsoft/ApplicationInsights-JS-Mezzurite">Application Insights Mezzurite Plugin</a>]D;]A;]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# Informazioni dettagliate sulle prestazioni di caricamento iniziale delle applicazioni a pagina singola]D;]A;Questo modello di cartella di lavoro consente di visualizzare le prestazioni dell'applicazione a pagina singola registrati dalla <a href="https://github.com/Microsoft/Mezzurite">libreria dei tempi Mezzurite</a>dal <a href="https://github.com/Microsoft/ApplicationInsights-JS-Mezzurite">plug-in Mezzurite per Application Insights</a>]D;]A;]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -39,54 +42,81 @@
       <Item ItemId=";items.15.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<h1>Definitions</h1>]D;]A;<p><strong>SPA:</strong> Single Page Application built on top of JavaScript frameworks like Angular or React]D;]A;<p><strong>Route:</strong> This is the SPA route (URL segment) for the given page.</p>]D;]A;<p><strong>Component:</strong> A Component can be a single html element or a group of elements. These are defined inside your JavaScript and are the building blocks for your SPA page. A route can have more than one component inside of it. The chart below shows performance timings for all components present in the currently selected route.</p>]D;]A;<p><strong>Component Load Time (CLT):</strong> The time it takes for a given component to load on the page.</p>]D;]A;<p><strong>Viewport:</strong> The area which is viewable in your browser.</p>]D;]A;<p><strong>Viewport Load Time (VLT):</strong> The time it takes from the route start to when the last component is loaded in your viewport.</p>]D;]A;<p><strong>Application Load Time (ALT):</strong> The time it takes from the navigation start to when your router starts processing the first route.</p>]D;]A;<p><strong>First Load Time (FLT):</strong> The high level metric which is a sum of the <strong>application load time</strong> and the first <strong>viewport load time</strong> of our route.</p>]D;]A;<p><h3>The following are all pulled from the Browser Performance Timing object</h3></p>]D;]A;<p><strong>Send Duration</strong>Request Start to Response Start </p>]D;]A;<p><strong>Receive Duration</strong>Responce Start to Response End</p>]D;]A;<p><strong>Network Duration</strong> is Navigation Start to Connection End</p>]D;]A;<br>]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<h1>Definizioni</h1>]D;]A;<p><strong>Applicazione a pagina singola:</strong>applicazione a pagina singola basata su framework JavaScript come Angular o React]D;]A;<p><strong>Route:</strong> route dell'applicazione a pagina singola (segmento URL) per la pagina specificata.</p>]D;]A;<p><strong>Componente:</strong> un componente può essere un singolo elemento HTML o un gruppo di elementi. Sono definiti all'interno di JavaScript e costituiscono i blocchi predefiniti della pagina dell'applicazione a pagina singola. Una route può contenere più componenti al suo interno. Il grafico seguente mostra i tempi delle prestazioni per tutti i componenti presenti nella route attualmente selezionata.</p>]D;]A;<p><strong>Tempo di caricamento componente:</strong> tempo impiegato da un componente specifico per essere caricato nella pagina.</p>]D;]A;<p><strong>Viewport:</strong> area in cui è visualizzabile nel browser.</p>]D;]A;<p><strong>Tempo di caricamento viewport:</strong> tempo impiegato dall'inizio della route fino a quando non viene caricato l'ultimo componente nella viewport.</p>]D;]A;<p><strong>Tempo di caricamento applicazione:</strong> tempo impiegato dall'inizio della navigazione al momento in cui il router avvia l'elaborazione della prima route.</p>]D;]A;<p><strong>Primo tempo di caricamento:</strong> metrica generale che corrisponde alla somma del <strong>tempo di caricamento applicazione</strong> e del <strong>tempo di caricamento</strong> della prima viewport della route.</p>]D;]A;<p><h3>Gli elementi seguenti sono tutti derivati dall'oggetto Tempi prestazioni browser</h3></p>]D;]A;<p><strong>Durata invio</strong>Da inizio richiesta a inizio risposta </p>]D;]A;<p><strong>Durata ricezione</strong>Da inizio risposta a fine risposta</p>]D;]A;<p><strong>Durata rete</strong> è da inizio navigazione a fine connessione</p>]D;]A;<br>]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.2.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<p><strong><h2>This workbook was unable to load because no Mezzurite Timing data was detected.</h2></strong></p>]D;]A;<p>]D;]A;To configure Mezzurite, please follow the guide below for your site’s specific framework Implementation]D;]A;<ul>]D;]A;<li><a href="https://github.com/Microsoft/Mezzurite/blob/master/Mezzurite.React/README.md">React based sites</a></li>]D;]A;<li> <a href="https://github.com/Microsoft/Mezzurite/blob/master/Mezzurite.Angular/README.md">Angular based sites</a></li>]D;]A;</ul>]D;]A;]D;]A;Once the Mezzurite Timing library is added, you will need ]D;]A;<ul>]D;]A;<li><a href="https://github.com/Microsoft/ApplicationInsights-JS-Mezzurite/blob/master/README.md">Onboarding steps here</a></li>]D;]A;</ul></p>]D;]A;]D;]A;<h3>Mezzurite Ecosystem</h3>]D;]A;<table>]D;]A;<tr><th>Project</th><th>Description</th></tr>]D;]A;<tr><td><a href="https://github.com/Microsoft/ApplicationInsights-JS-Mezzurite">ApplicationInsights-JS-Mezzurite</a></td><td><a href="https://github.com/Microsoft/ApplicationInsights-JS">Application Insights</a> plugin of Mezzurite</td></tr>]D;]A;<tr><td><a href="https://github.com/Microsoft/Mezzurite">Mezzurite</a></td><td>Base SDK for Mezzurite with Angular, AngularJS and React integration</td></tr>]D;]A;<tr><td><a href="https://github.com/Microsoft/Mezzurite-DevTools">Mezzurite DevTools</a></td><td>See Mezzurite metrics being captured with a browser extension</td></tr>]D;]A;<tr><td><a href="https://github.com/Microsoft/vscode-mezzurite">VSCode Mezzurite</a></td><td>Check which components and modules are instrumented within VS Code</td></tr>]D;]A;</table>]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<p><strong><h2>Il caricamento di questa cartella di lavoro non è riuscito perché non sono stati rilevati dati dei tempi Mezzurite.</h2></strong></p>]D;]A;<p>]D;]A;Per configurare Mezzurite, seguire la guida per l'implementazione del framework specifico del sito]D;]A;<ul>]D;]A;<li><a href="https://github.com/Microsoft/Mezzurite/blob/master/Mezzurite.React/README.md">Siti basati su React</a></li>]D;]A;<li> <a href="https://github.com/Microsoft/Mezzurite/blob/master/Mezzurite.Angular/README.md">Siti basati su Angular</a></li>]D;]A;</ul>]D;]A;]D;]A;Dopo aver aggiunto la libreria dei tempi Mezzurite, saranno necessari gli elementi seguenti ]D;]A;<ul>]D;]A;<li><a href="https://github.com/Microsoft/ApplicationInsights-JS-Mezzurite/blob/master/README.md">Procedura di onboarding disponibile qui</a></li>]D;]A;</ul></p>]D;]A;]D;]A;<h3>Ecosistema Mezzurite</h3>]D;]A;<table>]D;]A;<tr><th>Progetto</th><th>Descrizione</th></tr>]D;]A;<tr><td><a href="https://github.com/Microsoft/ApplicationInsights-JS-Mezzurite">ApplicationInsights-JS-Mezzurite</a></td><td>Plug-in Mezzurite per <a href="https://github.com/Microsoft/ApplicationInsights-JS">Application Insights</a></td></tr>]D;]A;<tr><td><a href="https://github.com/Microsoft/Mezzurite">Mezzurite</a></td><td>SDK di base per Mezzurite con integrazione di Angular, AngularJS e React</td></tr>]D;]A;<tr><td><a href="https://github.com/Microsoft/Mezzurite-DevTools">Mezzurite DevTools</a></td><td>Visualizzare le metriche di Mezzurite acquisite con un'estensione del browser</td></tr>]D;]A;<tr><td><a href="https://github.com/Microsoft/vscode-mezzurite">VSCode Mezzurite</a></td><td>Verificare quali componenti e moduli sono instrumentati in VS Code</td></tr>]D;]A;</table>]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.3.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<Strong>The flow of the template</Strong>:]D;]A;]D;]A;1. View the performance of your routes]D;]A;2. <strong>Select a route </strong> to dive deeper into diagnostics. ]D;]A;3. Charts provided for the selected route are:]D;]A;<br>   a. Component Load Time for each of the components included in the selected route]D;]A;<br>   b. Application Load Time break down]D;]A;]D;]A;<p>**The below parameters affect all charts below:**</p>]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<Strong>Flusso del modello</Strong>:]D;]A;]D;]A;1. Visualizzare le prestazioni delle route]D;]A;2. <strong>Selezionare una route </strong> per esaminare i dati di diagnostica in modo approfondito. ]D;]A;3. I grafici forniti per la route selezionata sono:]D;]A;<br>   a. Tempo di caricamento componente per ogni componente incluso nella route selezionata]D;]A;<br>   b. Scomposizione tempo di caricamento applicazione]D;]A;]D;]A;<p>**I parametri visualizzati sotto interessano tutti i grafici seguenti:**</p>]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.4.content.parameters.39725ecb66f740c5bae740bc1eef8ca7.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Scopes the timeframe of the workbook]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Definisce l'ambito dell'intervallo di tempo della cartella di lavoro]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.4.content.parameters.6178b34acf9a42cfb4b13d1ec46ca34c.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Group results by time]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Raggruppa i risultati in base al tempo]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.4.content.parameters.7196f5c4bfe64fc09712aa345a56927c.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Percentile which all charts are calcualted]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Percentile in base a cui sono calcolati tutti i grafici]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.4.content.parameters.a12146364e9f41b395029b42064553fa.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Foucs the results to a specific browser]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Concentra i risultati in base a un browser specifico]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.4.content.parameters.df4a6862502942c093712fc97279e1ad.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Focus the results to a specific country]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Concentra i risultati in base a un paese specifico]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.5.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<h2 style="text-decoration: underline; margin-bottom: 0;">Performance of All Routes</h2>]D;]A;This is a landing page for your <strong>SPA</strong>, it maps to the route name in your application code.]D;]A;<p>Select a route below to view route-specific data:</p>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<h2 style="text-decoration: underline; margin-bottom: 0;">Prestazioni di tutte le route</h2>]D;]A;Questa è la pagina di destinazione dell'<strong>applicazione a pagina singola</strong>, mappata al nome della route nel codice dell'applicazione.]D;]A;<p>Selezionare sotto una route per visualizzare i dati specifici della route:</p>]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -108,6 +138,9 @@
       <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Single Page Application Insights]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Informazioni dettagliate applicazione a pagina singola]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

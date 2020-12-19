@@ -1131,30 +1131,45 @@
       <Item ItemId=";items.AllocatedUDPPorts.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Allocated UDP Ports]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Porte UDP allocate]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.BackendPoolmetricVMLB.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[	No Virtual machine resources are configured in backend pool.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[	Non sono configurate risorse macchina virtuale nel pool back-end.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.BackendPoolmetricVMSSLB.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[	No Virtual machine scale set resources are configured in backend pool.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[	Non sono configurate risorse set di scalabilità di macchine virtuali nel pool back-end.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.BasicLBnotsupported.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<h6>Standard Load Balancer required</h6>]D;]A;]D;]A;Basic Load Balancers don’t support metrics. Follow [our guide]5D;(https://docs.microsoft.com/azure/load-balancer/upgrade-basic-standard) to switch to Standard for this and other production level features today!]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<h6>È necessario un servizio di bilanciamento del carico Standard</h6>]D;]A;]D;]A;I servizi di bilanciamento del carico Basic non supportano le metriche. Seguire [la guida]5D;(https://docs.microsoft.com/azure/load-balancer/upgrade-basic-standard) per passare al livello Standard per questa e altre funzionalità di produzione oggi stesso.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.CMhelp.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Connection Monitor Help]D;]A;Connection Monitors are used to test the latency of traffic to your Load Balancer Frontend IPs from regions all over the globe. If you have Connection Monitors configured, review the above map to see the latency of traffic to your Load Balancer from all regions with sources configured.]D;]A;]D;]A;If you do not have any Connection Monitors configured, [create Connection Monitors]5D;(https://docs.microsoft.com/en-us/azure/network-watcher/connection-monitor) with source VMs in your regions of interest and set your destination to the Frontend IP address of your Load Balancer to analyze your round-trip latencies.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# Guida di Monitoraggio connessione]D;]A;Monitoraggio connessione consente di testare la latenza del traffico agli indirizzi IP front-end di bilanciamento del carico da tutte le aree in tutto il mondo. Se è stato configurato Monitoraggio connessione, esaminare la mappa riportata sopra per visualizzare la latenza del traffico al servizio di bilanciamento del carico da tutte le aree con origini configurate.]D;]A;]D;]A;Se non è configurato alcun Monitoraggio connessione, [Creare monitoraggi connessioni]5D;(https://docs.microsoft.com/it-it/azure/network-watcher/connection-monitor) con le macchine virtuali di origine nelle aree di interesse e impostare la destinazione sull'indirizzo IP front-end del servizio di bilanciamento del carico per analizzare le latenze di round trip.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1170,30 +1185,45 @@
       <Item ItemId=";items.Chartoflatencies.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Round-Trip Time (ms), Average - Destination Address Split]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Tempo di round trip (ms), Media - Divisione indirizzo di destinazione]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.DataThroughput.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Load Balancer Data Throughput]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Velocità effettiva dati di bilanciamento del carico]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.DataThroughputHelp.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Data Throughput Help]D;]A;This page is intended to allow customers to visualize the amount of data flowing through their load balancer and filter this to specific services or load balancer rules.]D;]A;* Review your total inbound and outbound Data Throughput to identify if your traffic patterns are as expected]D;]A;	+ If unexpected, view by Frontend IP and Port to see if a specific service is seeing higher than usual traffic]D;]A;]D;]A;* View by Frontend IP and/or Port to monitor specific services and load balancing rules]D;]A;]D;]A;**Note:** Graphs may have slight refresh time offset from each other, so graph totals may not match up. Please highlight specific time to get most accurate comparison.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# Guida per la velocità effettiva dei dati]D;]A;Questa pagina consente ai clienti di visualizzare la quantità di dati che transita attraverso il servizio bilanciamento del carico e di filtrarli in base a servizi specifici o a regole di bilanciamento del carico.]D;]A;* Rivedere la velocità effettiva totale dei dati in ingresso e in uscita per identificare se i modelli di traffico sono come previsto]D;]A;	+ Se i dati non sono come previsto, esaminare in base all'indirizzo IP front-end e la porta per osservare se un servizio specifico rileva un traffico più elevato del solito]D;]A;]D;]A;* Visualizzare in base a indirizzo IP front-end e/o porta per monitorare servizi specifici e regole di bilanciamento del carico]D;]A;]D;]A;**Nota:**i grafici possono mostrare un lieve offset del tempo di aggiornamento l'uno dall'altro, di conseguenza i totali del grafico potrebbero non corrispondere. Evidenziare un orario specifico per ottenere un confronto più accurato.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.FailedSNATConnectionsbyBackendIP.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Failed SNAT Connections by Backend IP]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Connessioni SNAT non riuscite per indirizzo IP back-end]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Filter.content.parameters.00edc28ae143444bb815338a9cb136c5.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Frontend Public IPs]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Indirizzi IP pubblici front-end]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1254,30 +1284,45 @@
       <Item ItemId=";items.FlowDistributionHelp.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Flow Distribution Help]D;]A;This page is intended to help customers visualize and manage the number of flows their backend VMs and VMSS instances are receiving and producing. ]D;]A;* See the number of inbound and outbound flows and creation rate for each VM and VMSS instance to ensure the number of flows is not approaching the [per VM flow limit]5D;(https://docs.microsoft.com/azure/virtual-network/virtual-machine-network-throughput#flow-limits-and-recommendations)]D;]A;	+ If approaching the flow limit, you  consider scaling out to more instances in your backend pool ]D;]A;]D;]A;* Use the inbound flows to visualize the load distribution of your load balancer]D;]A;]D;]A;* Use the outbound flows to determine if the processes running within your VM are creating significant outbound connections]D;]A;]D;]A;* Use the network throughput to see if there are indiviudal flows that are transmitting significantly larger than average data throughput]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# Guida alla distribuzione dei flussi]D;]A;Questa pagina consente ai clienti di visualizzare e gestire il numero di flussi generati e ricevuti dalle istanze di set di scalabilità di macchine virtuali e di macchine virtuali back-end. ]D;]A;* Visualizzare il numero di flussi in ingresso e in uscita e la velocità di creazione per ogni istanza di macchina virtuale e set di scalabilità di macchine virtuali per garantire che il numero di flussi non si avvicini al [limite di flussi per macchina virtuale]5D; (https://docs.microsoft.com/azure/virtual-network/virtual-machine-network-throughput#flow-limits-and-recommendations)]D;]A;	+ Se si sta per raggiungere il limite di flussi, è consigliabile aumentare il numero di istanze nel pool back-end ]D;]A;]D;]A;* Usare i flussi in ingresso per visualizzare la distribuzione del carico del servizio di bilanciamento del carico]D;]A;]D;]A;* Usare i flussi in uscita per determinare se i processi in esecuzione nella macchina virtuale stanno creando un numero significativo di connessioni in uscita]D;]A;]D;]A;* Usare la velocità effettiva di rete per verificare se sono presenti flussi con trasmissioni significativamente maggiori rispetto alla velocità effettiva media dei dati]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.FrontendBackendAvailabilityHelp.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Frontend & Backend Availability Help]D;]A;First, confirm that the Data Path Availability for your Load Balancer Frontends is showing 100. If Data Path Availability is less than 100, this implies an Azure issue creating Load Balancer connection issues. Check the Summary field in the load balancer status grid at the top of this page to learn if there is a known issue impacting your Load Balancer.]D;]A;]D;]A;After confirming Data Path Availability, review your Health Probe Status metrics to determine if your backend instances are responding. ]D;]A;* Check by VM to see if the problem is specific to a VM]D;]A;	+ If specific to a VM, check with this VM to make sure it is healthy]D;]A;	]D;]A;* Check by Port to see if the problem is specific to a Port]D;]A;	+ If specific to a Port, your application may not be listening to this port or there may be an NSG rule blocking this port ]D;]A;	]D;]A;* Check by Frontend IP or Frontend Port to monitor the backend pool for a specific load balancing rule or service]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# Guida per la disponibilità di front-end e back-end]D;]A;In primo luogo, confermare che la disponibilità del percorso dati per i front-end di bilanciamento del carico mostri 100. Se la disponibilità del percorso dati è inferiore a 100, potrebbe essersi verificato un problema di Azure che crea problemi di connessione con il servizio di bilanciamento del carico. Controllare il campo Riepilogo nella griglia di stato del servizio di bilanciamento del carico nella parte superiore di questa pagina per informazioni sulla presenza di problemi noti che possono influire il servizio di bilanciamento del carico.]D;]A;]D;]A;Dopo aver confermato la disponibilità del percorso dati, esaminare le metriche di stato del probe di integrità per determinare se le istanze back-end rispondono. ]D;]A;* Controllare per macchina virtuale per verificare se il problema è specifico di una macchina virtuale.]D;]A;	+ Se il problema è specifico di una macchina virtuale, controllare la macchina virtuale per verificare che sia integra]D;]A;	]D;]A;* Controllare per porta per verificare se il problema è specifico di una porta]D;]A;	+ Se il problema è specifico di una porta, l'applicazione potrebbe non essere in ascolto su questa porta o potrebbe essere presente una regola del gruppo di sicurezza di rete che blocca questa porta ]D;]A;	]D;]A;* Controllare per indirizzo IP front-end o porta front-end per monitorare il pool back-end per una regola o un servizio di bilanciamento del carico specifico]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.FrontendIPmetricBasicLB.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Basic Load Balancers don’t support metrics. Follow [our guide]5D;(https://docs.microsoft.com/azure/load-balancer/upgrade-basic-standard) to switch to Standard for this and other production level features today!]D;]A;]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[I servizi di bilanciamento del carico Basic non supportano le metriche. Seguire [la guida]5D;(https://docs.microsoft.com/azure/load-balancer/upgrade-basic-standard) per passare al livello Standard per questa e altre funzionalità di produzione oggi stesso.]D;]A;]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.FrontendPublicIPAddresses.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No Frontend Public IP Addresses are configured]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Non è configurato alcun indirizzo IP pubblico front-end]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.FrontendPublicIPAddresses.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Frontend Public IP Addresses]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Indirizzi IP pubblici front-end]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1320,30 +1365,45 @@
       <Item ItemId=";items.InboundDataThroughputPerFrontendIP.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Inbound Data Throughput Per Frontend IP]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Velocità effettiva dei dati in ingresso per indirizzo IP front-end]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.InboundDataThroughputPerFrontendPort.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Inbound Data Throughput Per Frontend Port]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Velocità effettiva dei dati in ingresso per porta front-end]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.LBBackendhealthprobeBackendport.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Health Probe Status by Backend Port]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Stato probe di integrità per porta back-end]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.LBBackendhealthprobeFronendIP.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Health Probe Status by Frontend IP Address]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Stato probe di integrità per indirizzo IP front-end]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.LBBackendhealthprobeFrontendport.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Health Probe Status by Frontend Port]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Stato probe di integrità per porta front-end]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1359,36 +1419,54 @@
       <Item ItemId=";items.LBHealth.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Load Balancer Status]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Stato bilanciamento del carico]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.MetricHelp.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[| **Metric** | **Resource type** | **Description** | **Recommended aggregation** |]D;]A;| --- | --- | --- | --- |]D;]A;| Data path availability | Public and internal load balancer | Standard Load Balancer continuously exercises the data path from within a region to the load balancer front end, all the way to the SDN stack that supports your VM. As long as healthy instances remain, the measurement follows the same path as your application&#39;s load-balanced traffic. The data path that your customers use is also validated. The measurement is invisible to your application and does not interfere with other operations. | Average |]D;]A;| Health probe status | Public and internal load balancer | Standard Load Balancer uses a distributed health-probing service that monitors your application endpoint&#39;s health according to your configuration settings. This metric provides an aggregate or per-endpoint filtered view of each instance endpoint in the load balancer pool. You can see how Load Balancer views the health of your application, as indicated by your health probe configuration. | Average |]D;]A;| SYN (synchronize) packets | Public and internal load balancer | Standard Load Balancer does not terminate Transmission Control Protocol (TCP) connections or interact with TCP or UDP packet flows. Flows and their handshakes are always between the source and the VM instance. To better troubleshoot your TCP protocol scenarios, you can make use of SYN packets counters to understand how many TCP connection attempts are made. The metric reports the number of TCP SYN packets that were received. | Average |]D;]A;| SNAT connections | Public load balancer | Standard Load Balancer reports the number of outbound flows that are masqueraded to the Public IP address front end. Source network address translation (SNAT) ports are an exhaustible resource. This metric can give an indication of how heavily your application is relying on SNAT for outbound originated flows. Counters for successful and failed outbound SNAT flows are reported and can be used to troubleshoot and understand the health of your outbound flows. | Average |]D;]A;| Byte counters | Public and internal load balancer | Standard Load Balancer reports the data processed per front end. You may notice that the bytes are not distributed equally across the backend instances. This is expected as Azure&#39;s Load Balancer algorithm is based on flows | Average |]D;]A;| Packet counters | Public and internal load balancer | Standard Load Balancer reports the packets processed per front end. | Average |]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[| **Metrica** | **Tipo di risorsa** | **Descrizione** | **Aggregazione consigliata** |]D;]A;| --- | --- | --- | --- |]D;]A;| Disponibilità percorso dati | Servizio di bilanciamento del carico interno e pubblico | Il servizio di bilanciamento del carico Standard esercita continuamente il percorso dati dall'interno di un'area al front-end di bilanciamento del carico, fino allo stack SDN (Software Defined Networking) che supporta la macchina virtuale. Fintanto che rimangono istanze integre, la misura segue lo stesso percorso del traffico con carico bilanciato dell'applicazione. Anche il percorso dati usato dai clienti viene convalidato. La misura è invisibile all'applicazione e non interferisce con altre operazioni. | Media |]D;]A;| Stato probe di integrità | Servizio di bilanciamento del carico interno e pubblico | Il servizio di bilanciamento del carico Standard usa un servizio probe di integrità distribuito che monitora l'integrità degli endpoint applicazione in base alle impostazioni di configurazione. Questa metrica fornisce una visualizzazione aggregata o filtrata per endpoint nel pool di bilanciamento del carico che consente di determinare l'integrità dell'applicazione da parte del servizio di bilanciamento del carico, come indicato dalla configurazione del probe di integrità. | Media |]D;]A;| Pacchetti SYN (sincronizzazione) | Servizio di bilanciamento del carico interno e pubblico | Il servizio di bilanciamento del carico Standard non termina le connessioni TCP (Transmission Control Protocol) né interagisce con i flussi dei pacchetti TCP o UDP. I flussi e i relativi handshake sono sempre tra l'origine e l'istanza di macchina virtuale. Per una migliore risoluzione dei problemi degli scenari del protocollo TCP, è possibile usare i contatori dei pacchetti SYN per informazioni sul numero di tentativi di connessione TCP effettuati. La metrica segnala il numero di pacchetti SYN TCP SYN ricevuti. | Media |]D;]A;| Connessioni SNAT | Servizio di bilanciamento del carico pubblico | Il servizio di bilanciamento del carico Standard segnala il numero di flussi in uscita mascherati al front-end dell'indirizzo IP pubblico. Le porte SNAT (Source Network Address Translation) sono una risorsa soggetta a esaurimento. Questa metrica indica quanto pesantemente l'applicazione fa affidamento su SNAT per i flussi originati in uscita. I contatori per i flussi SNAT in uscita riusciti e non riusciti sono segnalati e possono essere usati per risolvere i problemi e acquisire informazioni sull'integrità dei flussi in uscita. | Media |]D;]A;| Contatori byte | Servizio di bilanciamento del carico interno e pubblico | Il servizio di bilanciamento del carico Standard segnala i dati elaborati per front-end. È possibile notare che i byte non sono distribuiti in modo uniforme tra le istanze back-end. Si tratta di un comportamento previsto, in quanto l'algoritmo di Azure Load Balancer è basato sui flussi | Media |]D;]A;| Contatori pacchetti | Servizio di bilanciamento del carico interno e pubblico | Il servizio di bilanciamento del carico Standard segnala i pacchetti elaborati per front-end. | Media |]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.OutboundDataThroughputPerFrontendIP.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Outbound Data Throughput Per Frontend IP]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Velocità effettiva dei dati in uscita per indirizzo IP front-end]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.OutboundDataThroughputPerFrontendPort.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Outbound Data Throughput Per Frontend Port]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Velocità effettiva dei dati in uscita per porta front-end]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.OverviewHelp.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Overview Help]D;]A;The Overview tab is intended as an entry point to monitor your Load Balancer. It outlines data throughput and frontend/backend availability.]D;]A;]D;]A;To get started:]D;]A;1. Configure the time range at the top of the workbook to your desired range]D;]A;]D;]A;1. Review data throughput to ensure values are within your expected range for the configured time span ]D;]A;	+ If detailed analysis is warranted view the Data Throughput tab]D;]A;	]D;]A;1. Review Data Path and Backend Availability to ensure your load balancer is reachable and your backend instances are responding to health probes]D;]A;	+ If either of these are below 100 and this is not expected, view the Frontend and Backend Availability tab ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# Guida per la scheda Panoramica]D;]A;La scheda Panoramica è un punto di ingresso per monitorare il servizio di bilanciamento del carico. Evidenzia la velocità effettiva dei dati e la disponibilità di front-end/back-end.]D;]A;]D;]A;Per iniziare:]D;]A;1. Configurare l'intervallo di tempo nella parte superiore della cartella di lavoro in base all'intervallo desiderato]D;]A;]D;]A;1. Esaminare la velocità effettiva dei dati per assicurarsi che i valori siano compresi nell'intervallo di tempo previsto per l'intervallo di tempo configurato ]D;]A;	+ Se l'analisi dettagliata è garantita, visualizzare la scheda Velocità effettiva dati]D;]A;	]D;]A;1. Esaminare il percorso dati e la disponibilità del back-end per assicurarsi che il servizio di bilanciamento del carico sia raggiungibile e che le istanze back-end rispondano ai probe di integrità]D;]A;	+ Se uno di questi valori è inferiore a 100 e non è previsto, visualizzare la scheda Disponibilità front-end e back-end ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.RoundTripTimemsAverage.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[	No running Connection Monitors found]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[	Non sono stati trovati monitoraggi connessione in esecuzione]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1413,6 +1491,9 @@
       <Item ItemId=";items.RoundTripTimemsAverageGrid.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Round-Trip Time (ms), Average - Chart]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Tempo di round trip (ms), Media - Grafico]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1428,12 +1509,18 @@
       <Item ItemId=";items.RoundTripTimemsAverageMap.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Round-Trip Time (ms), Average - Map]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Tempo di round trip (ms), Media - Mappa]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.SumofSNATConnectionStates.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Sum of SNAT Connection States]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Somma degli stati della connessione SNAT]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1449,18 +1536,27 @@
       <Item ItemId=";items.Tabselector.content.links.1.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Frontend & Backend Availability]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Disponibilità front-end e back-end]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Tabselector.content.links.2.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Data Throughput]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Velocità effettiva dati]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Tabselector.content.links.3.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Flow Distribution]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Distribuzione flussi]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1485,24 +1581,36 @@
       <Item ItemId=";items.TotalDataThroughputbyDirection.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Total Data Throughput by Direction]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Totale velocità effettiva dati per direzione]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.UsedUDPPortsbyBackendIP.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Used UDP Ports by Backend IP]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Porte UDP usate per indirizzo IP back-end]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.UsefulDocuments.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Useful documents]D;]A;* [Overview of the Azure Load Balancer]5D;(https://docs.microsoft.com/azure/load-balancer/load-balancer-overview)]D;]A;* [Frequently asked questions]5D;(https://docs.microsoft.com/azure/load-balancer/load-balancer-faqs)]D;]A;* [Guidance on Standard Load Balancer metrics]5D;(https://docs.microsoft.com/azure/load-balancer/load-balancer-standard-diagnostics)]D;]A;* [Troubleshoot your Azure Load Balancer]5D;(https://docs.microsoft.com/azure/load-balancer/load-balancer-troubleshoot)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Documenti utili]D;]A;* [Panoramica di Azure Load Balancer]5D;(https://docs.microsoft.com/azure/load-balancer/load-balancer-overview)]D;]A;* [Domande frequenti]5D;(https://docs.microsoft.com/azure/load-balancer/load-balancer-faqs)]D;]A;* [Indicazioni sulle metriche del servizio di bilanciamento del carico Standard]5D;(https://docs.microsoft.com/azure/load-balancer/load-balancer-standard-diagnostics)]D;]A;* [Risoluzione dei problemi di Azure Load Balancer]5D;(https://docs.microsoft.com/azure/load-balancer/load-balancer-troubleshoot)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.VMFlowandTrafficGroup.content.items.InboundFlowsBackendVM.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Inbound Flow Count and Creation Rate]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Numero di flussi in ingresso e velocità di creazione]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1545,12 +1653,18 @@
       <Item ItemId=";items.VMFlowandTrafficGroup.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[VM Flow Creation and Network Traffic]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Creazione flussi macchine virtuali e traffico di rete]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.VMSSFlowandTrafficGroup.content.items.InboundFlowsBackendVMSS.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Inbound Flow Count and Creation Rate ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Numero di flussi in ingresso e velocità di creazione ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1593,6 +1707,9 @@
       <Item ItemId=";items.VMSSFlowandTrafficGroup.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[VMSS Flow Creation and Network Traffic]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Creazione flussi set di scalabilità di macchine virtuali e traffico di rete]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1608,12 +1725,18 @@
       <Item ItemId=";items.metric36.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Allocated TCP Ports]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Porte TCP allocate]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.metric37.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Used TCP Ports by Backend IP]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Porte TCP usate per indirizzo IP back-end]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
