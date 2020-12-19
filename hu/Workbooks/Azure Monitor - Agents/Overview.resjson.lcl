@@ -123,6 +123,9 @@
       <Item ItemId=";items.GetStartedGroup.content.items.GetStartedText.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Get started]D;]A;]D;]A;Welcome to the Azure Monitor Log Analytics agent workbook. This workbook is designed to provide you with an understanding of:]D;]A;* How many agents are reporting to my workspace and how are they connected?]D;]A;* What is the agent connected state? How many are actively connected and reporting and how many aren't?]D;]A;* Are any Windows agents affecting the resource utlization of the host?]D;]A;]D;]A;You can drill-down to review the heartbeat trend for a selected agent machine, and its performance utilization (only available on Windows operating system at this time).]D;]A;]D;]A;The following tabs include performance charts that show resource utilization from the agent's related processes:]D;]A;]D;]A;1. **Health Service** - The *HealthService* is the primary agent process responsible for maintaining communication between the agent and Azure Monitor, downloading configuration based on insights and solutions enabled in the workspace, processing the configuration, and sending data collected to a Log Analytics workspace. ]D;]A;2. **Monitoring Host** - The *MonitoringHost* is a child monitoring host process responsible for performing monitoring activities defined in the downloaded configuration from Azure Monitor, such as:]D;]A;]D;]A;    * Monitoring and collecting Windows event log data.]D;]A;    * Monitoring and collecting Log-based file data.]D;]A;    * Monitoring and collecting performance counter data.]D;]A;]D;]A;For additional information about the Log Analytics agent, see [agent overview]5D;(https://docs.microsoft.com/azure/azure-monitor/platform/agents-overview#log-analytics-agent).]D;]A;]D;]A;]D;]A;## Requirements]D;]A;]D;]A;* A [Log Analytics workspace]5D;(https://docs.microsoft.com/azure/azure-monitor/platform/design-logs-deployment).]D;]A;]D;]A;In order to analyze the performance utlization of the Log Analytics Windows agent, you need to enable the collection of the following performance counters:]D;]A;* Health Service Management Groups(*)\Send Queue % Used ]D;]A;* Health Service(*)\Module Count]D;]A;* Health Service(*)\Workflow Count ]D;]A;* Process(HealthService)\% Processor Time ]D;]A;* Process(HealthService)\Handle Count ]D;]A;* Process(HealthService)\Private Bytes ]D;]A;* Process(MonitoringHost*)\% Processor Time ]D;]A;* Process(MonitoringHost*)\Private Bytes ]D;]A;]D;]A;If you are unfamiliar with how to enable performance counters in your workspace, see [Configure performance data source]5D;(https://docs.microsoft.com/azure/azure-monitor/platform/data-sources-performance-counters#configuring-data-sources).]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# Első lépések]D;]A;]D;]A;Üdvözli az Azure Monitor Log Analytics-ügynök munkafüzete. A munkafüzet célja, hogy a következő ismereteket adja át:]D;]A;* Hány ügynök jelent a munkaterületen, és milyen kapcsolat van köztük?]D;]A;* Mi az ügynökök kapcsolati állapota? Hány ügynök kapcsolata aktív és küld jelentést aktívan, és hány nem?]D;]A;* Van olyan Windows-ügynök, amely befolyásolja a gazdagép erőforrás-felhasználását?]D;]A;]D;]A;Részletezéssel ellenőrizheti a kiválasztott ügynök gépének szívverési trendjét és teljesítményfelhasználását (ez jelenleg csak a Windows operációs rendszeren érhető el).]D;]A;]D;]A;A következő lapok olyan teljesítménydiagramokat tartalmaznak, amelyek az ügynök kapcsolódó folyamataiból származó erőforrás-felhasználást jelenítik meg:]D;]A;]D;]A;1. **Állapotfigyelő szolgáltatás** – Az *Állapotfigyelő szolgáltatás* elsődlegesen az ügynök és a Azure Monitor közötti kommunikáció fenntartásáért, a munkaterületen engedélyezett elemzéseken és megoldásokon alapuló konfiguráció letöltéséért, a konfiguráció feldolgozásáért és az összegyűjtött adatok Log Analytics-munkaterületre való elküldéséért felel. ]D;]A;2. **Figyelő gazdagép** – A *Figyelő gazdagép* egy alárendelt monitorozási gazdafolyamat, amely az Azure Monitorból letöltött konfigurációban definiált figyelési tevékenységek elvégzéséért felelős, például:]D;]A;]D;]A;    * A Windows Eseménynapló adatainak figyelése és gyűjtése.]D;]A;    * A fájlok naplóadatainak figyelése és gyűjtése.]D;]A;    * A teljesítményszámlálók adatainak figyelése és gyűjtése.]D;]A;]D;]A;A Log Analytics-ügynökkel kapcsolatos további információért lásd: [az ügynök áttekintése]5D;(https://docs.microsoft.com/azure/azure-monitor/platform/agents-overview#log-analytics-agent).]D;]A;]D;]A;]D;]A;## Követelmények]D;]A;]D;]A;* [Log Analytics-munkaterület]5D;(https://docs.microsoft.com/azure/azure-monitor/platform/design-logs-deployment).]D;]A;]D;]A;A Windowshoz készült Log Analytics-ügynök teljesítmény-felhasználásának elemzéséhez engedélyeznie kell az alábbi teljesítményszámlálók adatainak gyűjtését:]D;]A;* Állapotfigyelés-kezelési csoportok(*)\Várólista-használati adatok (%) küldése]D;]A;* Állapotfigyelő szolgáltatás(*)\Modulok száma]D;]A;* Állapotfigyelő szolgáltatás(*)\Munkafolyamatok száma ]D;]A;* Folyamat(Állapotfigyelő szolgáltatás)\% Processzoridő ]D;]A;* Folyamat(Állapotfigyelő szolgáltatás) \Leírók száma ]D;]A;* Folyamat(Állapotfigyelő szolgáltatás)\Privát bájtok ]D;]A;* Folyamat(Figyelő gazdagép*)\% Processzoridő ]D;]A;* Folyamat(Figyelő gazdagép*)\Privát bájtok ]D;]A;]D;]A;A teljesítményszámlálók munkaterületen való engedélyezéséről itt tájékozódhat: [Teljesítményadatok forrásának konfigurálása]5D;(https://docs.microsoft.com/azure/azure-monitor/platform/data-sources-performance-counters#configuring-data-sources).]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -147,30 +150,45 @@
       <Item ItemId=";items.Navigationlinks.content.links.2.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[ Health Service]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[ Állapotfigyelő szolgáltatás]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Navigationlinks.content.links.3.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[ Monitoring Host]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[ Figyelő gazdagép]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.parameters1.content.parameters.15920bec4a724e23a0eec7b4e0b7acb4.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Unhealthy Criteria]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Nem kifogástalan állapotú feltételek]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text0.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Log Analytics Agent Health]D;]A;Use this report to analyze the the health of the Log Analytics agent deployed in your workspace. ]D;]A;<br/>]D;]A;<br/>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Log Analytics Agent Health]D;]A;Ezzel a jelentéssel elemezheti a munkaterületen telepített Log Analytics-ügynök állapotát.]D;]A;<br/>]D;]A;<br/>]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Log Analytics Agent Health]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Log Analytics Agent Health]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

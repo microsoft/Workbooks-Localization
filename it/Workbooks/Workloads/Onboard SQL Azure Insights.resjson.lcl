@@ -14,6 +14,9 @@
         <Item ItemId=";(...) f4b27bfa41ca675a13b98.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Sql Telegraf config]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Configurazione di SQL Telegraf]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -35,6 +38,9 @@
         <Item ItemId=";(...) ateRunContext.description" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[![SQL logo]5D;(https://raw.githubusercontent.com/acearun/managedsolutions/master/Templates/Logos/sql-azure-logo.jpg)]D;]A;]D;]A;<br/>]D;]A;<br/>]D;]A;We're ready to enable Azure Monitor for SQL Server to your virtual machine! Choose **Enable monitoring** to start monitoring with the recommended settings.]D;]A;]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[![Logo SQL]5D;(https://raw.githubusercontent.com/acearun/managedsolutions/master/Templates/Logos/sql-azure-logo.jpg)]D;]A;]D;]A;<br/>]D;]A;<br/>]D;]A;È ora possibile abilitare Monitoraggio di Azure per SQL Server nella macchina virtuale. Scegliere **Abilita monitoraggio** per avviare il monitoraggio con le impostazioni consigliate.]D;]A;]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -53,6 +59,9 @@
         <Item ItemId=";(...) f453b9043dfee2c8d435e.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Monitoring virtual machine]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Macchina virtuale di monitoraggio]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -62,6 +71,9 @@
         <Item ItemId=";(...) d4271bb5b49d442975c84.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Monitoring VM Subs]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Monitoraggio sottoscrizioni macchina virtuale]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -69,18 +81,27 @@
       <Item ItemId=";items.Overviewgroup.content.items.Configuregroup.content.items.checkconfigvalidity.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[]D83D;]DCA1; Add the correct user name and password in the `servers` section of the Telegraf config above.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[]D83D;]DCA1; Aggiungere il nome utente e la password corretti nella sezione 'server' della configurazione di Telegraf riportata sopra.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overviewgroup.content.items.Configuregroup.content.items.sqluserinformation.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[#### Choose monitoring virtual machine]D;]A;Azure Monitor will use this virtual machine to remotely collect health and performance metrics from your SQL databases.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[#### Scegliere la macchina virtuale di monitoraggio]D;]A;Monitoraggio di Azure userà questa macchina virtuale per raccogliere le metriche sull'integrità e sulle prestazioni in modalità remota dai database SQL.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overviewgroup.content.items.Configuregroup.content.items.text4.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[#### Setup SQL database monitoring]D;]A;    ]D;]A;SQL Server monitoring data collection is specified by Telegraf configuration below. Update the `servers` section with the correct connection strings to access your SQL databases. You can also customize your data collection settings using the config. Learn about [SQL Telegraf settings]5D;(https://github.com/influxdata/telegraf/tree/master/plugins/inputs/sqlserver#configuration).]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[#### Configurare il monitoraggio del database SQL]D;]A;    ]D;]A;La raccolta dati di monitoraggio di SQL Server è specificata dalla configurazione di Telegraf seguente. Aggiornare la sezione 'server' con le stringhe di connessione corrette per accedere ai database SQL. È anche possibile personalizzare le impostazioni di raccolta dati mediante la configurazione. Informazioni sulle [impostazioni di SQL Telegraf]5D;(https://github.com/influxdata/telegraf/tree/master/plugins/inputs/sqlserver#configuration).]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -96,12 +117,18 @@
       <Item ItemId=";items.Overviewgroup.content.items.Prerequisitesgroup.content.items.prerequisitessqlazureremote.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[#### Create SQL user accounts]A;You have to create a login on every instance you want to monitor, with following script:]A;]A;```]A;CREATE USER [telegraf]5D; WITH PASSWORD = N'mystrongpassword';]A;GO]A;GRANT VIEW DATABASE STATE TO [telegraf]5D;;]A;GO]A;```]A;]A;#### Firewall rules for SQL database]A;Update firewall rules to allow the remote monitoring virtual machine to access the SQL Server instance.]A;]A;#### Outbound network settings for the remote virtual machine]A;Verify that the virtual machine has the outbound port as specified in the Sql Telegraf config in the next step.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[#### Creare gli account utente SQL]A;È necessario creare un account di accesso in ogni istanza da monitorare, con lo script seguente:]A;]A;```]A;CREATE USER [telegraf]5D; WITH PASSWORD = N'mystrongpassword';]A;GO]A;GRANT VIEW DATABASE STATE TO [telegraf]5D;;]A;GO]A;```]A;]A;#### Regole del firewall per il database SQL]A;Aggiornare le regole del firewall per consentire alla macchina virtuale remota di monitoraggio di accedere all'istanza di SQL Server.]A;]A;#### Impostazioni di rete in uscita per la macchina virtuale remota]A;Verificare che nella macchina virtuale sia impostata la stessa porta in uscita specificata nella configurazione di SQL Telegraf nel passaggio successivo.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overviewgroup.content.items.overviewinfologo.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Azure Monitor for Microsoft SQL Azure]D;]A;<br />]D;]A;]D;]A;![SQL logo]5D;(https://raw.githubusercontent.com/acearun/managedsolutions/master/Templates/Logos/sql-azure-logo.jpg)]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Monitoraggio di Azure per Microsoft SQL Azure]D;]A;<br />]D;]A;]D;]A;![SQL logo]5D;(https://raw.githubusercontent.com/acearun/managedsolutions/master/Templates/Logos/sql-azure-logo.jpg)]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -144,6 +171,9 @@
       <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Onboard SQL Azure Insights]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Onboarding di Informazioni dettagliate SQL Azure]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

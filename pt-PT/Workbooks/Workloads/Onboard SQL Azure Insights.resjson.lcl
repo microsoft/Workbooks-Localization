@@ -14,6 +14,9 @@
         <Item ItemId=";(...) f4b27bfa41ca675a13b98.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Sql Telegraf config]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Configuração do Sql Telegraf]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -56,6 +59,9 @@
         <Item ItemId=";(...) f453b9043dfee2c8d435e.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Monitoring virtual machine]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Máquina virtual de monitorização]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -65,6 +71,9 @@
         <Item ItemId=";(...) d4271bb5b49d442975c84.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Monitoring VM Subs]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Subscrições de VM de monitorização]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -72,18 +81,27 @@
       <Item ItemId=";items.Overviewgroup.content.items.Configuregroup.content.items.checkconfigvalidity.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[]D83D;]DCA1; Add the correct user name and password in the `servers` section of the Telegraf config above.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[]D83D;]DCA1; Adicione o nome de utilizador e a palavra-passe corretos na secção "servidores" da configuração do Telegraf acima.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overviewgroup.content.items.Configuregroup.content.items.sqluserinformation.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[#### Choose monitoring virtual machine]D;]A;Azure Monitor will use this virtual machine to remotely collect health and performance metrics from your SQL databases.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[#### Escolher a monitorização de máquina virtual]D;]A;O Azure Monitor utilizará esta máquina virtual para recolher remotamente métricas de estado de funcionamento e desempenho a partir das suas bases de dados SQL.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overviewgroup.content.items.Configuregroup.content.items.text4.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[#### Setup SQL database monitoring]D;]A;    ]D;]A;SQL Server monitoring data collection is specified by Telegraf configuration below. Update the `servers` section with the correct connection strings to access your SQL databases. You can also customize your data collection settings using the config. Learn about [SQL Telegraf settings]5D;(https://github.com/influxdata/telegraf/tree/master/plugins/inputs/sqlserver#configuration).]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[#### Configurar a monitorização da base de dados SQL]D;]A;    ]D;]A;A recolha de dados de monitorização do SQL Server é especificada pela configuração Telegraf indicada abaixo. Atualize a secção "servidores" com as cadeias de ligação corretas para aceder às bases de dados SQL. Também pode personalizar as definições de recolha de dados utilizando a configuração. Saiba mais sobre as [Definições do SQL Telegraf]5D;(https://github.com/influxdata/telegraf/tree/master/plugins/inputs/sqlserver#configuration).]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -99,12 +117,18 @@
       <Item ItemId=";items.Overviewgroup.content.items.Prerequisitesgroup.content.items.prerequisitessqlazureremote.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[#### Create SQL user accounts]A;You have to create a login on every instance you want to monitor, with following script:]A;]A;```]A;CREATE USER [telegraf]5D; WITH PASSWORD = N'mystrongpassword';]A;GO]A;GRANT VIEW DATABASE STATE TO [telegraf]5D;;]A;GO]A;```]A;]A;#### Firewall rules for SQL database]A;Update firewall rules to allow the remote monitoring virtual machine to access the SQL Server instance.]A;]A;#### Outbound network settings for the remote virtual machine]A;Verify that the virtual machine has the outbound port as specified in the Sql Telegraf config in the next step.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[#### Criar contas de utilizador do SQL]A;Tem de criar um início de sessão em todas as instâncias que pretende monitorizar, com o seguinte script:]A;]A;```]A;CREATE USER [telegraf]5D; WITH PASSWORD = N'mystrongpassword';]A;GO]A;GRANT VIEW DATABASE STATE TO [telegraf]5D;;]A;GO]A;```]A;]A;#### Regras da firewall para a base de dados SQL]A;Atualize as regras da firewall para permitir que a máquina virtual de monitorização remota aceda à instância do SQL Server.]A;]A;####Definições de rede de saída para a máquina virtual remota]A;Verifique se a máquina virtual tem a porta de saída conforme especificado na configuração SQL Telegraf indicada no passo a seguir.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overviewgroup.content.items.overviewinfologo.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Azure Monitor for Microsoft SQL Azure]D;]A;<br />]D;]A;]D;]A;![SQL logo]5D;(https://raw.githubusercontent.com/acearun/managedsolutions/master/Templates/Logos/sql-azure-logo.jpg)]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Azure Monitor para Microsoft SQL Azure]D;]A;<br />]D;]A;]D;]A;![Logótipo do SQL]5D;(https://raw.githubusercontent.com/acearun/managedsolutions/master/Templates/Logos/sql-azure-logo.jpg)]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -147,6 +171,9 @@
       <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Onboard SQL Azure Insights]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Integrar Informações do SQL Azure]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

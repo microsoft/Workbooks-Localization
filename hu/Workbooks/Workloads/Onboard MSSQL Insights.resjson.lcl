@@ -45,48 +45,72 @@
       <Item ItemId=";items.Overviewgroup.content.items.Configuregroup.content.items.checkconfigvalidity.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Please update the `servers` array in the MSSQL Telegraf config to enable monitoring.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[A monitorozás engedélyezéséhez frissítse a servers tömböt az MSSQL Telegraf-konfigurációban.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overviewgroup.content.items.Configuregroup.content.items.enablemssqlmonitoringlink.content.links.0.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Enable SQL monitoring]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Az SQL monitorozásának engedélyezése]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overviewgroup.content.items.Configuregroup.content.items.mysqlsampleconnectionstring.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<br />]D;]A;**Learn about connection strings**]D;]A;]D;]A;Provide one ore more connection strings as a comma seperated collection of strings (within double-quotes):]D;]A;]D;]A;```]D;]A;"Server=sqlserver.database.windows.net;Port=1433;database=mydb;User Id=<user>;Password=<pw>;app name=telegraf;log=1;",]D;]A;"Server=myothersqlserver.database.windows.net;Port=1433;database=mydb3;User Id=<user>;Password=<pw>;app name=telegraf;log=1;"]D;]A;```]D;]A;Or,]D;]A;```]D;]A;"Server=127.0.0.1;Port=1433;database=mydb;User Id=<user>;Password=<pw>;app name=telegraf;log=1;"]D;]A;```]D;]A;]D;]A;]D;]A;See https://github.com/denisenkom/go-mssqldb for detailed connection parameters.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<br />]D;]A;**Tudnivalók a kapcsolati sztringekről**]D;]A;]D;]A;Akár több kapcsolati sztringet is megadhat vesszővel elválasztva (dupla idézőjelek között):]D;]A;]D;]A;```]D;]A;"Server=sqlserver.database.windows.net;Port=1433;database=mydb;User Id=<felhasználónév>;Password=<jelszó>;app name=telegraf;log=1;",]D;]A;"Server=myothersqlserver.database.windows.net;Port=1433;database=mydb3;User Id=<felhasználónév>;Password=<jelszó>;app name=telegraf;log=1;"]D;]A;```]D;]A;Or,]D;]A;```]D;]A;"Server=127.0.0.1;Port=1433;database=mydb;User Id=<felhasználónév>;Password=<jelszó>;app name=telegraf;log=1;"]D;]A;```]D;]A;]D;]A;]D;]A;Kapcsolati paraméterek ismertetése: https://github.com/denisenkom/go-mssqldb.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overviewgroup.content.items.Configuregroup.content.items.samplemysqlconnectionstring.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Azure Monitor needs access to the health information stored in SQL Server dynamic management view tables. Please provide the *connection string* to allow this access below. More information about the format of connection strings can be found below.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Az Azure Monitornak hozzáférésre van szüksége az SQL Server dinamikus felügyeleti nézettábláiban tárolt állapotadatokhoz. Lentebb engedélyezze ezt a hozzáférést a *kapcsolati sztring* megadásával. A kapcsolati sztringek formátumával kapcsolatos további információ szintén lentebb található.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overviewgroup.content.items.Overviewgroup.content.items.mssqlinformation.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[SQL Server environments are becoming more complex while remaining a critical component of your application architecture. It’s a struggle to keep up with this continual growth without the right SQL monitoring tools. What if you could proactively manage your SQL Server environment and diagnose database performance issues by viewing the health of all your SQL Server instances on a single screen, anytime, anywhere on any device? You can with the right SQL Server monitoring tool.]A;]A;With Azure Monitor for SQL Server, you can manage your SQL Server environment while also gaining visibility into your operating system – Windows or Linux – and also monitor your virtualization infrastructure. Make configuration a breeze with templates, automated alerts and customizable actions. Spend less time fighting fires by accurately diagnosing real-time and historical database performance issues, and focus on more proactive measures like query tuning.]A;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Az SQL Server-környezetek egyre összetettebbek, miközben továbbra is az alkalmazásarchitektúra kritikus összetevői. Nagyon nehéz lépést tartani a folyamatos növekedéssel a megfelelő SQL-monitorozási eszközök nélkül. Mi lenne, ha proaktív módon tudná kezelni az SQL Server-környezetet, és diagnosztizálni az adatbázis teljesítményével kapcsolatos problémákat, mivel az összes SQL Server-példány állapotát egyetlen képernyőn tekinthetné meg, bárhol, bármikor, bármilyen eszközön? A megfelelő SQL Server-monitorozási eszközzel ez lehetséges.]A;]A;Az Azure Monitor for SQL Server használatával kezelheti az SQL Server-környezetet, és közben az operációs rendszerre – a Windowsra vagy a Linuxra – is ráláthat, és a virtualizációs infrastruktúrát is monitorozhatja. A sablonokkal, az automatizált riasztásokkal és a testre szabható műveletekkel könnyedén konfigurálhatja a rendszert. Az adatbázis teljesítményével kapcsolatos valós idejű és a múltbeli problémák pontos diagnosztizálásának köszönhetően rövidebb időt kell tűzoltással töltenie, és így olyan proaktívabb műveletekre koncentrálhat, mint például a lekérdezések finomhangolása.]A;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overviewgroup.content.items.Prerequisitesgroup.content.items.prerequisitesmssqlremote.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[#### Create SQL user accounts]A;You have to create a login on every instance you want to monitor, with following script:]A;]A;```]A;USE master;]A;GO]A;CREATE LOGIN [telegraf]5D; WITH PASSWORD = N'mystrongpassword';]A;GO]A;GRANT VIEW SERVER STATE TO [telegraf]5D;;]A;GO]A;GRANT VIEW ANY DEFINITION TO [telegraf]5D;;]A;GO]A;```]A;]A;For Azure SQL Database, you require the View Database State permission and can create a user with a password directly in the database.]A;]A;```]A;CREATE USER [telegraf]5D; WITH PASSWORD = N'mystrongpassword';]A;GO]A;GRANT VIEW DATABASE STATE TO [telegraf]5D;;]A;GO]A;```]A;]A;#### Firewall and networking rules for SQL Computer]A;Update the Windows and NSG firewall settings to allow the port specified in the MSSQL connection strings in next step for the remote virtual machine's IP address.]A;]A;#### Outbound network settings for the remote virtual machine]A;Verify that the virtual machine has the outbound port as specified in the MSSQL connection strings in the next step.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[#### SQL-felhasználói fiókok létrehozása]A;Létre kell hoznia egy bejelentkezési azonosítót minden figyelni kívánt példányon a következő szkripttel:]A;]A;```]A;USE master;]A;GO]A;CREATE LOGIN [telegraf]5D; WITH PASSWORD = N'mystrongpassword';]A;GO]A;GRANT VIEW SERVER STATE TO [telegraf]5D;;]A;GO]A;GRANT VIEW ANY DEFINITION TO [telegraf]5D;;]A;GO]A;```]A;]A;Az Azure SQL Database esetében szüksége lesz az Adatbázis állapotának megtekintése engedélyre, és közvetlenül az adatbázisban hozhat létre jelszóval rendelkező felhasználót.]A;]A;```]A;CREATE USER [telegraf]5D; WITH PASSWORD = N'mystrongpassword';]A;GO]A;GRANT VIEW DATABASE STATE TO [telegraf]5D;;]A;GO]A;```]A;]A;#### Az SQL-számítógép tűzfal- és hálózati szabályai]A;A következő lépésben frissítse a Windows- és az NSG-tűzfal beállításait, hogy engedélyezze az MSSQL kapcsolati sztringjeiben megadott portot a távoli virtuális gép IP-címéhez.]A;]A;#### A távoli virtuális gép kimenő hálózati beállításai]A;A következő lépésben ellenőrizze, hogy a virtuális gép rendelkezik-e az MSSQL kapcsolati sztringjeiben megadott kimenő porttal.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overviewgroup.content.items.infoText.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Azure Monitor for Microsoft SQL Server]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Azure Monitor for Microsoft SQL Server]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overviewgroup.content.items.mssqllogo.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[![SQL logo]5D;(https://raw.githubusercontent.com/acearun/managedsolutions/master/Templates/Logos/sql-logo.jpg)]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[![SQL-embléma]5D;(https://raw.githubusercontent.com/acearun/managedsolutions/master/Templates/Logos/sql-logo.jpg)]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -111,12 +135,18 @@
       <Item ItemId=";items.Overviewgroup.content.items.tabs.content.links.2.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Configure monitoring]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Figyelés konfigurálása]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Onboard MS SQL Insights]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[MS SQL-elemzések regisztrálása]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

@@ -12,6 +12,9 @@
       <Item ItemId=";items.0.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Investigating Transaction Failures]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# Indagine sugli errori delle transazioni]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -27,48 +30,72 @@
       <Item ItemId=";items.2.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Transactions by Response Type]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Transazioni per tipo di risposta]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.4.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[*Transactions* - the number of requests made to a storage service. This number includes successful and failed requests, as well as requests that produced errors. ]A;]A;*Response type* - the transaction response type. The available values include: ]A;]A;* __ServerOtherError__: All other server-side errors except described ones]A;* __ServerBusyError__: Authenticated request that returned an HTTP 503 status code.]A;* __ServerTimeoutError__: Timed-out authenticated request that returned an HTTP 500 status code. The timeout occurred due to a server error.]A;* __AuthorizationError__: Authenticated request that failed due to unauthorized access of data or an authorization failure.]A;* __NetworkError__: Authenticated request that failed due to network errors. Most commonly occurs when a client prematurely closes a connection before timeout expiration.]A;* __ClientThrottlingError__: Client-side throttling error.]A;* __ClientTimeoutError__: Timed-out authenticated request that returned an HTTP 500 status code. If the client's network timeout or the request timeout is set to a lower value than expected by the storage service, it is an expected timeout. Otherwise, it is reported as a ServerTimeoutError.]A;* __ClientOtherError__: All other client-side errors except described ones.]A;* __Success__: Successful request]A;]A;The following resources are useful for understanding storage-related status and error codes:]A;]A;* [Common REST API Error Codes]5D;(https://docs.microsoft.com/en-us/rest/api/storageservices/Common-REST-API-Error-Codes?redirectedfrom=MSDN).]A;* [Blob Service Error Codes]5D;(https://docs.microsoft.com/en-us/rest/api/storageservices/Blob-Service-Error-Codes?redirectedfrom=MSDN).]A;* [Queue Service Error Codes]5D;(https://docs.microsoft.com/en-us/rest/api/storageservices/Queue-Service-Error-Codes?redirectedfrom=MSDN).]A;* [Table Service Error Codes]5D;(https://docs.microsoft.com/en-us/rest/api/storageservices/Table-Service-Error-Codes?redirectedfrom=MSDN).]A;* [File Service Error Codes]5D;(https://docs.microsoft.com/en-us/rest/api/storageservices/File-Service-Error-Codes?redirectedfrom=MSDN).]A;]A;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[*Transazioni*: numero di richieste inviate a un servizio di archiviazione. Questo numero include le richieste riuscite e non riuscite, nonché le richieste che hanno restituito errori. ]A;]A;*Tipo di risposta*: tipo di risposta della transazione. I valori disponibili includono: ]A;]A;* __ServerOtherError__: tutti gli altri errori sul lato server tranne quelli descritti]A;* __ServerBusyError__: richiesta autenticata che ha restituito un codice di stato HTTP 503.]A;* __ServerTimeoutError__: richiesta autenticata che ha raggiunto il timeout e restituito un codice di stato HTTP 500. Il timeout si è verificato a causa di un errore del server.]A;* __AuthorizationError__: richiesta non autorizzata che non è riuscita a causa dell'accesso non autorizzato ai dati o di un errore di autenticazione.]A;* __NetworkError__: richiesta autenticata che non è riuscita a causa di errori di rete. In genere si verifica quando un client chiude prematuramente una connessione prima della scadenza del timeout.]A;* __ClientThrottlingError__: errore di limitazione sul lato client.]A;* __ClientTimeoutError__: richiesta autenticata che ha raggiunto il timeout e restituito un codice di stato HTTP 500. Se il timeout della rete del client o il timeout della richiesta è impostato su un valore minore del previsto dal servizio di archiviazione, si tratta di un timeout previsto. In caso contrario, viene segnalato come ServerTimeoutError.]A;* __ClientOtherError__: tutti gli altri errori lato client tranne quelli descritti.]A;* __Success__: richiesta riuscita]A;]A;Le risorse seguenti sono utili per informazioni sui codici errore e sullo stato dei servizi di archiviazione:]A;]A;* [Codici errore comuni dell'API REST]5D;(https://docs.microsoft.com/it-it/rest/api/storageservices/Common-REST-API-Error-Codes?redirectedfrom=MSDN).]A;* [Codici errore del servizio BLOB]5D;(https://docs.microsoft.com/it-it/rest/api/storageservices/Blob-Service-Error-Codes?redirectedfrom=MSDN).]A;* [Codici errore del servizio di accodamento]5D;(https://docs.microsoft.com/it-it/rest/api/storageservices/Queue-Service-Error-Codes?redirectedfrom=MSDN).]A;* [Codici errore del servizio tabelle]5D;(https://docs.microsoft.com/it-it/rest/api/storageservices/Table-Service-Error-Codes?redirectedfrom=MSDN).]A;* [Codici errore del servizio file]5D;(https://docs.microsoft.com/it-it/rest/api/storageservices/File-Service-Error-Codes?redirectedfrom=MSDN).]A;]A;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.5.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Common Issues]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Problemi comuni]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.6.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### The client is receiving HTTP 403 (Forbidden) messages]A;If your client application is throwing HTTP 403 (Forbidden) errors, a likely cause is that the client is using an expired Shared Access Signature (SAS) when it sends a storage request (although other possible causes include clock skew, invalid keys, and empty headers). If an expired SAS key is the cause, you will not see any entries in the server-side Storage Logging log data.]A;]A;If the issue is related to SAS tokens, you should investigate why the SAS token is expiring before the client sends the token to the server:]A;* Typically, you should not set a start time when you create a SAS for a client to use immediately. If there are small clock differences between the host generating the SAS using the current time and the storage service, then it is possible for the storage service to receive a SAS that is not yet valid.]A;* Do not set a very short expiry time on a SAS. Again, small clock differences between the host generating the SAS and the storage service can lead to a SAS apparently expiring earlier than anticipated.]A;* Does the version parameter in the SAS key (for example sv=2015-04-05) match the version of the Storage Client Library you are using? We recommend that you always use the latest version of the Storage Client Library.]A;* If you regenerate your storage access keys, any existing SAS tokens may be invalidated. This issue may arise if you generate SAS tokens with a long expiry time for client applications to cache.]A;* If you are using the Storage Client Library to generate SAS tokens, then it is easy to build a valid token. However, if you are using the Storage REST API and constructing the SAS tokens by hand, see Delegating Access with a Shared Access Signature.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Il client riceve messaggi con errore HTTP (Accesso negato)]A;Se l'applicazione client genera errori con codice HTTP 403 (Accesso negato), è possibile che il client stia usando una firma di accesso condiviso scaduta quando invia una richiesta di archiviazione (altre possibili cause includono sfasamento di orario, chiavi non valide e intestazioni vuote). Se la causa è una chiave di firma di accesso condiviso scaduta, non verranno visualizzate voci nei dati del log di registrazione dell'archiviazione lato server.]A;]A;Se il problema è relativo ai token di firma di accesso condiviso, è necessario esaminare il motivo per cui il token di firma di accesso condiviso scade prima che il client invii il token al server:]A;* In genere è consigliabile non impostare un'ora di inizio quando si crea una firma di accesso condiviso che il client userà immediatamente. Se sono presenti lievi differenze di orario tra l'host che genera la firma di accesso condiviso usando l'ora corrente e il servizio di archiviazione, è possibile che il servizio di archiviazione riceva una firma di accesso condiviso non ancora valida.]A;* Non impostare una scadenza troppo breve per una firma di accesso condiviso. Anche in questo caso, piccole differenze di orario tra l'host che genera la firma di accesso condiviso e il servizio di archiviazione possono determinare una scadenza della firma di accesso condiviso anticipata rispetto a quanto previsto.]A;* Il parametro della versione nella chiave di firma di accesso condiviso (ad esempio sv=2015-04-05) corrisponde alla versione della libreria client di archiviazione in uso? È consigliabile usare sempre la versione più recente della libreria client di archiviazione.]A;* Se si rigenerano le chiavi di accesso dell'archiviazione, è possibile che i token di firma di accesso condiviso esistenti vengano invalidati. Questo problema può verificarsi se si generano token di firma di accesso condiviso con una scadenza troppo estesa per essere memorizzata nella cache delle applicazioni client.]A;* Se si usa la libreria client di archiviazione per generare i token di firma di accesso condiviso, creare un token valido è più facile. Se invece si usa l'API REST di archiviazione per creare manualmente i token di firma di accesso condiviso, vedere Delega dell'accesso con una firma di accesso condiviso.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.7.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### The client is receiving HTTP 404 (Not found) messages]A;If the client application receives an HTTP 404 (Not found) message from the server, this implies that the object the client was attempting to use (such as an entity, table, blob, container, or queue) does not exist in the storage service. There are a number of possible reasons for this, such as:]A;]A;* [The client or another process previously deleted the object]5D;(https://docs.microsoft.com/en-us/azure/storage/common/storage-monitoring-diagnosing-troubleshooting?toc=%2fazure%2fstorage%2fqueues%2ftoc.json#client-previously-deleted-the-object)]A;* [A Shared Access Signature (SAS) authorization issue]5D;(https://docs.microsoft.com/en-us/azure/storage/common/storage-monitoring-diagnosing-troubleshooting?toc=%2fazure%2fstorage%2fqueues%2ftoc.json#SAS-authorization-issue)]A;* [Client-side JavaScript code does not have permission to access the object]5D;(https://docs.microsoft.com/en-us/azure/storage/common/storage-monitoring-diagnosing-troubleshooting?toc=%2fazure%2fstorage%2fqueues%2ftoc.json#JavaScript-code-does-not-have-permission)]A;* [Network failure]5D;(https://docs.microsoft.com/en-us/azure/storage/common/storage-monitoring-diagnosing-troubleshooting?toc=%2fazure%2fstorage%2fqueues%2ftoc.json#network-failure)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Il client riceve messaggi con codice HTTP 404 (non trovato)]A;Se l'applicazione client riceve un messaggio con codice HTTP 404 (non trovato) dal server, significa che l'oggetto che il client stava tentando di usare, ad esempio un'entità, una tabella, un BLOB, un contenitore o una coda, non esiste nel servizio di archiviazione. Le cause possibili sono diverse, ad esempio:]A;]A;* [il client o un altro processo ha precedentemente eliminato l'oggetto]5D;(https://docs.microsoft.com/it-it/azure/storage/common/storage-monitoring-diagnosing-troubleshooting?toc=%2fazure%2fstorage%2fqueues%2ftoc.json#client-previously-deleted-the-object)]A;* [Problema di autorizzazione di firma di accesso condiviso]5D;(https://docs.microsoft.com/it-it/azure/storage/common/storage-monitoring-diagnosing-troubleshooting?toc=%2fazure%2fstorage%2fqueues%2ftoc.json#SAS-authorization-issue)]A;* [Il codice JavaScript lato client non dispone dell'autorizzazione per accedere all'oggetto]5D;(https://docs.microsoft.com/it-it/azure/storage/common/storage-monitoring-diagnosing-troubleshooting?toc=%2fazure%2fstorage%2fqueues%2ftoc.json#JavaScript-code-does-not-have-permission)]A;* [Errore di rete]5D;(https://docs.microsoft.com/it-it/azure/storage/common/storage-monitoring-diagnosing-troubleshooting?toc=%2fazure%2fstorage%2fqueues%2ftoc.json#network-failure)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.8.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### The client is receiving HTTP 409 (Conflict) messages]A;The common cause of this error is a client application deleting and then immediately recreating a storage unit using the same name. When a client deletes blob containers, tables, or queues there is a brief period before the name becomes available again.]A;]A;The client application should use unique container names whenever it creates new containers if the delete/recreate pattern is common.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Il client riceve messaggi con codice HTTP 409 (conflitto)]A;La causa più comune di questo errore è l'eliminazione e quindi la ricreazione immediata di un'unità di archiviazione usando lo stesso nome da parte di un'applicazione client. Quando un client elimina contenitori BLOB, tabelle o code occorre un breve periodo prima che il nome diventi nuovamente disponibile.]A;]A;L'applicazione client deve usare nomi di contenitori univoci ogni volta che crea nuovi contenitori, se il modello di eliminazione/ricreazione viene usato di frequente.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.9.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Troubleshooting guidence]A;More information to diagnose and solves issues can be found in this [document]5D;(https://docs.microsoft.com/en-us/azure/storage/common/storage-monitoring-diagnosing-troubleshooting?toc=%2fazure%2fstorage%2fqueues%2ftoc.json#troubleshooting-guidance)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Indicazioni per la risoluzione dei problemi]A;Altre informazioni per diagnosticare e risolvere i problemi sono disponibili in questo [documento]5D;(https://docs.microsoft.com/it-it/azure/storage/common/storage-monitoring-diagnosing-troubleshooting?toc=%2fazure%2fstorage%2fqueues%2ftoc.json#troubleshooting-guidance)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Transaction Failures]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Errori delle transazioni]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

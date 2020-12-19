@@ -45,6 +45,9 @@
       <Item ItemId=";items.Overviewgroup.content.items.Configuregroup.content.items.checkconfigvalidity.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Please update the `servers` array in the MSSQL Telegraf config to enable monitoring.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Atualize a matriz "servidores" na configuração do MSSQL Telegraf para ativar a monitorização.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -60,12 +63,18 @@
       <Item ItemId=";items.Overviewgroup.content.items.Configuregroup.content.items.mysqlsampleconnectionstring.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<br />]D;]A;**Learn about connection strings**]D;]A;]D;]A;Provide one ore more connection strings as a comma seperated collection of strings (within double-quotes):]D;]A;]D;]A;```]D;]A;"Server=sqlserver.database.windows.net;Port=1433;database=mydb;User Id=<user>;Password=<pw>;app name=telegraf;log=1;",]D;]A;"Server=myothersqlserver.database.windows.net;Port=1433;database=mydb3;User Id=<user>;Password=<pw>;app name=telegraf;log=1;"]D;]A;```]D;]A;Or,]D;]A;```]D;]A;"Server=127.0.0.1;Port=1433;database=mydb;User Id=<user>;Password=<pw>;app name=telegraf;log=1;"]D;]A;```]D;]A;]D;]A;]D;]A;See https://github.com/denisenkom/go-mssqldb for detailed connection parameters.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<br />]D;]A;**Mais informações sobre cadeias de ligação**]D;]A;]D;]A;Forneça uma ou mais cadeias de ligação como uma coleção de cadeias separadas por vírgula (entre aspas):]D;]A;]D;]A;```]D;]A;"Servidor=sqlserver.database.windows.net;Porta=1433;database=mydb;ID de Utilizador=<user>;Palavra-passe=<pw>;nome da aplicação=telegraf;log=1;",]D;]A;"Servidor=myothersqlserver.database.windows.net;Porta=1433;database=mydb3;ID de Utilizador=<user>;Palavra-passe=<pw>;nome da aplicação=telegraf;log=1;"]D;]A;```]D;]A;Ou]D;]A;```]D;]A;"Servidor=127.0.0.1;Porta=1433;base de dados=mydb;ID de Utilizador=<user>;Palavra-passe=<pw>;nome da aplicação=telegraf;log=1;"]D;]A;```]D;]A;]D;]A;]D;]A;Veja https://github.com/denisenkom/go-mssqldb para ver os parâmetros de ligação detalhados.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overviewgroup.content.items.Configuregroup.content.items.samplemysqlconnectionstring.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Azure Monitor needs access to the health information stored in SQL Server dynamic management view tables. Please provide the *connection string* to allow this access below. More information about the format of connection strings can be found below.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[O Azure Monitor precisa de acesso às informações de estado de funcionamento armazenadas nas tabelas de vista de gestão dinâmica do SQL Server. Forneça a *cadeia de ligação* para ativar este acesso abaixo. Mais informações sobre o formato das cadeias de ligação encontram-se abaixo.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -81,12 +90,18 @@
       <Item ItemId=";items.Overviewgroup.content.items.Prerequisitesgroup.content.items.prerequisitesmssqlremote.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[#### Create SQL user accounts]A;You have to create a login on every instance you want to monitor, with following script:]A;]A;```]A;USE master;]A;GO]A;CREATE LOGIN [telegraf]5D; WITH PASSWORD = N'mystrongpassword';]A;GO]A;GRANT VIEW SERVER STATE TO [telegraf]5D;;]A;GO]A;GRANT VIEW ANY DEFINITION TO [telegraf]5D;;]A;GO]A;```]A;]A;For Azure SQL Database, you require the View Database State permission and can create a user with a password directly in the database.]A;]A;```]A;CREATE USER [telegraf]5D; WITH PASSWORD = N'mystrongpassword';]A;GO]A;GRANT VIEW DATABASE STATE TO [telegraf]5D;;]A;GO]A;```]A;]A;#### Firewall and networking rules for SQL Computer]A;Update the Windows and NSG firewall settings to allow the port specified in the MSSQL connection strings in next step for the remote virtual machine's IP address.]A;]A;#### Outbound network settings for the remote virtual machine]A;Verify that the virtual machine has the outbound port as specified in the MSSQL connection strings in the next step.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[#### Criar contas de utilizador do SQL]A;Tem de criar um início de sessão em todas as instâncias que pretende monitorizar, com o seguinte script:]A;]A;```]A;USE master;]A;GO]A;CREATE LOGIN [telegraf]5D; WITH PASSWORD = N'mystrongpassword';]A;GO]A;GRANT VIEW SERVER STATE TO [telegraf]5D;;]A;GO]A;GRANT VIEW ANY DEFINITION TO [telegraf]5D;;]A;GO]A;```]A;]A;Para a Base de Dados SQL do Azure, necessita da permissão Ver Estado da Base de Dados e pode criar um utilizador com uma palavra-passe diretamente na base de dados.]A;]A;```]A;CREATE USER [telegraf]5D; WITH PASSWORD = N'mystrongpassword';]A;GO]A;GRANT VIEW DATABASE STATE TO [telegraf]5D;;]A;GO]A;```]A;]A;#### Firewall e regras de rede do Computador SQL]A;Atualize as definições de firewall do Windows e NSG para permitir a porta especificada nas cadeias de ligação MSSQL no passo a seguir para o endereço IP da máquina virtual remota.]A;]A;#### Definições de rede de saída para a máquina virtual remota]A;Verifique se a máquina virtual tem a porta de saída conforme especificado nas cadeias de ligação MSSQL indicadas no passo a seguir.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overviewgroup.content.items.infoText.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Azure Monitor for Microsoft SQL Server]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Azure Monitor para Microsoft SQL Server]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -129,6 +144,9 @@
       <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Onboard MS SQL Insights]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Integrar Informações do MS SQL]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

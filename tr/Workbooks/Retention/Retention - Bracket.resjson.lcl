@@ -12,54 +12,81 @@
       <Item ItemId=";items.0.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Bracket Retention]A;---]A;]A;Bracket retention measures how many of your users come back to perform one of the `RetainingActivities` in a particular period after they perform one of the `CohortingActivities` in your app. For instance, you could be measuring the number of users who returned to use your app one week from day from the day they first downloaded it. Seeing the retention trend for days 7-13 will give you an indication of the stickiness of your app. ]A;]A;Bracket retention is similar to N-period retention, except that the retention time ranges or buckets are not fixed. You are free to choose any time bucket that makes sense for your app. This gives app owners a lot more flexibility in analyzing their user retention.]A;]A;Bracket retention is well-suited for gaming apps, or other kinds of app where you are trying to get users to develop a daily habit.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# Dönemsel Elde Tutma]A;---]A;]A;Dönemsel elde tutma, kullanıcılarınızın uygulamanızdaki 'CohortingActivities' etkinliklerinden birini gerçekleştirdikten sonra belirli bir dönemdeki 'RetainingActivities' etkinliklerinden birini gerçekleştirmek için kullanıcılarınızdan kaçının geri döndüğünü ölçer. Örneğin, uygulamanızı ilk indirdikleri günden bir hafta sonra kullanmak için dönen kullanıcıların sayısını ölçebilirsiniz. 7-13 günlük elde tutma eğilimini görmek, size uygulamanızın sürekliliğine dair bir fikir verir. ]A;]A;Elde tutma süresi aralıklarının veya demetlerinin düzeltilmemesi dışında dönemsel elde tutma, N-period elde tutması ile benzerdir. Uygulamanız için anlamlı gelen herhangi bir zaman demetini seçmekte serbestsiniz. Bu, uygulama sahiplerine kullanıcı elde tutma oranlarını analiz etmede çok daha fazla esneklik sağlar.]A;]A;Dönemsel elde tutma, oyun uygulamaları veya kullanıcıların günlük bir alışkanlık geliştirmesini sağlamaya çalıştığınız diğer uygulama türleri için uygundur.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.1.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Activity Selection]A;Use these fields to set events that that correspond to interesting user activities. The `Understanding Retention Parameter` section at the bottom describes these parameters in detail.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Etkinlik Seçimi]A;İlginç kullanıcı etkinliklerine karşılık gelen olayları ayarlamak için bu alanları kullanın. Alttaki 'Elde Tutma Parametresini Anlama' bölümü bu parametreleri ayrıntılı olarak tanımlar.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.3.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Retention Parameters]A;Use these fields to customize your retention settings. ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Elde Tutma Parametreleri]A;Elde tutma ayarlarınızı özelleştirmek için bu alanları kullanın. ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.4.content.parameters.39bddfc5884d4961b74067a0e275d7f4.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[1d: Daily, 7d: Weekly, 30/28d: Monthly]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[1d: Günlük, 7d: Haftalık, 30/28d: Aylık]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.4.content.parameters.3f79ef588e214d79923a2293888b0b0f.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Number of cohort periods to analyze]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Analiz edilecek kohort dönemi sayısı]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.5.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Bracket Retention Table]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Dönemsel Elde Tutma Tablosu]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.7.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Understanding the Retention Parameters]A;| Parameter | Used for |]A;| ----- | ----- |]A;| Retention Period | The period to use in retention calculation. Can be Daily, Weekly or Monthly |]A;| Cohorts To Analyze  | The number of cohorts to analyze. This corresponds to the N in N-period retention |]A;| Cohorting Activities  | The activities that selects a cohort of users. Example: Users who used event *Read Product Review* (cohorting activity). |]A;| Retaining Activities  | The activities that indicates retention of a cohorted user selected above. Example: Users who used event *Read Product Review* (cohorting activity) and returned to use *Purchase Product* (retaining activity). |]A;| Cohorting/Retaining Filters  | An analytics query snippet to further filter the cohorting activity. Example: *&#124; where application_Version = '1.0'* |]A;| SelectBrackets | Some example time brackets to get your started with |]A;| CustomBrackets | Use this field to set custom time brackets that make sense for your app. It contains is a comma seperated list of timespans that correspond to bracket boundaries. |]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Elde Tutma Parametrelerini Anlama]A;| Parametre | Şunun için kullanılır: ]A;| ----- | ----- |]A;| Elde Tutma Dönemi | Elde tutma hesaplamasında kullanılacak dönem. Günlük, Haftalık veya Aylık olabilir |]A;| Analiz Edilecek Kohortlar | Analiz edilecek kohortların sayısı. Bu değer, N-period elde tutmasındaki N'ye karşılık gelir |]A;| Kohort Etkinlikleri  | Kullanıcı kohortu seçen etkinlikler. Örnek: *Ürün İncelemesini Oku* olayını kullanan kullanıcılar (kohort etkinliği). |]A;| Elde Tutma Etkinlikleri | Yukarıda seçilen bir kohort kullanıcının elde tutulma oranını gösteren etkinlikler. Örnek: *Ürün İncelemesini Oku* olayını kullanan (kohort etkinliği) ve *Ürünü Satın Al* olayını kullanmak için geri dönen (elde tutma etkinliği) kullanıcılar. |]A;| Kohort/Elde Tutma Filtreleri | Kohort etkinliğini daha fazla filtrelemeye yönelik bir analiz sorgu parçacığı. Örnek: *application_Version öğesinin '1.0' değerinde olduğu &#124;* |]A;| SelectBrackets | | Şununla çalışmaya başlamanız için bazı örnek zaman dilimleri: |]A;| CustomBrackets | Uygulamanız için anlamlı olan özel zaman dilimleri ayarlamak üzere bu alanı kullanın. Bu, zaman dilimi sınırlarına karşılık gelen zaman aralıklarının virgülle ayrılmış bir listesini içerir. |]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.8.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Related Workbook Templates]A;* Retention - N-Period]A;* Retention - Unbounded]A;* Cohort Analysis]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## İlgili Çalışma Kitabı Şablonları]A;* Elde Tutma - N-Period]A;* Elde Tutma - Sınırlanmamış]A;* Kohort Analizi]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Bracket Retention]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Dönemsel Elde Tutma]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

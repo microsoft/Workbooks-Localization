@@ -1062,6 +1062,9 @@
       <Item ItemId=";items.PoliciesAdvanced.content.gridSettings.labelSettings.MaxRetention.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Max Retention]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[最大保有期間]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1077,18 +1080,27 @@
       <Item ItemId=";items.PoliciesAdvanced.content.gridSettings.labelSettings.ProtectedItems.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Protected Items]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# 保護対象の項目数]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.PoliciesAdvanced.content.gridSettings.labelSettings.Retention.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Retention [Daily Weekly Monthly Yearly]5D;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[保有期間 [日単位、週単位、月単位、年単位]5D;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.PoliciesAdvanced.content.gridSettings.labelSettings.RunDays.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Scheduled Day(s) Of Week]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[スケジュールされた曜日]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1122,24 +1134,36 @@
       <Item ItemId=";items.PoliciesAdvancedParameterBlock.content.parameters.0588c9641b62424baef334f05435548a.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Use to filter the results only for policies associated with one or more protected items]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[1 つまたは複数の保護対象の項目に関連付けられたポリシーの結果のみをフィルター処理するために使用します]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.PoliciesAdvancedParameterBlock.content.parameters.0588c9641b62424baef334f05435548a.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Has Protected Items?]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[保護対象の項目がありますか?]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.PoliciesAdvancedParameterBlock.content.parameters.0b064ac9d8fa498583e78f41dca55f02.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Use to filter policies where selected Retention Type has been defined]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[選択した保有期間の種類が定義されているポリシーをフィルター処理するために使用します]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.PoliciesAdvancedParameterBlock.content.parameters.0b064ac9d8fa498583e78f41dca55f02.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Retention Type]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[保有期間の種類]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1164,12 +1188,18 @@
       <Item ItemId=";items.PoliciesAdvancedParameterBlock.content.parameters.1fc96995297e476d896483b0d0e3687c.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Specify maximum number of days/weeks/months/years the backup is retained in the vault. Use MinMaxRetentionType filter to choose the RetentionType daily/weekly/monthly/yearly to apply the filter on. Use a large value to not apply any filter on max retention]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[バックアップがコンテナーに保有される最大の日数、週数、月数、年数を指定します。MinMaxRetentionType フィルターを使用して、フィルターを適用する RetentionType について日単位、週単位、月単位、年単位のいずれかを選択します。最大保有期間にフィルターを適用しない場合は大きい値を使用します]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.PoliciesAdvancedParameterBlock.content.parameters.1fc96995297e476d896483b0d0e3687c.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Max Retention]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[最大保有期間]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1194,54 +1224,81 @@
       <Item ItemId=";items.PoliciesAdvancedParameterBlock.content.parameters.2fd2f893b2e344d893265f6b9564b3c4.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Use to filter by Backup Frequency of the policy]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[ポリシーのバックアップの頻度でフィルター処理するために使用します]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.PoliciesAdvancedParameterBlock.content.parameters.2fd2f893b2e344d893265f6b9564b3c4.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Schedule Frequency]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[スケジュールの頻度]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.PoliciesAdvancedParameterBlock.content.parameters.4c20879bcb6e4c9c89230af5a1c063bd.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Use to specify on which retention type the min and max retention filters apply]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[最小と最大の保有期間フィルターを適用する保有の種類を指定するために使用します]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.PoliciesAdvancedParameterBlock.content.parameters.4c20879bcb6e4c9c89230af5a1c063bd.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Min Max Retention Filter Type]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[最小または最大の保有期間フィルターの種類]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.PoliciesAdvancedParameterBlock.content.parameters.ad30973f50714ce49f2bdf9a93955879.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Filter for days of the week the backup is scheduled to run. Use when schedule frequency is weekly]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[バックアップを実行するようにスケジュールされている曜日をフィルター処理します。スケジュールの頻度が週ごとに設定されているときに使用します]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.PoliciesAdvancedParameterBlock.content.parameters.ad30973f50714ce49f2bdf9a93955879.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Scheduled day(s) of week]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[スケジュールされた曜日]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.PoliciesAdvancedParameterBlock.content.parameters.bfe11186998c4f548e1d6a58f0c3630a.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Search by Policy]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[ポリシーで検索します]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.PoliciesAdvancedParameterBlock.content.parameters.bfe11186998c4f548e1d6a58f0c3630a.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Search Policy]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[ポリシーを検索する]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.PoliciesAdvancedParameterBlock.content.parameters.db5ab57514f644d0bbb971c59d0d86b2.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Use to filter by Vault or Policy name. <br/> To filter for a specific policy in a specific vault use &lt;vault&gt;;&lt;policy&gt;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[コンテナーまたはポリシー名でフィルター処理するために使用します。<br/>特定のコンテナーで特定のポリシーをフィルター処理するには、&lt;コンテナー&gt;;&lt;ポリシー&gt;を使用します]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1257,12 +1314,18 @@
       <Item ItemId=";items.PoliciesAdvancedParameterBlock.content.parameters.dd894ccd2ec7456b941af3ca616ad9e3.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Specify minimum number of days/weeks/months/years the backup is retained in the vault. Use MinMaxRetentionType filter to choose the RetentionType daily/weekly/monthly/yearly to apply the filter on. Use zero to not apply any filter on min retention irrespective of the choice of MinMaxRetentionType filter value]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[バックアップがコンテナーに保有される最小の日数、週数、月数、年数を指定します。MinMaxRetentionType フィルターを使用して、フィルターを適用する RetentionType について日単位、週単位、月単位、年単位のいずれかを選択します。最小保有期間にフィルターを適用しない場合は、MinMaxRetentionType フィルターの値の選択項目に関係なく、0 を使用します]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.PoliciesAdvancedParameterBlock.content.parameters.dd894ccd2ec7456b941af3ca616ad9e3.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Min Retention]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[最小保有期間]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1278,6 +1341,9 @@
       <Item ItemId=";items.PoliciesStandard.content.gridSettings.labelSettings.MaxRetention.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Max Retention]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[最大保有期間]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1293,12 +1359,18 @@
       <Item ItemId=";items.PoliciesStandard.content.gridSettings.labelSettings.ProtectedItems.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Protected Items]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# 保護対象の項目数]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.PoliciesStandard.content.gridSettings.labelSettings.Retention.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Retention [Daily Weekly Monthly Yearly]5D;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[保有期間 [日単位、週単位、月単位、年単位]5D;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1323,24 +1395,36 @@
       <Item ItemId=";items.PoliciesStandardParameterBlock.content.parameters.0588c9641b62424baef334f05435548a.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Use to filter the results only for policies associated with one or more protected items]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[1 つまたは複数の保護対象の項目に関連付けられたポリシーの結果のみをフィルター処理するために使用します]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.PoliciesStandardParameterBlock.content.parameters.0588c9641b62424baef334f05435548a.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Has Protected Items?]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[保護対象の項目がありますか?]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.PoliciesStandardParameterBlock.content.parameters.0b064ac9d8fa498583e78f41dca55f02.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Use to filter policies where selected Retention Type has been defined]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[選択した保有期間の種類が定義されているポリシーをフィルター処理するために使用します]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.PoliciesStandardParameterBlock.content.parameters.0b064ac9d8fa498583e78f41dca55f02.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Retention Type]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[保有期間の種類]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1365,18 +1449,27 @@
       <Item ItemId=";items.PoliciesStandardParameterBlock.content.parameters.2fd2f893b2e344d893265f6b9564b3c4.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Use to filter by Backup Frequency of the policy]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[ポリシーのバックアップの頻度でフィルター処理するために使用します]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.PoliciesStandardParameterBlock.content.parameters.2fd2f893b2e344d893265f6b9564b3c4.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Schedule Frequency]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[スケジュールの頻度]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.PoliciesStandardParameterBlock.content.parameters.db5ab57514f644d0bbb971c59d0d86b2.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Use to filter by Vault or Policy name. <br/> To filter for a specific policy in a specific vault use &lt;vault&gt;;&lt;policy&gt;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[コンテナーまたはポリシー名でフィルター処理するために使用します。<br/>特定のコンテナーで特定のポリシーをフィルター処理するには、&lt;コンテナー&gt;;&lt;ポリシー&gt;を使用します]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1410,18 +1503,27 @@
       <Item ItemId=";items.PolicyViewParameterBlock.content.parameters.60a7f6fb86ec4e68ac3ed5f83419cc09.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Choose advanced view for more filters and columns to interact and view Backup Items related to selected policy]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[操作するフィルターと列をさらに表示したり、選択したポリシーに関連するバックアップ項目を表示したりするには、詳細ビューを選択してください]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.PolicyViewParameterBlock.content.parameters.60a7f6fb86ec4e68ac3ed5f83419cc09.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Choose Policy View]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[ポリシー ビューを選択する]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.RelatedBackupItems.content.gridSettings.labelSettings.HealthCheck.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Health Check]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[正常性チェック]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1446,12 +1548,18 @@
       <Item ItemId=";items.RelatedBackupItems.content.gridSettings.labelSettings.LastBackupTime.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[LastBackupTime [UTC]5D;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[LastBackupTime [UTC]5D;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.RelatedBackupItems.content.gridSettings.labelSettings.LastRecoveryPoint.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[LastRecoveryPoint [UTC]5D;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[LastRecoveryPoint [UTC]5D;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1503,6 +1611,9 @@
       <Item ItemId=";items.RelatedBackupItemsTitle.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<div><span style="font-size:18px;">&nbsp;<br/></span><span style="font-size:14px;">Backup Items managed by above selected policy</span></div>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<div><span style="font-size:18px;">&nbsp;<br/></span><span style="font-size:14px;">上の選択されたポリシーによって管理されているバックアップ項目</span></div>]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1527,6 +1638,9 @@
       <Item ItemId=";items.SubscriptionParameterBlock.content.parameters.8a19264de7e94a238c3a128bda8340f7.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Select from list of Default Subscriptions]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[既定のサブスクリプションの一覧から選択します]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1578,12 +1692,18 @@
       <Item ItemId=";items.Tabs.content.links.5.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Backup Not Enabled]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[有効になっていないバックアップ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.TimeRangeParameterBlock.content.parameters.8c4ae44cfa9a4498aedc736a56e64b43.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Select Time Range to view Jobs and Alerts]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[ジョブとアラートを表示する時間の範囲を選択します]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1599,24 +1719,36 @@
       <Item ItemId=";items.VMLocationParameterBlock.content.parameters.2a83acc52123476f8a4cda2fddf231a1.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Select one or more locations having virtual machines]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[仮想マシンがある場所を 1 つ以上選択します]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.VMLocationParameterBlock.content.parameters.2a83acc52123476f8a4cda2fddf231a1.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[VM Location]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[VM の場所]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.VaultParameterBlock.content.parameters.8a2998fa6ce14285a2b363597e7a63b7.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Select one or more Recovery Services Vaults]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Recovery Services コンテナーを 1 つ以上選択します]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.VaultParameterBlock.content.parameters.d8d14542cdfb4299aa94b633567ab68d.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Select one or more locations having Recovery Services Vaults]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Recovery Services コンテナーがある場所を 1 つ以上選択します]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

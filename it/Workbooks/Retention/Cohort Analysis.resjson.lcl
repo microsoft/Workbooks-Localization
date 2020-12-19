@@ -12,36 +12,54 @@
       <Item ItemId=";items.0.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Cohort Analysis]A;]A;Cohort Analysis measures how many of your users come back to perform one of the `RetainingActivities` in a particular period after they perform one of the `CohortingActivities` in your app - split by a dimension you choose. For instance, you could be measuring the number of users who returned to use your app on the 10th day from the day they first downloaded it, split by the country they are from. Seeing the retention trend for days 1-10 will give you an indication of the stickiness of your app. ]A;]A;Cohort Analysis is similar to N-day or Bracket retention and is only different in how the cohorts are defined. ]A;]A;This type of analysis is well-suited for gaming apps, or other kinds of app where you are trying to get users to develop a daily habit. Cohort Analysis will help you see differences in user retention across standard dimensions like country, app version, etc. or custom dimensions like 'Is Premium Customer' or 'Flight name in an experiment group'.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# Analisi coorte]A;]A;Analisi coorte misura quanti utenti tornano a eseguire una delle 'Attività di fidelizzazione' in un determinato periodo dopo aver eseguito una delle 'Attività di coorte' nell'app, divisi per la dimensione scelta. Ad esempio, è possibile misurare il numero di utenti che sono tornati a usare l'app il 10° giorno dopo il download, divisi per il paese di provenienza. La visualizzazione della tendenza di fidelizzazione per i giorni 1-10 offrirà un'indicazione dell'adesione relativa all'app.]A;]A;Analisi coorte è simile alla fidelizzazione giorno N o fascia oraria e se ne differenzia solo per la modalità di definizione delle coorti. ]A;]A;Questo tipo di analisi è ideale per le app di gioco o per altre tipologie di app per cui si tenta di far sviluppare agli utenti un'abitudine quotidiana. Analisi coorte consente di identificare le differenze nella fidelizzazione degli utenti in base a dimensioni standard come paese, versione dell'app e così via, oppure in base a dimensioni personalizzate, ad esempio 'È un cliente Premium' o 'Nome della versione di anteprima in un gruppo di esperimenti'.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.1.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Activity Selection]A;Use these fields to set events that that correspond to interesting user activities. The `Understanding Cohort Analysis Parameters` section at the bottom describes these parameters in detail.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Selezione attività]A;Usare questi campi per impostare gli eventi che corrispondono ad attività utente interessanti. La sezione 'Informazioni sui parametri di analisi coorte' nella parte inferiore descrive questi parametri in dettaglio.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.10.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Understanding Cohort Analysis Parameters]A;| Parameter | Used for |]A;| ----- | ----- |]A;| Cohort Type | The dimension by which to split the retention numbers |]A;| Retention Period | The period to use in retention calculation. Can be Daily, Weekly or Monthly |]A;| Periods To Analyze  | The number of retention periods to analyze.  |]A;| Cohorting Activities  | The activities that selects a cohort of users. Example: Users who used event *Read Product Review* (cohorting activity). |]A;| Retaining Activities  | The activities that indicates retention of a cohorted user selected above. Example: Users who used event *Read Product Review* (cohorting activity) and returned to use *Purchase Product* (retaining activity). |]A;| Cohorting/Retaining Filters  | An analytics query snippet to further filter the cohorting activity. Example: *&#124; where application_Version = '1.0'* |]A;| Show  | The metric to visualize in the table. *Retention Rate* shows the rate at which users returned for the time period in the column. *Retained Users* is raw number of retained users for the time period. *Potentially Retainable Users* is the number of users who could potentially have been retained for that period.' |]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Informazioni sui parametri di analisi coorte]A;| Parametro | Usato per |]A;| ----- | ----- |]A;| Tipo di coorte | Dimensione in base a cui dividere i numeri di fidelizzazione |]A;| Periodo fidelizzazione | Periodo da usare per il calcolo della fidelizzazione. Può essere giornaliero, settimanale o mensile |]A;| Periodi da analizzare | Numero di periodi di fidelizzazione da analizzare. |]A;| Attività di coorte | Attività per la selezione di una coorte di utenti. Ad esempio: utenti che hanno usato l'evento *Leggi recensione prodotto* (attività di coorte). |]A;| Attività di fidelizzazione | Attività che indicano la fidelizzazione di un utente della coorte selezionato sopra. Ad esempio: Utenti che hanno usato l'evento *Leggi recensione prodotto* (attività di coorte) e che sono tornanti per usare l'evento *Acquista prodotto* (attività di fidelizzazione). |]A;| Filtri coorte/fidelizzazione | Frammento di query di analisi per filtrare ulteriormente l'attività di coorte. Ad esempio: *&#124; dove application_Version = '1.0'* |]A;| Mostra | Metrica da visualizzare nella tabella. *Tasso di fidelizzazione* mostra il tasso di ritorno degli utenti per il periodo di tempo nella colonna. *Utenti fidelizzati* è il numero non elaborato di utenti fidelizzati per il periodo di tempo. *Utenti potenzialmente fidelizzabili* è il numero di utenti che potrebbero essere stati fidelizzati per tale periodo.' |]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.11.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## What is a week for a user?]A;The short answer is that it is unique for each user. Our analysis treats each user's retention window seperately - giving an accurate view of their actual behavior with your app. ]A;]A;Consider the example below of two users X and Y: ]A;]A;| User | First use of app | Weeks for user |]A;| ----- | :----- | :----- |]A;| X | April 3 | w1 = April 10, w2 = April 17, w3 = April 24  |]A;| Y | April 5 | w1 = April 12, w2 = April 19, w3 = April 26  |]A;]A;Each user gets a seperate retention window. So, if both users came back on April 18, then it considered as Week 2 usage for User X but Week 1 usage for User Y. ]A;]A;This allows the normalization their app use over the retention window - making it seem as if all users in a cohort used the app on the same day. This allow for better analysis and comparision of user behavior.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Che cos'è una settimana per un utente?]A;La risposta breve è che si tratta di un concetto univoco per ogni utente. L'analisi considera la finestra di fidelizzazione per ogni utente separatamente per fornire una visualizzazione accurata del comportamento effettivo con l'app. ]A;]A;Si consideri l'esempio seguente per due utenti X e Y: ]A;]A;| Utente | Primo utilizzo dell'app | Settimane per l'utente |]A;| ----- | :----- | :----- |]A;| X | 3 aprile | settimana 1 = 10 aprile, settimana 2 = 17 aprile, settimana 3 = 24 aprile |]A;| Y | 5 aprile | settimana 1 = 12 aprile, settimana 2 = 19 aprile, settimana 3 = 26 aprile |]A;]A;Per ogni utente viene considerata una finestra di fidelizzazione separata. Se quindi entrambi gli utenti sono tornati il 18 aprile, questa data corrisponderà all'utilizzo della settimana 2 per l'utente X e all'utilizzo della settimana 1 per l'utente Y. ]A;]A;Questo permette la normalizzazione dell'utilizzo dell'app nella finestra di fidelizzazione, come se tutti gli utenti in una coorte avessero usato l'app nello stesso giorno, per offrire analisi e confronto migliorati del comportamento degli utenti.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.12.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Related Workbook Templates]A;* Retention - N-Period]A;* Retention - Unbounded]A;* Retention - Bracket]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Modelli di cartella di lavoro correlati]A;* Fidelizzazione - Periodo N]A;* Fidelizzazione - Senza vincoli]A;* Fidelizzazione - Fascia oraria]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.3.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Cohort Analysis Parameters]A;Use these fields to customize your retention settings.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Parametri di analisi coorte]A;Usare questi campi per personalizzare le impostazioni di fidelizzazione.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -66,24 +84,36 @@
       <Item ItemId=";items.5.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Cohort Analysis Table]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Tabella analisi coorte]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.7.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Interpreting the table]A;This section shows how to read and interpret a retention table. The section below shows a row from a weekly retention report that we will try to read.]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Interpretazione della tabella]A;Questa sezione mostra come leggere e interpretare una tabella di fidelizzazione. La sezione seguente mostra la riga di un report di fidelizzazione settimanale che verrà ora interpretata.]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.9.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[| Column | Explanation | Interpretation in the example |]A;| ----- | :----- | :----- |]A;| Cohort | Identifies the cohorting criteria specified by the CohortType parameter. | This row explains the retention behavior of users who used the 'Add to Cart' event. |]A;| Total Users | Number of unique users who used the Add to Cart feature  | 1000 unique users added an item to their cart in your app |]A;| <1 week | Percentage of cohort users who returned between 1 and 6 days after using 'Add to Cart' (using it again the same day does not count towards retention)  | 50% or 500 users returned to use your app within the first week after they added an item to their cart |]A;| +1 week | Percentage of cohort users who returned between 7 and 13 days after using 'Add to Cart'  | 30% or 300 users returned to use your app a week later |]A;| +N week | Percentage of cohort users who returned in the Nth week after 'Add to Cart'  | 15% or 150 users, when N = 3  |]A;]A;]A;]A;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[| Colonna | Spiegazione | Interpretazione nell'esempio |]A;| ----- | :----- | :----- |]A;| Coorte | Identifica i criteri di definizione della coorte specificati dal parametro CohortType. | Questa riga spiega il comportamento di fidelizzazione degli utenti che hanno usato l'evento 'Aggiungi al carrello'. |]A;| Totale utenti | Numero di utenti univoci che hanno usato la funzionalità Aggiungi al carrello | 1000 utenti univoci hanno aggiunto un articolo al carrello nell'app |]A;| <1 settimana | Percentuale di utenti della coorte che sono tornati tra 1 e 6 giorni dopo aver usato la funzionalità 'Aggiungi al carrello' (se viene usata nuovamente nello stesso giorno non viene conteggiata ai fini della fidelizzazione) | Il 50% o 500 utenti hanno usato di nuovo l'app entro la prima settimana dopo aver aggiunto un articolo al carrello |]A;| +1 settimana | Percentuale di utenti della coorte che sono tornati tra 7 e 13 giorni dopo aver usato la funzionalità 'Aggiungi al carrello' | Il 30% o 300 utenti hanno usato di nuovo l'app una settimana dopo |]A;| +N settimane | Percentuale di utenti della coorte che sono tornati N settimane dopo aver usato la funzionalità 'Aggiungi al carrello' | Il 15% o 150 utenti, se N = 3 |]A;]A;]A;]A;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Cohort Analysis]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Analisi coorte]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

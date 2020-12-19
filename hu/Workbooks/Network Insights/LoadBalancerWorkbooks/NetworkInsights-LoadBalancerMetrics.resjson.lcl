@@ -1212,18 +1212,27 @@
       <Item ItemId=";items.FailedSNATConnectionsbyBackendIP.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Failed SNAT Connections by Backend IP]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Sikertelen SNAT-kapcsolatok háttérbeli IP-cím szerint]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Filter.content.parameters.00edc28ae143444bb815338a9cb136c5.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Frontend Public IPs]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Előtérbeli nyilvános IP-címek]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Filter.content.parameters.02afd7424fdf4eb08a708615644f5531.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[To filter metrics]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Metrikák szűrése]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1231,7 +1240,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Load Balancer]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Load Balancer]]></Val>
+            <Val><![CDATA[Terheléselosztó]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -1239,6 +1248,9 @@
       <Item ItemId=";items.Filter.content.parameters.79e53b4540af43858905c475b81522dc.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Backend VMSS]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Háttérbeli VMSS]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1254,48 +1266,72 @@
       <Item ItemId=";items.Filter.content.parameters.e65b0fe69d7742c6a6b4ddf22750ca80.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[ Backend VMs]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[ Háttérbeli virtuális gépek]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Filter.content.parameters.e91a52f28f314f0ca4c989dd3b6275dd.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[To filter metrics]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Metrikák szűrése]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.FlowDistributionHelp.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Flow Distribution Help]D;]A;This page is intended to help customers visualize and manage the number of flows their backend VMs and VMSS instances are receiving and producing. ]D;]A;* See the number of inbound and outbound flows and creation rate for each VM and VMSS instance to ensure the number of flows is not approaching the [per VM flow limit]5D;(https://docs.microsoft.com/azure/virtual-network/virtual-machine-network-throughput#flow-limits-and-recommendations)]D;]A;	+ If approaching the flow limit, you  consider scaling out to more instances in your backend pool ]D;]A;]D;]A;* Use the inbound flows to visualize the load distribution of your load balancer]D;]A;]D;]A;* Use the outbound flows to determine if the processes running within your VM are creating significant outbound connections]D;]A;]D;]A;* Use the network throughput to see if there are indiviudal flows that are transmitting significantly larger than average data throughput]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# Adatfolyamok elosztása]D;]A;Az oldal célja, hogy segítséget nyújtson a háttérbeli virtuális gépeken és VMSS-példányokon adatokat fogadó és generáló folyamok számának megjelenítéséhez és kezeléséhez. ]D;]A;* A bejövő és kimenő adatfolyamok VM- és VMSS-példányok szintjére lebontott száma és létrehozási gyakorisága alapján biztosíthatja, hogy a folyamok száma ne érje el a [virtuális gépenkénti korlátot]5D;(https://docs.microsoft.com/azure/virtual-network/virtual-machine-network-throughput#flow-limits-and-recommendations)]D;]A;	+ Ha megközelíti ezt a korlátot, célszerű további példányokra horizontális felskálázást végeznie a háttérkészletben. ]D;]A;]D;]A;* A bejövő adatfolyamok alapján vizualizálhatja a terheléselosztó terheléselosztását.]D;]A;]D;]A;* A kimenő adatfolyamok ismeretében meg tudja állapítani, hogy a virtuális gépen futó folyamatok jelentős számú kimenő kapcsolatot generálnak-e]D;]A;]D;]A;* A hálózati átviteli sebesség alapján ellenőrizheti, hogy vannak-e az átlagosnál jóval nagyobb átviteli sebességet produkáló önálló adatfolyamok]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.FrontendBackendAvailabilityHelp.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Frontend & Backend Availability Help]D;]A;First, confirm that the Data Path Availability for your Load Balancer Frontends is showing 100. If Data Path Availability is less than 100, this implies an Azure issue creating Load Balancer connection issues. Check the Summary field in the load balancer status grid at the top of this page to learn if there is a known issue impacting your Load Balancer.]D;]A;]D;]A;After confirming Data Path Availability, review your Health Probe Status metrics to determine if your backend instances are responding. ]D;]A;* Check by VM to see if the problem is specific to a VM]D;]A;	+ If specific to a VM, check with this VM to make sure it is healthy]D;]A;	]D;]A;* Check by Port to see if the problem is specific to a Port]D;]A;	+ If specific to a Port, your application may not be listening to this port or there may be an NSG rule blocking this port ]D;]A;	]D;]A;* Check by Frontend IP or Frontend Port to monitor the backend pool for a specific load balancing rule or service]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# Előtér- és háttérszolgáltatás rendelkezésre állása – Súgó]D;]A;Először győződjön meg róla, hogy a terheléselosztó előtérszolgáltatásai esetében az Adatelérési út rendelkezésre állása érték 100. Ha az Adatelérési út rendelkezésre állása kisebb mint 100, akkor feltételezhető, hogy egy Azure-beli probléma terheléselosztó-kapcsolati problémákat okoz. Ellenőrizze, hogy az oldal tetején a terheléselosztó állapotrácsának Összegzés mezőjében szerepel-e a terheléselosztót érintő ismert probléma.]D;]A;]D;]A;Ha meggyőződött az adatelérési út rendelkezésre állásáról, az Állapotteszt állapotmetrikái alapján meg tudja állapítani, hogy a háttérpéldányok válaszolnak-e. ]D;]A;* A virtuális gépek egyedi ellenőrzésével megállapíthatja, hogy a probléma egy adott virtuális gépet érint-e]D;]A;	+ Ha a probléma egyetlen virtuális gépet érint, ellenőrizze, hogy az kifogástalan állapotú-e]D;]A;	]D;]A;* A portok egyedi ellenőrzésével megállapíthatja, hogy a probléma egy adott portot érint-e]D;]A;	+ Ha a probléma egyetlen portot érint, akkor előfordulhat, hogy az alkalmazás nem figyeli ezt a portot, vagy hogy egy NSG-szabály blokkolja a portot ]D;]A;	]D;]A;* Az előtérbeli IP-címek és -portok átvizsgálásával ellenőrizheti, hogy egy terheléselosztási szabály vagy szolgáltatás okozza-e a problémát a háttérkészletben]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.FrontendIPmetricBasicLB.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Basic Load Balancers don’t support metrics. Follow [our guide]5D;(https://docs.microsoft.com/azure/load-balancer/upgrade-basic-standard) to switch to Standard for this and other production level features today!]D;]A;]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Az alapszintű terheléselosztó nem támogatja a metrikákat. [Útmutatónkból]5D;(https://docs.microsoft.com/azure/load-balancer/upgrade-basic-standard) megtudhatja, hogyan válthat a standard szintre, és érheti el a metrikákat és más vállalati szintű funkciókat, akár azonnal!]D;]A;]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.FrontendPublicIPAddresses.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No Frontend Public IP Addresses are configured]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Nincsenek beállítva előtérbeli nyilvános IP-címek]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.FrontendPublicIPAddresses.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Frontend Public IP Addresses]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Előtérbeli nyilvános IP-címek]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.FrontendandBackendAvailability.content.gridSettings.labelSettings.Segment.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[FrontEnd IP]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Előtérbeli IP-cím]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1311,84 +1347,126 @@
       <Item ItemId=";items.FrontendandBackendAvailability.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Frontend and Backend Availability]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Előtér- és háttérszolgáltatás rendelkezésre állása]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.FrontendandBackendAvailabilityb.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Frontend and Backend Availability]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Előtér- és háttérszolgáltatás rendelkezésre állása]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.InboundDataThroughputPerFrontendIP.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Inbound Data Throughput Per Frontend IP]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Bejövő adatok átviteli sebessége előtérbeli IP-cím szerint]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.InboundDataThroughputPerFrontendPort.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Inbound Data Throughput Per Frontend Port]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Bejövő adatok átviteli sebessége előtérbeli port szerint]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.LBBackendhealthprobeBackendport.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Health Probe Status by Backend Port]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Állapotteszt állapota háttérbeli port szerint]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.LBBackendhealthprobeFronendIP.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Health Probe Status by Frontend IP Address]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Állapotteszt állapota előtérbeli IP-cím szerint]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.LBBackendhealthprobeFrontendport.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Health Probe Status by Frontend Port]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Állapotteszt állapota előtérbeli port szerint]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.LBBackendhealthprobebyBackendIP.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Health Probe Status by Backend IP Address]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Állapotteszt eredménye háttérbeli IP-cím szerint]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.LBHealth.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Load Balancer Status]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Terheléselosztó állapota]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.MetricHelp.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[| **Metric** | **Resource type** | **Description** | **Recommended aggregation** |]D;]A;| --- | --- | --- | --- |]D;]A;| Data path availability | Public and internal load balancer | Standard Load Balancer continuously exercises the data path from within a region to the load balancer front end, all the way to the SDN stack that supports your VM. As long as healthy instances remain, the measurement follows the same path as your application&#39;s load-balanced traffic. The data path that your customers use is also validated. The measurement is invisible to your application and does not interfere with other operations. | Average |]D;]A;| Health probe status | Public and internal load balancer | Standard Load Balancer uses a distributed health-probing service that monitors your application endpoint&#39;s health according to your configuration settings. This metric provides an aggregate or per-endpoint filtered view of each instance endpoint in the load balancer pool. You can see how Load Balancer views the health of your application, as indicated by your health probe configuration. | Average |]D;]A;| SYN (synchronize) packets | Public and internal load balancer | Standard Load Balancer does not terminate Transmission Control Protocol (TCP) connections or interact with TCP or UDP packet flows. Flows and their handshakes are always between the source and the VM instance. To better troubleshoot your TCP protocol scenarios, you can make use of SYN packets counters to understand how many TCP connection attempts are made. The metric reports the number of TCP SYN packets that were received. | Average |]D;]A;| SNAT connections | Public load balancer | Standard Load Balancer reports the number of outbound flows that are masqueraded to the Public IP address front end. Source network address translation (SNAT) ports are an exhaustible resource. This metric can give an indication of how heavily your application is relying on SNAT for outbound originated flows. Counters for successful and failed outbound SNAT flows are reported and can be used to troubleshoot and understand the health of your outbound flows. | Average |]D;]A;| Byte counters | Public and internal load balancer | Standard Load Balancer reports the data processed per front end. You may notice that the bytes are not distributed equally across the backend instances. This is expected as Azure&#39;s Load Balancer algorithm is based on flows | Average |]D;]A;| Packet counters | Public and internal load balancer | Standard Load Balancer reports the packets processed per front end. | Average |]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[| **Metrika** | **Erőforrás típusa** | **Leírás** | ** Javasolt aggregálás** |]D;]A;| --- | --- | --- | --- |]D;]A;| Adattovábbítási út rendelkezésre állása | Nyilvános és belső terheléselosztó | A standard Load Balancer folyamatosan vizsgálja az adott régióból a terheléselosztó előtérbeli komponense felé tartó adattovábbítási utat, egészen a virtuális gépet támogató SDN-stackig. Amíg a példányok kifogástalan állapotban vannak, a mérés ugyanazt az utat követi, mint az alkalmazás elosztott terhelésű forgalma. A rendszer az ügyfelei által használt adattovábbítási utakat is ellenőrzi. A mérés az alkalmazás számára láthatatlan, és nem ütközik más műveletekkel. | Átlag |]D;]A;| Állapotteszt állapota | Nyilvános és belső terheléselosztó | A standard Load Balancer olyan elosztott állapottesztelési szolgáltatást használ, amely a konfigurációs beállításoknak megfelelően figyeli az alkalmazás-végpontok állapotát. A metrika a terheléselosztási készletben lévő példányvégpontok összesített és végpontonkénti értékeit jeleníti meg. Így láthatóvá válik, hogy a terheléselosztó hogyan monitorozza az alkalmazás állapotát az állapotteszt konfigurációjának megfelelően. | Átlag |]D;]A;| SYN- (szinkronizálási) csomagok | Nyilvános és belső terheléselosztó | A standard Load Balancer nem bontja a TCP-kapcsolatokat, illetve nem zavarja meg a TCP- és UDP-csomagok továbbítását. Az adattovábbítás és a kézfogás mindig a forrás és a virtuálisgép-példány között zajlik. A SYN-csomagszámlálókkal megtudhatja, hány TCP-kapcsolatfelvételi kísérlet történt, ami segíthet a TCP-protokollt érintő hibák elhárításában. A metrika a fogadott TCP SYN-csomagok számát jelzi. | Átlag |]D;]A;| SNAT-kapcsolatok | Nyilvános terheléselosztó | A standard Load Balancer a nyilvános előtérbeli IP-címre terelt kimenő adatfolyamok számát jelenti. A forráshálózati címfordítási (SNAT-) portok kimeríthető erőforrások. Ez a metrika jelezheti, hogy az alkalmazás milyen mértékben támaszkodik a SNAT-ra a kimenő irányba kezdeményezett adatfolyamokban. A számlálók a sikeres és a sikertelen kimenő SNAT-adatfolyamok számát jelzik, és felhasználhatók a kimenő adatfolyamok hibáinak elhárításához és megismeréséhez. | Átlag |]D;]A;| Bájtszámlálók | Nyilvános és belső terheléselosztó | A standard Load Balancer nyilvántartja a feldolgozott adatok mennyiségét előtérbeli komponensek szerint. Megfigyelheti, hogy a bájtok eloszlása nem egyenletes a háttérbeli példányok között. Ez normális, mivel az Azure Load Balancer terheléselosztó algoritmusa adatfolyamokon alapul. | Átlag |]D;]A;| Csomagszámlálók | Nyilvános és belső terheléselosztó | A standard Load Balancer előtérbeli komponensek szerint készít jelentést a feldolgozott csomagokól. | Átlag |]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.OutboundDataThroughputPerFrontendIP.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Outbound Data Throughput Per Frontend IP]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Kimenő adatok átviteli sebessége előtérbeli IP-cím szerint]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.OutboundDataThroughputPerFrontendPort.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Outbound Data Throughput Per Frontend Port]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Kimenő adatok átviteli sebessége előtérbeli port szerint]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.OverviewHelp.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Overview Help]D;]A;The Overview tab is intended as an entry point to monitor your Load Balancer. It outlines data throughput and frontend/backend availability.]D;]A;]D;]A;To get started:]D;]A;1. Configure the time range at the top of the workbook to your desired range]D;]A;]D;]A;1. Review data throughput to ensure values are within your expected range for the configured time span ]D;]A;	+ If detailed analysis is warranted view the Data Throughput tab]D;]A;	]D;]A;1. Review Data Path and Backend Availability to ensure your load balancer is reachable and your backend instances are responding to health probes]D;]A;	+ If either of these are below 100 and this is not expected, view the Frontend and Backend Availability tab ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# Áttekintés – Súgó]D;]A;Az Áttekintés lap belépési pontként szolgál a terheléselosztó monitorozásához. Felvázolja az adatátviteli sebességre, illetve az előtér- és a háttérszolgáltatás rendelkezésre állására vonatkozó adatokat.]D;]A;]D;]A;Az első lépések:]D;]A;1. Konfigurálja a munkafüzet tetején lévő időtartományt a kívánt tartományra]D;]A;]D;]A;1. Tekintse át az adatátviteli sebességet annak biztosítása érdekében, hogy az értékek a várt tartományba esnek a konfigurált időtartományban ]D;]A;	+ Ha indokolt a részletes elemzés, tekintse meg az Adatátviteli sebesség lapot]D;]A;	]D;]A;1. Tekintse át az adatok elérési útját és a háttérszolgáltatás rendelkezésre állását, hogy a terheléselosztó elérhető legyen, és a háttérbeli példányok válaszoljanak az állapottesztekre]D;]A;	+ Ha ezek egyike nem várt módon 100 alatti, tekintse meg az Előtér- és háttérszolgáltatás rendelkezésre állása lapot ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.RoundTripTimemsAverage.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[	No running Connection Monitors found]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[	Nem találhatók futó kapcsolatfigyelők]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1404,30 +1482,45 @@
       <Item ItemId=";items.RoundTripTimemsAverageGrid.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No running connection monitors found]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Nem találhatók futó kapcsolatfigyelők]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.RoundTripTimemsAverageGrid.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Round-Trip Time (ms), Average - Chart]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Üzenetváltási idő (ms), átlagos – diagram]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.RoundTripTimemsAverageMap.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No running connection monitors found]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Nem találhatók futó kapcsolatfigyelők]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.RoundTripTimemsAverageMap.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Round-Trip Time (ms), Average - Map]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Üzenetváltási idő (ms), átlagos – térkép]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.SumofSNATConnectionStates.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Sum of SNAT Connection States]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[SNAT-kapcsolati állapotok összege]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1443,18 +1536,27 @@
       <Item ItemId=";items.Tabselector.content.links.1.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Frontend & Backend Availability]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Előtér- és háttérszolgáltatás rendelkezésre állása]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Tabselector.content.links.2.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Data Throughput]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Adatátviteli sebesség]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Tabselector.content.links.3.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Flow Distribution]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Folyamat eloszlása]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1479,114 +1581,171 @@
       <Item ItemId=";items.TotalDataThroughputbyDirection.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Total Data Throughput by Direction]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Teljes adatátviteli sebesség irány szerint]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.UsedUDPPortsbyBackendIP.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Used UDP Ports by Backend IP]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[A használt UDP-portok háttérbeli IP-cím szerint]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.UsefulDocuments.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Useful documents]D;]A;* [Overview of the Azure Load Balancer]5D;(https://docs.microsoft.com/azure/load-balancer/load-balancer-overview)]D;]A;* [Frequently asked questions]5D;(https://docs.microsoft.com/azure/load-balancer/load-balancer-faqs)]D;]A;* [Guidance on Standard Load Balancer metrics]5D;(https://docs.microsoft.com/azure/load-balancer/load-balancer-standard-diagnostics)]D;]A;* [Troubleshoot your Azure Load Balancer]5D;(https://docs.microsoft.com/azure/load-balancer/load-balancer-troubleshoot)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Hasznos dokumentumok]D;]A;* [Az Azure Load Balancer áttekintése]5D;(https://docs.microsoft.com/azure/load-balancer/load-balancer-overview)]D;]A;* [Gyakori kérdések]5D;(https://docs.microsoft.com/azure/load-balancer/load-balancer-faqs)]D;]A;* [Útmutató a standard Load Balancer metrikáihoz]5D;(https://docs.microsoft.com/azure/load-balancer/load-balancer-standard-diagnostics)]D;]A;* [Az Azure Load Balancer hibaelhárítása]5D;(https://docs.microsoft.com/azure/load-balancer/load-balancer-troubleshoot)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.VMFlowandTrafficGroup.content.items.InboundFlowsBackendVM.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Inbound Flow Count and Creation Rate]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Bejövő folyamatok száma és létrehozásának gyakorisága]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.VMFlowandTrafficGroup.content.items.LBbackendVMNetworkinout.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Network Traffic by Direction]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Hálózati forgalom irány szerint]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.VMFlowandTrafficGroup.content.items.OutboundFlowsBackendVM.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Outbound Flow Count and Creation Rate]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Kimenő folyamatok száma és létrehozásának gyakorisága]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.VMFlowandTrafficGroup.content.items.VMInboundFlowCreationRateMax.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Inbound Flow Creation Rate (Max)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Bejövő folyamatok létrehozási gyakorisága (max)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.VMFlowandTrafficGroup.content.items.VMOutboundFlowCreationRateMax.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Outbound Flow Creation Rate (Max)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Kimenő folyamatok létrehozási gyakorisága (max)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.VMFlowandTrafficGroup.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[VM Flow Creation and Network Traffic]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[VM-folyamatok létrehozása és hálózati forgalom]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.VMSSFlowandTrafficGroup.content.items.InboundFlowsBackendVMSS.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Inbound Flow Count and Creation Rate ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Bejövő folyamatok száma és létrehozásának gyakorisága ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.VMSSFlowandTrafficGroup.content.items.LBbackendVMSSNetworkinout.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Network Traffic by Direction]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Hálózati forgalom irány szerint]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.VMSSFlowandTrafficGroup.content.items.OutboundFlowsBackendVMSS.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Outbound Flow Count and Creation Rate]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Kimenő folyamatok száma és létrehozásának gyakorisága]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.VMSSFlowandTrafficGroup.content.items.VMSSInboundFlowCreationRateMax.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Inbound Flow Creation Rate (Max)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Bejövő folyamatok létrehozási gyakorisága (max)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.VMSSFlowandTrafficGroup.content.items.VMSSOutboundFlowCreationRateMax.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Outbound Flow Creation Rate (Max)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Kimenő folyamatok létrehozási gyakorisága (max)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.VMSSFlowandTrafficGroup.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[VMSS Flow Creation and Network Traffic]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[VMSS-folyamatok létrehozása és hálózati forgalom]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.metric36.content.gridSettings.labelSettings.Segment.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Backend IP]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Háttérbeli IP-cím]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.metric36.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Allocated TCP Ports]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Kiosztott TCP-portok]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.metric37.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Used TCP Ports by Backend IP]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Használt TCP-portok háttérbeli IP-cím szerint]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Network Insights LoadBalancers]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Hálózati elemzési terheléselosztók]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
