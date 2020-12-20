@@ -30,6 +30,9 @@
       <Item ItemId=";items.10.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## What is a week for a user?]A;]A;The short answer is that it is unique for each user. Our analysis treats each user's retention window seperately - giving an accurate view of their actual behavior with your app. ]A;]A;Consider the example below of two users X and Y in the cohort of April 1-6: ]A;]A;| User | First use of app | Weeks for user |]A;| ----- | :----- | :----- |]A;| X | April 3 | w1 = April 10, w2 = April 17, w3 = April 24  |]A;| Y | April 5 | w1 = April 12, w2 = April 19, w3 = April 26  |]A;]A;Each user gets a seperate retention window. So, if both users came back on April 18, then it considered as Week 2 usage for User X but Week 1 usage for User Y. ]A;]A;This allows the normalization their app use over the retention window - making it seem as if all users in a cohort used the app on the same day. This allow for better analysis and comparision of user behavior.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# # O que é uma semana para um usuário?]A;]A;A resposta curta é que ela é exclusiva para cada usuário. Nossa análise trata a janela de retenção de cada usuário separadamente, fornecendo uma exibição precisa do comportamento real dos usuários com o aplicativo. ]A;]A;Considere o exemplo abaixo de dois usuários X e Y na coorte de 1º a 6 de abril: ]A;]A;| Usuário | Primeiro uso do aplicativo | Semanas para o usuário |]A;| ----- | :----- | :----- |]A;| 3 de abril | s1 = 10 de abril, s2 = 17 de abril, s3 = 24 de abril |]A;| Y | 5 de abril | s1 = 12 de abril, s2 = 19 de abril, s3 = 26 de abril |]A;]A;Uma janela de retenção separada é atribuída a cada usuário. Portanto, se os dois usuários retornarem em 18 de abril, isso será considerado como uso da Semana 2 para o Usuário X, mas como uso da Semana 1 para o Usuário Y. ]A;]A;Isso permite a normalização o uso do aplicativo por eles durante a janela de retenção, fazendo parecer que todos os usuários em uma coorte usaram o aplicativo no mesmo dia. Isso permite análise e comparação melhores do comportamento do usuário.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -72,12 +75,18 @@
       <Item ItemId=";items.6.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Interpreting the data]A;The section below shows a row from a weekly retention report:]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Interpretação dos dados]A;A seção abaixo mostra uma linha de um relatório de retenção semanal:]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.8.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[| Column | Explanation | Interpretation in the example |]A;| ----- | :----- | :----- |]A;| Cohort | Identifies the cohorting period. | This row explains the retention behavior of users who used your app in the week of April 1 to April 7 |]A;| Users | Number of unique users who used your app in the cohorting period  | 1000 unique users used your app in the week of April 1 to April 7 |]A;| <1 week | Percentage of cohort users who returned to use the app between 1 and 6 days (using it again the same day does not count towards retention)  | 50% or 500 users returned to use your app within the first week |]A;| +1 week | Percentage of cohort users who returned to use the app between 7 and 13 days  | 30% or 300 users returned to use your app a week later |]A;| +N week | Percentage of cohort users who returned to use the app in the Nth week  | 15% or 150 users, when N = 3  |]A;]A;]A;]A;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[| Coluna | Explicação | Interpretação no exemplo |]A;| ----- | :----- | :----- |]A;| Coorte | Identifica o período de uso de coorte. | Essa linha explica o comportamento de retenção de usuários que usaram o aplicativo na semana de 1º a 7 de abril. |]A;| Usuários | Número de usuários exclusivos que usaram o aplicativo no período de uso da coorte | 1.000 usuários exclusivos usaram o aplicativo na semana de 1º a 7 de abril |]A;| <1 semana | Percentual de usuários da coorte que voltaram a usar o aplicativo após um período entre 1 e 6 dias (usá-lo novamente no mesmo dia não conta como retenção) | 50% ou 500 usuários voltaram a usar o aplicativo na primeira semana |]A;| +1 semana | Percentual de usuários da coorte que voltaram a usar o aplicativo após um período entre 7 e 13 dias | 30% ou 300 usuários voltaram a usar o aplicativo após uma semana |]A;| +N semana | Percentual de usuários da coorte que voltaram a usar o aplicativo na enésima semana | 15% ou 150 usuários, quando N = 3 |]A;]A;]A;]A;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
