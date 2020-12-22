@@ -63,18 +63,27 @@
       <Item ItemId=";items.Overviewgroup.content.items.Configuregroup.content.items.samplelocalredisurl.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Specify server using a URL matching this form: ]D;]A;]D;]A;```]D;]A;[protocol://]5D;[:password]5D;@address[:port]5D;]D;]A;```]D;]A;For instance,]D;]A;```]D;]A;tcp://:password@127.0.0.1:6379/]D;]A;```]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Zadejte server pomocí adresy URL v následujícím formátu: ]D;]A;]D;]A;```]D;]A;[protocol://]5D;[:password]5D;@address[:port]5D;]D;]A;```]D;]A;Například:]D;]A;```]D;]A;tcp://:password@127.0.0.1:6379/]D;]A;```]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overviewgroup.content.items.Overviewgroup.content.items.redisinformation.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Redis is an open source, in-memory data structure store that has rapidly gained popularity from developers. Redis is known for its fast performance and niche as a system that serves as both a store and cache. Redis functions most commonly as a key-value database, but has also gain prominence as a powerful NoSQL database.]A;]A;Azure Monitor for Redis combines all the important information you need to manage your Redis servers. Azure Monitor for Redis highlights important performance metrics to ensure your Redis server is running at optimal levels. Make configuration a breeze with templates, automated alerts and customizable actions.]A;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Redis je opensourcové úložiště datových struktur v paměti, které rychle získalo na oblibě u vývojářů. Systém Redis je známý pro svůj vysoký výkon a lze jej použít jak pro úložiště, tak pro ukládání do mezipaměti. Redis nejčastěji funguje jako databáze párů klíč–hodnota, ale získal na důležitosti také jako výkonná databáze NoSQL.]A;]A;Azure Monitor pro Redis v sobě spojuje všechny důležité informace potřebné ke správě serverů Redis. Klade důraz na důležité metriky výkonu, aby bylo možné zajistit, že váš server Redis bude fungovat optimálním způsobem. Díky možnosti využívat šablony, automatizovaná upozornění a přizpůsobitelné akce se snadno konfiguruje.]A;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overviewgroup.content.items.Prerequisitesgroup.content.items.prerequisitesredis.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Configuring a Redis password enables secure access to Redis. This can be done by editing the Redis config file: ]A;]A; ```sudo nano /etc/redis/redis.conf```]A;]A; Uncomment the following directive and save the file: ]A;]A; ```requirepass <password>```]A;]A; Restart redis service :]A;]A; ```sudo systemctl restart redis.service```]A;]A; This same password is needed for configuring the monitoring in the next step.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Konfigurace hesla Redis umožňuje zabezpečený přístup ke službě Redis. To lze provést úpravou konfiguračního souboru Redis: ]A;]A; ```sudo nano /etc/redis/redis.conf```]A;]A; Odkomentujte následující direktivu a uložte soubor: ]A;]A; ```requirepass <password>```]A;]A; Restartujte službu redis:]A;]A; ```sudo systemctl restart redis.service```]A;]A; Je to stejné heslo, které je nutné ke konfiguraci monitorování v dalším kroku.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -126,6 +135,9 @@
       <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Onboard Redis Insights]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Redis (onboarding) – přehledy]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

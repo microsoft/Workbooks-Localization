@@ -21,18 +21,27 @@
       <Item ItemId=";items.10.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Total Database Size]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Celková velikost databáze]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.13.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[When encountering high space utilization, mitigation options include:]A;]A;* Increasing the max size of the database or elastic pool, or add more storage. See [Scale single database resources]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-single-database-scale) and [Scale elastic pool resources]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-elastic-pool-scale).]A;* If the database is in an elastic pool, then alternatively the database can be moved outside of the pool so that its storage space is not shared with other databases.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[V případě, že dojde k vysokému využití dostupného místa, máte mimo jiné tyto možnosti zmírnění problému: ]A;]A;* Zvýšení maximální velikosti databáze nebo elastického fondu, případně zvětšení úložiště. Další informace najdete v článku věnovaném [škálování prostředků jednoúčelové databáze]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-single-database-scale) a [škálování prostředků elastického fondu]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-elastic-pool-scale).]A;* Pokud je databáze v elastickém fondu, lze databázi také přesunout mimo fond, aby její prostor úložiště nebyl sdílen s jinými databázemi.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.14.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Sessions and workers]A;The maximum number of sessions and workers are determined by the service tier and performance level (DTUs and eDTUs). New requests are rejected when session or worker limits are reached, and clients receive an error message. While the number of connections available can be controlled by the application, the number of concurrent workers is often harder to estimate and control. This is especially true during peak load periods when database resource limits are reached and workers pile up due to longer running queries.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Relace a pracovní procesy]A;Maximální počet relací a pracovních procesů závisí na úrovni služby a na úrovni výkonu (DTU a eDTU). Když je dosaženo limitu počtu relací nebo pracovních procesů, nové požadavky jsou odmítány a klienti obdrží chybovou zprávu. Počet dostupných připojení lze ovládat aplikací, ale odhad a řízení počtu souběžných pracovních procesů je často obtížnější. To platí zejména během období špičkového zatížení, kdy je dosaženo limitů databázových prostředků a pracovní procesy se hromadí kvůli zdlouhavým dotazům.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -48,12 +57,18 @@
       <Item ItemId=";items.16.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Workers Percentage]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Procento pracovních procesů]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.19.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[When encountering high session or worker utilization, mitigation options include:]A;* Increasing the service tier or performance level of the database or elastic pool. See [Scale single database resources]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-single-database-scale) and [Scale elastic pool resources]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-elastic-pool-scale).]A;* Optimizing queries to reduce the resource utilization of each query if the cause of increased worker utilization is due to contention for compute resources. For more information, see [Query Tuning/Hinting]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-performance-guidance#query-tuning-and-hinting).]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[V případě, že dojde k vysokému využití relace nebo pracovního procesu, máte mimo jiné tyto možnosti zmírnění problému: ]A;* Zvýšení úrovně služby nebo úrovně výkonu databáze nebo elastického fondu. Další informace najdete v článku věnovaném [škálování prostředků jednoúčelové databáze]5D; (https://docs.microsoft.com/en-us/azure/sql-database/sql-database-single-database-scale) a [škálování prostředků elastického fondu]5D; (https://docs.microsoft.com/en-us/azure/sql-database/sql-database-elastic-pool-scale).]A;* Optimalizace dotazů za účelem snížení využití prostředků u každého dotazu, pokud je příčinou zvýšeného využití pracovního procesu konflikt využívání výpočetních prostředků. Další informace najdete v tématu věnovaném [optimalizaci dotazů a radám pro dotazy]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-performance-guidance#query-tuning-and-hinting).]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -87,12 +102,18 @@
       <Item ItemId=";items.7.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[When encountering high compute utilization, mitigation options include:]A;]A;* Increasing the performance level of the database or elastic pool to provide the database with more compute resources. See [Scale single database resources]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-single-database-scale) and [Scale elastic pool resources]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-elastic-pool-scale).]A;* Optimizing queries to reduce the resource utilization of each query. For more information, see [Query Tuning/Hinting]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-performance-guidance#query-tuning-and-hinting).]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[V případě, že dojde k vysokému využití výpočetních prostředků, máte mimo jiné tyto možnosti zmírnění problému: ]A;]A;* Zvýšení úrovně výkonu databáze nebo elastického fondu, abyste databázi poskytli více výpočetních prostředků. Další informace najdete v článku věnovaném [škálování prostředků jednoúčelové databáze]5D; (https://docs.microsoft.com/en-us/azure/sql-database/sql-database-single-database-scale) a [škálování prostředků elastického fondu]5D; (https://docs.microsoft.com/en-us/azure/sql-database/sql-database-elastic-pool-scale).]A;* Optimalizace dotazů za účelem snížení využití prostředků u každého dotazu. Další informace najdete v tématu věnovaném [optimalizaci dotazů a radám pro dotazy]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-performance-guidance#query-tuning-and-hinting).]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.8.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Storage]A;When database space used reaches the max size limit, database inserts and updates that increase the data size fail and clients receive an [error message]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-develop-error-messages). Database SELECTS and DELETES continue to succeed.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Úložiště]A;Když využitý databázový prostor dosáhne maximálního limitu, databázové příkazy INSERT a UPDATE, které zvyšují velikost dat, selžou a klientům se zobrazí [chybová zpráva]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-develop-error-messages). Příkazy SELECT a DELETE se budou v databázi i nadále úspěšně spouštět.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -108,6 +129,9 @@
       <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[SQL Database Resource Limits]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Omezení prostředků SQL Database]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

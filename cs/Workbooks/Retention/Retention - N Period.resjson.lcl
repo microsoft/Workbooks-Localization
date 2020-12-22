@@ -30,6 +30,9 @@
       <Item ItemId=";items.10.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## What is a week for a user?]A;]A;The short answer is that it is unique for each user. Our analysis treats each user's retention window seperately - giving an accurate view of their actual behavior with your app. ]A;]A;Consider the example below of two users X and Y in the cohort of April 1-6: ]A;]A;| User | First use of app | Weeks for user |]A;| ----- | :----- | :----- |]A;| X | April 3 | w1 = April 10, w2 = April 17, w3 = April 24  |]A;| Y | April 5 | w1 = April 12, w2 = April 19, w3 = April 26  |]A;]A;Each user gets a seperate retention window. So, if both users came back on April 18, then it considered as Week 2 usage for User X but Week 1 usage for User Y. ]A;]A;This allows the normalization their app use over the retention window - making it seem as if all users in a cohort used the app on the same day. This allow for better analysis and comparision of user behavior.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Co je týden z hlediska uživatele?]A;]A;Stručně řečeno, u každého uživatele je to individuální. V rámci naší analýzy se intervaly retence jednotlivých uživatelů analyzují samostatně, což umožňuje mít přesný přehled o jejich skutečném chování ve vaší aplikaci. ]A;]A;Níže je uveden příklad dvou uživatelů, X a Y, v kohortě 1. až 6. dubna: ]A;]A;| Uživatel | První použití aplikace | Týdny pro uživatele |]A;| ----- | :----- | :----- |]A;| X | 3. dubna | t1 = 10. dubna, t2 = 17. dubna, t3 = 24. dubna  |]A;| Y | 5. dubna | t1 = 12. dubna, t2 = 19. dubna, t3 = 26. dubna  |]A;]A;Každý uživatel bude mít svůj vlastní interval (okno) retence. Pokud by se tedy oba uživatelé vrátili zpět 18. dubna, bylo by to považováno za použití v týdnu 2 pro uživatele X, ale za použití v týdnu 1 pro uživatele Y. ]A;]A;To umožňuje normalizaci jejich použití aplikace v daném intervalu retence – tak, jako kdyby všichni uživatelé v kohortě používali aplikaci ve stejný den. Umožňuje to lepší analýzu a porovnání chování uživatelů.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -72,12 +75,18 @@
       <Item ItemId=";items.6.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Interpreting the data]A;The section below shows a row from a weekly retention report:]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Interpretace dat]A;V následující části se zobrazuje řádek z týdenní sestavy retence:]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.8.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[| Column | Explanation | Interpretation in the example |]A;| ----- | :----- | :----- |]A;| Cohort | Identifies the cohorting period. | This row explains the retention behavior of users who used your app in the week of April 1 to April 7 |]A;| Users | Number of unique users who used your app in the cohorting period  | 1000 unique users used your app in the week of April 1 to April 7 |]A;| <1 week | Percentage of cohort users who returned to use the app between 1 and 6 days (using it again the same day does not count towards retention)  | 50% or 500 users returned to use your app within the first week |]A;| +1 week | Percentage of cohort users who returned to use the app between 7 and 13 days  | 30% or 300 users returned to use your app a week later |]A;| +N week | Percentage of cohort users who returned to use the app in the Nth week  | 15% or 150 users, when N = 3  |]A;]A;]A;]A;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[| Sloupec | Vysvětlení | Interpretace v příkladu |]A;| ----- | :----- | :----- |]A;| Kohorta | Identifikuje období kohortování. | Tento řádek vysvětluje chování z hlediska retence u uživatelů, kteří použili vaši aplikaci v týdnu od 1. do 7. dubna. |]A;| Uživatelé | Počet jedinečných uživatelů, kteří použili vaši aplikaci v období kohortování.  | 1 000 jedinečných uživatelů použilo vaši aplikaci v týdnu od 1. do 7. dubna. |]A;| <1 týden | Procento uživatelů v rámci kohorty, kteří se vrátili, aby použili vaši aplikaci, za 1 až 6 dnů (použití aplikace ve stejný den se nezapočítává do retence) | 50 % nebo 500 uživatelů se vrátilo, aby použilo vaši aplikaci v prvním týdnu. |]A;| +1 týden | Procento uživatelů z kohorty, kteří se vrátili, aby použili aplikaci, za 7 až 13 dnů | 30 % nebo 300 uživatelů se vrátilo, aby použilo vaši aplikaci, o týden později. |]A;| +N týdnů | Procento uživatelů z kohorty, kteří se vrátili, aby použili aplikaci N. týden | 15 % nebo 150 uživatelů, když N = 3  |]A;]A;]A;]A;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

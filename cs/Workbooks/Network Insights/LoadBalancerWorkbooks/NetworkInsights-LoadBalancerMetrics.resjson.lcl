@@ -1158,12 +1158,18 @@
       <Item ItemId=";items.BasicLBnotsupported.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<h6>Standard Load Balancer required</h6>]D;]A;]D;]A;Basic Load Balancers don’t support metrics. Follow [our guide]5D;(https://docs.microsoft.com/azure/load-balancer/upgrade-basic-standard) to switch to Standard for this and other production level features today!]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<h6>Je vyžadován nástroj pro vyrovnávání zatížení na úrovni Standard.</h6>]D;]A;]D;]A;Nástroje pro vyrovnávání zatížení na úrovni Basic nepodporují metriky. Podle [našeho průvodce]5D;(https://docs.microsoft.com/azure/load-balancer/upgrade-basic-standard) můžete okamžitě přejít na úroveň Standard, kde je tato funkce společně s dalšími funkcemi produkční úrovně k dispozici.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.CMhelp.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Connection Monitor Help]D;]A;Connection Monitors are used to test the latency of traffic to your Load Balancer Frontend IPs from regions all over the globe. If you have Connection Monitors configured, review the above map to see the latency of traffic to your Load Balancer from all regions with sources configured.]D;]A;]D;]A;If you do not have any Connection Monitors configured, [create Connection Monitors]5D;(https://docs.microsoft.com/en-us/azure/network-watcher/connection-monitor) with source VMs in your regions of interest and set your destination to the Frontend IP address of your Load Balancer to analyze your round-trip latencies.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# Nápověda k monitorování připojení]D;]A;Monitorování připojení se používají k testování latence provozu k IP adresám front-endu vašeho nástroje pro vyrovnávání zatížení z oblastí po celém světě. Pokud máte nakonfigurovaná monitorování připojení, můžete z výše uvedené mapy zjistit latenci provozu k vašemu nástroji pro vyrovnávání zatížení ze všech oblastí s nakonfigurovanými zdroji.]D;]A;]D;]A;Pokud nemáte nakonfigurovaná žádná monitorování připojení, [vytvořte si monitorování připojení]5D;(https://docs.microsoft.com/en-us/azure/network-watcher/connection-monitor) se zdrojovými virtuálními počítači v oblastech zájmu a nastavte si cíl na IP adresu front-endu, aby vám mohl nástroj pro vyrovnávání zatížení analyzovat latence doby odezvy.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1179,18 +1185,27 @@
       <Item ItemId=";items.Chartoflatencies.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Round-Trip Time (ms), Average - Destination Address Split]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Doba odezvy (ms), průměr – rozdělení podle cílové adresy]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.DataThroughput.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Load Balancer Data Throughput]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Propustnost dat nástroje pro vyrovnávání zatížení]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.DataThroughputHelp.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Data Throughput Help]D;]A;This page is intended to allow customers to visualize the amount of data flowing through their load balancer and filter this to specific services or load balancer rules.]D;]A;* Review your total inbound and outbound Data Throughput to identify if your traffic patterns are as expected]D;]A;	+ If unexpected, view by Frontend IP and Port to see if a specific service is seeing higher than usual traffic]D;]A;]D;]A;* View by Frontend IP and/or Port to monitor specific services and load balancing rules]D;]A;]D;]A;**Note:** Graphs may have slight refresh time offset from each other, so graph totals may not match up. Please highlight specific time to get most accurate comparison.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# Nápověda k propustnosti dat]D;]A;Tato stránka má zákazníkům umožnit vizualizovat si objem dat protékajících jejich nástrojem pro vyrovnávání zatížení a tato data pak filtrovat podle konkrétních služeb nebo pravidel nástroje pro vyrovnávání zatížení.]D;]A;* Podle celkové příchozí a odchozí propustnosti dat zjistěte, jestli jsou trendy provozu podle očekávání.]D;]A;	+Pokud ne, zobrazte si data podle IP adresy a portu front-endu a zjistěte, jestli není u určité služby vyšší provoz, než je běžné.]D;]A;]D;]A;* Zobrazením dat podle IP adresy a/nebo portu front-endu můžete monitorovat konkrétní služby a pravidla vyrovnávání zatížení.]D;]A;]D;]A;**Poznámka:** Grafy mohou mít mezi sebou mírný posun času aktualizace, takže se celkové hodnoty v grafech nemusí shodovat. Zvýrazněte prosím konkrétní čas, abyste získali co nejpřesnější porovnání.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1269,18 +1284,27 @@
       <Item ItemId=";items.FlowDistributionHelp.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Flow Distribution Help]D;]A;This page is intended to help customers visualize and manage the number of flows their backend VMs and VMSS instances are receiving and producing. ]D;]A;* See the number of inbound and outbound flows and creation rate for each VM and VMSS instance to ensure the number of flows is not approaching the [per VM flow limit]5D;(https://docs.microsoft.com/azure/virtual-network/virtual-machine-network-throughput#flow-limits-and-recommendations)]D;]A;	+ If approaching the flow limit, you  consider scaling out to more instances in your backend pool ]D;]A;]D;]A;* Use the inbound flows to visualize the load distribution of your load balancer]D;]A;]D;]A;* Use the outbound flows to determine if the processes running within your VM are creating significant outbound connections]D;]A;]D;]A;* Use the network throughput to see if there are indiviudal flows that are transmitting significantly larger than average data throughput]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# Nápověda k rozložení toků]D;]A;Tato stránka má zákazníkům pomoci vizualizovat si a spravovat počet toků, které jejich back-endové instance virtuálních počítačů a škálovacích sad virtuálních počítačů přijímají a vytvářejí. ]D;]A;* Podívejte se na počet příchozích a odchozích toků a rychlost vytváření pro každou instanci virtuálního počítače a škálovací sady virtuálních počítačů, abyste zajistili, že se počet toků neblíží [maximálnímu počtu toků virtuálního počítače]5D;(https://docs.microsoft.com/azure/virtual-network/virtual-machine-network-proputilet#flow-limits-and-recommendations)]D;]A;	+ Pokud se maximálnímu počtu toků blížíte, zvažte škálování na více instancí ve vašem back-endovém fondu. ]D;]A;]D;]A;* Pomocí příchozích toků si můžete vizualizovat rozložení zatížení vašeho nástroje pro vyrovnávání zatížení.]D;]A;]D;]A;* Pomocí odchozích toků můžete zjistit, jestli procesy spuštěné v rámci vašeho virtuálního počítače nevytvářejí významný počet odchozích připojení.]D;]A;]D;]A;* Podle propustnosti sítě můžete zjistit, jestli některé jednotlivé toky nepřenášejí výrazně vyšší objem dat, než je průměrná propustnost dat.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.FrontendBackendAvailabilityHelp.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Frontend & Backend Availability Help]D;]A;First, confirm that the Data Path Availability for your Load Balancer Frontends is showing 100. If Data Path Availability is less than 100, this implies an Azure issue creating Load Balancer connection issues. Check the Summary field in the load balancer status grid at the top of this page to learn if there is a known issue impacting your Load Balancer.]D;]A;]D;]A;After confirming Data Path Availability, review your Health Probe Status metrics to determine if your backend instances are responding. ]D;]A;* Check by VM to see if the problem is specific to a VM]D;]A;	+ If specific to a VM, check with this VM to make sure it is healthy]D;]A;	]D;]A;* Check by Port to see if the problem is specific to a Port]D;]A;	+ If specific to a Port, your application may not be listening to this port or there may be an NSG rule blocking this port ]D;]A;	]D;]A;* Check by Frontend IP or Frontend Port to monitor the backend pool for a specific load balancing rule or service]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# Nápověda k dostupnosti front-endu a back-endu]D;]A;Nejprve zkontrolujte, jestli metrika Dostupnost cesty k datům pro vaše front-endy nástroje pro vyrovnávání zatížení ukazuje hodnotu 100. Pokud je hodnota Dostupnost cesty k datům nižší než 100, znamená to problém v Azure, který následně způsobuje problémy s připojením nástroje pro vyrovnávání zatížení. Zkontrolujte pole Souhrn v mřížce stavu nástroje pro vyrovnávání zatížení v horní části této stránky a zjistěte, jestli na fungování nástroje pro vyrovnávání zatížení nemá negativní dopad nějaký známý problém.]D;]A;]D;]A;Po potvrzení dostupnosti cesty k datům zkontrolujte metriky stavu testu stavu a zjistěte, jestli vaše instance back-endu reagují. ]D;]A;* Podle virtuálních počítačů zkontrolujte, jestli problém není specifický pro konkrétní virtuální počítač.]D;]A;	+Pokud jde o problém specifický pro daný virtuální počítač, zkontrolujte, jestli je stav tohoto virtuálního počítače v pořádku.]D;]A;	]D;]A;* Podle portů zkontrolujte, jestli není problém specifický pro konkrétní port.]D;]A;	+Pokud jde o problém specifický pro konkrétní port, je možné, že vaše aplikace na tomto portu nenaslouchá nebo že je tento port blokován pravidlem skupiny zabezpečení sítě (NSG). ]D;]A;	]D;]A;* Pomocí možností Podle IP adresy front-endu nebo Podle portu front-endu můžete monitorovat konkrétní pravidlo nebo službu vyrovnávání zatížení v back-endovém fondu.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.FrontendIPmetricBasicLB.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Basic Load Balancers don’t support metrics. Follow [our guide]5D;(https://docs.microsoft.com/azure/load-balancer/upgrade-basic-standard) to switch to Standard for this and other production level features today!]D;]A;]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Nástroje pro vyrovnávání zatížení na úrovni Basic nepodporují metriky. Podle [našeho průvodce]5D;(https://docs.microsoft.com/azure/load-balancer/upgrade-basic-standard) můžete okamžitě přejít na úroveň Standard, kde je tato funkce společně s dalšími funkcemi produkční úrovně k dispozici.]D;]A;]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1359,6 +1383,9 @@
       <Item ItemId=";items.LBBackendhealthprobeBackendport.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Health Probe Status by Backend Port]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Stav testu stavu podle portu back-endu]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1392,12 +1419,18 @@
       <Item ItemId=";items.LBHealth.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Load Balancer Status]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Stav nástroje pro vyrovnávání zatížení]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.MetricHelp.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[| **Metric** | **Resource type** | **Description** | **Recommended aggregation** |]D;]A;| --- | --- | --- | --- |]D;]A;| Data path availability | Public and internal load balancer | Standard Load Balancer continuously exercises the data path from within a region to the load balancer front end, all the way to the SDN stack that supports your VM. As long as healthy instances remain, the measurement follows the same path as your application&#39;s load-balanced traffic. The data path that your customers use is also validated. The measurement is invisible to your application and does not interfere with other operations. | Average |]D;]A;| Health probe status | Public and internal load balancer | Standard Load Balancer uses a distributed health-probing service that monitors your application endpoint&#39;s health according to your configuration settings. This metric provides an aggregate or per-endpoint filtered view of each instance endpoint in the load balancer pool. You can see how Load Balancer views the health of your application, as indicated by your health probe configuration. | Average |]D;]A;| SYN (synchronize) packets | Public and internal load balancer | Standard Load Balancer does not terminate Transmission Control Protocol (TCP) connections or interact with TCP or UDP packet flows. Flows and their handshakes are always between the source and the VM instance. To better troubleshoot your TCP protocol scenarios, you can make use of SYN packets counters to understand how many TCP connection attempts are made. The metric reports the number of TCP SYN packets that were received. | Average |]D;]A;| SNAT connections | Public load balancer | Standard Load Balancer reports the number of outbound flows that are masqueraded to the Public IP address front end. Source network address translation (SNAT) ports are an exhaustible resource. This metric can give an indication of how heavily your application is relying on SNAT for outbound originated flows. Counters for successful and failed outbound SNAT flows are reported and can be used to troubleshoot and understand the health of your outbound flows. | Average |]D;]A;| Byte counters | Public and internal load balancer | Standard Load Balancer reports the data processed per front end. You may notice that the bytes are not distributed equally across the backend instances. This is expected as Azure&#39;s Load Balancer algorithm is based on flows | Average |]D;]A;| Packet counters | Public and internal load balancer | Standard Load Balancer reports the packets processed per front end. | Average |]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[| **Metrika** | **Typ prostředku** | **Popis** | **Doporučená agregace ** |]D;]A;| --- | --- | --- | --- |]D;]A;| Dostupnost cesty k datům | Veřejný a interní nástroj pro vyrovnávání zatížení | Nástroj pro vyrovnávání zatížení na úrovni Standard nepřetržitě testuje cestu k datům z dané oblasti k front-endu nástroje pro vyrovnávání zatížení a následně až k zásobníku SDN zajišťujícímu podporu pro váš virtuální počítač. Dokud zůstávají nějaké instance v bezproblémovém stavu, používá se pro míru stejná cesta jako pro provoz s vyrovnaným zatížením vaší aplikace. Je ověřena také cesta k datům, kterou používají vaši zákazníci. Míra není viditelná pro vaši aplikaci a nezasahuje do jiných operací. | Průměr |]D;]A;| Stav testu stavu | Veřejný a interní nástroj pro vyrovnávání zatížení | Nástroj pro vyrovnávání zatížení na úrovni Standard využívá distribuovanou službu testování stavu, která monitoruje stav koncového bodu vaší aplikace podle vašeho nastavení konfigurace. Tato metrika poskytuje agregované zobrazení nebo zobrazení vyfiltrované podle koncových bodů pro každý koncový bod instance ve fondu nástrojů pro vyrovnávání zatížení. Můžete zjistit, jak nástroj pro vyrovnávání zatížení vidí stav vaší aplikace na základě vaší konfigurace testu stavu. | Průměr |]D;]A;| Synchronizace (SYN) paketů | Veřejný a interní nástroj pro vyrovnávání zatížení | Nástroj pro vyrovnávání zatížení na úrovni Standard neukončuje připojení přes protokol TCP (Transmission Control Protocol) ani nekomunikuje s toky paketů TCP/UDP. Toky a jejich ověření typu handshake jsou vždy mezi zdrojem a instancí virtuálního počítače. Abyste mohli lépe řešit problémy podle vašich scénářů využívání protokolu TCP, můžete pomocí čítačů paketů SYN zjistit počet provedených pokusů o připojení pomocí protokolu TCP. Metrika reportuje počet přijatých paketů TCP SYN. | Průměr |]D;]A;| Připojení SNAT| Veřejný nástroj pro vyrovnávání zatížení | Nástroj pro vyrovnávání zatížení na úrovni Standard reportuje počet odchozích toků maskovaných za front-end veřejné IP adresy. Porty SNAT (Source Network Address Translation) představují vyčerpatelný prostředek. Pomocí této metriky můžete zjistit, jak moc je vaše aplikace závislá na překladu síťových adres (SNAT) u odchozích toků. Reportovány jsou čítače pro úspěšné a neúspěšné odchozí toky SNAT, pomocí kterých je možné řešit případné potíže a zjistit stav vašich odchozích toků. | Průměr |]D;]A;| Čítače bajtů | Veřejný a interní nástroj pro vyrovnávání zatížení | Nástroj pro vyrovnávání zatížení na úrovni Standard reportuje zpracovaná data podle front-endu. Můžete si všimnout, že bajty nejsou rovnoměrně rozděleny mezi back-endové instance. To je očekávané chování, protože algoritmus Azure Load Balancer je založen na tocích. | Průměr |]D;]A;| Čítače paketů | Veřejný a interní nástroj pro vyrovnávání zatížení | Nástroj pro vyrovnávání zatížení na úrovni Standard reportuje zpracované pakety podle front-endu. | Průměr |]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1422,6 +1455,9 @@
       <Item ItemId=";items.OverviewHelp.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Overview Help]D;]A;The Overview tab is intended as an entry point to monitor your Load Balancer. It outlines data throughput and frontend/backend availability.]D;]A;]D;]A;To get started:]D;]A;1. Configure the time range at the top of the workbook to your desired range]D;]A;]D;]A;1. Review data throughput to ensure values are within your expected range for the configured time span ]D;]A;	+ If detailed analysis is warranted view the Data Throughput tab]D;]A;	]D;]A;1. Review Data Path and Backend Availability to ensure your load balancer is reachable and your backend instances are responding to health probes]D;]A;	+ If either of these are below 100 and this is not expected, view the Frontend and Backend Availability tab ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# Nápověda ke kartě Přehled]D;]A;Karta Přehled představuje vstupní bod pro monitorování vašeho nástroje pro vyrovnávání zatížení. Zobrazuje přehled o propustnosti dat a dostupnosti front-endu/back-endu.]D;]A;]D;]A;Začněte takto:]D;]A;1. V horní části sešitu nakonfigurujte požadovaný časový rozsah.]D;]A;]D;]A;1. Zkontrolujte propustnost dat, aby bylo zajištěno, že hodnoty jsou pro nakonfigurované časové rozpětí v očekávaném rozsahu. ]D;]A;	+ Pokud je vyžadována podrobná analýza, zobrazte si kartu Propustnost dat.]D;]A;	]D;]A;1. Zkontrolujte hodnoty dostupnosti cesty k datům a dostupnosti back-endu, abyste zajistili, že je váš nástroj pro vyrovnávání zatížení dosažitelný a vaše back-endové instance reagují na testy stavu.]D;]A;	+ Pokud je některá z těchto hodnot nižší než 100 a neočekává se to, zobrazte si kartu Dostupnost front-endu a back-endu. ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1455,6 +1491,9 @@
       <Item ItemId=";items.RoundTripTimemsAverageGrid.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Round-Trip Time (ms), Average - Chart]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Doba odezvy (ms), průměr – graf]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1470,12 +1509,18 @@
       <Item ItemId=";items.RoundTripTimemsAverageMap.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Round-Trip Time (ms), Average - Map]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Doba odezvy (ms), průměr – mapa]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.SumofSNATConnectionStates.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Sum of SNAT Connection States]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Součet stavů připojení SNAT]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1536,18 +1581,27 @@
       <Item ItemId=";items.TotalDataThroughputbyDirection.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Total Data Throughput by Direction]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Celková propustnost dat podle směru]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.UsedUDPPortsbyBackendIP.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Used UDP Ports by Backend IP]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Využité porty UDP podle IP adresy back-endu]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.UsefulDocuments.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Useful documents]D;]A;* [Overview of the Azure Load Balancer]5D;(https://docs.microsoft.com/azure/load-balancer/load-balancer-overview)]D;]A;* [Frequently asked questions]5D;(https://docs.microsoft.com/azure/load-balancer/load-balancer-faqs)]D;]A;* [Guidance on Standard Load Balancer metrics]5D;(https://docs.microsoft.com/azure/load-balancer/load-balancer-standard-diagnostics)]D;]A;* [Troubleshoot your Azure Load Balancer]5D;(https://docs.microsoft.com/azure/load-balancer/load-balancer-troubleshoot)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Užitečné dokumenty]D;]A;* [Přehled služby Azure Load Balancer]5D;(https://docs.microsoft.com/azure/load-balancer/load-balancer-overview)]D;]A;* [Nejčastější dotazy]5D;(https://docs.microsoft.com/azure/load-balancer/load-balancer-faqs)]D;]A;* [Pokyny pro metriky nástroje pro vyrovnávání zatížení na úrovni Standard]5D;(https://docs.microsoft.com/azure/load-balancer/load-balancer-standard-diagnostics)]D;]A;* [Řešení potíží se službou Azure Load Balancer]5D;(https://docs.microsoft.com/azure/load-balancer/load-balancer-troubleshoot)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

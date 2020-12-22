@@ -12,66 +12,99 @@
       <Item ItemId=";items.0.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Azure Blockchain Workbench Logs & Troubleshooting Guide]A;---]A;]A;This workbook is designed to give you some ways to root cause your failures. ]A;Plug in the requestId to follow the request's flow and view its logs.<br/>]A;To understand some of the common errors, please view the "Common errors seen in logs" section of our [Github troubleshooting guide]5D;(https://aka.ms/workbenchtroubleshooting).]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Azure Blockchain Workbench 記錄和疑難排解指南]A;---]A;]A;此活頁簿的設計訴求是要為您提供一些方法來找出失敗的根本原因。]A;插入 requestId 以遵循要求的流程並檢視其記錄。<br/>]A;若要了解一些常見錯誤，請參閱 [Github 疑難排解指南]5D;(https://aka.ms/workbenchtroubleshooting) 的「記錄中的常見錯誤」一節]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.1.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Logs Table]A;---]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## 記錄資料表]A;---]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.3.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Please enter a valid requestId above.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[請輸入上方的有效 requestId。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.3.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Workbench Logs]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Workbench 記錄]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.4.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[##### How to export:]A;Click on the icon to the top right of the Workbench logs table below and click on 'Export' on the top right panel.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[##### 如何匯出:]A;按一下下方 Workbench 記錄資料表右上角的圖示，然後按一下右上面板上的 [匯出]5D;。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.5.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<br/>]A;<br/>]A;<br/>]A;<br/>]A;]A;## Potential Liveness Issues]A;---]A;In the below tables you can see whether any of your requests from Workbench has gotten the system in a state with a liveness issue. This means that the requests are not being processed as expected and will continue to try submitting infinitely.]A;Note that these issues are generally not caused by bugs in the Workbench codebase, but rather issues that arise from services being down.]A;]A;### TryCommitContractAction counter]A;If there has been over 10 tries to commit the contract/contract action to the blockchain and the transaction receipt had not arrived, then one of two things could be happening:]A;1. The eth-watcher is down.]A;2. The blockchain is unresponsive or taking a long time to process.]A;]A;This table shows the requests that could have such issues, along with the number of times the system (eth-tx-submitter) has tried to commit the contract action to the blockchain. ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<br/>]A;<br/>]A;<br/>]A;<br/>]A;]A;## 潛在的活躍度問題]A;---]A;在下方的資料表中，您可以查看任何來自 Workbench 的要求是否已讓系統處於有活躍度問題的狀態。這表示要求並未以預期的方式處理，而且會繼續無限地嘗試提交。]A;請注意，這些問題通常不是由 Workbench 程式碼基底中的錯誤 (bug) 所造成，而是由服務關閉引起的問題。]A;]A;### TryCommitContractAction 計數器]A;如果嘗試超過 10 次將合約/合約動作認可至區塊鏈，但交易收據尚未送達，則可能發生下列其中一種情況:]A;1. eth-watcher 已關閉。]A;2. 區塊鏈沒有回應或需要很長的時間來處理。]A;]A;此資料表顯示可能有此種問題的要求，以及系統 (eth-tx-submitter) 嘗試將合約動作認可至區塊鏈的次數。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.7.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<span style="color:SpringGreen; font-size:2em;">There are no liveness issues in the last 24 hours!</span>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<span style="color:SpringGreen; font-size:2em;">過去 24 小時內沒有任何活躍度問題! </span>]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.8.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<span style="color:red; font-size:2em;">There are potential liveness issues :(</span>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<span style="color:red; font-size:2em;">有潛在的活躍度問題 :(</span>]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.9.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No liveness issues detected!]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[未偵測到任何活躍度問題!]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.9.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[TryCommitContractAction Counter]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[TryCommitContractAction 計數器]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Workbench Troubleshooting]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Workbench 疑難排解]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
