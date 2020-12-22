@@ -14,6 +14,9 @@
         <Item ItemId=";(...) abel" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Application Gateway Total Time (Average)]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Application Gateway total tid (medelvärde)]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -23,6 +26,9 @@
         <Item ItemId=";(...) meline.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Application Gateway Total Time Timeline]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Tidslinje för Application Gateway total tid]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -32,6 +38,9 @@
         <Item ItemId=";(...) abel" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Backend Last Byte Response Time (Average)]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Serverdelens svarstid för sista byte (medelvärde)]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -41,6 +50,9 @@
         <Item ItemId=";(...) meline.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Backend Last Byte Response Time Timeline]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Tidslinje för serverdelens svarstid för sista byte]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -276,6 +288,9 @@
       <Item ItemId=";items.text17.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Throughput]D;]A;*Throughput* is average Megabits/sec processed by the Application Gateway.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Dataflöde]D;]A;*Dataflöde* är medelvärdet för MB/sek som bearbetas av Application Gateway.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -309,30 +324,45 @@
       <Item ItemId=";items.text17CopyCopyCopyCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Current connections]D;]A;*Current connections* is a measure of established TCP connections to the application gateway.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Aktuella anslutningar]D;]A;*Aktuella anslutningar* är ett mått på upprättade TCP-anslutningar till programgatewayen.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text17CopyCopyb.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[#### Received bytes]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[#### Mottagna byte]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text17Copyb.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[#### Sent bytes]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[#### Skickade byte]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text1Copy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[#### Application gateway total time vs Backend last byte response time]D;]A;]D;]A;*Application gateway total time* is the interval from the time when Application Gateway receives the first byte of the HTTP request to the time when the last response byte has been sent to the client. This equals the *Backend last byte response time* + the processing time taken by Application Gateway + *Client rtt* (only when the window size of the client TCP request is small relative to the response). Compare the 2 metrics to determine whether the issue is with the Application Gateway or the backend.]D;]A;If the *Application gateway total time* has a spike but the Backend last byte response time is stable, then it can either be a sign of performance bottleneck at the Application Gateway or a bottleneck in the network between the client and Application Gateway (only when the window size of the client TCP request is small relative to the response). ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[#### Application Gateway total tid kontra Serverdelens svarstid för sista byte]D;]A;]D;]A;*Application Gateway total tid* är intervallet från den tidpunkt då Application Gateway tar emot HTTP-förfrågans första byte till den tidpunkt då svarets sista byte skickas till klienten. Det här är lika med *Serverdelens svarstid för sista byte* + bearbetningstiden i Application Gateway + *Klientens tur och retur-tid* (endast när fönsterstorleken i klientens TCP-förfrågan är liten i förhållande till svaret). Jämför de båda måtten för att fastställa om problemet ligger hos Application Gateway eller serverdelen.]D;]A;Om *Application Gateway total tid* har en topp men Serverdelens svarstid för sista byte är stabilt, kan det antingen vara ett tecken på prestandaflaskhals i Application Gateway eller en flaskhals i nätverket mellan klienten och Application Gateway (endast när fönsterstorleken för klientens TCP-förfrågan är liten i förhållande till svaret). ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text1CopyCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[#### Backend connect time vs Backend first byte response time vs Backend last byte response time]D;]A;]D;]A;**Backend connect time** is the time spent establishing a connection with the backend application. This includes the network latency as well as the time taken by the backend server’s TCP stack to establish new connections. In case of TLS, it also includes the time spent on handshake.]D;]A;]D;]A;**Backend first byte response time** is the time interval between start of establishing a connection to backend server and receiving the first byte of the response header.This approximates the sum of *Backend connect time*, time taken by the request to reach the backend from Application Gateway, time taken by backend application to respond (the time the server took to generate content, potentially fetch database queries), and the time taken by first byte of the response to reach the Application Gateway from the backend.]D;]A;]D;]A;**Backend last byte response time** is the time interval between start of establishing a connection to backend server and receiving the last byte of the response body. This approximates the sum of *Backend first byte response time* and data transfer time (this number may vary greatly depending on the size of objects requested and the latency of the server network).]D;]A;]D;]A;If there’s a spike in Backend first byte response time trend but the Backend connect time trend is stable, then it can be inferred that the Application gateway to backend latency and the time taken to establish the connection is stable, and the spike is caused due to an increase in the response time of backend application. On the other hand, if the spike in Backend first byte response time is associated with a corresponding spike in Backend connect time, then it can be deduced that either the network between Application Gateway and backend server or the backend server TCP stack has saturated.If you notice a spike in Backend last byte response time but the Backend first byte response time is stable, then it can be deduced that the spike is because of a larger file being requested.]D;]A;]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[#### Serverdelens anslutningstid kontra Serverdelens svarstid för första byte kontra Serverdelens svarstid för sista byte]D;]A;]D;]A;**Serverdelens anslutningstid** är tidsåtgången för att upprätta en anslutning till serverdelsprogrammet. Det omfattar nätverkets svarstid samt tidsåtgång för serverdelsserverns TCP-stack att upprätta nya anslutningar. Vid TLS omfattar det även tidsåtgång för handskakning.]D;]A;]D;]A;**Serverdelens svarstid för första byte** är tidsintervallet från det att en anslutning börjar upprättas till serverdelsservern och svarshuvudets första byte tas emot. Det här uppgår ungefär till summan av *Serverdelens anslutningstid*, tidsåtgången för förfrågan att nå serverdelen från Application Gateway, tidsåtgången för serverdelsprogrammet att svara (den tid det tog servern att skapa innehåll, potentiellt hämta databasfrågor), och tidsåtgång för svarets första byte att nå Application Gateway från serverdelen.]D;]A;]D;]A;**Serverdelens svarstid för sista byte** är tidsintervallet från det att en anslutning börjar upprättas till serverdelsservern till dess att svarsbrödtextens sista byte tas emot. Det här uppgår ungefär till summan av *Serverdelens svarstid för första byte* och dataöverföringstiden (talet kan variera stort beroende på storleken på de begärda objekten och servernätverkets svarstid).]D;]A;]D;]A;Om det sker en topp i trenden för serverdelens svarstid för första byte, men trenden för serverdelens anslutningstid är stabil, kan det tyda på att svarstiden mellan Application Gateway och serverdelen och den tid det tar att upprätta anslutningen är stabil, och att toppen beror på serverdelsprogrammets ökade svarstid. Å andra sidan, om toppen i serverdelens svarstid för första byte är kopplad till en motsvarande topp i serverdelens anslutningstid, beror det förmodligen på att nätverket mellan antingen Application Gateway och serverdelsservern eller serverdelsserverns TCP-stack är mättat. Om du upptäcker en topp i serverdelens svarstid för sista byte, men serverdelens svarstid för första byte är stabilt, beror toppen förmodligen på att en större fil efterfrågas.]D;]A;]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -348,24 +378,36 @@
       <Item ItemId=";items.text1CopyCopyCopyCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Total requests]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Totalt antal förfrågningar]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text1CopyCopyCopyCopyCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Failed requests]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Misslyckade förfrågningar]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text1CopyCopyCopyCopyCopyCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Response status 3xx]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Svarsstatus 3xx]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text1CopyCopyCopyCopyCopyCopyCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Response status 4xx]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Svarsstatus 4xx]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -381,6 +423,9 @@
       <Item ItemId=";items.text1CopyCopyCopyCopyCopyCopyCopyCopyCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### TLS Version 1.2]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### TLS version 1,2]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -405,48 +450,72 @@
       <Item ItemId=";items.text1CopyCopyCopyCopyCopyCopyCopyCopyCopyCopyCopyCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Estimated Billed Capacity units]D;]A;With the v2 SKU, the pricing model is driven by consumption. Capacity units measure consumption-based cost that is charged in addition to the fixed cost. Estimated Billed Capacity units indicates the number of capacity units using which the billing is estimated. This is calculated as the greater value between *Current capacity units* (capacity units required to load balance the traffic) and *Fixed billable capacity units* (minimum capacity units kept provisioned).]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Uppskattade fakturerade kapacitetsenheter]D;]A;Med v2 SKU baseras prismodellen på förbrukning. Kapacitetsenheter mäter den förbrukningsbaserade kostnaden som debiteras utöver fasta kostnader. Uppskattade fakturerade kapacitetsenheter visar antalet kapacitetsenheter som används när faktureringen är uppskattad. Det beräknas som det högre värdet mellan *Aktuella kapacitetsenheter* (kapacitetsenheter som krävs för att lastbalansera trafiken) och *Fasta fakturerbara kapacitetsenheter* (lägsta antal kapacitetsenheter som är etablerade).]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text1CopyCopyCopyCopyCopyCopyCopyCopyCopyCopyCopyCopyCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Current capacity units]D;]A;Count of capacity units consumed to load balance the traffic. There are three determinants to capacity unit - *compute units*, *current connections* and *throughput*. Each capacity unit is composed of at most: 1 *compute unit*, or 2500 *current connections*, or 2.22-Mbps *throughput*.]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Aktuella kapacitetsenheter]D;]A;Antal kapacitetsenheter som förbrukats för att lastbalansera trafiken. Det finns tre determinanter för kapacitetsenheter: *beräkningsenheter*, *aktuella anslutningar* och *dataflöde*. Varje kapacitetsenhet består av högst: 1 *beräkningsenhet* eller 2 500 *aktuella anslutningar* eller 2,22 Mbit/s *dataflöde*.]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text1CopyCopyCopyCopyCopyCopyCopyCopyCopyCopyCopyCopyCopyCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Fixed Billable Capacity Units]D;]A;The minimum number of capacity units kept provisioned as per the *Minimum scale units* setting (one instance translates to 10 capacity units) in the Application Gateway configuration.]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Fasta fakturerbara kapacitetsenheter]D;]A;Lägsta antal etablerade kapacitetsenheter enligt inställningen *Minsta skalningsenheter* (en instans motsvarar 10 kapacitetsenheter) i Application Gateway-konfigurationen.]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text1CopyCopyCopyCopyCopyCopyCopyCopyb.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### TLS Version 1.1]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### TLS version 1.1]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text1CopyCopyCopyCopyCopyCopyCopyCopyc.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Response status 5xx]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Svarsstatus 5xx]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text1CopyCopyCopyCopyCopyCopyCopyb.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Top User-agents]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Främsta användaragenter]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text1CopyCopyCopyCopyCopyCopyCopyc.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Unhealthy host count]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Antal värdar med fel]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text1CopyCopyCopyCopyCopyCopyCopyd.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### TLS version 1.0]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### TLS version 1.0]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -462,42 +531,63 @@
       <Item ItemId=";items.text1CopyCopyCopyCopyCopyCopyb.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Non-TLS requests]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Icke-TLS-förfrågningar]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text1CopyCopyCopyCopyCopyCopyc.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Top URIs]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Främsta URI:er]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text1CopyCopyCopyCopyCopyCopye.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Healthy host count]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Antal felfria värdar]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text1CopyCopyCopyCopyCopyb.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Response status 2xx]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Svarsstatus 2xx]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text1CopyCopyCopyCopyCopyc.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Server Failures by URI]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Serverfel per URI]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text1CopyCopyCopyCopyb.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Errors by user agent]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Fel per användaragent]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text65.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<h6></h6>]D;]A;]D;]A;	v1 SKU of Application Gateway does not support latency metrics.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<h6></h6>]D;]A;]D;]A;	v1 Application Gateway-SKU har inte stöd för svarstidsmått.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -549,6 +639,9 @@
       <Item ItemId=";items.text77.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<h6></h6>]D;]A;]D;]A;	v1 SKU of Application Gateway does not support billing metrics.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<h6></h6>]D;]A;]D;]A;	v1 SKU för Application Gateway har inte stöd för faktureringsmått.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

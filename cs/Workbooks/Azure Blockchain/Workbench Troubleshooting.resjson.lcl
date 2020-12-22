@@ -12,12 +12,18 @@
       <Item ItemId=";items.0.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Azure Blockchain Workbench Logs & Troubleshooting Guide]A;---]A;]A;This workbook is designed to give you some ways to root cause your failures. ]A;Plug in the requestId to follow the request's flow and view its logs.<br/>]A;To understand some of the common errors, please view the "Common errors seen in logs" section of our [Github troubleshooting guide]5D;(https://aka.ms/workbenchtroubleshooting).]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Protokoly Azure Blockchain Workbench a pokyny k řešení potíží]A;---]A;]A;Účelem tohoto sešitu je nabídnout vám způsoby určení hlavní příčiny selhání. ]A;Připojte requestId za účelem sledování toku požadavku a zobrazení jeho protokolů.<br/>]A;Pokud chcete zjistit, co znamenají některé běžné chyby, přečtěte si prosím v našem [průvodci řešením potíží s Githubem]5D;(https://aka.ms/workbenchtroubleshooting) část věnovanou běžným chybám vyskytujícím se v protokolech.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.1.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Logs Table]A;---]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Tabulka protokolů]A;---]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -33,24 +39,36 @@
       <Item ItemId=";items.3.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Workbench Logs]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Protokoly služby Workbench]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.4.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[##### How to export:]A;Click on the icon to the top right of the Workbench logs table below and click on 'Export' on the top right panel.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[##### Postup při exportu:]A;Klikněte níže na ikonu v pravém horním rohu tabulky protokolů Workbench a pak na panelu vpravo nahoře klikněte na Exportovat.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.5.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<br/>]A;<br/>]A;<br/>]A;<br/>]A;]A;## Potential Liveness Issues]A;---]A;In the below tables you can see whether any of your requests from Workbench has gotten the system in a state with a liveness issue. This means that the requests are not being processed as expected and will continue to try submitting infinitely.]A;Note that these issues are generally not caused by bugs in the Workbench codebase, but rather issues that arise from services being down.]A;]A;### TryCommitContractAction counter]A;If there has been over 10 tries to commit the contract/contract action to the blockchain and the transaction receipt had not arrived, then one of two things could be happening:]A;1. The eth-watcher is down.]A;2. The blockchain is unresponsive or taking a long time to process.]A;]A;This table shows the requests that could have such issues, along with the number of times the system (eth-tx-submitter) has tried to commit the contract action to the blockchain. ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<br/>]A; <br/>]A; <br/>]A;<br/>]A;]A;## Potenciální problémy s aktivitou]A;---]A;V níže uvedených tabulkách můžete zjistit, jestli některý z vašich požadavků ze služby Workbench nezpůsobil v systému problém s aktivitou. (To znamená, že požadavky nejsou zpracovávány podle očekávání a budou se i nadále snažit donekonečna odesílat.)]A;Tyto problémy nejsou obecně způsobovány chybami v kódové bázi služby Workbench, ale spíše jde o problémy způsobené tím, že služby nejsou dostupné.]A;]A;### Čítač TryCommitContractAction]A;Pokud došlo k více než 10 pokusům o potvrzení kontraktu / akce kontraktu do blockchainu a nedorazilo potvrzení příjmu transakce, mohlo dojít k jedné ze dvou věcí:]A;1. Eth-watcher je nedostupný.]A;2. Blockchain nereaguje nebo mu trvá zpracování příliš dlouho.]A;]A;V této tabulce jsou uvedeny požadavky, u kterých by mohlo k takovým problémům docházet, společně s informacemi o tom, kolikrát se systém (eth-tx-submitter) pokusil potvrdit akci kontraktu do blockchainu. ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.7.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<span style="color:SpringGreen; font-size:2em;">There are no liveness issues in the last 24 hours!</span>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<span style="color:SpringGreen; font-size:2em;">Za posledních 24 hodin nebyly žádné problémy s aktivitou. </span>]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -84,6 +102,9 @@
       <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Workbench Troubleshooting]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Řešení potíží se službou Workbench]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

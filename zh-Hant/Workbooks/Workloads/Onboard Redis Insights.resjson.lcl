@@ -15,7 +15,7 @@
           <Str Cat="Text">
             <Val><![CDATA[![Redis logo]5D;(https://raw.githubusercontent.com/acearun/managedsolutions/master/Templates/Logos/redis-logo.jpg)]D;]A;]D;]A;<br/>]D;]A;<br/>]D;]A;We're ready to enable Azure Monitor for Redis to your virtual machine! Choose **Enable monitoring** to start monitoring with the recommended settings.]D;]A;]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[![Redis 標誌]5D;(https://raw.githubusercontent.com/acearun/managedsolutions/master/Templates/Logos/redis-logo.jpg)]D;]A;]D;]A;<br/>]D;]A;<br/>]D;]A;已準備好在您的虛擬機器上啟用適用於 Redis 的 Azure 監視器! 選擇 [啟用監視]5D;**** 以使用建議的設定開始監視。]D;]A;]]></Val>
+              <Val><![CDATA[![Redis 標誌]5D;(https://raw.githubusercontent.com/acearun/managedsolutions/master/Templates/Logos/redis-logo.jpg)]D;]A;]D;]A;<br/>]D;]A;<br/>]D;]A;已準備好在您的虛擬機器上啟用 Azure Monitor for Redis! 選擇 [啟用監視]5D;**** 以使用建議的設定開始監視。]D;]A;]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
@@ -24,7 +24,7 @@
           <Str Cat="Text">
             <Val><![CDATA[Enable Azure Monitor for Redis]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[啟用適用於 Redis 的 Azure 監視器]]></Val>
+              <Val><![CDATA[啟用 Azure Monitor for Redis]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
@@ -73,7 +73,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Redis is an open source, in-memory data structure store that has rapidly gained popularity from developers. Redis is known for its fast performance and niche as a system that serves as both a store and cache. Redis functions most commonly as a key-value database, but has also gain prominence as a powerful NoSQL database.]A;]A;Azure Monitor for Redis combines all the important information you need to manage your Redis servers. Azure Monitor for Redis highlights important performance metrics to ensure your Redis server is running at optimal levels. Make configuration a breeze with templates, automated alerts and customizable actions.]A;]A;]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Redis 是開放原始碼記憶體內部資料結構存放區，已在開發人員間迅速累積熱門程度。Redis 因其快捷之效能及能夠同時作為儲存體和快取的系統而為人所知。Redis 函式最常做為索引鍵/值資料庫，但當作為NoSQL 資料庫時其功能強大的表現依然不遜色。]A;]A;適用於 Redis 的 Azure 監視器會合併所有您管理 Redis 伺服器所需的重要資訊。適用於 Redis 的 Azure 監視器會強調重要的效能計量，以確保您的 Redis 伺服器能以最佳狀態執行。使用範本、自動化警示及可自訂的動作，將設定變為小事一樁。]A;]A;]]></Val>
+            <Val><![CDATA[Redis 是開放原始碼、記憶體內部的資料結構存放區，在短時間內就獲得眾多開發人員青睞。Redis 最知名的是高速的效能，而且是很適合同時擔任存放區和快取的系統。Redis 最常當成索引鍵/值資料庫使用，但也因為能成為強大的 NoSQL 資料庫而受矚目。]A;]A;Azure Monitor for Redis 結合了您管理 Redis 伺服器所需的一切重要資訊。Azure Monitor for Redis 會強調重要的效能計量，以確保您的 Redis 伺服器能以最佳狀態執行。使用範本、自動化警示及可自訂的動作，即可輕鬆完成設定。]A;]A;]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -82,7 +82,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Configuring a Redis password enables secure access to Redis. This can be done by editing the Redis config file: ]A;]A; ```sudo nano /etc/redis/redis.conf```]A;]A; Uncomment the following directive and save the file: ]A;]A; ```requirepass <password>```]A;]A; Restart redis service :]A;]A; ```sudo systemctl restart redis.service```]A;]A; This same password is needed for configuring the monitoring in the next step.]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[設定 Redis 密碼可讓您安全地存取 Redis。可透過編輯 Redis 設定檔來完成此設定: ]A;]A; ```sudo nano /etc/redis/redis.conf```]A;]A; 取消下列指示詞的註解並儲存檔案: ]A;]A; ```requirepass <password>```]A;]A; Restart redis service :]A;]A; ```sudo systemctl restart redis.service```]A;]A; 需要此相同密碼才能在下一個步驟中設定監視。]]></Val>
+            <Val><![CDATA[設定 Redis 密碼可讓您安全地存取 Redis。可透過編輯 Redis 設定檔來完成此設定: ]A;]A; ```sudo nano /etc/redis/redis.conf```]A;]A; 取消下列指示詞的註解並儲存檔案: ]A;]A; ```requirepass <password>```]A;]A; 重新啟動 Redis 服務:]A;]A; ```sudo systemctl restart redis.service```]A;]A; 在下一個步驟中設定監視時，會需要同一組密碼。]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -91,7 +91,7 @@
         <Str Cat="Text">
           <Val><![CDATA[## Azure Monitor for Redis]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[## 適用於 Redis 的 Azure 監視器]]></Val>
+            <Val><![CDATA[## Azure Monitor for Redis]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -118,7 +118,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Prerequisites]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[先決條件]]></Val>
+            <Val><![CDATA[必要條件]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />

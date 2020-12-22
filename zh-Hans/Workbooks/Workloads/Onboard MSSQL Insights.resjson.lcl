@@ -45,6 +45,9 @@
       <Item ItemId=";items.Overviewgroup.content.items.Configuregroup.content.items.checkconfigvalidity.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Please update the `servers` array in the MSSQL Telegraf config to enable monitoring.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[请更新 MSSQL Telegraf 配置中的“服务器”数组来启用监视。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -60,12 +63,18 @@
       <Item ItemId=";items.Overviewgroup.content.items.Configuregroup.content.items.mysqlsampleconnectionstring.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<br />]D;]A;**Learn about connection strings**]D;]A;]D;]A;Provide one ore more connection strings as a comma seperated collection of strings (within double-quotes):]D;]A;]D;]A;```]D;]A;"Server=sqlserver.database.windows.net;Port=1433;database=mydb;User Id=<user>;Password=<pw>;app name=telegraf;log=1;",]D;]A;"Server=myothersqlserver.database.windows.net;Port=1433;database=mydb3;User Id=<user>;Password=<pw>;app name=telegraf;log=1;"]D;]A;```]D;]A;Or,]D;]A;```]D;]A;"Server=127.0.0.1;Port=1433;database=mydb;User Id=<user>;Password=<pw>;app name=telegraf;log=1;"]D;]A;```]D;]A;]D;]A;]D;]A;See https://github.com/denisenkom/go-mssqldb for detailed connection parameters.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<br />]D;]A;**了解连接字符串**]D;]A;]D;]A;提供一个或多个连接字符串作为字符串的逗号分隔集合(用双引号括起来):]D;]A;]D;]A;```]D;]A;"Server=sqlserver.database.windows.net;Port=1433;database=mydb;User Id=<user>;Password=<pw>;app name=telegraf;log=1;",]D;]A;"Server=myothersqlserver.database.windows.net;Port=1433;database=mydb3;User Id=<user>;Password=<pw>;app name=telegraf;log=1;"]D;]A;```]D;]A;Or,]D;]A;```]D;]A;"Server=127.0.0.1;Port=1433;database=mydb;User Id=<user>;Password=<pw>;app name=telegraf;log=1;"]D;]A;```]D;]A;]D;]A;]D;]A;有关连接参数的详细信息，请访问 https://github.com/denisenkom/go-mssqldb。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overviewgroup.content.items.Configuregroup.content.items.samplemysqlconnectionstring.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Azure Monitor needs access to the health information stored in SQL Server dynamic management view tables. Please provide the *connection string* to allow this access below. More information about the format of connection strings can be found below.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Azure Monitor 需要访问存储在 SQL Server 动态管理视图表中的运行状况信息。请在下面提供*连接字符串*以允许访问。可以在下面找到有关连接字符串格式的详细信息。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -81,12 +90,18 @@
       <Item ItemId=";items.Overviewgroup.content.items.Prerequisitesgroup.content.items.prerequisitesmssqlremote.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[#### Create SQL user accounts]A;You have to create a login on every instance you want to monitor, with following script:]A;]A;```]A;USE master;]A;GO]A;CREATE LOGIN [telegraf]5D; WITH PASSWORD = N'mystrongpassword';]A;GO]A;GRANT VIEW SERVER STATE TO [telegraf]5D;;]A;GO]A;GRANT VIEW ANY DEFINITION TO [telegraf]5D;;]A;GO]A;```]A;]A;For Azure SQL Database, you require the View Database State permission and can create a user with a password directly in the database.]A;]A;```]A;CREATE USER [telegraf]5D; WITH PASSWORD = N'mystrongpassword';]A;GO]A;GRANT VIEW DATABASE STATE TO [telegraf]5D;;]A;GO]A;```]A;]A;#### Firewall and networking rules for SQL Computer]A;Update the Windows and NSG firewall settings to allow the port specified in the MSSQL connection strings in next step for the remote virtual machine's IP address.]A;]A;#### Outbound network settings for the remote virtual machine]A;Verify that the virtual machine has the outbound port as specified in the MSSQL connection strings in the next step.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[#### 创建 SQL 用户帐户]A;必须使用以下脚本在要监视的每个实例上创建登录名:]A;]A;```]A;USE master;]A;GO]A;CREATE LOGIN [telegraf]5D; WITH PASSWORD = N'mystrongpassword';]A;GO]A;GRANT VIEW SERVER STATE TO [telegraf]5D;;]A;GO]A;GRANT VIEW ANY DEFINITION TO [telegraf]5D;;]A;GO]A;```]A;]A;对于 Azure SQL 数据库，需要“查看数据库状态”权限，可以在数据库中直接创建有密码的用户。\```]A;CREATE USER [telegraf]5D; WITH PASSWORD = N'mystrongpassword';]A;GO]A;GRANT VIEW DATABASE STATE TO [telegraf]5D;;]A;GO]A;```]A;]A;#### 用于 SQL 计算机的防火墙和网络规则]A;更新 Windows 和 NSG 防火墙设置，以便将在下一步在 MSSQL 连接字符串中指定的端口用于远程虚拟机的 IP 地址。]A;]A;#### 远程虚拟机的出站网络设置]A;验证虚拟机是否有在下一步在 MSSQL 连接字符串中指定的出站端口。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overviewgroup.content.items.infoText.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Azure Monitor for Microsoft SQL Server]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Azure Monitor for Microsoft SQL Server]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -129,6 +144,9 @@
       <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Onboard MS SQL Insights]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[载入 MS SQL 见解]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

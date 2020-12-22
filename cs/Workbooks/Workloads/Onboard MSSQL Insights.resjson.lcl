@@ -63,6 +63,9 @@
       <Item ItemId=";items.Overviewgroup.content.items.Configuregroup.content.items.mysqlsampleconnectionstring.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<br />]D;]A;**Learn about connection strings**]D;]A;]D;]A;Provide one ore more connection strings as a comma seperated collection of strings (within double-quotes):]D;]A;]D;]A;```]D;]A;"Server=sqlserver.database.windows.net;Port=1433;database=mydb;User Id=<user>;Password=<pw>;app name=telegraf;log=1;",]D;]A;"Server=myothersqlserver.database.windows.net;Port=1433;database=mydb3;User Id=<user>;Password=<pw>;app name=telegraf;log=1;"]D;]A;```]D;]A;Or,]D;]A;```]D;]A;"Server=127.0.0.1;Port=1433;database=mydb;User Id=<user>;Password=<pw>;app name=telegraf;log=1;"]D;]A;```]D;]A;]D;]A;]D;]A;See https://github.com/denisenkom/go-mssqldb for detailed connection parameters.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<br />]D;]A;**Další informace o připojovacích řetězcích**]D;]A;]D;]A;Uveďte minimálně jeden připojovací řetězec v podobě řetězců oddělených čárkami (ve dvojitých uvozovkách):]D;]A;]D;]A;```]D;]A;"Server=sqlserver.database.windows.net;Port=1433;database=mydb;User Id=<user>;Password=<pw>;app name=telegraf;log=1;",]D;]A;"Server=myothersqlserver.database.windows.net;Port=1433;database=mydb3;User Id=<user>;Password=<pw>;app name=telegraf;log=1;"]D;]A;```]D;]A;Nebo]D;]A;```]D;]A;"Server=127.0.0.1;Port=1433;database=mydb;User Id=<user>;Password=<pw>;app name=telegraf;log=1;"]D;]A;```]D;]A;]D;]A;]D;]A;Podrobné informace o parametrech připojení najdete tady: https://github.com/denisenkom/go-mssqldb.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -87,6 +90,9 @@
       <Item ItemId=";items.Overviewgroup.content.items.Prerequisitesgroup.content.items.prerequisitesmssqlremote.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[#### Create SQL user accounts]A;You have to create a login on every instance you want to monitor, with following script:]A;]A;```]A;USE master;]A;GO]A;CREATE LOGIN [telegraf]5D; WITH PASSWORD = N'mystrongpassword';]A;GO]A;GRANT VIEW SERVER STATE TO [telegraf]5D;;]A;GO]A;GRANT VIEW ANY DEFINITION TO [telegraf]5D;;]A;GO]A;```]A;]A;For Azure SQL Database, you require the View Database State permission and can create a user with a password directly in the database.]A;]A;```]A;CREATE USER [telegraf]5D; WITH PASSWORD = N'mystrongpassword';]A;GO]A;GRANT VIEW DATABASE STATE TO [telegraf]5D;;]A;GO]A;```]A;]A;#### Firewall and networking rules for SQL Computer]A;Update the Windows and NSG firewall settings to allow the port specified in the MSSQL connection strings in next step for the remote virtual machine's IP address.]A;]A;#### Outbound network settings for the remote virtual machine]A;Verify that the virtual machine has the outbound port as specified in the MSSQL connection strings in the next step.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[#### Vytvoření uživatelských účtů SQL]A;Musíte vytvořit přihlašovací údaje pro každou instanci, kterou chcete monitorovat, a to pomocí následujícího skriptu:]A;]A;```]A;USE master;]A;GO]A;CREATE LOGIN [telegraf]5D; WITH PASSWORD = N'mystrongpassword';]A;GO]A;GRANT VIEW SERVER STATE TO [telegraf]5D;;]A;GO]A;GRANT VIEW ANY DEFINITION TO [telegraf]5D;;]A;GO]A;```]A;]A;Pro Azure SQL Database vyžadujete oprávnění k zobrazení stavu databáze a můžete vytvořit uživatele s heslem přímo v databázi.]A;]A;```]A;CREATE USER [telegraf]5D; WITH PASSWORD = N'mystrongpassword';]A;GO]A;GRANT VIEW DATABASE STATE TO [telegraf]5D;;]A;GO]A;```]A;]A;#### Pravidla pro firewall a práci v síti pro počítač SQL]A;Aktualizujte nastavení firewallu v systému Windows ve skupině zabezpečení sítě (NSG) tak, aby byl v dalším kroku pro IP adresu vzdáleného virtuálního počítače povolen port uvedený v připojovacích řetězcích MSSQL.]A;]A;#### Nastavení odchozích síťových připojení pro vzdálený virtuální počítač]A;Ověřte, že má virtuální počítač odchozí port, který je v dalším kroku zadaný v připojovacích řetězcích MSSQL.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -138,6 +144,9 @@
       <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Onboard MS SQL Insights]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[MS SQL (onboarding) – přehledy]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

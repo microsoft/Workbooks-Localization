@@ -15,7 +15,7 @@
           <Str Cat="Text">
             <Val><![CDATA[![Nginx logo]5D;(https://raw.githubusercontent.com/acearun/managedsolutions/master/Templates/Logos/nginx-logo.jpg)]D;]A;]D;]A;<br/>]D;]A;<br/>]D;]A;We're ready to enable Azure Monitor for NGINX to your virtual machine! Choose **Enable monitoring** to start monitoring with the recommended settings.]D;]A;]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[![Nginx 標誌]5D;(https://raw.githubusercontent.com/acearun/managedsolutions/master/Templates/Logos/nginx-logo.jpg)]D;]A;]D;]A;<br/>]D;]A;<br/>]D;]A;已準備好在您的虛擬機器上啟用適用於 NGINX 的 Azure 監視器! 選擇 [啟用監視]5D;**** 以使用建議的設定開始監視。]D;]A;]]></Val>
+              <Val><![CDATA[![Nginx 標誌]5D;(https://raw.githubusercontent.com/acearun/managedsolutions/master/Templates/Logos/nginx-logo.jpg)]D;]A;]D;]A;<br/>]D;]A;<br/>]D;]A;已準備好在您的虛擬機器上啟用 Azure Monitor for NGINX! 選擇 [啟用監視]5D;**** 以使用建議的設定開始監視。]D;]A;]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
@@ -24,7 +24,7 @@
           <Str Cat="Text">
             <Val><![CDATA[Enable Azure Monitor for NGINX]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[啟用適用於 NGINX 的 Azure 監視器]]></Val>
+              <Val><![CDATA[啟用 Azure Monitor for NGINX]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
@@ -46,7 +46,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Specify stub_status URI matching this form: ]D;]A;]D;]A;```]D;]A;[http://]5D;@address[:port]5D;/nginx_status]D;]A;```]D;]A;For instance,]D;]A;```]D;]A;http://127.0.0.1:9090/nginx_status]D;]A;```]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[指定符合此表單的 stub_status URL: ]D;]A;]D;]A;```]D;]A;[http://]5D;@address[:port]5D;/nginx_status]D;]A;```]D;]A;例如，]D;]A;```]D;]A;http://127.0.0.1:9090/nginx_status]D;]A;```]]></Val>
+            <Val><![CDATA[指定符合此表單的 stub_status URI: ]D;]A;]D;]A;```]D;]A;[http://]5D;@address[:port]5D;/nginx_status]D;]A;```]D;]A;例如:]D;]A;```]D;]A;http://127.0.0.1:9090/nginx_status]D;]A;```]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -64,7 +64,7 @@
         <Str Cat="Text">
           <Val><![CDATA[NGINX is a high performance open source software designed for a variety of uses ranging from web serving to load balancing. As one of the fastest web servers, NGINX powers the majority of the top websites. NGINX can serve as a replacement for your physical hardware load balancers and improve the performance of your server, while reducing CPU and RAM consumption.]A;]A;With Azure Monitor for NGINX, you can manage your NGINX cluster while also gaining visibility into your operating system – Windows or Linux. Make configuration a breeze with templates, automated alerts and customizable actions. Spend less time fighting fires by accurately diagnosing real-time and historical load balancer performance issues, and focus on more proactive measures scale outs.]A;]A;]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[NGINX 是高效能的開放原始碼軟體，專門用於從 Web 伺服器到負載平衡的各種使用範圍。作為最快速的 Web 伺服器之一，NGINX 支援大多數熱門網站。NGINX 可取代您的實體硬體負載平衡器，並改進伺服器效能，同時減少 CPU 和 RAM 使用量。]A;]A;透過適用於 NGINX 的 Azure 監視器，您可以一邊管理 NGINX 叢集，一邊查看作業系統 - Windows 或 Linux。使用範本、自動化警示及可自訂的動作，將設定變為小事一樁。您可以精準地診斷即時及歷史資料庫效能問題，以節省寶貴的作業時間，並專注於進行微調查詢等更加主動的測量。]A;]A;]]></Val>
+            <Val><![CDATA[NGINX 是高效能的開放原始碼軟體，適用於 Web 服務及負載平衡等多種用途。NGINX 是最快的網頁伺服器之一，為大多數的熱門網站提供技術。NGINX 可取代您的實體硬體負載平衡器，並提升伺服器效能，同時減少 CPU 和 RAM 耗用量。]A;]A;透過 Azure Monitor for NGINX，您可以一邊管理 NGINX 叢集，一邊深入了解作業系統 (Windows 或 Linux)。使用範本、自動化警示及可自訂的動作，即可輕鬆完成設定。您可以精準地診斷即時及歷史資料庫效能問題，以節省處理難題的時間，專注於進行更主動的措施，如微調查詢。]A;]A;]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -73,7 +73,7 @@
         <Str Cat="Text">
           <Val><![CDATA[NGINX needs to be configured with http_stub_status_module to enable collection of usage metrics. This can be done by enabling sub_status in the local config file (e.g. `/etc/nginx/conf.d/status.conf`)]A;```]A;server { ]A;    ]A;    listen 127.0.0.1:9090;]A;    location /nginx_status {]A;        stub_status on;]A;]A;        access_log off;]A;        allow 127.0.0.1;]A;        deny all;]A;    }]A;}]A;```]A;]A;]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[必須使用 http_stub_status_module 設定 NGINX，以啟用使用計量的集合。可透過啟用本機設定檔中的 sub_status 完成此設定 (例如 `/etc/nginx/conf.d/status.conf`)]A;```]A;server { ]A;    ]A;    listen 127.0.0.1:9090;]A;    location /nginx_status {]A;        stub_status on;]A;]A;        access_log off;]A;        allow 127.0.0.1;]A;        deny all;]A;    }]A;}]A;```]A;]A;]]></Val>
+            <Val><![CDATA[必須使用 http_stub_status_module 設定 NGINX，以允許收集使用計量。可透過啟用本機設定檔中的 sub_status 完成此設定 (例如 `/etc/nginx/conf.d/status.conf`)]A;```]A;server { ]A;    ]A;    listen 127.0.0.1:9090;]A;    location /nginx_status {]A;        stub_status on;]A;]A;        access_log off;]A;        allow 127.0.0.1;]A;        deny all;]A;    }]A;}]A;```]A;]A;]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -82,7 +82,7 @@
         <Str Cat="Text">
           <Val><![CDATA[## Azure Monitor for NGINX]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[## 適用於 NGINX 的 Azure 監視器]]></Val>
+            <Val><![CDATA[## Azure Monitor for NGINX]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -109,7 +109,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Prerequisites]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[先決條件]]></Val>
+            <Val><![CDATA[必要條件]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />

@@ -125,6 +125,9 @@
         <Item ItemId=";(...) b94f6bb140f573c9300e7c.description" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[The time interval in which data is sampled in the given time range. The anomaly score is calculated only on the last interval's data.]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Časový interval, ve kterém se v daném časovém rozsahu vzorkují data. Skóre anomálií se vypočítá jen u dat posledního intervalu.]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -200,12 +203,18 @@
         <Item ItemId=";(...) 9458b93.description" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Select the last log recived threshold, to filter the table below]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Vyberte prahovou hodnotu posledního přijatého protokolu pro filtrování níže uvedené tabulky.]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) 9458b93.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Last log received threshold]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Prahová hodnota posledního přijatého protokolu]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -275,6 +284,9 @@
         <Item ItemId=";(...) ntry.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Size per entry]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Velikost na položku]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -390,12 +402,18 @@
       <Item ItemId=";items.ANALYTICSGROUP.content.items.text9.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Help]D;]A;Select **subscription/workspace/timerange** from the drop downs.<br/>The workbook will fetch the Alert rules accordingly.]D;]A;Time range filters the time for all the compnents.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Nápověda]D;]A;V rozevíracích seznamech vyberte **předplatné / pracovní prostor / časový rozsah**.<br/>Sešit podle toho načte pravidla upozornění.]D;]A;Časový rozsah filtruje čas pro všechny komponenty.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Datagroup.content.items.DatacollectionanomaliesCopy.content.items.Tablesdetectedanomalies.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Tables detected anomalies]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Anomálie detekovaných tabulek]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -411,6 +429,9 @@
       <Item ItemId=";items.Datagroup.content.items.DatacollectionanomaliesCopy.content.items.text10Copy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[In this section you will be able to detect anomalies in the data collection process. ]D;]A;Each tab presents anomalies for a particular table.]D;]A;The anomlies are calculated using the **series_decompose_anomalies()** function that returns an **anomaly score**. [Learn more about this function]5D;(https://docs.microsoft.com/azure/data-explorer/kusto/query/series-decompose-anomaliesfunction).]D;]A;]D;]A;##### Parameters:]D;]A;- **AnomaliesTimeRange**: This time picker applies only to the data collection anomalies view.]D;]A;- **SampleInterval**: The time interval in which data is sampled in the given time range. The anomaly score is calculated only on the last interval's data.]D;]A;- **PositiveAlertThreshold**: This value defines the positive **anomaly score** threshold. Accepts decimal values.]D;]A;- **NegativeAlertThreshold**: This value defines the negative **anomaly score** threshold. Accepts decimal values.]D;]A;]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[V této části budete moci detekovat anomálie v procesu shromažďování dat. ]D;]A;Každá karta představuje anomálie pro konkrétní tabulku.]D;]A;Anomálie se vypočítávají pomocí funkce **series_decompose_anomalies()**, která vrací **skóre anomálií**. [Další informace o této funkci]5D;(https://docs.microsoft.com/azure/data-explorer/kusto/query/series-decompose-anomaliesfunction).]D;]A;]D;]A;### Parametry:]D;]A;- **AnomaliesTimeRange**: Tento ovládací prvek pro výběr času se vztahuje pouze na zobrazení anomálií shromažďování dat.]D;]A;- **SampleInterval**: Časový interval, ve kterém jsou data vzorkována v daném časovém rozsahu. Skóre anomálií se vypočítává pouze na základě dat z posledního intervalu.]D;]A;- **PositiveAlertThreshold**: Tato hodnota definuje kladnou prahovou hodnotu **skóre anomálií**. Platné jsou desetinné hodnoty.]D;]A;- **NegativeAlertThreshold**: Tato hodnota definuje zápornou prahovou hodnotu **skóre anomálií**. Platné jsou desetinné hodnoty.]D;]A;]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -477,6 +498,9 @@
       <Item ItemId=";items.Datagroup.content.items.groupworkspaceInfo.content.items.text8.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Columns explained]D;]A;- **Table name**: the name of the Log Analytics workspace table. The list of tables is updated dynamically.]D;]A;- **Table size**: the total size of the data stored in the table for the specified time range.]D;]A;- **Table entries**: the total number of events stored in the table for the specified time range. ]D;]A;- **Size per entry**: Average size of each event.]D;]A;- **Is billable**: indicates if the table is billable or free (True/False).]D;]A;]D;]A;Select a table name from the list in order to filter the charts below.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Vysvětlení sloupců]D;]A;- **Název tabulky**: Název tabulky pracovního prostoru Log Analytics. Seznam tabulek se dynamicky aktualizuje.]D;]A;- **Velikost tabulky**: Celková velikost dat uložených v tabulce pro zadaný časový rozsah]D;]A;- **Položky tabulky**: Celkový počet událostí uložených v tabulce pro zadaný časový rozsah ]D;]A;- **Velikost na položku**: Průměrná velikost každé události]D;]A;- **Je fakturovatelné**: Označuje, jestli je tabulka fakturovatelná nebo jestli je zdarma (True/False).]D;]A;]D;]A;Výběrem názvu tabulky ze seznamu si můžete níže uvedené grafy vyfiltrovat.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -546,6 +570,9 @@
       <Item ItemId=";items.PALYBOOKSGROUP.content.items.Diagnosticssettingshelp.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[##### When choosing a workspace you should choose the worksapce you set the "diagnostics settings" to send your logs to. In some cases it could be a different workspace than your Azure Sentinel workspace. ]D;]A;##### When moving between the "Overview" tab to "Activity" or "Billable Info" tab for the first time, press the "Refresh" button to get results]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[##### Při volbě pracovního prostoru byste měli zvolit pracovní prostor, do kterého se odesílají protokoly, jak je nakonfigurováno v nastavení diagnostiky. V některých případech to může být jiný pracovní prostor než váš pracovní prostor Azure Sentinel. ]D;]A;##### Při prvním přechodu z karty Přehled na kartu Aktivita nebo Fakturovatelné informace získáte výsledky stisknutím tlačítka Aktualizovat.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -561,6 +588,9 @@
       <Item ItemId=";items.PALYBOOKSGROUP.content.items.OverviewActivities.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[#### In this section you can view Logic Apps activities by Caller or Logic App.]D;]A;#### Data is queried from "AzureActivity" table. ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[#### V této části můžete zobrazit aktivity aplikací logiky podle volajícího nebo podle aplikace logiky.]D;]A;#### Na data se dotazuje z tabulky AzureActivity. ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

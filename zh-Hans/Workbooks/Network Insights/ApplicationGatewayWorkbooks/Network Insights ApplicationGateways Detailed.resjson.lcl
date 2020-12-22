@@ -14,6 +14,9 @@
         <Item ItemId=";(...) abel" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Application Gateway Total Time (Average)]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[应用程序网关总时间(平均)]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -23,6 +26,9 @@
         <Item ItemId=";(...) meline.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Application Gateway Total Time Timeline]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[“应用程序网关总时间”时间线]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -32,6 +38,9 @@
         <Item ItemId=";(...) abel" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Backend Last Byte Response Time (Average)]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[后端最后一个字节响应时间(平均)]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -41,6 +50,9 @@
         <Item ItemId=";(...) meline.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Backend Last Byte Response Time Timeline]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[“后端最后一个字节响应时间”时间线]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -276,204 +288,306 @@
       <Item ItemId=";items.text17.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Throughput]D;]A;*Throughput* is average Megabits/sec processed by the Application Gateway.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### 吞吐量]D;]A;*“吞吐量”*是指应用程序网关每秒处理的平均兆位(Mbps)。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text17Copy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### CPU Utilization]D;]A;Displays the utilization of the CPUs allocated to the Application Gateway. Under normal conditions, CPU usage should not regularly exceed 90%, as this may cause latency in the websites hosted behind the Application Gateway and disrupt the client experience. You can indirectly control or improve CPU utilization by modifying the configuration of the Application Gateway by increasing the instance count or by moving to a larger SKU size, or doing both.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### CPU 利用率]D;]A;显示分配给应用程序网关的 CPU 的利用率。在正常情况下，CPU 利用率不得经常超过 90%，因为这可能会导致在应用程序网关后面托管的网站出现延迟，并破坏客户端体验。可以通过增加实例计数或移动到更大的 SKU 大小(或同时进行这两种操作)来修改应用程序网关配置，从而间接地控制或提高 CPU 利用率。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text17CopyCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Capacity Units]D;]A;The capacity units consumed by your Application Gateway is determined by 3 dimensions: *compute unit*, *current connections*, and *throughput*. Each capacity unit is composed of at most: 1 *compute unit*, or 2500 *current connections*, or 2.22-Mbps *throughput*. Check the value of the 3 metrics below to infer variation in which of the three dimensions led to the changes in *Capacity Units*]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### 容量单位数]D;]A;应用程序网关使用的容量单位数由 3 个维度决定: *计算单位数*、*当前连接数*和*吞吐量*。每个容量单位最多包括: 1 个*计算单位*、2500 个*当前连接数*或 2.22-Mbps *吞吐量*。请查看以下 3 个指标的值，以推断三个维度中哪一个的变化导致了*“容量单位数”*的变化]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text17CopyCopyCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Compute Units]D;]A;*Compute unit* is a measure of processor capacity consumed. Factors affecting compute unit are TLS connections/sec, URL Rewrite computations, and WAF rule processing.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### 计算单位数]D;]A;*“计算单位数”*用于度量所使用的处理器容量。影响计算单位的因素有每秒 TLS 连接数、URL 重写计算和 WAF 规则处理。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text17CopyCopyCopyCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Current connections]D;]A;*Current connections* is a measure of established TCP connections to the application gateway.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### 当前连接数]D;]A;*“当前连接数”*用于度量已建立的与应用程序网关的 TCP 连接数。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text17CopyCopyb.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[#### Received bytes]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[#### 收到的字节数]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text17Copyb.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[#### Sent bytes]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[#### 已发送的字节数]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text1Copy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[#### Application gateway total time vs Backend last byte response time]D;]A;]D;]A;*Application gateway total time* is the interval from the time when Application Gateway receives the first byte of the HTTP request to the time when the last response byte has been sent to the client. This equals the *Backend last byte response time* + the processing time taken by Application Gateway + *Client rtt* (only when the window size of the client TCP request is small relative to the response). Compare the 2 metrics to determine whether the issue is with the Application Gateway or the backend.]D;]A;If the *Application gateway total time* has a spike but the Backend last byte response time is stable, then it can either be a sign of performance bottleneck at the Application Gateway or a bottleneck in the network between the client and Application Gateway (only when the window size of the client TCP request is small relative to the response). ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[####“应用程序网关总时间”与“后端最后一个字节响应时间”]D;]A;]D;]A;*“应用程序网关总时间”*是从应用程序网关收到 HTTP 请求的第一个字节到最后一个响应字节发送到客户端的时间间隔。这等于*“后端最后一个字节响应时间”*+ 应用程序网关所用的处理时间 + *“客户端 rtt”*(仅当客户端 TCP 请求的时段大小相对于响应较小时)。比较这 2 个指标，以确定问题是出在应用程序网关上，还是出在后端上。]D;]A;如果*“应用程序网关总时间”*有峰值，但“后端最后一个字节响应时间”是稳定的，则可能表明应用程序网关存在性能瓶颈，也可能表明客户端与应用程序网关之间的网络存在瓶颈(仅当客户端 TCP 请求的时段大小相对于响应较小时)。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text1CopyCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[#### Backend connect time vs Backend first byte response time vs Backend last byte response time]D;]A;]D;]A;**Backend connect time** is the time spent establishing a connection with the backend application. This includes the network latency as well as the time taken by the backend server’s TCP stack to establish new connections. In case of TLS, it also includes the time spent on handshake.]D;]A;]D;]A;**Backend first byte response time** is the time interval between start of establishing a connection to backend server and receiving the first byte of the response header.This approximates the sum of *Backend connect time*, time taken by the request to reach the backend from Application Gateway, time taken by backend application to respond (the time the server took to generate content, potentially fetch database queries), and the time taken by first byte of the response to reach the Application Gateway from the backend.]D;]A;]D;]A;**Backend last byte response time** is the time interval between start of establishing a connection to backend server and receiving the last byte of the response body. This approximates the sum of *Backend first byte response time* and data transfer time (this number may vary greatly depending on the size of objects requested and the latency of the server network).]D;]A;]D;]A;If there’s a spike in Backend first byte response time trend but the Backend connect time trend is stable, then it can be inferred that the Application gateway to backend latency and the time taken to establish the connection is stable, and the spike is caused due to an increase in the response time of backend application. On the other hand, if the spike in Backend first byte response time is associated with a corresponding spike in Backend connect time, then it can be deduced that either the network between Application Gateway and backend server or the backend server TCP stack has saturated.If you notice a spike in Backend last byte response time but the Backend first byte response time is stable, then it can be deduced that the spike is because of a larger file being requested.]D;]A;]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[####“后端连接时间”与“后端第一个字节响应时间”与“后端最后一个字节响应时间”]D;]A;]D;]A;**“后端连接时间”**是与后端应用程序建立连接所用的时间。这包括网络延迟以及后端服务器的 TCP 堆栈建立新连接所用的时间。对于 TLS，它还包括握手所用的时间。]D;]A;]D;]A;**“后端第一个字节响应时间”**是从与后端服务器建立连接开始到收到响应头的第一个字节的时间间隔。这近似于*“后端连接时间”*、请求从应用程序网关到达后端所用的时间、后端应用程序响应所用的时间(服务器生成内容(可能提取数据库查询)所用的时间)以及响应的第一个字节从后端到达应用程序网关所用的时间的总和。]D;]A;]D;]A;**“后端最后一个字节响应时间”**是从与后端服务器建立连接开始到收到响应正文的最后一个字节的时间间隔。这近似于*“后端第一个字节响应时间”*和数据传输时间(此数值可能会因请求获取的对象的大小和服务器网络延迟而有很大差异)的总和。]D;]A;]D;]A;如果“后端第一个字节响应时间”趋势中有峰值，但“后端连接时间”趋势是稳定的，则可以推断从应用程序网关到后端的延迟和建立连接所用的时间是稳定的，峰值是由于后端应用程序响应时间增加引起的。反之，如果“后端第一个字节响应时间”的峰值与“后端连接时间”中的相应峰值关联，则可以推断应用程序网关和后端服务器之间的网络或后端服务器 TCP 堆栈已饱和。如果注意到“后端最后一个字节响应时间”有峰值，但“后端第一个字节响应时间”是稳定的，则可以推断峰值是由于请求获取的文件较大引起的。]D;]A;]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text1CopyCopyCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Client errors vs Server errors]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### 客户端错误数与服务器错误数]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text1CopyCopyCopyCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Total requests]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### 请求总数]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text1CopyCopyCopyCopyCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Failed requests]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### 失败请求数]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text1CopyCopyCopyCopyCopyCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Response status 3xx]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### 响应状态 3xx]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text1CopyCopyCopyCopyCopyCopyCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Response status 4xx]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### 响应状态 4xx]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text1CopyCopyCopyCopyCopyCopyCopyCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Backend response status 3xx]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### 后端响应状态 3xx]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text1CopyCopyCopyCopyCopyCopyCopyCopyCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### TLS Version 1.2]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### TLS 版本 1.2]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text1CopyCopyCopyCopyCopyCopyCopyCopyCopyCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Backend response status 4xx]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### 后端响应状态 4xx]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text1CopyCopyCopyCopyCopyCopyCopyCopyCopyCopyCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Backend response status 5xx]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### 后端响应状态 5xx]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text1CopyCopyCopyCopyCopyCopyCopyCopyCopyCopyCopyCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Estimated Billed Capacity units]D;]A;With the v2 SKU, the pricing model is driven by consumption. Capacity units measure consumption-based cost that is charged in addition to the fixed cost. Estimated Billed Capacity units indicates the number of capacity units using which the billing is estimated. This is calculated as the greater value between *Current capacity units* (capacity units required to load balance the traffic) and *Fixed billable capacity units* (minimum capacity units kept provisioned).]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### 估计计费容量单位数]D;]A;在使用 v2 SKU 时，定价模型是由使用量驱动的。“容量单位数”度量的是在固定成本之外收取的基于使用量的成本。“估计计费容量单位数”表示估计计费所使用的容量单位数。这是以*“当前容量单位数”*(对流量进行负载均衡所需的容量单位数)和*“固定可计费容量单位数”*(维持预配的最小容量单位数)之间的较大值计算的。]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text1CopyCopyCopyCopyCopyCopyCopyCopyCopyCopyCopyCopyCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Current capacity units]D;]A;Count of capacity units consumed to load balance the traffic. There are three determinants to capacity unit - *compute units*, *current connections* and *throughput*. Each capacity unit is composed of at most: 1 *compute unit*, or 2500 *current connections*, or 2.22-Mbps *throughput*.]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### 当前容量单位数]D;]A;用于对流量进行负载均衡的容量单位的计数。容量单位有三个决定因素，即*“计算单位”*、*“当前连接数”*和*“吞吐量”*。每个容量单位最多包括: 1 个*计算单位*、2500 个*当前连接数*或 2.22-Mbps *吞吐量*。]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text1CopyCopyCopyCopyCopyCopyCopyCopyCopyCopyCopyCopyCopyCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Fixed Billable Capacity Units]D;]A;The minimum number of capacity units kept provisioned as per the *Minimum scale units* setting (one instance translates to 10 capacity units) in the Application Gateway configuration.]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### 固定可计费容量单位数]D;]A;在应用程序网关配置中，根据*“最小缩放单元数”*设置(一个实例转换为 10 个容量单位)预配的最小容量单位数。]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text1CopyCopyCopyCopyCopyCopyCopyCopyb.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### TLS Version 1.1]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### TLS 版本 1.1]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text1CopyCopyCopyCopyCopyCopyCopyCopyc.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Response status 5xx]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### 响应状态 5xx]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text1CopyCopyCopyCopyCopyCopyCopyb.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Top User-agents]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### 排名靠前的用户代理]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text1CopyCopyCopyCopyCopyCopyCopyc.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Unhealthy host count]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### 运行不正常的主机计数]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text1CopyCopyCopyCopyCopyCopyCopyd.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### TLS version 1.0]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### TLS 版本 1.0]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text1CopyCopyCopyCopyCopyCopyCopyf.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Backend response status 2xx]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### 后端响应状态 2xx]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text1CopyCopyCopyCopyCopyCopyb.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Non-TLS requests]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### 非 TLS 请求数]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text1CopyCopyCopyCopyCopyCopyc.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Top URIs]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### 排名靠前的 URI]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text1CopyCopyCopyCopyCopyCopye.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Healthy host count]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### 正常主机计数]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text1CopyCopyCopyCopyCopyb.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Response status 2xx]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### 响应状态 2xx]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text1CopyCopyCopyCopyCopyc.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Server Failures by URI]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### 服务器失败数(按 URI)]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text1CopyCopyCopyCopyb.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Errors by user agent]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### 错误数(按用户代理)]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text65.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<h6></h6>]D;]A;]D;]A;	v1 SKU of Application Gateway does not support latency metrics.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<h6></h6>]D;]A;]D;]A;	v1 应用程序网关的 SKU 不支持延迟指标。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -525,6 +639,9 @@
       <Item ItemId=";items.text77.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<h6></h6>]D;]A;]D;]A;	v1 SKU of Application Gateway does not support billing metrics.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<h6></h6>]D;]A;]D;]A;	v1 应用程序网关的 SKU 不支持计费指标。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

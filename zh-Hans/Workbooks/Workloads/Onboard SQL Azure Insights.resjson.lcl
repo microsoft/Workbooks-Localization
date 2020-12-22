@@ -14,6 +14,9 @@
         <Item ItemId=";(...) f4b27bfa41ca675a13b98.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Sql Telegraf config]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Sql Telegraf 配置]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -56,6 +59,9 @@
         <Item ItemId=";(...) f453b9043dfee2c8d435e.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Monitoring virtual machine]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[监视虚拟机]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -65,6 +71,9 @@
         <Item ItemId=";(...) d4271bb5b49d442975c84.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Monitoring VM Subs]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[监视 VM 子例程]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -72,18 +81,27 @@
       <Item ItemId=";items.Overviewgroup.content.items.Configuregroup.content.items.checkconfigvalidity.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[]D83D;]DCA1; Add the correct user name and password in the `servers` section of the Telegraf config above.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[]D83D;]DCA1; 在上面 Telegraf 配置的“服务器”部分中，添加正确的用户名和密码。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overviewgroup.content.items.Configuregroup.content.items.sqluserinformation.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[#### Choose monitoring virtual machine]D;]A;Azure Monitor will use this virtual machine to remotely collect health and performance metrics from your SQL databases.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[#### 选择监视虚拟机]D;]A;Azure Monitor 将使用此虚拟机从 SQL 数据库远程收集运行状况和性能指标。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overviewgroup.content.items.Configuregroup.content.items.text4.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[#### Setup SQL database monitoring]D;]A;    ]D;]A;SQL Server monitoring data collection is specified by Telegraf configuration below. Update the `servers` section with the correct connection strings to access your SQL databases. You can also customize your data collection settings using the config. Learn about [SQL Telegraf settings]5D;(https://github.com/influxdata/telegraf/tree/master/plugins/inputs/sqlserver#configuration).]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[#### 设置 SQL 数据库监视]D;]A;    ]D;]A;SQL Server 监视数据收集由以下 Telegraf 配置指定。使用正确的连接字符串来更新“服务器”部分，以访问 SQL 数据库。还可以使用配置来自定义数据收集设置。了解 [SQL Telegraf 设置]5D;(https://github.com/influxdata/telegraf/tree/master/plugins/inputs/sqlserver#configuration)。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -99,12 +117,18 @@
       <Item ItemId=";items.Overviewgroup.content.items.Prerequisitesgroup.content.items.prerequisitessqlazureremote.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[#### Create SQL user accounts]A;You have to create a login on every instance you want to monitor, with following script:]A;]A;```]A;CREATE USER [telegraf]5D; WITH PASSWORD = N'mystrongpassword';]A;GO]A;GRANT VIEW DATABASE STATE TO [telegraf]5D;;]A;GO]A;```]A;]A;#### Firewall rules for SQL database]A;Update firewall rules to allow the remote monitoring virtual machine to access the SQL Server instance.]A;]A;#### Outbound network settings for the remote virtual machine]A;Verify that the virtual machine has the outbound port as specified in the Sql Telegraf config in the next step.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[#### 创建 SQL 用户帐户]A;必须使用以下脚本在要监视的每个实例上创建登录名:]A;]A;```]A;nCREATE USER [telegraf]5D; WITH PASSWORD = N'mystrongpassword';]A;GO]A;GRANT VIEW DATABASE STATE TO [telegraf]5D;;]A;GO]A;```]A;]A;#### 用于 SQL 数据库的防火墙规则]A;更新防火墙规则，以允许远程监视虚拟机访问 SQL Server 实例。]A;]A;#### 远程虚拟机的出站网络设置]A;验证虚拟机是否有在下一步在 Sql Telegraf 配置中指定的出站端口。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overviewgroup.content.items.overviewinfologo.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Azure Monitor for Microsoft SQL Azure]D;]A;<br />]D;]A;]D;]A;![SQL logo]5D;(https://raw.githubusercontent.com/acearun/managedsolutions/master/Templates/Logos/sql-azure-logo.jpg)]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Azure Monitor for Microsoft SQL Azure]D;]A;<br />]D;]A;]D;]A;![SQL 徽标]5D;(https://raw.githubusercontent.com/acearun/managedsolutions/master/Templates/Logos/sql-azure-logo.jpg)]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -147,6 +171,9 @@
       <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Onboard SQL Azure Insights]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[载入 SQL Azure 见解]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

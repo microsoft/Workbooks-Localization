@@ -23,6 +23,9 @@
         <Item ItemId=";(...) RunContext.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Enable Azure Monitor for MySQL]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Aktivera Azure Monitor för MySQL]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -32,6 +35,9 @@
         <Item ItemId=";(...) 74e29a0c76eb5b032ef6a.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[MySQL Telegraf config]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[MySQL Telegraf-konfiguration]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -39,30 +45,45 @@
       <Item ItemId=";items.Overviewgroup.content.items.Configuregroup.content.items.ServerUriSample.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Specify server using a URL matching this form: ]D;]A;]D;]A;```]D;]A;user:password@tcp(127.0.0.1:3306)/]D;]A;```]D;]A;For instance,]D;]A;```]D;]A;telegraf:password@tcp(127.0.0.1:3306)/]D;]A;```]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Ange servern med en URL som matchar det här formuläret: ]D;]A;]D;]A;```]D;]A;user:password@tcp(127.0.0.1:3306)/]D;]A;```]D;]A;For instance,]D;]A;```]D;]A;telegraf:password@tcp(127.0.0.1:3306)/]D;]A;```]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overviewgroup.content.items.Configuregroup.content.items.checkconfigvalidity.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[]D83D;]DCA1; Please update the `servers` array in the MySQL Telegraf config to enable monitoring.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[]D83D;]DCA1; Uppdatera matrisen Servrar i MySQL-konfigurationen för att aktivera övervakning.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overviewgroup.content.items.Configuregroup.content.items.enablemysqlmonitoringlink.content.links.0.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Enable MySQL monitoring]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Aktivera MySQL-övervakning]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overviewgroup.content.items.Overviewgroup.content.items.MySQLInformation.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[MySQL is the world's most popular Open Source SQL database management system. MySQL is highly scalable and can be operated from single desktops to clusters of machines. MySQL also offers hallmark reliability and availability features from master/slave replication configurations and specialized failover clusters. ]A;]A;With Azure Monitor for MySQL you can manage your MySQL servers with ease. With insights on performance, networking, and InnoDB, Azure Monitor for MySQL summarizes all the important metrics to keep your MySQL server up and running. Make configuration a breeze with templates, automated alerts and customizable actions.]A;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[MySQL är världens mest populära hanteringssystem för SQL-databas med öppen källkod. MySQL är mycket skalbart och kan köras från enkla skrivbordsdatorer till klusterdatorer. MySQL erbjuder även Hallmarks tillförlitlighets- och tillgänglighetsfunktioner från konfigurationer för överordnad/slavreplikering och specialiserade redundanskluster. ]A;]A;Med Azure Monitor for MySQL kan du hantera dina MySQL-servrar utan problem. Med insikter om prestanda, nätverk och InnoDB, sammanfattar Azure Monitor for MySQL alla viktiga mått för att hålla din MySQL-server igång. Gör konfigurationen enkel med mallar, automatiska aviseringar och anpassningsbara åtgärder.]A;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overviewgroup.content.items.Prerequisitesgroup.content.items.prerequisitesmysql.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Create a MySQL user with access to the monitoring tables:]A;]A;```]A;CREATE USER 'telegraf'@'localhost' IDENTIFIED BY 'password';]A;]A;GRANT PROCESS ON *.* TO 'telegraf'@'localhost' REQUIRE NONE WITH ]A;  MAX_QUERIES_PER_HOUR 0 MAX_CONNECTIONS_PER_HOUR 0 ]A;  MAX_UPDATES_PER_HOUR 0 MAX_USER_CONNECTIONS 0;]A;  ]A;GRANT REPLICATION CLIENT ON *.* TO 'telegraf'@'localhost';]A;GRANT SELECT ON `cluster\_replication`.* TO 'telegraf'@'localhost';]A;GRANT SELECT ON `information\_schema`.* TO 'telegraf'@'localhost';]A;GRANT SELECT ON `performance\_schema`.* TO 'telegraf'@'localhost';]A;```]A;For slow queries monitoring enable by setting slow_query_log for your MySQL configuration.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Skapa en MySQL-användare med åtkomst till övervakningstabellerna:]A;]A;```]A;SKAPA ANVÄNDARE telegraf @ localhost SOM IDENTIFIERAS MED lösenord';]A;]A;BEVILJA PROCESS PÅ *.* telegraf @ localhost KRÄVER INGEN MED ]A;  MAX_QUERIES_PER_HOUR 0 MAX_CONNECTIONS_PER_HOUR 0 ]A;  MAX_UPDATES_PER_HOUR 0 MAX_USER_CONNECTIONS 0;]A;  ]A;BEVILJA REPLIKERINGSKLIENT PÅ *.* TILL telegraf@ localhost;]A;BEVILJA VÄLJ PÅ cluster \ _replication. * TILL telegraf @ localhost;]A;BEVILJA VÄLJ PÅ information \ _schema`. * TILL telegraf@ localhost;]A;BEVILJA VÄLJ PÅ prestanda \ _schema. * TILL telegraf@ localhost;]A;```]A;För långsamma frågor aktiverar du övervakning genom att ange slow_query_log för din MySQL-konfiguration.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -114,6 +135,9 @@
       <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Onboard MySQL Insights]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Registrera MySQL-insikter]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
