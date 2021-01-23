@@ -114,39 +114,24 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.OverviewGroup.content.items.AlertsGroup.content.items.AlertDetails.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Severity 1 alert details]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Detalhes de alerta de severidade 1]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.OverviewGroup.content.items.AlertsGroup.content.items.AlertSummary.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[No Alerts in selected timeframe]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Nenhum Alerta no período selecionado]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.OverviewGroup.content.items.AlertsGroup.content.items.AlertSummary.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Alert summary]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Resumo do alerta]]></Val>
-          </Tgt>
+      <Item ItemId=";items.OverviewGroup.content.items.AlertsGroup.content.items.AlertDetails.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+        <Str Cat="Text" UsrLk="true">
+          <Val><![CDATA[Severity {AlertLevel} alert details]]></Val>
+          <Prev Cat="Text">
+            <Val><![CDATA[Severity 1 alert details]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.OverviewGroup.content.items.AlertsGroup.content.items.NewAlertsTitle.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[**<span style="color:red">{AlertsCount} new Severity 1 alerts</span>** in {TimeRange:label}]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[<span style="color:#E00000;font-weight:bold">{AlertsCount} new severity {AlertLevel} alerts</span> in {TimeRange:label}]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[**<span style="color:red">{AlertsCount} novos alertas de Severidade 1</span>** em {TimeRange:label}]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[**<span style="color:red">{AlertsCount} new Severity 1 alerts</span>** in {TimeRange:label}]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -188,7 +173,7 @@
       </Item>
       <Item ItemId=";items.OverviewGroup.content.items.NoNewAlertsTitle.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[<span style="color:green">No new Severity 1 alerts</span> in {TimeRange:label}]]></Val>
+          <Val><![CDATA[<span style="color:#006100;font-weight:bold">No new Severity {AlertLevel} alerts</span> in {TimeRange:label}]]></Val>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -431,15 +416,6 @@
           <Val><![CDATA[# Overview]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[# Visão Geral]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.abouttext.content.json" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[This workbook relies on the following:]D;]A;* Windows Virtual Desktop spring release with WVD Diagnostic Logs enabled]D;]A;* Azure Monitor VMInsights with Map enabled]D;]A;* Azure Monitor Log Analytics workspace, with the performance counter and event log collection as detailed in *[this document]5D;(dummyurl)*.]D;]A;* AAD Diagnostic Logs enabled]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Essa pasta de trabalho conta com o seguinte:]D;]A;* Área de Trabalho Virtual do Windows versão de primavera com Logs de Diagnóstico do WVD habilitados]D;]A;* Azure Monitor VMInsights com o Mapa habilitado]D;]A;* Workspace do Log Analytics do Azure Monitor, com o contador de desempenho e a coleção de logs de eventos conforme detalhado *[neste documento]5D;(dummyurl)*.]D;]A;* Logs de Diagnóstico do AAD habilitados]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
