@@ -11,7 +11,7 @@
       <Disp Icon="Str" Disp="true" LocTbl="false" />
       <Item ItemId=";@items.UserGroup.content.items.UserSelectedGroup.content.items.Activitybrowser.content.items.group2.content.items." ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) query3.content.gridSettings.labelSettings.CorrelationId.label" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) ConnectingByHost.content.gridSettings.labelSettings.CorrelationId.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Attempt and timestamp]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -20,7 +20,7 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
-        <Item ItemId=";(...) query3.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) ConnectingByHost.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[No errors were found for the selected session.]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -29,7 +29,7 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
-        <Item ItemId=";(...) query3.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+        <Item ItemId=";(...) ConnectingByHost.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Connecting to {CorrelationHost}]]></Val>
           </Str>
@@ -195,6 +195,24 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
+      <Item ItemId=";items.UserGroup.content.items.UserSelectedGroup.content.items.ConnectionsByClientAndVersion.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[No connections found for the configured filters.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Er zijn geen verbindingen gevonden voor de geconfigureerde filters.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.UserGroup.content.items.UserSelectedGroup.content.items.ConnectionsByClientAndVersion.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Connections by client and version]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Verbindingen per client en versie]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.UserGroup.content.items.UserSelectedGroup.content.items.ConnectionsbyUser.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No connections detected for this user in the specified time frame.]]></Val>
@@ -207,6 +225,30 @@
       <Item ItemId=";items.UserGroup.content.items.UserSelectedGroup.content.items.ConnectionsbyUser.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Connections over time for {UserName}]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.UserGroup.content.items.UserSelectedGroup.content.items.FeedRefreshesByClientAndVersion.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Feed refreshes by client and version]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Feed vernieuwen per client en versie]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.UserGroup.content.items.UserSelectedGroup.content.items.FeedRefreshesByUser.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[No feed refreshes for this user in the specified time frame.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Er zijn geen invoervernieuwingen voor deze gebruiker in het opgegeven tijdsbestek.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.UserGroup.content.items.UserSelectedGroup.content.items.FeedRefreshesByUser.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Feed refreshes over time for {UserName}]]></Val>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -237,54 +279,12 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.UserGroup.content.items.UserSelectedGroup.content.items.query12.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[No connections found for the configured filters.]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Er zijn geen verbindingen gevonden voor de geconfigureerde filters.]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.UserGroup.content.items.UserSelectedGroup.content.items.query12.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Connections by client and version]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Verbindingen per client en versie]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.UserGroup.content.items.UserSelectedGroup.content.items.query13.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Feed refreshes by client and version]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Feed vernieuwen per client en versie]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.UserGroup.content.items.UserSelectedGroup.content.items.query14.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.UserGroup.content.items.UserSelectedGroup.content.items.TimeToConnectGraph.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Time to connect]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Tijd om verbinding te maken]]></Val>
           </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.UserGroup.content.items.UserSelectedGroup.content.items.query8.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[No feed refreshes for this user in the specified time frame.]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Er zijn geen invoervernieuwingen voor deze gebruiker in het opgegeven tijdsbestek.]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.UserGroup.content.items.UserSelectedGroup.content.items.query8.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Feed refreshes over time for {UserName}]]></Val>
         </Str>
         <Disp Icon="Str" />
       </Item>
