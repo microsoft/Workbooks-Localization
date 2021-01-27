@@ -12,30 +12,45 @@
       <Item ItemId=";items.ExtentsCountGroup.content.items.ExtentSizeHistory.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Top tables by extent size ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Tabele z największym rozmiarem zakresu ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.ExtentsCountGroup.content.items.Extentcounthistory.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Top tables by extent count]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Tabele z najwyższą liczbą zakresów]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.ExtentsCountGroup.content.items.TopTablesbyExtentCount.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Top tables by extent count]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Tabele z najwyższą liczbą zakresów]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.ExtentsCountGroup.content.items.TopTablesbyExtentSize.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Top tables by extent size]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Tabele z największym rozmiarem zakresu]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.ExtentsCountGroup.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Top tables by extents]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Najważniejsze tabele według zakresów]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -51,8 +66,8 @@
       <Item ItemId=";items.OnBoardingMessageGroupTables.content.items.text0.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[This section provides additional monitoring coverage that is based on platform logs (diagnostic logs).</br></br>If you have not activated additional monitoring, you must enable the **Command**, **Query**, **TableDetails**, and **TableUsageStatistics** platform logs and send them to a Log Analytics workspace. [Learn more]5D;(https://docs.microsoft.com/en-us/azure/data-explorer/using-diagnostic-logs?tabs=commands-and-queries#set-up-diagnostic-logs-for-an-azure-data-explorer-cluster)]D;]A;]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[Dodatkowe pokrycie tabel monitorowaniem jest oparte na dziennikach platformy (dziennikach diagnostycznych). </br>Ta karta prezentuje dane telemetryczne tabel w monitorowanych klastrach.</br></br>Aby uaktywnić dodatkowe monitorowanie, musisz włączyć ustawienia diagnostyczne **ADXTableDetails** i **ADXTableUsageStatistics** oraz wysyłać te dane do usługi Log Analytics. [Dowiedz się więcej]5D;(https://docs.microsoft.com/pl-pl/azure/data-explorer/using-diagnostic-logs?tabs=commands-and-queries#set-up-diagnostic-logs-for-an-azure-data-explorer-cluster)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Ta sekcja zawiera dodatkowe informacje o monitorowaniu, oparte na dziennikach platformy (dziennikach diagnostycznych).</br></br>Jeśli nie aktywowano dodatkowego monitorowania, musisz włączyć dzienniki platformy **Command**, **Query**, **TableDetails** i **TableUsageStatistics** oraz wysłać je do obszaru roboczego usługi Log Analytics. [Dowiedz się więcej]5D;(https://docs.microsoft.com/en-us/azure/data-explorer/using-diagnostic-logs?tabs=commands-and-queries#set-up-diagnostic-logs-for-an-azure-data-explorer-cluster)]D;]A;]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Additional monitoring coverage for tables is based on platform logs (diagnostic logs). </br>This tab surfaces table telemetry on your monitored clusters.</br></br>To activate additional monitoring, you must enable the **ADXTableDetails** and **ADXTableUsageStatistics** diagnostic settings and send them to Log Analytics. [Learn more]5D;(https://docs.microsoft.com/en-us/azure/data-explorer/using-diagnostic-logs?tabs=commands-and-queries#set-up-diagnostic-logs-for-an-azure-data-explorer-cluster)]]></Val>
@@ -72,14 +87,17 @@
       <Item ItemId=";items.TableDetailsGoup.content.items.ClusterextentscountHelp.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[]D83D;]DCA1; Total extents above 5 million will  impact performance of your Azure Data Explorer cluster.<BR>]D;]A; Please consider implementing below suggested recommendation to improve performance by reducing extents:]D;]A; + Adjust  [sharding policy ]5D;(https://docs.microsoft.com/azure/kusto/management/shardingpolicy) <svg width="10" viewBox="0 0 16 15" class="" role="presentation" focusable="false" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="FxSymbol0-055" data-type="31"><g><title></title><path d="M14.3 1H10V0h6v6h-1V1.7l-8 8-.7-.7z"></path><path d="M11 8v5a.9.9 0 01-1 1H2a.9.9 0 01-1-1V6a.9.9 0 011-1h6l1-1H2a2 2 0 00-2 2v7a2 2 0 002 2h8a2 2 0 002-2V7z"></path></g></svg>]D;]A; + Adjust  [retention policy ]5D;(https://docs.microsoft.com/azure/data-explorer/kusto/management/retentionpolicy) <svg width="10" viewBox="0 0 16 15" class="" role="presentation" focusable="false" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="FxSymbol0-055" data-type="31"><g><title></title><path d="M14.3 1H10V0h6v6h-1V1.7l-8 8-.7-.7z"></path><path d="M11 8v5a.9.9 0 01-1 1H2a.9.9 0 01-1-1V6a.9.9 0 011-1h6l1-1H2a2 2 0 00-2 2v7a2 2 0 002 2h8a2 2 0 002-2V7z"></path></g></svg>]D;]A; + Adjust  [merge policy ]5D;(https://docs.microsoft.com/azure/kusto/management/mergepolicy) <svg width="10" viewBox="0 0 16 15" class="" role="presentation" focusable="false" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="FxSymbol0-055" data-type="31"><g><title></title><path d="M14.3 1H10V0h6v6h-1V1.7l-8 8-.7-.7z"></path><path d="M11 8v5a.9.9 0 01-1 1H2a.9.9 0 01-1-1V6a.9.9 0 011-1h6l1-1H2a2 2 0 00-2 2v7a2 2 0 002 2h8a2 2 0 002-2V7z"></path></g></svg>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[]D83D;]DCA1; Łączna liczba zakresów powyżej 5 milionów wpłynie na wydajność klastra usługi Azure Data Explorer.<BR>]D;]A; Rozważ wdrożenie poniższych sugerowanych zaleceń w celu poprawy wydajności poprzez zmniejszenie zakresów:]D;]A; + Dostosuj [zasady dzielenia na fragmenty ]5D;(https://docs.microsoft.com/azure/kusto/management/shardingpolicy) <svg width="10" viewBox="0 0 16 15" class="" role="presentation" focusable="false" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="FxSymbol0-055" data-type="31"><g><title></title><path d="M14.3 1H10V0h6v6h-1V1.7l-8 8-.7-.7z"></path><path d="M11 8v5a.9.9 0 01-1 1H2a.9.9 0 01-1-1V6a.9.9 0 011-1h6l1-1H2a2 2 0 00-2 2v7a2 2 0 002 2h8a2 2 0 002-2V7z"></path></g></svg>]D;]A; + Dostosuj [zasady przechowywania ]5D;(https://docs.microsoft.com/azure/data-explorer/kusto/management/retentionpolicy) <svg width="10" viewBox="0 0 16 15" class="" role="presentation" focusable="false" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="FxSymbol0-055" data-type="31"><g><title></title><path d="M14.3 1H10V0h6v6h-1V1.7l-8 8-.7-.7z"></path><path d="M11 8v5a.9.9 0 01-1 1H2a.9.9 0 01-1-1V6a.9.9 0 011-1h6l1-1H2a2 2 0 00-2 2v7a2 2 0 002 2h8a2 2 0 002-2V7z"></path></g></svg>]D;]A; + Dostosuj [zasady scalania ]5D;(https://docs.microsoft.com/azure/kusto/management/mergepolicy) <svg width="10" viewBox="0 0 16 15" class="" role="presentation" focusable="false" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="FxSymbol0-055" data-type="31"><g><title></title><path d="M14.3 1H10V0h6v6h-1V1.7l-8 8-.7-.7z"></path><path d="M11 8v5a.9.9 0 01-1 1H2a.9.9 0 01-1-1V6a.9.9 0 011-1h6l1-1H2a2 2 0 00-2 2v7a2 2 0 002 2h8a2 2 0 002-2V7z"></path></g></svg>]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.TableDetailsGoup.content.items.HotExtentSizeHistory.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Top tables by hot cache size ]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[Historia rozmiaru gorącego zakresu]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Najważniejsze tabele według rozmiaru gorącej pamięci podręcznej ]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Hot Extent Size History]]></Val>
@@ -90,8 +108,8 @@
       <Item ItemId=";items.TableDetailsGoup.content.items.RowCountHistory.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Top tables by row count ]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[Historia liczby wierszy]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Tabele z największą liczbą wierszy ]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Row Count History]]></Val>
@@ -102,7 +120,7 @@
       <Item ItemId=";items.TableDetailsGoup.content.items.TableSizesGrid.content.gridSettings.labelSettings.CompressionRatio.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Compression ratio]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Stopień kompresji]]></Val>
           </Tgt>
           <Prev Cat="Text">
@@ -126,7 +144,7 @@
       <Item ItemId=";items.TableDetailsGoup.content.items.TableSizesGrid.content.gridSettings.labelSettings.ExtentCount.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Total extent count]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Łączna liczba zakresów]]></Val>
           </Tgt>
           <Prev Cat="Text">
@@ -138,8 +156,8 @@
       <Item ItemId=";items.TableDetailsGoup.content.items.TableSizesGrid.content.gridSettings.labelSettings.HotCache.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Hot cache policy (days)]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[Okres gorącej pamięci podręcznej (zasady)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Zasady gorącej pamięci podręcznej (dni)]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Hot Cache Period (Policy)]]></Val>
@@ -150,8 +168,8 @@
       <Item ItemId=";items.TableDetailsGoup.content.items.TableSizesGrid.content.gridSettings.labelSettings.HotExtentSize.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Hot cache size (hot extents)]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[Rozmiar gorącego zakresu]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Rozmiar gorącej pamięci podręcznej (gorące zakresy)]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Hot Extent Size]]></Val>
@@ -162,7 +180,7 @@
       <Item ItemId=";items.TableDetailsGoup.content.items.TableSizesGrid.content.gridSettings.labelSettings.OriginalSize.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Original size]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Oryginalny rozmiar]]></Val>
           </Tgt>
           <Prev Cat="Text">
@@ -186,8 +204,8 @@
       <Item ItemId=";items.TableDetailsGoup.content.items.TableSizesGrid.content.gridSettings.labelSettings.SoftDelete.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Retention policy (days)]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[Zasady przechowywania (usuwanie nietrwałe)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Zasady przechowywania (dni)]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Retention Policy (Soft Delete)]]></Val>
@@ -210,26 +228,35 @@
       <Item ItemId=";items.TableDetailsGoup.content.items.TableSizesGrid.content.gridSettings.labelSettings.TotalExtentSize.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Total extent size (compressed)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Całkowity rozmiar zakresu (skompresowany)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.TableDetailsGoup.content.items.TablesHeader.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px -304px 0px 0px;position: relative;top:-5px">&nbsp;&nbsp;Table details]D;]A;</span><br>]D;]A;&nbsp;&nbsp;&nbsp;The data refreshes every 8 hours and not affected by the time range parameter.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px -304px 0px 0px;position: relative;top:-5px">&nbsp;&nbsp;Szczegóły tabeli]D;]A;</span><br>]D;]A;&nbsp;&nbsp;&nbsp;Dane są odświeżane co 8 godzin i nie ma na nie wpływu parametr zakresu czasu.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.TableDetailsGoup.content.items.TablesHelp.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[]D83D;]DCA1; For more table usage information, go to the **Cache** tab. For more documentation, see [Cache policy ]5D;(https://docs.microsoft.com/azure/data-explorer/kusto/management/cachepolicy) <svg width="10" viewBox="0 0 16 15" class="" role="presentation" focusable="false" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="FxSymbol0-055" data-type="31"><g><title></title><path d="M14.3 1H10V0h6v6h-1V1.7l-8 8-.7-.7z"></path><path d="M11 8v5a.9.9 0 01-1 1H2a.9.9 0 01-1-1V6a.9.9 0 011-1h6l1-1H2a2 2 0 00-2 2v7a2 2 0 002 2h8a2 2 0 002-2V7z"></path></g></svg> and  [Extents]5D;(https://docs.microsoft.com/azure/data-explorer/kusto/management/extents-overview) <svg width="10" viewBox="0 0 16 15" class="" role="presentation" focusable="false" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="FxSymbol0-055" data-type="31"><g><title></title><path d="M14.3 1H10V0h6v6h-1V1.7l-8 8-.7-.7z"></path><path d="M11 8v5a.9.9 0 01-1 1H2a.9.9 0 01-1-1V6a.9.9 0 011-1h6l1-1H2a2 2 0 00-2 2v7a2 2 0 002 2h8a2 2 0 002-2V7z"></path></g></svg>.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[]D83D;]DCA1; Aby uzyskać więcej informacji o użyciu tabeli, przejdź do karty **Pamięć podręczna**. Aby uzyskać więcej dokumentacji, zobacz [Zasady pamięci podręcznej]5D;(https://docs.microsoft.com/azure/data-explorer/kusto/management/cachepolicy) <svg width="10" viewBox="0 0 16 15" class="" role="presentation" focusable="false" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="FxSymbol0-055" data-type="31"><g><title></title><path d="M14.3 1H10V0h6v6h-1V1.7l-8 8-.7-.7z"></path><path d="M11 8v5a.9.9 0 01-1 1H2a.9.9 0 01-1-1V6a.9.9 0 011-1h6l1-1H2a2 2 0 00-2 2v7a2 2 0 002 2h8a2 2 0 002-2V7z"></path></g></svg> i [Zakresy]5D;(https://docs.microsoft.com/azure/data-explorer/kusto/management/extents-overview) <svg width="10" viewBox="0 0 16 15" class="" role="presentation" focusable="false" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="FxSymbol0-055" data-type="31"><g><title></title><path d="M14.3 1H10V0h6v6h-1V1.7l-8 8-.7-.7z"></path><path d="M11 8v5a.9.9 0 01-1 1H2a.9.9 0 01-1-1V6a.9.9 0 011-1h6l1-1H2a2 2 0 00-2 2v7a2 2 0 002 2h8a2 2 0 002-2V7z"></path></g></svg>.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.TableDetailsGoup.content.items.TopTablesbyHotCache.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Top tables by hot cache size]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[Najważniejsze tabele według pamięci podręcznej Gorąca (baza danych: tabela)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Najważniejsze tabele według rozmiaru gorącej pamięci podręcznej]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Top Tables by Hot Cache (Database: Table)]]></Val>
@@ -240,8 +267,8 @@
       <Item ItemId=";items.TableDetailsGoup.content.items.TopTablesbyRowCount.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Top tables by row count]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[Tabele z najwyższą liczbą wierszy]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Tabele z największą liczbą wierszy]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Top Tables by Row Count]]></Val>
@@ -252,6 +279,9 @@
       <Item ItemId=";items.TableDetailsGoup.content.items.TotalNumOfExtetntsHighTitle.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[]D;]A;<svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="currentColor" class="bi bi-grid-3x3-gap-fill" viewBox="0 0 16 16">]D;]A;  <path d="M1 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2zM1 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V7zM1 12a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2z"/>]D;]A;</svg>&nbsp;<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px -304px 0px 0px;position: relative;top:-3px">Cluster's total extents count]D;]A;</span>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[]D;]A;<svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="currentColor" class="bi bi-grid-3x3-gap-fill" viewBox="0 0 16 16">]D;]A;  <path d="M1 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2zM1 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V7zM1 12a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2z"/>]D;]A;</svg>&nbsp;<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px -304px 0px 0px;position: relative;top:-3px">Łączna liczba zakresów klastra]D;]A;</span>]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

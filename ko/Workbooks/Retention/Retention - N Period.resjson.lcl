@@ -13,7 +13,7 @@
         <Str Cat="Text">
           <Val><![CDATA[# N-Period Retention]A;]A;N-period retention measures how many of your users come back to perform one of the `RetainingActivities` in a particular period after they perform one of the `CohortingActivities` in your app. For instance, you could be measuring the number of users who returned to use your app on the 10th day from the day they first downloaded it. Seeing the retention trend for days 1-10 will give you an indication of the stickiness of your app. ]A;]A;N-day retention is well-suited for gaming apps, or other kinds of app where you are trying to get users to develop a daily habit.]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[# N 기간 재방문 주기]A;]A;N 기간 재방문 주기는 앱에서 'CohortingActivities' 중 하나를 수행한 후 특정 기간 동안 'RetainingActivities' 중 하나를 수행하기 위해 재방문한 사용자 수를 측정합니다. 예를 들어 앱을 처음 다운로드한 날부터 10일째 되는 날에 앱을 사용하려고 재방문한 사용자 수를 측정할 수 있습니다. 1~10일 동안의 재방문 주기 추세를 살펴보면 앱의 현재 연결 유지를 확인할 수 있습니다. ]A;]A;N일 재방문 주기는 게임 앱이나 매일 습관적으로 사용하게 하려는 다른 종류의 앱에 적합합니다.]]></Val>
+            <Val><![CDATA[# n-기간 보존]A;]A;n-기간 보존은 앱에서 'CohortingActivities' 중 하나를 수행한 후 특정 기간 동안 'RetainingActivities' 중 하나를 수행하기 위해 재방문한 사용자 수를 측정합니다. 예를 들어 앱을 처음 다운로드한 날부터 10일째 되는 날에 앱을 사용하려고 재방문한 사용자 수를 측정할 수 있습니다. 1~10일 동안의 재방문 주기 추세를 살펴보면 앱의 현재 연결 유지를 확인할 수 있습니다. ]A;]A;n-기간 보존은 게임 앱이나 매일 습관적으로 사용하게 하려는 다른 종류의 앱에 적합합니다.]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -94,7 +94,7 @@
         <Str Cat="Text">
           <Val><![CDATA[## Understanding Retention Parameters]A;| Parameter | Used for |]A;| ----- | ----- |]A;| Retention Period | The period to use in retention calculation. Can be Daily, Weekly or Monthly |]A;| Cohorts To Analyze  | The number of cohorts to analyze. This corresponds to the N in N-period retention |]A;| Cohorting Activities  | The activities that selects a cohort of users. Example: Users who used event *Read Product Review* (cohorting activity). |]A;| Retaining Activities  | The activities that indicates retention of a cohorted user selected above. Example: Users who used event *Read Product Review* (cohorting activity) and returned to use *Purchase Product* (retaining activity). |]A;| Cohorting/Retaining Filters  | An analytics query snippet to further filter the cohorting activity. Example: *&#124; where application_Version = '1.0'* |]A;]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[## 재방문 주기 매개 변수 이해]A;| 매개 변수 | 용도 |]A;| ----- | ----- |]A;| 재방문 주기 기간 | 재방문 주기 계산에 사용할 기간입니다. 매일, 매주 또는 매월로 지정할 수 있습니다. |]A;| 분석할 코호트 | 분석할 코호트 수입니다. N 기간 재방문 주기에서 N에 해당합니다. |]A;| 코호팅 활동 | 사용자 코호트를 선택하는 활동입니다. 예: *제품 리뷰 읽기*(코호팅 활동) 이벤트를 사용한 사용자 |]A;| 재방문 활동 | 위에서 선택한 코호트된 사용자의 재방문 주기를 나타내는 활동입니다. 예: *제품 리뷰 읽기*(코호팅 활동) 이벤트를 사용하고 *제품 구매*(재방문 활동)를 사용하기 위해 재방문한 사용자 |]A;| 코호팅/재방문 필터 | 코호팅 활동을 추가로 필터링하는 분석 쿼리 코드 조각입니다. 예: *&#124; where application_Version = '1.0'* |]A;]]></Val>
+            <Val><![CDATA[## 재방문 주기 매개 변수 이해]A;| 매개 변수 | 용도 |]A;| ----- | ----- |]A;| 재방문 주기 기간 | 재방문 주기 계산에 사용할 기간입니다. 매일, 매주 또는 매월로 지정할 수 있습니다. |]A;| 분석할 코호트 | 분석할 코호트 수입니다. n-기간 보존에서 N에 해당합니다. |]A;| 코호팅 활동 | 사용자 코호트를 선택하는 활동입니다. 예: *제품 리뷰 읽기*(코호팅 활동) 이벤트를 사용한 사용자 |]A;| 재방문 활동 | 위에서 선택한 코호트된 사용자의 재방문 주기를 나타내는 활동입니다. 예: *제품 리뷰 읽기*(코호팅 활동) 이벤트를 사용하고 *제품 구매*(재방문 활동)를 사용하기 위해 재방문한 사용자 |]A;| 코호팅/재방문 필터 | 코호팅 활동을 추가로 필터링하는 분석 쿼리 코드 조각입니다. 예: *&#124; where application_Version = '1.0'* |]A;]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -103,7 +103,7 @@
         <Str Cat="Text">
           <Val><![CDATA[N-Period Retention]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[N 기간 재방문 주기]]></Val>
+            <Val><![CDATA[n-기간 보존]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />

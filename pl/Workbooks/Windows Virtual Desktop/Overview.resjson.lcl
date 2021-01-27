@@ -126,8 +126,8 @@
       <Item ItemId=";items.OverviewGroup.content.items.AlertsGroup.content.items.NewAlertsTitle.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<span style="color:#E00000;font-weight:bold">{AlertsCount} new severity {AlertLevel} alerts</span> in {TimeRange:label}]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[**<span style="color:red">Nowe alerty o ważności 1: {AlertsCount}</span>** w okresie {TimeRange:label}]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<span style="color:#E00000;font-weight:bold">Liczba nowych alertów o ważności {AlertLevel}</span> w ciągu {TimeRange:label}: {AlertsCount}]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[**<span style="color:red">{AlertsCount} new Severity 1 alerts</span>** in {TimeRange:label}]]></Val>
@@ -174,6 +174,9 @@
       <Item ItemId=";items.OverviewGroup.content.items.NoNewAlertsTitle.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<span style="color:#006100;font-weight:bold">No new Severity {AlertLevel} alerts</span> in {TimeRange:label}]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<span style="color:#006100;font-weight:bold">Brak nowych alertów o ważności {AlertLevel}</span> w ciągu {TimeRange:label}]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -397,7 +400,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Monthly users (MAU)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Użytkownicy miesięcznie (MAU)]]></Val>
+            <Val><![CDATA[Użytkownicy miesięcznie]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
