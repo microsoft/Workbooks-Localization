@@ -13,7 +13,7 @@
         <Str Cat="Text">
           <Val><![CDATA[# Bracket Retention]A;---]A;]A;Bracket retention measures how many of your users come back to perform one of the `RetainingActivities` in a particular period after they perform one of the `CohortingActivities` in your app. For instance, you could be measuring the number of users who returned to use your app one week from day from the day they first downloaded it. Seeing the retention trend for days 7-13 will give you an indication of the stickiness of your app. ]A;]A;Bracket retention is similar to N-period retention, except that the retention time ranges or buckets are not fixed. You are free to choose any time bucket that makes sense for your app. This gives app owners a lot more flexibility in analyzing their user retention.]A;]A;Bracket retention is well-suited for gaming apps, or other kinds of app where you are trying to get users to develop a daily habit.]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[# ブラケット リテンション]A;---]A;]A;ブラケット リテンションでは、アプリで 'CohortingActivities' のいずれかを実行した後、特定の期間中に 'RetainingActivities' のいずれかを実行するために戻ってきたユーザーが何人いるかを測定します。たとえば、最初にアプリをダウンロードした日から 1 週間たって、これを使用するために戻ってきたユーザー数を測定できます。7 - 13 日のリテンションの傾向を確認することで、アプリのスティッキネスを知ることができます。]A;]A;ブラケット リテンションは、N 期のリテンションに似ていますが、リテンション期間の範囲またはバケットが固定されていない点が異なります。アプリに適した時間バケットを自由に選択できます。これにより、アプリの所有者は、ユーザー リテンションをより柔軟に分析できるようになります。]A;]A;ブラケット リテンションは、ゲーム アプリや、ユーザーに日々の習慣を確立してほしいアプリなどに適しています。]]></Val>
+            <Val><![CDATA[# Bracket リテンション]A;---]A;]A;Bracket リテンションでは、アプリで 'CohortingActivities' のいずれかを実行した後、特定の期間中に 'RetainingActivities' のいずれかを実行するために戻ってきたユーザーが何人いるかを測定します。たとえば、最初にアプリをダウンロードした日から 1 週間たって、これを使用するために戻ってきたユーザー数を測定できます。7 - 13 日のリテンションの傾向を確認することで、アプリのスティッキネスを知ることができます。]A;]A;Bracket リテンションは、N 期リテンションに似ていますが、リテンション期間の範囲またはバケットが固定されていない点が異なります。アプリに適した時間バケットを自由に選択できます。これにより、アプリの所有者は、ユーザー リテンションをより柔軟に分析できるようになります。]A;]A;Bracket リテンションは、ゲーム アプリや、ユーザーに日々の習慣を確立してほしいアプリなどに適しています。]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -58,7 +58,7 @@
         <Str Cat="Text">
           <Val><![CDATA[## Bracket Retention Table]A;]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[## ブラケット リテンション期間テーブル]A;]]></Val>
+            <Val><![CDATA[## Bracket リテンション テーブル]A;]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -67,7 +67,7 @@
         <Str Cat="Text">
           <Val><![CDATA[## Understanding the Retention Parameters]A;| Parameter | Used for |]A;| ----- | ----- |]A;| Retention Period | The period to use in retention calculation. Can be Daily, Weekly or Monthly |]A;| Cohorts To Analyze  | The number of cohorts to analyze. This corresponds to the N in N-period retention |]A;| Cohorting Activities  | The activities that selects a cohort of users. Example: Users who used event *Read Product Review* (cohorting activity). |]A;| Retaining Activities  | The activities that indicates retention of a cohorted user selected above. Example: Users who used event *Read Product Review* (cohorting activity) and returned to use *Purchase Product* (retaining activity). |]A;| Cohorting/Retaining Filters  | An analytics query snippet to further filter the cohorting activity. Example: *&#124; where application_Version = '1.0'* |]A;| SelectBrackets | Some example time brackets to get your started with |]A;| CustomBrackets | Use this field to set custom time brackets that make sense for your app. It contains is a comma seperated list of timespans that correspond to bracket boundaries. |]A;]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[## リテンション期間パラメーターについて]A;| パラメーター | 用途 |]A;| ----- | ----- |]A;| リテンション期間 | リテンションの計算で使用する期間。日単位、週単位、月単位で設定できます。|]A;| 分析するコーホート  | 分析するコーホートの数。これは、N 期のリテンション期間における N に対応しています |]A;| コーホート アクティビティ  | ユーザーのコーホートを選択するアクティビティ。例: イベント *製品レビューを読む* (コーホート アクティビティ) を使用したユーザー。|]A;| 保持アクティビティ  | 上で選択したコーホート化したユーザーのリテンションを示すアクティビティ。例: イベント *製品レビューを読む* (コーホート アクティビティ) を使用してから戻ってきて *製品を購入する* (保持アクティビティ) を使用したユーザー。|]A;| コーホートおよび保持フィルター  | コーホート アクティビティをさらにフィルター処理する分析クエリ スニペット。例: *&#124; where application_Version = '1.0' * |]A;| SelectBrackets | 作業を開始するために使用する時間ブラケットの例 |]A;| CustomBrackets | このフィールドはアプリにとって理にかなったカスタム時間ブラケットを設定するために使用します。これには、ブラケットの境界に対応するタイムスパンのコンマ区切りリストが含められます。|]A;]]></Val>
+            <Val><![CDATA[## リテンション期間パラメーターについて]A;| パラメーター | 用途 |]A;| ----- | ----- |]A;| リテンション期間 | リテンションの計算で使用する期間。日単位、週単位、月単位で設定できます。|]A;| 分析するコーホート  | 分析するコーホートの数。これは、N 期リテンション期間における N に対応しています |]A;| コーホート アクティビティ  | ユーザーのコーホートを選択するアクティビティ。例: イベント *製品レビューを読む* (コーホート アクティビティ) を使用したユーザー。|]A;| 保持アクティビティ  | 上で選択したコーホート化したユーザーのリテンションを示すアクティビティ。例: イベント *製品レビューを読む* (コーホート アクティビティ) を使用してから戻ってきて *製品を購入する* (保持アクティビティ) を使用したユーザー。|]A;| コーホートおよび保持フィルター  | コーホート アクティビティをさらにフィルター処理する分析クエリ スニペット。例: *&#124; where application_Version = '1.0' * |]A;| SelectBrackets | 作業を開始するために使用する時間ブラケットの例 |]A;| CustomBrackets | このフィールドはアプリにとって理にかなったカスタム時間ブラケットを設定するために使用します。これには、ブラケットの境界に対応するタイムスパンのコンマ区切りリストが含められます。|]A;]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -85,7 +85,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Bracket Retention]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[ブラケットのリテンション期間]]></Val>
+            <Val><![CDATA[Bracket リテンション]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />

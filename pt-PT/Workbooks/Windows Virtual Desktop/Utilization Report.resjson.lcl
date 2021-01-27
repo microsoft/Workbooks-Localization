@@ -81,13 +81,25 @@
           <Disp Icon="Str" />
         </Item>
       </Item>
-      <Item ItemId=";@items.Utilization.content.items.SessionAndCores.content.items.SessionCharts.content.items.AvailableSessions.conte" ItemType="0" PsrId="306" Leaf="false">
+      <Item ItemId=";@items.Utilization.content.items.SessionAndCores.content.items.SessionCharts.content.items.AvailableSessionsGraph." ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) nt.title" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Available sessions]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
               <Val><![CDATA[Sessões disponíveis]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
+      <Item ItemId=";@items.Utilization.content.items.SessionAndCores.content.items.SessionCharts.content.items.SessionHistoryGraph.con" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) tent.title" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Session history]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Histórico de sessões]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
@@ -267,15 +279,6 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Utilization.content.items.SessionAndCores.content.items.SessionCharts.content.items.query0.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Session history]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Histórico de sessões]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
       <Item ItemId=";items.Utilization.content.items.SessionAndCores.content.items.SessionCharts.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Sessions]]></Val>
@@ -406,7 +409,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Results shown with a time grain of {TimeRange:grain} over a time duration of {TimeRange:label} for the current hostpool.]D;]A;]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Resultados mostrados com uma granularidade de tempo de {TimeRange:grain} durante um período de tempo de {TimeRange:label} para o atual conjunto de anfitriões.]D;]A;]]></Val>
+            <Val><![CDATA[Resultados mostrados com um intervalo de agregação de {TimeRange:grain} durante um período de tempo de {TimeRange:label} para o atual conjunto de anfitriões.]D;]A;]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
