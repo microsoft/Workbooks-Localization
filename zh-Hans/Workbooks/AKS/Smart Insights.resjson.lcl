@@ -14,12 +14,18 @@
         <Item ItemId=";(...) ntent.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[(please select a row in the above table)]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[(请在上表中选择一行) ]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) ntent.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Events per hour]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[每小时事件数]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -38,6 +44,9 @@
         <Item ItemId=";(...) ventanomalygroups.content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Spiking kubernetes events:]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[数量正在飙升的 kubernetes 事件:]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -47,6 +56,9 @@
         <Item ItemId=";(...) anation.content.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[## Select an event to see a graph of occurrences]D;]A;]D;]A;This analyzer shows common "classes" of events and shows which event classes have increased in volume recently. ]D;]A;- Events in the list below are grouped based on common phrases, so two events with messages "pod-abc-123 failed, can not pull image" and "pod-def-456 failed, can not pull image" would be grouped together.]D;]A;- The Spikiness column rates which events have occureed more recently. For example, if Events A and B occurred on average 10 times a day in the last month, but event A occurred 1000 times yesterday, and event B occurred 2 times yesterday, then event A would have a much higher spikiness rating than B.]D;]A;]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[## 选择一个事件来查看发生频率图]D;]A;]D;]A;此分析器显示常见的事件“类”，并显示最近哪些事件类的数量增加了。]D;]A;- 下面列表中的事件是根据常用短语分组的，因此包含消息“pod-abc-123 失败，无法拉取图像”和“pod-def-456 失败，无法拉取图像”的两个事件将被分组在一起。]D;]A;- "Spikiness" 列对事件进行了评分，可以看出哪些事件最近更频繁发生。例如，如果事件 A 和 B 在上个月平均每天发生 10 次，但事件 A 在昨天发生了 1000 次，事件 B 在昨天发生了 2 次，则事件 A 的飙升度评分要比事件 B 高得多。]D;]A;]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -56,6 +68,9 @@
         <Item ItemId=";(...) ntent.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[## Selected Event:]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[## 所选事件:]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -65,6 +80,9 @@
         <Item ItemId=";(...) nomalytextexplanation.content.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[## Select a container to view liveness probe failures]D;]A;]D;]A;This analyzer shows which liveness probes have failed recently and how often. Select one to see a time-series of occurrences.]D;]A;]D;]A;Column explanation:]D;]A;- total: counts liveness probe failures over the entire time range]D;]A;- recentTotal: counts liveness probe failures in the last 1/10th of the time frame (so for a 30 day view, recentTotal would show failures in the last 3 days)]D;]A;- controllerTotal: counts liveness probe failures from all containers managed by a controller]D;]A;]D;]A;]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[## 选择一个容器来查看运行情况探测失败]D;]A;]D;]A;此分析器显示最近哪些运行情况探测失败，以及失败的频率。选择其中一个来查看发生时序。]D;]A;]D;]A;列说明:]D;]A;-total: 统计整个时间范围内的运行情况探测失败数]D;]A;-recentTotal: 统计期限的最后 1/10 时间范围内的运行情况探测失败数(因此对于 30 天的视图，recentTotal 显示最后 3 天的失败数)]D;]A;-controllerTotal: 统计由控制器管理的所有容器中的运行情况探测失败数]D;]A;]D;]A;]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -74,12 +92,18 @@
         <Item ItemId=";(...) ssprobeselect.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[No liveness probe failures found!]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[找不到运行情况探测失败!]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) ssprobeshowdetails.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[no container selected]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[没有选择容器]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -107,12 +131,18 @@
         <Item ItemId=";(...) bs.content.links.ba69d35d1cd94919bd4fd4d63e2605d4.linkLabel" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Limits and requests set]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[已设置限制和请求]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) bs.content.links.fef55d21802c43e899309bef73f4d6b1.linkLabel" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Limits or requests not set]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[没有设置限制或请求]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -131,6 +161,9 @@
         <Item ItemId=";(...) roup.content.items.smartdetectorscombinedworkbookrequestlimitscpuchart.content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[CPU Usage vs Request & Limit]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[CPU 使用率与请求和限制]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -146,6 +179,9 @@
         <Item ItemId=";(...) roup.content.items.smartdetectorscombinedworkbookrequestlimitsmemorychart.content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Memory Usage vs Request & Limit]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[内存使用率与请求和限制]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -154,6 +190,9 @@
           <Item ItemId=";(...) tings.0.label" ItemType="0" PsrId="306" Leaf="true">
             <Str Cat="Text">
               <Val><![CDATA[max cpu usage (nanocores)]]></Val>
+              <Tgt Cat="Text" Stat="Loc" Orig="New">
+                <Val><![CDATA[最大 CPU 使用率(nanocore) ]]></Val>
+              </Tgt>
             </Str>
             <Disp Icon="Str" />
           </Item>
@@ -199,6 +238,9 @@
           <Item ItemId=";(...) Settings.0.label" ItemType="0" PsrId="306" Leaf="true">
             <Str Cat="Text">
               <Val><![CDATA[max memory usage (bytes)]]></Val>
+              <Tgt Cat="Text" Stat="Loc" Orig="New">
+                <Val><![CDATA[最大内存使用量(字节) ]]></Val>
+              </Tgt>
             </Str>
             <Disp Icon="Str" />
           </Item>
@@ -245,12 +287,18 @@
         <Item ItemId=";(...) container.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[No pods found in cluster. Is monitoring enabled?]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[在群集中找不到任何 Pod。是否已启用监视?]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) container.content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Request/limit unoptimality]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[请求/限制不是最佳]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -272,6 +320,9 @@
         <Item ItemId=";(...) xtexplanation.content.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[## Select a container to see recommended requests and limits]D;]A;]D;]A;This analyzer shows containers with excessive cpu/memory limits and requests. Each tile can represent multiple containers with the same spec. (ex: If deployment A creates 100 identical pods, each with a container C1 and C2, then there will be a single tile for all C1 containers and a single tile for all C2 containers).]D;]A;]D;]A;Tiles are colored like so:]D;]A;- white -> well set limits and requests  ]D;]A;- orange -> excessive limits or requests]D;]A;- turquoise -> unset limits or requests]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[## 选择一个容器来查看建议的请求和限制]D;]A;]D;]A;此分析器显示有过多 CPU/内存限制和请求的容器。每个磁贴可以表示多个具有相同规格的容器。(例如: 如果部署 A 创建了 100 个完全相同的 Pod，每个 Pod 都有容器 C1 和 C2，则有一个磁贴用于所有 C1 容器，一个磁贴用于所有 C2 容器)。]D;]A;]D;]A;磁贴的颜色含义如下所示:]D;]A;- 白色 -> 限制和请求设置合理 ]D;]A;- 橙色 -> 限制或请求过多]D;]A;- 青绿色 -> 取消设置限制或请求]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -288,12 +339,18 @@
       <Item ItemId=";items.smartdetectorscombinedworkbookparameters.content.parameters.6390427562704382ab34935932debe40.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Kube Cluster]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Kube 群集]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.smartdetectorscombinedworkbooktopofpagetabs.content.links.1a37c39759ca4b6eb60b19b2dca70c21.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Event Anomaly]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[事件异常]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -309,12 +366,18 @@
       <Item ItemId=";items.smartdetectorscombinedworkbooktopofpagetabs.content.links.ae3e6ec3f7294716b04244bec65b0339.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Limits and Requests]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[限制和请求]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Smart Insights]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[智能见解]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
