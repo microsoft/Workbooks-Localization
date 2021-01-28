@@ -378,7 +378,7 @@
           <Str Cat="Text">
             <Val><![CDATA[Over time]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[随时间变化]]></Val>
+              <Val><![CDATA[一段时间内]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
@@ -399,7 +399,7 @@
           <Str Cat="Text">
             <Val><![CDATA[Events]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[事件]]></Val>
+              <Val><![CDATA[事件数]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
@@ -416,6 +416,9 @@
         <Item ItemId=";(...) abelSettings.EventLevelName.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Event level]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[事件级别]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -452,6 +455,9 @@
         <Item ItemId=";(...) ption" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Find the highest agent message level, to format the warning text accordingly. Error formatting takes precedence over warnings.]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[查找最高代理消息级别，以相应地格式化警告文本。错误格式优先于警告。]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -473,6 +479,9 @@
         <Item ItemId=";(...) ption" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[This allows for more natural phrasing in the message. If all agent events are only error or only warning, it will print the corresponding level. Otherwise, it will say "Error and/or Warning"]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[这样可以在消息中使用更自然的措辞。如果所有代理事件都只是错误或警告，它将打印显示相应的级别。否则，它将显示“错误和/或警告”]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -494,6 +503,9 @@
         <Item ItemId=";(...) ption" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[The count of distinct messages written to the event log]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[写入到事件日志的不同消息的计数]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -503,6 +515,9 @@
         <Item ItemId=";(...) ption" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Option to allow for testing the agent message, if no agent messages exist in the data set]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[允许测试代理消息的选项(如果数据集中没有代理消息)]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -536,6 +551,9 @@
         <Item ItemId=";(...) ption" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[The count of hosts with agents that are writing messages to the event log]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[带有向事件日志写入消息的代理的主机计数]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -545,6 +563,9 @@
         <Item ItemId=";(...) ption" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[The count of messages written to the event log]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[写入到事件日志的消息的计数]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -720,36 +741,54 @@
       <Item ItemId=";items.HostDiagnostics.content.items.WVDAgentEventText.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[There {HostVerb} **{HostsWithAgentEvents}** {HostPlural} reporting **{TotalEventInstances}** {EventInstancePlural} of **{DistinctEventCount}** WVD agent **{EventLevelName}** {DistinctEventPlural}. See the **WVD agent events** table below to learn more about these issues.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[有 {HostVerb} **{HostsWithAgentEvents}** {HostPlural} 报告 **{DistinctEventCount}** 个 WVD 代理 **{EventLevelName}** {DistinctEventPlural} (共 **{TotalEventInstances}** 个 {EventInstancePlural})。请参阅下面的 **WVD 代理事件**表，详细了解这些问题。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.HostDiagnostics.content.items.WVDAgentEventTextForNoEvents.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[There are no WVD host agents reporting errors or warnings to the event log in the selected time range.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[在所选时间范围内，没有 WVD 主机代理向事件日志报告错误或警告。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.HostDiagnostics.content.items.WVDAgentEventsGroup.content.items.SelectedWvdAgentEventGuidance.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Select an event on the left side to see more details.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[选择左侧的事件来查看更多详情。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.HostDiagnostics.content.items.WVDAgentEventsGroup.content.items.WVDagenteventsperhost.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Events per host]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[每个主机的事件数]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.HostDiagnostics.content.items.WVDAgentEventsGroup.content.items.WVDagenteventsummary.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[WVD agent events by description]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[WVD 代理事件数(按说明)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.HostDiagnostics.content.items.WvdAgentParameters.content.parameters.a7ee9b2b2d7546ecb1c4579396d2305b.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Events to include]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[要包括的事件]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

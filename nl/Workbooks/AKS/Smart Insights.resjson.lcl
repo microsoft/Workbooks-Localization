@@ -14,12 +14,18 @@
         <Item ItemId=";(...) ntent.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[(please select a row in the above table)]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[(selecteer een rij in de bovenstaande tabel)]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) ntent.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Events per hour]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Gebeurtenissen per uur]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -38,6 +44,9 @@
         <Item ItemId=";(...) ventanomalygroups.content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Spiking kubernetes events:]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Kubernetes-gebeurtenissen met piek:]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -47,6 +56,9 @@
         <Item ItemId=";(...) anation.content.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[## Select an event to see a graph of occurrences]D;]A;]D;]A;This analyzer shows common "classes" of events and shows which event classes have increased in volume recently. ]D;]A;- Events in the list below are grouped based on common phrases, so two events with messages "pod-abc-123 failed, can not pull image" and "pod-def-456 failed, can not pull image" would be grouped together.]D;]A;- The Spikiness column rates which events have occureed more recently. For example, if Events A and B occurred on average 10 times a day in the last month, but event A occurred 1000 times yesterday, and event B occurred 2 times yesterday, then event A would have a much higher spikiness rating than B.]D;]A;]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[## Een gebeurtenis selecteren om een grafiek met exemplaren weer te geven]D;]A;]D;]A;Deze analyse toont algemene 'klassen' van gebeurtenissen en toont van welke gebeurtenisklassen recent het volume is toegenomen. ]D;]A;- Gebeurtenissen in de onderstaande lijst worden gegroepeerd op basis van algemene zinnen, dus twee gebeurtenissen met de berichten 'pod-abc-123 mislukt, kan afbeelding niet ophalen' en 'pod-def-456 mislukt, kan afbeelding niet ophalen' worden bijvoorbeeld samen gegroepeerd.]D;]A;- In de kolom Piekwaarde wordt geclassificeerd welke gebeurtenissen recenter hebben plaatsgevonden. Als gebeurtenissen A en B bijvoorbeeld de afgelopen maand gemiddeld tien keer per dag hebben plaatsgevonden, maar gebeurtenis A gisteren 1000 keer heeft plaatsgevonden en gebeurtenis B gisteren twee keer heeft plaatsgevonden, dan is de piekwaarde van gebeurtenis A veel hoger dan van B.]D;]A;]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -56,6 +68,9 @@
         <Item ItemId=";(...) ntent.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[## Selected Event:]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[## Geselecteerde gebeurtenis:]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -65,6 +80,9 @@
         <Item ItemId=";(...) nomalytextexplanation.content.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[## Select a container to view liveness probe failures]D;]A;]D;]A;This analyzer shows which liveness probes have failed recently and how often. Select one to see a time-series of occurrences.]D;]A;]D;]A;Column explanation:]D;]A;- total: counts liveness probe failures over the entire time range]D;]A;- recentTotal: counts liveness probe failures in the last 1/10th of the time frame (so for a 30 day view, recentTotal would show failures in the last 3 days)]D;]A;- controllerTotal: counts liveness probe failures from all containers managed by a controller]D;]A;]D;]A;]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[## Een container selecteren om mislukte activiteitstests weer te geven]D;]A;]D;]A;Deze analyse toont welke activiteitstests onlangs zijn mislukt en hoe vaak dit is gebeurd. Selecteer een test om een tijdreeks van de exemplaren te zien.]D;]A;]D;]A;Uitleg van kolom:]D;]A;- total: telt het aantal mislukte activiteitstests in het hele tijdsbereik]D;]A;- recentTotal: telt het aantal mislukte activiteitstests in het afgelopen 1/10e van het tijdsbereik (dus voor een weergave van 30 dagen worden bij recentTotal de mislukte tests van de afgelopen drie dagen weergegeven)]D;]A;- controllerTotal: telt het aantal mislukte activiteitstests van alle containers die door een controller worden beheerd]D;]A;]D;]A;]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -74,18 +92,27 @@
         <Item ItemId=";(...) ssprobeselect.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[No liveness probe failures found!]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Geen mislukte activiteitstests gevonden.]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) ssprobeshowdetails.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[no container selected]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[er is geen container geselecteerd]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) ssprobeshowdetails.content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Liveness Probe Failures]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Mislukte activiteitstests]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -104,12 +131,18 @@
         <Item ItemId=";(...) bs.content.links.ba69d35d1cd94919bd4fd4d63e2605d4.linkLabel" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Limits and requests set]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Limieten en aanvragen ingesteld]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) bs.content.links.fef55d21802c43e899309bef73f4d6b1.linkLabel" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Limits or requests not set]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Limieten of aanvragen niet ingesteld]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -119,24 +152,36 @@
         <Item ItemId=";(...) roup.content.items.smartdetectorscombinedworkbookrequestlimitscpuchart.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Select a container to see recommended requests and limits]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Een container selecteren om aanbevolen aanvragen en limieten weer te geven]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) roup.content.items.smartdetectorscombinedworkbookrequestlimitscpuchart.content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[CPU Usage vs Request & Limit]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Verschil tussen CPU-gebruik en Aanvraag en limiet]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) roup.content.items.smartdetectorscombinedworkbookrequestlimitsmemorychart.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Select a container to see recommended requests and limits]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Een container selecteren om aanbevolen aanvragen en limieten weer te geven]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) roup.content.items.smartdetectorscombinedworkbookrequestlimitsmemorychart.content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Memory Usage vs Request & Limit]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Verschil tussen geheugengebruik en Aanvraag en limiet]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -145,30 +190,45 @@
           <Item ItemId=";(...) tings.0.label" ItemType="0" PsrId="306" Leaf="true">
             <Str Cat="Text">
               <Val><![CDATA[max cpu usage (nanocores)]]></Val>
+              <Tgt Cat="Text" Stat="Loc" Orig="New">
+                <Val><![CDATA[maximaal CPU-gebruik (nanocores)]]></Val>
+              </Tgt>
             </Str>
             <Disp Icon="Str" />
           </Item>
           <Item ItemId=";(...) tings.1.label" ItemType="0" PsrId="306" Leaf="true">
             <Str Cat="Text">
               <Val><![CDATA[current request]]></Val>
+              <Tgt Cat="Text" Stat="Loc" Orig="New">
+                <Val><![CDATA[huidige aanvraag]]></Val>
+              </Tgt>
             </Str>
             <Disp Icon="Str" />
           </Item>
           <Item ItemId=";(...) tings.2.label" ItemType="0" PsrId="306" Leaf="true">
             <Str Cat="Text">
               <Val><![CDATA[current limit]]></Val>
+              <Tgt Cat="Text" Stat="Loc" Orig="New">
+                <Val><![CDATA[huidige limiet]]></Val>
+              </Tgt>
             </Str>
             <Disp Icon="Str" />
           </Item>
           <Item ItemId=";(...) tings.3.label" ItemType="0" PsrId="306" Leaf="true">
             <Str Cat="Text">
               <Val><![CDATA[suggested request]]></Val>
+              <Tgt Cat="Text" Stat="Loc" Orig="New">
+                <Val><![CDATA[aanbevolen aanvraag]]></Val>
+              </Tgt>
             </Str>
             <Disp Icon="Str" />
           </Item>
           <Item ItemId=";(...) tings.4.label" ItemType="0" PsrId="306" Leaf="true">
             <Str Cat="Text">
               <Val><![CDATA[suggested limit]]></Val>
+              <Tgt Cat="Text" Stat="Loc" Orig="New">
+                <Val><![CDATA[aanbevolen limiet]]></Val>
+              </Tgt>
             </Str>
             <Disp Icon="Str" />
           </Item>
@@ -178,30 +238,45 @@
           <Item ItemId=";(...) Settings.0.label" ItemType="0" PsrId="306" Leaf="true">
             <Str Cat="Text">
               <Val><![CDATA[max memory usage (bytes)]]></Val>
+              <Tgt Cat="Text" Stat="Loc" Orig="New">
+                <Val><![CDATA[maximaal geheugengebruik (bytes)]]></Val>
+              </Tgt>
             </Str>
             <Disp Icon="Str" />
           </Item>
           <Item ItemId=";(...) Settings.1.label" ItemType="0" PsrId="306" Leaf="true">
             <Str Cat="Text">
               <Val><![CDATA[current request]]></Val>
+              <Tgt Cat="Text" Stat="Loc" Orig="New">
+                <Val><![CDATA[huidige aanvraag]]></Val>
+              </Tgt>
             </Str>
             <Disp Icon="Str" />
           </Item>
           <Item ItemId=";(...) Settings.2.label" ItemType="0" PsrId="306" Leaf="true">
             <Str Cat="Text">
               <Val><![CDATA[current limit]]></Val>
+              <Tgt Cat="Text" Stat="Loc" Orig="New">
+                <Val><![CDATA[huidige limiet]]></Val>
+              </Tgt>
             </Str>
             <Disp Icon="Str" />
           </Item>
           <Item ItemId=";(...) Settings.3.label" ItemType="0" PsrId="306" Leaf="true">
             <Str Cat="Text">
               <Val><![CDATA[suggested request]]></Val>
+              <Tgt Cat="Text" Stat="Loc" Orig="New">
+                <Val><![CDATA[aanbevolen aanvraag]]></Val>
+              </Tgt>
             </Str>
             <Disp Icon="Str" />
           </Item>
           <Item ItemId=";(...) Settings.4.label" ItemType="0" PsrId="306" Leaf="true">
             <Str Cat="Text">
               <Val><![CDATA[suggested limit]]></Val>
+              <Tgt Cat="Text" Stat="Loc" Orig="New">
+                <Val><![CDATA[aanbevolen limiet]]></Val>
+              </Tgt>
             </Str>
             <Disp Icon="Str" />
           </Item>
@@ -212,12 +287,18 @@
         <Item ItemId=";(...) container.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[No pods found in cluster. Is monitoring enabled?]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Geen pods gevonden in het cluster. Is bewaking ingeschakeld?]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) container.content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Request/limit unoptimality]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Niet-optimaliteit voor aanvraag/limiet]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -227,6 +308,9 @@
         <Item ItemId=";(...) lectedcontainerdetails.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Select a container to see recommended requests and limits]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Een container selecteren om aanbevolen aanvragen en limieten weer te geven]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -236,6 +320,9 @@
         <Item ItemId=";(...) xtexplanation.content.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[## Select a container to see recommended requests and limits]D;]A;]D;]A;This analyzer shows containers with excessive cpu/memory limits and requests. Each tile can represent multiple containers with the same spec. (ex: If deployment A creates 100 identical pods, each with a container C1 and C2, then there will be a single tile for all C1 containers and a single tile for all C2 containers).]D;]A;]D;]A;Tiles are colored like so:]D;]A;- white -> well set limits and requests  ]D;]A;- orange -> excessive limits or requests]D;]A;- turquoise -> unset limits or requests]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[## Een container selecteren om aanbevolen aanvragen en limieten weer te geven]D;]A;]D;]A;Deze analyse toont containers met overmatige CPU-/geheugenlimieten en aanvragen. Elke tegel kan meerdere containers met dezelfde specificaties vertegenwoordigen. (Bijvoorbeeld: als met implementatie A honderd identieke pods worden gemaakt, elk met een container C1 en C2, dan is er één tegel voor alle C1-containers en één tegel voor alle C2-containers).]D;]A;]D;]A;Tegels krijgen de volgende kleuren:]D;]A;- wit -> goed ingestelde limieten en aanvragen  ]D;]A;- oranje -> overmatige limieten of aanvragen]D;]A;- lichtblauw -> niet-ingestelde limieten of aanvragen]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -252,30 +339,45 @@
       <Item ItemId=";items.smartdetectorscombinedworkbookparameters.content.parameters.6390427562704382ab34935932debe40.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Kube Cluster]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Kube-cluster]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.smartdetectorscombinedworkbooktopofpagetabs.content.links.1a37c39759ca4b6eb60b19b2dca70c21.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Event Anomaly]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Gebeurtenisafwijking]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.smartdetectorscombinedworkbooktopofpagetabs.content.links.47583c5385bb417fa0c7eb1f50f0339a.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Liveness Probe Failures]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Mislukte activiteitstests]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.smartdetectorscombinedworkbooktopofpagetabs.content.links.ae3e6ec3f7294716b04244bec65b0339.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Limits and Requests]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Limieten en aanvragen]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Smart Insights]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Slimme inzichten]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
