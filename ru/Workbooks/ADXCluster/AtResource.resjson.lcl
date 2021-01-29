@@ -131,12 +131,18 @@
         <Item ItemId=";(...) tings.PercentOfTotalClusterCpuUseddisplay.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[% of used CPU]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[% загрузки ЦП]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) tings.PercentOfTotalClusterMemoryUseddisplay.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[% of used memory]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[% используемой памяти]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -269,8 +275,8 @@
         <Item ItemId=";(...) gs.PercentOfTotalClusterCpuUseddisplay.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[% of used CPU]]></Val>
-            <Tgt Cat="Text" Stat="Update" Orig="New">
-              <Val><![CDATA[% используемой загрузки ЦП кластера]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[% загрузки ЦП]]></Val>
             </Tgt>
             <Prev Cat="Text">
               <Val><![CDATA[% of Used Cluster CPU]]></Val>
@@ -281,8 +287,8 @@
         <Item ItemId=";(...) gs.PercentOfTotalClusterMemoryUseddisplay.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[% of used memory]]></Val>
-            <Tgt Cat="Text" Stat="Update" Orig="New">
-              <Val><![CDATA[% используемой памяти кластера]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[% используемой памяти]]></Val>
             </Tgt>
             <Prev Cat="Text">
               <Val><![CDATA[% of Used Cluster Memory]]></Val>
@@ -762,8 +768,8 @@
       <Item ItemId=";items.Commands.content.items.OnboardingMessageCommands.content.items.text2.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[This section provides additional monitoring coverage that is based on platform logs (diagnostic logs).</br></br>If you have not activated additional monitoring, you must enable the **Command**, **Query**, **TableDetails**, and **TableUsageStatistics** platform logs and send them to a Log Analytics workspace. [Learn more]5D;(https://docs.microsoft.com/en-us/azure/data-explorer/using-diagnostic-logs?tabs=commands-and-queries#set-up-diagnostic-logs-for-an-azure-data-explorer-cluster)]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[Дополнительный мониторинг осуществляется на основе журналов платформы (журналов диагностики). </br>На этой вкладке приводятся данные телеметрии использования в отслеживаемых кластерах, которые помогут определить аномалии в использовании.</br></br>Для активации дополнительного мониторинга необходимо включить параметры диагностики "Команда" и "Запрос" и отправить их в Log Analytics. [Дополнительные сведения]5D;(https://docs.microsoft.com/ru-ru/azure/data-explorer/using-diagnostic-logs?tabs=commands-and-queries#set-up-diagnostic-logs-for-an-azure-data-explorer-cluster)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[В этом разделе доступны дополнительные возможности мониторинга на основе журналов платформы (журналов диагностики). </br></br>Если дополнительный мониторинг не был активирован, необходимо включить журналы платформы **Command**, **Query**, **TableDetails** и **TableUsageStatistics** и отправить их в рабочую область Log Analytics. [Дополнительные сведения]5D;(https://docs.microsoft.com/en-us/azure/data-explorer/using-diagnostic-logs?tabs=commands-and-queries#set-up-diagnostic-logs-for-an-azure-data-explorer-cluster)]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Additional monitoring coverage is based on platform logs (diagnostic logs).</br>This tab surfaces usage telemetry on your monitored clusters to help you identify usage anomalies.</br></br>To activate additional monitoring, you must enable the "Command" and "Query" diagnostic settings and send them to Log Analytics. [Learn more]5D;(https://docs.microsoft.com/en-us/azure/data-explorer/using-diagnostic-logs?tabs=commands-and-queries#set-up-diagnostic-logs-for-an-azure-data-explorer-cluster)]]></Val>
