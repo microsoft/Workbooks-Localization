@@ -11,10 +11,13 @@
       <Disp Icon="Str" Disp="true" LocTbl="false" />
       <Item ItemId=";items.OverviewErrorMessage1.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[<div style="text-align:left;"><span style="font-size:12px;font-weight:600;"> Note - There is no backup data in the selected Log Analytics workspace(s) for the selected time range. <a href="https://aka.ms/UsingLAWorkspace" target="_blank">Learn More</a> </span> </div>]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[There is no backup data in the selected Log Analytics workspace(s) for the selected time range. <a href="https://aka.ms/UsingLAWorkspace" target="_blank">Learn More</a>]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[<div style="text-align:left;"><span style="font-size:12px;font-weight:600;"> Nota: No hay ningún dato de copia de seguridad en las áreas de trabajo de Log Analytics seleccionadas para el intervalo de tiempo seleccionado. <a href="https://aka.ms/UsingLAWorkspace" target="_blank">Más información</a> </span> </div>]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[<div style="text-align:left;"><span style="font-size:12px;font-weight:600;"> Note - There is no backup data in the selected Log Analytics workspace(s) for the selected time range. <a href="https://aka.ms/UsingLAWorkspace" target="_blank">Learn More</a> </span> </div>]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -23,24 +26,6 @@
           <Val><![CDATA[<div style="text-align:left;float:left;"><span style="font-size:16px;font-weight:600">Select Log Analytics Workspace </span> <br> <span style="font-size:12px;"> <a href="https://aka.ms/AzureBackupDiagnosticsAutomationDoc" target="_blank"> How to configure vault diagnostic settings for backup reports </a> </span> </div> <div style="text-align:right; float:right"> <span style="font-size:12px;"> <a href="https://aka.ms/AzureBackupReportOld" target="_blank"> What happened to the Power BI reports? </a> </span> </div>]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[<div style="text-align:left;float:left;"><span style="font-size:16px;font-weight:600">Seleccionar el área de trabajo de log Analytics </span> <br> <span style="font-size:12px;"> <a href="https://aka.ms/AzureBackupDiagnosticsAutomationDoc" target="_blank"> Cómo configurar las opciones de diagnóstico de almacén para los informes de copia de seguridad </a> </span> </div> <div style="text-align:right; float:right"> <span style="font-size:12px;"> <a href="https://aka.ms/AzureBackupReportOld" target="_blank"> ¿Qué sucedió con los informes de Power BI? </a> </span> </div>]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.OverviewInstructionText2.content.json" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[<p> <span style="font-size:12px; font-style:italic"> Filters are applied left to right and top to bottom on each page. <a href="https://aka.ms/AzureBackupReportFilters" target="_blank">Learn More</a> </span> </p>]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[<p> <span style="font-size:12px; font-style:italic"> Los filtros se aplican de izquierda a derecha y de arriba abajo en cada página. <a href="https://aka.ms/AzureBackupReportFilters" target="_blank">Más información</a> </span> </p>]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.OverviewInstructionText2b.content.json" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[<span style="font-size:12px;font-style:italic"> All datetimes are in UTC. Data for the current partial day is not shown in the reports. <a href="https://aka.ms/AzureBackupReportTimezone" target="_blank">Learn More</a></span></div>]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[<span style="font-size:12px;font-style:italic"> Todos los valores de fecha y hora están en UTC. Los datos del día parcial actual no se muestran en los informes. <a href="https://aka.ms/AzureBackupReportTimezone" target="_blank">Más información</a></span></div>]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -90,12 +75,15 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.OverviewReportParameterBlock.content.parameters.9d94255b572641c5ab7c4e13187c5de5.label" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.OverviewReportParameterBlock.content.parameters.8ce61d1de37140bfad537ba78afb976f.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Backup Management Type]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Tipo de administración de copias de seguridad]]></Val>
-          </Tgt>
+          <Val><![CDATA[Use to filter reports by backup solution]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.OverviewReportParameterBlock.content.parameters.8ce61d1de37140bfad537ba78afb976f.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Backup Solution]]></Val>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -114,6 +102,18 @@
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Nombre del almacén]]></Val>
           </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.OverviewTimeRangeParameterBlock.content.parameters.78c86854fe3c44c58ee323d4210827d1.description" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Use this parameter to avoid querying data that is sent to the legacy Azure Diagnostics table. Excluding the legacy table improves query performance time. <a href="https://docs.microsoft.com/azure/backup/backup-azure-diagnostic-events#legacy-event">Learn more </a>]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.OverviewTimeRangeParameterBlock.content.parameters.78c86854fe3c44c58ee323d4210827d1.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Exclude Legacy Table]]></Val>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -144,11 +144,20 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.OverviewWelcomeText.content.json" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.OverviewWelcomeText1.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<div style="text-align:center;"><span style="font-size:14px;font-weight:600;"> Welcome to Azure Backup Reports! </span> <br> <br> <span style="font-size:12px;font-weight:600;"> Select your Workspace(s) and click the Summary Tab above to get started </span> </div>]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[<div style="text-align:center;"><span style="font-size:14px;font-weight:600;"> Informes de Azure Backup </span> <br> <br> <span style="font-size:12px;font-weight:600;"> Seleccione sus áreas de trabajo y haga clic en la pestaña Resumen anterior para empezar. </span> </div>]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.OverviewWelcomeText2.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[<div style="text-align:center;"><span style="font-size:12px;font-weight:500;"> <u>Salient Features</u> </span>  <span style="font-size:12px;font-weight:400;"> <br><br>  View reports across workload types, subscriptions and regions <br><br> View reports across your tenants using Azure Lighthouse <br><br> Track and forecast usage both at a vault and backup item level <br><br> Analyze trends on jobs, backup items, policies, and more <br><br> Audit backups and restores for all your backup items]D;]A;</span> <br> </div>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<div style="text-align:center;"><span style="font-size:12px;font-weight:500;"> <u>Características destacadas</u> </span>  <span style="font-size:12px;font-weight:400;"> <br><br>  Ver informes de tipos de carga de trabajo, suscripciones y regiones <br><br> Ver informes de sus inquilinos con Azure Lighthouse <br><br> Realizar el seguimiento y la previsión del uso tanto en el nivel de elemento de copia de seguridad como del almacén <br><br> Analizar tendencias de trabajos, elementos de copia de seguridad, directivas, etc. <br><br> Auditar copias de seguridad y restauraciones de todos los elementos de copia de seguridad]D;]A;</span> <br> </div>]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -180,52 +189,73 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
+      <Item ItemId=";items.PolicyAdherenceByBackupInstanceDailyBackupAggregationTypeMonthlyText.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[The below grid is displayed in **Monthly view** due to your time range selection. Backup Instances which have had **atleast one successful backup** on **every day** in a given month are marked green (compliant) for that month. Note that 'month' here refers to a span of 4 weeks (28 days). [Learn more]5D;(https://aka.ms/AzureBackupReportDailyBackupMonthlyView1)]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.PolicyAdherenceByBackupInstanceDailyBackupAggregationTypeWeeklyText.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[The below grid is displayed in **Weekly view** due to your time range selection. Backup Instances which have had **atleast one successful backup** on **every day** in a given week are marked green (compliant) for that week.  [Learn more]5D;(https://aka.ms/AzureBackupReportDailyBackupWeeklyView2)]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.PolicyAdherenceByBackupInstanceWeeklyBackupAggregationTypeMonthlyText.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[The below grid is displayed in **Monthly view** due to your time range selection. Backup Instances which have had **atleast one** successful backup in **every week** in a given month are marked green (compliant) for that month. Note that 'month' here refers to a span of 4 weeks (28 days). [Learn more]5D;(https://aka.ms/AzureBackupReportWeeklyBackupMonthlyView2)]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.PolicyAdherenceByTimePeriodDailyBackupAggregationTypeMonthlyText.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[The below grid is displayed in **Monthly view** due to your time range selection. Backup Instances which have had **atleast one successful backup** on **every day** in a given month fall under the second column in the below table. Note that 'month' here refers to a span of 4 weeks (28 days). [Learn more]5D;(https://aka.ms/AzureBackupReportDailyBackupMonthlyView1)]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.PolicyAdherenceByTimePeriodDailyBackupAggregationTypeWeeklyText.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[The below grid is displayed in **Weekly view** due to your time range selection. Backup Instances which have had **atleast one successful backup** on **every day** in a given week fall under the second column in the below table.  [Learn more]5D;(https://aka.ms/AzureBackupReportDailyBackupWeeklyView1)]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.PolicyAdherenceByTimePeriodWeeklyBackupAggregationTypeMonthlyText.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[The below grid is displayed in **Monthly view** due to your time range selection. Backup Instances which have had **atleast one** successful backup in **every week** in a given month fall under the second column in the below table. Note that 'month' here refers to a span of 4 weeks (28 days). [Learn more]5D;(https://aka.ms/AzureBackupReportWeeklyBackupMonthlyView1)]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.PolicyAdherenceDailyBackupGrid2.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[List of Jobs in Period]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.ResourceSpecificTextBox1.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[<div style="text-align:left;"><h1> <span style="font-size:12px;font-weight:400;font-style:italic"> You have vault(s) using **legacy diagnostics settings**. Please use the latest diagnostics settings for all your vaults to make them eligible for reporting upgrades. <a href="https://aka.ms/AzureBackupUseResourceSpecific" target="_blank">Learn More</a> </span> </h1> </div>]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[You have vault(s) using **legacy diagnostics settings**. Please use the latest diagnostics settings for all your vaults to make them eligible for reporting upgrades. [Learn more]5D;(https://aka.ms/AzureBackupUseResourceSpecific)]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[<div style="text-align:left;"><h1> <span style="font-size:12px;font-weight:400;font-style:italic"> Tiene almacenes que usan la **configuración de diagnóstico heredada**. Use la configuración de diagnóstico más reciente en todos sus almacenes para que sean aptos para la generación de informes de actualización. <a href="https://aka.ms/AzureBackupUseResourceSpecific" target="_blank">Más información</a> </span> </h1> </div>]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[<div style="text-align:left;"><h1> <span style="font-size:12px;font-weight:400;font-style:italic"> You have vault(s) using **legacy diagnostics settings**. Please use the latest diagnostics settings for all your vaults to make them eligible for reporting upgrades. <a href="https://aka.ms/AzureBackupUseResourceSpecific" target="_blank">Learn More</a> </span> </h1> </div>]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.ResourceSpecificTextBox2.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[<div style="text-align:left;"><h1> <span style="font-size:12px;font-weight:400;font-style:italic"> You have vault(s) using **legacy diagnostics settings**. Please use the latest diagnostics settings for all your vaults to make them eligible for reporting upgrades. <a href="https://aka.ms/AzureBackupUseResourceSpecific" target="_blank">Learn More</a> </span> </h1> </div>]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[You have vault(s) using **legacy diagnostics settings**. Please use the latest diagnostics settings for all your vaults to make them eligible for reporting upgrades. <a href="https://aka.ms/AzureBackupUseResourceSpecific" target="_blank">Learn More</a>]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[<div style="text-align:left;"><h1> <span style="font-size:12px;font-weight:400;font-style:italic"> Tiene almacenes que usan la **configuración de diagnóstico heredada**. Use la configuración de diagnóstico más reciente en todos sus almacenes para que sean aptos para la generación de informes de actualización. <a href="https://aka.ms/AzureBackupUseResourceSpecific" target="_blank">Más información</a> </span> </h1> </div>]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[<div style="text-align:left;"><h1> <span style="font-size:12px;font-weight:400;font-style:italic"> You have vault(s) using **legacy diagnostics settings**. Please use the latest diagnostics settings for all your vaults to make them eligible for reporting upgrades. <a href="https://aka.ms/AzureBackupUseResourceSpecific" target="_blank">Learn More</a> </span> </h1> </div>]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Tabs.content.links.0.linkLabel" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Overview]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Información general]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Tabs.content.links.1.linkLabel" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Summary]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Resumen]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Tabs.content.links.2.linkLabel" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Backup Items]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Elementos de copia de seguridad]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Tabs.content.links.3.linkLabel" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Tabs.content.links.0af01583e55c4b0aa395fd5037f30095.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Usage]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -234,16 +264,7 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Tabs.content.links.4.linkLabel" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Jobs]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Trabajos]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Tabs.content.links.5.linkLabel" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Tabs.content.links.4101ac0a663b4c00ad04d5e0a9b5c126.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Policies]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -252,7 +273,7 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Tabs.content.links.6.linkLabel" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Tabs.content.links.883f8a5319af4f96bce43e60c0d391e7.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Optimize]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -261,12 +282,45 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.text66.content.json" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Tabs.content.links.a24f7f98dc7a42b2b764c9e99ff33754.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[<div style="text-align:center;"><span style="font-size:12px;font-weight:500;"> <u>Salient Features</u> </span>  <span style="font-size:12px;font-weight:400;"> <br><br>  View reports across workload types, subscriptions and regions <br><br> View reports across your tenants using Azure Lighthouse <br><br> Track and forecast usage both at a vault and backup item level <br><br> Analyze trends on jobs, backup items, policies, and more <br><br> Audit backups and restores for all your backup items]D;]A;</span> <br> </div>]]></Val>
+          <Val><![CDATA[Overview]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[<div style="text-align:center;"><span style="font-size:12px;font-weight:500;"> <u>Características destacadas</u> </span>  <span style="font-size:12px;font-weight:400;"> <br><br>  Ver informes de tipos de carga de trabajo, suscripciones y regiones <br><br> Ver informes de sus inquilinos con Azure Lighthouse <br><br> Realizar el seguimiento y la previsión del uso tanto en el nivel de elemento de copia de seguridad como del almacén <br><br> Analizar tendencias de trabajos, elementos de copia de seguridad, directivas, etc. <br><br> Auditar copias de seguridad y restauraciones de todos los elementos de copia de seguridad]D;]A;</span> <br> </div>]]></Val>
+            <Val><![CDATA[Información general]]></Val>
           </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Tabs.content.links.c46c1b48bcd548f3b51544a2f3d78669.linkLabel" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Summary]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Resumen]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Tabs.content.links.d82feaf3d6624fe9b7c9ab07bdba600f.linkLabel" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Backup Instances]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Instancias de copia de seguridad]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Tabs.content.links.fbbecb4083ec4fe8a5e0973f8b14b22f.linkLabel" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Jobs]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Trabajos]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Tabs.content.links.fd346de8b14d4ce99014bcdf8c44b55a.linkLabel" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Policy Adherence]]></Val>
         </Str>
         <Disp Icon="Str" />
       </Item>

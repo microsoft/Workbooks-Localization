@@ -69,6 +69,12 @@
           <Disp Icon="Str" />
         </Item>
       </Item>
+      <Item ItemId=";items.group0.content.items.UsageAggregationTypeInfoText.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[ The below charts are displayed in **{AggregationType}** view due to your time range selection. [Learn more]5D;(https://docs.microsoft.com/azure/backup/configure-reports) ]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.group0.content.items.UsageCloudStorageTrendGraph.content.chartSettings.seriesLabelSettings.0.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Cloud Storage (MB)]]></Val>
@@ -105,7 +111,7 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.group0.content.items.UsageGrid1.content.gridSettings.labelSettings.BillingEntityName.label" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.group0.content.items.UsageGrid1.content.gridSettings.labelSettings.BilledEntity.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Billed Entity]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -114,16 +120,7 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.group0.content.items.UsageGrid1.content.gridSettings.labelSettings.BillingEntityType.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Billed Entity Type]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Type gefactureerde entiteit]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.group0.content.items.UsageGrid1.content.gridSettings.labelSettings.ContainerResourceGroup.label" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.group0.content.items.UsageGrid1.content.gridSettings.labelSettings.BilledEntityResourceGroup.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Billed Entity Resource Group]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -132,38 +129,29 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.group0.content.items.UsageGrid1.content.gridSettings.labelSettings.CustomBackupManagementType.label" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.group0.content.items.UsageGrid1.content.gridSettings.labelSettings.BilledEntityType.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Backup Management Type]]></Val>
+          <Val><![CDATA[Billed Entity Type]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Type back-upbeheer]]></Val>
+            <Val><![CDATA[Type gefactureerde entiteit]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.group0.content.items.UsageGrid1.content.gridSettings.labelSettings.ProtectedInstanceCount.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[# Protected Instances]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[# Beveiligde instanties]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.group0.content.items.UsageGrid1.content.gridSettings.labelSettings.ResourceId.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Vault]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Kluis]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.group0.content.items.UsageGrid1.content.gridSettings.labelSettings.StorageConsumedInGBs.label" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.group0.content.items.UsageGrid1.content.gridSettings.labelSettings.CloudStorage.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Cloud Storage (GB)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Cloudopslag (GB)]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.group0.content.items.UsageGrid1.content.gridSettings.labelSettings.ProtectedInstances.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[# Protected Instances]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# Beveiligde instanties]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -173,15 +161,6 @@
           <Val><![CDATA[Storage Replication Type]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Type opslagreplicatie]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.group0.content.items.UsageGrid1.content.gridSettings.labelSettings.SubscriptionId.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Subscription]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Abonnement]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />

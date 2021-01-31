@@ -97,10 +97,13 @@
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) escription" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Use to search for a Backup Item by name. <br/> To search for a specific item in a container, use the syntax [container name]5D;;[item name]5D; <br/> To search for all items in a container, use the syntax [container name]5D;;]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Use to search for a backup instance by name. <br/> To search for a specific instance in a container, use the syntax [container name]5D;;[instance name]5D; <br/> To search for all instances in a container, use the syntax [container name]5D;;]]></Val>
+            <Tgt Cat="Text" Stat="Update" Orig="New">
               <Val><![CDATA[Slouží k vyhledávání zálohovaných položek podle jejich názvu. <br/> Pokud chcete vyhledat konkrétní položku v kontejneru, použijte syntaxi [container name]5D;;[item name]5D; <br/> Pokud chcete vyhledat všechny položky v kontejneru, použijte syntaxi [container name]5D;;]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[Use to search for a Backup Item by name. <br/> To search for a specific item in a container, use the syntax [container name]5D;;[item name]5D; <br/> To search for all items in a container, use the syntax [container name]5D;;]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -109,10 +112,13 @@
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) abel" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Search Item or Container]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Search Instance or Container]]></Val>
+            <Tgt Cat="Text" Stat="Update" Orig="New">
               <Val><![CDATA[Hledat položku nebo kontejner]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[Search Item or Container]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -189,6 +195,21 @@
           <Disp Icon="Str" />
         </Item>
       </Item>
+      <Item ItemId=";items.group0.content.items.JobDetailsGridTitle.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[<div style="text-align:left"><span style="font-size:14px;font-weight:600;">List of Jobs in Period</span> </div>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<div style="text-align:left"><span style="font-size:14px;font-weight:600;">Seznam úloh v období</span> </div>]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.group0.content.items.JobDetailsPromptText.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[<span style="font-size:12px;font-style:italic"> Click on any row above to see details of all jobs for that backup item in the selected time range. </span>]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.group0.content.items.JobDistributionFailureCodeGraph.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No records found for the selected time range and scope]]></Val>
@@ -207,78 +228,6 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.group0.content.items.JobDistributionGrid1.content.gridSettings.labelSettings.AvgDataTransferred.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Avg Data Transferred (MB)]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Průměrný přenos dat (MB)]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.group0.content.items.JobDistributionGrid1.content.gridSettings.labelSettings.AvgJobDuration.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Avg Job Duration (hrs)]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Průměrná doba trvání úlohy (h)]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.group0.content.items.JobDistributionGrid1.content.gridSettings.labelSettings.AzureResource.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Azure Resource]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Prostředek Azure]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.group0.content.items.JobDistributionGrid1.content.gridSettings.labelSettings.BackupItemName.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Backup Item]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Zálohovaná položka]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.group0.content.items.JobDistributionGrid1.content.gridSettings.labelSettings.ContainerName.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Container]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Kontejner]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.group0.content.items.JobDistributionGrid1.content.gridSettings.labelSettings.ContainerResourceGroup.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Resource Group]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Skupina prostředků]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.group0.content.items.JobDistributionGrid1.content.gridSettings.labelSettings.FailureCount.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[# Jobs Failed]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[# Neúspěšné úlohy]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.group0.content.items.JobDistributionGrid1.content.gridSettings.labelSettings.SuccessPercent.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Job Success %]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Úspěšnost úloh (%)]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
       <Item ItemId=";items.group0.content.items.JobDistributionGrid1.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No records found for the selected time range and scope]]></Val>
@@ -288,34 +237,22 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.group0.content.items.JobDistributionGrid2.content.gridSettings.labelSettings.BackupItemName.label" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.group0.content.items.JobDistributionGrid2.content.gridSettings.labelSettings.AzureResource.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Backup Item]]></Val>
+          <Val><![CDATA[Azure Resource]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Zálohovaná položka]]></Val>
+            <Val><![CDATA[Prostředek Azure]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.group0.content.items.JobDistributionGrid2.content.gridSettings.labelSettings.ContainerName.label" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.group0.content.items.JobDistributionGrid2.content.gridSettings.labelSettings.BackupInstance.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Container]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Kontejner]]></Val>
-          </Tgt>
+          <Val><![CDATA[Backup Instance]]></Val>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.group0.content.items.JobDistributionGrid2.content.gridSettings.labelSettings.ContainerResourceGroup.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Resource Group]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Skupina prostředků]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.group0.content.items.JobDistributionGrid2.content.gridSettings.labelSettings.DataTransferredInMB.label" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.group0.content.items.JobDistributionGrid2.content.gridSettings.labelSettings.DataTransferred.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Data Transferred (MB)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -324,20 +261,17 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.group0.content.items.JobDistributionGrid2.content.gridSettings.labelSettings.ExtractedBMSType.label" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.group0.content.items.JobDistributionGrid2.content.gridSettings.labelSettings.DatasourceType.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Backup Management Type]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Typ správy záloh]]></Val>
-          </Tgt>
+          <Val><![CDATA[Datasource Type]]></Val>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.group0.content.items.JobDistributionGrid2.content.gridSettings.labelSettings.ExtractedBackupItemType.label" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.group0.content.items.JobDistributionGrid2.content.gridSettings.labelSettings.ErrorTitle.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Backup Item Type]]></Val>
+          <Val><![CDATA[Job Failure Code]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Typ zálohované položky]]></Val>
+            <Val><![CDATA[Kód selhání úlohy]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -347,24 +281,6 @@
           <Val><![CDATA[Job Duration (hrs)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Doba trvání úlohy (h)]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.group0.content.items.JobDistributionGrid2.content.gridSettings.labelSettings.JobFailureCode.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Job Failure Code]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Kód selhání úlohy]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.group0.content.items.JobDistributionGrid2.content.gridSettings.labelSettings.JobOperation.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Job Operation]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Operace úlohy]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -383,6 +299,21 @@
           <Val><![CDATA[Job Status]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Stav úlohy]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.group0.content.items.JobDistributionGrid2.content.gridSettings.labelSettings.OperationCategory.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Operation Category]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.group0.content.items.JobDistributionGrid2.content.gridSettings.labelSettings.ResourceGroup.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Resource Group]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Skupina prostředků]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -518,24 +449,6 @@
           <Val><![CDATA[Order]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Pořadí]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.group0.content.items.text17.content.json" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[<div style="text-align:left"><span style="font-size:14px;font-weight:600;">List of Jobs in Period</span> </div>]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[<div style="text-align:left"><span style="font-size:14px;font-weight:600;">Seznam úloh v období</span> </div>]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.group0.content.items.text66.content.json" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[<span style="font-size:12px;font-style:italic"> Click on any row above to see details of all jobs for that backup item in the seletced time range. </span>]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[<span style="font-size:12px;font-style:italic"> Kliknutím na libovolný řádek výše zobrazíte podrobnosti o všech úlohách pro danou zálohovanou položku ve vybraném časovém rozsahu. </span>]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />

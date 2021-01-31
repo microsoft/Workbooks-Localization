@@ -9,20 +9,26 @@
     <Disp Icon="Expand" Expand="true" Disp="true" LocTbl="false" />
     <Item ItemId=";Strings" ItemType="0" PsrId="306" Leaf="false">
       <Disp Icon="Str" Disp="true" LocTbl="false" />
-      <Item ItemId=";items.group0.content.items.SummaryGrid.content.gridSettings.labelSettings.ExtractedBMSType.label" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.group0.content.items.SummaryGrid.content.gridSettings.labelSettings.BackupInstances.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Backup Management Type]]></Val>
+          <Val><![CDATA[Backup Instances]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Tipo di gestione di backup]]></Val>
+            <Val><![CDATA[Istanze di backup]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.group0.content.items.SummaryGrid.content.gridSettings.labelSettings.ExtractedBackupItemType.label" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.group0.content.items.SummaryGrid.content.gridSettings.labelSettings.BackupSolution.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Backup Item Type]]></Val>
+          <Val><![CDATA[Backup Solution]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.group0.content.items.SummaryGrid.content.gridSettings.labelSettings.CloudStorage.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Cloud Storage (GB)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Tipo di elemento di backup]]></Val>
+            <Val><![CDATA[Archiviazione nel cloud (GB)]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -32,24 +38,6 @@
           <Val><![CDATA[Job Success %]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[% processi completati]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.group0.content.items.SummaryGrid.content.gridSettings.labelSettings.StorageConsumedInGBs.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Cloud Storage (GB)]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Archiviazione nel cloud (GB)]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.group0.content.items.SummaryGrid.content.gridSettings.labelSettings.countBackupItemUniqueId.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[# Backup Items]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[# Elementi di backup]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -65,10 +53,13 @@
       </Item>
       <Item ItemId=";items.group0.content.items.SummaryGridTitle1.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[<div style="text-align:left"><span style="font-size:14px;font-weight:600;">Key Parameters by Backup Item Type </span> </div>]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[<div style="text-align:left"><span style="font-size:14px;font-weight:600;">Key Parameters by Backup Solution </span> </div>]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[<div style="text-align:left"><span style="font-size:14px;font-weight:600;"> Parametri chiave per tipo di elemento di backup </span> </div>]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[<div style="text-align:left"><span style="font-size:14px;font-weight:600;">Key Parameters by Backup Item Type </span> </div>]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
