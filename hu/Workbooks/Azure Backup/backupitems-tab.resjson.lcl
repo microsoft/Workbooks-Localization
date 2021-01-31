@@ -133,10 +133,13 @@
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) scription" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Use to search for a Backup Item by name. <br/> To search for a specific item in a container, use the syntax [container name]5D;;[item name]5D; <br/> To search for all items in a container, use the syntax [container name]5D;;]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Use to search for a backup instance by name. <br/> To search for a specific instance in a container, use the syntax [container name]5D;;[instance name]5D; <br/> To search for all instances in a container, use the syntax [container name]5D;;]]></Val>
+            <Tgt Cat="Text" Stat="Update" Orig="New">
               <Val><![CDATA[Biztonsági mentési elemek név szerinti keresésére használható. <br/> Ha adott tároló adott elemére szeretne keresni, használja a következő szintaxist: [container name]5D;;[item name]5D; <br/> Adott tároló összes elemének kereséséhez használja a következő szintaxist: [container name]5D;;]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[Use to search for a Backup Item by name. <br/> To search for a specific item in a container, use the syntax [container name]5D;;[item name]5D; <br/> To search for all items in a container, use the syntax [container name]5D;;]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -145,20 +148,32 @@
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) bel" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Search Item or Container]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Search Instance or Container]]></Val>
+            <Tgt Cat="Text" Stat="Update" Orig="New">
               <Val><![CDATA[Elem vagy tároló keresése]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[Search Item or Container]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
       </Item>
+      <Item ItemId=";items.group0.content.items.AggregationTypeInfoText.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[ The below charts are displayed in **{AggregationType}** view due to your time range selection. [Learn more]5D;(https://docs.microsoft.com/azure/backup/configure-reports) ]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.group0.content.items.BackupItemsBackupItemsTrendGraph.content.chartSettings.seriesLabelSettings.0.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[# Backup Items]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[# Backup Instances]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[# Biztonsági másolati elemek]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[# Backup Items]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -173,10 +188,13 @@
       </Item>
       <Item ItemId=";items.group0.content.items.BackupItemsBackupItemsTrendGraph.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Backup Items Trend]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[Backup Instances Trend]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[Biztonsági másolati elemek trendje]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Backup Items Trend]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -225,74 +243,32 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.group0.content.items.BackupItemsGrid1.content.gridSettings.labelSettings.BackupItemName.label" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.group0.content.items.BackupItemsGrid1.content.gridSettings.labelSettings.BackupInstance.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Backup Item]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Biztonsági másolati elem]]></Val>
-          </Tgt>
+          <Val><![CDATA[Backup Instance]]></Val>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.group0.content.items.BackupItemsGrid1.content.gridSettings.labelSettings.ContainerResourceGroup.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Resource Group]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Erőforráscsoport]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.group0.content.items.BackupItemsGrid1.content.gridSettings.labelSettings.ExtractedBMSType.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Backup Management Type]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Biztonságimásolat-kezelés típusa]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.group0.content.items.BackupItemsGrid1.content.gridSettings.labelSettings.ExtractedBackupItemType.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Backup Item Type]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Biztonsági másolati elem típusa]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.group0.content.items.BackupItemsGrid1.content.gridSettings.labelSettings.PolicyName.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Policy]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Szabályzat]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.group0.content.items.BackupItemsGrid1.content.gridSettings.labelSettings.ProtectedContainerName.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Container]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Tároló]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.group0.content.items.BackupItemsGrid1.content.gridSettings.labelSettings.ResourceId.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Vault]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Tár]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.group0.content.items.BackupItemsGrid1.content.gridSettings.labelSettings.StorageConsumedInGBs.label" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.group0.content.items.BackupItemsGrid1.content.gridSettings.labelSettings.CloudStorage.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Cloud Storage (GB)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Felhőtárhely (GB)]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.group0.content.items.BackupItemsGrid1.content.gridSettings.labelSettings.DatasourceType.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Datasource Type]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.group0.content.items.BackupItemsGrid1.content.gridSettings.labelSettings.ResourceGroup.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Resource Group]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Erőforráscsoport]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -317,10 +293,13 @@
       </Item>
       <Item ItemId=";items.group0.content.items.BackupItemsGrid1Title.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[<div style="text-align:left"><span style="font-size:14px;font-weight:600;">Storage by BackupItem</span> </div>]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[<div style="text-align:left"><span style="font-size:14px;font-weight:600;">Storage by Backup Instance</span> </div>]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[<div style="text-align:left"><span style="font-size:14px;font-weight:600;">Tárolás biztonsági másolati elemek szerint</span> </div>]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[<div style="text-align:left"><span style="font-size:14px;font-weight:600;">Storage by BackupItem</span> </div>]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>

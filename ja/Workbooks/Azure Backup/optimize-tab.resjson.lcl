@@ -9,18 +9,6 @@
     <Disp Icon="Expand" Expand="true" Disp="true" LocTbl="false" />
     <Item ItemId=";Strings" ItemType="0" PsrId="306" Leaf="false">
       <Disp Icon="Str" Disp="true" LocTbl="false" />
-      <Item ItemId=";@items.group0.content.items.OptimizeInactiveResourcesGrid1.content.gridSettings.labelSettings.BackupManagementType" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) .label" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[Backup Management Type]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[バックアップ管理の種類]]></Val>
-            </Tgt>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-      </Item>
       <Item ItemId=";@items.group0.content.items.OptimizeInactiveResourcesGrid1.content.gridSettings.labelSettings.LatestRecoveryPoint." ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) label" ItemType="0" PsrId="306" Leaf="true">
@@ -28,18 +16,6 @@
             <Val><![CDATA[Latest Recovery Point]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
               <Val><![CDATA[最新の回復ポイント]]></Val>
-            </Tgt>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-      </Item>
-      <Item ItemId=";@items.group0.content.items.OptimizeInactiveResourcesGrid1.content.gridSettings.labelSettings.StorageReplicationTy" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) pe.label" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[Storage Replication Type]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[ストレージ レプリケーションの種類]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
@@ -70,19 +46,25 @@
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) e81292.description" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Use to search for a Backup Item by name. <br/> To search for a specific item in a container, use the syntax [container name]5D;;[item name]5D; <br/> To search for all items in a container, use the syntax [container name]5D;;]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Use to search for a backup instance by name. <br/> To search for a specific instance in a container, use the syntax [container name]5D;;[instance name]5D; <br/> To search for all instances in a container, use the syntax [container name]5D;;]]></Val>
+            <Tgt Cat="Text" Stat="Update" Orig="New">
               <Val><![CDATA[名前でバックアップ項目を検索するために使用します。<br/>コンテナー内の特定の項目を検索するには、[コンテナー名]5D;;[項目名]5D; の構文を使用します<br/>コンテナー内のすべての項目を検索するには、[コンテナー名]5D;; の構文を使用します]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[Use to search for a Backup Item by name. <br/> To search for a specific item in a container, use the syntax [container name]5D;;[item name]5D; <br/> To search for all items in a container, use the syntax [container name]5D;;]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) e81292.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Search Item or Container]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Search Instance or Container]]></Val>
+            <Tgt Cat="Text" Stat="Update" Orig="New">
               <Val><![CDATA[項目またはコンテナーの検索]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[Search Item or Container]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -150,9 +132,9 @@
           <Disp Icon="Str" />
         </Item>
       </Item>
-      <Item ItemId=";@items.group0.content.items.OptimizePolicyOptimizationGrid1Parameters1.content.parameters.5ff37c43d2994feab3369e69" ItemType="0" PsrId="306" Leaf="false">
+      <Item ItemId=";@items.group0.content.items.OptimizePolicyOptimizationGrid1Parameters1.content.parameters.9310f11fc4614212807b582a" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) 3346ec27.description" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) d181079b.description" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Use to specify minimum retention duration of weekly retention points]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -161,7 +143,7 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
-        <Item ItemId=";(...) 3346ec27.label" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) d181079b.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Weekly RP Retention (days)]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -192,98 +174,56 @@
           <Disp Icon="Str" />
         </Item>
       </Item>
-      <Item ItemId=";@items.group0.content.items.OptimizePolicyOptimizationGrid2.content.gridSettings.labelSettings.BackupManagementTyp" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) e.label" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[Backup Management Type]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[バックアップ管理の種類]]></Val>
-            </Tgt>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-      </Item>
-      <Item ItemId=";@items.group0.content.items.OptimizePolicyOptimizationGrid2.content.gridSettings.labelSettings.LatestRecoveryPoint" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) .label" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[Latest Recovery Point]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[最新の回復ポイント]]></Val>
-            </Tgt>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-      </Item>
-      <Item ItemId=";@items.group0.content.items.OptimizePolicyOptimizationsGrid1.content.gridSettings.labelSettings.BackupItemType.lab" ItemType="0" PsrId="306" Leaf="false">
+      <Item ItemId=";@items.group0.content.items.OptimizePolicyOptimizationsGrid1.content.gridSettings.labelSettings.BackupInstance.lab" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) el" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Backup Item Type]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[バックアップ項目の種類]]></Val>
-            </Tgt>
+            <Val><![CDATA[Backup Instance]]></Val>
           </Str>
           <Disp Icon="Str" />
         </Item>
       </Item>
-      <Item ItemId=";@items.group0.content.items.OptimizePolicyOptimizationsGrid1.content.gridSettings.labelSettings.BackupManagementTy" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) pe.label" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[Backup Management Type]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[バックアップ管理の種類]]></Val>
-            </Tgt>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-      </Item>
-      <Item ItemId=";@items.group0.content.items.OptimizePolicyOptimizationsGrid1.content.gridSettings.labelSettings.DailyRetentionDura" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) tion.label" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[Daily RP Retention Duration]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[日単位 RP 保有期間 ]]></Val>
-            </Tgt>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-      </Item>
-      <Item ItemId=";@items.group0.content.items.OptimizePolicyOptimizationsGrid1.content.gridSettings.labelSettings.MonthlyRetentionDu" ItemType="0" PsrId="306" Leaf="false">
+      <Item ItemId=";@items.group0.content.items.OptimizePolicyOptimizationsGrid1.content.gridSettings.labelSettings.DailyRPRetentionDu" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) ration.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Monthly RP Retention Duration]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[月単位 RP 保有期間 ]]></Val>
-            </Tgt>
+            <Val><![CDATA[Daily RP Retention Duration (days)]]></Val>
           </Str>
           <Disp Icon="Str" />
         </Item>
       </Item>
-      <Item ItemId=";@items.group0.content.items.OptimizePolicyOptimizationsGrid1.content.gridSettings.labelSettings.WeeklyRetentionDur" ItemType="0" PsrId="306" Leaf="false">
+      <Item ItemId=";@items.group0.content.items.OptimizePolicyOptimizationsGrid1.content.gridSettings.labelSettings.DatasourceType.lab" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) ation.label" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) el" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Weekly RP Retention Duration]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[週単位 RP 保有期間]]></Val>
-            </Tgt>
+            <Val><![CDATA[Datasource Type]]></Val>
           </Str>
           <Disp Icon="Str" />
         </Item>
       </Item>
-      <Item ItemId=";@items.group0.content.items.OptimizePolicyOptimizationsGrid1.content.gridSettings.labelSettings.YearlyRetentionDur" ItemType="0" PsrId="306" Leaf="false">
+      <Item ItemId=";@items.group0.content.items.OptimizePolicyOptimizationsGrid1.content.gridSettings.labelSettings.MonthlyRPRetention" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) ation.label" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) Duration.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Yearly RP Retention Duration]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[年単位 RP 保有期間]]></Val>
-            </Tgt>
+            <Val><![CDATA[Monthly RP Retention Duration (months)]]></Val>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
+      <Item ItemId=";@items.group0.content.items.OptimizePolicyOptimizationsGrid1.content.gridSettings.labelSettings.WeeklyRPRetentionD" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) uration.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Weekly RP Retention Duration (weeks)]]></Val>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
+      <Item ItemId=";@items.group0.content.items.OptimizePolicyOptimizationsGrid1.content.gridSettings.labelSettings.YearlyRPRetentionD" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) uration.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Yearly RP Retention Duration (years)]]></Val>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -313,19 +253,25 @@
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) c3fe81292.description" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Use to search for a Backup Item by name. <br/> To search for a specific item in a container, use the syntax [container name]5D;;[item name]5D; <br/> To search for all items in a container, use the syntax [container name]5D;;]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Use to search for a backup instance by name. <br/> To search for a specific instance in a container, use the syntax [container name]5D;;[instance name]5D; <br/> To search for all instances in a container, use the syntax [container name]5D;;]]></Val>
+            <Tgt Cat="Text" Stat="Update" Orig="New">
               <Val><![CDATA[名前でバックアップ項目を検索するために使用します。<br/>コンテナー内の特定の項目を検索するには、[コンテナー名]5D;;[項目名]5D; の構文を使用します<br/>コンテナー内のすべての項目を検索するには、[コンテナー名]5D;; の構文を使用します]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[Use to search for a Backup Item by name. <br/> To search for a specific item in a container, use the syntax [container name]5D;;[item name]5D; <br/> To search for all items in a container, use the syntax [container name]5D;;]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) c3fe81292.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Search Item or Container]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Search Instance or Container]]></Val>
+            <Tgt Cat="Text" Stat="Update" Orig="New">
               <Val><![CDATA[項目またはコンテナーの検索]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[Search Item or Container]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -418,19 +364,25 @@
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) 3fe81292.description" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Use to search for a Backup Item by name. <br/> To search for a specific item in a container, use the syntax [container name]5D;;[item name]5D; <br/> To search for all items in a container, use the syntax [container name]5D;;]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Use to search for a backup instance by name. <br/> To search for a specific instance in a container, use the syntax [container name]5D;;[instance name]5D; <br/> To search for all instances in a container, use the syntax [container name]5D;;]]></Val>
+            <Tgt Cat="Text" Stat="Update" Orig="New">
               <Val><![CDATA[名前でバックアップ項目を検索するために使用します。<br/>コンテナー内の特定の項目を検索するには、[コンテナー名]5D;;[項目名]5D; の構文を使用します<br/>コンテナー内のすべての項目を検索するには、[コンテナー名]5D;; の構文を使用します]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[Use to search for a Backup Item by name. <br/> To search for a specific item in a container, use the syntax [container name]5D;;[item name]5D; <br/> To search for all items in a container, use the syntax [container name]5D;;]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) 3fe81292.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Search Item or Container]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Search Instance or Container]]></Val>
+            <Tgt Cat="Text" Stat="Update" Orig="New">
               <Val><![CDATA[項目またはコンテナーの検索]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[Search Item or Container]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -456,15 +408,6 @@
           <Disp Icon="Str" />
         </Item>
       </Item>
-      <Item ItemId=";items.group0.content.items.OptimizeGeneralInstructionText.content.json" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[<p> <span style="font-size:12px; font-style:italic"> Click on any category below to discover optimization opportunities pertaining to that category. <a href="https://aka.ms/AzureBackupReportOptimizeTab" target="_blank">Learn More</a> </span> </p>]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[<p> <span style="font-size:12px; font-style:italic"> 以下の任意のカテゴリをクリックすると、そのカテゴリに関連する最適化の機会が見つかります。<a href="https://aka.ms/AzureBackupReportOptimizeTab" target="_blank">詳細情報</a> </span> </p>]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
       <Item ItemId=";items.group0.content.items.OptimizeInactiveResourcesGrid1.content.gridSettings.labelSettings.AzureResource.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Azure Resource]]></Val>
@@ -474,21 +417,15 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.group0.content.items.OptimizeInactiveResourcesGrid1.content.gridSettings.labelSettings.BackupItem.label" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.group0.content.items.OptimizeInactiveResourcesGrid1.content.gridSettings.labelSettings.BackupInstance.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Backup Item]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[バックアップ項目]]></Val>
-          </Tgt>
+          <Val><![CDATA[Backup Instance]]></Val>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.group0.content.items.OptimizeInactiveResourcesGrid1.content.gridSettings.labelSettings.BackupItemType.label" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.group0.content.items.OptimizeInactiveResourcesGrid1.content.gridSettings.labelSettings.DatasourceType.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Backup Item Type]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[バックアップ項目の種類]]></Val>
-          </Tgt>
+          <Val><![CDATA[Datasource Type]]></Val>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -512,19 +449,25 @@
       </Item>
       <Item ItemId=";items.group0.content.items.OptimizeInactiveResourcesGrid1InstructionText.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[<p> <span style="font-size:12px; font-style:italic"> Below are the backup items which do not have a successful recovery point in the selected time range. You can save on costs by unprotecting decommissioned machines. <a href="https://aka.ms/AzureBackupReportDeletedResourcesView" target="_blank">Learn More</a> </span> </p>]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[<p> <span style="font-size:12px; font-style:italic"> Below are the backup instances which do not have a successful recovery point in the selected time range. You can save on costs by unprotecting decommissioned machines. <a href="https://aka.ms/AzureBackupReportDeletedResourcesView" target="_blank">Learn More</a> </span> </p>]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[<p> <span style="font-size:12px; font-style:italic"> 以下は、選択した時間の範囲内に成功した回復ポイントがないバックアップ項目です。使用停止になったマシンの保護を解除すると、コストを節約できます。<a href="https://aka.ms/AzureBackupReportDeletedResourcesView" target="_blank">詳細情報</a> </span> </p>]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[<p> <span style="font-size:12px; font-style:italic"> Below are the backup items which do not have a successful recovery point in the selected time range. You can save on costs by unprotecting decommissioned machines. <a href="https://aka.ms/AzureBackupReportDeletedResourcesView" target="_blank">Learn More</a> </span> </p>]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group0.content.items.OptimizeInactiveResourcesGrid1Title.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[<div style="text-align:left"><span style="font-size:14px;font-weight:600;">Backup Items without a recovery point in selected time range </span> </div>]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[<div style="text-align:left"><span style="font-size:14px;font-weight:600;">Backup Instances without a recovery point in selected time range </span> </div>]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[<div style="text-align:left"><span style="font-size:14px;font-weight:600;">選択した時間の範囲内に回復ポイントがないバックアップ項目 </span> </div>]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[<div style="text-align:left"><span style="font-size:14px;font-weight:600;">Backup Items without a recovery point in selected time range </span> </div>]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -543,21 +486,15 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.group0.content.items.OptimizePolicyOptimizationGrid2.content.gridSettings.labelSettings.BackupItem.label" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.group0.content.items.OptimizePolicyOptimizationGrid2.content.gridSettings.labelSettings.BackupInstance.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Backup Item]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[バックアップ項目]]></Val>
-          </Tgt>
+          <Val><![CDATA[Backup Instance]]></Val>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.group0.content.items.OptimizePolicyOptimizationGrid2.content.gridSettings.labelSettings.BackupItemType.label" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.group0.content.items.OptimizePolicyOptimizationGrid2.content.gridSettings.labelSettings.DatasourceType.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Backup Item Type]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[バックアップ項目の種類]]></Val>
-          </Tgt>
+          <Val><![CDATA[Datasource Type]]></Val>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -584,15 +521,6 @@
           <Val><![CDATA[Azure Resource]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Azure リソース]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.group0.content.items.OptimizePolicyOptimizationsGrid1.content.gridSettings.labelSettings.BackupItem.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Backup Item]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[バックアップ項目]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -635,10 +563,13 @@
       </Item>
       <Item ItemId=";items.group0.content.items.OptimizePolicyOptimizationsGrid1Title.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[<div style="text-align:left"><span style="font-size:14px;font-weight:600;">Backup Items with a large retention duration]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[<div style="text-align:left"><span style="font-size:14px;font-weight:600;">Backup Instances with a large retention duration]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[<div style="text-align:left"><span style="font-size:14px;font-weight:600;">保有期間の長いバックアップ項目]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[<div style="text-align:left"><span style="font-size:14px;font-weight:600;">Backup Items with a large retention duration]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -657,6 +588,30 @@
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[<div style="text-align:left"><span style="font-size:14px;font-weight:600;">毎日の完全バックアップ用に構成されたデータベース </span> </div>]]></Val>
           </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.group0.content.items.OptimizeSubTabs1.content.links.40ea16d3b2f043228ee7adf160fdad90.linkLabel" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Inactive Resources]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.group0.content.items.OptimizeSubTabs1.content.links.7cee679a1b2548269785c39212eaf48b.linkLabel" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Policy Optimizations]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.group0.content.items.links109.content.links.21c027f68f324dd5bf909d54d6ed0393.linkLabel" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Retention Optimizations]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.group0.content.items.links109.content.links.3d1c10e270a8487bb9836570ce733f31.linkLabel" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Backup Schedule Optimizations]]></Val>
         </Str>
         <Disp Icon="Str" />
       </Item>
