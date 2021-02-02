@@ -12,8 +12,8 @@
       <Item ItemId=";items.OverviewErrorMessage1.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[There is no backup data in the selected Log Analytics workspace(s) for the selected time range. <a href="https://aka.ms/UsingLAWorkspace" target="_blank">Learn More</a>]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[<div style="text-align:left;"><span style="font-size:12px;font-weight:600;"> Uwaga: brak danych kopii zapasowej w wybranych obszarach roboczych usługi Log Analytics dla wybranego zakresu czasu. <a href="https://aka.ms/UsingLAWorkspace" target="_blank">Dowiedz się więcej</a> </span> </div>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Brak danych kopii zapasowej w wybranych obszarach roboczych usługi Log Analytics dla wybranego zakresu czasu. <a href="https://aka.ms/UsingLAWorkspace" target="_blank">Dowiedz się więcej</a>]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[<div style="text-align:left;"><span style="font-size:12px;font-weight:600;"> Note - There is no backup data in the selected Log Analytics workspace(s) for the selected time range. <a href="https://aka.ms/UsingLAWorkspace" target="_blank">Learn More</a> </span> </div>]]></Val>
@@ -78,6 +78,9 @@
       <Item ItemId=";items.OverviewReportParameterBlock.content.parameters.8ce61d1de37140bfad537ba78afb976f.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Use to filter reports by backup solution]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Użyj, aby odfiltrować raporty według rozwiązania do tworzenia kopii zapasowych]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -108,12 +111,18 @@
       <Item ItemId=";items.OverviewTimeRangeParameterBlock.content.parameters.78c86854fe3c44c58ee323d4210827d1.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Use this parameter to avoid querying data that is sent to the legacy Azure Diagnostics table. Excluding the legacy table improves query performance time. <a href="https://docs.microsoft.com/azure/backup/backup-azure-diagnostic-events#legacy-event">Learn more </a>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Ten parametr pozwala unikać wykonywania zapytań o dane wysyłane do starszej tabeli agenta Diagnostyka Azure. Wykluczenie starszej tabeli poprawia czas wydajności zapytania. <a href="https://docs.microsoft.com/azure/backup/backup-azure-diagnostic-events#legacy-event">Dowiedz się więcej </a>]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.OverviewTimeRangeParameterBlock.content.parameters.78c86854fe3c44c58ee323d4210827d1.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Exclude Legacy Table]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Wyklucz tabelę w starszej wersji]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -192,50 +201,71 @@
       <Item ItemId=";items.PolicyAdherenceByBackupInstanceDailyBackupAggregationTypeMonthlyText.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[The below grid is displayed in **Monthly view** due to your time range selection. Backup Instances which have had **atleast one successful backup** on **every day** in a given month are marked green (compliant) for that month. Note that 'month' here refers to a span of 4 weeks (28 days). [Learn more]5D;(https://aka.ms/AzureBackupReportDailyBackupMonthlyView1)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Poniższa siatka jest wyświetlana w **Widoku miesięcznym** z powodu wyboru zakresu czasu. Wystąpienia kopii zapasowych, które mają **co najmniej jedną pomyślną kopię zapasową** **każdego dnia** w danym miesiącu, są oznaczone jako zielone (zgodne) dla tego miesiąca. Pamiętaj, że „miesiąc” oznacza tu zakres czterech tygodni (28 dni). [Dowiedz się więcej]5D;(https://aka.ms/AzureBackupReportDailyBackupMonthlyView1)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.PolicyAdherenceByBackupInstanceDailyBackupAggregationTypeWeeklyText.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[The below grid is displayed in **Weekly view** due to your time range selection. Backup Instances which have had **atleast one successful backup** on **every day** in a given week are marked green (compliant) for that week.  [Learn more]5D;(https://aka.ms/AzureBackupReportDailyBackupWeeklyView2)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Poniższa siatka jest wyświetlana w **Widoku tygodniowym** z powodu wyboru zakresu czasu. Wystąpienia kopii zapasowych, które miały **co najmniej jedną pomyślną kopię zapasową** **każdego dnia** w danym tygodniu, są oznaczone jako zielone (zgodne) dla tego tygodnia. [Dowiedz się więcej]5D;(https://aka.ms/AzureBackupReportDailyBackupWeeklyView2)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.PolicyAdherenceByBackupInstanceWeeklyBackupAggregationTypeMonthlyText.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[The below grid is displayed in **Monthly view** due to your time range selection. Backup Instances which have had **atleast one** successful backup in **every week** in a given month are marked green (compliant) for that month. Note that 'month' here refers to a span of 4 weeks (28 days). [Learn more]5D;(https://aka.ms/AzureBackupReportWeeklyBackupMonthlyView2)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Poniższa siatka jest wyświetlana w **Widoku miesięcznym** z powodu wyboru zakresu czasu. Wystąpienia kopii zapasowych, które miały **co najmniej jedną** pomyślną kopię zapasową **w każdym tygodniu** danego miesiąca, są oznaczone jako zielone (zgodne) dla tego miesiąca. Pamiętaj, że „miesiąc” oznacza tu zakres czterech tygodni (28 dni). [Dowiedz się więcej]5D;(https://aka.ms/AzureBackupReportWeeklyBackupMonthlyView2)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.PolicyAdherenceByTimePeriodDailyBackupAggregationTypeMonthlyText.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[The below grid is displayed in **Monthly view** due to your time range selection. Backup Instances which have had **atleast one successful backup** on **every day** in a given month fall under the second column in the below table. Note that 'month' here refers to a span of 4 weeks (28 days). [Learn more]5D;(https://aka.ms/AzureBackupReportDailyBackupMonthlyView1)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Poniższa siatka jest wyświetlana w **Widoku miesięcznym** z powodu wyboru zakresu czasu. Wystąpienia kopii zapasowych, które mają **co najmniej jedną pomyślną kopię zapasową** **każdego dnia** w danym miesiącu, trafiają do drugiej kolumny w tabeli poniżej. Pamiętaj, że „miesiąc” oznacza tutaj zakres czterech tygodni (28 dni). [Dowiedz się więcej]5D;(https://aka.ms/AzureBackupReportDailyBackupMonthlyView1)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.PolicyAdherenceByTimePeriodDailyBackupAggregationTypeWeeklyText.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[The below grid is displayed in **Weekly view** due to your time range selection. Backup Instances which have had **atleast one successful backup** on **every day** in a given week fall under the second column in the below table.  [Learn more]5D;(https://aka.ms/AzureBackupReportDailyBackupWeeklyView1)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Poniższa siatka jest wyświetlana w **Widoku tygodniowym** z powodu wyboru zakresu czasu. Wystąpienia kopii zapasowych, które miały **co najmniej jedną pomyślną kopię zapasową** **każdego dnia** w danym tygodniu, trafiają do drugiej kolumny w tabeli poniżej. [Dowiedz się więcej]5D;(https://aka.ms/AzureBackupReportDailyBackupWeeklyView2)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.PolicyAdherenceByTimePeriodWeeklyBackupAggregationTypeMonthlyText.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[The below grid is displayed in **Monthly view** due to your time range selection. Backup Instances which have had **atleast one** successful backup in **every week** in a given month fall under the second column in the below table. Note that 'month' here refers to a span of 4 weeks (28 days). [Learn more]5D;(https://aka.ms/AzureBackupReportWeeklyBackupMonthlyView1)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Poniższa siatka jest wyświetlana w **Widoku miesięcznym** z powodu wyboru zakresu czasu. Wystąpienia kopii zapasowych, które miały **co najmniej jedną** pomyślną kopię zapasową **w każdym tygodniu**, trafiają do drugiej kolumny w tabeli poniżej. Pamiętaj, że „miesiąc” oznacza tu zakres czterech tygodni (28 dni). [Dowiedz się więcej]5D;(https://aka.ms/AzureBackupReportWeeklyBackupMonthlyView2)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.PolicyAdherenceDailyBackupGrid2.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[List of Jobs in Period]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Lista zadań w okresie]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.ResourceSpecificTextBox1.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[You have vault(s) using **legacy diagnostics settings**. Please use the latest diagnostics settings for all your vaults to make them eligible for reporting upgrades. [Learn more]5D;(https://aka.ms/AzureBackupUseResourceSpecific)]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[<div style="text-align:left;"><h1> <span style="font-size:12px;font-weight:400;font-style:italic"> Masz magazyny używające **starszych ustawień diagnostyki**. Użyj najnowszych ustawień diagnostyki dla wszystkich magazynów, aby kwalifikowały się do uaktualnień raportowania. <a href="https://aka.ms/AzureBackupUseResourceSpecific" target="_blank">Dowiedz się więcej</a> </span> </h1> </div>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Masz magazyny używające **starszych ustawień diagnostyki**. Użyj najnowszych ustawień diagnostyki dla wszystkich magazynów, aby kwalifikowały się do uaktualnień raportowania. [Dowiedz się więcej]5D;(https://aka.ms/AzureBackupUseResourceSpecific)]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[<div style="text-align:left;"><h1> <span style="font-size:12px;font-weight:400;font-style:italic"> You have vault(s) using **legacy diagnostics settings**. Please use the latest diagnostics settings for all your vaults to make them eligible for reporting upgrades. <a href="https://aka.ms/AzureBackupUseResourceSpecific" target="_blank">Learn More</a> </span> </h1> </div>]]></Val>
@@ -246,8 +276,8 @@
       <Item ItemId=";items.ResourceSpecificTextBox2.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[You have vault(s) using **legacy diagnostics settings**. Please use the latest diagnostics settings for all your vaults to make them eligible for reporting upgrades. <a href="https://aka.ms/AzureBackupUseResourceSpecific" target="_blank">Learn More</a>]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[<div style="text-align:left;"><h1> <span style="font-size:12px;font-weight:400;font-style:italic"> Masz magazyny używające **starszych ustawień diagnostyki**. Użyj najnowszych ustawień diagnostyki dla wszystkich magazynów, aby kwalifikowały się do uaktualnień raportowania. <a href="https://aka.ms/AzureBackupUseResourceSpecific" target="_blank">Dowiedz się więcej</a> </span> </h1> </div>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Masz magazyny używające **starszych ustawień diagnostyki**. Użyj najnowszych ustawień diagnostyki dla wszystkich magazynów, aby kwalifikowały się do uaktualnień raportowania. <a href="https://aka.ms/AzureBackupUseResourceSpecific" target="_blank">Dowiedz się więcej</a>]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[<div style="text-align:left;"><h1> <span style="font-size:12px;font-weight:400;font-style:italic"> You have vault(s) using **legacy diagnostics settings**. Please use the latest diagnostics settings for all your vaults to make them eligible for reporting upgrades. <a href="https://aka.ms/AzureBackupUseResourceSpecific" target="_blank">Learn More</a> </span> </h1> </div>]]></Val>
@@ -321,6 +351,9 @@
       <Item ItemId=";items.Tabs.content.links.fd346de8b14d4ce99014bcdf8c44b55a.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Policy Adherence]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Zgodność z zasadami]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

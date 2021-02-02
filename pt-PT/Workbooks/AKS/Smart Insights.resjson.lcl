@@ -23,6 +23,9 @@
         <Item ItemId=";(...) ntent.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Events per hour]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Eventos por hora]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -33,7 +36,7 @@
           <Str Cat="Text">
             <Val><![CDATA[No events found.]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Nenhuns eventos encontrados.]]></Val>
+              <Val><![CDATA[Nenhum evento encontrado.]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
@@ -41,6 +44,9 @@
         <Item ItemId=";(...) ventanomalygroups.content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Spiking kubernetes events:]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Eventos de Kubernetes de Pico:]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -50,6 +56,9 @@
         <Item ItemId=";(...) anation.content.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[## Select an event to see a graph of occurrences]D;]A;]D;]A;This analyzer shows common "classes" of events and shows which event classes have increased in volume recently. ]D;]A;- Events in the list below are grouped based on common phrases, so two events with messages "pod-abc-123 failed, can not pull image" and "pod-def-456 failed, can not pull image" would be grouped together.]D;]A;- The Spikiness column rates which events have occureed more recently. For example, if Events A and B occurred on average 10 times a day in the last month, but event A occurred 1000 times yesterday, and event B occurred 2 times yesterday, then event A would have a much higher spikiness rating than B.]D;]A;]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[## Selecionar um evento para ver um gráfico de ocorrências]D;]A;]D;]A;Este analisador mostra "classes" comuns de eventos e quais as classes de eventos que aumentaram em volume recentemente. ]D;]A;- Os eventos na lista abaixo são agrupados com base em expressões comuns, pelo que dois eventos com mensagens "pod-abc-123 com falhas, não é possível solicitar imagem" e "pod-def-456 com falhas, não é possível solicitar imagem" seriam agrupados.]D;]A;- A coluna Nível de pico classifica os eventos que ocorreram mais recentemente. Por exemplo, se os eventos A e B ocorreram em média 10 vezes por dia no último mês, mas o evento A ocorreu 1000 vezes ontem e o evento B ocorreu 2 vezes ontem, então o evento A teria uma classificação de nível de pico muito maior do que B.]D;]A;]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -71,6 +80,9 @@
         <Item ItemId=";(...) nomalytextexplanation.content.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[## Select a container to view liveness probe failures]D;]A;]D;]A;This analyzer shows which liveness probes have failed recently and how often. Select one to see a time-series of occurrences.]D;]A;]D;]A;Column explanation:]D;]A;- total: counts liveness probe failures over the entire time range]D;]A;- recentTotal: counts liveness probe failures in the last 1/10th of the time frame (so for a 30 day view, recentTotal would show failures in the last 3 days)]D;]A;- controllerTotal: counts liveness probe failures from all containers managed by a controller]D;]A;]D;]A;]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[## Selecionar um contentor para ver falhas de pesquisas liveness]D;]A;]D;]A;Este analisador mostra as pesquisas liveness com falhas recentes e a frequência de falha. Selecione um para ver uma série temporal de ocorrências.]D;]A;]D;]A;Explicação da coluna:]D;]A;- total: conta falhas de pesquisa de liveness ao longo do intervalo de tempo]D;]A;- recentTotal: conta falhas de pesquisa liveness no último 1/10 do período de tempo (assim, para uma vista de 30 dias, recentTotal mostraria falhas nos últimos 3 dias)]D;]A;- controllerTotal: conta falhas de pesquisa liveness de todos os contentores geridos por um controlador]D;]A;]D;]A;]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -80,12 +92,18 @@
         <Item ItemId=";(...) ssprobeselect.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[No liveness probe failures found!]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Não foram encontradas falhas de pesquisa liveness!]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) ssprobeshowdetails.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[no container selected]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[nenhum contentor selecionado]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -113,12 +131,18 @@
         <Item ItemId=";(...) bs.content.links.ba69d35d1cd94919bd4fd4d63e2605d4.linkLabel" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Limits and requests set]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Limites e pedidos definidos]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) bs.content.links.fef55d21802c43e899309bef73f4d6b1.linkLabel" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Limits or requests not set]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Limites ou pedidos não definidos]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -137,6 +161,9 @@
         <Item ItemId=";(...) roup.content.items.smartdetectorscombinedworkbookrequestlimitscpuchart.content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[CPU Usage vs Request & Limit]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Utilização da CPU vs Pedido e Limite]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -152,6 +179,9 @@
         <Item ItemId=";(...) roup.content.items.smartdetectorscombinedworkbookrequestlimitsmemorychart.content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Memory Usage vs Request & Limit]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Utilização da Memória vs Pedido e Limite]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -160,6 +190,9 @@
           <Item ItemId=";(...) tings.0.label" ItemType="0" PsrId="306" Leaf="true">
             <Str Cat="Text">
               <Val><![CDATA[max cpu usage (nanocores)]]></Val>
+              <Tgt Cat="Text" Stat="Loc" Orig="New">
+                <Val><![CDATA[utilização máx. da cpu (nanonúcleos)]]></Val>
+              </Tgt>
             </Str>
             <Disp Icon="Str" />
           </Item>
@@ -205,6 +238,9 @@
           <Item ItemId=";(...) Settings.0.label" ItemType="0" PsrId="306" Leaf="true">
             <Str Cat="Text">
               <Val><![CDATA[max memory usage (bytes)]]></Val>
+              <Tgt Cat="Text" Stat="Loc" Orig="New">
+                <Val><![CDATA[utilização máx. da memória (bytes)]]></Val>
+              </Tgt>
             </Str>
             <Disp Icon="Str" />
           </Item>
@@ -251,12 +287,18 @@
         <Item ItemId=";(...) container.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[No pods found in cluster. Is monitoring enabled?]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Nenhum pod encontrado no cluster. A monitorização está ativada?]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) container.content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Request/limit unoptimality]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Nível não ótimo do pedido/limite]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -278,6 +320,9 @@
         <Item ItemId=";(...) xtexplanation.content.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[## Select a container to see recommended requests and limits]D;]A;]D;]A;This analyzer shows containers with excessive cpu/memory limits and requests. Each tile can represent multiple containers with the same spec. (ex: If deployment A creates 100 identical pods, each with a container C1 and C2, then there will be a single tile for all C1 containers and a single tile for all C2 containers).]D;]A;]D;]A;Tiles are colored like so:]D;]A;- white -> well set limits and requests  ]D;]A;- orange -> excessive limits or requests]D;]A;- turquoise -> unset limits or requests]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[## Selecionar um contentor para ver pedidos e limites recomendados]D;]A;]D;]A;Este analisador mostra contentores com limites e pedidos de CPU/memória excessivos. Cada mosaico pode representar vários contentores com a mesma especificação. (Por exemplo: se a implementação A criar 100 pods idênticos, cada um com um contentor C1 e C2, então haverá um mosaico para todos os contentores C1 e um mosaico para todos os contentores C2).]D;]A;]D;]A;Os mosaicos têm as seguintes cores:]D;]A;- branco -> limites e pedidos corretamente definidos  ]D;]A;- laranja -> limites ou pedidos excessivos]D;]A;- turquesa -> limites ou pedidos de não definidos]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -294,12 +339,18 @@
       <Item ItemId=";items.smartdetectorscombinedworkbookparameters.content.parameters.6390427562704382ab34935932debe40.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Kube Cluster]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Cluster do Kube]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.smartdetectorscombinedworkbooktopofpagetabs.content.links.1a37c39759ca4b6eb60b19b2dca70c21.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Event Anomaly]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Anomalia de Evento]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -315,12 +366,18 @@
       <Item ItemId=";items.smartdetectorscombinedworkbooktopofpagetabs.content.links.ae3e6ec3f7294716b04244bec65b0339.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Limits and Requests]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Limites e Pedidos]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Smart Insights]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Informações Inteligentes]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
