@@ -12,36 +12,54 @@
       <Item ItemId=";items.Federation.content.items.text2.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Modified federation settings]D;]A;]D;]A;This section monitors when a user or application modifies the federation settings on the domain. For example, this alert will trigger when a new Active Directory Federated Service (ADFS) TrustedRealm object, such as a signing certificate, is added to the domain. Modification to domain federation settings should be rare. Confirm the added or modified target domain/URL is legitimate administrator behavior.]D;]A;- To understand why an authorized user may update settings for a federated domain in Office 365, Azure, or Intune, see: https://docs.microsoft.com/office365/troubleshoot/active-directory/update-federated-domain-office-365.]D;]A;- For details on security realms that accept security tokens, see the ADFS Proxy Protocol (MS-ADFSPP) specification: https://docs.microsoft.com/openspecs/windows_protocols/ms-adfspp/e7b9ea73-1980-4318-96a6-da559486664b.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# Definições de federação modificadas]D;]A;]D;]A;Esta secção monitoriza quando um utilizador ou uma aplicação modifica as definições da federação no domínio. Por exemplo, este alerta será acionado quando um novo objeto TrustedRealm, como um certificado de assinatura, dos Serviços de Federação do Active Directory (ADFS) for adicionado ao domínio. A modificação das definições de federação do domínio tem de ser rara. Confirme se o domínio/URL de destino adicionado ou modificado é um comportamento de administrador legítimo.]D;]A;- Para entender por que um utilizador autorizado pode atualizar as definições para um domínio federado no Office 365, Azure ou Intune, veja: https://docs.microsoft.com/office365/troubleshoot/active-directory/update-federated-domain-office-365.]D;]A;- Para obter informações detalhadas sobre realms de segurança que aceitam tokens de segurança, veja a especificação do Protocolo de Proxy do ADFS (MS-ADFSPP): https://docs.microsoft.com/openspecs/windows_protocols/ms-adfspp/e7b9ea73-1980-4318-96a6-da559486664b.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Federation.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Modified federation settings ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Definições de federação modificadas ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Permissions.content.items.Recentapppermissionsactivity.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Recent app permissions activity]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Atividade recente de permissões de aplicações]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Permissions.content.items.query5.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[New Application (AppOnly) permissions added to service principals]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Novas permissões de Aplicação (AppOnly) adicionadas aos principais de serviços]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Permissions.content.items.text0.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## New permissions granted to service principals]D;]A;]D;]A;This section monitors for changes to OAuth 2.0 permissions granted to Service Principals. For example, this alert will trigger when a Service Principal is granted Application (AppOnly) permissions to read mail through the Microsoft Graph API. When this occurs, the Service Principal is added to an App Role with a value of Mail.Read. ]D;]A;]D;]A;An attacker could elevate their privileges by using a compromised account to grant new permissions to a Service Principal they control, or by tricking a user into granting permissions. Investigations should focus on high privilege permissions that either grant access to sensitive data, or represent opportunities for lateral movement by attackers.]D;]A;]D;]A;The first view in this section focuses specifically on Application permissions, which generally (but not always) represent higher risk. The second view is broader- it includes Delegated (App+User) permissions grants and additional audit events.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Novas permissões concedidas a principais de serviços]D;]A;]D;]A;Esta secção monitoriza as alterações às permissões de OAuth 2.0 concedidas aos Principais de Serviços. Por exemplo, este alerta será acionado quando um Principal de Serviço receber permissões de Aplicação (AppOnly) para ler o correio através da API Microsoft Graph. Quando isto ocorrer, o Principal de Serviço é adicionado a uma Função de Aplicação com um valor de Mail.Read. ]D;]A;]D;]A;Um atacante poderia elevar os seus privilégios através de uma conta comprometida para conceder novas permissões a um Principal de Serviço que controla ou levando um utilizador a conceder permissões. As investigações têm de centrar-se em permissões de elevado privilégio que concedem acesso a dados confidenciais ou representam oportunidades de movimento lateral por parte dos atacantes.]D;]A;]D;]A;A primeira vista desta secção centra-se especificamente nas permissões de Aplicação que, geralmente (mas nem sempre), representam um risco mais elevado. A segunda vista é mais ampla: inclui permissões Delegadas (Aplicação+Utilizador) e eventos de auditoria adicionais.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Permissions.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[New permissions granted to service principals]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Novas permissões concedidas aos principais de serviços]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -57,6 +75,9 @@
       <Item ItemId=";items.Serviceprincipals.content.items.parameters2.content.parameters.cdd0f13baf8248ecb726873f86f60365.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Exclude actor]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Excluir ator]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -72,6 +93,9 @@
       <Item ItemId=";items.Serviceprincipals.content.items.query0.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Recent updates to application/service principal authentication methods]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Atualizações recentes de métodos de autenticação de aplicações/principais de serviços]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -90,6 +114,9 @@
       <Item ItemId=";items.Serviceprincipals.content.items.query5.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Updates to service principal authentication methods over time]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Atualizações dos métodos de autenticação do principal do serviço ao longo do tempo]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -105,18 +132,27 @@
       <Item ItemId=";items.Serviceprincipals.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Modified application and service principal credentials/authentication methods]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Credenciais/métodos de autenticação de aplicações e principais de serviços modificados]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group6.content.items.text0.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Directory role and group membership updates to service principals]D;]A;]D;]A;This section monitors for Service Principals being as members of Directory Roles (admin roles) or Groups. For example, this alert will trigger when a Service Principal is added to the Company Administrator or Application Administrator role. ]D;]A; ]D;]A;An attacker could elevate their privileges by adding a Service Principal they control to a high privileged role or a group that is used to protect access to sensitive resources. Investigations should focus on administrator rules and Groups that either grant access to sensitive data or represent opportunities for lateral movement by attackers.]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Atualizações de funções de diretório e associações a grupos para principais de serviços]D;]A;]D;]A;Esta secção monitoriza os Principais de Serviços que são membros de Funções de Diretório (funções de administrador) ou Grupos. Por exemplo, este alerta será acionado quando um Principal de Serviço for adicionado à função Administrador da Empresa ou Administrador da Aplicação. ]D;]A; ]D;]A;Um atacante poderia elevar os seus privilégios ao adicionar um Principal de Serviço que controla a uma função privilegiada alta ou a um grupo utilizado para proteger o acesso a recursos confidenciais. As investigações têm de centrar-se nas regras de administradores e nos Grupos que concedem acesso a dados confidenciais ou representam oportunidades de movimento lateral por parte dos atacantes.]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group6.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Directory role and group membership updates to service principals]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Atualizações de funções de diretório e associações a grupos para principais de serviços]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -141,6 +177,9 @@
       <Item ItemId=";items.links7.content.links.f02d3e95c5e948ffb4cf3c1268b9ef5f.preText" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[This workbook is intended to help identify suspicious application and service principal activity that may indicate compromises in your environment. ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Este livro destina-se a ajudar a identificar a atividade suspeita da aplicação e do principal de serviço que pode indicar que o seu ambiente está comprometido. ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -156,6 +195,9 @@
       <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Sensitive Operations Report]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Relatório de Operações Confidenciais]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
