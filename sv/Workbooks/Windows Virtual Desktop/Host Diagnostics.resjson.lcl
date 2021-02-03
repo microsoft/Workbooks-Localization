@@ -416,6 +416,9 @@
         <Item ItemId=";(...) abelSettings.EventLevelName.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Event level]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Händelsenivå]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -432,7 +435,7 @@
           <Str Cat="Text">
             <Val><![CDATA[Last seen]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Senast sedd]]></Val>
+              <Val><![CDATA[Senast visad]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
@@ -452,6 +455,9 @@
         <Item ItemId=";(...) ption" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Find the highest agent message level, to format the warning text accordingly. Error formatting takes precedence over warnings.]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Hitta den högsta agentmeddelandenivån för att formatera varningstexten. Felformatering har högre prioritet än varningar.]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -473,6 +479,9 @@
         <Item ItemId=";(...) ption" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[This allows for more natural phrasing in the message. If all agent events are only error or only warning, it will print the corresponding level. Otherwise, it will say "Error and/or Warning"]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Detta möjliggör en mer naturlig beskrivning i meddelandet. Om alla agenthändelser endast är fel eller varningar skrivs motsvarande nivå ut. Annars står det "Fel och/eller varning"]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -494,6 +503,9 @@
         <Item ItemId=";(...) ption" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[The count of distinct messages written to the event log]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Det antal distinkta meddelanden som skrivs till händelseloggen]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -503,6 +515,9 @@
         <Item ItemId=";(...) ption" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Option to allow for testing the agent message, if no agent messages exist in the data set]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Alternativ för att tillåta testning av agentmeddelandet om det inte finns något agentmeddelande i datamängden]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -536,6 +551,9 @@
         <Item ItemId=";(...) ption" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[The count of hosts with agents that are writing messages to the event log]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Det antal värdar med agenter som skriver meddelanden till händelseloggen]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -545,6 +563,9 @@
         <Item ItemId=";(...) ption" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[The count of messages written to the event log]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Det antal meddelanden som skrivits till händelseloggen]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -606,8 +627,8 @@
       <Item ItemId=";items.HostDiagnostics.content.items.ComputerBrowserGroup.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Host browser]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[Datorns webbläsare]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Värdwebbläsare]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Computer browser]]></Val>
@@ -720,36 +741,54 @@
       <Item ItemId=";items.HostDiagnostics.content.items.WVDAgentEventText.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[There {HostVerb} **{HostsWithAgentEvents}** {HostPlural} reporting **{TotalEventInstances}** {EventInstancePlural} of **{DistinctEventCount}** WVD agent **{EventLevelName}** {DistinctEventPlural}. See the **WVD agent events** table below to learn more about these issues.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Det {HostVerb} **{HostsWithAgentEvents}** {HostPlural} som rapporterar **{TotalEventInstances}** {EventInstancePlural} av **{DistinctEventCount}** WVD-agent **{EventLevelName}** {DistinctEventPlural}. I tabellen **WVD-agenthändelser** nedan finns mer information om dessa frågor.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.HostDiagnostics.content.items.WVDAgentEventTextForNoEvents.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[There are no WVD host agents reporting errors or warnings to the event log in the selected time range.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Det finns inga WVD-värdagenter som rapporterar fel eller varningar till händelseloggen i det valda tidsintervallet.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.HostDiagnostics.content.items.WVDAgentEventsGroup.content.items.SelectedWvdAgentEventGuidance.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Select an event on the left side to see more details.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Välj en händelse på vänster sida om du vill se mer information.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.HostDiagnostics.content.items.WVDAgentEventsGroup.content.items.WVDagenteventsperhost.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Events per host]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Händelser per värd]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.HostDiagnostics.content.items.WVDAgentEventsGroup.content.items.WVDagenteventsummary.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[WVD agent events by description]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[WVD-agenthändelser efter beskrivning]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.HostDiagnostics.content.items.WvdAgentParameters.content.parameters.a7ee9b2b2d7546ecb1c4579396d2305b.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Events to include]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Händelser att inkludera]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
