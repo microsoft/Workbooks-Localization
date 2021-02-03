@@ -126,8 +126,8 @@
       <Item ItemId=";items.OverviewGroup.content.items.AlertsGroup.content.items.NewAlertsTitle.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<span style="color:#E00000;font-weight:bold">{AlertsCount} new severity {AlertLevel} alerts</span> in {TimeRange:label}]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[**<span style="color:red">Nová upozornění se závažností 1: {AlertsCount}</span>** v rozsahu {TimeRange:label}]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<span style="color:#E00000;font-weight:bold">Nové výstrahy (počet: {AlertsCount}) se závažností {AlertLevel}</span> v době {TimeRange:label}]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[**<span style="color:red">{AlertsCount} new Severity 1 alerts</span>** in {TimeRange:label}]]></Val>
@@ -174,6 +174,9 @@
       <Item ItemId=";items.OverviewGroup.content.items.NoNewAlertsTitle.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<span style="color:#006100;font-weight:bold">No new Severity {AlertLevel} alerts</span> in {TimeRange:label}]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<span style="color:#006100;font-weight:bold">Žádné nové výstrahy se závažností {AlertLevel}</span> v době {TimeRange:label}]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

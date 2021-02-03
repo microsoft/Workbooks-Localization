@@ -12,72 +12,108 @@
       <Item ItemId=";items.Explanation.content.items.text10.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[**Overview**<br>]D;]A;* This report is intended to provide easy **SLA** reporting & outage information for your services regardless of the subscription or App Insights resource where the tests are running. ]D;]A;* If you have consistent maintenance windows then you can ignore results during those times to provide accurate results.]D;]A;* Outages are defined at the individual test level & uses a similar criteria to the default Availability alerting critieria of X failures over N period of time. ]D;]A;* If you need more details or different visualizations every part of this report can be **edited** & **customized**.]D;]A;* Ensure all parameters are set for the report to function properly.]D;]A;**Note** Classic App Insights resources are not linkable in reports. Only Log Analytics based resources will link back to the App Insights instance.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[**Visão geral**<br>]D;]A;* Este relatório destina-se a fornecer informações simples de indisponibilidade e comunicação de **SLA** para os seus serviços, independentemente da subscrição ou do recurso App Insights em que os testes estão a ser executados. ]D;]A;* Se tiver janelas de manutenção consistentes, pode ignorar os resultados durante estas alturas para fornecer resultados precisos.]D;]A;* As indisponibilidades são definidas ao nível de teste individual e utilizam um critério semelhante aos critérios de alerta de Disponibilidade predefinidos de X falhas durante N período de tempo. ]D;]A;* Se precisar de mais detalhes ou visualizações diferentes, cada parte deste relatório pode ser **editada** e **personalizada**.]D;]A;* Confirme se todos os parâmetros estão definidos para que o relatório funcione corretamente.]D;]A;**Nota** Os recursos Clássicos do App Insights não podem ser colocados em relatórios através de ligações. Apenas os recursos baseados no Log Analytics ligarão de volta à instância do App Insights.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Explanation.content.items.text9.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[]D;]A;**Maintenance & Outage Parameters** <br>]D;]A;* Define your outage at the **individual** test level.  ]D;]A;* **Failure Threshold** is how many failures can occur in a given time window to be considered a service outage. ]D;]A;* **3 / 5 locations is the recommended threshold** but depends on how many locations you run your tests from. ]D;]A;* **Outage Window** is in minutes & determines how long you consider your service to be down & over what window the failure threshold is evaluated. * **5 minutes is the recommend period.**]D;]A;* **Maintenance Period** defines the frequency your maintenance window occurs over. Set the period to NEVER if you don't conduct regular maintenance. ]D;]A;* **Maintenance Window** ignores test results during set days of the week & hours. ]D;]A;<br> Ex. If you choose October 24th, Saturday 10 pm - October 25th, Sunday 10am then it will ignore every result during 10 pm - 10 am on **every** Saturday & Sunday in the overall reporting time range.]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[]D;]A;**Parâmetros de Manutenção e Indisponibilidade** <br>]D;]A;* Defina a sua indisponibilidade ao nível do teste **individual**.  ]D;]A;* O **Limiar de Falhas** é quantas falhas podem ocorrer numa determinada janela de tempo para se considerar indisponibilidade de serviço. ]D;]A;* **3/5 localizações é o limiar recomendado**, mas depende de em quantas localizações executa os seus testes. ]D;]A;* A **Janela de Indisponibilidade** expressa-se em minutos e determina durante quanto tempo se considera o serviço indisponível e ao longo de que janela é avaliado o limiar de falhas. * **5 minutos é o período recomendado.**]D;]A;* O **Período de Manutenção** define a frequência em que a sua janela de manutenção ocorre. Defina o período para NUNCA se não realizar uma manutenção regular. ]D;]A;* A **Janela de Manutenção** ignora os resultados dos testes durante dias da semana e horas definidos. ]D;]A;<br> Ex.: se escolher de 24 de outubro, sábado, às 22:00 a 25 de outubro, domingo, às 10:00, serão ignorados todos os resultados das 22:00 às 10:00 em **todos** os sábados e domingos no período temporal global de comunicação.]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Location.content.items.query8.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Failures by Testing Location]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Falhas por Localização de Teste]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Outage.content.items.Warning.content.items.text0.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<h2>No Maintenance Window Selected.</h2>]D;]A;]D;]A;Select a weekly or daily maintenace window & reccurence. If you don't perform routine maintenance set it for a one minute window on the weekend or your regular downtime.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<h2>Nenhuma Janela de Manutenção Selecionada.</h2>]D;]A;]D;]A;Selecione uma janela de manutenção e periodicidade semanal ou diária. Se não efetuar manutenção de rotina, defina-a para uma janela de um minuto no fim de semana ou para o tempo de indisponibilidade normal.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Outage.content.items.Warning.content.items.text0Copy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<h2>No Failure Thresold or Outage Window set.</h2>]D;]A;]D;]A;Set your location failure threshold per test to define an outage & the grain you would like to evaluate on.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<h2>Nenhum Limiar de Falha ou Janela de Indisponibilidade definido.</h2>]D;]A;]D;]A;Defina o seu limiar de falha de localização por teste para definir uma indisponibilidade e a granularidade em que pretende avaliar.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Outage.content.items.parameters6.content.parameters.7b36dfd039af4fa382d2edf09b4d29f7.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Define the time grain you examine for service outages]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Defina o granularidade de tempo que examina para indisponibilidades de serviço]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Outage.content.items.parameters6.content.parameters.7b36dfd039af4fa382d2edf09b4d29f7.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Outage Window (minutes)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Janela de Indisponibilidade (minutos)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Outage.content.items.parameters6.content.parameters.c3450f6fd4e8469ba1d3b9a7a9153d23.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Define how many location failures constitutes a service outage]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Definir quantas falhas de localização constituem uma indisponibilidade de serviço]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Outage.content.items.parameters6.content.parameters.c3450f6fd4e8469ba1d3b9a7a9153d23.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Failure Threshold]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Limiar de Falha]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Outage.content.items.parameters6.content.parameters.e0b972a343e546b3ac8d13eeb40cddd8.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Select the time period your maintenance window occurs over]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Selecione o período de tempo ao longo do qual a sua janela de manutenção ocorre]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Outage.content.items.parameters6.content.parameters.e0b972a343e546b3ac8d13eeb40cddd8.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Maintenance Period]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Período de Manutenção]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Outage.content.items.parameters6.content.parameters.e8c5217d02e542f0a43972e24c27d385.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Define your maintenance Window]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Defina a sua Janela de manutenção]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -93,60 +129,90 @@
       <Item ItemId=";items.Outage.content.items.parameters6Copy.content.parameters.89448dee7e4948bf838acc3e6ddc55ae.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Error check for a full day maintenance period]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Verificação de erros para um período de manutenção de um dia inteiro]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Outage.content.items.parameters6Copy.content.parameters.a322070a751341f4bb0777a5ee3061ba.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Convert maintenance window to seconds]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Converter janela de manutenção em segundos]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overview.content.items.query10Copy.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No outages to report]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Não existem indisponibilidades para comunicar]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overview.content.items.query10Copy.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Top Longest Outages & Beginning Datetime (UTC)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Indisponibilidades Mais Longas e Data/Hora de Início (UTC)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overview.content.items.query3.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No outage to report]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Não existem indisponibilidades para comunicar]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overview.content.items.query6.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Overall Availability %]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[% Disponibilidade Global]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overview.content.items.query6Copy.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Total Outages]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Total de Indisponibilidades]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overview.content.items.query9.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Overview Table by Test (Expandable)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Tabela de Descrição Geral por Teste (Expansível)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Parameters.content.items.parameters1.content.parameters.034c2381cb444bf3ab5506951bc1f687.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Choose your availability % target]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Escolher o seu alvo de % de disponibilidade]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Parameters.content.items.parameters1.content.parameters.034c2381cb444bf3ab5506951bc1f687.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Availability Target 9s]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Alvo de Disponibilidade 9s]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -162,12 +228,18 @@
       <Item ItemId=";items.Parameters.content.items.parameters1.content.parameters.be01014585ef4779a7ce88e18d144ae4.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Choose the relevant subscriptions]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Escolha as subscrições relevantes]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Parameters.content.items.parameters1.content.parameters.dd6bfdf114ba495d8b9f7a8a9d098901.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Define the overall time period you report on]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Definir o período de tempo global de comunicação]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -183,30 +255,45 @@
       <Item ItemId=";items.Parameters.content.items.parameters1.content.parameters.dfcb9b49d323457590724e656f0d3329.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Choose App Insights resources of interest]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Escolher recursos de interesse do App Insights]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Parameters.content.items.parameters1.content.parameters.dfcb9b49d323457590724e656f0d3329.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[App Insights Resources]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Recursos do App Insights]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Warning.content.items.text0.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<h2>No Azure Subscriptions are selected.</h2>]D;]A;]D;]A;Expand the **Subscription & App Insight Parameters (Required)** section & select one or more subscriptions to get started.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<h2>Não estão selecionadas Subscrições do Azure.</h2>]D;]A;]D;]A;Expanda a secção **Subscrições e App Insights (Obrigatório)** e selecione uma ou mais subscrições para começar.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Warning.content.items.text0Copy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<h2>No App Insights resources are selected.</h2>]D;]A;]D;]A;Expand the **Subscription & App Insight Parameters (Required)** section & select one or more App Insights resources to get started.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<h2>Não estão selecionados recursos do App Insights.</h2>]D;]A;]D;]A;Expanda a secção **Parâmetros de Subscrições e App Insights (Obrigatório)** e selecione um ou mais recursos do App Insights para começar.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.links12.content.links.6757ab2715494ac59f378744e3349f23.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Outages & Downtime]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Indisponibilidades e Tempo de Inatividade]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -222,6 +309,9 @@
       <Item ItemId=";items.links12.content.links.a7e7416d223f49dbbbaf607cc53c0ff5.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Failures by Location]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Falhas por Localização]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -246,6 +336,9 @@
       <Item ItemId=";items.links12.content.links.d66c325b5fe94bb2bad2854577d0ae2b.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Outage / Maintenance Parameters]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Parâmetros de Indisponibilidade/Manutenção]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -261,12 +354,18 @@
       <Item ItemId=";items.text7.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## No Web Tests are set.]D;]A;]D;]A;Expand the **Webtest & Reporting Time Range Parameters (Required)** section then select one or more Web test to get started. ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Não estão definidos Testes Web.]D;]A;]D;]A;Expanda a secção **Parâmetros de Intervalo de Tempo de Testes Web e Comunicação (Obrigatório)** e, em seguida, selecione um ou mais testes Web para começar. ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Downtime & Outages]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Tempo de Inatividade e Indisponibilidades]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

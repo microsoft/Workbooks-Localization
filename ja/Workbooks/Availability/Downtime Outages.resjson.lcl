@@ -12,72 +12,108 @@
       <Item ItemId=";items.Explanation.content.items.text10.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[**Overview**<br>]D;]A;* This report is intended to provide easy **SLA** reporting & outage information for your services regardless of the subscription or App Insights resource where the tests are running. ]D;]A;* If you have consistent maintenance windows then you can ignore results during those times to provide accurate results.]D;]A;* Outages are defined at the individual test level & uses a similar criteria to the default Availability alerting critieria of X failures over N period of time. ]D;]A;* If you need more details or different visualizations every part of this report can be **edited** & **customized**.]D;]A;* Ensure all parameters are set for the report to function properly.]D;]A;**Note** Classic App Insights resources are not linkable in reports. Only Log Analytics based resources will link back to the App Insights instance.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[**概要**<br>]D;]A;* このレポートは、テストが実行されているサブスクリプションまたは App Insights リソースに関係なく、サービスに関する簡単な **SLA** レポートと停止情報を提供するためのものです。]D;]A;* メンテナンス時間が一貫している場合、正確な結果を得るために、その時間の結果を無視することができます。]D;]A;* 停止は、それぞれのテスト レベルで定義され、既定の可用性アラートの条件 (N 期間における X エラー) に似た条件が使用されます。]D;]A;* 詳細情報またはさまざまな視覚化が必要な場合、このレポートのすべての部分を**編集**して**カスタマイズ**できます。]D;]A;* レポートが正常に機能するため、すべてのパラメーターが設定されていることをご確認ください。]D;]A;**注** クラシック App Insights リソースのリンクはレポートでは使用できません。App Insights インスタンスに戻るために使用できるのは、Log Analytics に基づくリソースのリンクのみです。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Explanation.content.items.text9.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[]D;]A;**Maintenance & Outage Parameters** <br>]D;]A;* Define your outage at the **individual** test level.  ]D;]A;* **Failure Threshold** is how many failures can occur in a given time window to be considered a service outage. ]D;]A;* **3 / 5 locations is the recommended threshold** but depends on how many locations you run your tests from. ]D;]A;* **Outage Window** is in minutes & determines how long you consider your service to be down & over what window the failure threshold is evaluated. * **5 minutes is the recommend period.**]D;]A;* **Maintenance Period** defines the frequency your maintenance window occurs over. Set the period to NEVER if you don't conduct regular maintenance. ]D;]A;* **Maintenance Window** ignores test results during set days of the week & hours. ]D;]A;<br> Ex. If you choose October 24th, Saturday 10 pm - October 25th, Sunday 10am then it will ignore every result during 10 pm - 10 am on **every** Saturday & Sunday in the overall reporting time range.]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[]D;]A;**メンテナンスと停止のパラメーター** <br>]D;]A;* **それぞれ**のテスト レベルで停止を定義します。]D;]A;* **エラーのしきい値**とは、サービス停止と見なされるために指定された時間枠に発生するエラーの数を示します。]D;]A;* **推奨されるしきい値は 5 個中 3 個の場所**ですが、テストを実行する場所の数に応じて異なります。]D;]A;* **停止時間**は分単位で示され、サービスがダウンしていると見なす時間とエラーのしきい値を評価する時間を決定します。* **推奨される時間は 5 分です。**]D;]A;* **メンテナンス期間**では、メンテナンス時間が発生する頻度を定義します。定期的なメンテナンスを実行しない場合は、期間を [なし]5D; に設定します。]D;]A;* **メンテナンス時間**では、設定された曜日および時間のテスト結果を無視します。]D;]A;<br> たとえば、10 月 24 日土曜日午後 10 時から 10 月 25 日日曜日午前 10 時を選択すると、レポート時間の範囲全体で**毎週**土曜日午後 10 時から日曜日午前 10 時の間のすべての結果が無視されます。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Location.content.items.query8.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Failures by Testing Location]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[テストの場所ごとのエラー]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Outage.content.items.Warning.content.items.text0.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<h2>No Maintenance Window Selected.</h2>]D;]A;]D;]A;Select a weekly or daily maintenace window & reccurence. If you don't perform routine maintenance set it for a one minute window on the weekend or your regular downtime.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<h2>メンテナンス時間が選択されていません。</h2>]D;]A;]D;]A;週単位または日単位のメンテナンス時間と繰り返しを選択します。定期的なメンテナンスを実行しない場合は、週末または定期的なダウンタイムの間の 1 分間に設定します。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Outage.content.items.Warning.content.items.text0Copy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<h2>No Failure Thresold or Outage Window set.</h2>]D;]A;]D;]A;Set your location failure threshold per test to define an outage & the grain you would like to evaluate on.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<h2>エラーのしきい値または停止時間が設定されていません。</h2>]D;]A;]D;]A;場所におけるテストごとのエラーのしきい値を設定して、評価する停止と粒度を定義してください。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Outage.content.items.parameters6.content.parameters.7b36dfd039af4fa382d2edf09b4d29f7.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Define the time grain you examine for service outages]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[サービスの停止を調査する期間粒度を定義します]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Outage.content.items.parameters6.content.parameters.7b36dfd039af4fa382d2edf09b4d29f7.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Outage Window (minutes)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[停止時間 (分)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Outage.content.items.parameters6.content.parameters.c3450f6fd4e8469ba1d3b9a7a9153d23.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Define how many location failures constitutes a service outage]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[サービスの停止と見なされる場合の場所でのエラーの数を定義します]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Outage.content.items.parameters6.content.parameters.c3450f6fd4e8469ba1d3b9a7a9153d23.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Failure Threshold]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[エラーのしきい値]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Outage.content.items.parameters6.content.parameters.e0b972a343e546b3ac8d13eeb40cddd8.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Select the time period your maintenance window occurs over]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[メンテナンス時間を実行する期間を選択します]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Outage.content.items.parameters6.content.parameters.e0b972a343e546b3ac8d13eeb40cddd8.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Maintenance Period]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[メンテナンス期間]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Outage.content.items.parameters6.content.parameters.e8c5217d02e542f0a43972e24c27d385.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Define your maintenance Window]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[メンテナンス時間を定義します]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -85,7 +121,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Maintenance Window]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[メンテナンス ウィンドウ]]></Val>
+            <Val><![CDATA[メンテナンス時間]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -93,60 +129,90 @@
       <Item ItemId=";items.Outage.content.items.parameters6Copy.content.parameters.89448dee7e4948bf838acc3e6ddc55ae.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Error check for a full day maintenance period]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[丸 1 日のメンテナンス期間のエラーを確認します]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Outage.content.items.parameters6Copy.content.parameters.a322070a751341f4bb0777a5ee3061ba.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Convert maintenance window to seconds]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[メンテナンス時間を秒に変換します]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overview.content.items.query10Copy.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No outages to report]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[報告する停止はありません]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overview.content.items.query10Copy.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Top Longest Outages & Beginning Datetime (UTC)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[上位の最長の停止と開始日時 (UTC)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overview.content.items.query3.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No outage to report]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[報告する停止はありません。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overview.content.items.query6.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Overall Availability %]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[全体の可用性 (%)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overview.content.items.query6Copy.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Total Outages]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[停止の合計]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overview.content.items.query9.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Overview Table by Test (Expandable)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[テストごとの概要テーブル (展開可能)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Parameters.content.items.parameters1.content.parameters.034c2381cb444bf3ab5506951bc1f687.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Choose your availability % target]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[可用性の割合のターゲットを選択します]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Parameters.content.items.parameters1.content.parameters.034c2381cb444bf3ab5506951bc1f687.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Availability Target 9s]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[可用性ターゲット 9s]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -162,12 +228,18 @@
       <Item ItemId=";items.Parameters.content.items.parameters1.content.parameters.be01014585ef4779a7ce88e18d144ae4.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Choose the relevant subscriptions]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[関連するサブスクリプションを選択します]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Parameters.content.items.parameters1.content.parameters.dd6bfdf114ba495d8b9f7a8a9d098901.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Define the overall time period you report on]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[報告する期間全体を定義します]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -183,30 +255,45 @@
       <Item ItemId=";items.Parameters.content.items.parameters1.content.parameters.dfcb9b49d323457590724e656f0d3329.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Choose App Insights resources of interest]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[関心のある App Insights リソースを選択します]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Parameters.content.items.parameters1.content.parameters.dfcb9b49d323457590724e656f0d3329.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[App Insights Resources]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[App Insights リソース]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Warning.content.items.text0.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<h2>No Azure Subscriptions are selected.</h2>]D;]A;]D;]A;Expand the **Subscription & App Insight Parameters (Required)** section & select one or more subscriptions to get started.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<h2>Azure サブスクリプションが選択されていません。</h2>]D;]A;]D;]A;**サブスクリプションと App Insight のパラメーター (必須)** セクションを展開し、1 つまたは複数のサブスクリプションを選択して開始します。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Warning.content.items.text0Copy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<h2>No App Insights resources are selected.</h2>]D;]A;]D;]A;Expand the **Subscription & App Insight Parameters (Required)** section & select one or more App Insights resources to get started.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<h2>App Insights リソースが選択されていません。</h2>]D;]A;]D;]A;**サブスクリプションと App Insight のパラメーター (必須)** セクションを展開し、1 つまたは複数の App Insights リソースを選択して開始します。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.links12.content.links.6757ab2715494ac59f378744e3349f23.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Outages & Downtime]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[停止とダウンタイム]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -222,6 +309,9 @@
       <Item ItemId=";items.links12.content.links.a7e7416d223f49dbbbaf607cc53c0ff5.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Failures by Location]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[場所ごとのエラー]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -246,6 +336,9 @@
       <Item ItemId=";items.links12.content.links.d66c325b5fe94bb2bad2854577d0ae2b.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Outage / Maintenance Parameters]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[停止またはメンテナンスのパラメーター]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -261,12 +354,18 @@
       <Item ItemId=";items.text7.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## No Web Tests are set.]D;]A;]D;]A;Expand the **Webtest & Reporting Time Range Parameters (Required)** section then select one or more Web test to get started. ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Web テストが設定されていません。]D;]A;]D;]A;** Web テストとレポート時間の範囲のパラメーター (必須)** セクションを展開してから、1 つまたは複数の Web テストを選択して開始します。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Downtime & Outages]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[ダウンタイムと停止]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

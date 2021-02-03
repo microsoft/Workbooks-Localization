@@ -571,7 +571,7 @@
         <Str Cat="Text">
           <Val><![CDATA[ParentId: {pid}, qlen: {qlen}, msgCount: {mstCount}, latency: {latency}, id: {id}]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Szülőazonosító (pid): {pid}, várólista hossza (qlen): {qlen}, üzenetek száma (msgCount): {mstCount}, késés (latency): {latency}, azonosító (id): {id}]]></Val>
+            <Val><![CDATA[Szülőazonosító (parentId): {pid}; várólista hossza (qlen): {qlen}; üzenetek száma (msgCount): {mstCount}; késés (latency): {latency}; azonosító (id): {id}]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -580,7 +580,7 @@
         <Str Cat="Text">
           <Val><![CDATA[**OS info<br>**]A;{hostInfoOs}<br>]A;{hostInfoOstype} {hostInfoArch}<br>]A;]A;**IoT Edge daemon version<br>**]A;{hostInfoEdgedVer}<br>]A;]A;**Docker daemon version<br>**]A;{hostInfoDockerVer}<br>]A;]A;**# CPUs<br>**]A;{hostInfoNumCpus}<br>]A;]A;]A;]A;]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[**Operációs rendszer adatai<br>**]A;{hostInfoOs}<br>]A;{hostInfoOstype} {hostInfoArch}<br>]A;]A;**IoT Edge-démon verziója<br>**]A;{hostInfoEdgedVer}<br>]A;]A;**Docker-démon verziója<br>**]A;{hostInfoDockerVer}<br>]A;]A;**CPU-k száma<br>**]A;{hostInfoNumCpus}<br>]A;]A;]A;]A;]]></Val>
+            <Val><![CDATA[**Operációs rendszer adatai<br>**]A;{hostInfoOs}<br>]A;{hostInfoOstype} {hostInfoArch}<br>]A;]A;**IoT Edge-démon verziója<br>**]A;{hostInfoEdgedVer}<br>]A;]A;**Docker-démon verziója<br>**]A;{hostInfoDockerVer}<br>]A;]A;**# CPU-k<br>**]A;{hostInfoNumCpus}<br>]A;]A;]A;]A;]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -601,7 +601,7 @@
         <Str Cat="Text">
           <Val><![CDATA[<br><br><br><br><br>]A;]A;]D83D;]DCA1; **Select a row on the left to further drill-in**]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[<br><br><br><br><br>]A;]A;]D83D;]DCA1; **A további részletekért válasszon egy sort a bal oldalon**]]></Val>
+            <Val><![CDATA[<br><br><br><br><br>]A;]A;]D83D;]DCA1; **A bal oldalon egy adott sor kijelölésével további részleteket tekinthet meg**]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -655,7 +655,7 @@
         <Str Cat="Text">
           <Val><![CDATA[# Msgs]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[# Üzenetek]]></Val>
+            <Val><![CDATA[Üzenetek száma]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -687,12 +687,9 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.devicegroup.content.items.query4.content.gridSettings.labelSettings.p95Qlen.label" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.devicegroup.content.items.query4.content.gridSettings.labelSettings.qlenTrend.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[QLen (p95)]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Várólista hossza (QLen) (95%)]]></Val>
-          </Tgt>
+          <Val><![CDATA[QLen]]></Val>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -700,7 +697,7 @@
         <Str Cat="Text">
           <Val><![CDATA[⚠️ *Please select a device from the list or bird's eye view before drilling into its details*]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[⚠️ * Válasszon egy eszközt a listáról vagy a madártávlat nézetből a részletek feltárása előtt*]]></Val>
+            <Val><![CDATA[⚠️ *A részletezéshez válasszon egy eszközt a listából vagy az áttekintő nézetből*]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />

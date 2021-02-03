@@ -12,72 +12,108 @@
       <Item ItemId=";items.Explanation.content.items.text10.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[**Overview**<br>]D;]A;* This report is intended to provide easy **SLA** reporting & outage information for your services regardless of the subscription or App Insights resource where the tests are running. ]D;]A;* If you have consistent maintenance windows then you can ignore results during those times to provide accurate results.]D;]A;* Outages are defined at the individual test level & uses a similar criteria to the default Availability alerting critieria of X failures over N period of time. ]D;]A;* If you need more details or different visualizations every part of this report can be **edited** & **customized**.]D;]A;* Ensure all parameters are set for the report to function properly.]D;]A;**Note** Classic App Insights resources are not linkable in reports. Only Log Analytics based resources will link back to the App Insights instance.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[**개요**<br>]D;]A;* 이 보고서는 테스트가 실행 중인 구독 또는 App Insights 리소스와 관계없이 서비스를 위한 간편한 **SLA** 보고 및 중단 정보를 제공합니다. ]D;]A;* 일관된 유지 관리 기간이 있는 경우에는 정확한 결과를 제공하기 위해 해당 시간 중에 생성된 결과를 무시할 수 있습니다.]D;]A;* 중단은 개별 테스트 수준에서 정의되며 N 기간에 대한 X개 실패의 기본 가용성 경고 조건과 비슷한 조건을 사용합니다. ]D;]A;* 추가적인 세부 정보나 다양한 시각화가 필요한 경우 보고서의 모든 부분을 **편집** 및 **사용자 지정**할 수 있습니다.]D;]A;* 보고서가 제대로 작동하려면 모든 매개 변수가 설정되어 있어야 합니다.]D;]A;**참고** 클래식 App Insights 리소스는 보고서에서 연결 가능한 리소스가 아닙니다. Log Analytics 기반 리소스만 다시 App Insights 인스턴스에 연결됩니다.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Explanation.content.items.text9.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[]D;]A;**Maintenance & Outage Parameters** <br>]D;]A;* Define your outage at the **individual** test level.  ]D;]A;* **Failure Threshold** is how many failures can occur in a given time window to be considered a service outage. ]D;]A;* **3 / 5 locations is the recommended threshold** but depends on how many locations you run your tests from. ]D;]A;* **Outage Window** is in minutes & determines how long you consider your service to be down & over what window the failure threshold is evaluated. * **5 minutes is the recommend period.**]D;]A;* **Maintenance Period** defines the frequency your maintenance window occurs over. Set the period to NEVER if you don't conduct regular maintenance. ]D;]A;* **Maintenance Window** ignores test results during set days of the week & hours. ]D;]A;<br> Ex. If you choose October 24th, Saturday 10 pm - October 25th, Sunday 10am then it will ignore every result during 10 pm - 10 am on **every** Saturday & Sunday in the overall reporting time range.]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[]D;]A;**유지 관리 및 중단 매개 변수** <br>]D;]A;* **개별* 테스트 수준에서 중단을 정의합니다.  ]D;]A;* **실패 임계값**은 특정 기간에 서비스 중단으로 간주할 수 있는 실패 발생 수입니다. ]D;]A;* **3/5 위치는 권장 임계값**이지만 테스트를 실행하는 위치 수에 따라 달라집니다. ]D;]A;* **중단 기간**은 분 단위이며 서비스가 실패 임계값을 평가하는 기간에 미달하거나 해당 기간을 초과하는 것으로 간주하는 기간을 결정합니다. * **권장 기간은 5분입니다.**]D;]A;* **유지 관리 기간(Period)**은 유지 관리 기간이 발생하는 빈도를 정의합니다. 정기적 유지 관리를 시행하지 않는 경우 기간을 안 함으로 설정합니다. ]D;]A;* **유지 관리 기간(Window)**은 설정된 요일 및 시간 중에 생성된 테스트 결과를 무시합니다. ]D;]A;<br> 예를 들어 10월 24일 토요일 오후 10시~10월 25일 일요일 오전 10시를 선택하면 전체 보고 시간 범위 중 **매주** 토요일 및 일요일 오후 10시~오전 10시에 발생한 모든 결과를 무시합니다.]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Location.content.items.query8.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Failures by Testing Location]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[테스트 위치별 실패]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Outage.content.items.Warning.content.items.text0.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<h2>No Maintenance Window Selected.</h2>]D;]A;]D;]A;Select a weekly or daily maintenace window & reccurence. If you don't perform routine maintenance set it for a one minute window on the weekend or your regular downtime.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<h2>유지 관리 기간을 선택하지 않았습니다.</h2>]D;]A;]D;]A;주별 또는 일별 유지 관리 기간 및 되풀이를 선택합니다. 일상적인 유지 관리를 수행하지 않는 경우 주말 또는 정기적인 가동 중지 시간에 1분으로 기간을 설정합니다.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Outage.content.items.Warning.content.items.text0Copy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<h2>No Failure Thresold or Outage Window set.</h2>]D;]A;]D;]A;Set your location failure threshold per test to define an outage & the grain you would like to evaluate on.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<h2>실패 임계값 또는 중단 기간이 설정되지 않았습니다.</h2>]D;]A;]D;]A;테스트당 위치 실패 임계값을 설정하여 평가하려는 중단 및 조직을 정의합니다.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Outage.content.items.parameters6.content.parameters.7b36dfd039af4fa382d2edf09b4d29f7.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Define the time grain you examine for service outages]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[서비스 중단을 검사할 시간 조직 정의]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Outage.content.items.parameters6.content.parameters.7b36dfd039af4fa382d2edf09b4d29f7.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Outage Window (minutes)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[중단 기간(분)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Outage.content.items.parameters6.content.parameters.c3450f6fd4e8469ba1d3b9a7a9153d23.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Define how many location failures constitutes a service outage]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[서비스 중단을 구성하는 위치 실패 수 정의]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Outage.content.items.parameters6.content.parameters.c3450f6fd4e8469ba1d3b9a7a9153d23.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Failure Threshold]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[실패 임계값]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Outage.content.items.parameters6.content.parameters.e0b972a343e546b3ac8d13eeb40cddd8.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Select the time period your maintenance window occurs over]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[유지 관리 기간이 발생하는 기간 선택]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Outage.content.items.parameters6.content.parameters.e0b972a343e546b3ac8d13eeb40cddd8.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Maintenance Period]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[유지 관리 기간]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Outage.content.items.parameters6.content.parameters.e8c5217d02e542f0a43972e24c27d385.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Define your maintenance Window]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[유지 관리 기간 정의]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -93,60 +129,90 @@
       <Item ItemId=";items.Outage.content.items.parameters6Copy.content.parameters.89448dee7e4948bf838acc3e6ddc55ae.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Error check for a full day maintenance period]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[종일 유지 관리 기간에 오류 검사]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Outage.content.items.parameters6Copy.content.parameters.a322070a751341f4bb0777a5ee3061ba.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Convert maintenance window to seconds]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[유지 관리 기간을 초로 변환]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overview.content.items.query10Copy.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No outages to report]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[보고할 중단 없음]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overview.content.items.query10Copy.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Top Longest Outages & Beginning Datetime (UTC)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[상위 가장 긴 중단 및 시작 날짜/시간(UTC)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overview.content.items.query3.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No outage to report]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[보고할 중단 없음]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overview.content.items.query6.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Overall Availability %]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[전체 가용성 비율]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overview.content.items.query6Copy.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Total Outages]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[총 중단]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overview.content.items.query9.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Overview Table by Test (Expandable)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[테스트별 개요 테이블(확장 가능)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Parameters.content.items.parameters1.content.parameters.034c2381cb444bf3ab5506951bc1f687.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Choose your availability % target]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[가용성 비율 대상 선택]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Parameters.content.items.parameters1.content.parameters.034c2381cb444bf3ab5506951bc1f687.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Availability Target 9s]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[가용성 대상 9]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -162,12 +228,18 @@
       <Item ItemId=";items.Parameters.content.items.parameters1.content.parameters.be01014585ef4779a7ce88e18d144ae4.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Choose the relevant subscriptions]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[관련 구독 선택]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Parameters.content.items.parameters1.content.parameters.dd6bfdf114ba495d8b9f7a8a9d098901.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Define the overall time period you report on]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[보고할 전체 기간 정의]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -183,30 +255,45 @@
       <Item ItemId=";items.Parameters.content.items.parameters1.content.parameters.dfcb9b49d323457590724e656f0d3329.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Choose App Insights resources of interest]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[원하는 App Insights 리소스 선택]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Parameters.content.items.parameters1.content.parameters.dfcb9b49d323457590724e656f0d3329.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[App Insights Resources]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[App Insights 리소스]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Warning.content.items.text0.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<h2>No Azure Subscriptions are selected.</h2>]D;]A;]D;]A;Expand the **Subscription & App Insight Parameters (Required)** section & select one or more subscriptions to get started.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<h2>Azure 구독이 선택되지 않았습니다.</h2>]D;]A;]D;]A;**구독 및 App Insights 매개 변수(필수)** 섹션을 확장하고 시작할 구독을 하나 이상 선택합니다.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Warning.content.items.text0Copy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<h2>No App Insights resources are selected.</h2>]D;]A;]D;]A;Expand the **Subscription & App Insight Parameters (Required)** section & select one or more App Insights resources to get started.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<h2>App Insights 리소스가 선택되지 않았습니다.</h2>]D;]A;]D;]A;**구독 및 App Insights 매개 변수(필수)** 섹션을 확장하고 시작할 App Insights 리소스를 하나 이상 선택합니다.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.links12.content.links.6757ab2715494ac59f378744e3349f23.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Outages & Downtime]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[중단 및 가동 중지 시간]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -222,6 +309,9 @@
       <Item ItemId=";items.links12.content.links.a7e7416d223f49dbbbaf607cc53c0ff5.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Failures by Location]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[위치별 실패]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -246,6 +336,9 @@
       <Item ItemId=";items.links12.content.links.d66c325b5fe94bb2bad2854577d0ae2b.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Outage / Maintenance Parameters]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[중단/유지 관리 매개 변수]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -261,12 +354,18 @@
       <Item ItemId=";items.text7.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## No Web Tests are set.]D;]A;]D;]A;Expand the **Webtest & Reporting Time Range Parameters (Required)** section then select one or more Web test to get started. ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## 웹 테스트가 설정되지 않았습니다.]D;]A;]D;]A;**웹 테스트 및 보고 시간 범위 매개 변수(필수)** 섹션을 확장한 후 시작할 하나 이상의 웹 테스트를 선택합니다. ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Downtime & Outages]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[가동 중지 시간 및 중단]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

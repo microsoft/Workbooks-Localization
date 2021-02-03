@@ -12,36 +12,54 @@
       <Item ItemId=";items.Federation.content.items.text2.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Modified federation settings]D;]A;]D;]A;This section monitors when a user or application modifies the federation settings on the domain. For example, this alert will trigger when a new Active Directory Federated Service (ADFS) TrustedRealm object, such as a signing certificate, is added to the domain. Modification to domain federation settings should be rare. Confirm the added or modified target domain/URL is legitimate administrator behavior.]D;]A;- To understand why an authorized user may update settings for a federated domain in Office 365, Azure, or Intune, see: https://docs.microsoft.com/office365/troubleshoot/active-directory/update-federated-domain-office-365.]D;]A;- For details on security realms that accept security tokens, see the ADFS Proxy Protocol (MS-ADFSPP) specification: https://docs.microsoft.com/openspecs/windows_protocols/ms-adfspp/e7b9ea73-1980-4318-96a6-da559486664b.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# Změna nastavení federace]D;]A;]D;]A;Tento oddíl monitoruje případy, kdy uživatel nebo aplikace upraví nastavení federace v doméně. Tato výstraha se aktivuje například tehdy, když je do domény přidán nový objekt TrustedRealm služby AD FS (Active Directory Federated Service), například podpisový certifikát. Úpravy nastavení federace domény by měly být vzácné. Ověřte, že k přidání nebo úpravě cílové domény nebo adresy URL došlo na základě legitimního chování správce.]D;]A;– Vysvětlení, proč by mohl oprávněný uživatel aktualizovat nastavení pro federované domény v Office 365, Azure nebo Intune, najdete v tématu: https://docs.microsoft.com/office365/troubleshoot/active-directory/update-federated-domain-office-365.]D;]A;– Podrobnosti o sférách zabezpečení, které přijímají tokeny zabezpečení, najdete ve specifikaci proxy protokolu služby ADFS (MS-ADFSPP): https://docs.microsoft.com/openspecs/windows_protocols/ms-adfspp/e7b9ea73-1980-4318-96a6-da559486664b.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Federation.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Modified federation settings ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Změna nastavení federace ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Permissions.content.items.Recentapppermissionsactivity.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Recent app permissions activity]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Aktivita u oprávnění aplikace v poslední době]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Permissions.content.items.query5.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[New Application (AppOnly) permissions added to service principals]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Nová oprávnění u aplikace (AppOnly) přidaná k instančním objektům]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Permissions.content.items.text0.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## New permissions granted to service principals]D;]A;]D;]A;This section monitors for changes to OAuth 2.0 permissions granted to Service Principals. For example, this alert will trigger when a Service Principal is granted Application (AppOnly) permissions to read mail through the Microsoft Graph API. When this occurs, the Service Principal is added to an App Role with a value of Mail.Read. ]D;]A;]D;]A;An attacker could elevate their privileges by using a compromised account to grant new permissions to a Service Principal they control, or by tricking a user into granting permissions. Investigations should focus on high privilege permissions that either grant access to sensitive data, or represent opportunities for lateral movement by attackers.]D;]A;]D;]A;The first view in this section focuses specifically on Application permissions, which generally (but not always) represent higher risk. The second view is broader- it includes Delegated (App+User) permissions grants and additional audit events.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Nová oprávnění udělená instančním objektům]D;]A;]D;]A;Tento oddíl monitoruje změny oprávnění OAuth 2.0 udělených instančním objektům. Tato výstraha se spustí například tehdy, když je instančnímu objektu uděleno oprávnění aplikace (AppOnly) pro čtení pošty prostřednictvím rozhraní Microsoft Graph API. Při této změně je daný instanční objekt přidán k roli aplikace s hodnotou Mail.Read. ]D;]A;]D;]A;Útočník by si mohl zvýšit oprávnění tím, že by prostřednictvím napadeného účtu udělil nová oprávnění pro instanční objekt, který má pod kontrolou, nebo tím, že by k udělení oprávnění podvodně přiměl některého uživatele. Prošetřování by se mělo zaměřit na rozsáhlá oprávnění, které umožňují udělit přístup k citlivým datům, nebo útočníkům nabízejí příležitost pro taktiku lateral movement.]D;]A;]D;]A;První zobrazení v tomto oddílu se speciálně zaměřuje na oprávnění aplikací, která obecně (ale ne vždy) představují vyšší riziko. Druhé zobrazení je širší – zahrnuje udělená delegovaná oprávnění (aplikace+uživatel) a další auditovací události.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Permissions.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[New permissions granted to service principals]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Nová oprávnění udělená instančním objektům]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -57,6 +75,9 @@
       <Item ItemId=";items.Serviceprincipals.content.items.parameters2.content.parameters.cdd0f13baf8248ecb726873f86f60365.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Exclude actor]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Vyloučit aktéra]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -72,6 +93,9 @@
       <Item ItemId=";items.Serviceprincipals.content.items.query0.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Recent updates to application/service principal authentication methods]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Nedávné aktualizace metod ověřování u instančních objektů aplikací nebo služeb]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -90,30 +114,45 @@
       <Item ItemId=";items.Serviceprincipals.content.items.query5.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Updates to service principal authentication methods over time]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Průběžné aktualizace metod ověřování u instančních objektů]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Serviceprincipals.content.items.text1.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Modified Application and Service Principal Credentials/Authentication Methods]D;]A;]D;]A;Applications and service principals can have multiple authentication methods that are simultaneously valid. It's important to monitor updates to your service principal authentication methods in case bad actors are adding new rogue credentials to allow themselves to authenticate as that service principal.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# Změny přihlašovacích údajů nebo metod ověřování u aplikací a instančních objektů]D;]A;]D;]A;Aplikace a instanční objekty můžou mít více metod ověřování, které jsou platné současně. U instančních objektů je důležité monitorovat aktualizace metod ověřování pro případ, že by škodliví aktéři přidali nové přihlašovací údaje, aby si sami sobě umožnili ověření jako daný instanční objekt.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Serviceprincipals.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Modified application and service principal credentials/authentication methods]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Změny přihlašovacích údajů nebo metod ověřování u aplikací a instančních objektů]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group6.content.items.text0.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Directory role and group membership updates to service principals]D;]A;]D;]A;This section monitors for Service Principals being as members of Directory Roles (admin roles) or Groups. For example, this alert will trigger when a Service Principal is added to the Company Administrator or Application Administrator role. ]D;]A; ]D;]A;An attacker could elevate their privileges by adding a Service Principal they control to a high privileged role or a group that is used to protect access to sensitive resources. Investigations should focus on administrator rules and Groups that either grant access to sensitive data or represent opportunities for lateral movement by attackers.]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Aktualizace rolí v adresářích a členství ve skupinách u instančních objektů]D;]A;]D;]A;Tento oddíl monitoruje instanční objekty jako členy s určitou rolí v adresářích (role správců) nebo členy skupin. Tato výstraha se spustí například při přidání instančního objektu k roli Správce společnosti nebo Správce aplikací. ]D;]A; ]D;]A;Útočník by si mohl zvýšit oprávnění přidáním instančního objektu, který má pod kontrolou, k roli s vysokým oprávněním nebo do skupiny, která se používá k ochraně přístupu k citlivým prostředkům. Prošetřování by se mělo zaměřit na pravidla pro správce a na skupiny, které buď udělují přístup k citlivým údajům, nebo útočníkům nabízejí příležitost pro taktiku lateral movement.]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group6.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Directory role and group membership updates to service principals]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Aktualizace rolí v adresářích a členství ve skupinách u instančních objektů]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -129,24 +168,36 @@
       <Item ItemId=";items.links7.content.links.f02d3e95c5e948ffb4cf3c1268b9ef5f.postText" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[ about best practices to protect M365 from attacks.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[ o osvědčených postupech při ochraně M365 před útoky.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.links7.content.links.f02d3e95c5e948ffb4cf3c1268b9ef5f.preText" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[This workbook is intended to help identify suspicious application and service principal activity that may indicate compromises in your environment. ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Tento sešit umožňuje identifikovat v aplikacích a u instančních objektů podezřelé aktivity, která můžou indikovat ohrožení ve vašem prostředí. ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text2.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Sensitive Operations Report - Apps, Service Principals and Federation Settings]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# Sestava citlivých operacích – nastavení aplikací, instančních objektů a federace]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Sensitive Operations Report]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Sestava citlivých operacích]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
