@@ -9,7 +9,31 @@
     <Disp Icon="Expand" Expand="true" Disp="true" LocTbl="false" />
     <Item ItemId=";Strings" ItemType="0" PsrId="306" Leaf="false">
       <Disp Icon="Str" Disp="true" LocTbl="false" />
-      <Item ItemId=";items.Explanation.content.items.text10.content.json" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.DowntimebyTest.content.items.DowntimebyTest.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[No application downtime to report]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.DowntimebyTest.content.items.DowntimebyTest.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Total Down Time by Test]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.DowntimebyTest.content.items.OutagesbyTest.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[No outages detected]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.DowntimebyTest.content.items.OutagesbyTest.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Total End to End Outages by Test]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Explanation.content.items.OverviewText.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[**Overview**<br>]D;]A;* This report is intended to provide easy **SLA** reporting & outage information for your services regardless of the subscription or App Insights resource where the tests are running. ]D;]A;* If you have consistent maintenance windows then you can ignore results during those times to provide accurate results.]D;]A;* Outages are defined at the individual test level & uses a similar criteria to the default Availability alerting critieria of X failures over N period of time. ]D;]A;* If you need more details or different visualizations every part of this report can be **edited** & **customized**.]D;]A;* Ensure all parameters are set for the report to function properly.]D;]A;**Note** Classic App Insights resources are not linkable in reports. Only Log Analytics based resources will link back to the App Insights instance.]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -18,7 +42,7 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Explanation.content.items.text9.content.json" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Explanation.content.items.ParameterText.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[]D;]A;**Maintenance & Outage Parameters** <br>]D;]A;* Define your outage at the **individual** test level.  ]D;]A;* **Failure Threshold** is how many failures can occur in a given time window to be considered a service outage. ]D;]A;* **3 / 5 locations is the recommended threshold** but depends on how many locations you run your tests from. ]D;]A;* **Outage Window** is in minutes & determines how long you consider your service to be down & over what window the failure threshold is evaluated. * **5 minutes is the recommend period.**]D;]A;* **Maintenance Period** defines the frequency your maintenance window occurs over. Set the period to NEVER if you don't conduct regular maintenance. ]D;]A;* **Maintenance Window** ignores test results during set days of the week & hours. ]D;]A;<br> Ex. If you choose October 24th, Saturday 10 pm - October 25th, Sunday 10am then it will ignore every result during 10 pm - 10 am on **every** Saturday & Sunday in the overall reporting time range.]D;]A;]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -27,7 +51,13 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Location.content.items.query8.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.GeoMapFailures.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[No location failures detected for these resource options & time range]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.GeoMapFailures.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Failures by Testing Location]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -36,97 +66,13 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Outage.content.items.Warning.content.items.text0.content.json" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.MaintenanceWindowWarning.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[<h2>No Maintenance Window Selected.</h2>]D;]A;]D;]A;Select a weekly or daily maintenace window & reccurence. If you don't perform routine maintenance set it for a one minute window on the weekend or your regular downtime.]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[<h2>没有选择任何维护时段。</h2>]D;]A;]D;]A;选择每周或每日维护时段和重复周期。如果你不执行例行维护，请为周末或定期停机时间设置一分钟的维护时段。]]></Val>
-          </Tgt>
+          <Val><![CDATA[### Do not set the Maintenance Window to a full day]]></Val>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Outage.content.items.Warning.content.items.text0Copy.content.json" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[<h2>No Failure Thresold or Outage Window set.</h2>]D;]A;]D;]A;Set your location failure threshold per test to define an outage & the grain you would like to evaluate on.]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[<h2>没有设置“失败阈值”或“故障时段”。</h2>]D;]A;]D;]A;设置每个测试的位置失败阈值，以定义故障和要评估的粒度。]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Outage.content.items.parameters6.content.parameters.7b36dfd039af4fa382d2edf09b4d29f7.description" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Define the time grain you examine for service outages]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[定义检查是否有服务故障的时间粒度]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Outage.content.items.parameters6.content.parameters.7b36dfd039af4fa382d2edf09b4d29f7.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Outage Window (minutes)]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[故障时段(分钟)]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Outage.content.items.parameters6.content.parameters.c3450f6fd4e8469ba1d3b9a7a9153d23.description" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Define how many location failures constitutes a service outage]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[定义多少个位置失败构成了服务故障]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Outage.content.items.parameters6.content.parameters.c3450f6fd4e8469ba1d3b9a7a9153d23.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Failure Threshold]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[失败阈值]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Outage.content.items.parameters6.content.parameters.e0b972a343e546b3ac8d13eeb40cddd8.description" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Select the time period your maintenance window occurs over]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[选择维护时段发生的时间周期]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Outage.content.items.parameters6.content.parameters.e0b972a343e546b3ac8d13eeb40cddd8.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Maintenance Period]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[维护周期]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Outage.content.items.parameters6.content.parameters.e8c5217d02e542f0a43972e24c27d385.description" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Define your maintenance Window]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[定义维护时段]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Outage.content.items.parameters6.content.parameters.e8c5217d02e542f0a43972e24c27d385.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Maintenance Window]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[维护时段]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Outage.content.items.parameters6Copy.content.parameters.89448dee7e4948bf838acc3e6ddc55ae.description" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Outage.content.items.HiddenParameters.content.parameters.89448dee7e4948bf838acc3e6ddc55ae.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Error check for a full day maintenance period]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -135,7 +81,7 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Outage.content.items.parameters6Copy.content.parameters.a322070a751341f4bb0777a5ee3061ba.description" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Outage.content.items.HiddenParameters.content.parameters.a322070a751341f4bb0777a5ee3061ba.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Convert maintenance window to seconds]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -144,25 +90,97 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Overview.content.items.query10Copy.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Outage.content.items.OutageParameters.content.parameters.7b36dfd039af4fa382d2edf09b4d29f7.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[No outages to report]]></Val>
+          <Val><![CDATA[Define the time grain you examine for service outages]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[没有故障可报告]]></Val>
+            <Val><![CDATA[定义检查是否有服务故障的时间粒度]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Overview.content.items.query10Copy.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Outage.content.items.OutageParameters.content.parameters.7b36dfd039af4fa382d2edf09b4d29f7.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Top Longest Outages & Beginning Datetime (UTC)]]></Val>
+          <Val><![CDATA[Outage Window (minutes)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[最长故障时间和开始日期/时间(UTC)]]></Val>
+            <Val><![CDATA[故障时段(分钟)]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Overview.content.items.query3.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Outage.content.items.OutageParameters.content.parameters.c3450f6fd4e8469ba1d3b9a7a9153d23.description" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Define how many location failures constitutes a service outage]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[定义多少个位置失败构成了服务故障]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Outage.content.items.OutageParameters.content.parameters.c3450f6fd4e8469ba1d3b9a7a9153d23.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Failure Threshold]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[失败阈值]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Outage.content.items.OutageParameters.content.parameters.e0b972a343e546b3ac8d13eeb40cddd8.description" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Select the time period your maintenance window occurs over]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[选择维护时段发生的时间周期]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Outage.content.items.OutageParameters.content.parameters.e0b972a343e546b3ac8d13eeb40cddd8.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Maintenance Period]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[维护周期]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Outage.content.items.OutageParameters.content.parameters.e8c5217d02e542f0a43972e24c27d385.description" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Define your maintenance Window]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[定义维护时段]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Outage.content.items.OutageParameters.content.parameters.e8c5217d02e542f0a43972e24c27d385.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Maintenance Window]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[维护时段]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Outage.content.items.Warning.content.items.MaintenanceWarning.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[<h2>No Maintenance Window Selected.</h2>]D;]A;]D;]A;Select a weekly or daily maintenace window & reccurence. If you don't perform routine maintenance set it for a one minute window on the weekend or your regular downtime.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<h2>没有选择任何维护时段。</h2>]D;]A;]D;]A;选择每周或每日维护时段和重复周期。如果你不执行例行维护，请为周末或定期停机时间设置一分钟的维护时段。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Outage.content.items.Warning.content.items.OutageWindowWarning.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[<h2>No Failure Thresold or Outage Window set.</h2>]D;]A;]D;]A;Set your location failure threshold per test to define an outage & the grain you would like to evaluate on.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<h2>没有设置“失败阈值”或“故障时段”。</h2>]D;]A;]D;]A;设置每个测试的位置失败阈值，以定义故障和要评估的粒度。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Overview.content.items.LastOutage.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No outage to report]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -171,25 +189,37 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Overview.content.items.query6.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Overview.content.items.LastOutage.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Overall Availability %]]></Val>
+          <Val><![CDATA[Time Since Last Outage]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Overview.content.items.LongestOutages.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[No outages to report]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[总可用性百分比]]></Val>
+            <Val><![CDATA[没有故障可报告]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Overview.content.items.query6Copy.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Overview.content.items.LongestOutages.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Total Outages]]></Val>
+          <Val><![CDATA[Top Longest Outages & Beginning Datetime (UTC)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[故障总数]]></Val>
+            <Val><![CDATA[最长故障时间和开始日期/时间(UTC)]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Overview.content.items.query9.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Overview.content.items.OverviewTable.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[No Web Tests returned for this time range and resource options]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Overview.content.items.OverviewTable.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Overview Table by Test (Expandable)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -198,106 +228,43 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Parameters.content.items.parameters1.content.parameters.034c2381cb444bf3ab5506951bc1f687.description" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Overview.content.items.SLA.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Choose your availability % target]]></Val>
+          <Val><![CDATA[Overall Availability %]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[选择可用性百分比目标]]></Val>
+            <Val><![CDATA[总可用性百分比]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Parameters.content.items.parameters1.content.parameters.034c2381cb444bf3ab5506951bc1f687.label" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Overview.content.items.TotalDowntime.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Availability Target 9s]]></Val>
+          <Val><![CDATA[No downtime to report]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Overview.content.items.TotalDowntime.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Total Down Time]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Overview.content.items.TotalOutages.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[No outages detected]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Overview.content.items.TotalOutages.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Total Outages]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[可用性目标为 9 秒]]></Val>
+            <Val><![CDATA[故障总数]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Parameters.content.items.parameters1.content.parameters.842e7cf886354f78bcf20dc19fcd2f3c.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Web Tests]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Web 测试]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Parameters.content.items.parameters1.content.parameters.be01014585ef4779a7ce88e18d144ae4.description" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Choose the relevant subscriptions]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[选择相关订阅]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Parameters.content.items.parameters1.content.parameters.dd6bfdf114ba495d8b9f7a8a9d098901.description" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Define the overall time period you report on]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[定义你所报告的整个时间段]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Parameters.content.items.parameters1.content.parameters.dd6bfdf114ba495d8b9f7a8a9d098901.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Time Range]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[时间范围]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Parameters.content.items.parameters1.content.parameters.dfcb9b49d323457590724e656f0d3329.description" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Choose App Insights resources of interest]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[选择相关 App Insights 资源]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Parameters.content.items.parameters1.content.parameters.dfcb9b49d323457590724e656f0d3329.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[App Insights Resources]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[App Insights 资源]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Warning.content.items.text0.content.json" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[<h2>No Azure Subscriptions are selected.</h2>]D;]A;]D;]A;Expand the **Subscription & App Insight Parameters (Required)** section & select one or more subscriptions to get started.]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[<h2>没有选择任何 Azure 订阅。</h2>]D;]A;]D;]A;若要开始使用，请展开**“订阅和 App insights 参数(必需)”**部分，然后选择一个或多个订阅。]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Warning.content.items.text0Copy.content.json" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[<h2>No App Insights resources are selected.</h2>]D;]A;]D;]A;Expand the **Subscription & App Insight Parameters (Required)** section & select one or more App Insights resources to get started.]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[<h2>没有选择任何 App Insights 资源。</h2>]D;]A;]D;]A;若要开始使用，请展开**“订阅和 App Insights 参数(必需)”**部分，然后选择一个或多个 App Insights 资源。]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.links12.content.links.6757ab2715494ac59f378744e3349f23.linkLabel" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Outages & Downtime]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[故障和停机时间]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.links12.content.links.6debc56f658e4b7b9c2ccbb0c86f1381.linkLabel" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.ParameterTabs.content.links.6debc56f658e4b7b9c2ccbb0c86f1381.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Help]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -306,34 +273,7 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.links12.content.links.a7e7416d223f49dbbbaf607cc53c0ff5.linkLabel" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Failures by Location]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[失败数(按位置)]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.links12.content.links.c73e3e84283d4344ab7cafbacf1d8913.linkLabel" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Overview]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[概述]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.links12.content.links.c73e3e84283d4344ab7cafbacf1d8913.preText" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Overview]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[概述]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.links12.content.links.d66c325b5fe94bb2bad2854577d0ae2b.linkLabel" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.ParameterTabs.content.links.d66c325b5fe94bb2bad2854577d0ae2b.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Outage / Maintenance Parameters]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -342,7 +282,7 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.links12.content.links.e91a1c4a7d1c41be8e29821d88520209.linkLabel" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.ParameterTabs.content.links.e91a1c4a7d1c41be8e29821d88520209.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Settings]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -351,12 +291,135 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.text7.content.json" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.ResourceParameters.content.parameters.034c2381cb444bf3ab5506951bc1f687.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[## No Web Tests are set.]D;]A;]D;]A;Expand the **Webtest & Reporting Time Range Parameters (Required)** section then select one or more Web test to get started. ]]></Val>
+          <Val><![CDATA[Choose your availability % target]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[## 没有设置任何 Web 测试。]D;]A;]D;]A;若要开始使用，请展开**“Web 测试和报告时间范围参数(必需)”**部分，然后选择一个或多个 Web 测试。]]></Val>
+            <Val><![CDATA[选择可用性百分比目标]]></Val>
           </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.ResourceParameters.content.parameters.034c2381cb444bf3ab5506951bc1f687.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Availability Target 9s]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[可用性目标为 9 秒]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.ResourceParameters.content.parameters.842e7cf886354f78bcf20dc19fcd2f3c.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Web Tests]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Web 测试]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.ResourceParameters.content.parameters.be01014585ef4779a7ce88e18d144ae4.description" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Choose the relevant subscriptions]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[选择相关订阅]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.ResourceParameters.content.parameters.dd6bfdf114ba495d8b9f7a8a9d098901.description" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Define the overall time period you report on]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[定义你所报告的整个时间段]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.ResourceParameters.content.parameters.dd6bfdf114ba495d8b9f7a8a9d098901.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Time Range]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[时间范围]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.ResourceParameters.content.parameters.dfcb9b49d323457590724e656f0d3329.description" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Choose App Insights resources of interest]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[选择相关 App Insights 资源]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.ResourceParameters.content.parameters.dfcb9b49d323457590724e656f0d3329.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[App Insights Resources]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[App Insights 资源]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.TimeRangeWarning.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[## No Time Range is set.]D;]A;]D;]A;Select a Time Range to get started ]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.VisualTabs.content.links.6757ab2715494ac59f378744e3349f23.linkLabel" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Outages & Downtime]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[故障和停机时间]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.VisualTabs.content.links.a7e7416d223f49dbbbaf607cc53c0ff5.linkLabel" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Failures by Location]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[失败数(按位置)]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.VisualTabs.content.links.c73e3e84283d4344ab7cafbacf1d8913.linkLabel" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Overview]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[概述]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.VisualTabs.content.links.c73e3e84283d4344ab7cafbacf1d8913.preText" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Overview]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[概述]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Warning.content.items.AppInsightsWarning.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[<h2>No App Insights resources are selected.</h2>]D;]A;]D;]A;Select one or more App Insights resources to get started.]D;]A;]D;]A;**If you select more than 100 resources it will break the query**]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Warning.content.items.SubscriptionWarning.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[<h2>No Azure Subscriptions are selected.</h2>]D;]A;]D;]A;Select one or more subscriptions to get started.]D;]A;]D;]A;**If you select more than 100 resources it will break the query**]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.WebTestWarning.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[## No Web Tests are set.]D;]A;]D;]A;If you are experiencing resource parameter errors then edit the parameter & examine the error message from the generating query. ]D;]A;]D;]A;**If you select more than 100 resources it will break the query**]]></Val>
         </Str>
         <Disp Icon="Str" />
       </Item>
