@@ -12,8 +12,8 @@
       <Item ItemId=";items.OverviewErrorMessage1.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[There is no backup data in the selected Log Analytics workspace(s) for the selected time range. <a href="https://aka.ms/UsingLAWorkspace" target="_blank">Learn More</a>]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[<div style="text-align:left;"><span style="font-size:12px;font-weight:600;"> Not - Seçili Log Analytics çalışma alanlarında, seçili zaman aralığı için yedekleme verisi yok. <a href="https://aka.ms/UsingLAWorkspace" target="_blank">Daha fazla bilgi</a> </span> </div>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Seçili Log Analytics çalışma alanlarında, seçili zaman aralığı için yedekleme verisi yok. <a href="https://aka.ms/UsingLAWorkspace" target="_blank">Daha Fazla Bilgi</a>]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[<div style="text-align:left;"><span style="font-size:12px;font-weight:600;"> Note - There is no backup data in the selected Log Analytics workspace(s) for the selected time range. <a href="https://aka.ms/UsingLAWorkspace" target="_blank">Learn More</a> </span> </div>]]></Val>
@@ -78,12 +78,18 @@
       <Item ItemId=";items.OverviewReportParameterBlock.content.parameters.8ce61d1de37140bfad537ba78afb976f.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Use to filter reports by backup solution]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Raporları yedekleme çözümüne göre filtrelemek için kullanın]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.OverviewReportParameterBlock.content.parameters.8ce61d1de37140bfad537ba78afb976f.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Backup Solution]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Yedekleme Çözümü]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -108,12 +114,18 @@
       <Item ItemId=";items.OverviewTimeRangeParameterBlock.content.parameters.78c86854fe3c44c58ee323d4210827d1.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Use this parameter to avoid querying data that is sent to the legacy Azure Diagnostics table. Excluding the legacy table improves query performance time. <a href="https://docs.microsoft.com/azure/backup/backup-azure-diagnostic-events#legacy-event">Learn more </a>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Eski Azure Tanılama tablosuna gönderilen verilerin sorgulanmasını önlemek için bu parametreyi kullanın. Eski tablonun hariç tutulması, sorgu performansı süresini iyileştirir. <a href="https://docs.microsoft.com/azure/backup/backup-azure-diagnostic-events#legacy-event">Daha fazla bilgi </a>]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.OverviewTimeRangeParameterBlock.content.parameters.78c86854fe3c44c58ee323d4210827d1.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Exclude Legacy Table]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Eski Tabloyu Hariç Tut]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -192,50 +204,71 @@
       <Item ItemId=";items.PolicyAdherenceByBackupInstanceDailyBackupAggregationTypeMonthlyText.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[The below grid is displayed in **Monthly view** due to your time range selection. Backup Instances which have had **atleast one successful backup** on **every day** in a given month are marked green (compliant) for that month. Note that 'month' here refers to a span of 4 weeks (28 days). [Learn more]5D;(https://aka.ms/AzureBackupReportDailyBackupMonthlyView1)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Aşağıdaki kılavuz, zaman aralığı seçiminiz nedeniyle **Aylık görünüm** içinde görüntülenir. Belirli bir ayda **her gün** **en az bir başarılı yedeklemesi** olmuş olan Yedekleme Örnekleri bu ay için yeşil (uyumlu) olarak işaretlenir. Buradaki 'ay' değerinin 4 haftalık (28 gün) bir süreye karşılık geldiğini unutmayın. [Daha fazla bilgi]5D;(https://aka.ms/AzureBackupReportDailyBackupMonthlyView1)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.PolicyAdherenceByBackupInstanceDailyBackupAggregationTypeWeeklyText.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[The below grid is displayed in **Weekly view** due to your time range selection. Backup Instances which have had **atleast one successful backup** on **every day** in a given week are marked green (compliant) for that week.  [Learn more]5D;(https://aka.ms/AzureBackupReportDailyBackupWeeklyView2)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Aşağıdaki kılavuz, zaman aralığı seçiminiz nedeniyle **Haftalık görünüm** içinde görüntülenir. Belirli bir haftada **her gün** **en az bir başarılı yedeklemesi** olmuş olan Yedekleme Örnekleri bu hafta için yeşil (uyumlu) olarak işaretlenir.  [Daha fazla bilgi]5D;(https://aka.ms/AzureBackupReportDailyBackupWeeklyView2)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.PolicyAdherenceByBackupInstanceWeeklyBackupAggregationTypeMonthlyText.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[The below grid is displayed in **Monthly view** due to your time range selection. Backup Instances which have had **atleast one** successful backup in **every week** in a given month are marked green (compliant) for that month. Note that 'month' here refers to a span of 4 weeks (28 days). [Learn more]5D;(https://aka.ms/AzureBackupReportWeeklyBackupMonthlyView2)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Aşağıdaki kılavuz, zaman aralığı seçiminiz nedeniyle **Aylık görünüm** içinde görüntülenir. Belirli bir ayda **her hafta** **en az bir** başarılı yedeklemesi olmuş olan Yedekleme Örnekleri bu ay için yeşil (uyumlu) olarak işaretlenir. Buradaki 'ay' değerinin 4 haftalık (28 gün) bir süreye karşılık geldiğini unutmayın. [Daha fazla bilgi]5D;(https://aka.ms/AzureBackupReportWeeklyBackupMonthlyView2)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.PolicyAdherenceByTimePeriodDailyBackupAggregationTypeMonthlyText.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[The below grid is displayed in **Monthly view** due to your time range selection. Backup Instances which have had **atleast one successful backup** on **every day** in a given month fall under the second column in the below table. Note that 'month' here refers to a span of 4 weeks (28 days). [Learn more]5D;(https://aka.ms/AzureBackupReportDailyBackupMonthlyView1)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Aşağıdaki kılavuz, zaman aralığı seçiminiz nedeniyle **Aylık görünüm** içinde görüntülenir. Belirli bir ayda **her gün** **en az bir başarılı yedeklemesi** olmuş olan Yedekleme Örnekleri, aşağıdaki tabloda bulunan ikinci sütunda yer alır. Buradaki 'ay' değerinin 4 haftalık (28 gün) bir süreye karşılık geldiğini unutmayın. [Daha fazla bilgi]5D;(https://aka.ms/AzureBackupReportDailyBackupMonthlyView1)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.PolicyAdherenceByTimePeriodDailyBackupAggregationTypeWeeklyText.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[The below grid is displayed in **Weekly view** due to your time range selection. Backup Instances which have had **atleast one successful backup** on **every day** in a given week fall under the second column in the below table.  [Learn more]5D;(https://aka.ms/AzureBackupReportDailyBackupWeeklyView1)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Aşağıdaki kılavuz, zaman aralığı seçiminiz nedeniyle **Haftalık görünüm** içinde görüntülenir. Belirli bir haftada **her gün** **en az bir başarılı yedeklemesi** olmuş olan Yedekleme Örnekleri, aşağıdaki tabloda bulunan ikinci sütunda yer alır.  [Daha fazla bilgi]5D;(https://aka.ms/AzureBackupReportDailyBackupWeeklyView1)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.PolicyAdherenceByTimePeriodWeeklyBackupAggregationTypeMonthlyText.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[The below grid is displayed in **Monthly view** due to your time range selection. Backup Instances which have had **atleast one** successful backup in **every week** in a given month fall under the second column in the below table. Note that 'month' here refers to a span of 4 weeks (28 days). [Learn more]5D;(https://aka.ms/AzureBackupReportWeeklyBackupMonthlyView1)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Aşağıdaki kılavuz, zaman aralığı seçiminiz nedeniyle **Aylık görünüm** içinde görüntülenir. Belirli bir ayda **her hafta** **en az bir** başarılı yedeklemesi olmuş olan Yedekleme Örnekleri, aşağıdaki tabloda bulunan ikinci sütunda yer alır. Buradaki 'ay' değerinin 4 haftalık (28 gün) bir süreye karşılık geldiğini unutmayın. [Daha fazla bilgi]5D;(https://aka.ms/AzureBackupReportWeeklyBackupMonthlyView1)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.PolicyAdherenceDailyBackupGrid2.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[List of Jobs in Period]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Dönemdeki İşlerin Listesi]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.ResourceSpecificTextBox1.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[You have vault(s) using **legacy diagnostics settings**. Please use the latest diagnostics settings for all your vaults to make them eligible for reporting upgrades. [Learn more]5D;(https://aka.ms/AzureBackupUseResourceSpecific)]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[<div style="text-align:left;"><h1> <span style="font-size:12px;font-weight:400;font-style:italic"> **Eski tanılama ayarlarını** kullanan kasalarınız var. Raporlama yükseltmelerine uygun hale getirmek üzere lütfen tüm kasalarınız için en son tanılama ayarlarını kullanın. <a href="https://aka.ms/AzureBackupUseResourceSpecific" target="_blank">Daha Fazla Bilgi</a> </span> </h1> </div>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[**Eski tanılama ayarlarını** kullanan kasalarınız var. Raporlama yükseltmelerine uygun hale getirmek üzere lütfen tüm kasalarınız için en son tanılama ayarlarını kullanın. [Daha fazla bilgi]5D;(https://aka.ms/AzureBackupUseResourceSpecific)]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[<div style="text-align:left;"><h1> <span style="font-size:12px;font-weight:400;font-style:italic"> You have vault(s) using **legacy diagnostics settings**. Please use the latest diagnostics settings for all your vaults to make them eligible for reporting upgrades. <a href="https://aka.ms/AzureBackupUseResourceSpecific" target="_blank">Learn More</a> </span> </h1> </div>]]></Val>
@@ -246,8 +279,8 @@
       <Item ItemId=";items.ResourceSpecificTextBox2.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[You have vault(s) using **legacy diagnostics settings**. Please use the latest diagnostics settings for all your vaults to make them eligible for reporting upgrades. <a href="https://aka.ms/AzureBackupUseResourceSpecific" target="_blank">Learn More</a>]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[<div style="text-align:left;"><h1> <span style="font-size:12px;font-weight:400;font-style:italic"> **Eski tanılama ayarlarını** kullanan kasalarınız var. Raporlama yükseltmelerine uygun hale getirmek üzere lütfen tüm kasalarınız için en son tanılama ayarlarını kullanın. <a href="https://aka.ms/AzureBackupUseResourceSpecific" target="_blank">Daha Fazla Bilgi</a> </span> </h1> </div>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[**Eski tanılama ayarlarını** kullanan kasalarınız var. Raporlama yükseltmelerine uygun hale getirmek üzere lütfen tüm kasalarınız için en son tanılama ayarlarını kullanın. <a href="https://aka.ms/AzureBackupUseResourceSpecific" target="_blank">Daha Fazla Bilgi</a>]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[<div style="text-align:left;"><h1> <span style="font-size:12px;font-weight:400;font-style:italic"> You have vault(s) using **legacy diagnostics settings**. Please use the latest diagnostics settings for all your vaults to make them eligible for reporting upgrades. <a href="https://aka.ms/AzureBackupUseResourceSpecific" target="_blank">Learn More</a> </span> </h1> </div>]]></Val>
@@ -321,6 +354,9 @@
       <Item ItemId=";items.Tabs.content.links.fd346de8b14d4ce99014bcdf8c44b55a.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Policy Adherence]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[İlke Bağlılığı]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

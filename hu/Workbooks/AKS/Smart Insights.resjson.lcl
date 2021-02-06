@@ -14,12 +14,18 @@
         <Item ItemId=";(...) ntent.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[(please select a row in the above table)]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[(válasszon ki egy sort a fenti táblában)]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) ntent.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Events per hour]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Események száma óránként]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -38,6 +44,9 @@
         <Item ItemId=";(...) ventanomalygroups.content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Spiking kubernetes events:]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Kiugró gyakoriságú Kubernetes-események:]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -47,6 +56,9 @@
         <Item ItemId=";(...) anation.content.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[## Select an event to see a graph of occurrences]D;]A;]D;]A;This analyzer shows common "classes" of events and shows which event classes have increased in volume recently. ]D;]A;- Events in the list below are grouped based on common phrases, so two events with messages "pod-abc-123 failed, can not pull image" and "pod-def-456 failed, can not pull image" would be grouped together.]D;]A;- The Spikiness column rates which events have occureed more recently. For example, if Events A and B occurred on average 10 times a day in the last month, but event A occurred 1000 times yesterday, and event B occurred 2 times yesterday, then event A would have a much higher spikiness rating than B.]D;]A;]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[## Válasszon ki egy eseményt az előfordulások diagramjának megjelenítéséhez]D;]A;]D;]A;Ez az elemző a gyakori eseményosztályokat és azt jeleníti meg, hogy az elmúlt időszakban mely eseményosztályok száma nőtt meg. ]D;]A;– Az alábbi listában látható események gyakori kifejezések alapján vannak csoportosítva, tehát a következő üzeneteket tartalmazó két esemény azonos csoportban szerepel: „hiba: pod-abc-123, nem sikerült lekérni a lemezképet” és „hiba: pod-abc-456, nem sikerült lekérni a lemezképet”.]D;]A;– A Spikiness oszlop azt minősíti, hogy az elmúlt időszakban mely események fordultak elő nagyobb számban. Ha például az A és a B esemény átlagosan 10 alkalommal fordult elő az elmúlt hónapban, de az A esemény tegnap 1000 alkalommal, a B esemény pedig 2 alkalommal fordult elő, akkor az A esemény a B eseménynél sokkal magasabb gyakorisági minősítést kap.]D;]A;]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -56,6 +68,9 @@
         <Item ItemId=";(...) ntent.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[## Selected Event:]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[## Kiválasztott esemény:]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -65,6 +80,9 @@
         <Item ItemId=";(...) nomalytextexplanation.content.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[## Select a container to view liveness probe failures]D;]A;]D;]A;This analyzer shows which liveness probes have failed recently and how often. Select one to see a time-series of occurrences.]D;]A;]D;]A;Column explanation:]D;]A;- total: counts liveness probe failures over the entire time range]D;]A;- recentTotal: counts liveness probe failures in the last 1/10th of the time frame (so for a 30 day view, recentTotal would show failures in the last 3 days)]D;]A;- controllerTotal: counts liveness probe failures from all containers managed by a controller]D;]A;]D;]A;]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[## Válasszon ki egy tárolót a sikertelen üzemelési tesztek megtekintéséhez]D;]A;]D;]A;Ez az elemző a meghiúsult üzemelési teszteket és azok gyakoriságát jeleníti meg. Válasszon ki egyet az előfordulások idősorának megtekintéséhez.]D;]A;]D;]A;Oszlopok magyarázata:]D;]A;– total: a sikertelen üzemelési tesztek száma a teljes időtartományban ]D;]A;– recentTotal: a sikertelen üzemelési tesztek száma az időtartomány utolsó tizedében (ez egy a 30 napos nézet esetében az utolsó 3 napban történt hibák megjelenítését jelenti)]D;]A;– controllerTotal: egy adott vezérlő által kezelt összes tároló sikertelen üzemelési tesztjeinek száma]D;]A;]D;]A;]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -74,12 +92,18 @@
         <Item ItemId=";(...) ssprobeselect.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[No liveness probe failures found!]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Nem található sikertelen üzemelési teszt.]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) ssprobeshowdetails.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[no container selected]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[nincs kiválasztva tároló]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -107,12 +131,18 @@
         <Item ItemId=";(...) bs.content.links.ba69d35d1cd94919bd4fd4d63e2605d4.linkLabel" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Limits and requests set]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Korlátok és kérelmek vannak beállítva]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) bs.content.links.fef55d21802c43e899309bef73f4d6b1.linkLabel" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Limits or requests not set]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Nincsenek beállítva korlátok vagy kérelmek]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -131,6 +161,9 @@
         <Item ItemId=";(...) roup.content.items.smartdetectorscombinedworkbookrequestlimitscpuchart.content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[CPU Usage vs Request & Limit]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[CPU-használat – kérelem és korlát]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -146,6 +179,9 @@
         <Item ItemId=";(...) roup.content.items.smartdetectorscombinedworkbookrequestlimitsmemorychart.content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Memory Usage vs Request & Limit]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Memóriahasználat – kérelem és korlát]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -154,6 +190,9 @@
           <Item ItemId=";(...) tings.0.label" ItemType="0" PsrId="306" Leaf="true">
             <Str Cat="Text">
               <Val><![CDATA[max cpu usage (nanocores)]]></Val>
+              <Tgt Cat="Text" Stat="Loc" Orig="New">
+                <Val><![CDATA[maximális CPU-használat (nanocore)]]></Val>
+              </Tgt>
             </Str>
             <Disp Icon="Str" />
           </Item>
@@ -199,6 +238,9 @@
           <Item ItemId=";(...) Settings.0.label" ItemType="0" PsrId="306" Leaf="true">
             <Str Cat="Text">
               <Val><![CDATA[max memory usage (bytes)]]></Val>
+              <Tgt Cat="Text" Stat="Loc" Orig="New">
+                <Val><![CDATA[maximális memóriahasználat (bájt)]]></Val>
+              </Tgt>
             </Str>
             <Disp Icon="Str" />
           </Item>
@@ -245,12 +287,18 @@
         <Item ItemId=";(...) container.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[No pods found in cluster. Is monitoring enabled?]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Nem található pod a fürtben. Engedélyezve van a monitorozás?]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) container.content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Request/limit unoptimality]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Kérelem/korlát – unoptimalitás]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -272,6 +320,9 @@
         <Item ItemId=";(...) xtexplanation.content.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[## Select a container to see recommended requests and limits]D;]A;]D;]A;This analyzer shows containers with excessive cpu/memory limits and requests. Each tile can represent multiple containers with the same spec. (ex: If deployment A creates 100 identical pods, each with a container C1 and C2, then there will be a single tile for all C1 containers and a single tile for all C2 containers).]D;]A;]D;]A;Tiles are colored like so:]D;]A;- white -> well set limits and requests  ]D;]A;- orange -> excessive limits or requests]D;]A;- turquoise -> unset limits or requests]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[## Válasszon ki egy tárolót az ajánlott kérelmek és korlátozások megtekintéséhez]D;]A;]D;]A;Ez az elemző a túl nagy számú CPU-/memóriakorláttal és -kérelemmel rendelkező tárolókat jeleníti meg. Az egyes csempék több azonos specifikációval rendelkező tárolót is képviselhetnek (példa: ha az A telepítés létrehoz 100 azonos podot, amelyek mindegyike rendelkezik egy C1-es és egy C2-es tárolóval, akkor az összes tároló két csempén jelenik meg – a C1-esek az egyiken, a C2-esek pedig a másikon).]D;]A;]D;]A;A csempék színe a következőt jelenti:]D;]A;– fehér -> jól beállított korlátok és kérelmek  ]D;]A;– narancssárga -> túl nagy számú korlát vagy kérés]D;]A;– türkizkék -> nem beállított korlátok vagy kérelmek]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -288,12 +339,18 @@
       <Item ItemId=";items.smartdetectorscombinedworkbookparameters.content.parameters.6390427562704382ab34935932debe40.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Kube Cluster]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Kube-fürt]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.smartdetectorscombinedworkbooktopofpagetabs.content.links.1a37c39759ca4b6eb60b19b2dca70c21.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Event Anomaly]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Eseményalapú anomália]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -309,12 +366,18 @@
       <Item ItemId=";items.smartdetectorscombinedworkbooktopofpagetabs.content.links.ae3e6ec3f7294716b04244bec65b0339.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Limits and Requests]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Korlátok és kérelmek]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Smart Insights]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Intelligens elemzések]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
