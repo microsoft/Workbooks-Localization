@@ -81,13 +81,25 @@
           <Disp Icon="Str" />
         </Item>
       </Item>
-      <Item ItemId=";@items.Utilization.content.items.SessionAndCores.content.items.SessionCharts.content.items.AvailableSessions.conte" ItemType="0" PsrId="306" Leaf="false">
+      <Item ItemId=";@items.Utilization.content.items.SessionAndCores.content.items.SessionCharts.content.items.AvailableSessionsGraph." ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) nt.title" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Available sessions]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
               <Val><![CDATA[사용 가능한 세션]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
+      <Item ItemId=";@items.Utilization.content.items.SessionAndCores.content.items.SessionCharts.content.items.SessionHistoryGraph.con" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) tent.title" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Session history]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[세션 기록]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
@@ -222,15 +234,6 @@
           <Disp Icon="Str" />
         </Item>
       </Item>
-      <Item ItemId=";items.Parameters.content.parameters.04a8ead21fb24666a7b06d92e3c29b46.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Time range]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[시간 범위]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
       <Item ItemId=";items.Utilization.content.items.Notice.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Utilization Report]]></Val>
@@ -263,15 +266,6 @@
           <Val><![CDATA[Cores Info]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[코어 정보]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Utilization.content.items.SessionAndCores.content.items.SessionCharts.content.items.query0.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Session history]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[세션 기록]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -407,6 +401,15 @@
           <Val><![CDATA[Results shown with a time grain of {TimeRange:grain} over a time duration of {TimeRange:label} for the current hostpool.]D;]A;]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[현재 호스트 풀에 대한 결과로, {TimeRange:label} 기간 동안 {TimeRange:grain} 시간 조직으로 표시됩니다.]D;]A;]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.parametersgeneral.content.parameters.04a8ead21fb24666a7b06d92e3c29b46.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Time range]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[시간 범위]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
