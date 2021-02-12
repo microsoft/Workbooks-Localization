@@ -9,6 +9,15 @@
     <Disp Icon="Expand" Expand="true" Disp="true" LocTbl="false" />
     <Item ItemId=";Strings" ItemType="0" PsrId="306" Leaf="false">
       <Disp Icon="Str" Disp="true" LocTbl="false" />
+      <Item ItemId=";items.ACRCategoryTiles.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[No unhealthy registries found]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Nenašly se žádné registry, které by nebyly v pořádku.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.ACRCategoryTiles.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Count of vulnerabilities by category]]></Val>
@@ -18,11 +27,140 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
+      <Item ItemId=";items.ContainersACRImagesTable.content.gridSettings.labelSettings.CVEcount.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[CVEs]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[CVE]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.ContainersACRImagesTable.content.gridSettings.labelSettings.imageDigest.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Image Digest]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Přehled image]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.ContainersACRImagesTable.content.gridSettings.labelSettings.patchAvailable.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Patch Available]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Dostupná oprava]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.ContainersACRImagesTable.content.gridSettings.labelSettings.sevH.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[High]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Vysoká]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.ContainersACRImagesTable.content.gridSettings.labelSettings.sevL.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Low]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Nízká]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.ContainersACRImagesTable.content.gridSettings.labelSettings.sevM.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Medium]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Střední]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.ContainersACRImagesTable.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[No vulnerable images found]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Nenašly se žádné image s ohroženým zabezpečením.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.ContainersACRImagesTable.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Vulnerable Images Scanned]]></Val>
+          <Val><![CDATA[Vulnerable images found]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Zkontrolované ohrožené image]]></Val>
+            <Val><![CDATA[Našly se image s ohroženým zabezpečením]]></Val>
+          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Vulnerable Images Scanned]]></Val>
+          </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.ContainersACRReposTable.content.gridSettings.labelSettings.CVEcount.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[CVEs]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[CVE]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.ContainersACRReposTable.content.gridSettings.labelSettings.ResourceGroup.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Resource Group]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Skupina prostředků]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.ContainersACRReposTable.content.gridSettings.labelSettings.patchAvailable.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Patch Available]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Dostupná oprava]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.ContainersACRReposTable.content.gridSettings.labelSettings.sevH.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[High]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Vysoká]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.ContainersACRReposTable.content.gridSettings.labelSettings.sevL.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Low]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Nízká]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.ContainersACRReposTable.content.gridSettings.labelSettings.sevM.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Medium]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Střední]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.ContainersACRReposTable.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[No unhealthy registries found]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Nenašly se žádné registry, které by nebyly v pořádku.]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -32,6 +170,15 @@
           <Val><![CDATA[Azure Container Registries]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Registry Azure Container Registry]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.ContainersACRVulnerabilitiesTable.content.items.ContainersFullListTable.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[No unhealthy registries and images found]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Nenašly se žádné registry ani image, které by nebyly v pořádku.]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -47,28 +194,37 @@
       </Item>
       <Item ItemId=";items.ContainersACRVulnerabilitiesTable.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[ACR Vulnerabilities recommendations list]]></Val>
+          <Val><![CDATA[ACR vulnerabilities recommendations list]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Seznam doporučení ohrožení zabezpečení ACR]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[ACR Vulnerabilities recommendations list]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Headline.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[## Server and Container Registry Vulnerabilities (Preview)]]></Val>
+          <Val><![CDATA[## Vulnerability Assessment Findings (Preview)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[## Ohrožení zabezpečení serveru a služby Container Registry (Preview)]]></Val>
+            <Val><![CDATA[## Zjištění Posouzení ohrožení zabezpečení (Preview)]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[## Server and Container Registry Vulnerabilities (Preview)]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Help.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[#### Welcome to Server and Container Registry Vulnerabilities workbook (preview)]D;]A;This workbook is based on the following recommendations provided by Azure Security Center:]D;]A;* [Vulnerabilities in your virtual machines should be remediated]5D;(http://portal.azure.com/#blade/Microsoft_Azure_Security/RecommendationsBlade/assessmentKey/4ab6e3c5-74dd-8b35-9ab9-f61b30875b27)]D;]A;* [Vulnerabilities in Azure Container Registry images should be remediated (powered by Qualys)]5D;(http://portal.azure.com/#blade/Microsoft_Azure_Security/RecommendationsBlade/assessmentKey/4ab6e3c5-74dd-8b35-9ab9-f61b30875b27)]]></Val>
+          <Val><![CDATA[#### Welcome to Server and Container Registry Vulnerabilities workbook (preview)]D;]A;This workbook is based on the following recommendations provided by Azure Security Center:]D;]A;* [Vulnerabilities in your virtual machines should be remediated]5D;(http://portal.azure.com/#blade/Microsoft_Azure_Security/RecommendationsBlade/assessmentKey/1195afff-c881-495e-9bc5-1486211ae03f)]D;]A;* [Vulnerabilities in Azure Container Registry images should be remediated (powered by Qualys)]5D;(http://portal.azure.com/#blade/Microsoft_Azure_Security/RecommendationsBlade/assessmentKey/dbd0cb49-b563-45e7-9724-889e799fa648)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[#### Vítá vás sešit Ohrožení zabezpečení serveru a služby Container Registry (Preview)]D;]A;Tento sešit se zakládá na následujících doporučení, které poskytuje služba Azure Security Center:]D;]A;* [Ohrožení zabezpečení na virtuálních počítačích mají být opravena]5D;(http://portal.azure.com/#blade/Microsoft_Azure_Security/RecommendationsBlade/assessmentKey/4ab6e3c5-74dd-8b35-9ab9-f61b30875b27)]D;]A;* [Ohrožení zabezpečení v imagích Azure Container Registry mají být opravena (používá technologii Qualys)]5D;(http://portal.azure.com/#blade/Microsoft_Azure_Security/RecommendationsBlade/assessmentKey/4ab6e3c5-74dd-8b35-9ab9-f61b30875b27)]]></Val>
+            <Val><![CDATA[#### Vítá vás sešit Ohrožení zabezpečení serveru a služby Container Registry (Preview)]D;]A;Tento sešit se zakládá na následujících doporučení, které poskytuje služba Azure Security Center:]D;]A;* [Ohrožení zabezpečení na virtuálních počítačích mají být opravena]5D;(http://portal.azure.com/#blade/Microsoft_Azure_Security/RecommendationsBlade/assessmentKey/1195afff-c881-495e-9bc5-1486211ae03f)]D;]A;* [Ohrožení zabezpečení v imagích Azure Container Registry mají být opravena (používá technologii Qualys)]5D;(http://portal.azure.com/#blade/Microsoft_Azure_Security/RecommendationsBlade/assessmentKey/dbd0cb49-b563-45e7-9724-889e799fa648)]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[#### Welcome to Server and Container Registry Vulnerabilities workbook (preview)]D;]A;This workbook is based on the following recommendations provided by Azure Security Center:]D;]A;* [Vulnerabilities in your virtual machines should be remediated]5D;(http://portal.azure.com/#blade/Microsoft_Azure_Security/RecommendationsBlade/assessmentKey/4ab6e3c5-74dd-8b35-9ab9-f61b30875b27)]D;]A;* [Vulnerabilities in Azure Container Registry images should be remediated (powered by Qualys)]5D;(http://portal.azure.com/#blade/Microsoft_Azure_Security/RecommendationsBlade/assessmentKey/4ab6e3c5-74dd-8b35-9ab9-f61b30875b27)]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -99,6 +255,15 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
+      <Item ItemId=";items.OverviewACRTable.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[No unhealthy registries found]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Nenašly se žádné registry, které by nebyly v pořádku.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.OverviewACRTable.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[ACR | Count of vulnerabilities by severity per repository]]></Val>
@@ -108,11 +273,29 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
+      <Item ItemId=";items.OverviewContainerCount.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[No unhealthy registries found]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Nenašly se žádné registry, které by nebyly v pořádku.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.OverviewContainerCount.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[ACR | Count of unhealthy registries]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[ACR | Počet problémových registrů]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.OverviewContainersPie.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[No unhealthy registries found]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Nenašly se žádné registry, které by nebyly v pořádku.]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -153,6 +336,15 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
+      <Item ItemId=";items.OverviewServerTable.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[No unhealthy VMs found]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Nenašly se žádné virtuální počítače, které by nebyly v pořádku.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.OverviewServerTable.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Servers | Count of vulnerabilities by severity per resource]]></Val>
@@ -162,11 +354,29 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
+      <Item ItemId=";items.OverviewServersPie.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[No unhealthy VMs found]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Nenašly se žádné virtuální počítače, které by nebyly v pořádku.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.OverviewServersPie.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Servers | Count of vulnerabilities by severity]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Servery | Počet ohrožení zabezpečení podle závažnosti]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.OverviewVMCount.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[No unhealthy VMs found]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Nenašly se žádné virtuální počítače, které by nebyly v pořádku.]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -209,19 +419,79 @@
       </Item>
       <Item ItemId=";items.ServersCategoryTiles.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Servers | Count vulnerability by category]]></Val>
+          <Val><![CDATA[Servers | Count vulnerabilities by category]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Servery | Počet ohrožení zabezpečení podle kategorie]]></Val>
+          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Servers | Count vulnerability by category]]></Val>
+          </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.ServersSummary.content.gridSettings.labelSettings.CVEcount.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[CVEs]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[CVE]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.ServersSummary.content.gridSettings.labelSettings.ResourceGroup.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Resource Group]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Skupina prostředků]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.ServersSummary.content.gridSettings.labelSettings.patchAvailable.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Patch Available]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Dostupná oprava]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.ServersSummary.content.gridSettings.labelSettings.sevH.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[High]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Vysoká]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.ServersSummary.content.gridSettings.labelSettings.sevL.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Low]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Nízká]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.ServersSummary.content.gridSettings.labelSettings.sevM.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Medium]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Střední]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.ServersSummary.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Servers (Azure) Overview]]></Val>
+          <Val><![CDATA[Servers overview]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Přehled serverů (Azure)]]></Val>
+            <Val><![CDATA[Přehled serverů]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Servers (Azure) Overview]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -263,19 +533,25 @@
       </Item>
       <Item ItemId=";items.group17.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Servers (Azure + ARC) Recommendations list]]></Val>
+          <Val><![CDATA[Servers recommendations list]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Seznam doporučení pro servery (Azure + ARC)]]></Val>
+            <Val><![CDATA[Seznam doporučení serverů]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Servers (Azure + ARC) Recommendations list]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Server and Container Registry Vulnerabilities]]></Val>
+          <Val><![CDATA[Vulnerability Assessment Findings]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Ohrožení zabezpečení serverů a služby Container Registry]]></Val>
+            <Val><![CDATA[Zjištění Posouzení ohrožení zabezpečení]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Server and Container Registry Vulnerabilities]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
