@@ -9,6 +9,15 @@
     <Disp Icon="Expand" Expand="true" Disp="true" LocTbl="false" />
     <Item ItemId=";Strings" ItemType="0" PsrId="306" Leaf="false">
       <Disp Icon="Str" Disp="true" LocTbl="false" />
+      <Item ItemId=";items.Charts.content.items.OS.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[No unhealthy resources found]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[没有发现运行不正常的资源]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.Charts.content.items.OS.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Count of unhealthy machines by operating system]]></Val>
@@ -27,11 +36,29 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
+      <Item ItemId=";items.Charts.content.items.ResourceHealth.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[No unhealthy resources found]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[没有发现运行不正常的资源]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.Charts.content.items.ResourceHealth.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Count of resources by health]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[资源计数(按运行状况)]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Charts.content.items.Severity.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[No unhealthy resources found]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[没有发现运行不正常的资源]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -47,10 +74,13 @@
       </Item>
       <Item ItemId=";items.Help.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[#### Welcome to System Updates Dashboard workbook (preview)]D;]A;This workbook is based on a recommendation [**System updates should be installed on your machines**]5D;(http://portal.azure.com/#blade/Microsoft_Azure_Security/RecommendationsBlade/assessmentKey/4ab6e3c5-74dd-8b35-9ab9-f61b30875b27) and will help you to identify machines with outdenting updates.<br>]D;]A;You can choose either resource or update view. Clicking on each chart will apply filters by on the field.]D;]A;For more information about this workbook, navigate to [here]5D;(https://aka.ms/sentinelipsetup).<br>]]></Val>
+          <Val><![CDATA[#### Welcome to the system updates workbook (preview)]D;]A;This workbook is based on a recommendation [**System updates should be installed on your machines**]5D;(http://portal.azure.com/#blade/Microsoft_Azure_Security/RecommendationsBlade/assessmentKey/4ab6e3c5-74dd-8b35-9ab9-f61b30875b27) and will help you to identify machines with outdenting updates.<br>]D;]A;You can choose either resource or update view. Clicking on each chart will apply filters by on the field.]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[#### 欢迎使用系统更新仪表板工作簿(预览)]D;]A;此工作簿以建议[**应在计算机上安装系统更新**]5D;(http://portal.azure.com/#blade/Microsoft_Azure_Security/RecommendationsBlade/assessmentKey/4ab6e3c5-74dd-8b35-9ab9-f61b30875b27)为基础，将帮助你识别具有未完成更新的计算机。<br>]D;]A;可以选择“资源”或“更新”视图。单击每个图表将对字段应用筛选器。]D;]A;有关此工作簿的详细信息，请导航到[此处]5D;(https://aka.ms/sentinelipsetup)。<br>]]></Val>
+            <Val><![CDATA[#### 欢迎使用“系统更新”工作簿(预览)]D;]A;此工作簿基于建议[**应在虚拟机上安装系统更新**]5D;(http://portal.azure.com/#blade/Microsoft_Azure_Security/RecommendationsBlade/assessmentKey/4ab6e3c5-74dd-8b35-9ab9-f61b30875b27)，将帮助你识别包含升级更新的虚拟机。<br>]D;]A;可以选择“资源”或“更新”视图。单击每个图表将对字段应用筛选器。]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[#### Welcome to System Updates Dashboard workbook (preview)]D;]A;This workbook is based on a recommendation [**System updates should be installed on your machines**]5D;(http://portal.azure.com/#blade/Microsoft_Azure_Security/RecommendationsBlade/assessmentKey/4ab6e3c5-74dd-8b35-9ab9-f61b30875b27) and will help you to identify machines with outdenting updates.<br>]D;]A;You can choose either resource or update view. Clicking on each chart will apply filters by on the field.]D;]A;For more information about this workbook, navigate to [here]5D;(https://aka.ms/sentinelipsetup).<br>]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -89,19 +119,25 @@
       </Item>
       <Item ItemId=";items.Resources.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[foo]]></Val>
+          <Val><![CDATA[No unhealthy resources found]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[FOO]]></Val>
+            <Val><![CDATA[没有发现运行不正常的资源]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[foo]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Resources.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Count of missing updates per unhealthy resource]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[Count of missing updates per unhealthy resource | Select a machine to view its missing updates]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[每个运行不正常的资源缺少的更新的计数]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Count of missing updates per unhealthy resource]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -138,12 +174,24 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
+      <Item ItemId=";items.Subscriptions.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[No unhealthy resources found]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[没有发现运行不正常的资源]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.Subscriptions.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Count of machines with outsdanting updates per resource group]]></Val>
+          <Val><![CDATA[Count of machines with outstanding updates per resource group]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[每个资源组具有未完成更新的计算机计数]]></Val>
+            <Val><![CDATA[包含升级更新的虚拟机数/资源组]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Count of machines with outsdanting updates per resource group]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -167,10 +215,13 @@
       </Item>
       <Item ItemId=";items.Tabs.content.parameters.164e2bfb09f548159a0e44a3f9a26f16.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Toggle to show Help for each tab.]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[Toggle to show help for this workbook]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[切换以显示针对每个选项卡的“帮助”。]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Toggle to show Help for each tab.]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -183,21 +234,15 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Tabs.content.parameters.ca214f0daa7a464ab693c22db46ae52f.description" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Select subscription]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[选择订阅]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
       <Item ItemId=";items.Title.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[## System Updates Dashboard (Preview)]]></Val>
+          <Val><![CDATA[## System Updates (Preview)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[## 系统更新仪表板(预览)]]></Val>
+            <Val><![CDATA[## 系统更新(预览)]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[## System Updates Dashboard (Preview)]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -266,10 +311,13 @@
       </Item>
       <Item ItemId=";items.Updates.content.items.AffectedMachines.content.gridSettings.labelSettings.DownloadLink.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Download]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[Download patch]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[下载]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Download]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -284,10 +332,13 @@
       </Item>
       <Item ItemId=";items.Updates.content.items.AffectedMachines.content.gridSettings.labelSettings.OsType.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Operating System]]></Val>
+          <Val><![CDATA[Operating system]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[操作系统]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Operating System]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -311,10 +362,13 @@
       </Item>
       <Item ItemId=";items.Updates.content.items.AffectedMachines.content.gridSettings.labelSettings.RebootBehavior.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Reboot Behavior]]></Val>
+          <Val><![CDATA[Reboot behavior]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[重新启动行为]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Reboot Behavior]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -329,9 +383,21 @@
       </Item>
       <Item ItemId=";items.Updates.content.items.AffectedMachines.content.gridSettings.labelSettings.ResourceGroup.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Resource Group]]></Val>
+          <Val><![CDATA[Resource group]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[资源组]]></Val>
+          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Resource Group]]></Val>
+          </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Updates.content.items.AffectedMachines.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[No unhealthy resources found]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[没有发现运行不正常的资源]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -347,34 +413,61 @@
       </Item>
       <Item ItemId=";items.Updates.content.items.MissingUpdates.content.gridSettings.labelSettings.AffectedResources.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Affected Machines]]></Val>
+          <Val><![CDATA[Affected machines]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[受影响的计算机]]></Val>
+            <Val><![CDATA[受影响的虚拟机数]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Affected Machines]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Updates.content.items.MissingUpdates.content.gridSettings.labelSettings.OsType.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Operating System]]></Val>
+          <Val><![CDATA[Operating system]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[操作系统]]></Val>
+          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Operating System]]></Val>
+          </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Updates.content.items.MissingUpdates.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[No unhealthy resources found]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[没有发现运行不正常的资源]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Updates.content.items.MissingUpdates.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Missing System Updates]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[Missing system updates | Select an update to see the affected machines]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[缺少系统更新]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Missing System Updates]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Updates.content.items.SelectedUpdate.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[<br>]D;]A;#### ]D83D;]DCA1; List of affected machined by: {selectedUpdate}]]></Val>
+          <Val><![CDATA[<br>]D;]A;#### ]D83D;]DCA1; Machines missing update: {selectedUpdate}]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Updates.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[No unhealthy resources found]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[没有发现运行不正常的资源]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
