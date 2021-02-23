@@ -14,12 +14,18 @@
         <Item ItemId=";(...) CVSS2Score.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[CVSS score 2.0]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[CVSS 2.0 分数]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) CVSS3Score.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[CVSS score 3.0]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[CVSS 3.0 分数]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -279,8 +285,8 @@
       <Item ItemId=";items.ContainersACRReposTable.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Vulnerable container registries]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[Azure 容器注册表]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[易受攻击的容器注册表数]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Azure Container Registries]]></Val>
@@ -300,8 +306,8 @@
       <Item ItemId=";items.ContainersACRVulnerabilitiesTable.content.items.ContainersFullListTable.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Use the search box to filter vulnerabilities by resource, resource group, CVE, severity, etc.]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[搜索框可用于筛选建议(资源、ResourceGroup、CVE、VulnID、严重性、关键字等)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[使用搜索框来按资源、资源组、CVE、严重性等筛选漏洞。]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[The search box can be used to filter recommendations (Resource, ResourceGroup, CVE, VulnID, Severity, Keywords, etc)]]></Val>
@@ -351,6 +357,9 @@
       <Item ItemId=";items.DatabaseSummary.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Vulnerable databases per server]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[每个服务器易受攻击的数据库数]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -417,6 +426,9 @@
       <Item ItemId=";items.MachinesSummary.content.gridSettings.labelSettings.patchAvailable.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Available patches]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[可用补丁数]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -450,6 +462,9 @@
       <Item ItemId=";items.MachinesSummary.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Overview | Select a machine to view the list of vulnerabilities]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[概述 | 选择一台虚拟机来查看漏洞列表]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -492,8 +507,8 @@
       <Item ItemId=";items.OverviewACRTable.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Vulnerabilities by severity per container registry]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[ACR | 漏洞计数(按每个存储库的严重性)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[每个容器注册表的漏洞数(按严重性)]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[ACR | Count of vulnerabilities by severity per repository]]></Val>
@@ -513,8 +528,8 @@
       <Item ItemId=";items.OverviewContainerCount.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Unhealthy container registries]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[ACR | 运行不正常的注册表计数]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[运行不正常的容器注册表数]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[ACR | Count of unhealthy registries]]></Val>
@@ -534,8 +549,8 @@
       <Item ItemId=";items.OverviewContainersPie.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Distinct vulnerabilities by severity]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[ACR 映像 | 漏洞计数(按严重性)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[非重复漏洞数(按严重性)]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[ACR Images | Count of vulnerabilities by severity]]></Val>
@@ -546,24 +561,36 @@
       <Item ItemId=";items.OverviewSQLCount.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No unhealthy SQL resources found]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[没有发现运行不正常的 SQL 资源]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.OverviewSQLCount.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Unhealthy SQL resources by type]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[运行不正常的 SQL 资源数(按类型)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.OverviewSQLPie.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No unhealthy SQL resources found]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[没有发现运行不正常的 SQL 资源]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.OverviewSQLPie.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Distinct SQL vulnerabilities by severity]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[非重复 SQL 漏洞数(按严重性)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -597,12 +624,18 @@
       <Item ItemId=";items.OverviewSQLTable.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No unhealthy SQL resources found]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[没有发现运行不正常的 SQL 资源]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.OverviewSQLTable.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Vulnerabilities by severity per SQL resource]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[每个 SQL 资源的漏洞数(按严重性)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -645,8 +678,8 @@
       <Item ItemId=";items.OverviewServerTable.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Vulnerabilities by severity per machine]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[服务器 | 漏洞计数(按每个资源的严重性)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[每台虚拟机的漏洞数(按严重性)]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Servers | Count of vulnerabilities by severity per resource]]></Val>
@@ -666,8 +699,8 @@
       <Item ItemId=";items.OverviewServersPie.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Distinct vulnerabilities by severity]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[服务器 | 漏洞计数(按严重性)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[非重复漏洞数(按严重性)]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Servers | Count of vulnerabilities by severity]]></Val>
@@ -687,8 +720,8 @@
       <Item ItemId=";items.OverviewVMCount.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Unhealthy machines]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[服务器 | 运行不正常的 Azure VM 和 Azure Arc 的计数]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[运行不正常的虚拟机数]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Servers | Count of unhealthy Azure VMs and Azure Arc]]></Val>
@@ -699,8 +732,8 @@
       <Item ItemId=";items.Parameters.content.parameters.ae1f45ba927544fea0b00f60ab5a8690.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Show insturctions for using this workbook]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[切换以显示针对每个选项卡的“帮助”]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[显示此工作簿的使用说明]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Toggle to show Help for each tab]]></Val>
@@ -756,30 +789,45 @@
       <Item ItemId=";items.SQLSummary.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Vulnerable SQL resources]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[易受攻击的 SQL 资源数]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.SQLVulnerabilitiesGroup.content.items.GroupByBenchmark.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Grouped by benchmark]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[按基准分组]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.SQLVulnerabilitiesGroup.content.items.GroupByCategory.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Grouped by category]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[按类别分组]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.SQLVulnerabilitiesGroup.content.items.GroupByResource.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Grouped by resource]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[按资源分组]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.SQLVulnerabilitiesGroup.content.items.GroupBySeverity.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Grouped by severity]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[按严重性分组]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -834,6 +882,9 @@
       <Item ItemId=";items.VulnerabilitiesView.content.items.ServersFullListTable.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Use the search box to filter vulnerabilities by resource, resource group, CVE, severity, etc.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[使用搜索框来按资源、资源组、CVE、严重性等筛选漏洞。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

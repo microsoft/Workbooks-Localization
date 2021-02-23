@@ -14,24 +14,36 @@
         <Item ItemId=";(...) CVSS2Score.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[CVSS score 2.0]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[CVSS スコア 2.0]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) CVSS3Score.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[CVSS score 3.0]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[CVSS スコア 3.0]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) ImageDigest.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Image digest]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[イメージのダイジェスト]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) PublishedTime.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Published time]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[公開日時]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -117,8 +129,8 @@
       <Item ItemId=";items.ACRCategoryTiles.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Vulnerabilities by category]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[カテゴリ別の脆弱性の数]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[カテゴリごとの脆弱性]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Count of vulnerabilities by category]]></Val>
@@ -192,8 +204,8 @@
       <Item ItemId=";items.ContainersACRImagesTable.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Vulnerable images | Select an image to view the list of vulnerabilities]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[脆弱性のあるイメージが見つかりました]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[脆弱なイメージ | 脆弱性の一覧を表示するイメージを選択します]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Vulnerable images found]]></Val>
@@ -225,7 +237,7 @@
       <Item ItemId=";items.ContainersACRReposTable.content.gridSettings.labelSettings.patchAvailable.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Available patches]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[利用可能なパッチ]]></Val>
           </Tgt>
           <Prev Cat="Text">
@@ -273,8 +285,8 @@
       <Item ItemId=";items.ContainersACRReposTable.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Vulnerable container registries]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[Azure コンテナー レジストリ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[脆弱なコンテナー レジストリ]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Azure Container Registries]]></Val>
@@ -294,8 +306,8 @@
       <Item ItemId=";items.ContainersACRVulnerabilitiesTable.content.items.ContainersFullListTable.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Use the search box to filter vulnerabilities by resource, resource group, CVE, severity, etc.]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[検索ボックスを使用して推奨事項 (リソース、ResourceGroup、CVE、VulnID、重大度、キーワードなど) をフィルター処理する]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[検索ボックスを使用して、リソース、リソース グループ、CVE、重要度などで脆弱性をフィルター処理します。]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[The search box can be used to filter recommendations (Resource, ResourceGroup, CVE, VulnID, Severity, Keywords, etc)]]></Val>
@@ -345,6 +357,9 @@
       <Item ItemId=";items.DatabaseSummary.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Vulnerable databases per server]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[サーバーあたりの脆弱なデータベース]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -369,8 +384,8 @@
       <Item ItemId=";items.Help.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[#### Welcome to vulnerability assessment findings workbook (preview)]D;]A;This workbook is based on the following recommendations provided by Azure Security Center:]D;]A;* [Vulnerabilities in your virtual machines should be remediated]5D;(http://portal.azure.com/#blade/Microsoft_Azure_Security/RecommendationsBlade/assessmentKey/1195afff-c881-495e-9bc5-1486211ae03f)]D;]A;* [Vulnerabilities in Azure Container Registry images should be remediated (powered by Qualys)]5D;(http://portal.azure.com/#blade/Microsoft_Azure_Security/RecommendationsBlade/assessmentKey/dbd0cb49-b563-45e7-9724-889e799fa648)]D;]A;* [Vulnerability assessment findings on your SQL databases should be remediated)]5D;(http://portal.azure.com/#blade/Microsoft_Azure_Security/RecommendationsBlade/assessmentKey/82e20e14-edc5-4373-bfc4-f13121257c37)]D;]A;* [Vulnerability assessment findings on your SQL servers on machines should be remediated)]5D;(http://portal.azure.com/#blade/Microsoft_Azure_Security/RecommendationsBlade/assessmentKey/f97aa83c-9b63-4f9a-99f6-b22c4398f936)]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[#### サーバーとコンテナー レジストリの脆弱性ブック (プレビュー) へようこそ]D;]A;このブックは、Azure Security Center によって提供される次の推奨事項に基づいています:]D;]A;* [仮想マシンの脆弱性を修復する必要がある]5D;(http://portal.azure.com/#blade/Microsoft_Azure_Security/RecommendationsBlade/assessmentKey/1195afff-c881-495e-9bc5-1486211ae03f)]D;]A;* [Azure Container Registry イメージの脆弱性を修復する必要がある (Qualys を利用)]5D;(http://portal.azure.com/#blade/Microsoft_Azure_Security/RecommendationsBlade/assessmentKey/dbd0cb49-b563-45e7-9724-889e799fa648)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[#### 脆弱性評価の結果ブックへようこそ (プレビュー)]D;]A;このブックは、Azure Security Center から提供された次の推奨事項に基づいています:]D;]A;* [お使いの仮想マシンの脆弱性を修復する必要がある]5D;(http://portal.azure.com/#blade/Microsoft_Azure_Security/RecommendationsBlade/assessmentKey/1195afff-c881-495e-9bc5-1486211ae03f)]D;]A;* [Azure Container Registry イメージ内の脆弱性を修復する必要がある (Qualys を利用)]5D;(http://portal.azure.com/#blade/Microsoft_Azure_Security/RecommendationsBlade/assessmentKey/dbd0cb49-b563-45e7-9724-889e799fa648)]D;]A;* [SQL データベースに対する脆弱性評価の結果を修復する必要がある]5D;(http://portal.azure.com/#blade/Microsoft_Azure_Security/RecommendationsBlade/assessmentKey/82e20e14-edc5-4373-bfc4-f13121257c37)]D;]A;* [マシン上の SQL サーバーに対する脆弱性評価の結果を修復する必要がある]5D;(http://portal.azure.com/#blade/Microsoft_Azure_Security/RecommendationsBlade/assessmentKey/f97aa83c-9b63-4f9a-99f6-b22c4398f936)]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[#### Welcome to Server and Container Registry Vulnerabilities workbook (preview)]D;]A;This workbook is based on the following recommendations provided by Azure Security Center:]D;]A;* [Vulnerabilities in your virtual machines should be remediated]5D;(http://portal.azure.com/#blade/Microsoft_Azure_Security/RecommendationsBlade/assessmentKey/1195afff-c881-495e-9bc5-1486211ae03f)]D;]A;* [Vulnerabilities in Azure Container Registry images should be remediated (powered by Qualys)]5D;(http://portal.azure.com/#blade/Microsoft_Azure_Security/RecommendationsBlade/assessmentKey/dbd0cb49-b563-45e7-9724-889e799fa648)]]></Val>
@@ -381,6 +396,9 @@
       <Item ItemId=";items.MachinesCategoryTiles.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Vulnerabilities by category]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[カテゴリごとの脆弱性]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -388,7 +406,7 @@
         <Str Cat="Text">
           <Val><![CDATA[CVEs]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[CVE]]></Val>
+            <Val><![CDATA[CVE 数]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -405,6 +423,9 @@
       <Item ItemId=";items.MachinesSummary.content.gridSettings.labelSettings.patchAvailable.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Available patches]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[利用可能なパッチ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -438,6 +459,9 @@
       <Item ItemId=";items.MachinesSummary.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Overview | Select a machine to view the list of vulnerabilities]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[概要 | 脆弱性の一覧を表示するマシンを選択します]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -471,8 +495,8 @@
       <Item ItemId=";items.OverviewACRTable.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No unhealthy container registries found]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[異常なレジストリは見つかりませんでした]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[異常なコンテナー レジストリは見つかりませんでした]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[No unhealthy registries found]]></Val>
@@ -483,8 +507,8 @@
       <Item ItemId=";items.OverviewACRTable.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Vulnerabilities by severity per container registry]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[ACR | リポジトリごとの脆弱性の数 (重要度別)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[コンテナー レジストリあたりの重要度ごとの脆弱性]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[ACR | Count of vulnerabilities by severity per repository]]></Val>
@@ -495,8 +519,8 @@
       <Item ItemId=";items.OverviewContainerCount.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No unhealthy container registries found]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[異常なレジストリは見つかりませんでした]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[異常なコンテナー レジストリは見つかりませんでした]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[No unhealthy registries found]]></Val>
@@ -507,8 +531,8 @@
       <Item ItemId=";items.OverviewContainerCount.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Unhealthy container registries]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[ACR | 異常なレジストリの数]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[異常なコンテナー レジストリ]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[ACR | Count of unhealthy registries]]></Val>
@@ -519,8 +543,8 @@
       <Item ItemId=";items.OverviewContainersPie.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No unhealthy container registries found]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[異常なレジストリは見つかりませんでした]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[異常なコンテナー レジストリは見つかりませんでした]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[No unhealthy registries found]]></Val>
@@ -531,8 +555,8 @@
       <Item ItemId=";items.OverviewContainersPie.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Distinct vulnerabilities by severity]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[ACR イメージ | 脆弱性の数 (重要度別)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[重要度ごとの個別の脆弱性]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[ACR Images | Count of vulnerabilities by severity]]></Val>
@@ -543,24 +567,36 @@
       <Item ItemId=";items.OverviewSQLCount.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No unhealthy SQL resources found]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[異常な SQL リソースは見つかりませんでした]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.OverviewSQLCount.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Unhealthy SQL resources by type]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[種類ごとの異常な SQL リソース]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.OverviewSQLPie.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No unhealthy SQL resources found]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[異常な SQL リソースは見つかりませんでした]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.OverviewSQLPie.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Distinct SQL vulnerabilities by severity]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[重要度ごとの個別の SQL 脆弱性]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -594,12 +630,18 @@
       <Item ItemId=";items.OverviewSQLTable.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No unhealthy SQL resources found]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[異常な SQL リソースは見つかりませんでした]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.OverviewSQLTable.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Vulnerabilities by severity per SQL resource]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[SQL リソースあたりの重要度ごとの脆弱性]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -633,8 +675,8 @@
       <Item ItemId=";items.OverviewServerTable.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No unhealthy machines found]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[異常な VM は見つかりませんでした]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[異常なマシンは見つかりませんでした]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[No unhealthy VMs found]]></Val>
@@ -645,8 +687,8 @@
       <Item ItemId=";items.OverviewServerTable.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Vulnerabilities by severity per machine]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[サーバー |リソースごとの脆弱性の数 (重要度別)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[マシンあたりの重要度ごとの脆弱性]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Servers | Count of vulnerabilities by severity per resource]]></Val>
@@ -657,8 +699,8 @@
       <Item ItemId=";items.OverviewServersPie.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No unhealthy machines found]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[異常な VM は見つかりませんでした]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[異常なマシンは見つかりませんでした]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[No unhealthy VMs found]]></Val>
@@ -669,8 +711,8 @@
       <Item ItemId=";items.OverviewServersPie.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Distinct vulnerabilities by severity]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[サーバー | 脆弱性の数 (重要度別)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[重要度ごとの個別の脆弱性]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Servers | Count of vulnerabilities by severity]]></Val>
@@ -681,8 +723,8 @@
       <Item ItemId=";items.OverviewVMCount.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No unhealthy machines found]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[異常な VM は見つかりませんでした]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[異常なマシンは見つかりませんでした]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[No unhealthy VMs found]]></Val>
@@ -693,8 +735,8 @@
       <Item ItemId=";items.OverviewVMCount.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Unhealthy machines]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[サーバー | 異常な Azure VM および Azure Arc の数]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[異常なマシン]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Servers | Count of unhealthy Azure VMs and Azure Arc]]></Val>
@@ -705,8 +747,8 @@
       <Item ItemId=";items.Parameters.content.parameters.ae1f45ba927544fea0b00f60ab5a8690.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Show insturctions for using this workbook]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[各タブのヘルプを表示するように切り替えます]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[このブックの使用に関する指示を表示します]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Toggle to show Help for each tab]]></Val>
@@ -762,30 +804,45 @@
       <Item ItemId=";items.SQLSummary.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Vulnerable SQL resources]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[脆弱な SQL リソース]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.SQLVulnerabilitiesGroup.content.items.GroupByBenchmark.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Grouped by benchmark]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[ベンチマークごとにグループ化]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.SQLVulnerabilitiesGroup.content.items.GroupByCategory.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Grouped by category]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[カテゴリごとにグループ化]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.SQLVulnerabilitiesGroup.content.items.GroupByResource.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Grouped by resource]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[リソースごとにグループ化]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.SQLVulnerabilitiesGroup.content.items.GroupBySeverity.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Grouped by severity]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[重要度ごとにグループ化]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -802,7 +859,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Machines]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[コンピューター]]></Val>
+            <Val><![CDATA[マシン]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Servers]]></Val>
@@ -840,6 +897,9 @@
       <Item ItemId=";items.VulnerabilitiesView.content.items.ServersFullListTable.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Use the search box to filter vulnerabilities by resource, resource group, CVE, severity, etc.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[検索ボックスを使用して、リソース、リソース グループ、CVE、重要度などで脆弱性をフィルター処理します。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
