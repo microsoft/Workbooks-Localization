@@ -522,6 +522,18 @@
           <Disp Icon="Str" />
         </Item>
       </Item>
+      <Item ItemId=";@items.group0.content.items.PolicyAdherenceByTimePeriodDailyBackupGrid1.content.gridSettings.labelSettings.BackupJ" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) obsInPeriod.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Backup Jobs In Period]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Fazer Cópia de Segurança de Trabalhos no Período]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
       <Item ItemId=";@items.group0.content.items.PolicyAdherenceByTimePeriodDailyBackupGrid1.content.gridSettings.labelSettings.FailedB" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) ackupJobs.label" ItemType="0" PsrId="306" Leaf="true">
@@ -538,19 +550,25 @@
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) thSuccessfulDailyBackup.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[# Backup Instances with successful daily backup]]></Val>
+            <Val><![CDATA[# Items with successful daily backup]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Número de Instâncias de Cópia de Segurança com cópia de segurança diária bem-sucedida]]></Val>
+              <Val><![CDATA[# Itens com cópia de segurança diária realizada com êxito]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[# Backup Instances with successful daily backup]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) thoutSuccessfulDailyBackup.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[# Backup Instances without successful daily backup]]></Val>
+            <Val><![CDATA[# Items without successful daily backup]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Número de Instâncias de Cópia de Segurança sem cópia de segurança diária bem-sucedida]]></Val>
+              <Val><![CDATA[# Itens sem cópia de segurança diária realizada com êxito]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[# Backup Instances without successful daily backup]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -766,6 +784,18 @@
             <Val><![CDATA[Rows per Page]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
               <Val><![CDATA[Linhas por Página]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
+      <Item ItemId=";@items.group0.content.items.PolicyAdherenceByTimePeriodWeeklyBackupGrid1.content.gridSettings.labelSettings.Backup" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) JobsInPeriod.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Backup Jobs In Period]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Fazer Cópia de Segurança de Trabalhos no Período]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
@@ -1047,6 +1077,24 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
+      <Item ItemId=";items.group0.content.items.PolicyAdherenceByBackupInstanceDailyBackupAggregationTypeDailyTextCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[The below grid is displayed in **Weekly view** due to your time range selection. Backup Instances which have had **atleast one successful backup** on every day in a given week are marked green (compliant) for that day. [Learn more]5D;(https://aka.ms/AzureBackupReportDailyBackupWeeklyView2)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[A grelha abaixo é exibida em **Vista semanal** devido à sua seleção de intervalo de tempo. As Instâncias de Cópia de Segurança que tiveram **pelo menos uma cópia de segurança realizada com êxito** em todos os dias de uma determinada semana estão marcadas a verde (em conformidade) para esse dia. [Saber mais]5D;(https://aka.ms/AzureBackupReportDailyBackupWeeklyView2)]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.group0.content.items.PolicyAdherenceByBackupInstanceDailyBackupAggregationTypeDailyTextCopyCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[The below grid is displayed in **Monthly view** due to your time range selection. Backup Instances which have had **atleast one successful backup** on every day in a given month (28 days) are marked green (compliant) for that day. [Learn more]5D;(https://aka.ms/AzureBackupReportDailyBackupMonthlyView2)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[A grelha abaixo é exibida em **Vista mensal** devido à sua seleção de intervalo de tempo. As Instâncias de Cópia de Segurança que tiveram **pelo menos uma cópia de segurança realizada com êxito** em todos os dias de um determinado mês (28 dias) estão marcadas a verde (em conformidade) para esse dia. [Saber mais]5D;(https://aka.ms/AzureBackupReportDailyBackupMonthlyView2)]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.group0.content.items.PolicyAdherenceByBackupInstanceGrid1Title.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<div style="text-align:left"><span style="font-size:14px;font-weight:600;">Policy Adherence details at Backup Instance level</span> </div>]]></Val>
@@ -1076,9 +1124,21 @@
       </Item>
       <Item ItemId=";items.group0.content.items.PolicyAdherenceByBackupInstanceWeeklyBackupAggregationTypeWeeklyText.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[The below grid is displayed in **Weekly** due to your time range selection. Backup Instances which have had **atleast one** successful backup in a given week are marked green (compliant) for that week.  [Learn more]5D;(https://aka.ms/AzureBackupReportDailyBackupWeeklyView2)]]></Val>
+          <Val><![CDATA[The below grid is displayed in **Weekly view** due to your time range selection. Backup Instances which have had **atleast one** successful backup in a given week are marked green (compliant) for that week.  [Learn more]5D;(https://aka.ms/AzureBackupReportDailyBackupWeeklyView2)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[A grelha abaixo é apresentada em **Semanal** devido à sua seleção de intervalo de tempo. As Instâncias de Cópia de Segurança que tiveram **pelo menos uma cópia de segurança bem-sucedida** numa determinada semana estão marcadas a verde (em conformidade) para essa semana. [Saiba mais]5D;(https://aka.ms/AzureBackupReportDailyBackupWeeklyView2)]]></Val>
+            <Val><![CDATA[A grelha abaixo é exibida em **Vista semanal** devido à sua seleção de intervalo de tempo. As Instâncias de Cópia de Segurança que tiveram **pelo menos** uma cópia de segurança realizada com êxito numa determinada semana estão marcadas a verde (em conformidade) para essa semana.  [Saber mais]5D;(https://aka.ms/AzureBackupReportDailyBackupWeeklyView2)]]></Val>
+          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[The below grid is displayed in **Weekly** due to your time range selection. Backup Instances which have had **atleast one** successful backup in a given week are marked green (compliant) for that week.  [Learn more]5D;(https://aka.ms/AzureBackupReportDailyBackupWeeklyView2)]]></Val>
+          </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.group0.content.items.PolicyAdherenceByBackupInstanceWeeklyBackupAggregationTypeWeeklyTextCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[The below grid is displayed in **Monthly view** due to your time range selection. Backup Instances which have had **atleast one** successful backup in every week in a given month (28 days) are marked green (compliant) for that week.  [Learn more]5D;(https://aka.ms/AzureBackupReportWeeklyBackupMonthlyView2)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[A grelha abaixo é exibida em **Vista mensal** devido à sua seleção de intervalo de tempo. As Instâncias de Cópia de Segurança que tiveram **pelo menos** uma cópia de segurança realizada com êxito em todas as semanas de um determinado mês (28 dias) estão marcadas a verde (em conformidade) para essa semana.  [Saber mais]5D;(https://aka.ms/AzureBackupReportWeeklyBackupMonthlyView2)]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -1106,6 +1166,33 @@
           <Val><![CDATA[The below grid is displayed in **Daily view** due to your time range selection. Backup Instances which have had **atleast one successful backup** on a given day fall under the second column in the below table. [Learn more]5D;(https://aka.ms/AzureBackupReportDailyBackupDailyView1)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[A grelha abaixo é apresentada em **Vista diária** devido à sua seleção de intervalo de tempo. As Instâncias de Cópia de Segurança que tiveram **pelo menos uma cópia de segurança bem-sucedida** num determinado dia estão na segunda coluna na tabela abaixo. [Saiba mais]5D;(https://aka.ms/AzureBackupReportDailyBackupDailyView1)]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.group0.content.items.PolicyAdherenceByTimePeriodDailyBackupAggregationTypeDailyTextCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[The below grid is displayed in **Weekly view** due to your time range selection. Backup Instances which have had **atleast one successful backup** on every day in the given week fall under the second column in the below table. [Learn more]5D;(https://aka.ms/AzureBackupReportDailyBackupWeeklyView1)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[A grelha abaixo é exibida em **Vista semanal** devido à sua seleção de intervalo de tempo. As Instâncias de Cópia de Segurança que tiveram **pelo menos uma cópia de segurança realizada com êxito** em todos os dias de uma determinada semana enquadram-se na segunda coluna da tabela abaixo. [Saber mais]5D;(https://aka.ms/AzureBackupReportDailyBackupWeeklyView1)]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.group0.content.items.PolicyAdherenceByTimePeriodDailyBackupAggregationTypeDailyTextCopyCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[The below grid is displayed in **Monthly view** due to your time range selection. Backup Instances which have had **atleast one successful backup** on every day in the given month (28 days) fall under the second column in the below table. [Learn more]5D;(https://aka.ms/AzureBackupReportDailyBackupMonthlyView1)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[A grelha abaixo é exibida em **Vista mensal** devido à sua seleção de intervalo de tempo. As Instâncias de Cópia de Segurança que tiveram **pelo menos uma cópia de segurança realizada com êxito** em todos os dias de um determinado mês (28 dias) enquadram-se na segunda coluna da tabela abaixo. [Saber mais]5D;(https://aka.ms/AzureBackupReportDailyBackupMonthlyView1)]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.group0.content.items.PolicyAdherenceByTimePeriodDailyBackupGrid1.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[No records found for the selected scope and time range]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Não foram encontrados registos para o âmbito e intervalo de tempo selecionados]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -1139,9 +1226,21 @@
       </Item>
       <Item ItemId=";items.group0.content.items.PolicyAdherenceByTimePeriodWeeklyBackupAggregationTypeWeeklyText.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[The below grid is displayed in **Weekly** due to your time range selection. Backup Instances which have had **atleast one** successful backup in a given week fall under the second column in the below table. [Learn more]5D;(https://aka.ms/AzureBackupReportWeeklyBackupWeeklyView1)]]></Val>
+          <Val><![CDATA[The below grid is displayed in **Weekly view** due to your time range selection. Backup Instances which have had **atleast one** successful backup in a given week fall under the second column in the below table. [Learn more]5D;(https://aka.ms/AzureBackupReportWeeklyBackupWeeklyView1)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[A grelha abaixo é apresentada em **Semanal** devido à sua seleção de intervalo de tempo. As Instâncias de Cópia de Segurança que tiveram **pelo menos uma cópia de segurança bem-sucedida** numa determinada semana estão na segunda coluna na tabela abaixo. [Saiba mais]5D;(https://aka.ms/AzureBackupReportWeeklyBackupWeeklyView1)]]></Val>
+            <Val><![CDATA[A grelha abaixo é exibida em **Vista semanal** devido à sua seleção de intervalo de tempo. As Instâncias de Cópia de Segurança que tiveram **pelo menos uma cópia de segurança realizada com êxito** numa determinada semana enquadram-se na segunda coluna da tabela abaixo. [Saber mais]5D;(https://aka.ms/AzureBackupReportWeeklyBackupWeeklyView1)]]></Val>
+          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[The below grid is displayed in **Weekly** due to your time range selection. Backup Instances which have had **atleast one** successful backup in a given week fall under the second column in the below table. [Learn more]5D;(https://aka.ms/AzureBackupReportWeeklyBackupWeeklyView1)]]></Val>
+          </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.group0.content.items.PolicyAdherenceByTimePeriodWeeklyBackupAggregationTypeWeeklyTextCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[The below grid is displayed in **Monthly view** due to your time range selection. Backup Instances which have had **atleast one** successful backup in every week in a given month (28 days) fall under the second column in the below table. [Learn more]5D;(https://aka.ms/AzureBackupReportWeeklyBackupMonthlyView1)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[A grelha abaixo é exibida em **Vista mensal** devido à sua seleção de intervalo de tempo. As Instâncias de Cópia de Segurança que tiveram **pelo menos uma cópia de segurança realizada com êxito** em todas as semanas de um determinado mês (28 dias) enquadram-se na segunda coluna da tabela abaixo. [Saber mais]5D;(https://aka.ms/AzureBackupReportWeeklyBackupMonthlyView1)]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
