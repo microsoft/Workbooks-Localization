@@ -522,6 +522,18 @@
           <Disp Icon="Str" />
         </Item>
       </Item>
+      <Item ItemId=";@items.group0.content.items.PolicyAdherenceByTimePeriodDailyBackupGrid1.content.gridSettings.labelSettings.BackupJ" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) obsInPeriod.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Backup Jobs In Period]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[期間內的備份作業]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
       <Item ItemId=";@items.group0.content.items.PolicyAdherenceByTimePeriodDailyBackupGrid1.content.gridSettings.labelSettings.FailedB" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) ackupJobs.label" ItemType="0" PsrId="306" Leaf="true">
@@ -538,19 +550,25 @@
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) thSuccessfulDailyBackup.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[# Backup Instances with successful daily backup]]></Val>
+            <Val><![CDATA[# Items with successful daily backup]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[# 個具有每日備份成功的備份執行個體]]></Val>
+              <Val><![CDATA[# 具有每日成功備份的項目]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[# Backup Instances with successful daily backup]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) thoutSuccessfulDailyBackup.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[# Backup Instances without successful daily backup]]></Val>
+            <Val><![CDATA[# Items without successful daily backup]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[# 個沒有每日備份成功的備份執行個體]]></Val>
+              <Val><![CDATA[# 沒有每日成功備份的項目]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[# Backup Instances without successful daily backup]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -766,6 +784,18 @@
             <Val><![CDATA[Rows per Page]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
               <Val><![CDATA[每頁資料列數]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
+      <Item ItemId=";@items.group0.content.items.PolicyAdherenceByTimePeriodWeeklyBackupGrid1.content.gridSettings.labelSettings.Backup" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) JobsInPeriod.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Backup Jobs In Period]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[期間內的備份作業]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
@@ -1047,6 +1077,24 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
+      <Item ItemId=";items.group0.content.items.PolicyAdherenceByBackupInstanceDailyBackupAggregationTypeDailyTextCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[The below grid is displayed in **Weekly view** due to your time range selection. Backup Instances which have had **atleast one successful backup** on every day in a given week are marked green (compliant) for that day. [Learn more]5D;(https://aka.ms/AzureBackupReportDailyBackupWeeklyView2)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[根據您選取的時間範圍，下列格線顯示為 [每週檢視]5D;****。在指定週的每一天中具有**至少一個成功備份**的備份執行個體，已在該週中標記為綠色 (符合規範)。[深入了解]5D;(https://aka.ms/AzureBackupReportDailyBackupWeeklyView2)]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.group0.content.items.PolicyAdherenceByBackupInstanceDailyBackupAggregationTypeDailyTextCopyCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[The below grid is displayed in **Monthly view** due to your time range selection. Backup Instances which have had **atleast one successful backup** on every day in a given month (28 days) are marked green (compliant) for that day. [Learn more]5D;(https://aka.ms/AzureBackupReportDailyBackupMonthlyView2)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[根據您選取的時間範圍，下列格線顯示為 [每月檢視]5D;****。在指定月份 (28 天) 的每一天中具有**至少一個成功備份**的備份執行個體，已在該月份中標記為綠色 (符合規範)。[深入了解]5D;(https://aka.ms/AzureBackupReportDailyBackupMonthlyView2)]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.group0.content.items.PolicyAdherenceByBackupInstanceGrid1Title.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<div style="text-align:left"><span style="font-size:14px;font-weight:600;">Policy Adherence details at Backup Instance level</span> </div>]]></Val>
@@ -1076,9 +1124,21 @@
       </Item>
       <Item ItemId=";items.group0.content.items.PolicyAdherenceByBackupInstanceWeeklyBackupAggregationTypeWeeklyText.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[The below grid is displayed in **Weekly** due to your time range selection. Backup Instances which have had **atleast one** successful backup in a given week are marked green (compliant) for that week.  [Learn more]5D;(https://aka.ms/AzureBackupReportDailyBackupWeeklyView2)]]></Val>
+          <Val><![CDATA[The below grid is displayed in **Weekly view** due to your time range selection. Backup Instances which have had **atleast one** successful backup in a given week are marked green (compliant) for that week.  [Learn more]5D;(https://aka.ms/AzureBackupReportDailyBackupWeeklyView2)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[根據您選取的時間範圍，下列格線顯示為 [每週]5D;****。在指定週具有**至少一個**成功備份的備份執行個體，已在該週中標記為綠色 (符合規範)。[深入了解]5D;(https://aka.ms/AzureBackupReportDailyBackupWeeklyView2)]]></Val>
+            <Val><![CDATA[根據您選取的時間範圍，下列格線顯示為 [每週檢視]5D;****。在指定週中具有**至少一個**成功備份的備份執行個體，已在該週中標記為綠色 (符合規範)。[深入了解]5D;(https://aka.ms/AzureBackupReportDailyBackupWeeklyView2)]]></Val>
+          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[The below grid is displayed in **Weekly** due to your time range selection. Backup Instances which have had **atleast one** successful backup in a given week are marked green (compliant) for that week.  [Learn more]5D;(https://aka.ms/AzureBackupReportDailyBackupWeeklyView2)]]></Val>
+          </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.group0.content.items.PolicyAdherenceByBackupInstanceWeeklyBackupAggregationTypeWeeklyTextCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[The below grid is displayed in **Monthly view** due to your time range selection. Backup Instances which have had **atleast one** successful backup in every week in a given month (28 days) are marked green (compliant) for that week.  [Learn more]5D;(https://aka.ms/AzureBackupReportWeeklyBackupMonthlyView2)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[根據您選取的時間範圍，下列格線顯示為 [每月檢視]5D;****。在指定月份 (28 天) 的每一週中具有**至少一個**成功備份的備份執行個體，已在該月份中標記為綠色 (符合規範)。[深入了解]5D;(https://aka.ms/AzureBackupReportWeeklyBackupMonthlyView2)]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -1106,6 +1166,33 @@
           <Val><![CDATA[The below grid is displayed in **Daily view** due to your time range selection. Backup Instances which have had **atleast one successful backup** on a given day fall under the second column in the below table. [Learn more]5D;(https://aka.ms/AzureBackupReportDailyBackupDailyView1)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[根據您選取的時間範圍，下列格線顯示為 [每日檢視]5D;****。在指定日期具有**至少一個成功備份**的備份執行個體，會落在下列資料表中的第二個資料列。[深入了解]5D;(https://aka.ms/AzureBackupReportDailyBackupDailyView1)]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.group0.content.items.PolicyAdherenceByTimePeriodDailyBackupAggregationTypeDailyTextCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[The below grid is displayed in **Weekly view** due to your time range selection. Backup Instances which have had **atleast one successful backup** on every day in the given week fall under the second column in the below table. [Learn more]5D;(https://aka.ms/AzureBackupReportDailyBackupWeeklyView1)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[根據您選取的時間範圍，下列格線顯示為 [每週檢視]5D;****。在指定週的每一天中具有**至少一個成功備份**的備份執行個體，會位於下方資料表中第二個資料行。[深入了解]5D;(https://aka.ms/AzureBackupReportDailyBackupWeeklyView1)]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.group0.content.items.PolicyAdherenceByTimePeriodDailyBackupAggregationTypeDailyTextCopyCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[The below grid is displayed in **Monthly view** due to your time range selection. Backup Instances which have had **atleast one successful backup** on every day in the given month (28 days) fall under the second column in the below table. [Learn more]5D;(https://aka.ms/AzureBackupReportDailyBackupMonthlyView1)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[根據您選取的時間範圍，下列格線顯示為 [每月檢視]5D;****。在指定月份 (28 天) 的每一天中具有**至少一個成功備份**的備份執行個體，會位於下方資料表中第二個資料行。[深入了解]5D;(https://aka.ms/AzureBackupReportDailyBackupMonthlyView1)]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.group0.content.items.PolicyAdherenceByTimePeriodDailyBackupGrid1.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[No records found for the selected scope and time range]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[在選取的範圍與時間範圍內找不到任何記錄]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -1139,9 +1226,21 @@
       </Item>
       <Item ItemId=";items.group0.content.items.PolicyAdherenceByTimePeriodWeeklyBackupAggregationTypeWeeklyText.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[The below grid is displayed in **Weekly** due to your time range selection. Backup Instances which have had **atleast one** successful backup in a given week fall under the second column in the below table. [Learn more]5D;(https://aka.ms/AzureBackupReportWeeklyBackupWeeklyView1)]]></Val>
+          <Val><![CDATA[The below grid is displayed in **Weekly view** due to your time range selection. Backup Instances which have had **atleast one** successful backup in a given week fall under the second column in the below table. [Learn more]5D;(https://aka.ms/AzureBackupReportWeeklyBackupWeeklyView1)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[根據您選取的時間範圍，下列格線顯示為 [每週]5D;****。在指定週具有**至少一個**成功備份的備份執行個體，會落在下列資料表中的第二個資料列。[深入了解]5D;(https://aka.ms/AzureBackupReportWeeklyBackupWeeklyView1)]]></Val>
+            <Val><![CDATA[根據您選取的時間範圍，下列格線顯示為 [每週檢視]5D;****。在指定週中具有**至少一個**成功備份的備份執行個體，會位於下方資料表中第二個資料行。[深入了解]5D;(https://aka.ms/AzureBackupReportWeeklyBackupWeeklyView1)]]></Val>
+          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[The below grid is displayed in **Weekly** due to your time range selection. Backup Instances which have had **atleast one** successful backup in a given week fall under the second column in the below table. [Learn more]5D;(https://aka.ms/AzureBackupReportWeeklyBackupWeeklyView1)]]></Val>
+          </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.group0.content.items.PolicyAdherenceByTimePeriodWeeklyBackupAggregationTypeWeeklyTextCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[The below grid is displayed in **Monthly view** due to your time range selection. Backup Instances which have had **atleast one** successful backup in every week in a given month (28 days) fall under the second column in the below table. [Learn more]5D;(https://aka.ms/AzureBackupReportWeeklyBackupMonthlyView1)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[根據您選取的時間範圍，下列格線顯示為 [每月檢視]5D;****。在指定月份 (28 天) 的每一週中具有**至少一個**成功備份的備份執行個體，會位於下方資料表中第二個資料行。[深入了解]5D;(https://aka.ms/AzureBackupReportWeeklyBackupMonthlyView1)]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
