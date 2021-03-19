@@ -93,6 +93,30 @@
           <Disp Icon="Str" />
         </Item>
       </Item>
+      <Item ItemId=";@items.SQLVulnerabilitiesGroup.content.items.GroupByBenchmark.content.gridSettings.labelSettings.ResourceGroup.lab" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) el" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Resource group]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Grupo de recursos]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
+      <Item ItemId=";@items.SQLVulnerabilitiesGroup.content.items.GroupByBenchmark.content.gridSettings.labelSettings.TimeGenerated.lab" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) el" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Time generated]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Hora de generación]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
       <Item ItemId=";@items.VulnerabilitiesView.content.items.ServersFullListTable.content.gridSettings.labelSettings.ResourceGroup.lab" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) el" ItemType="0" PsrId="306" Leaf="true">
@@ -147,21 +171,36 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
+      <Item ItemId=";items.ContainersACRImagesTable.content.gridSettings.labelSettings.Repo.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Repository]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Repositorio]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.ContainersACRImagesTable.content.gridSettings.labelSettings.imageDigest.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Image Digest]]></Val>
+          <Val><![CDATA[Image digest]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Resumen de la imagen]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Image Digest]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.ContainersACRImagesTable.content.gridSettings.labelSettings.patchAvailable.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Patch Available]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[Patch available]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[Revisión disponible]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Patch Available]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -203,12 +242,12 @@
       </Item>
       <Item ItemId=";items.ContainersACRImagesTable.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Vulnerable images | Select an image to view the list of vulnerabilities]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[Vulnerable images]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[Imágenes vulnerables | Seleccione una imagen para ver la lista de vulnerabilidades]]></Val>
           </Tgt>
           <Prev Cat="Text">
-            <Val><![CDATA[Vulnerable images found]]></Val>
+            <Val><![CDATA[Vulnerable images | Select an image to view the list of vulnerabilities]]></Val>
           </Prev>
         </Str>
         <Disp Icon="Str" />
@@ -284,12 +323,12 @@
       </Item>
       <Item ItemId=";items.ContainersACRReposTable.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Vulnerable container registries]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[Vulnerable container registries |  Select a container registry to view the list of vulnerabilities]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[Registros de contenedor vulnerables]]></Val>
           </Tgt>
           <Prev Cat="Text">
-            <Val><![CDATA[Azure Container Registries]]></Val>
+            <Val><![CDATA[Vulnerable container registries]]></Val>
           </Prev>
         </Str>
         <Disp Icon="Str" />
@@ -806,46 +845,115 @@
       </Item>
       <Item ItemId=";items.SQLSummary.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Vulnerable SQL resources]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[Vulnerable SQL resources | Select a resource to view the list of vulnerabilities]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[Recursos de SQL vulnerables]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Vulnerable SQL resources]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.SQLVulnerabilitiesGroup.content.items.GroupByBenchmark.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Grouped by benchmark]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[Grouped by benchmark | Use the search box to filter vulnerabilities by resource, resource group, severity, etc.]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[Agrupadas por punto de referencia]]></Val>
+          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Grouped by benchmark]]></Val>
+          </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.SQLVulnerabilitiesGroup.content.items.GroupByCategory.content.gridSettings.labelSettings.ResourceGroup.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Resource group]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Grupo de recursos]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.SQLVulnerabilitiesGroup.content.items.GroupByCategory.content.gridSettings.labelSettings.TimeGenerated.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Time generated]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Hora de generación]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.SQLVulnerabilitiesGroup.content.items.GroupByCategory.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Grouped by category]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[Grouped by category | Use the search box to filter vulnerabilities by resource, resource group, severity, etc.]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[Agrupadas por categoría]]></Val>
+          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Grouped by category]]></Val>
+          </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.SQLVulnerabilitiesGroup.content.items.GroupByResource.content.gridSettings.labelSettings.ResourceGroup.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Resource group]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Grupo de recursos]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.SQLVulnerabilitiesGroup.content.items.GroupByResource.content.gridSettings.labelSettings.TimeGenerated.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Time generated]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Hora de generación]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.SQLVulnerabilitiesGroup.content.items.GroupByResource.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Grouped by resource]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[Grouped by resource | Use the search box to filter vulnerabilities by resource, resource group, severity, etc.]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[Agrupadas por recurso]]></Val>
+          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Grouped by resource]]></Val>
+          </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.SQLVulnerabilitiesGroup.content.items.GroupBySeverity.content.gridSettings.labelSettings.ResourceGroup.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Resource group]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Grupo de recursos]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.SQLVulnerabilitiesGroup.content.items.GroupBySeverity.content.gridSettings.labelSettings.TimeGenerated.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Time generated]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Hora de generación]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.SQLVulnerabilitiesGroup.content.items.GroupBySeverity.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Grouped by severity]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[Grouped by severity | Use the search box to filter vulnerabilities by resource, resource group, severity, etc.]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[Agrupadas por gravedad]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Grouped by severity]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -912,6 +1020,12 @@
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Vulnerabilidades]]></Val>
           </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";settings.description" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[View the findings of vulnerability scans of your Azure resources]]></Val>
         </Str>
         <Disp Icon="Str" />
       </Item>

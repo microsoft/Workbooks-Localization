@@ -74,12 +74,12 @@
       </Item>
       <Item ItemId=";items.Help.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[#### Welcome to the system updates workbook (preview)]D;]A;This workbook is based on a recommendation [**System updates should be installed on your machines**]5D;(http://portal.azure.com/#blade/Microsoft_Azure_Security/RecommendationsBlade/assessmentKey/4ab6e3c5-74dd-8b35-9ab9-f61b30875b27) and will help you to identify machines with outdenting updates.<br>]D;]A;You can choose either resource or update view. Clicking on each chart will apply filters by on the field.]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[#### Welcome to the system updates workbook (preview)]D;]A;This workbook is based on a recommendation [**System updates should be installed on your machines**]5D;(http://portal.azure.com/#blade/Microsoft_Azure_Security/RecommendationsBlade/assessmentKey/4ab6e3c5-74dd-8b35-9ab9-f61b30875b27) and will help you to identify machines with outstanding updates.<br>]D;]A;You can choose between resource or update views.]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[#### システム更新プログラムに関するブック (プレビュー) へようこそ]D;]A;このブックは、[**システム更新プログラムをマシンにインストールする必要がある**]5D;(http://portal.azure.com/#blade/Microsoft_Azure_Security/RecommendationsBlade/assessmentKey/4ab6e3c5-74dd-8b35-9ab9-f61b30875b27)という推奨事項に基づいており、アウトデントしている更新プログラムがあるマシンを特定するのに役立ちます。<br>]D;]A;リソースまたは更新ビューを選択できます。各グラフをクリックすると、フィールドにフィルターが適用されます。]]></Val>
           </Tgt>
           <Prev Cat="Text">
-            <Val><![CDATA[#### Welcome to System Updates Dashboard workbook (preview)]D;]A;This workbook is based on a recommendation [**System updates should be installed on your machines**]5D;(http://portal.azure.com/#blade/Microsoft_Azure_Security/RecommendationsBlade/assessmentKey/4ab6e3c5-74dd-8b35-9ab9-f61b30875b27) and will help you to identify machines with outdenting updates.<br>]D;]A;You can choose either resource or update view. Clicking on each chart will apply filters by on the field.]D;]A;For more information about this workbook, navigate to [here]5D;(https://aka.ms/sentinelipsetup).<br>]]></Val>
+            <Val><![CDATA[#### Welcome to the system updates workbook (preview)]D;]A;This workbook is based on a recommendation [**System updates should be installed on your machines**]5D;(http://portal.azure.com/#blade/Microsoft_Azure_Security/RecommendationsBlade/assessmentKey/4ab6e3c5-74dd-8b35-9ab9-f61b30875b27) and will help you to identify machines with outdenting updates.<br>]D;]A;You can choose either resource or update view. Clicking on each chart will apply filters by on the field.]]></Val>
           </Prev>
         </Str>
         <Disp Icon="Str" />
@@ -138,9 +138,12 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.SeverityFilter.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+      <Item ItemId=";items.Subscriptions.content.gridSettings.labelSettings.ResourceGroup.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[]D83D;]DCA1; Selected filter for **severity:** {selectedSeverity}]]></Val>
+          <Val><![CDATA[Resource group]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[リソース グループ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -149,15 +152,6 @@
           <Val><![CDATA[VM Count]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[VM 数]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Subscriptions.content.gridSettings.labelSettings.resourceGroup.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Resource Group]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[リソース グループ]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -242,55 +236,73 @@
       </Item>
       <Item ItemId=";items.Updates.content.gridSettings.labelSettings.OperatingSystem.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Operating System]]></Val>
+          <Val><![CDATA[Operating system]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[オペレーティング システム]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Operating System]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Updates.content.gridSettings.labelSettings.OsType.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[OS Type]]></Val>
+          <Val><![CDATA[OS type]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[OS の種類]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[OS Type]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Updates.content.gridSettings.labelSettings.PublishedDate.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Release Date]]></Val>
+          <Val><![CDATA[Release date]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[リリース日]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Release Date]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Updates.content.gridSettings.labelSettings.RebootBehavior.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Reboot Behavior]]></Val>
+          <Val><![CDATA[Reboot behavior]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[再起動の動作]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Reboot Behavior]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Updates.content.gridSettings.labelSettings.RemediationSteps.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Remediation Steps]]></Val>
+          <Val><![CDATA[Remediation steps]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[修復の手順]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Remediation Steps]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Updates.content.gridSettings.labelSettings.ResourceGroup.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Resource Group]]></Val>
+          <Val><![CDATA[Resource group]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[リソース グループ]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Resource Group]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -312,6 +324,15 @@
           <Prev Cat="Text">
             <Val><![CDATA[Download]]></Val>
           </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Updates.content.items.AffectedMachines.content.gridSettings.labelSettings.KBID.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Remediation]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[修復]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -363,15 +384,6 @@
           <Prev Cat="Text">
             <Val><![CDATA[Reboot Behavior]]></Val>
           </Prev>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Updates.content.items.AffectedMachines.content.gridSettings.labelSettings.RemediationSteps.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Remediation]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[修復]]></Val>
-          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -452,7 +464,7 @@
       </Item>
       <Item ItemId=";items.Updates.content.items.SelectedUpdate.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[<br>]D;]A;#### ]D83D;]DCA1; Machines missing update: {selectedUpdate}]]></Val>
+          <Val><![CDATA[<br>]D;]A;]D83D;]DCA1; Machines missing update: {selectedUpdate}]]></Val>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -471,6 +483,12 @@
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[不足しているシステム更新プログラムの一覧]]></Val>
           </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";settings.description" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[View missing system updates by resources, OS, severity, and more]]></Val>
         </Str>
         <Disp Icon="Str" />
       </Item>

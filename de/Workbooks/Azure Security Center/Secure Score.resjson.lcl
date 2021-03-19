@@ -135,6 +135,15 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
+      <Item ItemId=";items.ChangeLog.content.items.ChangeLogDetails.content.gridSettings.labelSettings.SubscriptionId.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Subscription]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Abonnement]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.ChangeLog.content.items.ChangeLogDetails.content.gridSettings.labelSettings.TimeGenerated.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Time of change]]></Val>
@@ -207,24 +216,33 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Configuration.content.items.Instructions.content.json" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.ConfigurationCopy.content.items.Instructions.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[To use this Secure Score Over Time workbook, you'll need to configure **continuous export** to export data to a Log Analytics workspace:]D;]A;1. From Security Center's sidebar, select **Pricing & settings**.]D;]A;2. Select the specific subscription for which you want to configure the data export.]D;]A;3. From the sidebar of the settings page for that subscription, select **Continuous Export**.]D;]A;4. Set the export targed to **Log Analytics workspace**.]D;]A;5. Select the following data types: **Security recommendations** and **Secure Score (Preview)**.]D;]A;6. From the export frequency options, select **Streaming** and **Snapshots**.]D;]A;7. Select **Save**.[Learn more]5D;(https://docs.microsoft.com/en-us/azure/security-center/continuous-export?tabs=azure-portal#set-up-a-continuous-export)]D;]A;]D;]A;> **Notes**]D;]A;* To get full visibility, wait at least one week for the first snapshot to be exported.]D;]A;* To configure continuous export across your organization, use the supplied Azure Policy 'DeployIfNotExist' policies described [here]5D;(https://docs.microsoft.com/en-us/azure/security-center/continuous-export?tabs=azure-policy#set-up-a-continuous-export).]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Um die Arbeitsmappe "Sicherheitsbewertung im Zeitverlauf" zu verwenden, müssen Sie den **fortlaufenden Export** zum Exportieren von Daten in einen Log Analytics-Arbeitsbereich konfigurieren:]D;]A;1. Wählen Sie in der Seitenleiste von Security Center **Preise und Einstellungen** aus.]D;]A;2. Wählen Sie das spezifische Abonnement aus, für das Sie den Datenexport konfigurieren möchten.]D;]A;3. Wählen Sie in der Seitenleiste der Einstellungsseite für dieses Abonnement **Fortlaufender Export** aus.]D;]A;4. Wählen Sie **Log Analytics-Arbeitsbereich** als Exportziel aus.]D;]A;5. Wählen Sie als Datentypen **Sicherheitsempfehlungen** und **Sicherheitsbewertung (Vorschau)** aus.]D;]A;6. Wählen Sie als Exporthäufigkeit sowohl **Streaming** als auch **Momentaufnahmen** aus.]D;]A;7. Klicken Sie auf **Speichern**. [Weitere Informationen]5D;(https://docs.microsoft.com/de-de/azure/security-center/continuous-export?tabs=azure-portal#set-up-a-continuous-export)]D;]A;]D;]A;> **Hinweise**]D;]A;* Damit alle Daten sichtbar sind, warten Sie mindestens eine Woche, bevor die erste Momentaufnahme exportiert wird.]D;]A;* Um Ihre Konfigurationen zum fortlaufenden Export organisationsweit bereitzustellen, verwenden Sie die bereitgestellten Azure Policy-Richtlinien "DeployIfNotExist", die [hier]5D;(https://docs.microsoft.com/de-de/azure/security-center/continuous-export?tabs=azure-policy#set-up-a-continuous-export) beschrieben werden.]]></Val>
-          </Tgt>
-          <Prev Cat="Text">
-            <Val><![CDATA[To use the Secure Score + Security recommendation workbook, you should first configure **continuous export** to export data to a Log Analytics workspace:]D;]A;]D;]A;1. From Security Center's sidebar, select **Pricing & settings**.]D;]A;2. Select the specific subscription for which you want to configure the data export.]D;]A;3. From the sidebar of the settings page for that subscription, select **Continuous Export**.]D;]A;4. Select **Log Analytics workspace** as export target.]D;]A;5. Select the following data types: **Security recommendations** and **Secure Score (Preview)**]D;]A;6. Select both **Streaming** and **Snapshots** on export frequency.]D;]A;7. Select **Save**.]D;]A;]D;]A;[See also on our docuemntation]5D;(https://docs.microsoft.com/en-us/azure/security-center/continuous-export?tabs=azure-portal#set-up-a-continuous-export)]D;]A;]D;]A;> **Notes**]D;]A;* To get full visabulity, you should wait at least a week to get snapshot of the current state]D;]A;* To deploy your continuous export configurations across your organization, [use the supplied Azure Policy 'DeployIfNotExist' policies described here to create and configure continuous export procedures]5D;(https://docs.microsoft.com/en-us/azure/security-center/continuous-export?tabs=azure-policy#set-up-a-continuous-export)]]></Val>
-          </Prev>
+          <Val><![CDATA[To use this Secure Score Over Time workbook, you'll need to configure **continuous export** to export data to a Log Analytics workspace:]D;]A;1. From Security Center's sidebar, select **Pricing & settings**.]D;]A;2. Select the specific subscription for which you want to configure the data export.]D;]A;3. From the sidebar of the settings page for that subscription, select **Continuous Export**.]D;]A;4. Set the export targed to **Log Analytics workspace**.]D;]A;5. Select the following data types: **Security recommendations** and **Secure Score (Preview)**.]D;]A;6. From the export frequency options, select **Streaming** and **Snapshots**.]D;]A;7. Select **Save**.]D;]A;]D;]A;[Learn more]5D;(https://docs.microsoft.com/en-us/azure/security-center/continuous-export?tabs=azure-portal#set-up-a-continuous-export)]D;]A;]D;]A;> **Notes**]D;]A;* To get full visibility, wait at least one week for the first snapshot to be exported.]D;]A;* To configure continuous export across your organization, use the supplied Azure Policy 'DeployIfNotExist' policies described [here]5D;(https://docs.microsoft.com/en-us/azure/security-center/continuous-export?tabs=azure-policy#set-up-a-continuous-export).]]></Val>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Configuration.content.items.Title.content.json" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.ConfigurationCopy.content.items.Title.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[**How to configure this workbook**  ]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[**Konfigurieren dieser Arbeitsmappe**  ]]></Val>
-          </Tgt>
+          <Val><![CDATA[How to configure this workbook]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.ErrorHandleBanner.content.items.ErrorHandleTitle.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[There is no continuous export data in the selected Log Analytics workspace(s). [Learn more]5D;(https://docs.microsoft.com/en-us/azure/security-center/continuous-export?WT.mc_id=Portal-fx&tabs=azure-portal#information-about-exporting-to-a-log-analytics-workspace)]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.ErrorHandleBanner.content.items.Instructions.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[To use this Secure Score Over Time workbook, you'll need to configure **continuous export** to export data to a Log Analytics workspace:]D;]A;1. From Security Center's sidebar, select **Pricing & settings**.]D;]A;2. Select the specific subscription for which you want to configure the data export.]D;]A;3. From the sidebar of the settings page for that subscription, select **Continuous Export**.]D;]A;4. Set the export target to **Log Analytics workspace**.]D;]A;5. Select the following data types: **Security recommendations** and **Secure Score (Preview)**.]D;]A;6. From the export frequency options, select **Streaming** and **Snapshots**.]D;]A;7. Select **Save**.]D;]A;]D;]A;[Learn more]5D;(https://docs.microsoft.com/en-us/azure/security-center/continuous-export?tabs=azure-portal#set-up-a-continuous-export)]D;]A;]D;]A;> **Notes**]D;]A;* To get full visibility, wait at least one week for the first snapshot to be exported.]D;]A;* To configure continuous export across your organization, use the supplied Azure Policy 'DeployIfNotExist' policies described [here]5D;(https://docs.microsoft.com/en-us/azure/security-center/continuous-export?tabs=azure-policy#set-up-a-continuous-export).]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.ErrorHandleBanner.content.items.Title.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[How to configure this workbook]]></Val>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -251,12 +269,12 @@
       </Item>
       <Item ItemId=";items.Parameters.content.parameters.ae721cb1e0304e0288399c6a00f66c8a.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Select at least one workspace that contains continuous export data]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[Select at least one workspace that contains continuous export data based on the selected subscriptions]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[Wählen Sie mindestens einen Arbeitsbereich aus, der Daten aus dem fortlaufenden Export enthält.]]></Val>
           </Tgt>
           <Prev Cat="Text">
-            <Val><![CDATA[Select workspace]]></Val>
+            <Val><![CDATA[Select at least one workspace that contains continuous export data]]></Val>
           </Prev>
         </Str>
         <Disp Icon="Str" />
@@ -291,6 +309,24 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
+      <Item ItemId=";items.SecureScore.content.items.ScoreTrends.content.gridSettings.labelSettings.DiffMonth.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[30-day change]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Änderung über 30 Tage]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.SecureScore.content.items.ScoreTrends.content.gridSettings.labelSettings.DiffSevenDays.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[7-day change]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Änderung über 7 Tage]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.SecureScore.content.items.ScoreTrends.content.gridSettings.labelSettings.SecureScoresSubscriptionId.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Subscription name]]></Val>
@@ -299,30 +335,6 @@
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Subscription Name]]></Val>
-          </Prev>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.SecureScore.content.items.ScoreTrends.content.gridSettings.labelSettings.diffMonth.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[30-day change]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Änderung über 30 Tage]]></Val>
-          </Tgt>
-          <Prev Cat="Text">
-            <Val><![CDATA[30 Days Change]]></Val>
-          </Prev>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.SecureScore.content.items.ScoreTrends.content.gridSettings.labelSettings.diffSevenDays.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[7-day change]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Änderung über 7 Tage]]></Val>
-          </Tgt>
-          <Prev Cat="Text">
-            <Val><![CDATA[7 Days Change]]></Val>
           </Prev>
         </Str>
         <Disp Icon="Str" />
@@ -336,9 +348,15 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.SecureScore.content.items.SubSelected.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+      <Item ItemId=";items.SecureScore.content.items.SubscriptionFilter.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[]D83D;]DCA1; Selected filter for **subscription:** {selectedSubscription}]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.SecureScore.content.items.TimeRangeFilter.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[]D83D;]DCA1; Selected filter for **time range:** {selectedTimeRange}]]></Val>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -360,12 +378,6 @@
           <Prev Cat="Text">
             <Val><![CDATA[<svg viewBox="0 0 19 19" width="20" class="fxt-escapeShadow" role="presentation" focusable="false" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"><g><path fill="#1b93eb" d="M16.82 8.886c0 4.81-5.752 8.574-7.006 9.411a.477.477 0 01-.523 0C8.036 17.565 2.18 13.7 2.18 8.886V3.135a.451.451 0 01.42-.419C7.2 2.612 6.154.625 9.5.625s2.3 1.987 6.8 2.091a.479.479 0 01.523.419z"></path><path fill="url(#0024423711759027356)" d="M16.192 8.99c0 4.392-5.333 7.947-6.483 8.575a.319.319 0 01-.418 0c-1.15-.732-6.483-4.183-6.483-8.575V3.762a.575.575 0 01.313-.523C7.2 3.135 6.258 1.357 9.4 1.357s2.2 1.882 6.274 1.882a.45.45 0 01.419.418z"></path><path d="M9.219 5.378a.313.313 0 01.562 0l.875 1.772a.314.314 0 00.236.172l1.957.284a.314.314 0 01.174.535l-1.416 1.38a.312.312 0 00-.09.278l.334 1.949a.313.313 0 01-.455.33l-1.75-.92a.314.314 0 00-.292 0l-1.75.92a.313.313 0 01-.455-.33L7.483 9.8a.312.312 0 00-.09-.278L5.977 8.141a.314.314 0 01.174-.535l1.957-.284a.314.314 0 00.236-.172z" class="msportalfx-svg-c01"></path></g></svg>&nbsp;<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px 0px 0px 0px;position: relative;top:-3px;left:-4px;"> Aggregated score for all subscriptions over time]D;]A;</span>]]></Val>
           </Prev>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.SecureScore.content.items.text5.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[]D83D;]DCA1; Selected filter for **timerange:** {selectedTimeRange}]]></Val>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -392,10 +404,13 @@
       </Item>
       <Item ItemId=";items.group8.content.items.UnhealthyRecommendations.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[<svg viewBox="0 0 18 18" width="20" class="fxt-escapeShadow" role="presentation" focusable="false" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"><g><path fill="url(#ae5004eb-b3cc-4afc-9498-a0eb145de4dc)" d="M6.437 1.856l-.292-.292a.5.5 0 00-.707 0L2.606 4.392 1.441 3.229a.5.5 0 00-.707 0l-.293.293a.5.5 0 000 .707l1.812 1.815a.5.5 0 00.354.146.5.5 0 00.353-.146l3.477-3.481a.5.5 0 000-.707z"></path><rect width="10.366" height="1.895" x="7.339" y="2.949" fill="#a3a3a3" rx=".923"></rect><rect width="10.366" height="1.895" x="7.339" y="8.073" fill="#a3a3a3" rx=".923"></rect><rect width="10.366" height="1.895" x="7.339" y="13.196" fill="#a3a3a3" rx=".923"></rect><path fill="url(#a1226368-080a-4756-9af4-a472e9b2c59c)" d="M6.437 7.053l-.292-.293a.5.5 0 00-.707 0L2.606 9.588 1.441 8.425a.5.5 0 00-.707 0l-.293.293a.5.5 0 000 .707l1.812 1.815a.5.5 0 00.354.147.5.5 0 00.353-.147l3.477-3.48a.5.5 0 000-.707z"></path><path fill="url(#a87a55b1-552d-4fae-9ce3-1c309da31213)" d="M6.437 12.249l-.292-.293a.5.5 0 00-.354-.146.494.494 0 00-.353.146l-2.832 2.828-1.165-1.163a.5.5 0 00-.707 0l-.293.292a.5.5 0 000 .707l1.812 1.815a.5.5 0 00.707 0l3.477-3.48a.5.5 0 000-.706z"></path></g></svg>&nbsp;<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px -304px 0px 0px;position: relative;top:-5px"> Recommendations with recent increase in unhealthy resources]D;]A;</span> <br>]D;]A;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Recommendations with the most resources that have become unhealthy in the periods shown]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[<svg viewBox="0 0 18 18" width="20" class="fxt-escapeShadow" role="presentation" focusable="false" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"><g><path fill="url(#ae5004eb-b3cc-4afc-9498-a0eb145de4dc)" d="M6.437 1.856l-.292-.292a.5.5 0 00-.707 0L2.606 4.392 1.441 3.229a.5.5 0 00-.707 0l-.293.293a.5.5 0 000 .707l1.812 1.815a.5.5 0 00.354.146.5.5 0 00.353-.146l3.477-3.481a.5.5 0 000-.707z"></path><rect width="10.366" height="1.895" x="7.339" y="2.949" fill="#a3a3a3" rx=".923"></rect><rect width="10.366" height="1.895" x="7.339" y="8.073" fill="#a3a3a3" rx=".923"></rect><rect width="10.366" height="1.895" x="7.339" y="13.196" fill="#a3a3a3" rx=".923"></rect><path fill="url(#a1226368-080a-4756-9af4-a472e9b2c59c)" d="M6.437 7.053l-.292-.293a.5.5 0 00-.707 0L2.606 9.588 1.441 8.425a.5.5 0 00-.707 0l-.293.293a.5.5 0 000 .707l1.812 1.815a.5.5 0 00.354.147.5.5 0 00.353-.147l3.477-3.48a.5.5 0 000-.707z"></path><path fill="url(#a87a55b1-552d-4fae-9ce3-1c309da31213)" d="M6.437 12.249l-.292-.293a.5.5 0 00-.354-.146.494.494 0 00-.353.146l-2.832 2.828-1.165-1.163a.5.5 0 00-.707 0l-.293.292a.5.5 0 000 .707l1.812 1.815a.5.5 0 00.707 0l3.477-3.48a.5.5 0 000-.706z"></path></g></svg>&nbsp;<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px -304px 0px 0px;position: relative;top:-5px"> Top recommendations with recent increase in unhealthy resources]D;]A;</span> <br>]D;]A;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Recommendations with the most resources that have become unhealthy in the periods shown]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[<svg viewBox="0 0 18 18" width="20" class="fxt-escapeShadow" role="presentation" focusable="false" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"><g><path fill="url(#ae5004eb-b3cc-4afc-9498-a0eb145de4dc)" d="M6.437 1.856l-.292-.292a.5.5 0 00-.707 0L2.606 4.392 1.441 3.229a.5.5 0 00-.707 0l-.293.293a.5.5 0 000 .707l1.812 1.815a.5.5 0 00.354.146.5.5 0 00.353-.146l3.477-3.481a.5.5 0 000-.707z"></path><rect width="10.366" height="1.895" x="7.339" y="2.949" fill="#a3a3a3" rx=".923"></rect><rect width="10.366" height="1.895" x="7.339" y="8.073" fill="#a3a3a3" rx=".923"></rect><rect width="10.366" height="1.895" x="7.339" y="13.196" fill="#a3a3a3" rx=".923"></rect><path fill="url(#a1226368-080a-4756-9af4-a472e9b2c59c)" d="M6.437 7.053l-.292-.293a.5.5 0 00-.707 0L2.606 9.588 1.441 8.425a.5.5 0 00-.707 0l-.293.293a.5.5 0 000 .707l1.812 1.815a.5.5 0 00.354.147.5.5 0 00.353-.147l3.477-3.48a.5.5 0 000-.707z"></path><path fill="url(#a87a55b1-552d-4fae-9ce3-1c309da31213)" d="M6.437 12.249l-.292-.293a.5.5 0 00-.354-.146.494.494 0 00-.353.146l-2.832 2.828-1.165-1.163a.5.5 0 00-.707 0l-.293.292a.5.5 0 000 .707l1.812 1.815a.5.5 0 00.707 0l3.477-3.48a.5.5 0 000-.706z"></path></g></svg>&nbsp;<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px -304px 0px 0px;position: relative;top:-5px"> Empfehlungen mit kürzlicher Zunahme fehlerhafter Ressourcen]D;]A;</span> <br>]D;]A;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Empfehlungen mit den meisten Ressourcen, die in den gezeigten Zeiträumen in einen fehlerhaften Zustand gewechselt sind]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[<svg viewBox="0 0 18 18" width="20" class="fxt-escapeShadow" role="presentation" focusable="false" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"><g><path fill="url(#ae5004eb-b3cc-4afc-9498-a0eb145de4dc)" d="M6.437 1.856l-.292-.292a.5.5 0 00-.707 0L2.606 4.392 1.441 3.229a.5.5 0 00-.707 0l-.293.293a.5.5 0 000 .707l1.812 1.815a.5.5 0 00.354.146.5.5 0 00.353-.146l3.477-3.481a.5.5 0 000-.707z"></path><rect width="10.366" height="1.895" x="7.339" y="2.949" fill="#a3a3a3" rx=".923"></rect><rect width="10.366" height="1.895" x="7.339" y="8.073" fill="#a3a3a3" rx=".923"></rect><rect width="10.366" height="1.895" x="7.339" y="13.196" fill="#a3a3a3" rx=".923"></rect><path fill="url(#a1226368-080a-4756-9af4-a472e9b2c59c)" d="M6.437 7.053l-.292-.293a.5.5 0 00-.707 0L2.606 9.588 1.441 8.425a.5.5 0 00-.707 0l-.293.293a.5.5 0 000 .707l1.812 1.815a.5.5 0 00.354.147.5.5 0 00.353-.147l3.477-3.48a.5.5 0 000-.707z"></path><path fill="url(#a87a55b1-552d-4fae-9ce3-1c309da31213)" d="M6.437 12.249l-.292-.293a.5.5 0 00-.354-.146.494.494 0 00-.353.146l-2.832 2.828-1.165-1.163a.5.5 0 00-.707 0l-.293.292a.5.5 0 000 .707l1.812 1.815a.5.5 0 00.707 0l3.477-3.48a.5.5 0 000-.706z"></path></g></svg>&nbsp;<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px -304px 0px 0px;position: relative;top:-5px"> Recommendations with recent increase in unhealthy resources]D;]A;</span> <br>]D;]A;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Recommendations with the most resources that have become unhealthy in the periods shown]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -411,15 +426,12 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.group8.content.items.query7.content.gridSettings.labelSettings.UnhealthyCount.label" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.group8.content.items.query7.content.gridSettings.labelSettings.UnhealthyAssessedResources.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Unhealthy count]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Anzahl fehlerhafter Ressourcen]]></Val>
           </Tgt>
-          <Prev Cat="Text">
-            <Val><![CDATA[Unhealthy Count]]></Val>
-          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -441,6 +453,12 @@
           <Prev Cat="Text">
             <Val><![CDATA[<svg viewBox="0 0 34 28" width="20" class="fxt-escapeShadow" role="presentation" focusable="false" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"><g><path fill="#949494" d="M2.44 22.93a.19.19 0 000 .13.24.24 0 00.09.08l1.73 1 2.93 1.69a.25.25 0 00.19 0 .31.31 0 00.16-.11l1-1.68a.21.21 0 000-.17.22.22 0 00-.11-.14L5 21.78a.24.24 0 01-.08-.09.21.21 0 010-.12V6.14a.16.16 0 010-.12.24.24 0 01.08-.09L8.46 4a.22.22 0 00.11-.14.2.2 0 000-.17L7.57 2l-.06-.08h-.09a.17.17 0 00-.1 0h-.1L4.35 3.53l-1.79 1a.24.24 0 00-.09.08.18.18 0 000 .12z"></path><path fill="#a3a3a3" d="M4.89 6L5 5.93 8.42 4a.18.18 0 00.07 0 .18.18 0 000-.08.17.17 0 000-.1.11.11 0 000-.08L7.52 2a.22.22 0 000-.08.16.16 0 00-.08-.06h-.1a.29.29 0 00-.1 0L4.31 3.53l-1.78 1a.09.09 0 00-.09.08l1.34.77zm3.53 17.7L5 21.75a.35.35 0 01-.11-.13l-2.44 1.49h.08l1.72 1 3 1.66a.19.19 0 00.09 0h.09l.09-.05.06-.07 1-1.68a.15.15 0 000-.09.24.24 0 000-.08.18.18 0 00-.05-.07s-.08-.03-.11-.03z"></path><path fill="#949494" d="M32.51 22.93a.21.21 0 010 .12.2.2 0 01-.09.09l-1.73 1-2.93 1.69a.25.25 0 01-.19 0 .31.31 0 01-.16-.11l-1-1.68a.25.25 0 010-.17.21.21 0 01.1-.14l3.45-1.95a.26.26 0 00.11-.21V6.14A.19.19 0 0030 6l-.08-.08L26.48 4a.21.21 0 01-.1-.14.25.25 0 010-.17l1-1.68.06-.08h.09a.16.16 0 01.1 0h.1l2.87 1.6 1.79 1a.24.24 0 01.09.08.27.27 0 010 .12z"></path><path fill="#a3a3a3" d="M30.06 6L30 5.93 26.53 4h-.08v-.08a.34.34 0 010-.1.2.2 0 010-.08l1-1.68a.22.22 0 01.05-.08.16.16 0 01.08-.06h.1a.29.29 0 01.1 0l2.88 1.66 1.78 1a.09.09 0 01.09.08l-1.34.77zm-3.53 17.7L30 21.75a.26.26 0 00.1-.13l2.43 1.49h-.08l-1.72 1-3 1.66h-.18a.26.26 0 01-.09-.05l-.06-.07-1-1.68a.28.28 0 010-.09.24.24 0 010-.08.18.18 0 01.05-.07.12.12 0 01.08-.03z"></path><path d="M25.57 14.31H14.48a.86.86 0 01-.87-.77.79.79 0 01.87-.67h11.09a.79.79 0 01.87.67.86.86 0 01-.87.77zm0-5.61H14.48a.86.86 0 01-.87-.77.79.79 0 01.87-.67h11.09a.79.79 0 01.87.67.86.86 0 01-.87.77zm0 11.22H14.48a.86.86 0 01-.87-.77.79.79 0 01.87-.67h11.09a.79.79 0 01.87.67.86.86 0 01-.87.77z" class="msportalfx-svg-c03"></path><path d="M8.44 7.73l.62-.63 1.27 1.26 2.52-2.52.63.63-3.15 3.15zm0 5.62l.62-.63L10.33 14l2.52-2.52.63.63-3.15 3.15zm0 5.61l.62-.63 1.27 1.26 2.52-2.52.63.63-3.15 3.15z" class="msportalfx-svg-c13"></path></g></svg>&nbsp;<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px -304px 0px 0px;position: relative;top:-5px"> Security controls over time (weekly)]D;]A;</span>]D;]A;]D;]A;]]></Val>
           </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";settings.description" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Track your subscriptions' scores and changes to recommendations for your resources]]></Val>
         </Str>
         <Disp Icon="Str" />
       </Item>

@@ -14,24 +14,36 @@
         <Item ItemId=";(...) CVSS2Score.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[CVSS score 2.0]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Score CVSS 2.0]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) CVSS3Score.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[CVSS score 3.0]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Score CVSS 3.0]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) ImageDigest.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Image digest]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Condensé d'image]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) PublishedTime.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Published time]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Heure de publication]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -66,7 +78,7 @@
           <Str Cat="Text">
             <Val><![CDATA[Vulnerability ID]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[ID de la vulnérabilité]]></Val>
+              <Val><![CDATA[ID de vulnérabilité]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
@@ -76,6 +88,30 @@
             <Val><![CDATA[Subscription name]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
               <Val><![CDATA[Nom d'abonnement]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
+      <Item ItemId=";@items.SQLVulnerabilitiesGroup.content.items.GroupByBenchmark.content.gridSettings.labelSettings.ResourceGroup.lab" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) el" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Resource group]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Groupe de ressources]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
+      <Item ItemId=";@items.SQLVulnerabilitiesGroup.content.items.GroupByBenchmark.content.gridSettings.labelSettings.TimeGenerated.lab" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) el" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Time generated]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Heure de génération]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
@@ -117,8 +153,8 @@
       <Item ItemId=";items.ACRCategoryTiles.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Vulnerabilities by category]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[Nombre de vulnérabilités par catégorie]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Vulnérabilités par catégorie]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Count of vulnerabilities by category]]></Val>
@@ -135,21 +171,36 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
+      <Item ItemId=";items.ContainersACRImagesTable.content.gridSettings.labelSettings.Repo.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Repository]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Référentiel]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.ContainersACRImagesTable.content.gridSettings.labelSettings.imageDigest.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Image Digest]]></Val>
+          <Val><![CDATA[Image digest]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Condensat d'image]]></Val>
+            <Val><![CDATA[Condensé d'image]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Image Digest]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.ContainersACRImagesTable.content.gridSettings.labelSettings.patchAvailable.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Patch Available]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[Patch available]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[Patch disponible]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Patch Available]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -191,12 +242,12 @@
       </Item>
       <Item ItemId=";items.ContainersACRImagesTable.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Vulnerable images | Select an image to view the list of vulnerabilities]]></Val>
+          <Val><![CDATA[Vulnerable images]]></Val>
           <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[Images vulnérables détectées]]></Val>
+            <Val><![CDATA[Images vulnérables | Sélectionner une image pour voir la liste des vulnérabilités]]></Val>
           </Tgt>
           <Prev Cat="Text">
-            <Val><![CDATA[Vulnerable images found]]></Val>
+            <Val><![CDATA[Vulnerable images | Select an image to view the list of vulnerabilities]]></Val>
           </Prev>
         </Str>
         <Disp Icon="Str" />
@@ -225,8 +276,8 @@
       <Item ItemId=";items.ContainersACRReposTable.content.gridSettings.labelSettings.patchAvailable.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Available patches]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[Patch disponible]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Patchs disponibles]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Patch Available]]></Val>
@@ -272,12 +323,12 @@
       </Item>
       <Item ItemId=";items.ContainersACRReposTable.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Vulnerable container registries]]></Val>
+          <Val><![CDATA[Vulnerable container registries |  Select a container registry to view the list of vulnerabilities]]></Val>
           <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[Registres de conteneurs Azure]]></Val>
+            <Val><![CDATA[Registres de conteneurs vulnérables]]></Val>
           </Tgt>
           <Prev Cat="Text">
-            <Val><![CDATA[Azure Container Registries]]></Val>
+            <Val><![CDATA[Vulnerable container registries]]></Val>
           </Prev>
         </Str>
         <Disp Icon="Str" />
@@ -294,8 +345,8 @@
       <Item ItemId=";items.ContainersACRVulnerabilitiesTable.content.items.ContainersFullListTable.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Use the search box to filter vulnerabilities by resource, resource group, CVE, severity, etc.]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[Vous pouvez utiliser la zone de recherche pour filtrer les recommandations (Resource, ResourceGroup, CVE, VulnID, Severity, Keywords, etc.)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Utilisez la zone de recherche pour filtrer les vulnérabilités par ressource, groupe de ressources, CVE, gravité, etc.]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[The search box can be used to filter recommendations (Resource, ResourceGroup, CVE, VulnID, Severity, Keywords, etc)]]></Val>
@@ -345,6 +396,9 @@
       <Item ItemId=";items.DatabaseSummary.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Vulnerable databases per server]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Bases de données vulnérables par serveur]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -369,8 +423,8 @@
       <Item ItemId=";items.Help.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[#### Welcome to vulnerability assessment findings workbook (preview)]D;]A;This workbook is based on the following recommendations provided by Azure Security Center:]D;]A;* [Vulnerabilities in your virtual machines should be remediated]5D;(http://portal.azure.com/#blade/Microsoft_Azure_Security/RecommendationsBlade/assessmentKey/1195afff-c881-495e-9bc5-1486211ae03f)]D;]A;* [Vulnerabilities in Azure Container Registry images should be remediated (powered by Qualys)]5D;(http://portal.azure.com/#blade/Microsoft_Azure_Security/RecommendationsBlade/assessmentKey/dbd0cb49-b563-45e7-9724-889e799fa648)]D;]A;* [Vulnerability assessment findings on your SQL databases should be remediated)]5D;(http://portal.azure.com/#blade/Microsoft_Azure_Security/RecommendationsBlade/assessmentKey/82e20e14-edc5-4373-bfc4-f13121257c37)]D;]A;* [Vulnerability assessment findings on your SQL servers on machines should be remediated)]5D;(http://portal.azure.com/#blade/Microsoft_Azure_Security/RecommendationsBlade/assessmentKey/f97aa83c-9b63-4f9a-99f6-b22c4398f936)]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[#### Bienvenue dans le workbook Vulnérabilités de serveur et de registre de conteneurs (préversion)]D;]A;Ce workbook est basé sur les recommandations suivantes fournies par Azure Security Center :]D;]A;* [Les vulnérabilités de vos machines virtuelles doivent être corrigées]5D;(http://portal.azure.com/#blade/Microsoft_Azure_Security/RecommendationsBlade/assessmentKey/1195afff-c881-495e-9bc5-1486211ae03f)]D;]A;* [Les vulnérabilités des images Azure Container Registry doivent être corrigées (avec Qualys)]5D;(http://portal.azure.com/#blade/Microsoft_Azure_Security/RecommendationsBlade/assessmentKey/dbd0cb49-b563-45e7-9724-889e799fa648)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[#### Bienvenue dans le workbook des résultats d'évaluation des vulnérabilités (préversion)]D;]A;Ce workbook est basé sur les recommandations suivantes fournies par Azure Security Center :]D;]A;* [Les vulnérabilités dans vos machines virtuelles doivent être corrigées]5D;(http://portal.azure.com/#blade/Microsoft_Azure_Security/RecommendationsBlade/assessmentKey/1195afff-c881-495e-9bc5-1486211ae03f)]D;]A;* [Les vulnérabilités dans les images Azure Container Registry doivent être corrigées (avec Qualys)]5D;(http://portal.azure.com/#blade/Microsoft_Azure_Security/RecommendationsBlade/assessmentKey/dbd0cb49-b563-45e7-9724-889e799fa648)]D;]A;* [Les résultats d'évaluation des vulnérabilités sur vos bases de données SQL doivent être corrigés)]5D;(http://portal.azure.com/#blade/Microsoft_Azure_Security/RecommendationsBlade/assessmentKey/82e20e14-edc5-4373-bfc4-f13121257c37)]D;]A;* [Les résultats d'évaluation des vulnérabilités de vos serveurs SQL sur des machines doivent être corrigés)]5D;(http://portal.azure.com/#blade/Microsoft_Azure_Security/RecommendationsBlade/assessmentKey/f97aa83c-9b63-4f9a-99f6-b22c4398f936)]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[#### Welcome to Server and Container Registry Vulnerabilities workbook (preview)]D;]A;This workbook is based on the following recommendations provided by Azure Security Center:]D;]A;* [Vulnerabilities in your virtual machines should be remediated]5D;(http://portal.azure.com/#blade/Microsoft_Azure_Security/RecommendationsBlade/assessmentKey/1195afff-c881-495e-9bc5-1486211ae03f)]D;]A;* [Vulnerabilities in Azure Container Registry images should be remediated (powered by Qualys)]5D;(http://portal.azure.com/#blade/Microsoft_Azure_Security/RecommendationsBlade/assessmentKey/dbd0cb49-b563-45e7-9724-889e799fa648)]]></Val>
@@ -381,6 +435,9 @@
       <Item ItemId=";items.MachinesCategoryTiles.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Vulnerabilities by category]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Vulnérabilités par catégorie]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -405,6 +462,9 @@
       <Item ItemId=";items.MachinesSummary.content.gridSettings.labelSettings.patchAvailable.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Available patches]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Patchs disponibles]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -438,6 +498,9 @@
       <Item ItemId=";items.MachinesSummary.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Overview | Select a machine to view the list of vulnerabilities]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Vue d'ensemble | Sélectionner une machine pour voir la liste des vulnérabilités]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -471,8 +534,8 @@
       <Item ItemId=";items.OverviewACRTable.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No unhealthy container registries found]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[Aucun registre non sain trouvé]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Aucun registre de conteneurs non sain trouvé]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[No unhealthy registries found]]></Val>
@@ -483,8 +546,8 @@
       <Item ItemId=";items.OverviewACRTable.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Vulnerabilities by severity per container registry]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[ACR | Nombre de vulnérabilités par gravité par dépôt]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Vulnérabilités par gravité par registre de conteneurs]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[ACR | Count of vulnerabilities by severity per repository]]></Val>
@@ -495,8 +558,8 @@
       <Item ItemId=";items.OverviewContainerCount.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No unhealthy container registries found]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[Aucun registre non sain trouvé]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Aucun registre de conteneurs non sain trouvé]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[No unhealthy registries found]]></Val>
@@ -507,8 +570,8 @@
       <Item ItemId=";items.OverviewContainerCount.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Unhealthy container registries]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[ACR | Nombre de registres non sains]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Registres de conteneurs non sains]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[ACR | Count of unhealthy registries]]></Val>
@@ -519,8 +582,8 @@
       <Item ItemId=";items.OverviewContainersPie.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No unhealthy container registries found]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[Aucun registre non sain trouvé]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Aucun registre de conteneurs non sain trouvé]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[No unhealthy registries found]]></Val>
@@ -531,8 +594,8 @@
       <Item ItemId=";items.OverviewContainersPie.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Distinct vulnerabilities by severity]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[Images ACR | Nombre de vulnérabilités par gravité]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Vulnérabilités distinctes par gravité]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[ACR Images | Count of vulnerabilities by severity]]></Val>
@@ -543,24 +606,36 @@
       <Item ItemId=";items.OverviewSQLCount.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No unhealthy SQL resources found]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Aucune ressource SQL non saine trouvée]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.OverviewSQLCount.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Unhealthy SQL resources by type]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Ressources SQL non saines par type]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.OverviewSQLPie.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No unhealthy SQL resources found]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Aucune ressource SQL non saine trouvée]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.OverviewSQLPie.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Distinct SQL vulnerabilities by severity]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Vulnérabilités SQL distinctes par gravité]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -594,12 +669,18 @@
       <Item ItemId=";items.OverviewSQLTable.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No unhealthy SQL resources found]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Aucune ressource SQL non saine trouvée]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.OverviewSQLTable.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Vulnerabilities by severity per SQL resource]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Vulnérabilités par gravité par ressource SQL]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -633,8 +714,8 @@
       <Item ItemId=";items.OverviewServerTable.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No unhealthy machines found]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[Aucune machine virtuelle non saine trouvée]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Aucune machine non saine trouvée]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[No unhealthy VMs found]]></Val>
@@ -645,8 +726,8 @@
       <Item ItemId=";items.OverviewServerTable.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Vulnerabilities by severity per machine]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[Serveurs | Nombre de vulnérabilités par gravité par ressource]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Vulnérabilités par gravité par machine]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Servers | Count of vulnerabilities by severity per resource]]></Val>
@@ -657,8 +738,8 @@
       <Item ItemId=";items.OverviewServersPie.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No unhealthy machines found]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[Aucune machine virtuelle non saine trouvée]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Aucune machine non saine trouvée]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[No unhealthy VMs found]]></Val>
@@ -669,8 +750,8 @@
       <Item ItemId=";items.OverviewServersPie.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Distinct vulnerabilities by severity]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[Serveurs | Nombre de vulnérabilités par gravité]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Vulnérabilités distinctes par gravité]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Servers | Count of vulnerabilities by severity]]></Val>
@@ -681,8 +762,8 @@
       <Item ItemId=";items.OverviewVMCount.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No unhealthy machines found]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[Aucune machine virtuelle non saine trouvée]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Aucune machine non saine trouvée]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[No unhealthy VMs found]]></Val>
@@ -693,8 +774,8 @@
       <Item ItemId=";items.OverviewVMCount.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Unhealthy machines]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[Serveurs | Nombre de machines virtuelles Azure et Azure Arc non saines]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Machines non saines]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Servers | Count of unhealthy Azure VMs and Azure Arc]]></Val>
@@ -705,8 +786,8 @@
       <Item ItemId=";items.Parameters.content.parameters.ae1f45ba927544fea0b00f60ab5a8690.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Show insturctions for using this workbook]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[Activer/désactiver pour afficher l'aide de chaque onglet]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Afficher les instructions d'utilisation de ce workbook]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Toggle to show Help for each tab]]></Val>
@@ -761,31 +842,115 @@
       </Item>
       <Item ItemId=";items.SQLSummary.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Vulnerable SQL resources]]></Val>
+          <Val><![CDATA[Vulnerable SQL resources | Select a resource to view the list of vulnerabilities]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
+            <Val><![CDATA[Ressources SQL vulnérables]]></Val>
+          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Vulnerable SQL resources]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.SQLVulnerabilitiesGroup.content.items.GroupByBenchmark.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Grouped by benchmark]]></Val>
+          <Val><![CDATA[Grouped by benchmark | Use the search box to filter vulnerabilities by resource, resource group, severity, etc.]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
+            <Val><![CDATA[Groupé par benchmark]]></Val>
+          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Grouped by benchmark]]></Val>
+          </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.SQLVulnerabilitiesGroup.content.items.GroupByCategory.content.gridSettings.labelSettings.ResourceGroup.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Resource group]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Groupe de ressources]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.SQLVulnerabilitiesGroup.content.items.GroupByCategory.content.gridSettings.labelSettings.TimeGenerated.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Time generated]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Heure de génération]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.SQLVulnerabilitiesGroup.content.items.GroupByCategory.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Grouped by category]]></Val>
+          <Val><![CDATA[Grouped by category | Use the search box to filter vulnerabilities by resource, resource group, severity, etc.]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
+            <Val><![CDATA[Groupé par catégorie]]></Val>
+          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Grouped by category]]></Val>
+          </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.SQLVulnerabilitiesGroup.content.items.GroupByResource.content.gridSettings.labelSettings.ResourceGroup.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Resource group]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Groupe de ressources]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.SQLVulnerabilitiesGroup.content.items.GroupByResource.content.gridSettings.labelSettings.TimeGenerated.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Time generated]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Heure de génération]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.SQLVulnerabilitiesGroup.content.items.GroupByResource.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Grouped by resource]]></Val>
+          <Val><![CDATA[Grouped by resource | Use the search box to filter vulnerabilities by resource, resource group, severity, etc.]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
+            <Val><![CDATA[Groupé par ressource]]></Val>
+          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Grouped by resource]]></Val>
+          </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.SQLVulnerabilitiesGroup.content.items.GroupBySeverity.content.gridSettings.labelSettings.ResourceGroup.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Resource group]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Groupe de ressources]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.SQLVulnerabilitiesGroup.content.items.GroupBySeverity.content.gridSettings.labelSettings.TimeGenerated.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Time generated]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Heure de génération]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.SQLVulnerabilitiesGroup.content.items.GroupBySeverity.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Grouped by severity]]></Val>
+          <Val><![CDATA[Grouped by severity | Use the search box to filter vulnerabilities by resource, resource group, severity, etc.]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
+            <Val><![CDATA[Groupé par gravité]]></Val>
+          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Grouped by severity]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -802,7 +967,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Machines]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Ordinateurs]]></Val>
+            <Val><![CDATA[Machines]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Servers]]></Val>
@@ -840,6 +1005,9 @@
       <Item ItemId=";items.VulnerabilitiesView.content.items.ServersFullListTable.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Use the search box to filter vulnerabilities by resource, resource group, CVE, severity, etc.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Utilisez la zone de recherche pour filtrer les vulnérabilités par ressource, groupe de ressources, CVE, gravité, etc.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -849,6 +1017,12 @@
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Vulnérabilités]]></Val>
           </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";settings.description" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[View the findings of vulnerability scans of your Azure resources]]></Val>
         </Str>
         <Disp Icon="Str" />
       </Item>
