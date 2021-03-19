@@ -9,9 +9,18 @@
     <Disp Icon="Expand" Expand="true" Disp="true" LocTbl="false" />
     <Item ItemId=";Strings" ItemType="0" PsrId="306" Leaf="false">
       <Disp Icon="Str" Disp="true" LocTbl="false" />
-      <Item ItemId=";@items.CheckHostPool.content.items.group0.content.items.NoDataPool.content.items.confighostpool.content.links.162f" ItemType="0" PsrId="306" Leaf="false">
+      <Item ItemId=";@items.CheckHostPool.content.items.WVDHostpool.content.items.PoolGroup.content.items.NoDataPool.content.items.Host" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) 5ab183c74cf6baf7f5e8977eff73.linkLabel" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) PoolNotCfg.content.json" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Azure Monitor is not configured for the selected WVD hostpool.  ]D;]A;You need to configure diagnostic settings for the host pool.]D;]A;]D;]A;1. Select the Log analytics workspace in the **Pool workspace** parameter]D;]A;2. Select **Configure host pool**]D;]A;3. Select **Deploy**.]D;]A;After the deployment is completed, refresh the worbook by selecting the refresh button on the top.]D;]A;]D;]A;[More information on Azure Monitor for Windows Virtual Desktop]5D;(https://docs.microsoft.com/en-us/azure/virtual-desktop/diagnostics-log-analytics)]]></Val>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
+      <Item ItemId=";@items.CheckHostPool.content.items.WVDHostpool.content.items.PoolGroup.content.items.NoDataPool.content.items.conf" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) ighostpool.content.links.162f5ab183c74cf6baf7f5e8977eff73.linkLabel" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Configure host pool]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -20,7 +29,7 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
-        <Item ItemId=";(...) 5ab183c74cf6baf7f5e8977eff73.templateRunContext.description" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) ighostpool.content.links.162f5ab183c74cf6baf7f5e8977eff73.templateRunContext.description" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[**Configure host pool diganostic settings**]D;]A;]D;]A;Host pool  will be configured for the following categories:]D;]A;- Management Activities]D;]A;- Feed]D;]A;- Connections]D;]A;- Errors]D;]A;- Checkpoints]D;]A;- HostRegistration]D;]A;]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -30,9 +39,72 @@
           <Disp Icon="Str" />
         </Item>
       </Item>
-      <Item ItemId=";@items.LAConfig.content.items.WorkspaceCheck.content.items.AddVmExtensions.content.items.links1.content.links.6bcd" ItemType="0" PsrId="306" Leaf="false">
+      <Item ItemId=";@items.CheckHostPool.content.items.WVDHostpool.content.items.PoolGroup.content.items.NoDiagConfigMessage.content.j" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) 709a730445118baba14094ebb4c0.linkLabel" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) son" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[No existing diagnostic configuration was found for the selected host pool.]]></Val>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
+      <Item ItemId=";@items.CheckHostPool.content.items.WVDWorkspace.content.items.NoWVDworkspaceDiag.content.items.NoDataPoolWorkspace" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) .content.items.NoWVDWorkspaceCfg.content.json" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Azure Monitor is not configured for the selected WVD workspace.  ]D;]A;You need to configure diagnostic settings for the workspace.]D;]A;]D;]A;1. Select the Log analytics workspace in the **Pool workspace** parameter]D;]A;2. Select **Configure WVD workspace**]D;]A;3. Select **Deploy**.]D;]A;After the deployment is completed, refresh the worbook by selecting the refresh button on the top.]D;]A;]D;]A;[More information on Azure Monitor for Windows Virtual Desktop]5D;(https://docs.microsoft.com/en-us/azure/virtual-desktop/diagnostics-log-analytics)]]></Val>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) .content.items.confighostpoolWorkspace.content.links.3a35c64b9fde4e6f92ebc0fd0cf417af.linkLabel" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Configure WVD workspace]]></Val>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";@(...) .content.items.confighostpoolWorkspace.content.links.3a35c64b9fde4e6f92ebc0fd0cf417af.templateRunContext.de" ItemType="0" PsrId="306" Leaf="false">
+          <Disp Icon="Dir" LocTbl="false" />
+          <Item ItemId=";(...) scription" ItemType="0" PsrId="306" Leaf="true">
+            <Str Cat="Text">
+              <Val><![CDATA[**Configure host pool diganostic settings**]D;]A;]D;]A;The WVD workspace will be configured for the following categories:]D;]A;- Management Activities]D;]A;- Feed]D;]A;- Errors]D;]A;- Checkpoints]D;]A;]]></Val>
+            </Str>
+            <Disp Icon="Str" />
+          </Item>
+        </Item>
+      </Item>
+      <Item ItemId=";@items.CheckHostPool.content.items.WVDWorkspace.content.items.NoWVDworkspaceDiag.content.items.NoHostPoolDiag.cont" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) ent.json" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[No existing diagnostic configuration was found for the selected host pool.]]></Val>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
+      <Item ItemId=";@items.CheckHostPool.content.items.parameterscheckhostpool.content.parameters.47d10c5f30e749eca61dbc98f80e13b8.des" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) cription" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Selects the Log Analytics workspace for WVD data]]></Val>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
+      <Item ItemId=";@items.CheckHostPool.content.items.parameterscheckhostpool.content.parameters.47d10c5f30e749eca61dbc98f80e13b8.lab" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) el" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Pool workspace]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[集區工作區]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
+      <Item ItemId=";@items.LAConfig.content.items.WorkspaceCheck.content.items.AddVmExtensions.content.items.DeployLAExtension.content" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) .links.6bcd709a730445118baba14094ebb4c0.linkLabel" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Add hosts to workspace]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -41,9 +113,42 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
-        <Item ItemId=";(...) 709a730445118baba14094ebb4c0.templateRunContext.description" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+        <Item ItemId=";(...) .links.6bcd709a730445118baba14094ebb4c0.templateRunContext.description" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[We will configure the following hosts to send data to the selected workspace:  ]D;]A;{VmNames}]D;]A;]D;]A;]D;]A;Normal storage charges for Log Analytics will apply. [Learn more about Log Analytics pricing]5D;(https://docs.microsoft.com/en-us/azure/azure-monitor/platform/manage-cost-storage).]]></Val>
+            <Val><![CDATA[We will configure the following hosts to send data to the selected workspace:  ]D;]A;{VmNames}]D;]A;]D;]A;]D;]A;Normal storage charges for Log Analytics will apply. [Learn more about Log Analytics pricing]5D;(https://docs.microsoft.com/en-us/azure/azure-monitor/platform/manage-cost-storage).]D;]A;]D;]A;]D;]A;The configuration workbook only supports installing the Log Analytics agent on *running* hosts in the same region as the Resource Group. Installation will fail if these scenarios are not met. Check your host status and region in the [Azure Portal Virtual Machines blade.]]></Val>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
+      <Item ItemId=";@items.LAConfig.content.items.WorkspaceCheck.content.items.EventsGroup.content.items.CurrentEvents1.content.noData" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) Message" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[No configured events]]></Val>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
+      <Item ItemId=";@items.LAConfig.content.items.WorkspaceCheck.content.items.EventsGroup.content.items.HowToFixMissingEventsMessage." ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) content.json" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[If there are missing events, select **Open Workspace Configuration**.  ]D;]A;Then select **Data** and **Windows Event Logs**. Add the missing events.]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[若有缺少的事件，請選取 [開啟工作區設定]5D;****。]D;]A;然後選取 [資料]5D;**** 及 [Windows 事件記錄]5D;****。新增缺少的事件。]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
+      <Item ItemId=";@items.LAConfig.content.items.WorkspaceCheck.content.items.EventsGroup.content.items.MissingEvents.content.noDataM" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) essage" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[No missing events found]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[找不到任何缺少的事件]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -55,6 +160,27 @@
             <Val><![CDATA[Open Workspace Configuration]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
               <Val><![CDATA[開啟工作區設定]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
+      <Item ItemId=";@items.LAConfig.content.items.WorkspaceCheck.content.items.PerfGroup.content.items.ConfiguteLACounters.content.lin" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) ks.47d9e44f120c4e77a0fcff0b01bf5bf7.linkLabel" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Configure performance counters]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[設定效能計數器]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) ks.47d9e44f120c4e77a0fcff0b01bf5bf7.templateRunContext.description" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[**Configure Log Analytics**]D;]A;]D;]A;The required performance counters will be added to Log Analytics workspace.]D;]A;]D;]A;Normal storage charges for Log Analytics will apply. [Learn more about Log Analytics pricing]5D;(https://docs.microsoft.com/en-us/azure/azure-monitor/platform/manage-cost-storage).]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[**設定 Log Analytics**]D;]A;]D;]A;所需的效能計數器將會新增至 Log Analytics 工作區。]D;]A;]D;]A;將會套用 Log Analytics 的一般儲存體費用。[深入了解 Log Analytics 定價]5D;(https://docs.microsoft.com/zh-tw/azure/azure-monitor/platform/manage-cost-storage) (機器翻譯)。]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
@@ -99,6 +225,15 @@
           <Disp Icon="Str" />
         </Item>
       </Item>
+      <Item ItemId=";@items.LAConfig.content.items.WorkspaceCheck.content.items.PerfGroup.content.items.CurrentCounters.content.noDataM" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) essage" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[No configured performance counters]]></Val>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
       <Item ItemId=";@items.LAConfig.content.items.WorkspaceCheck.content.items.PerfGroup.content.items.MissingCounters.content.noDataM" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) essage" ItemType="0" PsrId="306" Leaf="true">
@@ -110,45 +245,6 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
-      </Item>
-      <Item ItemId=";@items.LAConfig.content.items.WorkspaceCheck.content.items.PerfGroup.content.items.links3.content.links.47d9e44f12" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) 0c4e77a0fcff0b01bf5bf7.linkLabel" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[Configure Performance Counters]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[設定效能計數器]]></Val>
-            </Tgt>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-        <Item ItemId=";(...) 0c4e77a0fcff0b01bf5bf7.templateRunContext.description" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[**Configure Log Analytics**]D;]A;]D;]A;The required performance counters will be added to Log Analytics workspace.]D;]A;]D;]A;Normal storage charges for Log Analytics will apply. [Learn more about Log Analytics pricing]5D;(https://docs.microsoft.com/en-us/azure/azure-monitor/platform/manage-cost-storage).]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[**設定 Log Analytics**]D;]A;]D;]A;所需的效能計數器將會新增至 Log Analytics 工作區。]D;]A;]D;]A;將會套用 Log Analytics 的一般儲存體費用。[深入了解 Log Analytics 定價]5D;(https://docs.microsoft.com/zh-tw/azure/azure-monitor/platform/manage-cost-storage) (機器翻譯)。]]></Val>
-            </Tgt>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-      </Item>
-      <Item ItemId=";items.CheckConfigLink.content.links.28fc9a5518f946d7b72a1bd1f2653aba.linkLabel" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Configuration workbook]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[設定活頁簿]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.CheckConfigLink.content.links.28fc9a5518f946d7b72a1bd1f2653aba.preText" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[To configure Azure Monitor for Windows Virtual Desktop Insights, see the]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[若要設定適用於 Windows 虛擬桌面的 Azure 監視器見解，請參閱]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.CheckConfigLink.content.links.6cd11baae9d14898b1764e6cb52d1ef2.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
@@ -170,10 +266,13 @@
       </Item>
       <Item ItemId=";items.CheckConfigLink.content.links.6cd11baae9d14898b1764e6cb52d1ef2.preText" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[and follow the setup instructions in our]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[To use the configuration workbook, follow the setup instructions in our ]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[並遵循我們指南中的]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[and follow the setup instructions in our]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -222,55 +321,49 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.CheckHostPool.content.items.HostPoolDiag.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Host pool diagnostic settings: {HostPool}]]></Val>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.CheckHostPool.content.items.group0.content.items.NoDataPool.content.items.text0.content.json" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Azure Monitor is not configured for the selected WVD hostpool.  ]D;]A;You need to configure Diagnostic settings for the host pool.]D;]A;]D;]A;1. Select the Log analytics workspace in the **Pool workspace** parameter]D;]A;2. Select **Configure host pool**]D;]A;3. Select **Deploy**.]D;]A;After the deployment is completed, refresh the worbook by selecting the refresh button on the top.]D;]A;]D;]A;[More information on Azure Monitor for Windows Virtual Desktop]5D;(https://docs.microsoft.com/en-us/azure/virtual-desktop/diagnostics-log-analytics)]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[所選的 WVD 主機集區未設定 Azure 監視器。]D;]A;您必須設定主機集區的診斷設定。]D;]A;]D;]A;1. 在**集區工作區**參數中選取 Log Analytics 工作區]D;]A;2. 選取 [設定主機集區]5D;****]D;]A;3. 選取 [部署]5D;****。]D;]A;部署完成後，請選取上方的 [重新整理]5D; 按鈕以重新整理活頁簿。]D;]A;]D;]A;[適用於 Windows 虛擬桌面的 Azure 監視器詳細資訊]5D;(https://docs.microsoft.com/zh-tw/azure/virtual-desktop/diagnostics-log-analytics) (機器翻譯)]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.CheckHostPool.content.items.group0.content.items.text2.content.json" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[No existing Diagnostic configuration was found for the selected host pool.]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[找不到所選主機集區的任何現有診斷設定。]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.CheckHostPool.content.items.parameters2.content.parameters.47d10c5f30e749eca61dbc98f80e13b8.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Pool workspace]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[集區工作區]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.CheckHostPool.content.items.text1.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+      <Item ItemId=";items.CheckHostPool.content.items.CheckDiagSettingsMessage.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Check diagnostic settings for host pool: {HostPool:label}]]></Val>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.CheckHostPool.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.CheckHostPool.content.items.WVDHostpool.content.items.HostPoolDiag.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Host pool diagnostic settings]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[主機集區診斷設定]]></Val>
-          </Tgt>
+          <Val><![CDATA[Host pool diagnostic settings: {HostPool}]]></Val>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.LAConfig.content.items.LAConfigNotFound.content.items.text2.content.json" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.CheckHostPool.content.items.WVDHostpool.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Host pool {HostPool:name}]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.CheckHostPool.content.items.WVDWorkspace.content.items.WVDWorkspaceConfig.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[WVD worksapce diagnostic settings: {wvdworkspace}]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.CheckHostPool.content.items.WVDWorkspace.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[WVD workspace {wvdworkspace:name}]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.ConfigStepTabs.content.links.a92a047529d5404d8b876322463b5966.linkLabel" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Session hosts settings]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.ConfigStepTabs.content.links.ff91c2aa87a946ca80d9b99ea3c4c9ed.linkLabel" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[WVD resources diagnostic settings]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.LAConfig.content.items.LAConfigNotFound.content.items.NoLAConfigMessage.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[We did not find any Log Analytics configuration for the session hosts on the selected host pool,]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -279,7 +372,7 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.LAConfig.content.items.LAConfigNotFound.content.items.text3.content.json" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.LAConfig.content.items.LAConfigNotFound.content.items.SelectLAWorkspaceMessage.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Please, select a Log Analytics workspace to send session host data.  ]D;]A;[More information]5D;(https://docs.microsoft.com/en-us/azure/azure-monitor/platform/log-analytics-agent)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -288,7 +381,7 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.LAConfig.content.items.WorkspaceCheck.content.items.AddVmExtensions.content.items.text4.content.json" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.LAConfig.content.items.WorkspaceCheck.content.items.AddVmExtensions.content.items.TextLAMissing.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Some hosts on the host pool are not sending data to the selected Log Analytics workspace.  ]D;]A;Select **Add hosts to workspace** to add those hosts to the workspace.]D;]A;]D;]A;After the deployment is completed, refresh the worbook by selecting the refresh button on the top.]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -297,38 +390,32 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
+      <Item ItemId=";items.LAConfig.content.items.WorkspaceCheck.content.items.AddVmExtensions.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Session hosts]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[工作階段主機]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.LAConfig.content.items.WorkspaceCheck.content.items.EventsGroup.content.items.CurrentEvents1.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Current Events]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[Configured Events]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[目前事件]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Current Events]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.LAConfig.content.items.WorkspaceCheck.content.items.EventsGroup.content.items.query12.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[No missing events found]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[找不到任何缺少的事件]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.LAConfig.content.items.WorkspaceCheck.content.items.EventsGroup.content.items.query12.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.LAConfig.content.items.WorkspaceCheck.content.items.EventsGroup.content.items.MissingEvents.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Missing Events]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[缺少事件]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.LAConfig.content.items.WorkspaceCheck.content.items.EventsGroup.content.items.text5.content.json" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[If there are missing events, select **Open Workspace Configuration**.  ]D;]A;Then select **Data** and **Windows Event Logs**. Add the missing events.]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[若有缺少的事件，請選取 [開啟工作區設定]5D;****。]D;]A;然後選取 [資料]5D;**** 及 [Windows 事件記錄]5D;****。新增缺少的事件。]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -344,10 +431,13 @@
       </Item>
       <Item ItemId=";items.LAConfig.content.items.WorkspaceCheck.content.items.PerfGroup.content.items.CurrentCounters.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Workspace Performance Counters]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[Current Counters]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[工作區效能計數器]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Workspace Performance Counters]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -360,29 +450,29 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.LAConfig.content.items.WorkspaceCheck.content.items.PerfGroup.content.items.text4.content.json" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.LAConfig.content.items.WorkspaceCheck.content.items.PerfGroup.content.items.TextMissingCounters.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[If there are missing performance counters, select **Configure Performance Counters**.  ]D;]A;After the deployment is complete, refresh the workbook.]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[若有缺少的效能計數器，請選取 [設定效能計數器]5D;****。]D;]A;完成部署之後，請重新整理活頁簿。]]></Val>
-          </Tgt>
+          <Val><![CDATA[If there are missing performance counters, select **Configure performance counters**.  ]D;]A;After the deployment is complete, refresh the workbook.]]></Val>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.LAConfig.content.items.parameters4.content.parameters.4538b6d84e3f4b2b9eeccd606de714bb.label" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.LAConfig.content.items.WorkspaceCheck.content.items.PerfGroup.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Workspace performance counter]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.LAConfig.content.items.parametersLAconfig.content.parameters.4538b6d84e3f4b2b9eeccd606de714bb.description" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Select the Log Analytics workspace to send session hosts data]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.LAConfig.content.items.parametersLAconfig.content.parameters.4538b6d84e3f4b2b9eeccd606de714bb.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Hosts Workspace]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[主機工作區]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.LAConfig.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Log Analytics Configuration]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Log Analytics 設定]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />

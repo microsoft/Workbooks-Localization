@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<LCX SchemaVersion="6.0" Name="S:\output\loc\Workloads\Edit profile.resjson" PsrId="306" SrcCul="en-US" xmlns="http://schemas.microsoft.com/locstudio/2006/6/lcx" TgtCul="pt-BR">
+<LCX SchemaVersion="6.0" Name="S:\output\loc\Workloads\Edit profile.resjson" PsrId="306" FileType="1" SrcCul="en-US" TgtCul="pt-BR" xmlns="http://schemas.microsoft.com/locstudio/2006/6/lcx">
   <OwnedComments>
     <Cmt Name="Dev" />
     <Cmt Name="LcxAdmin" />
@@ -16,9 +16,6 @@
             <Val><![CDATA[All set to update your monitoring profile **{ProfileName}**. ]A;]A;The ARM template used to deploy the profile can be inspected by clicking on the `View template` button below.]A;]A;Click the `Update monitoring profile` button below to create the profile. ]A;]A;> **Note**: This process may take up to 2 minutes. Please refresh the workbook after updating your profile.]]></Val>
           </Str>
           <Disp Icon="Str" />
-          <Cmts>
-            <Cmt Name="Dev"><![CDATA[{Locked={ProfileName}}]]></Cmt>
-          </Cmts>
         </Item>
         <Item ItemId=";(...) RunContext.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
@@ -29,13 +26,31 @@
       </Item>
       <Item ItemId=";items.CollectionSettings.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[### 2. Collection settings]D;]A;]D;]A;Configure Monitoring data collection for your profile.]D;]A;]D;]A;Note that the config below are merged with per-machine configs from associated monitoring virtual machines. Make sure to validate your config changes with `Add monitoring virtual machine` and `Configure` monitoring machine scenarios. Learn about [workload monitoring configurations]5D;(https://github.com/acearun/managedsolutions/blob/master/Documentation/Workloads/wli-configs.md).]A;]A;]]></Val>
+          <Val><![CDATA[### 2. Collection settings]D;]A;]D;]A;Configure Monitoring data collection for your profile.]D;]A;]D;]A;Note that the config below are merged with per-machine configs from associated monitoring virtual machines. Make sure to validate your config changes with `Add monitoring virtual machine` and `Configure` monitoring machine scenarios. Learn about [workload monitoring configurations<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" height="12" width="12" style="margin: 0px 0px -2px 3px">]D;]A;  <path d="M14.3,1.5H10V.5h6v6H15V2.2l-8,8-.7-.7Z" />]D;]A;  <path d="M11,8.5v5a.9.9,0,0,1-.787,1,.948.948,0,0,1-.213,0H2a.9.9,0,0,1-1-.787A.948.948,0,0,1,1,13.5v-7a.9.9,0,0,1,.787-1A.948.948,0,0,1,2,5.5H8l1-1H2a2,2,0,0,0-2,2v7a2,2,0,0,0,2,2h8a2,2,0,0,0,2-2v-6Z" />]D;]A;</svg> ]5D;(https://aka.ms/azuresqlinsights/docs/profileconfig).]A;]A;]]></Val>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Destinationparameters.content.parameters.748b3ba7733343979dc6e5e9eef468d7.description" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Destinationparameters.content.parameters.748b3ba7733343979dc6e5e9eef468d7.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Workspace subscription]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Assinatura do workspace]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Destinationparameters.content.parameters.e109f40d1b754c2c9eecff5e25ba58cf.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Set the workspace to send monitoring data to. This list is limited to the workspaces in the location of the monitoring profile]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Destinationparameters.content.parameters.e109f40d1b754c2c9eecff5e25ba58cf.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Log Analytics workspace]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Workspace do Log Analytics]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -54,12 +69,18 @@
       <Item ItemId=";items.MonitoringProfiledata.content.parameters.748b3ba7733343979dc6e5e9eef468d7.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Subscription]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Assinatura]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.MonitoringProfiledata.content.parameters.79dd10a3751e4dc28ab28f3a93319a1c.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Data source name]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Nome da fonte de dados]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -78,6 +99,9 @@
       <Item ItemId=";items.MonitoringProfiledata.content.parameters.e08ad21a169646749104066d372b94ac.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Destination name]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Nome do destino]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -108,6 +132,9 @@
       <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Edit profile]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Editar o perfil]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

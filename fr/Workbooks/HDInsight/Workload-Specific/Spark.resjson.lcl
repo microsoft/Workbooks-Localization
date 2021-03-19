@@ -405,30 +405,6 @@
           <Disp Icon="Str" />
         </Item>
       </Item>
-      <Item ItemId=";@items.Usage.content.items.HiveWrapper.content.items.HiveServerInteractive.content.items.OperationAverageLatencies" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) .content.title" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[Operation Average Latencies]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Latences moyennes d'opération]]></Val>
-            </Tgt>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-      </Item>
-      <Item ItemId=";@items.Usage.content.items.HiveWrapper.content.items.HiveServerInteractive.content.items.OperationCounts.content.t" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) itle" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[Operation  Counts]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Nombre d'opérations]]></Val>
-            </Tgt>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-      </Item>
       <Item ItemId=";@items.Usage.content.items.SystemMetrics.content.items.Disk.content.items.DiskWriteCountPerSecondbyHost.content.ti" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) tle" ItemType="0" PsrId="306" Leaf="true">
@@ -549,9 +525,18 @@
           <Disp Icon="Str" />
         </Item>
       </Item>
-      <Item ItemId=";@items.Usage.content.items.Yarn.content.items.NodeManager.content.items.NodeManagerDisk.content.items.query0.conte" ItemType="0" PsrId="306" Leaf="false">
+      <Item ItemId=";@items.Usage.content.items.Yarn.content.items.NodeManager.content.items.NodeManagerDisk.content.items.DiskUtilizat" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) nt.title" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) ionforGoodLocalDirs.content.title" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Disk Utilization for Good Local Dirs]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Utilisation de disque pour les répertoires locaux corrects]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) ionforGoodLogDirs.content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Disk Utilization for Good Log Dirs]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -561,34 +546,25 @@
           <Disp Icon="Str" />
         </Item>
       </Item>
-      <Item ItemId=";@items.Usage.content.items.Yarn.content.items.NodeManager.content.items.NodeManagerDisk.content.items.query0Copy.c" ItemType="0" PsrId="306" Leaf="false">
+      <Item ItemId=";@items.Usage.content.items.Yarn.content.items.NodeManager.content.items.NodeManagerDisk.content.items.NumBadLocalD" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) ontent.title" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) irs.content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Disk Utilization for Good Local Dirs]]></Val>
+            <Val><![CDATA[Num Bad Local Dirs]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Utilisation de disque pour les répertoires locaux corrects]]></Val>
+              <Val><![CDATA[Nombre de répertoires locaux incorrects]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
       </Item>
-      <Item ItemId=";@items.Usage.content.items.Yarn.content.items.NodeManager.content.items.NodeManagerDisk.content.items.query0CopyCo" ItemType="0" PsrId="306" Leaf="false">
+      <Item ItemId=";@items.Usage.content.items.Yarn.content.items.NodeManager.content.items.NodeManagerDisk.content.items.NumBadLogDir" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) py.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) s.content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Num Bad Log Dirs]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
               <Val><![CDATA[Nombre de répertoires de journal incorrects]]></Val>
-            </Tgt>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-        <Item ItemId=";(...) pyCopy.content.title" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[Num Bad Local Dirs]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Nombre de répertoires locaux incorrects]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
@@ -813,128 +789,269 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Usage.content.items.HiveWrapper.content.items.HiveMetricsNA.content.items.text0.content.json" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Usage.content.items.HiveMetricsNotPresent.content.items.text0.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Metrics and Logs are not flowing to the Hive tables. If the cluster is version 3.6, Hive Metrics are not available. Otherwise, there may be an issue with the pipeline preventing metrics and logs from reaching your workspace. ]]></Val>
+          <Val><![CDATA[No Hive Metrics are present for this cluster. Note that Hive Metrics are not available for ESP clusters currently.]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Usage.content.items.HiveServerInteractive.content.items.NumberofActiveSinks.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Number of Active Sinks]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Usage.content.items.HiveServerInteractive.content.items.NumberofActiveSources.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Number of Active Sources]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Usage.content.items.HiveServerInteractive.content.items.OperationAverageLatencies.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Operation Average Latencies]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Les métriques et les journaux ne sont pas transmis aux tables Hive. Si le cluster a la version 3.6, les métriques Hive ne sont pas disponibles. Sinon, il y a peut-être un problème au niveau du pipeline qui empêche les métriques et les journaux d'accéder à votre espace de travail. ]]></Val>
+            <Val><![CDATA[Latences moyennes d'opération]]></Val>
           </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Usage.content.items.HiveServerInteractive.content.items.OperationCounts.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Operation  Counts]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Nombre d'opérations]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Usage.content.items.HiveServerInteractive.content.items.PublishAverageTime.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Publish Average Time]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Usage.content.items.HiveServerInteractive.content.items.SinkTimelineAverageTime.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Sink Timeline Average Time]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Usage.content.items.HiveServerInteractive.content.items.SnapshotAverageTime.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Snapshot Average Time]]></Val>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Usage.content.items.Spark.content.items.Applications.content.items.ApplicationStatuses.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Application Statuses]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[États des applications]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Usage.content.items.Spark.content.items.Jobs.content.items.JobsStatuses.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Jobs Statuses]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[États des travaux]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Usage.content.items.Spark.content.items.Jobs.content.items.query0.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Usage.content.items.Spark.content.items.Jobs.content.items.JobswithTopMetricValue.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Jobs with Top Metric Value]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Travaux avec une valeur Top de métrique]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Usage.content.items.Spark.content.items.Jobs.content.items.StagesMetricComparison.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Stages Metric Comparison]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Comparaison des métriques d'étape]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Usage.content.items.Spark.content.items.Jobs.content.items.query2.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Usage.content.items.Spark.content.items.Jobs.content.items.TotalNumberofJobs.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No jobs have run in this time range]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Aucun travail n'a été exécuté dans cet intervalle de temps]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Usage.content.items.Spark.content.items.Jobs.content.items.TotalNumberofJobs.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Total Number of Jobs]]></Val>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Usage.content.items.Spark.content.items.Jobs.content.items.query2Copy.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No Jobs have finished in this time range]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Aucun travail ne s'est terminé dans cet intervalle de temps]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Usage.content.items.Spark.content.items.Jobs.content.items.query2Copy.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Job Results]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Résultats du travail]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Usage.content.items.Spark.content.items.Jobs.content.items.query6.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Jobs with Top Metric Value]]></Val>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Usage.content.items.Spark.content.items.Overview.content.items.query4.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[VCore Statuses]]></Val>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Usage.content.items.Spark.content.items.Overview.content.items.query4Copy.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Usage.content.items.Spark.content.items.Overview.content.items.ActiveApplicationStatuses.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Active Application Statuses]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[États des applications actives]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Usage.content.items.Spark.content.items.Overview.content.items.query4CopyCopy.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Usage.content.items.Spark.content.items.Overview.content.items.AllocatedMBs.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Allocated Memory]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Usage.content.items.Spark.content.items.Overview.content.items.AllocatedVCores.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Allocated VCores]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Usage.content.items.Spark.content.items.Overview.content.items.AppsFailed.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Apps Failed]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Applications en échec]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Usage.content.items.Spark.content.items.Overview.content.items.AppsRunning.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Apps Running]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Applications en cours d'exécution]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Usage.content.items.Spark.content.items.Overview.content.items.CompletedApplicationStatuses.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Completed Application Statuses]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[États des applications exécutées]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Usage.content.items.Spark.content.items.Stage.content.items.query2.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Usage.content.items.Spark.content.items.Overview.content.items.VCoreStatuses.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Stage Overview]]></Val>
+          <Val><![CDATA[VCore Statuses]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[États des vCores]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Usage.content.items.Spark.content.items.Stage.content.items.query3.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Usage.content.items.Spark.content.items.SparkApplicationUsageNotPresent.content.items.text0.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[These graphs require Spark Application Logs to be present. Spark Application Logs are only generated when jobs have been run within the specified time range.]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Usage.content.items.Spark.content.items.Stage.content.items.StageDetails.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Stage Details]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Détails de l'étape]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Usage.content.items.Spark.content.items.Stage.content.items.query4.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Usage.content.items.Spark.content.items.Stage.content.items.StageOverview.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Stage Overview]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Vue d'ensemble de l'étape]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Usage.content.items.Spark.content.items.Stage.content.items.Top10TasksofSpecifiedMetricValue.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Top 10 Tasks of Specified Metric Value]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Top 10 des tâches avec la valeur de métrique spécifiée]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Usage.content.items.Spark.content.items.Tasks.content.items.BytesRead.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Bytes Read by Task]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Octets lus par tâche]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Usage.content.items.Spark.content.items.Tasks.content.items.BytesWrittenbyTask.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Bytes Written by Task]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Octets écrits par tâche]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Usage.content.items.Spark.content.items.Tasks.content.items.query0.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Jvm Gc Time by Task]]></Val>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Usage.content.items.Spark.content.items.Tasks.content.items.query0Copy.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Usage.content.items.Spark.content.items.Tasks.content.items.ExecutorRunTimebyTask.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Executor Run Time by Task]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Temps d'exécution de l'exécuteur par tâche]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Usage.content.items.Spark.content.items.Tasks.content.items.query5.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Usage.content.items.Spark.content.items.Tasks.content.items.JvmGcTimebyTask.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Task Types]]></Val>
+          <Val><![CDATA[Jvm Gc Time by Task]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Temps GC JVM par tâche]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Usage.content.items.Spark.content.items.Tasks.content.items.query5Copy.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Usage.content.items.Spark.content.items.Tasks.content.items.TaskResults.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Task Results]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Résultats de la tâche]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Usage.content.items.Spark.content.items.Tasks.content.items.TaskTypes.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Task Types]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Types de tâche]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -970,7 +1087,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Stages]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Phases]]></Val>
+            <Val><![CDATA[Étapes]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -1002,15 +1119,6 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Usage.content.items.SystemMetrics.content.items.CPU.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[CPU Metrics]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Métriques du processeur]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
       <Item ItemId=";items.Usage.content.items.SystemMetrics.content.items.Disk.content.items.DiskReadCountPerSecond.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Disk Read Count Per Second by Host]]></Val>
@@ -1038,21 +1146,18 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Usage.content.items.SystemMetrics.content.items.Disk.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Disk]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Disque]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
       <Item ItemId=";items.Usage.content.items.SystemMetrics.content.items.Load.content.items.query0.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[One Minute Load by Node Type]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Chargement d'une minute par type de nœud]]></Val>
           </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Usage.content.items.SystemMetrics.content.items.Load.content.items.query0Copy.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[One Minute Load by Node]]></Val>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1065,178 +1170,13 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Usage.content.items.SystemMetrics.content.items.Load.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Usage.content.items.SystemMetrics.content.items.Load.content.items.query0Copya.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Load Metrics]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Métriques de chargement]]></Val>
-          </Tgt>
+          <Val><![CDATA[Five Minute Load by Node Type]]></Val>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Usage.content.items.SystemMetrics.content.items.Memory.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Memory Metrics]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Métriques de mémoire]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Usage.content.items.SystemMetrics.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[System Metrics]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Métriques du système]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Usage.content.items.Yarn.content.items.Apps.content.items.AppStates.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[App States]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[États de l'application]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Usage.content.items.Yarn.content.items.Apps.content.items.AvgAMLaunchDelayTimeinMS.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Avg AM Launch Delay Time in MS]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Délai moyen de lancement du logiciel anti-programme malveillant en ms]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Usage.content.items.Yarn.content.items.Apps.content.items.AvgAMRegisterDelayTimeinMS.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Avg AM Register Delay Time in MS]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Délai moyen d'inscription du logiciel anti-programme malveillant en ms]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Usage.content.items.Yarn.content.items.Apps.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Yarn App Metrics]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Métriques d'application Yarn]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Usage.content.items.Yarn.content.items.NodeManager.content.items.Containers.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Node Manager Containers]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Conteneurs du gestionnaire de nœuds]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Usage.content.items.Yarn.content.items.NodeManager.content.items.NodeManagerDisk.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Node Manager Disk]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Disque du gestionnaire de nœuds]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Usage.content.items.Yarn.content.items.NodeManager.content.items.NodeManagerMemory.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Node Manager Memory]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Mémoire du gestionnaire de nœuds]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Usage.content.items.Yarn.content.items.NodeManager.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Node Manager]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Gestionnaire de nœuds]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Usage.content.items.Yarn.content.items.Overview.content.items.ClusterMemoryAvailable.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Cluster Memory Available]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Mémoire de cluster disponible]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Usage.content.items.Yarn.content.items.Overview.content.items.ClusterMemoryAvailableCopy.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Cluster Memory Available]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Mémoire de cluster disponible]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Usage.content.items.Yarn.content.items.Overview.content.items.ResourceManagerHeap.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Resource Manager Heap Usage]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Utilisation du tas du gestionnaire de ressources]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Usage.content.items.Yarn.content.items.Overview.content.items.RunningApps.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Running Apps]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Applications en cours d'exécution]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Usage.content.items.Yarn.content.items.Overview.content.items.query0.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Active Nodes]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Nœuds actifs]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Usage.content.items.Yarn.content.items.Overview.content.items.query4.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Node States]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[États du nœud]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Usage.content.items.Yarn.content.items.Overview.content.items.query4Copy.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[App States]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[États de l'application]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Usage.content.items.Yarn.content.items.Overview.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[YARN Cluster Overview]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Vue d'ensemble du cluster YARN]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Usage.content.items.Yarn.content.items.YARNJVM.content.items.query0.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Usage.content.items.Yarn.content.items.YARNJVM.content.items.JVMHeapUsageinMB.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[JVM Heap Usage in MB]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -1272,27 +1212,96 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Usage.content.items.Yarn.content.items.YARNJVM.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Usage.content.items.Yarn.content.items.YARNOverview.content.items.ClusterMemoryAvailable.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[YARN JVM]]></Val>
+          <Val><![CDATA[Cluster Memory Available]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[JVM YARN]]></Val>
+            <Val><![CDATA[Mémoire de cluster disponible]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Usage.content.items.Yarn.content.items.YARNTimelineServer.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Usage.content.items.Yarn.content.items.YARNOverview.content.items.ClusterMemoryAvailableCopy.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[YARN Timeline Server]]></Val>
+          <Val><![CDATA[Cluster Memory Available]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Serveur de chronologie YARN]]></Val>
+            <Val><![CDATA[Mémoire de cluster disponible]]></Val>
           </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Usage.content.items.Yarn.content.items.YARNOverview.content.items.ResourceManagerHeap.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Resource Manager Heap Usage]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Utilisation du tas du gestionnaire de ressources]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Usage.content.items.Yarn.content.items.YARNOverview.content.items.RunningApps.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Running Apps]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Applications en cours d'exécution]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Usage.content.items.Yarn.content.items.YARNOverview.content.items.query0.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Active Nodes]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Nœuds actifs]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Usage.content.items.Yarn.content.items.YARNOverview.content.items.query4.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Node States]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[États du nœud]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Usage.content.items.Yarn.content.items.YARNOverview.content.items.query4Copy.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[App States]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[États de l'application]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Usage.content.items.Yarn.content.items.YarnAppMetrics.content.items.AppStates.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[App States]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[États de l'application]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Usage.content.items.Yarn.content.items.YarnAppMetrics.content.items.AvgAMLaunchDelayTimeinMS.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Avg AM Launch Delay Time]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Usage.content.items.Yarn.content.items.YarnAppMetrics.content.items.AvgAMRegisterDelayTimeinMS.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Avg AM Register Delay Time]]></Val>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Usage.content.items.Yarn.content.items.links0.content.links.3a013ca811d24ca8af6db15b80d7a042.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Node Managers]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Gestionnaires de nœuds]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1377,15 +1386,12 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.text0.content.json" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[# HDInsight Spark Insights]]></Val>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
       <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[HDInsight Spark Insights]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Insights HDInsight Spark]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

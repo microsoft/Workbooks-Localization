@@ -74,10 +74,13 @@
       </Item>
       <Item ItemId=";items.Help.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[#### Welcome to System Updates Dashboard workbook (preview)]D;]A;This workbook is based on a recommendation [**System updates should be installed on your machines**]5D;(http://portal.azure.com/#blade/Microsoft_Azure_Security/RecommendationsBlade/assessmentKey/4ab6e3c5-74dd-8b35-9ab9-f61b30875b27) and will help you to identify machines with outdenting updates.<br>]D;]A;You can choose either resource or update view. Clicking on each chart will apply filters by on the field.]D;]A;For more information about this workbook, navigate to [here]5D;(https://aka.ms/sentinelipsetup).<br>]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[#### Üdvözli a Rendszerfrissítési irányítópult munkafüzete (előzetes verzió)]D;]A;A munkafüzet egy javaslaton alapul [**A rendszerfrissítéseket telepíteni kell a gépeken**]5D;(http://portal.azure.com/#blade/Microsoft_Azure_Security/RecommendationsBlade/assessmentKey/4ab6e3c5-74dd-8b35-9ab9-f61b30875b27), segítségével pedig azonosíthatja a függőben lévő frissítésekkel rendelkező gépeket.<br>]D;]A;Erőforrás- és frissítési nézet közül választhat. A diagramokra kattintva alkalmazhatja a szűrőket a mezőre.]D;]A;További információt a munkafüzetrről [itt]5D;(https://aka.ms/sentinelipsetup) találhat.<br>]]></Val>
+          <Val><![CDATA[#### Welcome to the system updates workbook (preview)]D;]A;This workbook is based on a recommendation [**System updates should be installed on your machines**]5D;(http://portal.azure.com/#blade/Microsoft_Azure_Security/RecommendationsBlade/assessmentKey/4ab6e3c5-74dd-8b35-9ab9-f61b30875b27) and will help you to identify machines with outstanding updates.<br>]D;]A;You can choose between resource or update views.]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
+            <Val><![CDATA[#### Üdvözli a rendszerfrissítések munkafüzete (előzetes verzió)]D;]A;A munkafüzet egy javaslaton alapul [**A rendszerfrissítéseket telepíteni kell a gépeken**]5D;(http://portal.azure.com/#blade/Microsoft_Azure_Security/RecommendationsBlade/assessmentKey/4ab6e3c5-74dd-8b35-9ab9-f61b30875b27), segítségével pedig azonosíthatja a kihúzott frissítésekkel rendelkező gépeket.<br>]D;]A;Erőforrás- és frissítési nézet közül választhat. A diagramokra kattintva alkalmazhatja a szűrőket a mezőre.]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[#### Welcome to the system updates workbook (preview)]D;]A;This workbook is based on a recommendation [**System updates should be installed on your machines**]5D;(http://portal.azure.com/#blade/Microsoft_Azure_Security/RecommendationsBlade/assessmentKey/4ab6e3c5-74dd-8b35-9ab9-f61b30875b27) and will help you to identify machines with outdenting updates.<br>]D;]A;You can choose either resource or update view. Clicking on each chart will apply filters by on the field.]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -125,16 +128,22 @@
       </Item>
       <Item ItemId=";items.Resources.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Count of missing updates per unhealthy resource]]></Val>
+          <Val><![CDATA[Count of missing updates per unhealthy resource | Select a machine to view its missing updates]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Hiányzó frissítések száma nem megfelelő állapotú erőforrásonként]]></Val>
+            <Val><![CDATA[Hiányzó frissítések száma egy nem kifogástalan erőforrás esetében | A hiányzó frissítések megtekintéséhez válasszon ki egy gépet]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Count of missing updates per unhealthy resource]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.SeverityFilter.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+      <Item ItemId=";items.Subscriptions.content.gridSettings.labelSettings.ResourceGroup.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[]D83D;]DCA1; Selected filter for **severity:** {selectedSeverity}]]></Val>
+          <Val><![CDATA[Resource group]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Erőforráscsoport]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -143,15 +152,6 @@
           <Val><![CDATA[VM Count]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Virtuális gépek száma]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Subscriptions.content.gridSettings.labelSettings.resourceGroup.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Resource Group]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Erőforráscsoport]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -176,10 +176,13 @@
       </Item>
       <Item ItemId=";items.Subscriptions.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Count of machines with outsdanting updates per resource group]]></Val>
+          <Val><![CDATA[Count of machines with outstanding updates per resource group]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Függőben lévő frissítésekkel rendelkező gépek száma erőforráscsoportonként]]></Val>
+            <Val><![CDATA[Hátralévő frissítésekkel rendelkező gépek száma erőforráscsoportonként]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Count of machines with outsdanting updates per resource group]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -203,10 +206,13 @@
       </Item>
       <Item ItemId=";items.Tabs.content.parameters.164e2bfb09f548159a0e44a3f9a26f16.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Toggle to show Help for each tab.]]></Val>
+          <Val><![CDATA[Toggle to show help for this workbook]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Kapcsoló az egyes lapok súgójának megjelenítéséhez.]]></Val>
+            <Val><![CDATA[Váltás a munkafüzet súgójának megjelenítéséhez]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Toggle to show Help for each tab.]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -215,15 +221,6 @@
           <Val><![CDATA[Show Help]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Súgó megjelenítése]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Tabs.content.parameters.ca214f0daa7a464ab693c22db46ae52f.description" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Select subscription]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Előfizetés kiválasztása]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -239,55 +236,73 @@
       </Item>
       <Item ItemId=";items.Updates.content.gridSettings.labelSettings.OperatingSystem.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Operating System]]></Val>
+          <Val><![CDATA[Operating system]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Operációs rendszer]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Operating System]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Updates.content.gridSettings.labelSettings.OsType.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[OS Type]]></Val>
+          <Val><![CDATA[OS type]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Operációs rendszer típusa]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[OS Type]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Updates.content.gridSettings.labelSettings.PublishedDate.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Release Date]]></Val>
+          <Val><![CDATA[Release date]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Kiadás dátuma]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Release Date]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Updates.content.gridSettings.labelSettings.RebootBehavior.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Reboot Behavior]]></Val>
+          <Val><![CDATA[Reboot behavior]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Újraindítási viselkedés]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Reboot Behavior]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Updates.content.gridSettings.labelSettings.RemediationSteps.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Remediation Steps]]></Val>
+          <Val><![CDATA[Remediation steps]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Eltávolítási lépések]]></Val>
+            <Val><![CDATA[Szervizelési lépések]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Remediation Steps]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Updates.content.gridSettings.labelSettings.ResourceGroup.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Resource Group]]></Val>
+          <Val><![CDATA[Resource group]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Erőforráscsoport]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Resource Group]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -302,9 +317,21 @@
       </Item>
       <Item ItemId=";items.Updates.content.items.AffectedMachines.content.gridSettings.labelSettings.DownloadLink.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Download]]></Val>
+          <Val><![CDATA[Download patch]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Letöltés]]></Val>
+            <Val><![CDATA[Javítás letöltése]]></Val>
+          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Download]]></Val>
+          </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Updates.content.items.AffectedMachines.content.gridSettings.labelSettings.KBID.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Remediation]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Korrigálás]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -320,10 +347,13 @@
       </Item>
       <Item ItemId=";items.Updates.content.items.AffectedMachines.content.gridSettings.labelSettings.OsType.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Operating System]]></Val>
+          <Val><![CDATA[Operating system]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Operációs rendszer]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Operating System]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -347,28 +377,25 @@
       </Item>
       <Item ItemId=";items.Updates.content.items.AffectedMachines.content.gridSettings.labelSettings.RebootBehavior.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Reboot Behavior]]></Val>
+          <Val><![CDATA[Reboot behavior]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Újraindítási viselkedés]]></Val>
           </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Updates.content.items.AffectedMachines.content.gridSettings.labelSettings.RemediationSteps.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Remediation]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Korrigálás]]></Val>
-          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Reboot Behavior]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Updates.content.items.AffectedMachines.content.gridSettings.labelSettings.ResourceGroup.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Resource Group]]></Val>
+          <Val><![CDATA[Resource group]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Erőforráscsoport]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Resource Group]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -392,19 +419,25 @@
       </Item>
       <Item ItemId=";items.Updates.content.items.MissingUpdates.content.gridSettings.labelSettings.AffectedResources.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Affected Machines]]></Val>
+          <Val><![CDATA[Affected machines]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Érintett számítógépek]]></Val>
+            <Val><![CDATA[Érintett gépek]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Affected Machines]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Updates.content.items.MissingUpdates.content.gridSettings.labelSettings.OsType.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Operating System]]></Val>
+          <Val><![CDATA[Operating system]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Operációs rendszer]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Operating System]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -419,16 +452,19 @@
       </Item>
       <Item ItemId=";items.Updates.content.items.MissingUpdates.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Missing System Updates]]></Val>
+          <Val><![CDATA[Missing system updates | Select an update to see the affected machines]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Hiányzó rendszerfrissítések]]></Val>
+            <Val><![CDATA[Hiányzó rendszerfrissítések | Válasszon frissítést az érintett gépek megjelenítéséhez]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Missing System Updates]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Updates.content.items.SelectedUpdate.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[<br>]D;]A;#### ]D83D;]DCA1; List of affected machined by: {selectedUpdate}]]></Val>
+          <Val><![CDATA[<br>]D;]A;]D83D;]DCA1; Machines missing update: {selectedUpdate}]]></Val>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -447,6 +483,12 @@
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Hiányzó rendszerfrissítések listája]]></Val>
           </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";settings.description" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[View missing system updates by resources, OS, severity, and more]]></Val>
         </Str>
         <Disp Icon="Str" />
       </Item>
