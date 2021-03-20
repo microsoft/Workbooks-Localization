@@ -12,6 +12,9 @@
       <Item ItemId=";items.ADFSLockoutTitle.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[]D;]A;]D;]A;## AD FS Account Lockout Analysis]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[]D;]A;]D;]A;## Анализ блокировки учетной записи AD FS]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -48,6 +51,9 @@
       <Item ItemId=";items.DeviceTitle.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Sign-In Analysis by Device]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Анализ входа по устройствам]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -75,18 +81,27 @@
       <Item ItemId=";items.LocationTitle.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Sign-In Analysis by Location]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Анализ входа по расположениям]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.ShowHelpADFS.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Data from AD FS is aggregated and sent through the Azure AD Connect Health agent to the Azure AD Sign-Ins Report and Log Analytics.]D;]A;AD FS Account Lockout information is aggregated from AD FS Events 411, 1500, and is marked in the Azure AD logs as Error Code 30030. ]D;]A;]D;]A;Additional data provided in logs relaged to AD FS lockouts include:]D;]A;- Attempted Login Name (Alternate Login In)]D;]A;- IP the Request Originated From ]D;]A;- User Agent String]D;]A;]D;]A;If no data is present, verify that the Connect Health agent for AD FS is installed, upgraded to the latest version, and the "ADFSSignInLogs" stream in Log Analytics is enabled.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Данные из AD FS объединяются и отправляются через агент Azure AD Connect Health в отчет о входах в Azure AD и в службу Log Analytics.]D;]A;Сведения о блокировке учетных записей AD FS объединяются из событий AD FS 411 и 1500 и помечаются в журналах Azure AD как ошибки с кодом 30030. ]D;]A;]D;]A;Дополнительные данные в журналах, связанные с блокировками AD FS, включают в себя следующее:]D;]A;— предоставленное имя входа (альтернативный вход в систему);]D;]A;— IP-адрес, с которого поступил запрос; ]D;]A;— строка агента пользователя.]D;]A;]D;]A;Если данные отсутствуют, убедитесь в том, что агент Connect Health для AD FS установлен и обновлен до последней версии и что в службе Log Analytics включен поток ADFSSignInLogs.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.ShowHelpChangeLogs.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Change Log]D;]A;]D;]A;As updates and fixes are made to the preview Workbook, they will be tracked.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Журнал изменений]D;]A;]D;]A;Здесь отслеживаются обновления и исправления, вносимые в предварительную версию книги.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -126,12 +141,18 @@
       <Item ItemId=";items.SignInAnalysisErrorTitle.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Sign-In Error Analysis]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Анализ ошибок входа]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.SignInsWorkbookTitle.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Sign-in Analysis Workbook (Preview)]D;]A;This workbook will help you analyze your organization's sign-ins for both Azure AD and AD FS Sign-Ins. For help as you navigate this workbook, toggle Show Help below.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# Книга анализа входа (предварительная версия)]D;]A;Эта книга поможет вам в анализе операций входа в Azure AD и AD FS в вашей организации. Чтобы получить помощь в процессе работы с этой книгой, щелкните переключатель "Показать справку" ниже.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -144,6 +165,9 @@
       <Item ItemId=";items.SummaryTitle.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Sign-In Activity Summary]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Сводка действий входа]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -198,6 +222,9 @@
       <Item ItemId=";items.text20.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[]D;]A;]D;]A;## Top Sign-In Errors by User or IP]D;]A;Select the parameter value below to display the query based on the parameter you would like to view.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[]D;]A;]D;]A;## Основные ошибки входа по пользователям или IP-адресам]D;]A;Выберите значение параметра ниже, чтобы отобразить запрос на основе требуемого параметра.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
