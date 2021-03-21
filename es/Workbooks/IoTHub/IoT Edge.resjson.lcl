@@ -9,30 +9,6 @@
     <Disp Icon="Expand" Expand="true" Disp="true" LocTbl="false" />
     <Item ItemId=";Strings" ItemType="0" PsrId="306" Leaf="false">
       <Disp Icon="Str" Disp="true" LocTbl="false" />
-      <Item ItemId=";@items.devicegroup.content.items.devicedetailsgroup.content.items.connectedclientsgroup.content.items.infotipgroup" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) .content.items.text5b.content.json" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[<br>]A;]A;]D83D;]DCA1; **Select a row on the left to further drill-in**]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[<br>]A;]A;]D83D;]DCA1; **Seleccione una fila de la izquierda para obtener más detalles.**]]></Val>
-            </Tgt>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-      </Item>
-      <Item ItemId=";@items.devicegroup.content.items.devicedetailsgroup.content.items.connectedclientsgroup.content.items.query1.conte" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) nt.title" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[Connected clients count]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Recuento de clientes conectados]]></Val>
-            </Tgt>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-      </Item>
       <Item ItemId=";@items.devicegroup.content.items.devicedetailsgroup.content.items.healthgroup.content.items.droppedmessagedetails." ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) content.items.alloriginmsgdroppedchart.content.title" ItemType="0" PsrId="306" Leaf="true">
@@ -261,9 +237,27 @@
           <Disp Icon="Str" />
         </Item>
       </Item>
-      <Item ItemId=";@items.devicegroup.content.items.devicedetailsgroup.content.items.messagedetails.content.gridSettings.labelSetting" ItemType="0" PsrId="306" Leaf="false">
+      <Item ItemId=";@items.devicegroup.content.items.devicedetailsgroup.content.items.logsgroup.content.items.query1.content.noDataMes" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) s.MsgRate.label" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) sage" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Log content too large for selected module! Choose a shorter timerange.]]></Val>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
+      <Item ItemId=";@items.devicegroup.content.items.devicedetailsgroup.content.items.logsgroup.content.items.refineTimeRange.content." ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) title" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Refine time range]]></Val>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
+      <Item ItemId=";@items.devicegroup.content.items.devicedetailsgroup.content.items.messagedetailsleftpane.content.items.messagedeta" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) ils.content.gridSettings.labelSettings.MsgRate.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Rate]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -272,7 +266,7 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
-        <Item ItemId=";(...) s.P90Latency.label" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) ils.content.gridSettings.labelSettings.P90Latency.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Latency (p90)]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -281,7 +275,7 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
-        <Item ItemId=";(...) s.medianQSize.label" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) ils.content.gridSettings.labelSettings.medianQSize.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[QLen (p90)]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -290,7 +284,7 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
-        <Item ItemId=";(...) s.messageCount.label" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) ils.content.gridSettings.labelSettings.messageCount.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Count]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -299,10 +293,49 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
+        <Item ItemId=";(...) ils.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[No messages were routed]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[No se enrutó ningún mensaje.]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
       </Item>
-      <Item ItemId=";@items.devicegroup.content.items.devicedetailsgroup.content.items.messagingrouting.content.items.query0Copy.conten" ItemType="0" PsrId="306" Leaf="false">
+      <Item ItemId=";@items.devicegroup.content.items.devicedetailsgroup.content.items.messagedetailsrightpane.content.items.connectedc" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) t.chartSettings.seriesLabelSettings.0.label" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) lientsgroup.content.items.infotipgroup.content.items.text5b.content.json" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[<br>]A;]A;]D83D;]DCA1; **Select a row on the left to further drill-in**]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[<br>]A;]A;]D83D;]DCA1; **Seleccione una fila de la izquierda para obtener más detalles.**]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) lientsgroup.content.items.query1.content.title" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Connected clients count]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Recuento de clientes conectados]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) lientsgroupCopy.content.items.query1.content.title" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Connected clients count]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Recuento de clientes conectados]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
+      <Item ItemId=";@items.devicegroup.content.items.devicedetailsgroup.content.items.messagedetailsrightpane.content.items.messagingr" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) outing.content.items.query0Copy.content.chartSettings.seriesLabelSettings.0.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Queue size]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -311,16 +344,13 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
-        <Item ItemId=";(...) t.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+        <Item ItemId=";(...) outing.content.items.query0Copy.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Queue length trend for {ep}]]></Val>
           </Str>
           <Disp Icon="Str" />
         </Item>
-      </Item>
-      <Item ItemId=";@items.devicegroup.content.items.devicedetailsgroup.content.items.messagingrouting.content.items.query0Copyb.conte" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) nt.chartSettings.seriesLabelSettings.0.label" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) outing.content.items.query0Copyb.content.chartSettings.seriesLabelSettings.0.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Queue size]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -329,7 +359,7 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
-        <Item ItemId=";(...) nt.chartSettings.seriesLabelSettings.1.label" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) outing.content.items.query0Copyb.content.chartSettings.seriesLabelSettings.1.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Send latency]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -338,7 +368,7 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
-        <Item ItemId=";(...) nt.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+        <Item ItemId=";(...) outing.content.items.query0Copyb.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Message send latency from {ep} to {pid}]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -347,10 +377,7 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
-      </Item>
-      <Item ItemId=";@items.devicegroup.content.items.devicedetailsgroup.content.items.messagingrouting.content.items.query1.content.ch" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) artSettings.seriesLabelSettings.0.label" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) outing.content.items.query1.content.chartSettings.seriesLabelSettings.0.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Messages sent]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -359,10 +386,7 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
-      </Item>
-      <Item ItemId=";@items.devicegroup.content.items.devicedetailsgroup.content.items.messagingrouting.content.items.query1.content.ti" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) tle" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+        <Item ItemId=";(...) outing.content.items.query1.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Messages sent by {ep} to {pid}]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -371,10 +395,7 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
-      </Item>
-      <Item ItemId=";@items.devicegroup.content.items.devicedetailsgroup.content.items.messagingrouting.content.items.query1Copy.conten" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) t.chartSettings.seriesLabelSettings.0.label" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) outing.content.items.query1Copy.content.chartSettings.seriesLabelSettings.0.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Messages sent]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -383,7 +404,7 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
-        <Item ItemId=";(...) t.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+        <Item ItemId=";(...) outing.content.items.query1Copy.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Messages sent to {ep}]]></Val>
           </Str>
@@ -548,10 +569,13 @@
       </Item>
       <Item ItemId=";items.devicegroup.content.items.devicedetailsgroup.content.items.allmodulescpu.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Average CPU usage across all cores]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[CPU usage (P90, system level)]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[Uso medio de CPU en todos los núcleos]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Average CPU usage across all cores]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -566,10 +590,13 @@
       </Item>
       <Item ItemId=";items.devicegroup.content.items.devicedetailsgroup.content.items.hostcpuquery.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[CPU utilization]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[CPU utilization (P90)]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[Uso de CPU]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[CPU utilization]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -600,29 +627,11 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.devicegroup.content.items.devicedetailsgroup.content.items.messagedetails.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[No messages were routed]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[No se enrutó ningún mensaje.]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
       <Item ItemId=";items.devicegroup.content.items.devicedetailsgroup.content.items.messagegraph.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No messages were routed]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[No se enrutó ningún mensaje.]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.devicegroup.content.items.devicedetailsgroup.content.items.messagingrouting.content.items.text2.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[ParentId: {pid}, qlen: {qlen}, msgCount: {mstCount}, latency: {latency}, id: {id}]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[ParentId: {pid}, qlen: {qlen}, msgCount: {mstCount}, latencia: {latency}, id.: {id}]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -828,6 +837,12 @@
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[## Realice la incorporación siguiendo las instrucciones de [aka.ms/edgemon-preview]5D; (https://aka.ms/edgemon-preview). <br>]A;*Asegúrese de seguir las indicaciones del paso 3 (Configuración del área de trabajo de Azure Monitor).*]]></Val>
           </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";settings.description" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Visualize built-in metrics]]></Val>
         </Str>
         <Disp Icon="Str" />
       </Item>
