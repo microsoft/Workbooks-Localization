@@ -49,19 +49,25 @@
         </Item>
         <Item ItemId=";(...) eaccountsRequestsDocumentCount.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Document Count (Sum)]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Document Count (Avg)]]></Val>
+            <Tgt Cat="Text" Stat="Update" Orig="New">
               <Val><![CDATA[문서 수(합계)]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[Document Count (Sum)]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) eaccountsRequestsDocumentCountTimeline.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Document Count (Sum) Timeline]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Document Count (Avg) Timeline]]></Val>
+            <Tgt Cat="Text" Stat="Update" Orig="New">
               <Val><![CDATA[문서 수(합계) 타임라인]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[Document Count (Sum) Timeline]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -138,9 +144,9 @@
           <Disp Icon="Str" />
         </Item>
       </Item>
-      <Item ItemId=";@items.Overview.content.items.FailedRequests.content.gridSettings.labelSettings.microsoftdocumentdbdatabaseaccount" ItemType="0" PsrId="306" Leaf="false">
+      <Item ItemId=";@items.Overview.content.items.ThrottledRequests429s.content.gridSettings.labelSettings.microsoftdocumentdbdatabase" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) sRequestsTotalRequests.label" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) accountsRequestsTotalRequests.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Total Requests (Count)]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -149,7 +155,7 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
-        <Item ItemId=";(...) sRequestsTotalRequestsTimeline.label" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) accountsRequestsTotalRequestsTimeline.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Total Requests (Count) Timeline]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -181,37 +187,25 @@
         </Item>
         <Item ItemId=";(...) DocumentCount.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Document Count (Sum)]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Document Count (Avg)]]></Val>
+            <Tgt Cat="Text" Stat="Update" Orig="New">
               <Val><![CDATA[문서 수(합계)]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[Document Count (Sum)]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) DocumentCountTimeline.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Document Count (Sum) Timeline]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Document Count (Avg) Timeline]]></Val>
+            <Tgt Cat="Text" Stat="Update" Orig="New">
               <Val><![CDATA[문서 수(합계) 타임라인]]></Val>
             </Tgt>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-        <Item ItemId=";(...) DocumentQuota.label" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[Document Quota (Sum)]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[문서 할당량(합계)]]></Val>
-            </Tgt>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-        <Item ItemId=";(...) DocumentQuotaTimeline.label" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[Document Quota (Sum) Timeline]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[문서 할당량(합계) 타임라인]]></Val>
-            </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[Document Count (Sum) Timeline]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -276,15 +270,6 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.AccountAudit.content.items.TableManagement.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Table Management (Creates, Updates, Deletes) and Table Throughput Updates]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[테이블 관리(만들기, 업데이트, 삭제) 및 테이블 처리량 업데이트]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
       <Item ItemId=";items.Availability.content.items.ServiceAvailabilityA.content.gridSettings.labelSettings.Subscription.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Subscription/Database/Collection]]></Val>
@@ -303,29 +288,65 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Latency.content.items.P99ReplicationLatency.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Container.content.parameters.82f8fb728e0145168115b62082df1e44.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[P99 Replication Latency (min/max/avg)]]></Val>
+          <Val><![CDATA[When the value is "unset" or not selected, the data being displayed is at the account level.]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Container.content.parameters.aa83f3705c474eb5b44afedcad97f71b.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Azure Cosmos DB]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[P99 복제 대기 시간(최소/최대/평균)]]></Val>
+            <Val><![CDATA[Azure Cosmos DB]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Latency.content.items.ServerSideLatencyByRegion.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Container.content.parameters.f5e823d59ac24aa2955346f0529f9f2f.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Server Side Latency (Avg) By Region]]></Val>
+          <Val><![CDATA[Time Range]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[시간 범위]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Latency.content.items.ServerSideLatencyByRegion.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Server Side Latency (Avg) By Region {DatabaseText} {ContainerText} ]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[지역별 서버 쪽 대기 시간(평균)]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Server Side Latency (Avg) By Region]]></Val>
+          </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.LatencyCopy.content.items.ServerSideLatencyByOperation.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Server Side Latency (Avg) By Operation {DatabaseText} {ContainerText} ]]></Val>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overview.content.items.CosmosDBAccountMetrics.content.gridSettings.labelSettings.Segment.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[CollectionName]]></Val>
+          <Val><![CDATA[Collection]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[컬렉션]]></Val>
+          </Tgt>
+          <Prev Cat="Text">
             <Val><![CDATA[CollectionName]]></Val>
+          </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Overview.content.items.CosmosDBAccountMetrics.content.gridSettings.labelSettings.Subscription.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Subscription/Database/Collection]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[구독/데이터베이스/컬렉션]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -339,84 +360,99 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Overview.content.items.FailedRequests.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Overview.content.items.NormalizedRUConsumption.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Failed Requests (429s)]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[실패한 요청(429초)]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Overview.content.items.NormalizedRUConsumption.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Normalized RU Consumption (max)]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[Normalized RU Consumption (max) {DatabaseText} {ContainerText} ]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[정규화된 RU 사용량(최대)]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Normalized RU Consumption (max)]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Overview.content.items.TotalRequests.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Overview.content.items.ThrottledRequests429s.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Total Requests]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[Throttled Requests (429s) {DatabaseText} {ContainerText}]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Overview.content.items.TotalRequests.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Total Requests {DatabaseText} {ContainerText}]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[총 요청]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Total Requests]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Overview.content.items.Usage.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Overview.content.items.Usage.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Data & Index Usage]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[Data & Index Usage {DatabaseText} {ContainerText} ]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[데이터 및 인덱스 사용량]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Data & Index Usage]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Requests.content.items.FailedRequests.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Requests.content.items.TotalRequests.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Failed Requests (429s)]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[실패한 요청(429초)]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Requests.content.items.TotalRequests.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Total Requests by Status Code]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[Total Requests by Status Code {DatabaseText} {ContainerText} ]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[상태 코드별 총 요청]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Total Requests by Status Code]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Requests.content.items.TotalRequestsbyOperationType.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Requests.content.items.TotalRequestsbyOperationType.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Total Requests by Operation Type]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[Total Requests by Operation Type {DatabaseText} {ContainerText} ]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[작업 유형별 총 요청]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Total Requests by Operation Type]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Storage.content.items.DocumentInfo.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Requests.content.items.metric3.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Document Count & Quota]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[Throttled Requests (429) {DatabaseText} {ContainerText}]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Storage.content.items.DocumentInfo.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Document Count {DatabaseText} {ContainerText} ]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[문서 수 및 할당량]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Document Count & Quota]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Storage.content.items.UsageA.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Storage.content.items.UsageA.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Data & Index Usage]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[Data & Index Usage {DatabaseText} {ContainerText} ]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[데이터 및 인덱스 사용량]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Data & Index Usage]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -444,21 +480,21 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.System.content.items.FailedMetadataRequests.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.System.content.items.MetadataRequestsbyStatusCode.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Metadata Requests That Exceeded Capacity (429s)]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[용량을 초과한 메타데이터 요청(429초)]]></Val>
+          <Val><![CDATA[Metadata Requests by Status Code {DatabaseText} {ContainerText} ]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
+            <Val><![CDATA[상태 코드별 메타데이터 요청]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Metadata Requests by Status Code]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.System.content.items.MetadataRequestsbyStatusCode.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.System.content.items.ThrottledMetadataRequests.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Metadata Requests by Status Code]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[상태 코드별 메타데이터 요청]]></Val>
-          </Tgt>
+          <Val><![CDATA[Metadata Requests That Exceeded Capacity (429s) {DatabaseText} {ContainerText} ]]></Val>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -534,21 +570,24 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Throughput.content.items.NormalizedRUByCollection.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Normalized RU Consumption By Collection]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[컬렉션별 정규화된 RU 사용량]]></Val>
-          </Tgt>
+      <Item ItemId=";items.Throughput.content.items.NormalizedRUByCollection.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+        <Str Cat="Text" UsrLk="true">
+          <Val><![CDATA[Normalized RU Consumption By Collection {DatabaseText}]]></Val>
+          <Prev Cat="Text">
+            <Val><![CDATA[Normalized RU Consumption By Collection]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Throughput.content.items.NormalizedRUConsumptionByPartitionKeyRangeID.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Throughput.content.items.NormalizedRUConsumptionByPartitionKeyRangeID.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Normalized RU Consumption (%) By PartitionKeyRangeID]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[Normalized RU Consumption (%) By PartitionKeyRangeID {DatabaseText} {ContainerText} ]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[PartitionKeyRangeID별 정규화된 RU 사용량(%)]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Normalized RU Consumption (%) By PartitionKeyRangeID]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -561,12 +600,15 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Throughput.content.items.NormalizedRUConsumptionHeatMap.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Throughput.content.items.NormalizedRUConsumptionHeatMap.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Normalized RU Consumption (Max) Heat Map By PartitionKeyRangeID]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[Normalized RU Consumption (Max) Heat Map By PartitionKeyRangeID {DatabaseText} {ContainerText} ]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[PartitionKeyRangeID별 정규화된 RU 사용량(최대) 열 지도]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Normalized RU Consumption (Max) Heat Map By PartitionKeyRangeID]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -615,20 +657,17 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.parameters0.content.parameters.aa83f3705c474eb5b44afedcad97f71b.label" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.parameters11.content.parameters.0abe0edd1fb046fbb7f26c0c21245fda.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Azure Cosmos DB]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Azure Cosmos DB]]></Val>
-          </Tgt>
+          <Val><![CDATA[When the value is "unset" or not selected, the data being displayed is at the database level.]]></Val>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.parameters0.content.parameters.f5e823d59ac24aa2955346f0529f9f2f.label" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.parameters12.content.parameters.247339f997394ce4829c5bfacee9aa22.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Time Range]]></Val>
+          <Val><![CDATA[Database]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[시간 범위]]></Val>
+            <Val><![CDATA[데이터베이스]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
