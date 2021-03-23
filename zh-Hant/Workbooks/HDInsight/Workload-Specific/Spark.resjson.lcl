@@ -792,18 +792,27 @@
       <Item ItemId=";items.Usage.content.items.HiveMetricsNotPresent.content.items.text0.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No Hive Metrics are present for this cluster. Note that Hive Metrics are not available for ESP clusters currently.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[此叢集中沒有任何 Hive 計量。請注意，Hive 計量目前僅適用於 ESP 叢集。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Usage.content.items.HiveServerInteractive.content.items.NumberofActiveSinks.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Number of Active Sinks]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[使用中的接收器數目]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Usage.content.items.HiveServerInteractive.content.items.NumberofActiveSources.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Number of Active Sources]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[使用中的來源數目]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -828,18 +837,27 @@
       <Item ItemId=";items.Usage.content.items.HiveServerInteractive.content.items.PublishAverageTime.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Publish Average Time]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[平均發佈時間]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Usage.content.items.HiveServerInteractive.content.items.SinkTimelineAverageTime.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Sink Timeline Average Time]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[平均接收時間軸時間]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Usage.content.items.HiveServerInteractive.content.items.SnapshotAverageTime.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Snapshot Average Time]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[平均快照時間]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -891,6 +909,9 @@
       <Item ItemId=";items.Usage.content.items.Spark.content.items.Jobs.content.items.TotalNumberofJobs.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Total Number of Jobs]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[作業數目總計]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -916,7 +937,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Active Application Statuses]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[使用中的應用程式狀態數]]></Val>
+            <Val><![CDATA[使用中的應用程式狀態]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -924,12 +945,18 @@
       <Item ItemId=";items.Usage.content.items.Spark.content.items.Overview.content.items.AllocatedMBs.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Allocated Memory]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[配置的記憶體]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Usage.content.items.Spark.content.items.Overview.content.items.AllocatedVCores.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Allocated VCores]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[配置的虛擬核心數]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -937,7 +964,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Apps Failed]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[失敗的應用程式]]></Val>
+            <Val><![CDATA[失敗的應用程式數]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -946,7 +973,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Apps Running]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[執行中的應用程式]]></Val>
+            <Val><![CDATA[執行中的應用程式數]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -955,7 +982,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Completed Application Statuses]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[完成的應用程式狀態數]]></Val>
+            <Val><![CDATA[完成的應用程式狀態]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -964,7 +991,7 @@
         <Str Cat="Text">
           <Val><![CDATA[VCore Statuses]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[虛擬核心狀態數]]></Val>
+            <Val><![CDATA[虛擬核心狀態]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -972,6 +999,9 @@
       <Item ItemId=";items.Usage.content.items.Spark.content.items.SparkApplicationUsageNotPresent.content.items.text0.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[These graphs require Spark Application Logs to be present. Spark Application Logs are only generated when jobs have been run within the specified time range.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[這些圖形需要 Spark 應用程式記錄檔才能顯示。當作業於指定時間範圍內執行時，才會產生 Spark 應用程式記錄檔。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1158,6 +1188,9 @@
       <Item ItemId=";items.Usage.content.items.SystemMetrics.content.items.Load.content.items.query0Copy.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[One Minute Load by Node]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[一分鐘負載 (依節點)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1173,6 +1206,9 @@
       <Item ItemId=";items.Usage.content.items.SystemMetrics.content.items.Load.content.items.query0Copya.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Five Minute Load by Node Type]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[五分鐘負載 (依節點類型)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1252,7 +1288,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Active Nodes]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[使用中的節點數]]></Val>
+            <Val><![CDATA[使用中的節點]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -1261,7 +1297,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Node States]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[節點狀態數]]></Val>
+            <Val><![CDATA[節點狀態]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -1270,7 +1306,7 @@
         <Str Cat="Text">
           <Val><![CDATA[App States]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[應用程式狀態數]]></Val>
+            <Val><![CDATA[應用程式狀態]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -1279,7 +1315,7 @@
         <Str Cat="Text">
           <Val><![CDATA[App States]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[應用程式狀態數]]></Val>
+            <Val><![CDATA[應用程式狀態]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -1287,12 +1323,18 @@
       <Item ItemId=";items.Usage.content.items.Yarn.content.items.YarnAppMetrics.content.items.AvgAMLaunchDelayTimeinMS.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Avg AM Launch Delay Time]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[平均 AM 啟動延遲時間]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Usage.content.items.Yarn.content.items.YarnAppMetrics.content.items.AvgAMRegisterDelayTimeinMS.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Avg AM Register Delay Time]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[平均 AM 登錄延遲時間]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

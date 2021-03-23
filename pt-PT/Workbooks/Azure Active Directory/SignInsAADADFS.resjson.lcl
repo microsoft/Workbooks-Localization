@@ -12,18 +12,27 @@
       <Item ItemId=";items.ADFSLockoutTitle.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[]D;]A;]D;]A;## AD FS Account Lockout Analysis]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[]D;]A;## Análise de Bloqueio de Contas do AD FS]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.ADFSLockouts.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No users currently have account lockouts. ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Não existem atualmente utilizadores com bloqueios de conta. ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.ADFSLockouts.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Users with Account Lockouts]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Utilizadores com Bloqueios de Contas]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -31,7 +40,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Device Sign-in details]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Detalhes de Inícios de Sessão de Dispositivos]]></Val>
+            <Val><![CDATA[Detalhes dos Inícios de Sessão no Dispositivo]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -48,6 +57,9 @@
       <Item ItemId=";items.DeviceTitle.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Sign-In Analysis by Device]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Análise de Início de Sessão por Dispositivo]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -55,7 +67,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Token Issuer Type]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Tipo de Emissor do Token]]></Val>
+            <Val><![CDATA[Tipo de Emissor de Tokens]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -63,42 +75,63 @@
       <Item ItemId=";items.LocationDetailsQuery.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Location Sign-In Details]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Detalhes de Início de Sessão por Localização]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.LocationMapQuery.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Sign-Ins Mapped by Country]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Inícios de Sessão Mapeados por País]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.LocationTitle.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Sign-In Analysis by Location]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Análise de Início de Sessão por Localização]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.ShowHelpADFS.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Data from AD FS is aggregated and sent through the Azure AD Connect Health agent to the Azure AD Sign-Ins Report and Log Analytics.]D;]A;AD FS Account Lockout information is aggregated from AD FS Events 411, 1500, and is marked in the Azure AD logs as Error Code 30030. ]D;]A;]D;]A;Additional data provided in logs relaged to AD FS lockouts include:]D;]A;- Attempted Login Name (Alternate Login In)]D;]A;- IP the Request Originated From ]D;]A;- User Agent String]D;]A;]D;]A;If no data is present, verify that the Connect Health agent for AD FS is installed, upgraded to the latest version, and the "ADFSSignInLogs" stream in Log Analytics is enabled.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Os dados do AD FS são agregados e enviados através do agente Azure AD Connect Health para o Relatório de Inícios de Sessão do Azure AD e o Log Analytics.]D;]A;As informações de Bloqueio de Contas do AD FS são agregadas a partir dos Eventos 411 e 1500 do AD FS e são marcadas nos registos do Azure AD como Código de Erro 30030. ]D;]A;]D;]A;Os dados adicionais fornecidos nos registos relacionados com bloqueios do AD FS incluem:]D;]A;- Nome de Início de Sessão Tentado (Início de Sessão Alternativo)]D;]A;- IP de Origem do Pedido ]D;]A;- Cadeia do Agente de Utilizador]D;]A;]D;]A;Se não houver dados, verifique se o agente Connect Health para AD FS está instalado, atualizado para a versão mais recente e o fluxo "ADFSSignInLogs" no Log Analytics está ativado.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.ShowHelpChangeLogs.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Change Log]D;]A;]D;]A;As updates and fixes are made to the preview Workbook, they will be tracked.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Alterar Registo]D;]A;]D;]A;As atualizações e correções feitas ao Livro de pré-visualização serão monitorizadas.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.ShowHelpLocation.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[#### Map of Locations]D;]A;Location data color scheme is based on the amount of sign-ins. The gradient will display the darkest color for the most sign-ins.]D;]A;]D;]A;The data is aggregated from:]D;]A;- Location Details from each sign-in, which includes the country and city of the sign-in.]D;]A;- The status of sign-in: Success, Failure, or Interrupted. To view different types of sign-ins, select the corresponding tile at the top of this report to filter.]D;]A;]D;]A;#### Location Sign In Details]D;]A;This chart can be used to view details from each country in a list view. Each row can be expanded to see the sign-in counts based on city. The graph is ordered based on the highest volume of sign-ins.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[#### Mapa de Localizações]D;]A;O esquema de cores de dados de localização baseia-se na quantidade de inícios de sessão. O gradiente apresentará a cor mais escura para a maioria dos inícios de sessão.]D;]A;]D;]A;Os dados são agregados a partir de:]D;]A;- Detalhes de localização de cada início de sessão, o que inclui o país e a cidade do início de sessão.]D;]A;- O estado de início de sessão: Êxito, Falha ou Interrompido. Para ver diferentes tipos de inícios de sessão, selecione o mosaico correspondente na parte superior deste relatório para filtrar.]D;]A;]D;]A;#### Detalhes dos Inícios de Sessão de Localização]D;]A;Este gráfico pode ser utilizado para ver os detalhes de cada país numa vista de lista. Cada linha pode ser expandida para ver as contagens de inícios de sessão com base na cidade. O gráfico é ordenado com base no volume mais elevado de inícios de sessão.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.ShowHelpParameter.content.parameters.e8df00960969442391ec7952ec1615e2.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Toggle to Show Help for each Tab]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Ative para Mostrar Ajuda para cada Separador]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -114,96 +147,144 @@
       <Item ItemId=";items.ShowHelpSummary.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[##### Sign-In Summary]D;]A;]D;]A;The Sign-In summary displays an overall view of the amount of successful and failed sign-ins in the organization. Select a tile to be able to filter based on successful, failed, or pending user action sign-ins.]D;]A;]D;]A;The sign-ins summary by time may show any anomalies in failures in the overall view of the tenant.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[#### Resumo de Inícios de Sessão]D;]A;]D;]A;O resumo de inícios de sessão apresenta uma vista geral da quantidade de inícios de sessão com êxito e falhados na organização. Selecione um mosaico para filtrar com base nos inícios de sessão com êxito, falhados ou pendentes de ação do utilizador.]D;]A;]D;]A;O resumo de inícios de sessão por hora pode mostrar quaisquer anomalias em falhas na vista geral do inquilino.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.ShowHelpWelcome.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Welcome to Sign-In Analysis Workbook]D;]A;This workbook is currently in preview. To access the previous version of the sign-in Workbook, navigate to "Sign-Ins" in Workbook templates. This Workbook can help analyze the organization's sign-ins for both Azure AD and AD FS Sign-Ins.]D;]A;For help as you navigate this workbook, toggle Show Help at the page top.]D;]A;]D;]A;To get started, select one of the tabs and filter the parameters to select any filtering you would like to do on the report.]D;]A;]D;]A;This Workbook combines the existing streams:]D;]A;- AADSignInLogs]D;]A;- ADFSSignInLogs]D;]A;]D;]A;Streams can be selected in "Logs" to be populated in this report. If your organization does not have AD FS, data will not be displayed. If your organization is interested in viewing AD FS data, ensure the Connect Health agent is installed and updated to the latest version.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Bem-vindo ao Livro de Análise de Inícios de Sessão]D;]A;Este livro está atualmente em pré-visualização. Para aceder à versão anterior do Livro de inícios de sessão, navegue para "Inícios de Sessão" nos modelos do Livro. Este Livro pode ajudar a analisar os inícios de sessão da organização para o Azure AD e o AD FS.]D;]A;Para obter ajuda enquanto navega neste livro, ative Mostrar Ajuda na parte superior da página.]D;]A;]D;]A;Para começar, selecione um dos separadores e filtre os parâmetros para selecionar qualquer filtragem que queira fazer no relatório.]D;]A;]D;]A;Este Livro combina os fluxos existentes:]D;]A;- AADSignInLogs]D;]A;- ADFSSignInLogs]D;]A;]D;]A;Os fluxos podem ser selecionados em "Registos" para serem povoados neste relatório. Se a sua organização não tiver o AD FS, os dados não serão apresentados. Se a sua organização estiver interessada em visualizar dados do AD FS, confirme se o agente Connect Health está instalado e atualizado para a versão mais recente.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.SignInAnalysisErrorTitle.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Sign-In Error Analysis]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Análise de Erros de Início de Sessão]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.SignInsWorkbookTitle.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Sign-in Analysis Workbook (Preview)]D;]A;This workbook will help you analyze your organization's sign-ins for both Azure AD and AD FS Sign-Ins. For help as you navigate this workbook, toggle Show Help below.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# Livro de Análise de Inícios de Sessão (Pré-visualização)]D;]A;Este livro irá ajudá-lo a analisar os inícios de sessão da sua organização para o Azure AD e o AD FS. Para obter ajuda enquanto navega neste livro, ative Mostrar Ajuda abaixo.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.SummaryTimeRangeQuery.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Summary of Sign-Ins  by Time]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Resumo dos Inícios de Sessão por Hora]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.SummaryTitle.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Sign-In Activity Summary]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Resumo da Atividade de Início de Sessão]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Tabs.content.links.44e002a892004fbc8e44e97e65894e0f.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Error Analysis]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Análise de Erros]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Tabs.content.links.51a5058840604037867f690537b30533.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[General Analysis]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Análise Geral]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Tabs.content.links.51a5058840604037867f690537b30533.preText" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[ADFS Failed Sign-In]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Falha do ADFS ao Iniciar Sessão]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.TileQuerySelection.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[]D83D;]DCA1; Click on a tile in the grid below to filter the report further.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[]D83D;]DCA1; Clique num mosaico na grelha abaixo para filtrar o relatório.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.TopAppFailureQuery.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Top Applications with Bad Password Attempts]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Principais Aplicações com Tentativas de Palavra-passe Incorretas]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.UserFailureQuery.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Top Sign-In Errors by User]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Principais Erros de Início de Sessão por Utilizador]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.UserIPParameter.content.parameters.037f0b58686f41bd8dc2b556efe51958.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Select how to view Top Sign-In Errors]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Selecione como ver os Principais Erros de Início de Sessão]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.UserIPParameter.content.parameters.037f0b58686f41bd8dc2b556efe51958.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[View Errors By]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Ver Erros Por]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text20.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[]D;]A;]D;]A;## Top Sign-In Errors by User or IP]D;]A;Select the parameter value below to display the query based on the parameter you would like to view.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[]D;]A;]D;]A;## Principais Erros de Início de Sessão por Utilizador ou IP]D;]A;Selecione o valor do parâmetro abaixo para ver a consulta com base no parâmetro que quer ver.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Sign-In Analysis Preview Workbook]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Livro de Análise de Inícios de Sessão de Pré-visualização]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

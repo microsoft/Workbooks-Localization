@@ -234,15 +234,6 @@
           <Disp Icon="Str" />
         </Item>
       </Item>
-      <Item ItemId=";items.Utilization.content.items.Notice.content.json" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[# Utilization Report]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[# 사용률 보고서]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
       <Item ItemId=";items.Utilization.content.items.SessionAndCores.content.items.CoresQuery.content.items.CPUUsage.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[CPU usage]]></Val>
@@ -326,10 +317,13 @@
       </Item>
       <Item ItemId=";items.Utilization.content.items.Trends.content.items.HostUsageDistibution.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Connection time by host]]></Val>
+          <Val><![CDATA[Top 10 hosts by connection time]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[호스트별 연결 시간]]></Val>
+            <Val><![CDATA[연결 시간별 상위 10개 호스트]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Connection time by host]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -362,10 +356,13 @@
       </Item>
       <Item ItemId=";items.Utilization.content.items.Trends.content.items.UserUsageDistibution.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Connection time by user]]></Val>
+          <Val><![CDATA[Top 10 users by connection time]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[사용자별 연결 시간]]></Val>
+            <Val><![CDATA[연결 시간별 상위 10명의 사용자]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Connection time by user]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
