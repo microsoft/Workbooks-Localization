@@ -477,7 +477,7 @@
           <Str Cat="Text">
             <Val><![CDATA[Leader Count]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[領導者計數]]></Val>
+              <Val><![CDATA[前置字元計數]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
@@ -534,7 +534,7 @@
           <Str Cat="Text">
             <Val><![CDATA[Underreplicated Partitions]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[無法使用複本的分割區]]></Val>
+              <Val><![CDATA[無法使用複本的的分割區]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
@@ -572,12 +572,18 @@
         <Item ItemId=";(...) ms.ThroughputMetrics.content.items.metric1aaa.content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Producer Message Throughput in Messages per Second]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[每秒訊息中的生產者訊息輸送量]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) ms.ThroughputMetrics.content.items.metric1vdgh.content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Consumer Message Throughput in Messages Per Second]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[每秒訊息中的取用者訊息輸送量]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -768,7 +774,7 @@
           <Str Cat="Text">
             <Val><![CDATA[Active Controller Count]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[使用中的控制器數]]></Val>
+              <Val><![CDATA[使用中的控制器計數]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
@@ -792,7 +798,7 @@
           <Str Cat="Text">
             <Val><![CDATA[Replica Max Lag]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[複本最大延隔時間]]></Val>
+              <Val><![CDATA[複本延隔時間上限]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
@@ -893,12 +899,18 @@
         <Item ItemId=";(...) pyad.content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Five Minute Load by Node Type]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[五分鐘負載 (依節點類型)]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) pywr.content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[One Minute Load by Node]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[一分鐘負載 (依節點)]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -1050,7 +1062,7 @@
           <Str Cat="Text">
             <Val><![CDATA[Component Logs]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[元件記錄數]]></Val>
+              <Val><![CDATA[元件記錄]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
@@ -1071,6 +1083,9 @@
       <Item ItemId=";items.ClusterParameter.content.parameters.d357ae558b5b430d8d5f986657a27bb1.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Cluster resource queries are based on]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[叢集資源查詢依據]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1123,7 +1138,7 @@
         <Str Cat="Text">
           <Val><![CDATA[## Zookeeper Metrics]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[## ZooKeeper 計量]]></Val>
+            <Val><![CDATA[## Zookeeper 計量]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -1149,36 +1164,54 @@
       <Item ItemId=";items.MonitoringNotEnabled.content.items.links1.content.links.11fa5bf0211c4619a8a14217b67363b3.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Configure Azure Monitor]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[設定 Azure 監視器]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.MonitoringNotEnabled.content.items.text1.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# **Get More visibility into the health and performance of your HDInsight cluster**]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# **深入了解 HDInsight 叢集的健康狀態與效能**]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.MonitoringNotEnabled.content.items.text2.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Additional monitoring capabilities to provide you with insights into the performance and dependencies of your HDInsight cluster. To start using Insights; select **Configure Azure Monitor** and enable Azure Monitor integration]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[其他監視功能可讓您深入了解 HDInsight 叢集的效能與相依性。若要開始使用 Insights，請選取 [設定 Azure 監視器]5D;****，並啟用 Azure 監視器整合工具]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.MonitoringNotEnabled.content.items.text3.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[[![Foo]5D;(https://becohenhadcaary.blob.core.windows.net/workbookimage/Insights.svg)]5D;(https://becohenhadcaary.blob.core.windows.net/)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[[![Foo]5D;(https://becohenhadcaary.blob.core.windows.net/workbookimage/Insights.svg)]5D;(https://becohenhadcaary.blob.core.windows.net/)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.parameters4.content.parameters.16fb76d49e5a4d328dcfb00e4c8b3a2c.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Indicates if monitoring is enabled on the selected cluster]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[指出是否已對所選叢集啟用監視]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.parameters4.content.parameters.b8e0f17e0870495d970af2e0ac82ea12.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[looks up monitoring settings for the selected cluster]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[查詢所選叢集的監視設定]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

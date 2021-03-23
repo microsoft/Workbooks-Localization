@@ -14,6 +14,9 @@
         <Item ItemId=";(...) .json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[<br />]A;Update the Windows and NSG firewall settings to allow the port specified in the connection strings in next step for the remote virtual machine's IP address.]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[<br />]A;更新 Windows 與 NSG 防火牆設定，以允許下個步驟之連接字串指定的連接埠，用於遠端虛擬機器的 IP 位址。]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -23,6 +26,9 @@
         <Item ItemId=";(...) bel" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Key vault subscriptions]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[金鑰保存庫訂閱]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -38,6 +44,9 @@
         <Item ItemId=";(...) title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Enable monitoring on virtual machine]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[在虛擬機器上啟用監視]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -45,6 +54,9 @@
       <Item ItemId=";items.CheckJson.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Please correct the errors above before proceeding.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[請先修正上述錯誤再繼續。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -60,6 +72,9 @@
       <Item ItemId=";items.FinalConfig.content.parameters.4d03e768735040c3b44e0eff614645ae.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Current monitoring configuration]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[目前的監視設定]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -72,48 +87,72 @@
       <Item ItemId=";items.Savedconfignotfoundmessage.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Please configure using the template below.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[請使用以下範本設定。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Stepsaftervalidjson.content.items.CreateSQLuseraccounts.content.items.SQLpermissionsprereqtext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<br />]A;The monitoring SQL user needs to have `VIEW SERVER STATE` and `VIEW ANY DEFINITION` permission to collect telemetry. You can create such a user using the script below:]A;```]A;USE master;]A;GO]A;CREATE LOGIN [telegraf]5D; WITH PASSWORD = N'mystrongpassword';]A;GO]A;GRANT VIEW SERVER STATE TO [telegraf]5D;;]A;GO]A;GRANT VIEW ANY DEFINITION TO [telegraf]5D;;]A;GO]A;```]A;]A;To monitor Azure SQL Database, we require the User to have the `VIEW DATABASE STATE` permission.]A;]A;```]A;CREATE USER [telegraf]5D; WITH PASSWORD = N'mystrongpassword';]A;GO]A;GRANT VIEW DATABASE STATE TO [telegraf]5D;;]A;GO]A;```]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<br />]A;監視的 SQL 使用者必須有「檢視伺服器狀態」和「檢視任何定義」權限，才能收集遙測。您可以使用下列指令碼建立此類使用者:]A;```]A;USE master;]A;GO]A;CREATE LOGIN [telegraf]5D; WITH PASSWORD = N'mystrongpassword';]A;GO]A;GRANT VIEW SERVER STATE TO [telegraf]5D;;]A;GO]A;GRANT VIEW ANY DEFINITION TO [telegraf]5D;;]A;GO]A;```]A;]A;使用者必須有「檢視資料庫狀態」權限，才能監視 Azure SQL Database。]A;]A;```]A;CREATE USER [telegraf]5D; WITH PASSWORD = N'mystrongpassword';]A;GO]A;GRANT VIEW DATABASE STATE TO [telegraf]5D;;]A;GO]A;```]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Stepsaftervalidjson.content.items.CreateSQLuseraccounts.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Set permissions for SQL accounts]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[設定 SQL 帳戶的權限]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Stepsaftervalidjson.content.items.Enablemonitoringlabel.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[#### Enable monitoring from this virtual machine]A;]A;Use the button below to deploy the required components and start monitoring.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[#### 透過這部虛擬機器啟用監視]A;]A;使用下方按鈕部署所需的元件並開始監視。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Stepsaftervalidjson.content.items.FirewallandnetworkingrulesforSQL.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Firewall and networking rules for SQL resource or virtual machine]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[適用於 SQL 資源或虛擬機器的防火牆與網路規則]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Stepsaftervalidjson.content.items.Keyvaultaccesslabel.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[#### Enable access to Azure Key Vaults (Optional)]A;If your connection strings reference secrets from Key Vaults, you need to provide access to it from the virtual machine via a Managed Service Identity.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[#### 允許存取 Azure Key Vault (選擇性)]A;如果連接字串參考 Key Vault 的祕密，您必須透過受控服務識別從虛擬機器提供其存取權。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Stepsaftervalidjson.content.items.Prereqlabel.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[#### Ensure pre-requisites are satisfied]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[#### 確認已滿足先決條件]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Stepsaftervalidjson.content.items.links5.content.links.e95dc1553fda479a9bebba9a851ee930.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Add monitoring virtual machine]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[新增監視虛擬機器]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -138,24 +177,36 @@
       <Item ItemId=";items.parameters6.content.parameters.88df9a879c9f4b69918eeb6d70e5c1c5.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Set the default subscription retrieved from SQL Server Insights Template]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[設定從 SQL Server Insights 範本擷取的預設訂閱]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text1.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Select virtual machine]D;]A;Select a virtual machine you would like for monitoring.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### 選取虛擬機器]D;]A;選取您要監視的虛擬機器。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text3.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[#### Add SQL Server connection strings]D;]A;Add the monitoring config for this virtual machine. It involves providing a set of connection strings for the SQL databases you would like to monitor. ]D;]A;]D;]A;Note that you have the option to define parameters to reference secrets from an Azure Key Vault or for just reuse of tokens across connection strings. [Learn more<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" height="12" width="12" style="margin: 0px 0px -2px 3px">]D;]A;  <path d="M14.3,1.5H10V.5h6v6H15V2.2l-8,8-.7-.7Z" />]D;]A;  <path d="M11,8.5v5a.9.9,0,0,1-.787,1,.948.948,0,0,1-.213,0H2a.9.9,0,0,1-1-.787A.948.948,0,0,1,1,13.5v-7a.9.9,0,0,1,.787-1A.948.948,0,0,1,2,5.5H8l1-1H2a2,2,0,0,0-2,2v7a2,2,0,0,0,2,2h8a2,2,0,0,0,2-2v-6Z" />]D;]A;</svg>]5D;(https://aka.ms/azuresqlinsights/docs/vmconfig)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[#### 新增 SQL Server 連接字串]D;]A;新增此虛擬機器的監視設定。這包括提供一組想要監視之 SQL 資料庫的連接字串。]D;]A;]D;]A;請注意，您可以選擇定義參數，以參考 Azure Key Vault 中的祕密，或只在連接字串中重複使用權杖。[深入了解<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" height="12" width="12" style="margin: 0px 0px -2px 3px">]D;]A;  <path d="M14.3,1.5H10V.5h6v6H15V2.2l-8,8-.7-.7Z" />]D;]A;  <path d="M11,8.5v5a.9.9,0,0,1-.787,1,.948.948,0,0,1-.213,0H2a.9.9,0,0,1-1-.787A.948.948,0,0,1,1,13.5v-7a.9.9,0,0,1,.787-1A.948.948,0,0,1,2,5.5H8l1-1H2a2,2,0,0,0-2,2v7a2,2,0,0,0,2,2h8a2,2,0,0,0,2-2v-6Z" />]D;]A;</svg>]5D;(https://aka.ms/azuresqlinsights/docs/vmconfig)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Add monitoring virtual machine]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[新增監視虛擬機器]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
