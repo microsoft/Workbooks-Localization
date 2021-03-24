@@ -14,6 +14,9 @@
         <Item ItemId=";(...) .json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[<br />]A;Update the Windows and NSG firewall settings to allow the port specified in the connection strings in next step for the remote virtual machine's IP address.]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[<br />]A;Werk de instellingen van de Windows- en NSG-firewall bij, zodat de poort die is opgegeven in de volgende stap wordt toegestaan voor het IP-adres van de externe virtuele machine.]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -23,6 +26,9 @@
         <Item ItemId=";(...) bel" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Key vault subscriptions]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Sleutelkluisabonnementen]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -38,6 +44,9 @@
         <Item ItemId=";(...) title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Enable monitoring on virtual machine]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Bewaking inschakelen op de virtuele machine]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -45,6 +54,9 @@
       <Item ItemId=";items.CheckJson.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Please correct the errors above before proceeding.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Los de bovenstaande fouten op voordat u doorgaat.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -60,6 +72,9 @@
       <Item ItemId=";items.FinalConfig.content.parameters.4d03e768735040c3b44e0eff614645ae.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Current monitoring configuration]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Huidige bewakingsconfiguratie]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -72,48 +87,72 @@
       <Item ItemId=";items.Savedconfignotfoundmessage.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Please configure using the template below.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Configureer met behulp van de onderstaande sjabloon.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Stepsaftervalidjson.content.items.CreateSQLuseraccounts.content.items.SQLpermissionsprereqtext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<br />]A;The monitoring SQL user needs to have `VIEW SERVER STATE` and `VIEW ANY DEFINITION` permission to collect telemetry. You can create such a user using the script below:]A;```]A;USE master;]A;GO]A;CREATE LOGIN [telegraf]5D; WITH PASSWORD = N'mystrongpassword';]A;GO]A;GRANT VIEW SERVER STATE TO [telegraf]5D;;]A;GO]A;GRANT VIEW ANY DEFINITION TO [telegraf]5D;;]A;GO]A;```]A;]A;To monitor Azure SQL Database, we require the User to have the `VIEW DATABASE STATE` permission.]A;]A;```]A;CREATE USER [telegraf]5D; WITH PASSWORD = N'mystrongpassword';]A;GO]A;GRANT VIEW DATABASE STATE TO [telegraf]5D;;]A;GO]A;```]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<br />]A;De SQL-gebruiker moet voor de bewaking over de machtiging VIEW SERVER STATE en VIEW ANY DEFINITION beschikken voor het verzamelen van telemetrische gegevens. U kunt een dergelijke gebruiker maken met het onderstaande script:]A;```]A;USE master;]A;GO]A;CREATE LOGIN [telegraf]5D; WITH PASSWORD = N'mystrongpassword';]A;GO]A;GRANT VIEW SERVER STATE TO [telegraf]5D;;]A;GO]A;GRANT VIEW ANY DEFINITION TO [telegraf]5D;;]A;GO]A;```]A;]A;Voor het bewaken van Azure SQL Database moet de gebruiker over de machtiging VIEW DATABASE STATE beschikken.]A;]A;```]A;CREATE USER [telegraf]5D; WITH PASSWORD = N'mystrongpassword';]A;GO]A;GRANT VIEW DATABASE STATE TO [telegraf]5D;;]A;GO]A;```]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Stepsaftervalidjson.content.items.CreateSQLuseraccounts.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Set permissions for SQL accounts]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Machtigingen instellen voor SQL-accounts]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Stepsaftervalidjson.content.items.Enablemonitoringlabel.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[#### Enable monitoring from this virtual machine]A;]A;Use the button below to deploy the required components and start monitoring.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[#### Bewaking vanaf deze virtuele machine inschakelen]A;]A;Gebruik de onderstaande knop om de vereiste onderdelen te implementeren en de bewaking te starten.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Stepsaftervalidjson.content.items.FirewallandnetworkingrulesforSQL.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Firewall and networking rules for SQL resource or virtual machine]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Firewall- en netwerkregels voor SQL-resource of virtuele machine]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Stepsaftervalidjson.content.items.Keyvaultaccesslabel.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[#### Enable access to Azure Key Vaults (Optional)]A;If your connection strings reference secrets from Key Vaults, you need to provide access to it from the virtual machine via a Managed Service Identity.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[#### Toegang tot Azure-sleutelkluizen inschakelen (optioneel)]A;Als uw verbindingsreeksen verwijzen naar geheimen uit sleutelkluizen, moet u vanaf de virtuele machine via een beheerde service-identiteit toegang tot het bestand geven.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Stepsaftervalidjson.content.items.Prereqlabel.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[#### Ensure pre-requisites are satisfied]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[#### Controleren of aan vereisten is voldaan]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Stepsaftervalidjson.content.items.links5.content.links.e95dc1553fda479a9bebba9a851ee930.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Add monitoring virtual machine]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Virtuele machine voor bewaking toevoegen]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -138,24 +177,36 @@
       <Item ItemId=";items.parameters6.content.parameters.88df9a879c9f4b69918eeb6d70e5c1c5.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Set the default subscription retrieved from SQL Server Insights Template]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Het standaardabonnement instellen dat wordt opgehaald uit de SQL Server Insights-sjabloon]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text1.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Select virtual machine]D;]A;Select a virtual machine you would like for monitoring.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Virtuele machine selecteren]D;]A;Selecteer een virtuele machine die u voor de bewaking wilt gebruiken.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text3.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[#### Add SQL Server connection strings]D;]A;Add the monitoring config for this virtual machine. It involves providing a set of connection strings for the SQL databases you would like to monitor. ]D;]A;]D;]A;Note that you have the option to define parameters to reference secrets from an Azure Key Vault or for just reuse of tokens across connection strings. [Learn more<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" height="12" width="12" style="margin: 0px 0px -2px 3px">]D;]A;  <path d="M14.3,1.5H10V.5h6v6H15V2.2l-8,8-.7-.7Z" />]D;]A;  <path d="M11,8.5v5a.9.9,0,0,1-.787,1,.948.948,0,0,1-.213,0H2a.9.9,0,0,1-1-.787A.948.948,0,0,1,1,13.5v-7a.9.9,0,0,1,.787-1A.948.948,0,0,1,2,5.5H8l1-1H2a2,2,0,0,0-2,2v7a2,2,0,0,0,2,2h8a2,2,0,0,0,2-2v-6Z" />]D;]A;</svg>]5D;(https://aka.ms/azuresqlinsights/docs/vmconfig)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[#### SQL Server-verbindingsreeksen toevoegen]D;]A;Voeg de bewakingsconfiguratie voor deze virtuele machine toe. Dit houdt in dat u zorgt voor een set verbindingsreeksen voor de SQL-databases die u wilt bewaken. ]D;]A;]D;]A;Let op dat u de mogelijkheid hebt om parameters te definiëren om te verwijzen naar geheimen van een Azure-sleutelkluis of om alleen tokens in verbindingsreeksen opnieuw te gebruiken. [Meer informatie<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" height="12" width="12" style="margin: 0px 0px -2px 3px">]D;]A;  <path d="M14.3,1.5H10V.5h6v6H15V2.2l-8,8-.7-.7Z" />]D;]A;  <path d="M11,8.5v5a.9.9,0,0,1-.787,1,.948.948,0,0,1-.213,0H2a.9.9,0,0,1-1-.787A.948.948,0,0,1,1,13.5v-7a.9.9,0,0,1,.787-1A.948.948,0,0,1,2,5.5H8l1-1H2a2,2,0,0,0-2,2v7a2,2,0,0,0,2,2h8a2,2,0,0,0,2-2v-6Z" />]D;]A;</svg>]5D;(https://aka.ms/azuresqlinsights/docs/vmconfig)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Add monitoring virtual machine]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Virtuele machine voor bewaking toevoegen]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
