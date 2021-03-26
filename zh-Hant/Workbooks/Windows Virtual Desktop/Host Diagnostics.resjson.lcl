@@ -216,18 +216,6 @@
           <Disp Icon="Str" />
         </Item>
       </Item>
-      <Item ItemId=";@items.HostDiagnostics.content.items.EventGroup.content.items.EventsSummary.content.tileSettings.secondaryContent." ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) formatOptions.linkLabel" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[Help]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[說明]]></Val>
-            </Tgt>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-      </Item>
       <Item ItemId=";@items.HostDiagnostics.content.items.PerfGroup.content.items.PerfDrillDown.content.items.HostNotSelectedInstructio" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) ns.content.json" ItemType="0" PsrId="306" Leaf="true">
@@ -432,18 +420,6 @@
           <Disp Icon="Str" />
         </Item>
       </Item>
-      <Item ItemId=";@items.HostDiagnostics.content.items.WvdAgentParameters.content.parameters.3e59686fa66b49a49f6f4be9452501a6.descri" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) ption" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[Grammar]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[文法]]></Val>
-            </Tgt>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-      </Item>
       <Item ItemId=";@items.HostDiagnostics.content.items.WvdAgentParameters.content.parameters.4c0874af922a463b8a4fad008e5a7259.descri" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) ption" ItemType="0" PsrId="306" Leaf="true">
@@ -451,18 +427,6 @@
             <Val><![CDATA[This allows for more natural phrasing in the message. If all agent events are only error or only warning, it will print the corresponding level. Otherwise, it will say "Error and/or Warning"]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
               <Val><![CDATA[這能讓訊息中的片語更加自然。如果所有代理程式事件都只是錯誤或警告，就會列印對應的等級，否則會表示「錯誤及 (或) 警告」]]></Val>
-            </Tgt>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-      </Item>
-      <Item ItemId=";@items.HostDiagnostics.content.items.WvdAgentParameters.content.parameters.6d21a13c70b2407c8a144d76579da036.descri" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) ption" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[Grammar]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[文法]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
@@ -487,30 +451,6 @@
             <Val><![CDATA[Option to allow for testing the agent message, if no agent messages exist in the data set]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
               <Val><![CDATA[允許測試代理程式訊息的選項 (如果資料集中沒有代理程式訊息)]]></Val>
-            </Tgt>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-      </Item>
-      <Item ItemId=";@items.HostDiagnostics.content.items.WvdAgentParameters.content.parameters.bc4729466b884768b9dd792a43a119fd.descri" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) ption" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[Grammar]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[文法]]></Val>
-            </Tgt>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-      </Item>
-      <Item ItemId=";@items.HostDiagnostics.content.items.WvdAgentParameters.content.parameters.da4da63f301e4178964a7cf06431318f.descri" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) ption" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[Grammar]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[文法]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
@@ -665,10 +605,13 @@
       </Item>
       <Item ItemId=";items.HostDiagnostics.content.items.WVDAgentEventText.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[There {HostVerb} **{HostsWithAgentEvents}** {HostPlural} reporting **{TotalEventInstances}** {EventInstancePlural} of **{DistinctEventCount}** WVD agent **{EventLevelName}** {DistinctEventPlural}. See the **WVD agent events** table below to learn more about these issues.]]></Val>
+          <Val><![CDATA[One or more WVD hosts are reporting issues to the event log. See the **WVD agent events** table below to learn more about these issues. Observed issue levels: **{EventLevelName}**, number of hosts affected: **{HostsWithAgentEvents}**, distinct issue types: **{DistinctEventCount}**, total instances of issues: **{TotalEventInstances}**]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[{HostVerb} **{HostsWithAgentEvents}** {HostPlural} 回報 **{TotalEventInstances}** {EventInstancePlural} 的 **{DistinctEventCount}** WVD 代理程式 **{EventLevelName}** {DistinctEventPlural}。若要深入了解這些問題，請參閱下表的「WVD 代理程式事件」****。]]></Val>
+            <Val><![CDATA[有一或多個 WVD 主機正在將問題回報至事件記錄。請參閱下方的 **WVD 代理程式事件** 資料表以深入了解這些問題。觀察到的問題層級: **{EventLevelName}**，受影響的主機數目: **{HostsWithAgentEvents}**，相異的問題類型: **{DistinctEventCount}**，問題執行個體總數: **{TotalEventInstances}**]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[There {HostVerb} **{HostsWithAgentEvents}** {HostPlural} reporting **{TotalEventInstances}** {EventInstancePlural} of **{DistinctEventCount}** WVD agent **{EventLevelName}** {DistinctEventPlural}. See the **WVD agent events** table below to learn more about these issues.]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>

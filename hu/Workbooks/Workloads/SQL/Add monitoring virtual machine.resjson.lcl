@@ -14,6 +14,9 @@
         <Item ItemId=";(...) .json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[<br />]A;Update the Windows and NSG firewall settings to allow the port specified in the connection strings in next step for the remote virtual machine's IP address.]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[<br />]A;Frissítse a Windows és az NSG tűzfalának beállításait a következő lépésében a kapcsolati sztringekben megadott port engedélyezéséhez a távoli virtuális gép IP-címe esetében.]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -23,6 +26,9 @@
         <Item ItemId=";(...) bel" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Key vault subscriptions]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Key Vault-előfizetések]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -38,6 +44,9 @@
         <Item ItemId=";(...) title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Enable monitoring on virtual machine]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[A virtuális gép figyelésének engedélyezése]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -45,6 +54,9 @@
       <Item ItemId=";items.CheckJson.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Please correct the errors above before proceeding.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Mielőtt továbblépne, javítsa a fenti hibákat.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -60,6 +72,9 @@
       <Item ItemId=";items.FinalConfig.content.parameters.4d03e768735040c3b44e0eff614645ae.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Current monitoring configuration]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Jelenlegi figyelési konfiguráció]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -72,48 +87,72 @@
       <Item ItemId=";items.Savedconfignotfoundmessage.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Please configure using the template below.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Az alábbi sablonnal végezze el a konfigurálást.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Stepsaftervalidjson.content.items.CreateSQLuseraccounts.content.items.SQLpermissionsprereqtext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<br />]A;The monitoring SQL user needs to have `VIEW SERVER STATE` and `VIEW ANY DEFINITION` permission to collect telemetry. You can create such a user using the script below:]A;```]A;USE master;]A;GO]A;CREATE LOGIN [telegraf]5D; WITH PASSWORD = N'mystrongpassword';]A;GO]A;GRANT VIEW SERVER STATE TO [telegraf]5D;;]A;GO]A;GRANT VIEW ANY DEFINITION TO [telegraf]5D;;]A;GO]A;```]A;]A;To monitor Azure SQL Database, we require the User to have the `VIEW DATABASE STATE` permission.]A;]A;```]A;CREATE USER [telegraf]5D; WITH PASSWORD = N'mystrongpassword';]A;GO]A;GRANT VIEW DATABASE STATE TO [telegraf]5D;;]A;GO]A;```]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<br />]A;A figyelési SQL-felhasználónak VIEW SERVER STATE és VIEW ANY DEFINITION jogosultsággal kell rendelkeznie a telemetriai adatok gyűjtéséhez. Az alábbi szkript használatával hozhat létre ilyen felhasználót:]A;```]A;USE master;]A;GO]A;CREATE LOGIN [telegraf]5D; WITH PASSWORD = N'erősjelszó';]A;GO]A;GRANT VIEW SERVER STATE TO [telegraf]5D;;]A;GO]A;GRANT VIEW ANY DEFINITION TO [telegraf]5D;;]A;GO]A;```]A;]A;Az Azure SQL Database figyeléséhez a felhasználónak VIEW DATABASE STATE jogosultsággal kell rendelkeznie.]A;]A;```]A;CREATE USER [telegraf]5D; WITH PASSWORD = N'erősjelszó';]A;GO]A;GRANT VIEW DATABASE STATE TO [telegraf]5D;;]A;GO]A;```]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Stepsaftervalidjson.content.items.CreateSQLuseraccounts.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Set permissions for SQL accounts]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[SQL-fiókok engedélyeinek beállítása]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Stepsaftervalidjson.content.items.Enablemonitoringlabel.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[#### Enable monitoring from this virtual machine]A;]A;Use the button below to deploy the required components and start monitoring.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[#### A virtuális gépről való figyelés engedélyezése]A;]A;A lenti gombbal helyezheti üzembe a szükséges összetevőket, és kezdheti meg a figyelést.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Stepsaftervalidjson.content.items.FirewallandnetworkingrulesforSQL.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Firewall and networking rules for SQL resource or virtual machine]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[SQL-erőforrás vagy virtuális gép tűzfal- és hálózati szabályai]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Stepsaftervalidjson.content.items.Keyvaultaccesslabel.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[#### Enable access to Azure Key Vaults (Optional)]A;If your connection strings reference secrets from Key Vaults, you need to provide access to it from the virtual machine via a Managed Service Identity.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[#### Az Azure Key Vault-kulcstartók elérésének engedélyezése (nem kötelező)]A;Ha a kapcsolati sztringek kulcstartókban található titkos kódokra hivatkoznak, biztosítania kell azok elérését a virtuális gépről egy felügyeltszolgáltatás-identitással.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Stepsaftervalidjson.content.items.Prereqlabel.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[#### Ensure pre-requisites are satisfied]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[#### Győződjön meg arról, hogy az előfeltételek teljesülnek]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Stepsaftervalidjson.content.items.links5.content.links.e95dc1553fda479a9bebba9a851ee930.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Add monitoring virtual machine]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Figyelési virtuális gép hozzáadása]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -138,12 +177,18 @@
       <Item ItemId=";items.parameters6.content.parameters.88df9a879c9f4b69918eeb6d70e5c1c5.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Set the default subscription retrieved from SQL Server Insights Template]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Az SQL Server-elemzési sablonból lekért alapértelmezett előfizetés beállítása]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text1.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Select virtual machine]D;]A;Select a virtual machine you would like for monitoring.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Virtuális gép kiválasztása]D;]A;Válasszon ki egy figyelni kívánt virtuális gépet.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -156,6 +201,9 @@
       <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Add monitoring virtual machine]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Figyelési virtuális gép hozzáadása]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

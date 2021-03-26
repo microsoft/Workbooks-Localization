@@ -14,6 +14,9 @@
         <Item ItemId=";(...) aseaccountsRequestsServiceAvailability.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Service Availability (Average)]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Szolgáltatás rendelkezésre állása (átlagos)]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -50,8 +53,8 @@
         <Item ItemId=";(...) eaccountsRequestsDocumentCount.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Document Count (Avg)]]></Val>
-            <Tgt Cat="Text" Stat="Update" Orig="New">
-              <Val><![CDATA[Dokumentumok száma (összeg)]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Dokumentumok száma (átlagos)]]></Val>
             </Tgt>
             <Prev Cat="Text">
               <Val><![CDATA[Document Count (Sum)]]></Val>
@@ -62,8 +65,8 @@
         <Item ItemId=";(...) eaccountsRequestsDocumentCountTimeline.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Document Count (Avg) Timeline]]></Val>
-            <Tgt Cat="Text" Stat="Update" Orig="New">
-              <Val><![CDATA[Dokumentumok száma (összegzés) – idősor]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Dokumentumok száma (átlagos) – idősor]]></Val>
             </Tgt>
             <Prev Cat="Text">
               <Val><![CDATA[Document Count (Sum) Timeline]]></Val>
@@ -150,7 +153,7 @@
           <Str Cat="Text">
             <Val><![CDATA[Total Requests (Count)]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Kérelmek száma összesen]]></Val>
+              <Val><![CDATA[Kérelmek száma (összesen)]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
@@ -188,8 +191,8 @@
         <Item ItemId=";(...) DocumentCount.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Document Count (Avg)]]></Val>
-            <Tgt Cat="Text" Stat="Update" Orig="New">
-              <Val><![CDATA[Dokumentumok száma (összeg)]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Dokumentumok száma (átlagos)]]></Val>
             </Tgt>
             <Prev Cat="Text">
               <Val><![CDATA[Document Count (Sum)]]></Val>
@@ -200,8 +203,8 @@
         <Item ItemId=";(...) DocumentCountTimeline.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Document Count (Avg) Timeline]]></Val>
-            <Tgt Cat="Text" Stat="Update" Orig="New">
-              <Val><![CDATA[Dokumentumok száma (összegzés) – idősor]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Dokumentumok száma (átlagos) – idősor]]></Val>
             </Tgt>
             <Prev Cat="Text">
               <Val><![CDATA[Document Count (Sum) Timeline]]></Val>
@@ -318,8 +321,8 @@
       <Item ItemId=";items.Latency.content.items.ServerSideLatencyByRegion.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Server Side Latency (Avg) By Region {DatabaseText} {ContainerText} ]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[Kiszolgálóoldali késés (átlag) régiónként]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Kiszolgálóoldali átlagos késés régió szerint {DatabaseText} {ContainerText} ]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Server Side Latency (Avg) By Region]]></Val>
@@ -330,6 +333,9 @@
       <Item ItemId=";items.LatencyCopy.content.items.ServerSideLatencyByOperation.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Server Side Latency (Avg) By Operation {DatabaseText} {ContainerText} ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Kiszolgálóoldali átlagos késés művelet szerint {DatabaseText} {ContainerText} ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -366,8 +372,8 @@
       <Item ItemId=";items.Overview.content.items.NormalizedRUConsumption.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Normalized RU Consumption (max) {DatabaseText} {ContainerText} ]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[Normalizált RU-felhasználás (max.)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Normalizált maximális RU-fogyasztás {DatabaseText} {ContainerText} ]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Normalized RU Consumption (max)]]></Val>
@@ -378,14 +384,17 @@
       <Item ItemId=";items.Overview.content.items.ThrottledRequests429s.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Throttled Requests (429s) {DatabaseText} {ContainerText}]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Szabályozott kérelmek (429s) {DatabaseText} {ContainerText}]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overview.content.items.TotalRequests.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Total Requests {DatabaseText} {ContainerText}]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[Összes kérelem]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Kérelmek száma összesen {DatabaseText} {ContainerText}]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Total Requests]]></Val>
@@ -396,8 +405,8 @@
       <Item ItemId=";items.Overview.content.items.Usage.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Data & Index Usage {DatabaseText} {ContainerText} ]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[Adat- és indexhasználat]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Adatforgalom és indexhasználat – {DatabaseText} {ContainerText} ]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Data & Index Usage]]></Val>
@@ -408,8 +417,8 @@
       <Item ItemId=";items.Requests.content.items.TotalRequests.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Total Requests by Status Code {DatabaseText} {ContainerText} ]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[Kérelmek száma állapotkód szerint]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Kérelmek száma összesen állapotkód szerint {DatabaseText} {ContainerText} ]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Total Requests by Status Code]]></Val>
@@ -420,8 +429,8 @@
       <Item ItemId=";items.Requests.content.items.TotalRequestsbyOperationType.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Total Requests by Operation Type {DatabaseText} {ContainerText} ]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[Kérelmek száma művelettípus szerint]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Kérelmek száma összesen művelettípus szerint {DatabaseText} {ContainerText} ]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Total Requests by Operation Type]]></Val>
@@ -432,6 +441,9 @@
       <Item ItemId=";items.Requests.content.items.metric3.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Throttled Requests (429) {DatabaseText} {ContainerText}]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Szabályozott kérelmek (429) {DatabaseText} {ContainerText}]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -450,8 +462,8 @@
       <Item ItemId=";items.Storage.content.items.UsageA.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Data & Index Usage {DatabaseText} {ContainerText} ]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[Adat- és indexhasználat]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Adatforgalom és indexhasználat – {DatabaseText} {ContainerText} ]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Data & Index Usage]]></Val>
@@ -663,6 +675,9 @@
       <Item ItemId=";items.parameters11.content.parameters.0abe0edd1fb046fbb7f26c0c21245fda.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[When the value is "unset" or not selected, the data being displayed is at the database level.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Ha az érték „nincs beállítva” vagy nincs megadva, az adatbázisszintű adatok jelennek meg.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

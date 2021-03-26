@@ -53,8 +53,8 @@
         <Item ItemId=";(...) eaccountsRequestsDocumentCount.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Document Count (Avg)]]></Val>
-            <Tgt Cat="Text" Stat="Update" Orig="New">
-              <Val><![CDATA[Nombre de documents (somme)]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Nombre de documents (moy.)]]></Val>
             </Tgt>
             <Prev Cat="Text">
               <Val><![CDATA[Document Count (Sum)]]></Val>
@@ -65,8 +65,8 @@
         <Item ItemId=";(...) eaccountsRequestsDocumentCountTimeline.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Document Count (Avg) Timeline]]></Val>
-            <Tgt Cat="Text" Stat="Update" Orig="New">
-              <Val><![CDATA[Chronologie du nombre de documents (somme)]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Chronologie du nombre de documents (moy.)]]></Val>
             </Tgt>
             <Prev Cat="Text">
               <Val><![CDATA[Document Count (Sum) Timeline]]></Val>
@@ -153,7 +153,7 @@
           <Str Cat="Text">
             <Val><![CDATA[Total Requests (Count)]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Total de demandes (nombre)]]></Val>
+              <Val><![CDATA[Total des demandes (nombre)]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
@@ -191,8 +191,8 @@
         <Item ItemId=";(...) DocumentCount.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Document Count (Avg)]]></Val>
-            <Tgt Cat="Text" Stat="Update" Orig="New">
-              <Val><![CDATA[Nombre de documents (somme)]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Nombre de documents (moy.)]]></Val>
             </Tgt>
             <Prev Cat="Text">
               <Val><![CDATA[Document Count (Sum)]]></Val>
@@ -203,8 +203,8 @@
         <Item ItemId=";(...) DocumentCountTimeline.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Document Count (Avg) Timeline]]></Val>
-            <Tgt Cat="Text" Stat="Update" Orig="New">
-              <Val><![CDATA[Chronologie du nombre de documents (somme)]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Chronologie du nombre de documents (moy.)]]></Val>
             </Tgt>
             <Prev Cat="Text">
               <Val><![CDATA[Document Count (Sum) Timeline]]></Val>
@@ -294,6 +294,9 @@
       <Item ItemId=";items.Container.content.parameters.82f8fb728e0145168115b62082df1e44.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[When the value is "unset" or not selected, the data being displayed is at the account level.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Quand la valeur est « non définie » ou n'est pas sélectionnée, les données au niveau du compte sont affichées.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -301,7 +304,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Azure Cosmos DB]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Azure Cosmos DB]]></Val>
+            <Val><![CDATA[Azure Cosmos DB]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -318,8 +321,8 @@
       <Item ItemId=";items.Latency.content.items.ServerSideLatencyByRegion.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Server Side Latency (Avg) By Region {DatabaseText} {ContainerText} ]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[Latence côté serveur (moy.) par région]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Latence côté serveur (moy.) par région {DatabaseText} {ContainerText} ]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Server Side Latency (Avg) By Region]]></Val>
@@ -330,6 +333,9 @@
       <Item ItemId=";items.LatencyCopy.content.items.ServerSideLatencyByOperation.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Server Side Latency (Avg) By Operation {DatabaseText} {ContainerText} ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Latence côté serveur (moy.) par opération {DatabaseText} {ContainerText} ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -366,8 +372,8 @@
       <Item ItemId=";items.Overview.content.items.NormalizedRUConsumption.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Normalized RU Consumption (max) {DatabaseText} {ContainerText} ]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[Consommation RU normalisée (max.)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Consommation RU normalisée (max.) {DatabaseText} {ContainerText} ]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Normalized RU Consumption (max)]]></Val>
@@ -378,14 +384,17 @@
       <Item ItemId=";items.Overview.content.items.ThrottledRequests429s.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Throttled Requests (429s) {DatabaseText} {ContainerText}]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Demandes limitées (429 s) {DatabaseText} {ContainerText}]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overview.content.items.TotalRequests.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Total Requests {DatabaseText} {ContainerText}]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[Total des demandes]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Total des demandes {DatabaseText} {ContainerText}]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Total Requests]]></Val>
@@ -396,8 +405,8 @@
       <Item ItemId=";items.Overview.content.items.Usage.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Data & Index Usage {DatabaseText} {ContainerText} ]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[Utilisation des données et de l'index]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Utilisation de données et d'index {DatabaseText} {ContainerText} ]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Data & Index Usage]]></Val>
@@ -408,8 +417,8 @@
       <Item ItemId=";items.Requests.content.items.TotalRequests.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Total Requests by Status Code {DatabaseText} {ContainerText} ]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[Total des demandes par code d'état]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Total des demandes par code d'état {DatabaseText} {ContainerText} ]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Total Requests by Status Code]]></Val>
@@ -420,8 +429,8 @@
       <Item ItemId=";items.Requests.content.items.TotalRequestsbyOperationType.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Total Requests by Operation Type {DatabaseText} {ContainerText} ]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[Total des demandes par type d'opération]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Total des demandes par type d'opération {Database Text} {ContainerText} ]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Total Requests by Operation Type]]></Val>
@@ -432,14 +441,17 @@
       <Item ItemId=";items.Requests.content.items.metric3.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Throttled Requests (429) {DatabaseText} {ContainerText}]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Demandes limitées (429) {DatabaseText} {ContainerText}]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Storage.content.items.DocumentInfo.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Document Count {DatabaseText} {ContainerText} ]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[Nombre et quota de documents]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Nombre de documents {DatabaseText} {ContainerText} ]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Document Count & Quota]]></Val>
@@ -450,8 +462,8 @@
       <Item ItemId=";items.Storage.content.items.UsageA.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Data & Index Usage {DatabaseText} {ContainerText} ]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[Utilisation des données et de l'index]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Utilisation de données et d'index {DatabaseText} {ContainerText} ]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Data & Index Usage]]></Val>
@@ -489,8 +501,8 @@
       <Item ItemId=";items.System.content.items.MetadataRequestsbyStatusCode.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Metadata Requests by Status Code {DatabaseText} {ContainerText} ]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[Demandes de métadonnées par code d'état]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Demandes de métadonnées par code d'état {Database Text} {ContainerText} ]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Metadata Requests by Status Code]]></Val>
@@ -501,6 +513,9 @@
       <Item ItemId=";items.System.content.items.ThrottledMetadataRequests.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Metadata Requests That Exceeded Capacity (429s) {DatabaseText} {ContainerText} ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Demandes de métadonnées ayant dépassé la capacité (429 s) {Database Text} {ContainerText} ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -588,8 +603,8 @@
       <Item ItemId=";items.Throughput.content.items.NormalizedRUConsumptionByPartitionKeyRangeID.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Normalized RU Consumption (%) By PartitionKeyRangeID {DatabaseText} {ContainerText} ]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[Consommation RU normalisée (%) par PartitionKeyRangeID]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Consommation RU normalisée (%) par PartitionKeyRangeID {Database Text} {ContainerText} ]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Normalized RU Consumption (%) By PartitionKeyRangeID]]></Val>
@@ -609,8 +624,8 @@
       <Item ItemId=";items.Throughput.content.items.NormalizedRUConsumptionHeatMap.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Normalized RU Consumption (Max) Heat Map By PartitionKeyRangeID {DatabaseText} {ContainerText} ]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[Carte thermique de la consommation RU normalisée (max.) par PartitionKeyRangeID]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Carte thermique de la consommation RU normalisée (max.) par PartitionKeyRangeID {Database Text} {ContainerText} ]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Normalized RU Consumption (Max) Heat Map By PartitionKeyRangeID]]></Val>
@@ -666,6 +681,9 @@
       <Item ItemId=";items.parameters11.content.parameters.0abe0edd1fb046fbb7f26c0c21245fda.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[When the value is "unset" or not selected, the data being displayed is at the database level.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Quand la valeur est « non définie » ou n'est pas sélectionnée, les données au niveau de la base de données sont affichées.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

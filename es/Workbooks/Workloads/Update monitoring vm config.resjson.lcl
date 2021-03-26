@@ -20,6 +20,9 @@
         <Item ItemId=";(...) text.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Update virtual machine config]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Actualizar configuración de máquina virtual]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -27,6 +30,9 @@
       <Item ItemId=";items.CheckJson.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Ensure the monitoring configuration is a valid JSON before proceeding.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Asegúrese de que la configuración de supervisión sea un código JSON válido antes de continuar.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -42,66 +48,99 @@
       <Item ItemId=";items.CreateSQLuseraccounts.content.items.SQLpermissionsprereqtext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<br />]A;The monitoring SQL user needs to have `VIEW SERVER STATE` and `VIEW ANY DEFINITION` permission to collect telemetry. You can create such a user using the script below:]A;```]A;USE master;]A;GO]A;CREATE LOGIN [telegraf]5D; WITH PASSWORD = N'mystrongpassword';]A;GO]A;GRANT VIEW SERVER STATE TO [telegraf]5D;;]A;GO]A;GRANT VIEW ANY DEFINITION TO [telegraf]5D;;]A;GO]A;```]A;]A;To monitor Azure SQL Database, we require the User to have the `VIEW DATABASE STATE` permission.]A;]A;```]A;CREATE USER [telegraf]5D; WITH PASSWORD = N'mystrongpassword';]A;GO]A;GRANT VIEW DATABASE STATE TO [telegraf]5D;;]A;GO]A;```]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<br />]A;El usuario de SQL de supervisión debe tener el permiso "VER ESTADO DEL SERVIDOR" y "VER CUALQUIER DEFINICIÓN" para recopilar la telemetría. Puede crear este tipo de usuario mediante el siguiente script:]A;```]A;USE master;]A;GO]A;CREATE LOGIN [telegraf]5D; WITH PASSWORD = N'mystrongpassword';]A;GO]A;GRANT VIEW SERVER STATE TO [telegraf]5D;;]A;GO]A;GRANT VIEW ANY DEFINITION TO [telegraf]5D;;]A;GO]A;```]A;]A;Para supervisar Azure SQL Database, se requiere que el usuario tenga el permiso "VER ESTADO DE BASE DE DATOS".]A;]A;```]A;CREATE USER [telegraf]5D; WITH PASSWORD = N'mystrongpassword';]A;GO]A;GRANT VIEW DATABASE STATE TO [telegraf]5D;;]A;GO]A;```]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.CreateSQLuseraccounts.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Set permissions for SQL accounts]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Establecer permisos para las cuentas de SQL]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.FinalConfig.content.parameters.4d03e768735040c3b44e0eff614645ae.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Current monitoring configuration]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Configuración de supervisión actual]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.FirewallandnetworkingrulesforSQL.content.items.Firewallprereqtext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<br />]A;Update the Windows and NSG firewall settings to allow the port specified in the connection strings in next step for the remote virtual machine's IP address.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<br />]A;Actualice la configuración de firewall de Windows y NSG para permitir el puerto especificado en las cadenas de conexión en el siguiente paso para la dirección IP de la máquina virtual remota.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.FirewallandnetworkingrulesforSQL.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Firewall and networking rules for SQL resource or virtual machine]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Reglas de firewall y de redes para el recurso SQL o la máquina virtual]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Keyvaultaccesslabel.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[#### Enable access to Azure Key Vaults (Optional)]A;If your connection strings reference secrets from Key Vaults, you need to provide access to it from the virtual machine via a Managed Service Identity.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[#### Habilita el acceso a los almacenes de claves de Azure (opcional).]A;Si las cadenas de conexión hacen referencia a secretos de los almacenes de claves, debe proporcionar acceso a ellos desde la máquina virtual mediante identidades administradas para recursos de Azure.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Keyvaultparameters.content.parameters.7886d36e4db343e4813bc6427ac0cf0b.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Key vault subscriptions]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Suscripciones del almacén de claves]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Prereqlabel.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[#### Ensure pre-requisites are satisfied]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[#### Comprobar que se cumplen los requisitos previos]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Savedconfignotfoundmessage.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Saved monitoring configuration not found, please reconfigure using the template below.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[No se encontró la configuración de supervisión guardada. Vuelva a configurarla con la siguiente plantilla.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.ValidForm.content.items.Updateconfiglinkgroup.content.links.833e68f767e445649ef90c15b2e949b6.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Update monitoring config]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Actualizar configuración de supervisión]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.ValidForm.content.items.text6.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[#### Update monitoring configuration on this virtual machine]A;]A;Use the button below to deploy the required components and start monitoring with the new configuration."]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[#### Actualizar la configuración de supervisión en esta máquina virtual]A;]A;Use el botón siguiente para implementar los componentes necesarios e iniciar la supervisión con la nueva configuración."]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -117,6 +156,9 @@
       <Item ItemId=";items.text10.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[#### Add SQL Server connection strings]D;]A;Add the monitoring config for this virtual machine. It involves providing a set of connection strings for the SQL databases you would like to monitor. ]D;]A;]D;]A;Note that you have the option to define parameters to reference secrets from an Azure Key Vault or for just reuse of tokens across connection strings. [Learn more<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" height="12" width="12" style="margin: 0px 0px -2px 3px">]D;]A;  <path d="M14.3,1.5H10V.5h6v6H15V2.2l-8,8-.7-.7Z" />]D;]A;  <path d="M11,8.5v5a.9.9,0,0,1-.787,1,.948.948,0,0,1-.213,0H2a.9.9,0,0,1-1-.787A.948.948,0,0,1,1,13.5v-7a.9.9,0,0,1,.787-1A.948.948,0,0,1,2,5.5H8l1-1H2a2,2,0,0,0-2,2v7a2,2,0,0,0,2,2h8a2,2,0,0,0,2-2v-6Z" />]D;]A;</svg>]5D;(https://aka.ms/azuresqlinsights/docs/vmconfig).]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[#### Agregar cadenas de conexión de SQL Server]D;]A;Agregue la configuración de supervisión para esta máquina virtual. Implica proporcionar un conjunto de cadenas de conexión para las bases de datos SQL que quiere supervisar. ]D;]A;]D;]A;Tenga en cuenta que tiene la opción de definir parámetros para hacer referencia a secretos de Azure Key Vault o, simplemente, reutilizar los tokens en las cadenas de conexión. [Más información<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" height="12" width="12" style="margin: 0px 0px -2px 3px">]D;]A;  <path d="M14.3,1.5H10V.5h6v6H15V2.2l-8,8-.7-.7Z" />]D;]A;  <path d="M11,8.5v5a.9.9,0,0,1-.787,1,.948.948,0,0,1-.213,0H2a.9.9,0,0,1-1-.787A.948.948,0,0,1,1,13.5v-7a.9.9,0,0,1,.787-1A.948.948,0,0,1,2,5.5H8l1-1H2a2,2,0,0,0-2,2v7a2,2,0,0,0,2,2h8a2,2,0,0,0,2-2v-6Z" />]D;]A;</svg>]5D;(https://aka.ms/azuresqlinsights/docs/vmconfig).]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -129,6 +171,9 @@
       <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Update monitoring VM config]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Actualizar configuración de VM de supervisión]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

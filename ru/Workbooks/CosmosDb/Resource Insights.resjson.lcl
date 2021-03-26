@@ -53,8 +53,8 @@
         <Item ItemId=";(...) eaccountsRequestsDocumentCount.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Document Count (Avg)]]></Val>
-            <Tgt Cat="Text" Stat="Update" Orig="New">
-              <Val><![CDATA[Число документов (сумма)]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Число документов (среднее)]]></Val>
             </Tgt>
             <Prev Cat="Text">
               <Val><![CDATA[Document Count (Sum)]]></Val>
@@ -438,8 +438,8 @@
       <Item ItemId=";items.Storage.content.items.DocumentInfo.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Document Count {DatabaseText} {ContainerText} ]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[Число и квота документов]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Число документов. База данных: {DatabaseText}. Контейнер: {ContainerText}. ]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Document Count & Quota]]></Val>
@@ -489,8 +489,8 @@
       <Item ItemId=";items.System.content.items.MetadataRequestsbyStatusCode.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Metadata Requests by Status Code {DatabaseText} {ContainerText} ]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[Запросы метаданных по коду состояния]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Запросы метаданных по коду состояния. База данных: {DatabaseText}. Контейнер: {ContainerText}. ]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Metadata Requests by Status Code]]></Val>
@@ -501,6 +501,9 @@
       <Item ItemId=";items.System.content.items.ThrottledMetadataRequests.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Metadata Requests That Exceeded Capacity (429s) {DatabaseText} {ContainerText} ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Запросы метаданных с превышением емкости (ошибка 429). База данных: {DatabaseText}. Контейнер: {ContainerText}. ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

@@ -14,6 +14,9 @@
         <Item ItemId=";(...) aseaccountsRequestsServiceAvailability.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Service Availability (Average)]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[サービスの可用性 (平均)]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -50,8 +53,8 @@
         <Item ItemId=";(...) eaccountsRequestsDocumentCount.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Document Count (Avg)]]></Val>
-            <Tgt Cat="Text" Stat="Update" Orig="New">
-              <Val><![CDATA[ドキュメント数 (合計)]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[ドキュメント数 (平均)]]></Val>
             </Tgt>
             <Prev Cat="Text">
               <Val><![CDATA[Document Count (Sum)]]></Val>
@@ -62,8 +65,8 @@
         <Item ItemId=";(...) eaccountsRequestsDocumentCountTimeline.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Document Count (Avg) Timeline]]></Val>
-            <Tgt Cat="Text" Stat="Update" Orig="New">
-              <Val><![CDATA[ドキュメント数 (合計) のタイムライン]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[ドキュメント数 (平均) のタイムライン]]></Val>
             </Tgt>
             <Prev Cat="Text">
               <Val><![CDATA[Document Count (Sum) Timeline]]></Val>
@@ -150,7 +153,7 @@
           <Str Cat="Text">
             <Val><![CDATA[Total Requests (Count)]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[合計要求数 (カウント)]]></Val>
+              <Val><![CDATA[要求の合計 (数)]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
@@ -188,8 +191,8 @@
         <Item ItemId=";(...) DocumentCount.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Document Count (Avg)]]></Val>
-            <Tgt Cat="Text" Stat="Update" Orig="New">
-              <Val><![CDATA[ドキュメント数 (合計)]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[ドキュメント数 (平均)]]></Val>
             </Tgt>
             <Prev Cat="Text">
               <Val><![CDATA[Document Count (Sum)]]></Val>
@@ -200,8 +203,8 @@
         <Item ItemId=";(...) DocumentCountTimeline.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Document Count (Avg) Timeline]]></Val>
-            <Tgt Cat="Text" Stat="Update" Orig="New">
-              <Val><![CDATA[ドキュメント数 (合計) のタイムライン]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[ドキュメント数 (平均) のタイムライン]]></Val>
             </Tgt>
             <Prev Cat="Text">
               <Val><![CDATA[Document Count (Sum) Timeline]]></Val>
@@ -291,6 +294,9 @@
       <Item ItemId=";items.Container.content.parameters.82f8fb728e0145168115b62082df1e44.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[When the value is "unset" or not selected, the data being displayed is at the account level.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[値が "unset" の場合、または選択されていない場合、表示されるデータはアカウント レベルです。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -315,8 +321,8 @@
       <Item ItemId=";items.Latency.content.items.ServerSideLatencyByRegion.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Server Side Latency (Avg) By Region {DatabaseText} {ContainerText} ]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[リージョンごとのサーバー側の待機時間 (平均)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[リージョンごとのサーバー側の待機時間 (平均) {DatabaseText} {ContainerText} ]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Server Side Latency (Avg) By Region]]></Val>
@@ -327,6 +333,9 @@
       <Item ItemId=";items.LatencyCopy.content.items.ServerSideLatencyByOperation.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Server Side Latency (Avg) By Operation {DatabaseText} {ContainerText} ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[操作ごとのサーバー側の待機時間 (平均) {DatabaseText} {ContainerText} ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -363,8 +372,8 @@
       <Item ItemId=";items.Overview.content.items.NormalizedRUConsumption.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Normalized RU Consumption (max) {DatabaseText} {ContainerText} ]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[正規化された RU 消費量 (最大)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[正規化された RU 消費量 (最大) {DatabaseText} {ContainerText} ]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Normalized RU Consumption (max)]]></Val>
@@ -375,14 +384,17 @@
       <Item ItemId=";items.Overview.content.items.ThrottledRequests429s.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Throttled Requests (429s) {DatabaseText} {ContainerText}]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[調整された要求数 (429) {DatabaseText} {ContainerText}]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overview.content.items.TotalRequests.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Total Requests {DatabaseText} {ContainerText}]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[要求の合計数]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[合計要求数 {DatabaseText} {ContainerText}]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Total Requests]]></Val>
@@ -393,8 +405,8 @@
       <Item ItemId=";items.Overview.content.items.Usage.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Data & Index Usage {DatabaseText} {ContainerText} ]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[データとインデックスの使用状況]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[データおよびインデックスの使用率 {DatabaseText} {ContainerText} ]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Data & Index Usage]]></Val>
@@ -405,8 +417,8 @@
       <Item ItemId=";items.Requests.content.items.TotalRequests.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Total Requests by Status Code {DatabaseText} {ContainerText} ]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[状態コードごとの要求の合計数]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[状態コードごとの要求の合計数 {DatabaseText} {ContainerText} ]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Total Requests by Status Code]]></Val>
@@ -417,8 +429,8 @@
       <Item ItemId=";items.Requests.content.items.TotalRequestsbyOperationType.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Total Requests by Operation Type {DatabaseText} {ContainerText} ]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[操作の種類ごとの要求の合計数]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[操作の種類ごとの要求の合計数 {DatabaseText} {ContainerText} ]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Total Requests by Operation Type]]></Val>
@@ -429,14 +441,17 @@
       <Item ItemId=";items.Requests.content.items.metric3.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Throttled Requests (429) {DatabaseText} {ContainerText}]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[調整された要求数 (429) {DatabaseText} {ContainerText}]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Storage.content.items.DocumentInfo.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Document Count {DatabaseText} {ContainerText} ]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[ドキュメントの数とクォータ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[ドキュメント数 {DatabaseText} {ContainerText} ]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Document Count & Quota]]></Val>
@@ -447,8 +462,8 @@
       <Item ItemId=";items.Storage.content.items.UsageA.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Data & Index Usage {DatabaseText} {ContainerText} ]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[データとインデックスの使用状況]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[データおよびインデックスの使用率 {DatabaseText} {ContainerText} ]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Data & Index Usage]]></Val>
@@ -477,14 +492,17 @@
       <Item ItemId=";items.Storage.content.items.UsageB.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Data, Index & Document Usage]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[データ、インデックス、ドキュメントの使用状況]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.System.content.items.MetadataRequestsbyStatusCode.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Metadata Requests by Status Code {DatabaseText} {ContainerText} ]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[状態コードごとのメタデータ要求]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[状態コードごとのメタデータ要求数 {DatabaseText} {ContainerText} ]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Metadata Requests by Status Code]]></Val>
@@ -495,6 +513,9 @@
       <Item ItemId=";items.System.content.items.ThrottledMetadataRequests.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Metadata Requests That Exceeded Capacity (429s) {DatabaseText} {ContainerText} ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[容量を超過したメタデータ要求数 (429) {DatabaseText} {ContainerText} ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -582,8 +603,8 @@
       <Item ItemId=";items.Throughput.content.items.NormalizedRUConsumptionByPartitionKeyRangeID.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Normalized RU Consumption (%) By PartitionKeyRangeID {DatabaseText} {ContainerText} ]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[PartitionKeyRangeID ごとの正規化された RU 消費量 (%)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[PartitionKeyRangeID ごとの正規化された RU 消費量 (%) {DatabaseText} {ContainerText} ]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Normalized RU Consumption (%) By PartitionKeyRangeID]]></Val>
@@ -603,8 +624,8 @@
       <Item ItemId=";items.Throughput.content.items.NormalizedRUConsumptionHeatMap.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Normalized RU Consumption (Max) Heat Map By PartitionKeyRangeID {DatabaseText} {ContainerText} ]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[PartitionKeyRangeID ごとの正規化された RU 消費量 (最大) のヒート マップ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[PartitionKeyRangeID ごとの正規化された RU 消費量 (最大) のヒート マップ {DatabaseText} {ContainerText} ]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Normalized RU Consumption (Max) Heat Map By PartitionKeyRangeID]]></Val>
@@ -660,6 +681,9 @@
       <Item ItemId=";items.parameters11.content.parameters.0abe0edd1fb046fbb7f26c0c21245fda.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[When the value is "unset" or not selected, the data being displayed is at the database level.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[値が "unset" の場合、または選択されていない場合、表示されるデータはデータベース レベルです。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
