@@ -216,18 +216,6 @@
           <Disp Icon="Str" />
         </Item>
       </Item>
-      <Item ItemId=";@items.HostDiagnostics.content.items.EventGroup.content.items.EventsSummary.content.tileSettings.secondaryContent." ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) formatOptions.linkLabel" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[Help]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Guida]]></Val>
-            </Tgt>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-      </Item>
       <Item ItemId=";@items.HostDiagnostics.content.items.PerfGroup.content.items.PerfDrillDown.content.items.HostNotSelectedInstructio" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) ns.content.json" ItemType="0" PsrId="306" Leaf="true">
@@ -432,18 +420,6 @@
           <Disp Icon="Str" />
         </Item>
       </Item>
-      <Item ItemId=";@items.HostDiagnostics.content.items.WvdAgentParameters.content.parameters.3e59686fa66b49a49f6f4be9452501a6.descri" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) ption" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[Grammar]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Grammatica]]></Val>
-            </Tgt>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-      </Item>
       <Item ItemId=";@items.HostDiagnostics.content.items.WvdAgentParameters.content.parameters.4c0874af922a463b8a4fad008e5a7259.descri" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) ption" ItemType="0" PsrId="306" Leaf="true">
@@ -451,18 +427,6 @@
             <Val><![CDATA[This allows for more natural phrasing in the message. If all agent events are only error or only warning, it will print the corresponding level. Otherwise, it will say "Error and/or Warning"]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
               <Val><![CDATA[Consente una definizione delle frasi più naturale nel messaggio. Se tutti gli eventi agente sono solo errori o solo avvisi, verrà stampato il livello corrispondente. In caso contrario, verrà visualizzato il messaggio "Errore e/o avviso"]]></Val>
-            </Tgt>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-      </Item>
-      <Item ItemId=";@items.HostDiagnostics.content.items.WvdAgentParameters.content.parameters.6d21a13c70b2407c8a144d76579da036.descri" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) ption" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[Grammar]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Grammatica]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
@@ -487,30 +451,6 @@
             <Val><![CDATA[Option to allow for testing the agent message, if no agent messages exist in the data set]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
               <Val><![CDATA[Opzione per consentire il test del messaggio dell'agente, se nel set di dati non sono presenti messaggi dell'agente]]></Val>
-            </Tgt>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-      </Item>
-      <Item ItemId=";@items.HostDiagnostics.content.items.WvdAgentParameters.content.parameters.bc4729466b884768b9dd792a43a119fd.descri" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) ption" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[Grammar]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Grammatica]]></Val>
-            </Tgt>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-      </Item>
-      <Item ItemId=";@items.HostDiagnostics.content.items.WvdAgentParameters.content.parameters.da4da63f301e4178964a7cf06431318f.descri" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) ption" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[Grammar]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Grammatica]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
@@ -665,10 +605,13 @@
       </Item>
       <Item ItemId=";items.HostDiagnostics.content.items.WVDAgentEventText.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[There {HostVerb} **{HostsWithAgentEvents}** {HostPlural} reporting **{TotalEventInstances}** {EventInstancePlural} of **{DistinctEventCount}** WVD agent **{EventLevelName}** {DistinctEventPlural}. See the **WVD agent events** table below to learn more about these issues.]]></Val>
+          <Val><![CDATA[One or more WVD hosts are reporting issues to the event log. See the **WVD agent events** table below to learn more about these issues. Observed issue levels: **{EventLevelName}**, number of hosts affected: **{HostsWithAgentEvents}**, distinct issue types: **{DistinctEventCount}**, total instances of issues: **{TotalEventInstances}**]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Vi {HostVerb} **{HostsWithAgentEvents}** {HostPlural} che segnalano **{TotalEventInstances}** {EventInstancePlural} di **{DistinctEventCount}** per l'agente Desktop virtuale Windows **{EventLevelName}** {DistinctEventPlural}. Per altre informazioni su questi problemi, vedere la tabella **Eventi agente Desktop virtuale Windows** riportata di seguito.]]></Val>
+            <Val><![CDATA[Uno o più host di Desktop virtuale Windows segnalano problemi al log eventi. Per altre informazioni su questi problemi, vedere la tabella **Eventi agente Desktop virtuale Windows** riportata di seguito. Livelli di problema osservati: **{EventLevelName}**, numero di host interessati: **{HostsWithAgentEvents}**, tipi di problemi distinti: **{DistinctEventCount}**, numero totale di istanze dei problemi: **{TotalEventInstances}**]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[There {HostVerb} **{HostsWithAgentEvents}** {HostPlural} reporting **{TotalEventInstances}** {EventInstancePlural} of **{DistinctEventCount}** WVD agent **{EventLevelName}** {DistinctEventPlural}. See the **WVD agent events** table below to learn more about these issues.]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>

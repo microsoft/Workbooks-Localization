@@ -365,6 +365,9 @@
         <Item ItemId=";(...) uetopreemption.content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Max Time to Kill Task (due to preemption)]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Görevi Sonlandırmak için Geçen En Uzun Süre (önalım nedeniyle)]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -374,6 +377,9 @@
         <Item ItemId=";(...) 300sinterval.content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Pre-emption Time Lost (300s interval)]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Kayıp Önalım Süresi (300 saniyelik aralık)]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -383,6 +389,9 @@
         <Item ItemId=";(...) dTask300sinterval.content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Time to Kill Pre-empted Task (300s interval)]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Önalım Uygulanan Görevi Sonlandırmak için Geçen Süre (300 saniyelik aralık)]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -392,6 +401,9 @@
         <Item ItemId=";(...) s.content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Total Execution Slots]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Toplam Yürütme Yuvası Sayısı]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -410,6 +422,9 @@
         <Item ItemId=";(...) stsByHost.content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Total Executor Requests By  Host]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Konağa Göre Toplam Yürütücü İsteği Sayısı]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -419,6 +434,9 @@
         <Item ItemId=";(...) ercentagebyHost.content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Used Execution Slot Percentage by Host]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Konağa Göre Kullanılan Yürütme Yuvası Yüzdesi]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -441,7 +459,7 @@
           <Str Cat="Text">
             <Val><![CDATA[Max Decoding Time]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[En Fazla Kod Çözme zamanı]]></Val>
+              <Val><![CDATA[En Yüksek Kod Çözme Süresi]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
@@ -453,7 +471,7 @@
           <Str Cat="Text">
             <Val><![CDATA[IO Elevator]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[GÇ Asansör]]></Val>
+              <Val><![CDATA[IO Elevator]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
@@ -497,6 +515,9 @@
         <Item ItemId=";(...) tle" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Number of Active Sources]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Etkin Kaynak Sayısı]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -554,6 +575,9 @@
         <Item ItemId=";(...) title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[JVM Heap Usage]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[JVM Yığın Kullanımı]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -563,6 +587,9 @@
         <Item ItemId=";(...) itle" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[JVM Non-Heap Usage]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[JVM Yığın Dışı Kullanımı]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -975,6 +1002,9 @@
       <Item ItemId=";items.Usage.content.items.Hive.content.items.HiveServerInteractive.content.items.NumberofActiveSinks.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Number of Active Sinks]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Etkin Havuz Sayısı]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -990,18 +1020,27 @@
       <Item ItemId=";items.Usage.content.items.Hive.content.items.HiveServerInteractive.content.items.PublishAvgTime.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Publish Avg Time]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Yayımlama Ortalama Zamanı]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Usage.content.items.Hive.content.items.HiveServerInteractive.content.items.SinkTimelineAvgTime.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Sink Timeline Avg Time]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Havuz Zaman Çizelgesi Ortalama Zamanı]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Usage.content.items.Hive.content.items.HiveServerInteractive.content.items.SnapshotAvgTime.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Snapshot Avg Time]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Anlık Görüntü Ortalama Zamanı]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1125,12 +1164,18 @@
       <Item ItemId=";items.Usage.content.items.HiveMetricsNotPresent.content.items.text0.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No Hive Metrics found in Log Analytics. Hive Metrics are not yet supported for ESP clusters. If this cluster is not ESP, please open a support ticket so we can investigate the cause of the missing metrics]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Log Analytics'te Hive Ölçümü bulunamadı. Hive Ölçümleri henüz ESP kümeleri için desteklenmiyor. Bu küme ESP değilse lütfen eksik ölçümlerin nedenini araştırabilmemiz için bir destek bileti açın]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Usage.content.items.LLAPOverviewStatus.content.gridSettings.labelSettings.ResourceId.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[ClusterName]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[ClusterName]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1200,12 +1245,18 @@
       <Item ItemId=";items.Usage.content.items.SystemMetrics.content.items.Load.content.items.query0Copyer.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[One Minute Load by Node]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Düğüme Göre Bir Dakikalık Yük]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Usage.content.items.SystemMetrics.content.items.Load.content.items.query0Copyop.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Five Minute Load by Node Type]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Düğüm Türüne Göre Beş Dakikalık Yük]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1320,12 +1371,18 @@
       <Item ItemId=";items.Usage.content.items.Yarn.content.items.YarnAppMetrics.content.items.AvgAMLaunchDelayTimeinMS.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Avg AM Launch Delay Time]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Ortalama Application Master Başlatma Gecikmesi Süresi]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Usage.content.items.Yarn.content.items.YarnAppMetrics.content.items.AvgAMRegisterDelayTimeinMS.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Avg AM Register Delay Time]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Ortalama Application Master Kayıt Gecikmesi Süresi]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

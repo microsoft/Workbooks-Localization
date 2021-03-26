@@ -12,18 +12,27 @@
       <Item ItemId=";items.ADFSLockoutTitle.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[]D;]A;]D;]A;## AD FS Account Lockout Analysis]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[]D;]A;]D;]A;## AD FS アカウントのロックアウト分析]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.ADFSLockouts.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No users currently have account lockouts. ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[現在、アカウント ロックアウトが発生しているユーザーはいません。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.ADFSLockouts.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Users with Account Lockouts]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[アカウント ロックアウトが発生しているユーザー]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -48,6 +57,9 @@
       <Item ItemId=";items.DeviceTitle.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Sign-In Analysis by Device]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## デバイスによるサインインの分析]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -63,42 +75,63 @@
       <Item ItemId=";items.LocationDetailsQuery.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Location Sign-In Details]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[場所のサインインに関する詳細]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.LocationMapQuery.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Sign-Ins Mapped by Country]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[マップされたサインイン (国別)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.LocationTitle.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Sign-In Analysis by Location]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## サインインの分析 (場所別)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.ShowHelpADFS.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Data from AD FS is aggregated and sent through the Azure AD Connect Health agent to the Azure AD Sign-Ins Report and Log Analytics.]D;]A;AD FS Account Lockout information is aggregated from AD FS Events 411, 1500, and is marked in the Azure AD logs as Error Code 30030. ]D;]A;]D;]A;Additional data provided in logs relaged to AD FS lockouts include:]D;]A;- Attempted Login Name (Alternate Login In)]D;]A;- IP the Request Originated From ]D;]A;- User Agent String]D;]A;]D;]A;If no data is present, verify that the Connect Health agent for AD FS is installed, upgraded to the latest version, and the "ADFSSignInLogs" stream in Log Analytics is enabled.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### AD FS からのデータが集計され、Azure AD Connect Health エージェントを通して Azure AD サインイン レポートと Log Analytics に送信されます。]D;]A;AD FS アカウントのロックアウト情報が AD FS イベント 411、1500 から集計され、Azure AD ログでエラー コード 30030 としてマークされます。]D;]A;]D;]A;AD FS ロックアウトに関連してログに提供される追加のデータには、次のものが含まれます。]D;]A;- 試行されたログイン名 (代替ログイン)]D;]A;- 要求の送信元の IP]D;]A;- ユーザー エージェント文字列]D;]A;]D;]A;データが存在しない場合は、AD FS 用の Connect Health エージェントがインストールされていること、最新バージョンにアップグレードされていること、および Log Analytics の "ADFSSignInLogs" ストリームが有効になっていることをご確認ください。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.ShowHelpChangeLogs.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Change Log]D;]A;]D;]A;As updates and fixes are made to the preview Workbook, they will be tracked.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### 変更ログ]D;]A;]D;]A;プレビュー ブックに更新と修正が行われると、その内容が追跡されます。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.ShowHelpLocation.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[#### Map of Locations]D;]A;Location data color scheme is based on the amount of sign-ins. The gradient will display the darkest color for the most sign-ins.]D;]A;]D;]A;The data is aggregated from:]D;]A;- Location Details from each sign-in, which includes the country and city of the sign-in.]D;]A;- The status of sign-in: Success, Failure, or Interrupted. To view different types of sign-ins, select the corresponding tile at the top of this report to filter.]D;]A;]D;]A;#### Location Sign In Details]D;]A;This chart can be used to view details from each country in a list view. Each row can be expanded to see the sign-in counts based on city. The graph is ordered based on the highest volume of sign-ins.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[#### 場所のマップ]D;]A;場所データの配色は、サインインの量に基づいています。グラデーションにより、サインインの最も多い場所が最も暗い色で表示されます。]D;]A;]D;]A;データの集計元:]D;]A;- サインインごとの場所の詳細 (サインインの国や都市を含む)。]D;]A;- サインインの状態: 成功、失敗、または中断。異なる種類のサインインを表示するには、このレポートの上部にある対応するタイルを選択してフィルターを適用します。]D;]A;]D;]A;#### 場所のサインインの詳細]D;]A;このグラフは、各国の詳細をリスト ビューに表示するために使用できます。各行を展開すると、都市に基づいてサインイン数を確認できます。グラフは、サインインの多い順に並べられます。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.ShowHelpParameter.content.parameters.e8df00960969442391ec7952ec1615e2.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Toggle to Show Help for each Tab]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[各タブのヘルプを表示するように切り替えます]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -114,96 +147,144 @@
       <Item ItemId=";items.ShowHelpSummary.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[##### Sign-In Summary]D;]A;]D;]A;The Sign-In summary displays an overall view of the amount of successful and failed sign-ins in the organization. Select a tile to be able to filter based on successful, failed, or pending user action sign-ins.]D;]A;]D;]A;The sign-ins summary by time may show any anomalies in failures in the overall view of the tenant.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[##### サインインの概要]D;]A;]D;]A;サインインの概要には、組織内の成功および失敗したサインインの全体図が表示されます。タイルを選択すると、成功、失敗、またはユーザー操作保留中のサインインに基づいてフィルターを適用できます。]D;]A;]D;]A;時間別のサインインの概要を表示すると、テナント全体から見たエラーの異常値が示される場合があります。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.ShowHelpWelcome.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Welcome to Sign-In Analysis Workbook]D;]A;This workbook is currently in preview. To access the previous version of the sign-in Workbook, navigate to "Sign-Ins" in Workbook templates. This Workbook can help analyze the organization's sign-ins for both Azure AD and AD FS Sign-Ins.]D;]A;For help as you navigate this workbook, toggle Show Help at the page top.]D;]A;]D;]A;To get started, select one of the tabs and filter the parameters to select any filtering you would like to do on the report.]D;]A;]D;]A;This Workbook combines the existing streams:]D;]A;- AADSignInLogs]D;]A;- ADFSSignInLogs]D;]A;]D;]A;Streams can be selected in "Logs" to be populated in this report. If your organization does not have AD FS, data will not be displayed. If your organization is interested in viewing AD FS data, ensure the Connect Health agent is installed and updated to the latest version.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### サインイン分析ブックへようこそ]D;]A;このブックは現在、プレビューです。サインイン ブックの以前のバージョンにアクセスするには、ブック テンプレートの [サインイン]5D; に移動してください。このブックは、Azure AD と AD FS サインインの両方について組織のサインインを分析するのに役立ちます。]D;]A;このブックを移動するときにヘルプが必要な場合は、ページ上部にある [ヘルプの表示]5D; を切り替えます。]D;]A;]D;]A;開始するには、いずれかのタブを選択し、パラメーターをフィルター処理して、レポートに適用するフィルターを選択します。]D;]A;]D;]A;このブックでは、次の既存のストリームを結合します。]D;]A;- AADSignInLogs]D;]A;- ADFSSignInLogs]D;]A;]D;]A;このレポートに入力するストリームは、[ログ]5D; で選択できます。組織に AD FS がない場合、データは表示されません。組織の AD FS データを表示するには、Connect Health エージェントがインストールされていることと、最新バージョンに更新されていることをご確認ください。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.SignInAnalysisErrorTitle.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Sign-In Error Analysis]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## サインイン エラー分析]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.SignInsWorkbookTitle.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Sign-in Analysis Workbook (Preview)]D;]A;This workbook will help you analyze your organization's sign-ins for both Azure AD and AD FS Sign-Ins. For help as you navigate this workbook, toggle Show Help below.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# サインイン分析ブック (プレビュー)]D;]A;このブックは、Azure AD と AD FS サインインの両方について組織のサインインを分析するのに役立ちます。このブックを移動するときにヘルプが必要な場合は、下の [ヘルプの表示]5D; を切り替えます。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.SummaryTimeRangeQuery.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Summary of Sign-Ins  by Time]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[時間別のサインインの概要]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.SummaryTitle.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Sign-In Activity Summary]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## サインイン アクティビティの概要]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Tabs.content.links.44e002a892004fbc8e44e97e65894e0f.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Error Analysis]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[エラーの分析]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Tabs.content.links.51a5058840604037867f690537b30533.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[General Analysis]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[全般的な分析]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Tabs.content.links.51a5058840604037867f690537b30533.preText" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[ADFS Failed Sign-In]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[失敗した ADFS サインイン]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.TileQuerySelection.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[]D83D;]DCA1; Click on a tile in the grid below to filter the report further.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[]D83D;]DCA1; 下のグリッドのタイルをクリックすると、レポートがさらにフィルター処理されます。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.TopAppFailureQuery.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Top Applications with Bad Password Attempts]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[間違ったパスワードが試行された上位のアプリケーション]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.UserFailureQuery.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Top Sign-In Errors by User]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[ユーザー別の上位のサインイン エラー]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.UserIPParameter.content.parameters.037f0b58686f41bd8dc2b556efe51958.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Select how to view Top Sign-In Errors]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[上位のサインイン エラーを表示する方法を選択します]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.UserIPParameter.content.parameters.037f0b58686f41bd8dc2b556efe51958.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[View Errors By]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[エラーの表示方法]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text20.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[]D;]A;]D;]A;## Top Sign-In Errors by User or IP]D;]A;Select the parameter value below to display the query based on the parameter you would like to view.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[]D;]A;]D;]A;## ユーザーまたは IP 別の上位のサインイン エラー]D;]A;表示するパラメーターに基づいてクエリを表示するには、下のパラメーター値を選択してください。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Sign-In Analysis Preview Workbook]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[サインイン分析のプレビュー ブック]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
