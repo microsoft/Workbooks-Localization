@@ -9,70 +9,34 @@
     <Disp Icon="Expand" Expand="true" Disp="true" LocTbl="false" />
     <Item ItemId=";Strings" ItemType="0" PsrId="306" Leaf="false">
       <Disp Icon="Str" Disp="true" LocTbl="false" />
-      <Item ItemId=";items.ADFSLockoutTitle.content.json" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.AADBadPasswordAttempt.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[]D;]A;]D;]A;## AD FS Account Lockout Analysis]]></Val>
+          <Val><![CDATA[Top Applications with Bad Password Attempts]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[]D;]A;]D;]A;## AD FS 帳戶鎖定分析]]></Val>
+            <Val><![CDATA[出現嘗試錯誤密碼的前幾大應用程式]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.ADFSLockouts.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.AADErrorAnalysisUser.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[No users currently have account lockouts. ]]></Val>
+          <Val><![CDATA[Top Sign-In Errors by User]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[目前未鎖住任何使用者的帳戶。]]></Val>
+            <Val><![CDATA[前幾大登入錯誤 (依使用者)]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.ADFSLockouts.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.AADFilter.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Users with Account Lockouts]]></Val>
+          <Val><![CDATA[]D83D;]DCA1; Click on a tile in the grid below to filter the report further.]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[帳戶鎖定的使用者]]></Val>
+            <Val><![CDATA[]D83D;]DCA1; 按一下下方格線中的磚，可進一步篩選報告。]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.DeviceSignInDetailsQuery.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Device Sign-in details]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[裝置登入詳細資料]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.DeviceSignInQuery.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Sign-ins by Device]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[登入數 (依裝置)]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.DeviceTitle.content.json" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[## Sign-In Analysis by Device]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[## 登入分析 (依裝置)]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.GeneralParameters.content.parameters.010f528aa7594aaca0d956bc434611d5.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Token Issuer Type]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[權杖簽發者類型]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.LocationDetailsQuery.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.AADLocationDetails.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Location Sign-In Details]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -81,11 +45,176 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.LocationMapQuery.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.AADLocationMap.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Sign-Ins Mapped by Country]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[登入數 (依國家/地區對應)]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.AADSignInTimeChart.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Summary of Sign Ins by Time]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.ADFSAccountLockoutText.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[### Data from AD FS is aggregated and sent through the Azure AD Connect Health agent to the Azure AD Sign-Ins Report and Log Analytics.]D;]A;AD FS Account Lockout information is aggregated from AD FS Events 411, 1500, and is marked in the Azure AD logs as Error Code 30030. ]D;]A;]D;]A;Additional data provided in logs relaged to AD FS lockouts include:]D;]A;- Attempted Login Name (Alternate Login In)]D;]A;- IP the Request Originated From ]D;]A;- User Agent String]D;]A;]D;]A;If no data is present, verify that the Connect Health agent for AD FS is installed, upgraded to the latest version, and the "ADFSSignInLogs" stream in Log Analytics is enabled.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### 來自 AD FS 的資料會經過彙總，然後透過 Azure AD Connect Health 代理程式傳送至 Azure AD 登入報告與 Log Analytics。]D;]A;AD FS 帳戶鎖定資訊會以 AD FS 事件 411 與 1500 作為彙總來源，並會在 Azure AD 記錄中標記為錯誤碼 30030。]D;]A;]D;]A;記錄中所提供與 AD FS 鎖定相關的其他資料包含:]D;]A;- 嘗試的登入名稱 (其他登入)]D;]A;- 產生要求的 IP ]D;]A;- 使用者代理程式字串]D;]A;]D;]A;如果未出現任何資料，請驗證 AD FS 的 Connect Health 代理程式是否已安裝且已升級為最新版本，且已在 Log Analytics 中啟用 "ADFSSignInLogs" 串流。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.ADFSDataParameter.content.parameters.76a5730a009f4d75be705b2238d901f5.description" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Verify that ADFSSigninLogs is enabled in Diagnostic Settings. This is required to view AD FS data.]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.ADFSDataParameter.content.parameters.76a5730a009f4d75be705b2238d901f5.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[AD FS Data Enabled]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.ADFSParameter.content.parameters.64a06cc9937c40b683c85fb4e7202105.description" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Filter what type of data to see, Azure AD, AD FS or both]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.ADFSParameter.content.parameters.64a06cc9937c40b683c85fb4e7202105.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Token Issuer Type]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[權杖簽發者類型]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.AccountLockoutADFS.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[]D;]A;]D;]A;## AD FS Account Lockout Analysis]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[]D;]A;]D;]A;## AD FS 帳戶鎖定分析]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.AccountLockoutADFS.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[No users or data with account lockouts. ]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.AccountLockoutADFS.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Users with Account Lockouts]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[帳戶鎖定的使用者]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.CoimbinedErrorAnalysisUser.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Top Sign-In Errors by User]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[前幾大登入錯誤 (依使用者)]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.CombinedDataBadPassword.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Top Applications with Bad Password Attempts]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[出現嘗試錯誤密碼的前幾大應用程式]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.CombinedFilter.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[]D83D;]DCA1; Click on a tile in the grid below to filter the report further.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[]D83D;]DCA1; 按一下下方格線中的磚，可進一步篩選報告。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.CombinedLocationDetails.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Location Sign-In Details]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[位置登入詳細資料]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.CombinedLocationMap.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Sign-Ins Mapped by Country]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[登入數 (依國家/地區對應)]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.CombinedSignInTimeChart.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Summary of Sign-Ins  by Time]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[登入摘要 (依時間)]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.DeviceDetails.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Sign-ins by Device]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[登入數 (依裝置)]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.DeviceExtraDetails.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Device Sign-in details]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[裝置登入詳細資料]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.DeviceText.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[## Sign-In Analysis by Device]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## 登入分析 (依裝置)]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.ErrorUserIPTitle.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[]D;]A;]D;]A;## Top Sign-In Errors by User or IP]D;]A;Select the parameter value below to display the query based on the parameter you would like to view.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[]D;]A;]D;]A;## 依據使用者或 IP 排序的最多登入錯誤]D;]A;請選取下方參數值，根據您要檢視的參數顯示查詢。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.LocationHelp.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[#### Map of Locations]D;]A;Location data color scheme is based on the amount of sign-ins. The gradient will display the darkest color for the most sign-ins.]D;]A;]D;]A;The data is aggregated from:]D;]A;- Location Details from each sign-in, which includes the country and city of the sign-in.]D;]A;- The status of sign-in: Success, Failure, or Interrupted. To view different types of sign-ins, select the corresponding tile at the top of this report to filter.]D;]A;]D;]A;#### Location Sign In Details]D;]A;This chart can be used to view details from each country in a list view. Each row can be expanded to see the sign-in counts based on city. The graph is ordered based on the highest volume of sign-ins.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[#### 位置的地圖]D;]A;位置資料色彩配置會以登入次數為依據。登入次數最多的位置會以最深的漸層色彩顯示。]D;]A;]D;]A;資料彙總來源包括:]D;]A;- 每次登入的位置詳細資料，包括登入的國家/地區與城市。]D;]A;- 登入的狀態: 成功、失敗或中斷。若要檢視不同類型的登入，請於此報表頂端選取對應的磚以進行篩選。]D;]A;]D;]A;#### 位置登入詳細資料]D;]A;您可使用此圖表，以清單檢視的方式檢視每個國家/地區的詳細資料。每個資料列皆可展開，以根據城市檢視登入次數。該圖形會以最多登入次數作為排序依據。]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -99,48 +228,9 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.ShowHelpADFS.content.json" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.ShowHelpChangeLog.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[### Data from AD FS is aggregated and sent through the Azure AD Connect Health agent to the Azure AD Sign-Ins Report and Log Analytics.]D;]A;AD FS Account Lockout information is aggregated from AD FS Events 411, 1500, and is marked in the Azure AD logs as Error Code 30030. ]D;]A;]D;]A;Additional data provided in logs relaged to AD FS lockouts include:]D;]A;- Attempted Login Name (Alternate Login In)]D;]A;- IP the Request Originated From ]D;]A;- User Agent String]D;]A;]D;]A;If no data is present, verify that the Connect Health agent for AD FS is installed, upgraded to the latest version, and the "ADFSSignInLogs" stream in Log Analytics is enabled.]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[### 來自 AD FS 的資料會經過彙總，然後透過 Azure AD Connect Health 代理程式傳送至 Azure AD 登入報告與 Log Analytics。]D;]A;AD FS 帳戶鎖定資訊會以 AD FS 事件 411 與 1500 作為彙總來源，並會在 Azure AD 記錄中標記為錯誤碼 30030。]D;]A;]D;]A;記錄中所提供與 AD FS 鎖定相關的其他資料包含:]D;]A;- 嘗試的登入名稱 (其他登入)]D;]A;- 產生要求的 IP ]D;]A;- 使用者代理程式字串]D;]A;]D;]A;如果未出現任何資料，請驗證 AD FS 的 Connect Health 代理程式是否已安裝且已升級為最新版本，且已在 Log Analytics 中啟用 "ADFSSignInLogs" 串流。]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.ShowHelpChangeLogs.content.json" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[### Change Log]D;]A;]D;]A;As updates and fixes are made to the preview Workbook, they will be tracked.]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[### 變更記錄]D;]A;]D;]A;對預覽活頁簿進行更新或修正時，都會加以追蹤。]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.ShowHelpLocation.content.json" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[#### Map of Locations]D;]A;Location data color scheme is based on the amount of sign-ins. The gradient will display the darkest color for the most sign-ins.]D;]A;]D;]A;The data is aggregated from:]D;]A;- Location Details from each sign-in, which includes the country and city of the sign-in.]D;]A;- The status of sign-in: Success, Failure, or Interrupted. To view different types of sign-ins, select the corresponding tile at the top of this report to filter.]D;]A;]D;]A;#### Location Sign In Details]D;]A;This chart can be used to view details from each country in a list view. Each row can be expanded to see the sign-in counts based on city. The graph is ordered based on the highest volume of sign-ins.]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[#### 位置的地圖]D;]A;位置資料色彩配置會以登入次數為依據。登入次數最多的位置會以最深的漸層色彩顯示。]D;]A;]D;]A;資料彙總來源包括:]D;]A;- 每次登入的位置詳細資料，包括登入的國家/地區與城市。]D;]A;- 登入的狀態: 成功、失敗或中斷。若要檢視不同類型的登入，請於此報表頂端選取對應的磚以進行篩選。]D;]A;]D;]A;#### 位置登入詳細資料]D;]A;您可使用此圖表，以清單檢視的方式檢視每個國家/地區的詳細資料。每個資料列皆可展開，以根據城市檢視登入次數。該圖形會以最多登入次數作為排序依據。]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.ShowHelpParameter.content.parameters.e8df00960969442391ec7952ec1615e2.description" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Toggle to Show Help for each Tab]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[切換每個索引標籤的 [顯示說明]5D;]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.ShowHelpParameter.content.parameters.e8df00960969442391ec7952ec1615e2.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Show Help]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[顯示說明]]></Val>
-          </Tgt>
+          <Val><![CDATA[### Change Log: As updates and fixes are made to the preview Workbook, they will be tracked.]D;]A;]D;]A;##### March 29, 2021]D;]A;Preview Workbook released for AAD and AD FS Sign-In data.]]></Val>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -149,51 +239,6 @@
           <Val><![CDATA[##### Sign-In Summary]D;]A;]D;]A;The Sign-In summary displays an overall view of the amount of successful and failed sign-ins in the organization. Select a tile to be able to filter based on successful, failed, or pending user action sign-ins.]D;]A;]D;]A;The sign-ins summary by time may show any anomalies in failures in the overall view of the tenant.]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[##### 登入摘要]D;]A;]D;]A;登入摘要會顯示整體檢視，讓您能了解組織中成功與失敗的登入次數。請選取磚以根據成功、失敗或暫止的使用者動作登入，進行篩選。]D;]A;]D;]A;依據時間排序的登入摘要，會在租用戶整體檢視中顯示所有失敗異常。]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.ShowHelpWelcome.content.json" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[### Welcome to Sign-In Analysis Workbook]D;]A;This workbook is currently in preview. To access the previous version of the sign-in Workbook, navigate to "Sign-Ins" in Workbook templates. This Workbook can help analyze the organization's sign-ins for both Azure AD and AD FS Sign-Ins.]D;]A;For help as you navigate this workbook, toggle Show Help at the page top.]D;]A;]D;]A;To get started, select one of the tabs and filter the parameters to select any filtering you would like to do on the report.]D;]A;]D;]A;This Workbook combines the existing streams:]D;]A;- AADSignInLogs]D;]A;- ADFSSignInLogs]D;]A;]D;]A;Streams can be selected in "Logs" to be populated in this report. If your organization does not have AD FS, data will not be displayed. If your organization is interested in viewing AD FS data, ensure the Connect Health agent is installed and updated to the latest version.]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[### 歡迎使用 Sign-in Analysis Workbook]D;]A;此活頁簿目前為預覽階段。若要存取上一個版本的登入活頁簿，請瀏覽至活頁簿範本中的 [登入]5D;。此活頁簿能協助分析組織的 Azure AD 與 AD FS 登入。]D;]A;如果在瀏覽此活頁簿時需要協助，請切換頁面頂端的 [顯示說明]5D;。]D;]A;]D;]A;若要開始使用，請選取其中一個索引標籤並篩選參數，選取您要在報表上運用的任何篩選。]D;]A;]D;]A;此活頁簿會結合現有的串流:]D;]A;- AADSignInLogs]D;]A;- ADFSSignInLogs]D;]A;]D;]A;您可在 [記錄]5D; 中選取要填入此報告的串流。如果您的組織沒有 AD FS，就不會顯示資料。如果您的組織有興趣檢視 AD FS 資料，請確認已安裝 Connect Health 代理程式且已更新為最新版本。]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.SignInAnalysisErrorTitle.content.json" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[## Sign-In Error Analysis]D;]A;]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[## 登入錯誤分析]D;]A;]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.SignInsWorkbookTitle.content.json" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[# Sign-in Analysis Workbook (Preview)]D;]A;This workbook will help you analyze your organization's sign-ins for both Azure AD and AD FS Sign-Ins. For help as you navigate this workbook, toggle Show Help below.]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[# Sign-in Analysis Workbook (預覽)]D;]A;此活頁簿有助於您分析組織的 Azure AD 與 AD FS 登入。如果在瀏覽此活頁簿時需要協助，請切換下方的 [顯示說明]5D;。]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.SummaryTimeRangeQuery.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Summary of Sign-Ins  by Time]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[登入摘要 (依時間)]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.SummaryTitle.content.json" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[## Sign-In Activity Summary]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[## 登入活動摘要]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -225,34 +270,7 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.TileQuerySelection.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[]D83D;]DCA1; Click on a tile in the grid below to filter the report further.]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[]D83D;]DCA1; 按一下下方格線中的磚，可進一步篩選報告。]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.TopAppFailureQuery.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Top Applications with Bad Password Attempts]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[出現嘗試錯誤密碼的前幾大應用程式]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.UserFailureQuery.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Top Sign-In Errors by User]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[前幾大登入錯誤 (依使用者)]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.UserIPParameter.content.parameters.037f0b58686f41bd8dc2b556efe51958.description" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.UserIPFilter.content.parameters.037f0b58686f41bd8dc2b556efe51958.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Select how to view Top Sign-In Errors]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -261,7 +279,7 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.UserIPParameter.content.parameters.037f0b58686f41bd8dc2b556efe51958.label" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.UserIPFilter.content.parameters.037f0b58686f41bd8dc2b556efe51958.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[View Errors By]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -270,20 +288,53 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.text20.content.json" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.WelcomeShowHelp.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[]D;]A;]D;]A;## Top Sign-In Errors by User or IP]D;]A;Select the parameter value below to display the query based on the parameter you would like to view.]]></Val>
+          <Val><![CDATA[### Welcome to the Sign-In Analysis Workbook]D;]A;This workbook is currently in preview. To access the previous version of the sign-in Workbook, navigate to "Sign-Ins" in Workbook templates. This Workbook can help analyze the organization's sign-ins for both Azure AD and AD FS Sign-Ins.]D;]A;For help as you navigate this workbook, toggle Show Help at the page top.]D;]A;]D;]A;#### View Azure Active Directory Sign-In Data]D;]A;1. Ensure the *SigninLogs* Log Analytics stream is enabled in Diagnostic Settings to view the report.]D;]A;2. To get started, select one of the tabs and filter the parameters to select any filtering you would like to do on the report.]D;]A;]D;]A;#### View Azure Active Directory and AD FS Sign-In data]D;]A;1. If your organization uses AD FS, verify that the prerequisites are satisfied for [AD FS Sign-Ins in AAD Public Preview]5D;(https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-health-ad-fs-sign-in), which include the latest version of the Azure AD Connect Health for AD FS agent.]D;]A;2. Navigate to the "Diagnostic Settings" blade and verify that  *ADFSSignInLogs* is enabled.]D;]A;3. Select "AD FS Data Enabled" in this report, which displays queries with the streams combined to display all data. ]D;]A;4. To get started, filter the report between AAD and AD FS data, use the "Token Issuer Type" filter. The default selection is "All", combining AAD and AD FS data. ]D;]A;]D;]A;]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.parameters17.content.parameters.e8df00960969442391ec7952ec1615e2.description" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Toggle to Show Help for each Tab]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[]D;]A;]D;]A;## 依據使用者或 IP 排序的最多登入錯誤]D;]A;請選取下方參數值，根據您要檢視的參數顯示查詢。]]></Val>
+            <Val><![CDATA[切換每個索引標籤的 [顯示說明]5D;]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.parameters17.content.parameters.e8df00960969442391ec7952ec1615e2.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Sign-In Analysis Preview Workbook]]></Val>
+          <Val><![CDATA[Show Help]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[登入分析預覽活頁簿]]></Val>
+            <Val><![CDATA[顯示說明]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.text0.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[# Sign-in Analysis Workbook (Preview)]D;]A;This workbook will help you analyze your organization's sign-ins for both Azure AD and AD FS Sign-Ins. For help as you navigate this workbook, toggle Show Help below.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# Sign-in Analysis Workbook (預覽)]D;]A;此活頁簿有助於您分析組織的 Azure AD 與 AD FS 登入。如果在瀏覽此活頁簿時需要協助，請切換下方的 [顯示說明]5D;。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.text23.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[## Sign-In Activity Summary]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## 登入活動摘要]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.text7.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[## Sign-In Error Analysis]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## 登入錯誤分析]D;]A;]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />

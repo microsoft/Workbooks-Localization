@@ -216,18 +216,6 @@
           <Disp Icon="Str" />
         </Item>
       </Item>
-      <Item ItemId=";@items.HostDiagnostics.content.items.EventGroup.content.items.EventsSummary.content.tileSettings.secondaryContent." ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) formatOptions.linkLabel" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[Help]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[ヘルプ]]></Val>
-            </Tgt>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-      </Item>
       <Item ItemId=";@items.HostDiagnostics.content.items.PerfGroup.content.items.PerfDrillDown.content.items.HostNotSelectedInstructio" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) ns.content.json" ItemType="0" PsrId="306" Leaf="true">
@@ -432,18 +420,6 @@
           <Disp Icon="Str" />
         </Item>
       </Item>
-      <Item ItemId=";@items.HostDiagnostics.content.items.WvdAgentParameters.content.parameters.3e59686fa66b49a49f6f4be9452501a6.descri" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) ption" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[Grammar]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[文法]]></Val>
-            </Tgt>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-      </Item>
       <Item ItemId=";@items.HostDiagnostics.content.items.WvdAgentParameters.content.parameters.4c0874af922a463b8a4fad008e5a7259.descri" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) ption" ItemType="0" PsrId="306" Leaf="true">
@@ -451,18 +427,6 @@
             <Val><![CDATA[This allows for more natural phrasing in the message. If all agent events are only error or only warning, it will print the corresponding level. Otherwise, it will say "Error and/or Warning"]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
               <Val><![CDATA[これにより、メッセージの語句がより自然になります。すべてのエージェント イベントがエラーのみまたは警告のみの場合、対応するレベルが出力されます。それ以外の場合は "エラーまたは警告あるいはその両方" と表示されます]]></Val>
-            </Tgt>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-      </Item>
-      <Item ItemId=";@items.HostDiagnostics.content.items.WvdAgentParameters.content.parameters.6d21a13c70b2407c8a144d76579da036.descri" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) ption" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[Grammar]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[文法]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
@@ -487,30 +451,6 @@
             <Val><![CDATA[Option to allow for testing the agent message, if no agent messages exist in the data set]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
               <Val><![CDATA[エージェント メッセージのテストを許可するオプション (データ セットにエージェント メッセージが存在しない場合)]]></Val>
-            </Tgt>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-      </Item>
-      <Item ItemId=";@items.HostDiagnostics.content.items.WvdAgentParameters.content.parameters.bc4729466b884768b9dd792a43a119fd.descri" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) ption" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[Grammar]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[文法]]></Val>
-            </Tgt>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-      </Item>
-      <Item ItemId=";@items.HostDiagnostics.content.items.WvdAgentParameters.content.parameters.da4da63f301e4178964a7cf06431318f.descri" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) ption" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[Grammar]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[文法]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
@@ -665,10 +605,13 @@
       </Item>
       <Item ItemId=";items.HostDiagnostics.content.items.WVDAgentEventText.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[There {HostVerb} **{HostsWithAgentEvents}** {HostPlural} reporting **{TotalEventInstances}** {EventInstancePlural} of **{DistinctEventCount}** WVD agent **{EventLevelName}** {DistinctEventPlural}. See the **WVD agent events** table below to learn more about these issues.]]></Val>
+          <Val><![CDATA[One or more WVD hosts are reporting issues to the event log. See the **WVD agent events** table below to learn more about these issues. Observed issue levels: **{EventLevelName}**, number of hosts affected: **{HostsWithAgentEvents}**, distinct issue types: **{DistinctEventCount}**, total instances of issues: **{TotalEventInstances}**]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[{HostVerb} **{HostsWithAgentEvents}** {HostPlural} によって、**{DistinctEventCount}** 個の WVD エージェント **{EventLevelName}** {DistinctEventPlural} の **{TotalEventInstances}** {EventInstancePlural} が報告されています。これらの問題の詳細については、下の **WVD エージェントのイベント** テーブルをご覧ください。]]></Val>
+            <Val><![CDATA[1 つまたは複数の WVD ホストによって、イベント ログに関する問題が報告されています。これらの問題の詳細については、下の **[WVD エージェントのイベント]5D;** テーブルをご覧ください。確認された問題レベル: **{EventLevelName}**、影響を受けるホスト数: **{HostsWithAgentEvents}**、個別の問題の種類: **{DistinctEventCount}**、問題のあるインスタンスの合計: **{TotalEventInstances}**]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[There {HostVerb} **{HostsWithAgentEvents}** {HostPlural} reporting **{TotalEventInstances}** {EventInstancePlural} of **{DistinctEventCount}** WVD agent **{EventLevelName}** {DistinctEventPlural}. See the **WVD agent events** table below to learn more about these issues.]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -803,15 +746,6 @@
           <Val><![CDATA[Time range]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[時間の範囲]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Host Diagnostics]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[ホストでの診断]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
