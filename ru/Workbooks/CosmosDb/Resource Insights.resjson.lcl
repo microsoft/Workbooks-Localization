@@ -153,7 +153,7 @@
           <Str Cat="Text">
             <Val><![CDATA[Total Requests (Count)]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Общее число запросов]]></Val>
+              <Val><![CDATA[Всего запросов (число)]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
@@ -294,6 +294,9 @@
       <Item ItemId=";items.Container.content.parameters.82f8fb728e0145168115b62082df1e44.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[When the value is "unset" or not selected, the data being displayed is at the account level.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Если значение не установлено (unset) или не выбрано, отображаются данные на уровне учетной записи.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -318,8 +321,8 @@
       <Item ItemId=";items.Latency.content.items.ServerSideLatencyByRegion.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Server Side Latency (Avg) By Region {DatabaseText} {ContainerText} ]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[Задержка на стороне сервера (средняя) по регионам]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Задержка на стороне сервера (средняя) по регионам {DatabaseText} {ContainerText} ]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Server Side Latency (Avg) By Region]]></Val>
@@ -330,6 +333,9 @@
       <Item ItemId=";items.LatencyCopy.content.items.ServerSideLatencyByOperation.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Server Side Latency (Avg) By Operation {DatabaseText} {ContainerText} ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Задержка на стороне сервера (средняя) по операциям {DatabaseText} {ContainerText} ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -366,8 +372,8 @@
       <Item ItemId=";items.Overview.content.items.NormalizedRUConsumption.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Normalized RU Consumption (max) {DatabaseText} {ContainerText} ]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[Нормализованное потребление ЕЗ (макс.)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Нормализованное потребление ЕЗ (максимальное) {DatabaseText} {ContainerText} ]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Normalized RU Consumption (max)]]></Val>
@@ -378,14 +384,17 @@
       <Item ItemId=";items.Overview.content.items.ThrottledRequests429s.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Throttled Requests (429s) {DatabaseText} {ContainerText}]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Регулируемые запросы (429s) {DatabaseText} {ContainerText}]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overview.content.items.TotalRequests.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Total Requests {DatabaseText} {ContainerText}]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[Общее число запросов]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Общее число запросов {DatabaseText} {ContainerText}]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Total Requests]]></Val>
@@ -408,8 +417,8 @@
       <Item ItemId=";items.Requests.content.items.TotalRequests.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Total Requests by Status Code {DatabaseText} {ContainerText} ]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[Общее число запросов по коду состояния]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Общее число запросов по коду состояния {DatabaseText} {ContainerText} ]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Total Requests by Status Code]]></Val>
@@ -420,8 +429,8 @@
       <Item ItemId=";items.Requests.content.items.TotalRequestsbyOperationType.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Total Requests by Operation Type {DatabaseText} {ContainerText} ]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[Общее число запросов по типу операции]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Общее число запросов по типу операции {DatabaseText} {ContainerText} ]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Total Requests by Operation Type]]></Val>
@@ -432,6 +441,9 @@
       <Item ItemId=";items.Requests.content.items.metric3.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Throttled Requests (429) {DatabaseText} {ContainerText}]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Регулируемые запросы (429)  {DatabaseText} {ContainerText}]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -591,8 +603,8 @@
       <Item ItemId=";items.Throughput.content.items.NormalizedRUConsumptionByPartitionKeyRangeID.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Normalized RU Consumption (%) By PartitionKeyRangeID {DatabaseText} {ContainerText} ]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[Нормализованное потребление ЕЗ (%) по PartitionKeyRangeID]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Нормализованное потребление ЕЗ (%) по PartitionKeyRangeID {DatabaseText} {ContainerText} ]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Normalized RU Consumption (%) By PartitionKeyRangeID]]></Val>
@@ -612,8 +624,8 @@
       <Item ItemId=";items.Throughput.content.items.NormalizedRUConsumptionHeatMap.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Normalized RU Consumption (Max) Heat Map By PartitionKeyRangeID {DatabaseText} {ContainerText} ]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[Тепловая карта нормализованного потребления ЕЗ (макс.) по PartitionKeyRangeID]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Тепловая карта нормализованного потребления ЕЗ (макс.) по PartitionKeyRangeID {DatabaseText} {ContainerText} ]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Normalized RU Consumption (Max) Heat Map By PartitionKeyRangeID]]></Val>
@@ -669,6 +681,9 @@
       <Item ItemId=";items.parameters11.content.parameters.0abe0edd1fb046fbb7f26c0c21245fda.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[When the value is "unset" or not selected, the data being displayed is at the database level.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Если значение не установлено (unset) или не выбрано, отображаются данные на уровне базы данных.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -677,15 +692,6 @@
           <Val><![CDATA[Database]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[База данных]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Azure Cosmos DB Resource Insights]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Аналитика ресурсов Azure Cosmos DB]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
