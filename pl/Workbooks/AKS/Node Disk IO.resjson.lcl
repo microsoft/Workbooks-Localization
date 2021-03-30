@@ -159,6 +159,9 @@
       <Item ItemId=";items.text21a.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<div style="border: 1px solid gray"></div>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<div style="border: 1px solid gray"></div>]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -228,6 +231,9 @@
       <Item ItemId=";items.text5CopyCopyCopyCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<h3>IOPS In Progress</h3>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<h3>Operacje we/wy na sekundę w toku</h3>]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -249,20 +255,8 @@
       <Item ItemId=";items.text5Copya.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<h3>Total {unit:label} Written ({timeRange:grain} intervals)</h3>]]></Val>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";settings.description" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Shows data input/output across your nodes]]></Val>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Node Disk IO]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[We/wy dysku węzła]]></Val>
+            <Val><![CDATA[<h3>Łączna liczba zapisanych {unit:label} (interwały {timeRange:grain}) </h3>]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
