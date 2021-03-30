@@ -14,6 +14,9 @@
         <Item ItemId=";(...) .json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[<br />]A;Update the Windows and NSG firewall settings to allow the port specified in the connection strings in next step for the remote virtual machine's IP address.]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[<br />]A;Zaktualizuj ustawienia zapory systemu Windows i sieciowej grupy zabezpieczeń, aby zezwolić na port określony w parametrach połączenia w następnym kroku dla adresu IP zdalnej maszyny wirtualnej.]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -23,6 +26,9 @@
         <Item ItemId=";(...) bel" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Key vault subscriptions]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Subskrypcje magazynu kluczy]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -38,6 +44,9 @@
         <Item ItemId=";(...) title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Enable monitoring on virtual machine]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Włącz monitorowanie na maszynie wirtualnej]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -45,6 +54,9 @@
       <Item ItemId=";items.CheckJson.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Please correct the errors above before proceeding.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Usuń powyższe błędy przed kontynuowaniem.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -60,6 +72,9 @@
       <Item ItemId=";items.FinalConfig.content.parameters.4d03e768735040c3b44e0eff614645ae.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Current monitoring configuration]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Bieżąca konfiguracja monitorowania]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -72,48 +87,72 @@
       <Item ItemId=";items.Savedconfignotfoundmessage.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Please configure using the template below.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Skonfiguruj za pomocą poniższego szablonu.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Stepsaftervalidjson.content.items.CreateSQLuseraccounts.content.items.SQLpermissionsprereqtext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<br />]A;The monitoring SQL user needs to have `VIEW SERVER STATE` and `VIEW ANY DEFINITION` permission to collect telemetry. You can create such a user using the script below:]A;```]A;USE master;]A;GO]A;CREATE LOGIN [telegraf]5D; WITH PASSWORD = N'mystrongpassword';]A;GO]A;GRANT VIEW SERVER STATE TO [telegraf]5D;;]A;GO]A;GRANT VIEW ANY DEFINITION TO [telegraf]5D;;]A;GO]A;```]A;]A;To monitor Azure SQL Database, we require the User to have the `VIEW DATABASE STATE` permission.]A;]A;```]A;CREATE USER [telegraf]5D; WITH PASSWORD = N'mystrongpassword';]A;GO]A;GRANT VIEW DATABASE STATE TO [telegraf]5D;;]A;GO]A;```]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<br />]A;Użytkownik monitorowania bazy danych SQL musi mieć uprawnienia „VIEW SERVER STATE” i „VIEW ANY DEFINITION”, aby zbierać dane telemetryczne. Możesz utworzyć takiego użytkownika przy użyciu poniższego skryptu:]A;```]A;USE master;]A;GO]A;CREATE LOGIN [telegraf]5D; WITH PASSWORD = N'moje_silne_hasło';]A;GO]A;GRANT VIEW SERVER STATE TO [telegraf]5D;;]A;GO]A;GRANT VIEW ANY DEFINITION TO [telegraf]5D;;]A;GO]A;```]A;]A;Aby monitorować usługę Azure SQL Database, użytkownik musi mieć uprawnienie „VIEW DATABASE STATE”.]A;]A;```]A;CREATE USER [telegraf]5D; WITH PASSWORD = N'moje_silne_hasło';]A;GO]A;GRANT VIEW DATABASE STATE TO [telegraf]5D;;]A;GO]A;```]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Stepsaftervalidjson.content.items.CreateSQLuseraccounts.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Set permissions for SQL accounts]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Ustaw uprawnienia dla kont SQL]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Stepsaftervalidjson.content.items.Enablemonitoringlabel.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[#### Enable monitoring from this virtual machine]A;]A;Use the button below to deploy the required components and start monitoring.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[#### Włącz monitorowanie z tej maszyny wirtualnej]A;]A;Użyj przycisku poniżej, aby wdrożyć wymagane składniki i rozpocząć monitorowanie.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Stepsaftervalidjson.content.items.FirewallandnetworkingrulesforSQL.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Firewall and networking rules for SQL resource or virtual machine]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Reguły zapory i sieci dla zasobu SQL lub maszyny wirtualnej]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Stepsaftervalidjson.content.items.Keyvaultaccesslabel.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[#### Enable access to Azure Key Vaults (Optional)]A;If your connection strings reference secrets from Key Vaults, you need to provide access to it from the virtual machine via a Managed Service Identity.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[#### Włącz dostęp do magazynów kluczy usługi Azure Key Vault (opcjonalnie)]A;Jeśli parametry połączenia odwołują się do wpisów tajnych w magazynach kluczy, należy zapewnić dostęp do nich z maszyny wirtualnej za pośrednictwem tożsamość usługi zarządzanej.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Stepsaftervalidjson.content.items.Prereqlabel.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[#### Ensure pre-requisites are satisfied]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[#### Upewnij się, że wymagania wstępne są spełnione]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Stepsaftervalidjson.content.items.links5.content.links.e95dc1553fda479a9bebba9a851ee930.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Add monitoring virtual machine]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Dodaj maszynę wirtualną monitorowania]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -138,12 +177,18 @@
       <Item ItemId=";items.parameters6.content.parameters.88df9a879c9f4b69918eeb6d70e5c1c5.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Set the default subscription retrieved from SQL Server Insights Template]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Ustaw domyślną subskrypcję pobraną z szablonu szczegółowych informacji programu SQL Server]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text1.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Select virtual machine]D;]A;Select a virtual machine you would like for monitoring.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Wybierz maszynę wirtualną]D;]A;Wybierz maszynę wirtualną na potrzeby monitorowania.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

@@ -57,6 +57,9 @@
       <Item ItemId=";items.AADSignInTimeChart.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Summary of Sign Ins by Time]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[時間別のサインインの概要]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -72,18 +75,27 @@
       <Item ItemId=";items.ADFSDataParameter.content.parameters.76a5730a009f4d75be705b2238d901f5.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Verify that ADFSSigninLogs is enabled in Diagnostic Settings. This is required to view AD FS data.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[診断設定で ADFSSigninLogs が有効になっていることを確認します。これは、AD FS データを表示するために必要です。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.ADFSDataParameter.content.parameters.76a5730a009f4d75be705b2238d901f5.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[AD FS Data Enabled]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[AD FS データが有効]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.ADFSParameter.content.parameters.64a06cc9937c40b683c85fb4e7202105.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Filter what type of data to see, Azure AD, AD FS or both]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[表示するデータの種類をフィルター処理します (Azure AD、AD FS、またはその両方)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -108,6 +120,9 @@
       <Item ItemId=";items.AccountLockoutADFS.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No users or data with account lockouts. ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[アカウントがロックアウトされたユーザーまたはデータはありません。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -231,6 +246,9 @@
       <Item ItemId=";items.ShowHelpChangeLog.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Change Log: As updates and fixes are made to the preview Workbook, they will be tracked.]D;]A;]D;]A;##### March 29, 2021]D;]A;Preview Workbook released for AAD and AD FS Sign-In data.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### 変更ログ: プレビュー ブックの更新と修正が行われると、それらは追跡されます。]D;]A;]D;]A;##### 2021 年 3 月 29 日]D;]A;AAD および AD FS サインイン データ用にプレビュー ブックがリリースされました。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -291,6 +309,9 @@
       <Item ItemId=";items.WelcomeShowHelp.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Welcome to the Sign-In Analysis Workbook]D;]A;This workbook is currently in preview. To access the previous version of the sign-in Workbook, navigate to "Sign-Ins" in Workbook templates. This Workbook can help analyze the organization's sign-ins for both Azure AD and AD FS Sign-Ins.]D;]A;For help as you navigate this workbook, toggle Show Help at the page top.]D;]A;]D;]A;#### View Azure Active Directory Sign-In Data]D;]A;1. Ensure the *SigninLogs* Log Analytics stream is enabled in Diagnostic Settings to view the report.]D;]A;2. To get started, select one of the tabs and filter the parameters to select any filtering you would like to do on the report.]D;]A;]D;]A;#### View Azure Active Directory and AD FS Sign-In data]D;]A;1. If your organization uses AD FS, verify that the prerequisites are satisfied for [AD FS Sign-Ins in AAD Public Preview]5D;(https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-health-ad-fs-sign-in), which include the latest version of the Azure AD Connect Health for AD FS agent.]D;]A;2. Navigate to the "Diagnostic Settings" blade and verify that  *ADFSSignInLogs* is enabled.]D;]A;3. Select "AD FS Data Enabled" in this report, which displays queries with the streams combined to display all data. ]D;]A;4. To get started, filter the report between AAD and AD FS data, use the "Token Issuer Type" filter. The default selection is "All", combining AAD and AD FS data. ]D;]A;]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### サインイン分析ブックへようこそ]D;]A;このブックは現在プレビュー中です。サインイン ブックの以前のバージョンにアクセスするには、ブック テンプレートの [サインイン]5D; に移動します。このブックは、Azure AD と AD FS サインインの両方について、組織のサインインを分析するのに役立ちます。]D;]A;このブックを移動するときにヘルプが必要な場合は、ページ上部にある [ヘルプの表示]5D; を切り替えます。]D;]A;]D;]A;#### Azure Active Directory サインイン データを表示する]D;]A;1. レポートを表示するには、診断設定で *SigninLogs* Log Analytics ストリームが有効になっていることを確認してください。]D;]A;2. 開始するには、いずれかのタブを選択し、パラメーターをフィルター処理して、レポートに適用するフィルターを選択します。]D;]A;]D;]A;#### Azure Active Directory と AD FS サインイン データを表示する]D;]A;1. 組織で AD FS を使用している場合、AD FS エージェントの Azure AD Connect Health の最新バージョンが含まれている [AAD パブリック プレビューでの AD FS サインイン]5D;(https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/how-to-connect-health-ad-fs-sign-in) の前提条件が満たされていることを確認します。]D;]A;2. [診断設定]5D; ブレードに移動して、*ADFSSignInLogs* が有効になっていることを確認します。]D;]A;3. このレポートで [AD FS データが有効]5D; を選択します。これにより、すべてのデータを表示するためのストリームが組み合わされたクエリが表示されます。]D;]A;4. 開始するには、AAD と AD FS のデータ間でレポートをフィルター処理し、[トークンの発行元の種類]5D; フィルターを使用します。既定では [すべて]5D; が選択されており、AAD と AD FS データが組み合わされています。]D;]A;]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
