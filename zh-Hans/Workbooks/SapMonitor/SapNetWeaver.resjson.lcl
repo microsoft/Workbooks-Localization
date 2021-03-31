@@ -45,7 +45,7 @@
           <Str Cat="Text">
             <Val><![CDATA[Availability %]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[可用性(%)]]></Val>
+              <Val><![CDATA[可用性百分比]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
@@ -285,7 +285,7 @@
           <Str Cat="Text">
             <Val><![CDATA[Active Work Processes]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[活动工作进程数]]></Val>
+              <Val><![CDATA[活动工作进程]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
@@ -294,7 +294,7 @@
           <Str Cat="Text">
             <Val><![CDATA[Free Work Processes]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[可用工作进程数]]></Val>
+              <Val><![CDATA[可用工作进程]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
@@ -453,8 +453,8 @@
       <Item ItemId=";items.MainNavigationLinks.content.links.e844d4f720174360824f4ac26e8a941d.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Enqueue Statistics]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[性能]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[排队统计信息]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Performance]]></Val>
@@ -591,12 +591,18 @@
       <Item ItemId=";items.QueueStatisticsGroup.content.items.QueueLengthTrend.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Queue Length Trend Graph]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[队列长度趋势图]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.QueueStatisticsGroup.content.items.QueueType.content.parameters.ebeb7d858c2145348135b05732fab7b5.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Queue Type]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[队列类型]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -630,12 +636,18 @@
       <Item ItemId=";items.availgrouperror.content.items.InitialIngestionError.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[It may take up to 15 minutes for the initial telemetry information to be available for review. Please check again later.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[最长可能需要等待 15 分钟，才能得到初始遥测信息以供审阅。请稍后再回来看看。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.availgrouperror.content.items.TableCreationError.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Unable to create the required table (GetProcessList) to capture telemetry information. Please try after some time. If the issue persists, please contact support.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[无法创建所需的表(GetProcessList)来捕获遥测信息。请稍后重试。如果此问题仍然存在，请联系支持部门。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -705,54 +717,81 @@
       <Item ItemId=";items.overviewgrouperror.content.items.IngestionError.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[It may take up to 15 minutes for the initial telemetry information to be available for review. Please check again later.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[最长可能需要等待 15 分钟，才能得到初始遥测信息以供审阅。请稍后再回来看看。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.overviewgrouperror.content.items.NoProviderError.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Please add the SAP NetWeaver provider to view this workbook.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[请添加 SAP NetWeaver 提供程序来查看此工作簿。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.overviewgrouperror.content.items.ProviderFailure.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[There was an error while adding the SAP NetWeaver provider. Please reach out to support for further assistance.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[添加 SAP NetWeaver 提供程序时出错。请联系支持部门来获取进一步帮助。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.perfgrouperror.content.items.EnqIngestionError.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[It may take up to 15 minutes for the initial telemetry information to be available for review. Please check again later.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[最长可能需要等待 15 分钟，才能得到初始遥测信息以供审阅。请稍后再回来看看。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.perfgrouperror.content.items.EnqTableCreationError.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Unable to create the required table (EnqGetStatistic) to capture telemetry information. Please try after some time. If the issue persists, please contact support.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[无法创建所需的表(EnqGetStatistic)来捕获遥测信息。请稍后重试。如果此问题仍然存在，请联系支持部门。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.queuestatgrouperror.content.items.QueueStatIngestionError.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[It may take up to 15 minutes for the initial telemetry information to be available for review. Please check again later.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[最长可能需要等待 15 分钟，才能得到初始遥测信息以供审阅。请稍后再回来看看。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.queuestatgrouperror.content.items.QueueStatTableCreationError.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Unable to create the required table (GetQueueStatistic) to capture telemetry information. Please try after some time. If the issue persists, please contact support.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[无法创建所需的表(GetQueueStatistic)来捕获遥测信息。请稍后重试。如果此问题仍然存在，请联系支持部门。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.utilizationgrouperror.content.items.ABABIngestionError.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[It may take up to 15 minutes for the initial telemetry information to be available for review. Please check again later.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[最长可能需要等待 15 分钟，才能得到初始遥测信息以供审阅。请稍后再回来看看。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.utilizationgrouperror.content.items.ABABTableCreationError.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Unable to create the required table (ABAPGetWPTable) to capture telemetry information. Please try after some time. If the issue persists, please contact support.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[无法创建所需的表(ABAPGetWPTable)来捕获遥测信息。请稍后重试。如果此问题仍然存在，请联系支持部门。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
