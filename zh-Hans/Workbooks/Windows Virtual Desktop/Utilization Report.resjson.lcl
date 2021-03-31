@@ -234,15 +234,6 @@
           <Disp Icon="Str" />
         </Item>
       </Item>
-      <Item ItemId=";items.Utilization.content.items.Notice.content.json" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[# Utilization Report]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[# 利用率报表]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
       <Item ItemId=";items.Utilization.content.items.SessionAndCores.content.items.CoresQuery.content.items.CPUUsage.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[CPU usage]]></Val>
@@ -326,10 +317,13 @@
       </Item>
       <Item ItemId=";items.Utilization.content.items.Trends.content.items.HostUsageDistibution.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Connection time by host]]></Val>
+          <Val><![CDATA[Top 10 hosts by connection time]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[连接时间(按主机)]]></Val>
+            <Val><![CDATA[连接时长最长的前 10 个主机]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Connection time by host]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -362,10 +356,13 @@
       </Item>
       <Item ItemId=";items.Utilization.content.items.Trends.content.items.UserUsageDistibution.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Connection time by user]]></Val>
+          <Val><![CDATA[Top 10 users by connection time]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[连接时间(按用户)]]></Val>
+            <Val><![CDATA[连接时长最长的前 10 个用户]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Connection time by user]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -410,15 +407,6 @@
           <Val><![CDATA[Time range]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[时间范围]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Utilization Report]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[利用率报告]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />

@@ -318,7 +318,7 @@
           <Str Cat="Text">
             <Val><![CDATA[Cache Read Requests]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[缓存读取请求数]]></Val>
+              <Val><![CDATA[缓存读取请求]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
@@ -365,6 +365,9 @@
         <Item ItemId=";(...) uetopreemption.content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Max Time to Kill Task (due to preemption)]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[终止任务的最长时间(由于抢占)]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -374,6 +377,9 @@
         <Item ItemId=";(...) 300sinterval.content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Pre-emption Time Lost (300s interval)]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[抢占时间损失(300 秒间隔)]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -383,6 +389,9 @@
         <Item ItemId=";(...) dTask300sinterval.content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Time to Kill Pre-empted Task (300s interval)]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[终止抢占任务的时长(300 秒间隔)]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -392,6 +401,9 @@
         <Item ItemId=";(...) s.content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Total Execution Slots]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[执行槽总数]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -410,6 +422,9 @@
         <Item ItemId=";(...) stsByHost.content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Total Executor Requests By  Host]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[执行程序请求总数(按主机)]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -419,6 +434,9 @@
         <Item ItemId=";(...) ercentagebyHost.content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Used Execution Slot Percentage by Host]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[已用执行槽百分比(按主机)]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -441,7 +459,7 @@
           <Str Cat="Text">
             <Val><![CDATA[Max Decoding Time]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[最大解码时间]]></Val>
+              <Val><![CDATA[最长解码时间]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
@@ -497,6 +515,9 @@
         <Item ItemId=";(...) tle" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Number of Active Sources]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[活动源数]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -554,6 +575,9 @@
         <Item ItemId=";(...) title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[JVM Heap Usage]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[JVM 堆使用量]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -563,6 +587,9 @@
         <Item ItemId=";(...) itle" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[JVM Non-Heap Usage]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[JVM 非堆使用量]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -975,6 +1002,9 @@
       <Item ItemId=";items.Usage.content.items.Hive.content.items.HiveServerInteractive.content.items.NumberofActiveSinks.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Number of Active Sinks]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[活动接收器数]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -990,18 +1020,27 @@
       <Item ItemId=";items.Usage.content.items.Hive.content.items.HiveServerInteractive.content.items.PublishAvgTime.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Publish Avg Time]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[发布平均时间]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Usage.content.items.Hive.content.items.HiveServerInteractive.content.items.SinkTimelineAvgTime.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Sink Timeline Avg Time]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[接收器时间线平均时间]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Usage.content.items.Hive.content.items.HiveServerInteractive.content.items.SnapshotAvgTime.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Snapshot Avg Time]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[快照平均时间]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1081,7 +1120,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Total Executor Memory]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[执行程序总内存]]></Val>
+            <Val><![CDATA[总执行程序内存]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -1125,12 +1164,18 @@
       <Item ItemId=";items.Usage.content.items.HiveMetricsNotPresent.content.items.text0.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No Hive Metrics found in Log Analytics. Hive Metrics are not yet supported for ESP clusters. If this cluster is not ESP, please open a support ticket so we can investigate the cause of the missing metrics]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[在 Log Analytics 中找不到 Hive 指标。ESP 群集还不支持 Hive 指标。如果这不是 ESP 群集，请开立支持票证，以便我们能够调查缺少指标的原因]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Usage.content.items.LLAPOverviewStatus.content.gridSettings.labelSettings.ResourceId.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[ClusterName]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[ClusterName]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1200,12 +1245,18 @@
       <Item ItemId=";items.Usage.content.items.SystemMetrics.content.items.Load.content.items.query0Copyer.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[One Minute Load by Node]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[一分钟负载(按节点)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Usage.content.items.SystemMetrics.content.items.Load.content.items.query0Copyop.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Five Minute Load by Node Type]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[五分钟负载(按节点类型)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1276,7 +1327,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Running Apps]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[正在运行的应用数]]></Val>
+            <Val><![CDATA[正在运行的应用]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -1285,7 +1336,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Active Nodes]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[活动节点数]]></Val>
+            <Val><![CDATA[活动节点]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -1320,12 +1371,18 @@
       <Item ItemId=";items.Usage.content.items.Yarn.content.items.YarnAppMetrics.content.items.AvgAMLaunchDelayTimeinMS.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Avg AM Launch Delay Time]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[平均 AM 启动延迟时间]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Usage.content.items.Yarn.content.items.YarnAppMetrics.content.items.AvgAMRegisterDelayTimeinMS.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Avg AM Register Delay Time]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[平均 AM 注册延迟时间]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1406,15 +1463,6 @@
           <Val><![CDATA[Hive]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Hive]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[HDInsight Hive and LLAP Insights]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[HDInsight Hive 和 LLAP 见解]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
