@@ -143,8 +143,8 @@
         <Item ItemId=";(...) tings.PercentOfTotalClusterCpuUseddisplay.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Within used CPU]]></Val>
-            <Tgt Cat="Text" Stat="Update" Orig="New">
-              <Val><![CDATA[Kullanılan CPU yüzdesi]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Kullanılan CPU içinde]]></Val>
             </Tgt>
             <Prev Cat="Text">
               <Val><![CDATA[% of used CPU]]></Val>
@@ -155,8 +155,8 @@
         <Item ItemId=";(...) tings.PercentOfTotalClusterMemoryUseddisplay.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Within used memory]]></Val>
-            <Tgt Cat="Text" Stat="Update" Orig="New">
-              <Val><![CDATA[Kullanılan bellek yüzdesi]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Kullanılan bellek içinde]]></Val>
             </Tgt>
             <Prev Cat="Text">
               <Val><![CDATA[% of used memory]]></Val>
@@ -314,8 +314,8 @@
         <Item ItemId=";(...) gs.PercentOfTotalClusterCpuUseddisplay.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Within used CPU]]></Val>
-            <Tgt Cat="Text" Stat="Update" Orig="New">
-              <Val><![CDATA[Kullanılan CPU yüzdesi]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Kullanılan CPU içinde]]></Val>
             </Tgt>
             <Prev Cat="Text">
               <Val><![CDATA[% of used CPU]]></Val>
@@ -326,8 +326,8 @@
         <Item ItemId=";(...) gs.PercentOfTotalClusterMemoryUseddisplay.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Within used memory]]></Val>
-            <Tgt Cat="Text" Stat="Update" Orig="New">
-              <Val><![CDATA[Kullanılan bellek yüzdesi]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Kullanılan bellek içinde]]></Val>
             </Tgt>
             <Prev Cat="Text">
               <Val><![CDATA[% of used memory]]></Val>
@@ -360,12 +360,18 @@
       <Item ItemId=";items.ClusterGroup.content.items.DataConnections.content.items.DiscoveryLatencymetric.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Discovery Latency]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Bulma Gecikmesi]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.ClusterGroup.content.items.DataConnections.content.items.EventsProcessedmetric.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Events Processed]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[İşlenen Olaylar]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -783,6 +789,9 @@
       <Item ItemId=";items.Commands.content.items.ByWorkloadGroup.content.items.Countbyhourbyworkloadgroup.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Command + query count by workload group]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[İş yükü grubuna göre komut + sorgu sayısı]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -798,6 +807,9 @@
       <Item ItemId=";items.Commands.content.items.ByWorkloadGroup.content.items.TotalCPUbyhourbyworkloadgroup.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Total CPU by workload group]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[İş yükü grubuna göre toplam CPU]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -813,18 +825,27 @@
       <Item ItemId=";items.Commands.content.items.ByWorkloadGroup.content.items.Totalmemorybyhourbyworkloadgroup.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Total memory by workload group]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[İş yükü grubuna göre toplam bellek]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Commands.content.items.ByWorkloadGroup.content.items.text3.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[*Information about workload groups is available [here]5D;(https://docs.microsoft.com/azure/data-explorer/kusto/management/workload-groups)*]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[*İş yükü grupları hakkında bilgiye [buradan]5D;(https://docs.microsoft.com/azure/data-explorer/kusto/management/workload-groups) ulaşabilirsiniz*]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Commands.content.items.ByWorkloadGroup.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Usage by workload groups]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[İş yükü gruplarına göre kullanım]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1122,8 +1143,8 @@
       <Item ItemId=";items.Overview.content.items.expander.content.items.TopUsersHeader.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<svg viewBox="0 0 50 50" class="fxt-escapeShadow" width="20" role="presentation" focusable="false" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"><g><path d="M35.859 10.269c0 5.671-4.638 10.269-10.359 10.269S15.142 15.94 15.142 10.269 19.779 0 25.5 0s10.359 4.598 10.359 10.269m-2.785 13.789L25.5 34.578l-7.574-10.52H7.001V50H44V24.058z" class="msportalfx-svg-c15"></path><path opacity=".2" d="M15.143 10.269c0 5.587 4.501 10.122 10.104 10.257L27.848.276A10.37 10.37 0 0 0 25.5 0c-5.721 0-10.357 4.598-10.357 10.269m2.786 13.789H7V50h14.508l2.287-17.79z" class="msportalfx-svg-c01"></path></g></svg>&nbsp;<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px 0px 0px 0px;position: relative;top:-3px;left:-4px;"> Top resource consumers]D;]A;</span> <br>]D;]A;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The aggregated usage in the cluster, out of the total used CPU and memory. ]D;]A;To see more details, go to the **Usage** tab.]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[<svg viewBox="0 0 50 50" class="fxt-escapeShadow" width="20" role="presentation" focusable="false" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"><g><path d="M35.859 10.269c0 5.671-4.638 10.269-10.359 10.269S15.142 15.94 15.142 10.269 19.779 0 25.5 0s10.359 4.598 10.359 10.269m-2.785 13.789L25.5 34.578l-7.574-10.52H7.001V50H44V24.058z" class="msportalfx-svg-c15"></path><path opacity=".2" d="M15.143 10.269c0 5.587 4.501 10.122 10.104 10.257L27.848.276A10.37 10.37 0 0 0 25.5 0c-5.721 0-10.357 4.598-10.357 10.269m2.786 13.789H7V50h14.508l2.287-17.79z" class="msportalfx-svg-c01"></path></g></svg>&nbsp;<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px 0px 0px 0px;position: relative;top:-3px;left:-4px;"> En fazla kaynak tüketenler]D;]A;</span> <br>]D;]A;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bu, en fazla kaynak tüketenlerin, kümenin CPU ve bellek tüketimi içindeki kullanım dağılımıdır. ]D;]A;Daha fazla ayrıntı görmek için **Kullanım** sekmesine gidin.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<svg viewBox="0 0 50 50" class="fxt-escapeShadow" width="20" role="presentation" focusable="false" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"><g><path d="M35.859 10.269c0 5.671-4.638 10.269-10.359 10.269S15.142 15.94 15.142 10.269 19.779 0 25.5 0s10.359 4.598 10.359 10.269m-2.785 13.789L25.5 34.578l-7.574-10.52H7.001V50H44V24.058z" class="msportalfx-svg-c15"></path><path opacity=".2" d="M15.143 10.269c0 5.587 4.501 10.122 10.104 10.257L27.848.276A10.37 10.37 0 0 0 25.5 0c-5.721 0-10.357 4.598-10.357 10.269m2.786 13.789H7V50h14.508l2.287-17.79z" class="msportalfx-svg-c01"></path></g></svg>&nbsp;<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px 0px 0px 0px;position: relative;top:-3px;left:-4px;"> En fazla kaynak tüketenler]D;]A;</span> <br>]D;]A;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kullanılan toplam CPU ve bellek içinden kümedeki toplam kullanım. ]D;]A;Daha fazla ayrıntı için **Kullanım** sekmesine gidin.]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[<svg viewBox="0 0 50 50" class="fxt-escapeShadow" width="20" role="presentation" focusable="false" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"><g><path d="M35.859 10.269c0 5.671-4.638 10.269-10.359 10.269S15.142 15.94 15.142 10.269 19.779 0 25.5 0s10.359 4.598 10.359 10.269m-2.785 13.789L25.5 34.578l-7.574-10.52H7.001V50H44V24.058z" class="msportalfx-svg-c15"></path><path opacity=".2" d="M15.143 10.269c0 5.587 4.501 10.122 10.104 10.257L27.848.276A10.37 10.37 0 0 0 25.5 0c-5.721 0-10.357 4.598-10.357 10.269m2.786 13.789H7V50h14.508l2.287-17.79z" class="msportalfx-svg-c01"></path></g></svg>&nbsp;<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px 0px 0px 0px;position: relative;top:-3px;left:-4px;"> Top resource consumers]D;]A;</span> <br>]D;]A;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is the top consumers' usage distribution within the CPU and memory consumption of the cluster. ]D;]A;To see more details, go to the **Usage** tab.]]></Val>
@@ -1221,6 +1242,15 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
+      <Item ItemId=";items.Tabs.content.links.5.linkLabel" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Ingestion]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Alım]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.metricshelptext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[*Information about metrics is available [here]5D;(https://docs.microsoft.com/en-us/azure/data-explorer/using-metrics#cluster-metrics)*]]></Val>
@@ -1244,15 +1274,6 @@
           <Val><![CDATA[ADX-Cluster]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[ADX-Cluster]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Azure Data Explorer Cluster Resource Overview]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Azure Veri Gezgini Küme Kaynağına Genel Bakış]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
