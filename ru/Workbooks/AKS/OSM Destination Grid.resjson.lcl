@@ -68,12 +68,18 @@
         <Item ItemId=";(...) Grid.content.gridSettings.labelSettings.RqTotal.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Http requests total]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Всего HTTP-запросов]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) Grid.content.gridSettings.labelSettings.RxTotalunits.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Outbound bytes received]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Исходящих байтов получено]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -86,12 +92,18 @@
         <Item ItemId=";(...) Grid.content.gridSettings.labelSettings.TxTotalunits.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Outbound bytes sent]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Исходящих байтов отправлено]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) Grid.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[There was no observed HTTP(S) traffic during this time with these filters.  There were TCP/UDP connections, but no requests.]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[За этот период времени с данными фильтрами трафика HTTP(S) не наблюдалось. Существовали подключения TCP/UDP, но не запросы.]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -137,6 +149,9 @@
         <Item ItemId=";(...) t.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[There was no observed HTTP(S) traffic during this time with these filters.  There were TCP/UDP connections, but no requests.]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[За этот период времени с данными фильтрами трафика HTTP(S) не наблюдалось. Существовали подключения TCP/UDP, но не запросы.]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -201,30 +216,45 @@
       <Item ItemId=";items.OmsConnectionsTab.content.items.ConnectionsMainGrid.content.gridSettings.labelSettings.RqTotal.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Http requests total]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Всего HTTP-запросов]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.OmsConnectionsTab.content.items.ConnectionsMainGrid.content.gridSettings.labelSettings.RxTotalunits.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Outbound bytes received]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Исходящих байтов получено]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.OmsConnectionsTab.content.items.ConnectionsMainGrid.content.gridSettings.labelSettings.TxTotalunits.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Outbound bytes sent]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Исходящих байтов отправлено]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.OmsConnectionsTab.content.items.ConnectionsSelectMessageHeader.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<div style="font-style: italic; margin-left: 2em">Select a row below to start.</div>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<div style="font-style: italic; margin-left: 2em">Выберите строку ниже, чтобы начать.</div>]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.OmsConnectionsTab.content.items.text3.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<div>]D;]A;Troubleshooting guidance when Outbound active connections is 0 or failed connection count is >10k. ]D;]A;]D;]A;<ul>]D;]A;	<li>]D;]A;	Please check your connection policy in OSM configuration. ]D;]A;	</li>]D;]A;	<li>]D;]A;	If connection policy is fine, please refer the OSM documentation. https://aka.ms/osm/tsg ]D;]A;	</li>]D;]A;</ul>]D;]A;]D;]A;</div>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<div>]D;]A;Рекомендации по устранению неполадок в тех случаях, когда число активных исходящих подключений равно 0 или когда число подключений, в которых возникли сбои, превышает 10 000. ]D;]A;]D;]A;<ul>]D;]A;	<li>]D;]A;	Проверьте политику подключения в конфигурации OSM. ]D;]A;	</li>]D;]A;	<li>]D;]A;	Если политика подключения настроена правильно, обратитесь к документации по OSM. https://aka.ms/osm/tsg ]D;]A;	</li>]D;]A;</ul>]D;]A;]D;]A;</div>]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -237,24 +267,36 @@
       <Item ItemId=";items.OsmRequestsTab.content.items.RequestsMainGrid.content.gridSettings.labelSettings.RqTotal.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Http requests total]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Всего HTTP-запросов]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.OsmRequestsTab.content.items.RequestsMainGrid.content.gridSettings.labelSettings.RxTotalunits.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Outbound bytes received]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Исходящих байтов получено]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.OsmRequestsTab.content.items.RequestsMainGrid.content.gridSettings.labelSettings.TxTotalunits.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Outbound bytes sent]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Исходящих байтов отправлено]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.OsmRequestsTab.content.items.RequestsSelectMessageHeader.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<div style="font-style: italic; margin-left: 2em">Select a row below to start.</div>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<div style="font-style: italic; margin-left: 2em">Выберите строку ниже, чтобы начать.</div>]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
