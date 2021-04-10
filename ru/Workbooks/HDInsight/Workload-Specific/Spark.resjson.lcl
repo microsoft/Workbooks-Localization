@@ -517,10 +517,13 @@
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) tle" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Average Container Launch Delay in MS]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Average Container Launch Delay]]></Val>
+            <Tgt Cat="Text" Stat="Update" Orig="New">
               <Val><![CDATA[Средняя задержка запуска контейнера в мс]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[Average Container Launch Delay in MS]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -1212,30 +1215,36 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Usage.content.items.Yarn.content.items.YARNJVM.content.items.JVMHeapUsageinMB.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Usage.content.items.Yarn.content.items.YARNJVM.content.items.JVMHeapUsage.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[JVM Heap Usage in MB]]></Val>
+          <Val><![CDATA[JVM Heap Usage]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Использование кучи JVM в МБ]]></Val>
+            <Val><![CDATA[Использование кучи JVM]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Usage.content.items.Yarn.content.items.YARNJVM.content.items.query0Copy.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[JVM Non-Heap Usage in MB]]></Val>
+          <Val><![CDATA[JVM Non-Heap Usage]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Использование не в куче JVM в МБ]]></Val>
+            <Val><![CDATA[Использование JVM не для кучи]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[JVM Non-Heap Usage in MB]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Usage.content.items.Yarn.content.items.YARNJVM.content.items.query4.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Mean Time Per Collection in MS]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[Mean Time Per Collection]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[Среднее время для сборки в мс]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Mean Time Per Collection in MS]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1320,7 +1329,7 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Usage.content.items.Yarn.content.items.YarnAppMetrics.content.items.AvgAMLaunchDelayTimeinMS.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Usage.content.items.Yarn.content.items.YarnAppMetrics.content.items.AvgAMLaunchDelayTime.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Avg AM Launch Delay Time]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -1329,7 +1338,7 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Usage.content.items.Yarn.content.items.YarnAppMetrics.content.items.AvgAMRegisterDelayTimeinMS.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Usage.content.items.Yarn.content.items.YarnAppMetrics.content.items.AvgAMRegisterDelayTime.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Avg AM Register Delay Time]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -1424,15 +1433,6 @@
           <Val><![CDATA[Component Logs]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Журналы компонентов]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[HDInsight Spark Insights]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Аналитика HDInsight для Spark]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />

@@ -407,7 +407,7 @@
       </Item>
       <Item ItemId=";@items.Usage.content.items.HBase.content.items.HBaseJVM.content.items.GarbageCollection.content.items.GCPauseTimeL" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) atenciesinMS.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) atencies.content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[GC Pause Time Latencies]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -421,10 +421,13 @@
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) nt.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Mean Time Per Collection in MS]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Mean Time Per Collection]]></Val>
+            <Tgt Cat="Text" Stat="Update" Orig="New">
               <Val><![CDATA[Gemiddelde tijd per verzameling in MS]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[Mean Time Per Collection in MS]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -469,10 +472,13 @@
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) le" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[JVM Non-Heap Usage in MB]]></Val>
+            <Val><![CDATA[JVM Non-Heap Usage]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Niet-heap-gebruik voor JVM in MB]]></Val>
+              <Val><![CDATA[Niet-Heap-gebruik voor JVM]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[JVM Non-Heap Usage in MB]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -587,7 +593,7 @@
       </Item>
       <Item ItemId=";@items.Usage.content.items.HBase.content.items.HMaster.content.items.RegionAssignment.content.items.AssignOperatio" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) nMeanMedianPercentileinMS.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) nMeanMedianPercentile.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[No assignments have been made yet.]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -596,7 +602,7 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
-        <Item ItemId=";(...) nMeanMedianPercentileinMS.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) nMeanMedianPercentile.content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Assign Operation Mean, Median, Percentile]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -629,7 +635,7 @@
       </Item>
       <Item ItemId=";@items.Usage.content.items.HBase.content.items.HMaster.content.items.RegionAssignment.content.items.BulkAssignOper" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) ationMeanMedianPercentileinMS.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) ationMeanMedianPercentile.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[No bulk assigns have been made yet.]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -638,7 +644,7 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
-        <Item ItemId=";(...) ationMeanMedianPercentileinMS.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) ationMeanMedianPercentile.content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Bulk Assign Operation Mean, Median, Percentile]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -1190,7 +1196,7 @@
       </Item>
       <Item ItemId=";@items.Usage.content.items.HBase.content.items.RegionServer.content.items.Requests.content.items.RequestLatency.co" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) ntent.items.AppendOperationLatenciesinMS.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) ntent.items.AppendOperationLatencies.content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Append Operation Latencies]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -1199,7 +1205,7 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
-        <Item ItemId=";(...) ntent.items.DeleteOperationLatenciesinMS.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) ntent.items.DeleteOperationLatencies.content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Delete Operation Latencies]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -1208,7 +1214,7 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
-        <Item ItemId=";(...) ntent.items.GetLatenciesinMS.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) ntent.items.GetLatencies.content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Get  Latencies]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -1217,7 +1223,7 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
-        <Item ItemId=";(...) ntent.items.IncrementOperationLatenciesinMS.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) ntent.items.IncrementOperationLatencies.content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Increment Operation Latencies]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -1226,7 +1232,7 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
-        <Item ItemId=";(...) ntent.items.MutateLatenciesinMS.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) ntent.items.MutateLatencies.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[The query returned no results. No mutate operations occurred yet.]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -1235,7 +1241,7 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
-        <Item ItemId=";(...) ntent.items.MutateLatenciesinMS.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) ntent.items.MutateLatencies.content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Mutate Operation Latencies]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -1253,7 +1259,7 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
-        <Item ItemId=";(...) ntent.items.ScanLatenciesinMS.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) ntent.items.ScanLatencies.content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Scan Latencies]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -1474,10 +1480,13 @@
         </Item>
         <Item ItemId=";(...) ntent.items.AppendTimeMeanMedianandPercentiles.content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Append Time Mean, Median, and Percentiles in MS]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Append Time Mean, Median, and Percentiles]]></Val>
+            <Tgt Cat="Text" Stat="Update" Orig="New">
               <Val><![CDATA[Gemiddelde, mediaan en percentiel van tijdstip van toevoegen in MS]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[Append Time Mean, Median, and Percentiles in MS]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -1873,10 +1882,13 @@
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) tle" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Average Container Launch Delay in MS]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Average Container Launch Delay]]></Val>
+            <Tgt Cat="Text" Stat="Update" Orig="New">
               <Val><![CDATA[Gemiddelde vertraging bij starten van container in MS]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[Average Container Launch Delay in MS]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -2138,10 +2150,13 @@
       </Item>
       <Item ItemId=";items.Usage.content.items.HBase.content.items.HBaseJVM.content.items.Memory.content.items.query0.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[JVM Heap Usage in MB]]></Val>
+          <Val><![CDATA[JVM Heap Usage]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Heap-gebruik voor JVM in MB]]></Val>
+            <Val><![CDATA[Heap-gebruik voor JVM]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[JVM Heap Usage in MB]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -2262,30 +2277,36 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Usage.content.items.Yarn.content.items.YARNJVM.content.items.JVMHeapUsageinMB.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Usage.content.items.Yarn.content.items.YARNJVM.content.items.JVMHeapUsage.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[JVM Heap Usage in MB]]></Val>
+          <Val><![CDATA[JVM Heap Usage]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Heap-gebruik voor JVM in MB]]></Val>
+            <Val><![CDATA[Heap-gebruik voor JVM]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Usage.content.items.Yarn.content.items.YARNJVM.content.items.query0Copyed.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[JVM Non-Heap Usage in MB]]></Val>
+          <Val><![CDATA[JVM Non-Heap Usage]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Niet-heap-gebruik voor JVM in MB]]></Val>
+            <Val><![CDATA[Niet-Heap-gebruik voor JVM]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[JVM Non-Heap Usage in MB]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Usage.content.items.Yarn.content.items.YARNJVM.content.items.query4.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Mean Time Per Collection in MS]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[Mean Time Per Collection]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[Gemiddelde tijd per verzameling in MS]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Mean Time Per Collection in MS]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -2370,7 +2391,7 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Usage.content.items.Yarn.content.items.YarnAppMetrics.content.items.AvgAMLaunchDelayTimeinMS.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Usage.content.items.Yarn.content.items.YarnAppMetrics.content.items.AvgAMLaunchDelayTime.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Avg AM Launch Delay Time]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -2379,7 +2400,7 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Usage.content.items.Yarn.content.items.YarnAppMetrics.content.items.AvgAMRegisterDelayTimeinMS.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Usage.content.items.Yarn.content.items.YarnAppMetrics.content.items.AvgAMRegisterDelayTime.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Avg AM Register Delay Time]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -2501,15 +2522,6 @@
           <Val><![CDATA[ClusterName]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[ClusterName]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[HDInsight HBase Insights]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[HDInsight HBase-inzichten]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
