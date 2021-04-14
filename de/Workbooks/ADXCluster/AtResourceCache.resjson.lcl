@@ -45,9 +45,24 @@
           <Disp Icon="Str" />
         </Item>
       </Item>
+      <Item ItemId=";@items.CacheDetailsGoup.content.items.CacheUserdetailsperQueryLookBackPeriod.content.gridSettings.labelSettings.Co" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) unt.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Query count for selected lookback period]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Abfrageanzahl für ausgewählten Rückblickzeitraum]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
       <Item ItemId=";items.CacheDetailsGoup.content.items.AdvisorCacheRecommendations.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[You are following all of the cache recommendations for this cluster]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Sie befolgen alle Cacheempfehlungen für diesen Cluster.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -96,6 +111,15 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
+      <Item ItemId=";items.CacheDetailsGoup.content.items.CacheUserdetailsperQueryLookBackPeriod.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[There were no queries on this table]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Für diese Tabelle waren keine Abfragen vorhanden.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.CacheDetailsGoup.content.items.ClickOnTheCacheGridText.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[]D83D;]DCA1; Click on a row to see details]]></Val>
@@ -105,9 +129,18 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
+      <Item ItemId=";items.CacheDetailsGoup.content.items.ClickOnTheCacheLookbackGridText.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[]D83D;]DCA1; Click on a row on the above table to see details]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[]D83D;]DCA1; Klicken Sie auf eine Zeile in der obigen Tabelle, um weitere Details anzuzeigen.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.CacheDetailsGoup.content.items.HeaderCache.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px -304px 0px 0px;position: relative;top:-5px">&nbsp;&nbsp;Table usage details]D;]A;</span><br>]D;]A;&nbsp;&nbsp;This page presents data based on the Time Range parameter. You can change the Time range parameter to present data starting from {TableLogsStartDate} (based on your oldest diagnostic logs data)]]></Val>
+          <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px -304px 0px 0px;position: relative;top:-5px">&nbsp;&nbsp;Table usage details]D;]A;</span><br>]D;]A;&nbsp;&nbsp;This page presents data based on the Time Range parameter. You can change the Time range parameter to present data starting from {TableLogsStartDate} (based on your oldest diagnostic logs data)<br>&nbsp;&nbsp;Notice the queries statistics presented are based only on queries that scanned data. For instance queries that failed, and queries with time operator of future don't scan any data therefore would not be part of the queries statistics presented.]]></Val>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -165,6 +198,15 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
+      <Item ItemId=";items.CacheDetailsGoup.content.items.UserDetailsCacheHeader.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px -304px 0px 0px;position: relative;top:-5px">&nbsp;&nbsp;User and query count information per selected query lookback period]D;]A;]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px -304px 0px 0px;position: relative;top:-5px">&nbsp;&nbsp;Informationen zu Benutzer- und Abfrageanzahl pro ausgewähltem Abfragerückblickzeitraum]D;]A;]D;]A;]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.CacheDetailsGoup.content.items.advisorlink.content.links.e871664717ec4ec6a18b8612b04c770b.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Advisor recommendations page >]]></Val>
@@ -186,6 +228,9 @@
       <Item ItemId=";items.CacheDetailsGoup.content.items.cachetext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<svg viewBox="0 0 18 18" width="20" class="fxt-escapeShadow" role="presentation" focusable="false" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"><g><defs></defs><path d="M17.5 9.44a3.85 3.85 0 0 0-3.32-3.74A4.85 4.85 0 0 0 9.23 1a5 5 0 0 0-4.75 3.29 4.58 4.58 0 0 0-4 4.46 4.66 4.66 0 0 0 4.79 4.53 3 3 0 0 0 .42 0h7.75a.64.64 0 0 0 .2 0 3.9 3.9 0 0 0 3.86-3.84z" fill="url(#9b4b971a-fb5a-4299-ab97-14581e9298eb)"></path><path d="M14.53 15.14l-2 2.14a.26.26 0 0 1-.44-.14l-1.21-5.9A.26.26 0 0 1 11 11l1.32-.54a.26.26 0 0 1 .33.13l1.95 4.3a.24.24 0 0 1-.07.25z" fill="#37c2b1"></path><path d="M8 15.14l2 2.14a.26.26 0 0 0 .44-.14l1.21-5.9a.26.26 0 0 0-.15-.28l-1.32-.54a.26.26 0 0 0-.33.13l-1.95 4.3a.24.24 0 0 0 .1.29z" fill="#42e8ca"></path><path d="M11.58 6l.26-.22a.41.41 0 0 1 .57.05.37.37 0 0 1 .07.12l.12.32a.42.42 0 0 0 .45.26l.33-.06a.41.41 0 0 1 .47.33.33.33 0 0 1 0 .14l-.06.33a.42.42 0 0 0 .26.45l.32.11a.42.42 0 0 1 .24.53.75.75 0 0 1-.07.12l-.22.25a.42.42 0 0 0 0 .52l.22.26a.4.4 0 0 1-.06.57.41.41 0 0 1-.11.07l-.32.12a.4.4 0 0 0-.26.45l.06.33a.39.39 0 0 1-.33.46.33.33 0 0 1-.14 0h-.33a.4.4 0 0 0-.45.26l-.12.31a.4.4 0 0 1-.52.24.37.37 0 0 1-.12-.07l-.25-.25a.4.4 0 0 0-.52 0l-.26.21a.4.4 0 0 1-.57-.05.24.24 0 0 1-.07-.12l-.12-.31a.39.39 0 0 0-.45-.26l-.33.06a.41.41 0 0 1-.47-.34.29.29 0 0 1 0-.13l.06-.33a.4.4 0 0 0-.26-.45l-.31-.12a.42.42 0 0 1-.29-.5.75.75 0 0 1 .07-.12l.22-.26a.42.42 0 0 0 0-.52l-.22-.25a.41.41 0 0 1 .06-.58.23.23 0 0 1 .12-.06l.31-.12a.42.42 0 0 0 .26-.45L8.8 7a.41.41 0 0 1 .33-.47h.14l.33.06a.41.41 0 0 0 .45-.26l.12-.33a.41.41 0 0 1 .52-.24l.12.07.26.22a.41.41 0 0 0 .51-.05z" fill="#005ba1"></path><circle cx="11.33" cy="9.02" r="2.36" fill="#ffca00"></circle></g></svg> &nbsp;<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px -304px 0px 0px;position: relative;top:-5px;left:-4px">Advisor cache recommendations ]D;]A;</span> ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<svg viewBox="0 0 18 18" width="20" class="fxt-escapeShadow" role="presentation" focusable="false" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"><g><defs></defs><path d="M17.5 9.44a3.85 3.85 0 0 0-3.32-3.74A4.85 4.85 0 0 0 9.23 1a5 5 0 0 0-4.75 3.29 4.58 4.58 0 0 0-4 4.46 4.66 4.66 0 0 0 4.79 4.53 3 3 0 0 0 .42 0h7.75a.64.64 0 0 0 .2 0 3.9 3.9 0 0 0 3.86-3.84z" fill="url(#9b4b971a-fb5a-4299-ab97-14581e9298eb)"></path><path d="M14.53 15.14l-2 2.14a.26.26 0 0 1-.44-.14l-1.21-5.9A.26.26 0 0 1 11 11l1.32-.54a.26.26 0 0 1 .33.13l1.95 4.3a.24.24 0 0 1-.07.25z" fill="#37c2b1"></path><path d="M8 15.14l2 2.14a.26.26 0 0 0 .44-.14l1.21-5.9a.26.26 0 0 0-.15-.28l-1.32-.54a.26.26 0 0 0-.33.13l-1.95 4.3a.24.24 0 0 0 .1.29z" fill="#42e8ca"></path><path d="M11.58 6l.26-.22a.41.41 0 0 1 .57.05.37.37 0 0 1 .07.12l.12.32a.42.42 0 0 0 .45.26l.33-.06a.41.41 0 0 1 .47.33.33.33 0 0 1 0 .14l-.06.33a.42.42 0 0 0 .26.45l.32.11a.42.42 0 0 1 .24.53.75.75 0 0 1-.07.12l-.22.25a.42.42 0 0 0 0 .52l.22.26a.4.4 0 0 1-.06.57.41.41 0 0 1-.11.07l-.32.12a.4.4 0 0 0-.26.45l.06.33a.39.39 0 0 1-.33.46.33.33 0 0 1-.14 0h-.33a.4.4 0 0 0-.45.26l-.12.31a.4.4 0 0 1-.52.24.37.37 0 0 1-.12-.07l-.25-.25a.4.4 0 0 0-.52 0l-.26.21a.4.4 0 0 1-.57-.05.24.24 0 0 1-.07-.12l-.12-.31a.39.39 0 0 0-.45-.26l-.33.06a.41.41 0 0 1-.47-.34.29.29 0 0 1 0-.13l.06-.33a.4.4 0 0 0-.26-.45l-.31-.12a.42.42 0 0 1-.29-.5.75.75 0 0 1 .07-.12l.22-.26a.42.42 0 0 0 0-.52l-.22-.25a.41.41 0 0 1 .06-.58.23.23 0 0 1 .12-.06l.31-.12a.42.42 0 0 0 .26-.45L8.8 7a.41.41 0 0 1 .33-.47h.14l.33.06a.41.41 0 0 0 .45-.26l.12-.33a.41.41 0 0 1 .52-.24l.12.07.26.22a.41.41 0 0 0 .51-.05z" fill="#005ba1"></path><circle cx="11.33" cy="9.02" r="2.36" fill="#ffca00"></circle></g></svg> &nbsp;<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px -304px 0px 0px;position: relative;top:-5px;left:-4px">Advisor-Empfehlungen zum Cache ]D;]A;</span> ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -201,8 +246,8 @@
       <Item ItemId=";items.OnBoardingMessageGroupTables.content.items.text0.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[There is no relevant log data for the selected time range</br>]D;]A;Additional monitoring coverage for tables is based on platform logs (diagnostic logs).</br>If you have not activated additional monitoring, you must enable the **ADXTableDetails** and **ADXTableUsageStatistics** diagnostic settings and send them to Log Analytics. [Learn more]5D;(https://docs.microsoft.com/en-us/azure/data-explorer/using-diagnostic-logs?tabs=commands-and-queries#set-up-diagnostic-logs-for-an-azure-data-explorer-cluster)]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[Dieser Abschnitt bietet zusätzliche Überwachung basierend auf Plattformprotokollen (Diagnoseprotokollen).</br></br>Wenn Sie keine zusätzliche Überwachung aktiviert haben, müssen Sie die Plattformprotokolle **Command**, **Query**, **TableDetails** und **TableUsageStatistics** aktivieren und an einen Log Analytics-Arbeitsbereich senden. [Weitere Informationen]5D;(https://docs.microsoft.com/de-de/azure/data-explorer/using-diagnostic-logs?tabs=commands-and-queries#set-up-diagnostic-logs-for-an-azure-data-explorer-cluster)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Es sind keine relevanten Protokolldaten für den ausgewählten Zeitbereich vorhanden.</br>]D;]A;Die zusätzliche Überwachungsabdeckung für Tabellen basiert auf Plattformprotokollen (Diagnoseprotokollen).</br>Wenn Sie die zusätzliche Überwachung nicht aktiviert haben, müssen Sie die Diagnoseeinstellungen **ADXTableDetails** und **ADXTableUsageStatistics** aktivieren und an Log Analytics senden. [Weitere Informationen]5D;(https://docs.microsoft.com/de-de/azure/data-explorer/using-diagnostic-logs?tabs=commands-and-queries#set-up-diagnostic-logs-for-an-azure-data-explorer-cluster)]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[This section provides additional monitoring coverage that is based on platform logs (diagnostic logs).</br></br>If you have not activated additional monitoring, you must enable the **Command**, **Query**, **TableDetails**, and **TableUsageStatistics** platform logs and send them to a Log Analytics workspace. [Learn more]5D;(https://docs.microsoft.com/en-us/azure/data-explorer/using-diagnostic-logs?tabs=commands-and-queries#set-up-diagnostic-logs-for-an-azure-data-explorer-cluster)]]></Val>
