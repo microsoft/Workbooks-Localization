@@ -9,6 +9,18 @@
     <Disp Icon="Expand" Expand="true" Disp="true" LocTbl="false" />
     <Item ItemId=";Strings" ItemType="0" PsrId="306" Leaf="false">
       <Disp Icon="Str" Disp="true" LocTbl="false" />
+      <Item ItemId=";@items.CacheDetailsGoup.content.items.CacheDetailsperQueryLookBackPeriod.content.gridSettings.labelSettings.Count." ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Number of queries]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Número de consultas]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
       <Item ItemId=";@items.CacheDetailsGoup.content.items.CacheDetailsperQueryLookBackPeriod.content.gridSettings.labelSettings.Number" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) OfDaysBefore.label" ItemType="0" PsrId="306" Leaf="true">
@@ -50,6 +62,9 @@
         <Item ItemId=";(...) unt.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Query count for selected lookback period]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Recuento de consultas para el período de retrospectiva seleccionado]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -129,12 +144,15 @@
       <Item ItemId=";items.CacheDetailsGoup.content.items.ClickOnTheCacheLookbackGridText.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[]D83D;]DCA1; Click on a row on the above table to see details]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[]D83D;]DCA1; Haga clic en una fila de la tabla anterior para ver los detalles.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.CacheDetailsGoup.content.items.HeaderCache.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px -304px 0px 0px;position: relative;top:-5px">&nbsp;&nbsp;Table usage details]D;]A;</span><br>]D;]A;&nbsp;&nbsp;This page presents data based on the Time Range parameter. You can change the Time range parameter to present data starting from {TableLogsStartDate} (based on your oldest diagnostic logs data)<br>&nbsp;&nbsp;Notice the queries statistics presented are based only on queries that scanned data. For instance queries that failed, and queries with time operator of future don't scan any data therefore would not be part of the queries statistics presented.]]></Val>
+          <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px -304px 0px 0px;position: relative;top:-5px">&nbsp;&nbsp;Table usage details]D;]A;</span><br>&nbsp;&nbsp;This page presents data based on the Time Range parameter. You can change the Time Range parameter to present data starting from {TableLogsStartDate} (based on your oldest diagnostic logs data).]D;]A;</span><br>&nbsp;&nbsp;The table names and the Cache policy column refreshes every 8 hours.]D;]A;</span><br>&nbsp;&nbsp;Notice the queries statistics presented are based only on queries that scanned data. For instance queries that failed, and queries with time operator of future don't scan any data therefore would not be part of the queries statistics presented.]]></Val>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -195,6 +213,9 @@
       <Item ItemId=";items.CacheDetailsGoup.content.items.UserDetailsCacheHeader.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px -304px 0px 0px;position: relative;top:-5px">&nbsp;&nbsp;User and query count information per selected query lookback period]D;]A;]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px -304px 0px 0px;position: relative;top:-5px">&nbsp;&nbsp;Información del número de consultas y usuarios por período de retrospectiva de consulta seleccionado]D;]A;]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
