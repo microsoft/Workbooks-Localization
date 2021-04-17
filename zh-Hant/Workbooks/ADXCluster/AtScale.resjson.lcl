@@ -148,19 +148,25 @@
         </Item>
         <Item ItemId=";(...) stionhealthandperformanceIngestionVolumeInMB.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Ingestion volume (in MB) (Sum)]]></Val>
+            <Val><![CDATA[Ingestion volume (Sum)]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[擷取磁碟區 (以 MB 為單位) (總和) ]]></Val>
+              <Val><![CDATA[擷取量 (總和)]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[Ingestion volume (in MB) (Sum)]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) stionhealthandperformanceIngestionVolumeInMBTimeline.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Ingestion volume (in MB) timeline]]></Val>
+            <Val><![CDATA[Ingestion volume timeline]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[擷取磁碟區 (以 MB 為單位) 時間軸]]></Val>
+              <Val><![CDATA[擷取量時間軸]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[Ingestion volume (in MB) timeline]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -507,24 +513,6 @@
       <Item ItemId=";items.resourcesummary.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[{Message}]D;]A;_Azure Data Explorer Cluster_]D;]A;<br />]D;]A;<br />]]></Val>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";settings.description" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Performance (query, export, ingestion, streaming) of all your Azure Data Explorer Clusters]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[您所有 Azure 資料總管叢集的效能 (查詢、匯出、擷取、串流)]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Azure Data Explorer Overview]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Azure 資料總管概觀]]></Val>
-          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
