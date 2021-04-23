@@ -23,6 +23,9 @@
         <Item ItemId=";(...) ontent.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[The CPU score is decided as follows:]D;]A;</br>]D;]A;</br>]D;]A;]D83D;]DD34; <strong>High</strong> - If the precentile 80 of the last day is higher than {CpuHighThreshold}%]D;]A;</br>]D;]A;]D83D;]DFE1; <strong>Medium</strong> - If the median of the precentile 90 of the last week is higher than {CpuLowThreshold}%]D;]A;</br>]D;]A;]D83D;]DFE2; <strong>Low</strong> - Otherwise]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[CPU 分数是按以下方式确定的:]D;]A;</br>]D;]A;</br>]D;]A;]D83D;]DD34; <strong>高</strong> - 如果前一天的百分位数 80 高于 {CpuHighThreshold}%]D;]A;</br>]D;]A;]D83D;]DFE1; <strong>中</strong> - 如果上一周的百分位数 90 的中值高于 {CpuLowThreshold}%]D;]A;</br>]D;]A;]D83D;]DFE2; <strong>低</strong> - 其他情况]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -32,12 +35,18 @@
         <Item ItemId=";(...) rviewtable.content.gridSettings.labelSettings.LastDayPrecentile80.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Last Day Precentile 80]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[前一天的百分位数 80]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) rviewtable.content.gridSettings.labelSettings.LastWeekPercentile90Median.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Last Week Percentile 90 Median]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[上一周的百分位数 90 的中值]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -47,6 +56,9 @@
         <Item ItemId=";(...) son" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[The chart below shows the increase / decrease of the cache utilization in each day of the last month]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[下图显示了上个月中每天的缓存利用率的增加/减少情况]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -56,6 +68,9 @@
         <Item ItemId=";(...) json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px -304px 0px 0px;position: relative;top:-5px">Cache Utilization Change by Day]D;]A;</span> ]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px -304px 0px 0px;position: relative;top:-5px">按天计算的缓存利用率变化]D;]A;</span>]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -65,12 +80,18 @@
         <Item ItemId=";(...) cheutilizationoverviewtable.content.gridSettings.labelSettings.CurrentCacheUtilization.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Current Cache Utilization (Last)]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[当前缓存利用率(最新)]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) cheutilizationoverviewtext.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[The cache utilization score is decided as follows:]D;]A;</br>]D;]A;</br>]D;]A;]D83D;]DD34; <strong>High</strong> - If the cache utilization is higher than {CacheUtilizationHighThreshold}%]D;]A;</br>]D;]A;]D83D;]DFE1; <strong>Medium</strong> - If the cache utilization equals to {CacheUtilizationHighThreshold}%]D;]A;</br>]D;]A;]D83D;]DFE2; <strong>Low</strong> - Otherwise]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[缓存利用率分数是按以下方式确定的:]D;]A;</br>]D;]A;</br>]D;]A;]D83D;]DD34; <strong>高</strong> - 如果缓存利用率高于 {CacheUtilizationHighThreshold}%]D;]A;</br>]D;]A;]D83D;]DFE1; <strong>中</strong> - 如果缓存利用率等于 {CacheUtilizationHighThreshold}%]D;]A;</br>]D;]A;]D83D;]DFE2; <strong>低</strong> - 其他情况]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -80,6 +101,9 @@
         <Item ItemId=";(...) ontent.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[The blue line in the chart below presents the ingestion utilization of your cluster in the last 15 days. The orange line presents the forecast for the ingestion utilization - based on your past usage based on your past usage and assuming weekly seasonality. By looking at the difference between the lines you can observe the outliers of the ingestion usage.]D;]A;</br>]D;]A;</br>]D;]A;]D83D;]DCA1; You can zoom-in by selecting a specific time range.]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[下图中的蓝色线表示过去 15 天内群集的引入利用率。橙色线表示基于过去的使用情况并假定周季节性情况下的引入利用率的预测。通过查看两条线之间的差异，可观察引入使用情况的离群值。]D;]A;</br>]D;]A;</br>]D;]A;]D83D;]DCA1; 可通过选择特定时间范围进行放大。]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -89,6 +113,9 @@
         <Item ItemId=";(...) content.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px -304px 0px 0px;position: relative;top:-5px">Ingestion Utilization + Forecasting]D;]A;</span> ]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px -304px 0px 0px;position: relative;top:-5px">引入利用率 + 预测]D;]A;</span>]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -104,6 +131,9 @@
         <Item ItemId=";(...) ntent.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Ingestion utilization by selected time]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[引入利用率(按所选时间)]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -113,6 +143,9 @@
         <Item ItemId=";(...) tent.items.ingestionoverviewtext.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[The ingestion score is decided as follows:]D;]A;</br>]D;]A;</br>]D;]A;]D83D;]DD34; <strong>High</strong> - If the precentile 90 of the last 5 days is higher than {IngestionHighThreshold}%]D;]A;</br>]D;]A;]D83D;]DFE1; <strong>Medium</strong> - If the precentile 90 of the last 5 days equals to {IngestionHighThreshold}%]D;]A;</br>]D;]A;]D83D;]DFE2; <strong>Low</strong> - Otherwise]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[引入分数是按以下方式确定的:]D;]A;</br>]D;]A;</br>]D;]A;]D83D;]DD34; <strong>高</strong> - 如果最近 5 天的百分位数 90 高于 {IngestionHighThreshold}%]D;]A;</br>]D;]A;]D83D;]DFE1; <strong>中</strong> - 如果最近 5 天的百分位数 90 等于 {IngestionHighThreshold}%]D;]A;</br>]D;]A;]D83D;]DFE2; <strong>低</strong> - 其他情况]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -130,6 +163,9 @@
           <Item ItemId=";(...) label" ItemType="0" PsrId="306" Leaf="true">
             <Str Cat="Text">
               <Val><![CDATA[Max Percentile 90 in Last 5 Days]]></Val>
+              <Tgt Cat="Text" Stat="Loc" Orig="New">
+                <Val><![CDATA[过去 5 天内的最大百分位数 90]]></Val>
+              </Tgt>
             </Str>
             <Disp Icon="Str" />
           </Item>
@@ -140,12 +176,18 @@
         <Item ItemId=";(...) text.content.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[The bar chart below shows the precentile 90 of the ingestion utilization in the last 7 days.]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[下面的条形图显示了过去 7 天内引入使用率的百分位数 90。]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) title.content.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px -304px 0px 0px;position: relative;top:-5px">Ingestion utilization percentile 90 by day]D;]A;</span> ]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px -304px 0px 0px;position: relative;top:-5px">按天计算的引入利用率百分位数 90]D;]A;</span>]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -167,6 +209,9 @@
         <Item ItemId=";(...) le.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Your cluster's size is optimal!]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[你的群集大小为最优!]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -185,6 +230,9 @@
         <Item ItemId=";(...) ionCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[In the chart below you can see the recommended size for your cluster, based on the cluster usage (CPU, ingestion and cache utilization)]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[在下图中，可以根据群集使用情况(CPU、引入和缓存利用率)来查看群集的建议大小]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -192,30 +240,45 @@
       <Item ItemId=";items.Clusterboundariesall.content.items.CPUUtilization.content.items.CPUUtilizationForecastingtext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[The dark blue line in the chart below presents the CPU utilization of your cluster in the last 15 days. The orange line presents the forecast for the CPU utilization - based on your past usage and assuming weekly seasonality. By looking at the difference between the lines you can observe the outliers of the ingestion usage.]D;]A;</br>]D;]A;</br>]D;]A;]D83D;]DCA1; You can zoom-in by selecting a specific time range.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[下图中的深蓝色线表示过去 15 天内群集的 CPU 利用率。橙色线表示基于过去的使用情况并假定周季节性情况下的 CPU 利用率的预测。通过查看两条线之间的差异，可观察引入使用情况的离群值。]D;]A;</br>]D;]A;</br>]D;]A;]D83D;]DCA1; 可通过选择特定时间范围进行放大。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Clusterboundariesall.content.items.CPUUtilization.content.items.CPUUtilizationForecastingtitle.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px -304px 0px 0px;position: relative;top:-5px">CPU Utilization + Forecasting]D;]A;</span> ]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px -304px 0px 0px;position: relative;top:-5px">CPU 利用率 + 预测]D;]A;</span> ]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Clusterboundariesall.content.items.CPUUtilization.content.items.CPUpercentile90bydaytext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[The bar chart below shows the precentile 90 of the CPU utilization in the last 7 days. ]D;]A;]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[下面的条形图显示了过去 7 天内 CPU 使用率的百分位数 90。]D;]A;]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Clusterboundariesall.content.items.CPUUtilization.content.items.CPUpercentile90bydaytitle.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px -304px 0px 0px;position: relative;top:-5px">CPU percentile 90 by day]D;]A;</span> ]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px -304px 0px 0px;position: relative;top:-5px">按天计算的 CPU 百分位数 90]D;]A;</span>]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Clusterboundariesall.content.items.CPUUtilization.content.items.CPUutilizationbyselectedtime.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[CPU utilization by selected time]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[CPU 利用率(按所选时间)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -231,6 +294,9 @@
       <Item ItemId=";items.Clusterboundariesall.content.items.CPUUtilization.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[]D83D;]DCC8; CPU Utilization]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[]D83D;]DCC8; CPU 利用率]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -246,36 +312,54 @@
       <Item ItemId=";items.Clusterboundariesall.content.items.CacheUtilization.content.items.CacheUtilizationbyDaytext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[The chart below demonstrates the average cache utilization of each day in the last month]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[下图演示了上个月中每天的平均缓存利用率]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Clusterboundariesall.content.items.CacheUtilization.content.items.CacheUtilizationbyDaytitle.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px -304px 0px 0px;position: relative;top:-5px">Cache Utilization by Day]D;]A;</span> ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px -304px 0px 0px;position: relative;top:-5px">按天计算的缓存利用率]D;]A;</span>]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Clusterboundariesall.content.items.CacheUtilization.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[]D83D;]DCC8;  Cache Utilization]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[]D83D;]DCC8;  缓存利用率]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Clusterboundariesall.content.items.Clusterboundariestitle.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 18px;font-style: bold;margin:-10px -304px 0px 0px;position: relative;top:-5px;">]D83D;]DCCA; Cluster Boundaries]D;]A;</span> ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 18px;font-style: bold;margin:-10px -304px 0px 0px;position: relative;top:-5px;">]D83D;]DCCA; 群集边界]D;]A;</span>]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Clusterboundariesall.content.items.IngestionUtilization.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[]D83D;]DCC8; Ingestion Utilization]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[]D83D;]DCC8; 引入利用率]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Clusterboundariesall.content.items.Utilizationtilesdescription.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 420; font-size: 14px;">]D;]A;In the following tab you can observe whether your cluster is bounded by data/CPU/ingestion. These boundaries and scores are taken into account in Azure Advisor when deciding on the optimal SKU and instances count recommendation for your cluster.]D;]A;</br>]D;]A;</br>]D;]A;]D83D;]DCA1; Select one of the utilization tiles to get more details.]D;]A;</span>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 420; font-size: 14px;">]D;]A;在下面的选项卡中，你可以观察群集是否受数据/CPU/引入的限制。在确定群集的最佳 SKU 和实例计数建议时，将在 Azure 顾问中考虑这些边界和分数。]D;]A;</br>]D;]A;</br>]D;]A;]D83D;]DCA1; 选择其中一个利用率磁贴以获取更多详细信息。]D;]A;</span>]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
