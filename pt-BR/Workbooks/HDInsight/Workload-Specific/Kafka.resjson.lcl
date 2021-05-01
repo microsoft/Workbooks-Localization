@@ -9,6 +9,18 @@
     <Disp Icon="Expand" Expand="true" Disp="true" LocTbl="false" />
     <Item ItemId=";Strings" ItemType="0" PsrId="306" Leaf="false">
       <Disp Icon="Str" Disp="true" LocTbl="false" />
+      <Item ItemId=";@items.MonitoringEnabled.content.items.Usage.content.items.ComponentLogs.content.items.KafkaLogCount.content.noDat" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) aMessage" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[There is no data for the selected logs.]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Não há dados para os logs selecionados.]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
       <Item ItemId=";@items.MonitoringEnabled.content.items.Usage.content.items.ComponentLogs.content.items.KafkaLogParameters.content." ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) parameters.0c754d9c750046049ab746e350f38593.description" ItemType="0" PsrId="306" Leaf="true">
@@ -39,9 +51,21 @@
           <Disp Icon="Str" />
         </Item>
       </Item>
-      <Item ItemId=";@items.MonitoringEnabled.content.items.Usage.content.items.JVMMetrics.content.items.JVMFileDescriptors.content.ite" ItemType="0" PsrId="306" Leaf="false">
+      <Item ItemId=";@items.MonitoringEnabled.content.items.Usage.content.items.ComponentLogs.content.items.KafkaLogViewer.content.noDa" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) ms.OpenFileDescriptorCountPerHost.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) taMessage" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[There is no data for the selected logs.]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Não há dados para os logs selecionados.]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
+      <Item ItemId=";@items.MonitoringEnabled.content.items.Usage.content.items.JavaVirtualMachineMetrics.content.items.JavaVirtualMach" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) ineFileDescriptors.content.items.OpenFileDescriptorCountPerHost.content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Open File Descriptor Count Per Host]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -50,7 +74,7 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
-        <Item ItemId=";(...) ms.OpenFileDescriptorPercentage.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) ineFileDescriptors.content.items.OpenFileDescriptorPercentage.content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Open File Descriptor Percentage]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -59,31 +83,25 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
-      </Item>
-      <Item ItemId=";@items.MonitoringEnabled.content.items.Usage.content.items.JVMMetrics.content.items.JVMGarbageCollection.content.i" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) tems.JVMGarbageCollectionPerSecondByHost.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) ineGarbageCollection.content.items.JavaVirtualMachineGarbageCollectionPerSecondByHost.content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[JVM Garbage Collection Per Second By Host]]></Val>
+            <Val><![CDATA[Java Virtual Machine Garbage Collection Per Second By Host]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Coleta de Lixo da JVM por Segundo por Host]]></Val>
+              <Val><![CDATA[Coleta de Lixo Por Segundo por Host da Máquina Virtual Java]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
-        <Item ItemId=";(...) tems.JVMMeanTimePerCollection.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) ineGarbageCollection.content.items.JavaVirtualMachineMeanTimePerCollection.content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[JVM Mean Time Per Collection]]></Val>
+            <Val><![CDATA[Java Virtual Machine Mean Time Per Collection]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Tempo Médio da JVM por Coleção]]></Val>
+              <Val><![CDATA[Média de Tempo por Coleção da Máquina Virtual Java]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
-      </Item>
-      <Item ItemId=";@items.MonitoringEnabled.content.items.Usage.content.items.JVMMetrics.content.items.JVMMemory.content.items.Commit" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) tedVirtualMemorySizeinBytes.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) ineMemory.content.items.CommittedVirtualMemorySizeinBytes.content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Committed Virtual Memory Size]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -92,10 +110,7 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
-      </Item>
-      <Item ItemId=";@items.MonitoringEnabled.content.items.Usage.content.items.JVMMetrics.content.items.JVMMemory.content.items.FreePh" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) ysicalMemoryPercentage.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) ineMemory.content.items.FreePhysicalMemoryPercentage.content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Free Physical Memory Percentage]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -104,10 +119,7 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
-      </Item>
-      <Item ItemId=";@items.MonitoringEnabled.content.items.Usage.content.items.JVMMetrics.content.items.JVMMemory.content.items.FreeSw" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) apSpacePercentage.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) ineMemory.content.items.FreeSwapSpacePercentage.content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Free Swap Space Percentage]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -116,34 +128,28 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
-      </Item>
-      <Item ItemId=";@items.MonitoringEnabled.content.items.Usage.content.items.JVMMetrics.content.items.JVMMemory.content.items.JVMHea" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) pMemoryUsage.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) ineMemory.content.items.JavaVirtualMachineHeapMemoryUsage.content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[JVM Heap Memory Usage]]></Val>
+            <Val><![CDATA[Java Virtual Machine Heap Memory Usage]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Uso de Memória de Heap da JVM]]></Val>
+              <Val><![CDATA[Uso de Memória Heap da Máquina Virtual Java]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) ineMemory.content.items.JavaVirtualMachineNonHeapMemoryUsageinBytes.content.title" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Java Virtual Machine NonHeap Memory Usage]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Uso da Memória NonHeap da Máquina Virtual Java]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
       </Item>
-      <Item ItemId=";@items.MonitoringEnabled.content.items.Usage.content.items.JVMMetrics.content.items.JVMMemory.content.items.JVMNon" ItemType="0" PsrId="306" Leaf="false">
+      <Item ItemId=";@items.MonitoringEnabled.content.items.Usage.content.items.JavaVirtualMachineMetrics.content.items.links12.content" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) HeapMemoryUsageinBytes.content.title" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[JVM NonHeap Memory Usage]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Uso de Memória NonHeap da JVM]]></Val>
-            </Tgt>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-      </Item>
-      <Item ItemId=";@items.MonitoringEnabled.content.items.Usage.content.items.JVMMetrics.content.items.links12.content.links.252096f2" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) 5d8141b688a990b1924ae067.linkLabel" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) .links.252096f25d8141b688a990b1924ae067.linkLabel" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Memory]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -152,7 +158,7 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
-        <Item ItemId=";(...) 5d8141b688a990b1924ae067.preText" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) .links.252096f25d8141b688a990b1924ae067.preText" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Memory]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -161,10 +167,7 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
-      </Item>
-      <Item ItemId=";@items.MonitoringEnabled.content.items.Usage.content.items.JVMMetrics.content.items.links12.content.links.99c13813" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) bacd4bb48054b88d35a040a7.linkLabel" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) .links.99c13813bacd4bb48054b88d35a040a7.linkLabel" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[File Descriptors]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -173,10 +176,7 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
-      </Item>
-      <Item ItemId=";@items.MonitoringEnabled.content.items.Usage.content.items.JVMMetrics.content.items.links12.content.links.b0e99bcc" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) 480b476383653bcdf0212013.linkLabel" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) .links.b0e99bcc480b476383653bcdf0212013.linkLabel" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Garbage Collection]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -1036,10 +1036,13 @@
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) linkLabel" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[JVM]]></Val>
+            <Val><![CDATA[Java Virtual Machine]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[JVM]]></Val>
+              <Val><![CDATA[Máquina Virtual Java]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[JVM]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
