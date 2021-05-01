@@ -81,6 +81,30 @@
           <Disp Icon="Str" />
         </Item>
       </Item>
+      <Item ItemId=";@items.Usage.content.items.JavaVirtualMachine.content.items.NimbusJavaVirtualMachineHeapUsagePercentage.content.ti" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) tle" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Nimbus Java Virtual Machine Heap Usage Percentage ]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Percentuale utilizzo heap Java Virtual Machine Nimbus ]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
+      <Item ItemId=";@items.Usage.content.items.JavaVirtualMachine.content.items.SupervisorJavaVirtualMachineHeapUsagePercentage.conten" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) t.title" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Supervisor Java Virtual Machine Heap Usage Percentage]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Percentuale utilizzo heap Java Virtual Machine Supervisor]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
       <Item ItemId=";@items.Usage.content.items.SystemMetrics.content.items.Disk.content.items.DiskWriteCountPerSecondbyHost.content.ti" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) tle" ItemType="0" PsrId="306" Leaf="true">
@@ -177,6 +201,18 @@
           <Disp Icon="Str" />
         </Item>
       </Item>
+      <Item ItemId=";@items.Usage.content.items.Topology.content.items.TopologyOverview.content.items.TopologyCount.content.noDataMessa" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) ge" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[There is no topology data yet. This is expected if no topologies are running.]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Non sono ancora presenti dati di topologia. Questo comportamento è previsto se non sono in esecuzione topologie.]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
       <Item ItemId=";items.NoUsage.content.items.text0.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No Logs present in your workspace. Please make sure you have enabled Azure Monitor for your cluster.]]></Val>
@@ -213,38 +249,20 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Usage.content.items.JVM.content.items.NimbusJVMHeapUsage.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Usage.content.items.JavaVirtualMachine.content.items.NimbusJavaVirtualMachineHeapUsage.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Nimbus JVM Heap Usage]]></Val>
+          <Val><![CDATA[Nimbus Java Virtual Machine Heap Usage]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Utilizzo heap JVM Nimbus]]></Val>
+            <Val><![CDATA[Utilizzo heap Java Virtual Machine Nimbus]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Usage.content.items.JVM.content.items.NimbusJVMHeapUsagePercentage.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Usage.content.items.JavaVirtualMachine.content.items.SupervisorJavaVirtualMachineHeapUsage.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Nimbus JVM Heap Usage Percentage ]]></Val>
+          <Val><![CDATA[Supervisor Java Virtual Machine Heap Usage]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Percentuale utilizzo heap JVM Nimbus ]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Usage.content.items.JVM.content.items.SupervisorJVMHeapUsage.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Supervisor JVM Heap Usage]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Utilizzo heap JVM Supervisor]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Usage.content.items.JVM.content.items.SupervisorJVMHeapUsagePercentage.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Supervisor JVM Heap Usage Percentage]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Percentuale utilizzo heap JVM Supervisor]]></Val>
+            <Val><![CDATA[Utilizzo heap Java Virtual Machine Supervisor]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -359,9 +377,21 @@
       </Item>
       <Item ItemId=";items.Usage.content.items.Tabs.content.links.c0de5b5d8aee4a81bb4623f2d61ee83e.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[JVM]]></Val>
+          <Val><![CDATA[Java Virtual Machine]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Java Virtual Machine]]></Val>
+          </Tgt>
+          <Prev Cat="Text">
             <Val><![CDATA[JVM]]></Val>
+          </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Usage.content.items.Topology.content.items.Capacity.content.items.TopologyCapacity.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[There is no topology data yet. This is expected if no topologies are running.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Non sono ancora presenti dati di topologia. Questo comportamento è previsto se non sono in esecuzione topologie.]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -375,11 +405,29 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
+      <Item ItemId=";items.Usage.content.items.Topology.content.items.Latency.content.items.CompleteLatencyinMS.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[There is no topology data yet. This is expected if no topologies are running.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Non sono ancora presenti dati di topologia. Questo comportamento è previsto se non sono in esecuzione topologie.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.Usage.content.items.Topology.content.items.Latency.content.items.CompleteLatencyinMS.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Complete Latency]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Latenza completa]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Usage.content.items.Topology.content.items.Latency.content.items.ExecuteLatencyinMS.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[There is no topology data yet. This is expected if no topologies are running.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Non sono ancora presenti dati di topologia. Questo comportamento è previsto se non sono in esecuzione topologie.]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -393,11 +441,29 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
+      <Item ItemId=";items.Usage.content.items.Topology.content.items.Latency.content.items.ProcessLatency.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[There is no topology data yet. This is expected if no topologies are running.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Non sono ancora presenti dati di topologia. Questo comportamento è previsto se non sono in esecuzione topologie.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.Usage.content.items.Topology.content.items.Latency.content.items.ProcessLatency.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Process Latency]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Latenza processo]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Usage.content.items.Topology.content.items.Messaging.content.items.Acked.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[There is no topology data yet. This is expected if no topologies are running.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Non sono ancora presenti dati di topologia. Questo comportamento è previsto se non sono in esecuzione topologie.]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -411,6 +477,15 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
+      <Item ItemId=";items.Usage.content.items.Topology.content.items.Messaging.content.items.Emitted.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[There is no topology data yet. This is expected if no topologies are running.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Non sono ancora presenti dati di topologia. Questo comportamento è previsto se non sono in esecuzione topologie.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.Usage.content.items.Topology.content.items.Messaging.content.items.Emitted.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Emitted]]></Val>
@@ -420,11 +495,29 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
+      <Item ItemId=";items.Usage.content.items.Topology.content.items.Messaging.content.items.Failed.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[There is no topology data yet. This is expected if no topologies are running.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Non sono ancora presenti dati di topologia. Questo comportamento è previsto se non sono in esecuzione topologie.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.Usage.content.items.Topology.content.items.Messaging.content.items.Failed.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Failed]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Non riuscito]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Usage.content.items.Topology.content.items.Messaging.content.items.Transferred.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[There is no topology data yet. This is expected if no topologies are running.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Non sono ancora presenti dati di topologia. Questo comportamento è previsto se non sono in esecuzione topologie.]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -452,6 +545,15 @@
           <Val><![CDATA[Topology Count]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Numero di topologie]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Usage.content.items.Topology.content.items.TopologyOverview.content.items.query2a.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[There is no topology data yet. This is expected if no topologies are running.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Non sono ancora presenti dati di topologia. Questo comportamento è previsto se non sono in esecuzione topologie.]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -501,6 +603,15 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
+      <Item ItemId=";items.Usage.content.items.query4.content.gridSettings.labelSettings.ResourceId.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[ClusterName]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[ClusterName]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.parameters0.content.parameters.02a5cded246f46e797b91a19d24d73fa.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Cluster that workbook shows logs/metrics for]]></Val>
@@ -515,15 +626,6 @@
           <Val><![CDATA[Time range of metrics displayed]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Intervallo di tempo delle metriche visualizzate]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[HDInsight Storm Insights]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Informazioni dettagliate per HDInsight Storm]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
