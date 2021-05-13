@@ -57,6 +57,15 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
+      <Item ItemId=";items.Gettingstarted.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[## Guide to using this workbook]D;]A;]D;]A;Organizations use Azure AD Conditional Access to determine who should have access to what resources under the right cicumstances. This workbook was designed to help admins understand the impact of their Conditional Access policies by aggregating sign-in results and highlighting users bypassing your Conditional Access policies. [Learn more]5D;(https://aka.ms/cainsights).]D;]A;]D;]A;### Steps to deploy a new Conditional Access policy using this workbook]D;]A;1. Read about [commonly applied Conditional Access policies]5D;(https://docs.microsoft.com/azure/active-directory/conditional-access/overview#commonly-applied-policies).]D;]A;2. Create a new Conditional Access policy in [report-only mode]5D;(https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-report-only).]D;]A;3. In this report, select the policy from the Conditional Access policy parameter to see its impact summary. ]D;]A;4. Click on a result tile to filter the report by success, failure, user action required, or not applied sign-ins. ]D;]A;5. Verify whether the policy is acting as intended by looking at the breakdown per condition and sign-in status. ]D;]A;6. Edit your policy if necessary, or switch the state of the policy from report-only to on. ]D;]A;7. In this report, view the impact of all enabled policies by selecting "All enabled policies" from the Conditional Access policy parameter. ]D;]A;]D;]A;### Workbook parameters ]D;]A;	• Conditional Access policy: Select all enabled policies or an individual enabled or report-only policy]D;]A;	• Time range: Select how long back the report will load. Longer time ranges may not load for large tenants]D;]A;	• User: Enter a username to filter the report to sign-ins from that account. Type "All users" to see all users. ]D;]A;	• App: Enter the app display name to filter the report to sign-ins to that application. Type "All apps" to see all applications.]D;]A;	• Data view: Select whether report should summarize the number of sign-ins or users]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## このブックの使用のガイド]D;]A;]D;]A;組織では Azure AD 条件付きアクセスを使用して、適切な状況で誰がどのリソースにアクセスするかを決定します。このブックは管理者が条件付きアクセス ポリシーの影響を理解できるようにするために設計されており、サインインの結果を集計し、条件付きアクセス ポリシーを回避するユーザーを浮き彫りにします。[詳細情報]5D;(https://aka.ms/cainsights)。]D;]A;]D;]A;### このブックを使用して新しい条件付きアクセス ポリシーをデプロイする手順]D;]A;1. [一般的に適用されるポリシー]5D;(https://docs.microsoft.com/azure/active-directory/conditional-access/overview#commonly-applied-policies)について参照します。]D;]A;2. 新しい条件付きアクセス ポリシーを[レポート専用モード]5D;(https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-report-only)で作成します。]D;]A;3. このレポートで、[条件付きアクセス ポリシー]5D; パラメーターから、影響の概要を調べるポリシーを選択します。]D;]A;4. 結果タイルをクリックし、[成功]5D;、[失敗]5D;、[ユーザー操作が必要です]5D;、[適用されていません]5D; のサインインに基づいてレポートをフィルター処理します。]D;]A;5. [条件とサインインの状態ごとの内訳]5D; を調べ、ポリシーが意図どおりに機能しているかどうかを確認します。]D;]A;6. 必要に応じてポリシーを編集するか、ポリシーの状態をレポート専用からオンに切り替えます。]D;]A;7. このレポートで、[条件付きアクセス ポリシー]5D; パラメーターから "有効なすべてのポリシー" を選択して、有効なすべてのポリシーの影響を表示します。]D;]A;]D;]A;### ブックのパラメーター]D;]A;	• 条件付きアクセス ポリシー: すべての有効なポリシーか、有効またはレポート専用の個々のポリシーを選択します。]D;]A;	• 時間の範囲: どれほど前にさかのぼってレポートを読み込むかを選択します。大きなテナントでは長い時間の範囲を読み込むことができません。]D;]A;	• ユーザー: ユーザー名を入力して、そのアカウントのサインインを表示するようレポートをフィルター処理します。「すべてのユーザー」と入力すると、すべてのユーザーが表示されます。]D;]A;	• アプリ: アプリの表示名を入力して、そのアプリケーションへのサインインを表示するようレポートをフィルター処理します。「すべてのアプリ」と入力すると、すべてのアプリケーションが表示されます。]D;]A;	• データ ビュー: レポートでサインイン数とユーザーのどちらの概要を示すかを選択します。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.Locationallenabledpolicies.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Location - {resultName}]]></Val>
@@ -90,42 +99,6 @@
       <Item ItemId=";items.Signinriskindividualpolicy.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Sign-in risk - {resultName}]]></Val>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Unknown11.content.links.b89e7617cfe048cc9f1e1ed464be9913.linkLabel" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[here.]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[こちらをご覧ください。]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Unknown11.content.links.b89e7617cfe048cc9f1e1ed464be9913.preText" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[ Learn more about using the workbook ]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[ ブックの使用に関する詳細については、]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Unknown11.content.links.c1ee23a8544d4ba68ae2bed0dca43979.linkLabel" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[visit the Conditional Access blade.]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[条件付きアクセス ブレードにアクセスします。]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Unknown11.content.links.c1ee23a8544d4ba68ae2bed0dca43979.preText" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[View the impact of all enabled policies or select an individual policy. To modify a policy ]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[有効なすべてのポリシーの影響を表示するか、個別のポリシーを選択します。ポリシーを変更するには、]]></Val>
-          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -216,6 +189,15 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
+      <Item ItemId=";items.text28.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[### How is the impact summary calculated?]D;]A;The tiles below indicate the number of users or sign-ins (depending on the data view parameter) where the selected Conditional Access policies applied. ]D;]A;]D;]A;**Total**: Number of {unit:label} in the {TimeRange}</br>]D;]A;**Success**: Number of {unit:label} where the selected polic(ies) granted access and the required controls were satisifed</br>]D;]A;**Failure**: Number of {unit:label} where the selected polic(ies) denied access and the required controls were not satisfied</br>]D;]A;**User action required**: Number of {unit:label} where the selected report-only policy applied but user action (e.g. MFA or Terms of Use) would be required if the policy were enabled.</br>]D;]A;**Not applied**: Number of {unit:label} that are bypassing the selected polic(ies) because the sign-in did not match at least one of the assignments or conditions. ]D;]A;]D;]A;⚠️ Sign-ins the result "Not applied" are not protected by Conditional Access and may be a security vulnerability.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### 影響の概要が計算される方法]D;]A;選択された条件付きアクセス ポリシーが適用されるユーザーまたはサインイン (データ ビュー パラメーターによって異なる) の数が以下のタイルに示されます。]D;]A;]D;]A;**合計**: {TimeRange} の {unit:label} の数</br>]D;]A;**成功**: 選択したポリシーによってアクセスが付与され、必要な制御が満たされた {unit:label} の数</br>]D;]A;**失敗**: 選択したポリシーによってアクセスが拒否され、必要な制御が満たされなかった {unit:label} の数</br>]D;]A;**ユーザー アクションが必要です**: 選択したレポート専用ポリシーが適用されたものの、ポリシーが有効だったらユーザー アクション (例: MFA または利用規約) が必要になるはずだった {unit:label} の数</br>]D;]A;**適用されていません**: サインインが最低 1 つの割り当てや条件に一致しなかったために、選択したポリシーが回避された {unit:label} の数]D;]A;]D;]A;⚠️ 結果が [適用されていません]5D; のサインインは条件付きアクセスの保護を受けておらず、セキュリティ上の脆弱性となるおそれがあります。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.text5.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Conditional Access Insights and Reporting]A;]]></Val>
@@ -227,12 +209,12 @@
       </Item>
       <Item ItemId=";items.text5b.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[## Impact Summary]A;The tiles below indicate the number of users or sign-ins (depending on the data view parameter) where the selected Conditional Access policies applied. ]A;]A;The "Not applied" tile shows the number of users or sign-ins that are bypassing your Conditional Access policies. Click on a tile to filter the report by sign-ins with that result. ]]></Val>
+          <Val><![CDATA[## Impact Summary]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[## 影響の概要]A;下のタイルは、選択した条件付きアクセス ポリシーが適用されているユーザーまたはサインインの数を示します (データ ビューのパラメーターによって異なります)。]A;]A;"未適用" タイルには、条件付きアクセス ポリシーをバイパスしているユーザーまたはサインインの数が表示されます。その結果を使用して、サインインごとにレポートをフィルター処理するには、タイルをクリックします。]]></Val>
+            <Val><![CDATA[## 影響の概要]]></Val>
           </Tgt>
           <Prev Cat="Text">
-            <Val><![CDATA[## Impact Summary]A;Click on a tile to filter by the policy result below]]></Val>
+            <Val><![CDATA[## Impact Summary]A;The tiles below indicate the number of users or sign-ins (depending on the data view parameter) where the selected Conditional Access policies applied. ]A;]A;The "Not applied" tile shows the number of users or sign-ins that are bypassing your Conditional Access policies. Click on a tile to filter the report by sign-ins with that result. ]]></Val>
           </Prev>
         </Str>
         <Disp Icon="Str" />
