@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<LCX SchemaVersion="6.0" Name="S:\output\loc\SqlDatabase\SQL Database Resource Limits.resjson" PsrId="306" SrcCul="en-US" xmlns="http://schemas.microsoft.com/locstudio/2006/6/lcx" TgtCul="id-ID">
+<LCX SchemaVersion="6.0" Name="S:\output\loc\SqlDatabase\SQL Database Resource Limits.resjson" PsrId="306" FileType="1" SrcCul="en-US" TgtCul="id-ID" xmlns="http://schemas.microsoft.com/locstudio/2006/6/lcx">
   <OwnedComments>
     <Cmt Name="Dev" />
     <Cmt Name="LcxAdmin" />
@@ -12,78 +12,117 @@
       <Item ItemId=";items.0.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# SQL Database Resource Limits]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# Batas Sumber Daya SQL Database]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.10.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Total Database Size]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Total Ukuran Database]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.13.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[When encountering high space utilization, mitigation options include:]A;]A;* Increasing the max size of the database or elastic pool, or add more storage. See [Scale single database resources]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-single-database-scale) and [Scale elastic pool resources]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-elastic-pool-scale).]A;* If the database is in an elastic pool, then alternatively the database can be moved outside of the pool so that its storage space is not shared with other databases.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Saat menemui pemanfaatan ruang tinggi, opsi mitigasi meliputi:]A;]A;* Meningkatkan ukuran maksimal dari database atau kumpulan elastis, atau tambahkan penyimpanan. Lihat [Skalakan sumber daya database tunggal]5D; (https://docs.microsoft.com/en-us/azure/sql-database/sql-database-single-database-scale) dan [Menskalakan sumber daya kumpulan elastis]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-elastic-pool-scale).]A;* Jika database berada dalam kumpulan elastis, maka database dapat dipindahkan ke luar pool sehingga ruang penyimpanannya tidak dibagikan dengan database lain.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.14.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Sessions and workers]A;The maximum number of sessions and workers are determined by the service tier and performance level (DTUs and eDTUs). New requests are rejected when session or worker limits are reached, and clients receive an error message. While the number of connections available can be controlled by the application, the number of concurrent workers is often harder to estimate and control. This is especially true during peak load periods when database resource limits are reached and workers pile up due to longer running queries.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Sesi dan pekerja]A;Jumlah sesi dan pekerja maksimum ditentukan oleh tingkat layanan dan level kinerja (DTUs dan eDTUs). Permintaan baru ditolak saat sesi atau batas pekerja tercapai, dan klien menerima pesan kesalahan. Meskipun jumlah koneksi yang tersedia dapat dikontrol oleh aplikasi, jumlah pekerja yang berbarengan sering kali lebih sulit untuk diestimasi dan dikontrol. Hal ini terutama berlaku selama periode pemuatan puncak saat batas sumber daya database tercapai dan pekerja menumpuk karena kueri yang berjalan lebih lama.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.15.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Sessions Percentage]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Persentase Sesi]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.16.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Workers Percentage]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Persentase Pekerja]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.19.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[When encountering high session or worker utilization, mitigation options include:]A;* Increasing the service tier or performance level of the database or elastic pool. See [Scale single database resources]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-single-database-scale) and [Scale elastic pool resources]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-elastic-pool-scale).]A;* Optimizing queries to reduce the resource utilization of each query if the cause of increased worker utilization is due to contention for compute resources. For more information, see [Query Tuning/Hinting]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-performance-guidance#query-tuning-and-hinting).]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Saat menemui pemanfaatan komputasi tinggi, opsi mitigasi mencakup:]A;* Meningkatkan tingkat layanan atau tingkat kinerja database atau kumpulan elastis. Lihat [Skalakan sumber daya database tunggal]5D; (https://docs.microsoft.com/en-us/azure/sql-database/sql-database-single-database-scale) dan [Skalakan sumber daya kumpulan elastis]5D; (https://docs.microsoft.com/en-us/azure/sql-database/sql-database-elastic-pool-scale).]A;* Mengoptimalkan kueri untuk mengurangi pemanfaatan sumber daya dari setiap kueri jika penyebab meningkatnya pemanfaatan pekerja adalah berdasarkan pendapat untuk menghitung sumber daya. Untuk informasi selengkapnya, lihat [Tuning/Hinting Kueri]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-performance-guidance#query-tuning-and-hinting).]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.2.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Compute]A;When database compute utilization (measured by DTUs and eDTUs, or vCores) becomes high, query latency increases and can even time out. Under these conditions, queries may be queued by the service and are provided resources for execution as resource become free. ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# # Hitung]A;Ketika pemanfaatan komputasi database (diukur oleh DTU dan eDTU, atau vCore) menjadi tinggi, latensi kueri meningkat dan bahkan dapat kehabisan waktu. Dalam kondisi ini, kueri dapat diantrekan oleh layanan dan disediakan sumber daya untuk eksekusi sebagai sumber daya menjadi gratis. ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.3.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### DTU Percentage]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Persentase DTU]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.4.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### CPU Percentage]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Persentase CPU]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.7.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[When encountering high compute utilization, mitigation options include:]A;]A;* Increasing the performance level of the database or elastic pool to provide the database with more compute resources. See [Scale single database resources]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-single-database-scale) and [Scale elastic pool resources]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-elastic-pool-scale).]A;* Optimizing queries to reduce the resource utilization of each query. For more information, see [Query Tuning/Hinting]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-performance-guidance#query-tuning-and-hinting).]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Saat menemui pemanfaatan komputasi tinggi, opsi mitigasi mencakup:]A;]A;* Meningkatkan tingkat kinerja database atau kumpulan elastis untuk menyediakan database dengan lebih banyak sumber daya komputasi. Lihat [Scale single database resources]5D; (https://docs.microsoft.com/en-us/azure/sql-database/sql-database-single-database-scale) dan [Skalakan sumber daya kumpulan elastis]5D; (https://docs.microsoft.com/en-us/azure/sql-database/sql-database-elastic-pool-scale).]A;* Mengoptimalkan kueri untuk mengurangi pemanfaatan sumber daya dari setiap kueri. Untuk informasi selengkapnya, lihat [Tuning/Hinting Kueri]5D; (https://docs.microsoft.com/en-us/azure/sql-database/sql-database-performance-guidance#query-tuning-and-hinting).]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.8.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Storage]A;When database space used reaches the max size limit, database inserts and updates that increase the data size fail and clients receive an [error message]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-develop-error-messages). Database SELECTS and DELETES continue to succeed.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Penyimpanan ]A;Ketika ruang database mencapai batas maksimal ukuran, sisipan dan pembaruan yang meningkatkan ukuran data gagal dan klien menerima [pesan kesalahan]5D;(https://docs.microsoft.com/en-us/azure/sql-database/sql-database-develop-error-messages). Database PILIH dan HAPUS lanjutkan berhasil.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.9.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Database Size Percentage]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Persentase Ukuran Database]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

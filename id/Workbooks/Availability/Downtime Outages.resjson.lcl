@@ -12,192 +12,288 @@
       <Item ItemId=";items.DowntimebyTest.content.items.DowntimebyTest.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No application downtime to report]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Tidak ada waktu henti aplikasi untuk dilaporkan]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.DowntimebyTest.content.items.DowntimebyTest.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Total Down Time by Test]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Total Waktu Henti menurut Pengujian]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.DowntimebyTest.content.items.OutagesbyTest.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No outages detected]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Tidak ada pemadaman terdeteksi]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.DowntimebyTest.content.items.OutagesbyTest.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Total End to End Outages by Test]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Total Pemadaman Ujung ke Ujung Menurut Pengujian]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Explanation.content.items.OverviewText.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[**Overview**<br>]D;]A;* This report is intended to provide easy **SLA** reporting & outage information for your services regardless of the subscription or App Insights resource where the tests are running. ]D;]A;* If you have consistent maintenance windows then you can ignore results during those times to provide accurate results.]D;]A;* Outages are defined at the individual test level & uses a similar criteria to the default Availability alerting critieria of X failures over N period of time. ]D;]A;* If you need more details or different visualizations every part of this report can be **edited** & **customized**.]D;]A;* Ensure all parameters are set for the report to function properly.]D;]A;**Note** Classic App Insights resources are not linkable in reports. Only Log Analytics based resources will link back to the App Insights instance.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[**Gambaran Umum** <br>]D;]A;* Laporan ini ditujukan untuk memberikan kemudahan pelaporan **SLA** & informasi pemadaman layanan Anda terlepas dari langganan atau sumber daya App Insights tempat pengujian berjalan. ]D;]A;*Jika Anda memiliki jendela pemeliharaan yang konsisten, maka Anda dapat mengabaikan hasil selama waktu tersebut untuk memberikan hasil yang akurat.]D;]A;* Pemadaman ditentukan pada tingkat pengujian individu & menggunakan kriteria yang sama dengan Ketersediaan default yang memperingatkan kritieria kegagalan X selama periode waktu N. ]D;]A;* Jika Anda memerlukan rincian lebih lanjut atau visualisasi berbeda, setiap bagian dari laporan ini dapat **diedit** & **dikustomisasi**.]D;]A;* Pastikan semua parameter ditetapkan agar laporan berfungsi dengan benar]D;]A;**Catatan** sumber daya App Insights klasik tidak dapat ditautkan dalam laporan. Hanya sumber daya berbasis Analitik Log yang akan ditautkan kembali ke instans App Insights.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Explanation.content.items.ParameterText.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[]D;]A;**Maintenance & Outage Parameters** <br>]D;]A;* Define your outage at the **individual** test level.  ]D;]A;* **Failure Threshold** is how many failures can occur in a given time window to be considered a service outage. ]D;]A;* **3 / 5 locations is the recommended threshold** but depends on how many locations you run your tests from. ]D;]A;* **Outage Window** is in minutes & determines how long you consider your service to be down & over what window the failure threshold is evaluated. * **5 minutes is the recommend period.**]D;]A;* **Maintenance Period** defines the frequency your maintenance window occurs over. Set the period to NEVER if you don't conduct regular maintenance. ]D;]A;* **Maintenance Window** ignores test results during set days of the week & hours. ]D;]A;<br> Ex. If you choose October 24th, Saturday 10 pm - October 25th, Sunday 10am then it will ignore every result during 10 pm - 10 am on **every** Saturday & Sunday in the overall reporting time range.]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[]D;]A;**Parameter Pemeliharaan & Pemadaman** <br>]D;]A;*Tentukan pemadaman Anda di tingkat uji **individu**.  ]D;]A;**Ambang Kegagalan** adalah jumlah kegagalan yang dapat terjadi dalam jendela waktu tertentu untuk dianggap sebagai pemadaman layanan. ]D;]A;***3/5 lokasi adalah ambang yang disarankan** namun tergantung jumlah lokasi yang Anda jalankan untuk pengujian Anda. ]D;]A;*** Jendela Pemadaman** dalam menit & menentukan berapa lama Anda menganggap layanan Anda padam & selama jendela apa ambang kegagalan dievaluasi. * ** 5 menit adalah periode yang disarankan.**]D;]A;* ** Periode Pemeliharaan** mendefinisikan frekuensi jendela pemeliharaan Anda terjadi. Atur periode ke TIDAK PERNAH jika Anda tidak melakukan pemeliharaan rutin. ]D;]A;* **Jendela pemeliharaan** mengabaikan hasil uji selama hari & jam yang ditetapkan. ]D;]A;<br> Misalnya, jika Anda memilih 24 Oktober, Sabtu 22.00 - 25 Oktober, Minggu 10.00 maka akan mengabaikan setiap hasil selama 22.00 - 10.00 **setiap** Sabtu & Minggu dalam rentang waktu pelaporan keseluruhan.]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.GeoMapFailures.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No location failures detected for these resource options & time range]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Tidak ada kegagalan lokasi terdeteksi untuk opsi sumber daya & rentang waktu ini]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.GeoMapFailures.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Failures by Testing Location]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Kegagalan Menurut Lokasi Pengujian]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.MaintenanceWindowWarning.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Do not set the Maintenance Window to a full day]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Jangan atur Jendela Pemeliharaan ke satu hari penuh]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Outage.content.items.HiddenParameters.content.parameters.89448dee7e4948bf838acc3e6ddc55ae.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Error check for a full day maintenance period]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Pemeriksaan kesalahan untuk periode pemeliharaan satu hari penuh]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Outage.content.items.HiddenParameters.content.parameters.a322070a751341f4bb0777a5ee3061ba.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Convert maintenance window to seconds]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Konversi jendela pemeliharaan ke detik]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Outage.content.items.OutageParameters.content.parameters.7b36dfd039af4fa382d2edf09b4d29f7.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Define the time grain you examine for service outages]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Tentukan butir waktu yang Anda periksa untuk pemadaman layanan]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Outage.content.items.OutageParameters.content.parameters.7b36dfd039af4fa382d2edf09b4d29f7.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Outage Window (minutes)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Jendela Pemadaman]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Outage.content.items.OutageParameters.content.parameters.c3450f6fd4e8469ba1d3b9a7a9153d23.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Define how many location failures constitutes a service outage]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Tentukan jumlah kegagalan lokasi yang merupakan gangguan layanan]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Outage.content.items.OutageParameters.content.parameters.c3450f6fd4e8469ba1d3b9a7a9153d23.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Failure Threshold]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Ambang Kegagalan]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Outage.content.items.OutageParameters.content.parameters.e0b972a343e546b3ac8d13eeb40cddd8.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Select the time period your maintenance window occurs over]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Pilih periode waktu terjadinya jendela pemeliharaan Anda]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Outage.content.items.OutageParameters.content.parameters.e0b972a343e546b3ac8d13eeb40cddd8.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Maintenance Period]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Periode Pemeliharaan]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Outage.content.items.OutageParameters.content.parameters.e8c5217d02e542f0a43972e24c27d385.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Define your maintenance Window]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Tentukan Jendela pemeliharaan Anda]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Outage.content.items.OutageParameters.content.parameters.e8c5217d02e542f0a43972e24c27d385.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Maintenance Window]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Jendela Pemeliharaan]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Outage.content.items.Warning.content.items.MaintenanceWarning.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<h2>No Maintenance Window Selected.</h2>]D;]A;]D;]A;Select a weekly or daily maintenace window & reccurence. If you don't perform routine maintenance set it for a one minute window on the weekend or your regular downtime.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<h2>Tidak ada Jendela Pemeliharaan yang Dipilih.</h2>]D;]A;]D;]A;Pilih jendela pemeliharaan mingguan atau harian & pengulangan. Jika Anda tidak melakukan pemeliharaan rutin, atur untuk jendela satu menit pada akhir pekan atau waktu henti reguler Anda.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Outage.content.items.Warning.content.items.OutageWindowWarning.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<h2>No Failure Thresold or Outage Window set.</h2>]D;]A;]D;]A;Set your location failure threshold per test to define an outage & the grain you would like to evaluate on.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<h2>Tidak Ada Ambang Kegagalan atau set Jendela Pemadaman.</h2>]D;]A;]D;]A;Atur ambang kegagalan lokasi Anda per pengujian untuk menentukan pemadaman & butiran yang ingin Anda evaluasi.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overview.content.items.LastOutage.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No outage to report]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Tidak ada pemadaman untuk dilaporkan]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overview.content.items.LastOutage.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Time Since Last Outage]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Waktu Sejak Pemadaman Terakhir]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overview.content.items.LongestOutages.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No outages to report]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Tidak ada pemadaman untuk dilaporkan]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overview.content.items.LongestOutages.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Top Longest Outages & Beginning Datetime (UTC)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Pemadaman Terpanjang Teratas & Awal Tanggalwaktu (UTC)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overview.content.items.OverviewTable.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No Web Tests returned for this time range and resource options]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Tidak ada Pengujian Web dihasilkan untuk rentang waktu dan opsi sumber daya ini]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overview.content.items.OverviewTable.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Overview Table by Test (Expandable)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Tabel Gambaran Umum menurut Pengujian (Dapat diperluas)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overview.content.items.SLA.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Overall Availability %]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Ketersediaan Keseluruhan %]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overview.content.items.TotalDowntime.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No downtime to report]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Tidak ada waktu henti untuk dilaporkan]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overview.content.items.TotalDowntime.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Total Down Time]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Total Waktu Henti]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overview.content.items.TotalOutages.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No outages detected]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Tidak ada pemadaman terdeteksi]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overview.content.items.TotalOutages.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Total Outages]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Total Pemadaman]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -222,18 +318,27 @@
       <Item ItemId=";items.ResourceParameters.content.parameters.034c2381cb444bf3ab5506951bc1f687.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Choose your availability % target]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Pilih target % ketersediaan Anda]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.ResourceParameters.content.parameters.034c2381cb444bf3ab5506951bc1f687.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Availability Target %]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Target Ketersediaan %]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.ResourceParameters.content.parameters.842e7cf886354f78bcf20dc19fcd2f3c.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Web Tests]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Pengujian Web]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -249,12 +354,18 @@
       <Item ItemId=";items.ResourceParameters.content.parameters.be01014585ef4779a7ce88e18d144ae4.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Choose the relevant subscriptions]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Pilih langganan yang relevan]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.ResourceParameters.content.parameters.dd6bfdf114ba495d8b9f7a8a9d098901.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Define the overall time period you report on]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Tentukan keseluruhan periode waktu yang Anda laporkan]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -270,30 +381,45 @@
       <Item ItemId=";items.ResourceParameters.content.parameters.dfcb9b49d323457590724e656f0d3329.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Choose App Insights resources of interest]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Pilih sumber daya App Insights yang diminati]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.ResourceParameters.content.parameters.dfcb9b49d323457590724e656f0d3329.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[App Insights Resources]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Sumber Daya App Insights]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.TimeRangeWarning.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## No Time Range is set.]D;]A;]D;]A;Select a Time Range to get started ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Tidak ada Rentang Waktu yang ditetapkan.]D;]A;]D;]A;Pilih Rentang Waktu untuk memulai ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.VisualTabs.content.links.6757ab2715494ac59f378744e3349f23.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Outages & Downtime]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Pemadaman & Waktu Henti]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.VisualTabs.content.links.a7e7416d223f49dbbbaf607cc53c0ff5.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Failures by Location]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Kegagalan menurut Lokasi]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -318,18 +444,27 @@
       <Item ItemId=";items.Warning.content.items.AppInsightsWarning.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<h2>No App Insights resources are selected.</h2>]D;]A;]D;]A;Select one or more App Insights resources to get started.]D;]A;]D;]A;**If you select more than 100 resources it will break the query**]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<h2>tidak ada sumber daya App Insights yang dipilih. </h2>]D;]A;]D;]A;Pilih satu atau beberapa sumber daya App Insights untuk memulai.]D;]A;]D;]A;**Jika Anda memilih lebih dari 100 sumber daya, maka akan merusak kueri**]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Warning.content.items.SubscriptionWarning.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<h2>No Azure Subscriptions are selected.</h2>]D;]A;]D;]A;Select one or more subscriptions to get started.]D;]A;]D;]A;**If you select more than 100 resources it will break the query**]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<h2>tidak ada Langganan Azure yang dipilih.</h2>]D;]A;]D;]A;Pilih satu atau beberapa langganan untuk memulai.]D;]A;]D;]A;**Jika Anda memilih lebih dari 100 sumber daya, maka akan merusak kueri**]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.WebTestWarning.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## No Web Tests are set.]D;]A;]D;]A;If you are experiencing resource parameter errors then edit the parameter & examine the error message from the generating query. ]D;]A;]D;]A;**If you select more than 100 resources it will break the query**]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Tidak ada Pengujian Web yang ditetapkan.]D;]A;]D;]A;Jika Anda mengalami kesalahan parameter sumber daya, edit parameter & periksa pesan kesalahan dari kueri pembuatan. ]D;]A;]D;]A;**Jika Anda memilih lebih dari 100 sumber daya, maka akan merusak kueri**]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

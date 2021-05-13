@@ -57,6 +57,15 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
+      <Item ItemId=";items.Gettingstarted.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[## Guide to using this workbook]D;]A;]D;]A;Organizations use Azure AD Conditional Access to determine who should have access to what resources under the right cicumstances. This workbook was designed to help admins understand the impact of their Conditional Access policies by aggregating sign-in results and highlighting users bypassing your Conditional Access policies. [Learn more]5D;(https://aka.ms/cainsights).]D;]A;]D;]A;### Steps to deploy a new Conditional Access policy using this workbook]D;]A;1. Read about [commonly applied Conditional Access policies]5D;(https://docs.microsoft.com/azure/active-directory/conditional-access/overview#commonly-applied-policies).]D;]A;2. Create a new Conditional Access policy in [report-only mode]5D;(https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-report-only).]D;]A;3. In this report, select the policy from the Conditional Access policy parameter to see its impact summary. ]D;]A;4. Click on a result tile to filter the report by success, failure, user action required, or not applied sign-ins. ]D;]A;5. Verify whether the policy is acting as intended by looking at the breakdown per condition and sign-in status. ]D;]A;6. Edit your policy if necessary, or switch the state of the policy from report-only to on. ]D;]A;7. In this report, view the impact of all enabled policies by selecting "All enabled policies" from the Conditional Access policy parameter. ]D;]A;]D;]A;### Workbook parameters ]D;]A;	• Conditional Access policy: Select all enabled policies or an individual enabled or report-only policy]D;]A;	• Time range: Select how long back the report will load. Longer time ranges may not load for large tenants]D;]A;	• User: Enter a username to filter the report to sign-ins from that account. Type "All users" to see all users. ]D;]A;	• App: Enter the app display name to filter the report to sign-ins to that application. Type "All apps" to see all applications.]D;]A;	• Data view: Select whether report should summarize the number of sign-ins or users]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## 使用此活頁簿的指南]D;]A;]D;]A;組織使用 Azure AD 條件式存取來決定哪些人員可以存取右側情況的資源。此活頁簿的設計目的是為了協助管理員透過彙總登入結果並突出顯示使用者略過條件式存取原則，來了解其條件式存取原則的影響。[深入了解]5D;(https://aka.ms/cainsights)。]D;]A;]D;]A;### 使用此活頁簿部署新條件式存取原則的步驟]D;]A;1. 請參閱[一般會套用的條件式存取原則]5D;(https://docs.microsoft.com/azure/active-directory/conditional-access/overview#commonly-applied-policies)。]D;]A;2. 在[僅限報表模式]5D;(https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-report-only)中建立新的條件存取原則。]D;]A;3. 在此報表中，從條件式存取原則參數中選取原則，以查看其影響摘要。]D;]A;4. 按一下結果磚，依成功、失敗、需要使用者動作或未套用的登入來篩選報表。]D;]A;5. 透過查看每個條件和登入狀態，來確認原則的作用是否為預期。]D;]A;6. 如有必要，請編輯原則，或將原則的狀態從 [僅限報表]5D; 切換為 [開啟]5D;。]D;]A;7. 在此報表中，從條件式存取原則參數中選取 [所有啟用的原則]5D;，即可檢視所有已啟用原則的影響。]D;]A;]D;]A;### 活頁簿參數]D;]A;	•條件式存取原則: 選取所有已啟用的原則或個別已啟用的原則或僅限報表的原則]D;]A;	•時間範圍: 選取要載入報表的時間長度。大型租用戶可能無法載入較長的時間範圍]D;]A;	•使用者: 輸入使用者名稱，以篩選報表，以從該帳戶登入。輸入「所有使用者」以查看所有使用者。]D;]A;	•應用程式: 輸入應用程式顯示名稱，以篩選報表以登入該應用程式。輸入 [所有應用程式]5D; 以查看所有應用程式。]D;]A;	•資料檢視: 選取報表是否應摘要登入或使用者的數目]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.Locationallenabledpolicies.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Location - {resultName}]]></Val>
@@ -90,42 +99,6 @@
       <Item ItemId=";items.Signinriskindividualpolicy.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Sign-in risk - {resultName}]]></Val>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Unknown11.content.links.b89e7617cfe048cc9f1e1ed464be9913.linkLabel" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[here.]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[這裡。]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Unknown11.content.links.b89e7617cfe048cc9f1e1ed464be9913.preText" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[ Learn more about using the workbook ]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[深入了解如何使用活頁簿]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Unknown11.content.links.c1ee23a8544d4ba68ae2bed0dca43979.linkLabel" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[visit the Conditional Access blade.]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[前往 [條件式存取]5D; 刀鋒視窗。]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Unknown11.content.links.c1ee23a8544d4ba68ae2bed0dca43979.preText" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[View the impact of all enabled policies or select an individual policy. To modify a policy ]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[檢視所有已啟用原則的影響，或選取個別原則。修改原則]]></Val>
-          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -216,6 +189,15 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
+      <Item ItemId=";items.text28.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[### How is the impact summary calculated?]D;]A;The tiles below indicate the number of users or sign-ins (depending on the data view parameter) where the selected Conditional Access policies applied. ]D;]A;]D;]A;**Total**: Number of {unit:label} in the {TimeRange}</br>]D;]A;**Success**: Number of {unit:label} where the selected polic(ies) granted access and the required controls were satisifed</br>]D;]A;**Failure**: Number of {unit:label} where the selected polic(ies) denied access and the required controls were not satisfied</br>]D;]A;**User action required**: Number of {unit:label} where the selected report-only policy applied but user action (e.g. MFA or Terms of Use) would be required if the policy were enabled.</br>]D;]A;**Not applied**: Number of {unit:label} that are bypassing the selected polic(ies) because the sign-in did not match at least one of the assignments or conditions. ]D;]A;]D;]A;⚠️ Sign-ins the result "Not applied" are not protected by Conditional Access and may be a security vulnerability.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### 計算影響摘要的方式為何?]D;]A;下面的磚指出所選條件式存取原則套用的使用者或登入數目 (具體取決於資料檢視參數)。]D;]A;]D;]A;**總計**: {TimeRange} 中的 {unit:label} 數目</br>]D;]A;**成功率**: 所選原則授與存取權和所需控制項得到滿足的 {unit:label} 數目</br>]D;]A;**失敗率**: 所選原則拒絕存取且未滿足必要控制項的 {unit:label} 數目</br>]D;]A;**需要使用者動作**: 所選僅限報表原則已套用但需要使用者動作 (如 MFA 或使用條款) (若已啟用原則) 的 {unit:label} 數目。</br>]D;]A;**未套用**: 因為登入與至少一個指派或條件不相符，所以略過所選原則的 {unit:label} 數目。]D;]A;]D;]A;⚠️ 登入未套用的結果未受條件式存取保護，可能是安全性弱點。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.text5.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Conditional Access Insights and Reporting]A;]]></Val>
@@ -227,12 +209,12 @@
       </Item>
       <Item ItemId=";items.text5b.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[## Impact Summary]A;The tiles below indicate the number of users or sign-ins (depending on the data view parameter) where the selected Conditional Access policies applied. ]A;]A;The "Not applied" tile shows the number of users or sign-ins that are bypassing your Conditional Access policies. Click on a tile to filter the report by sign-ins with that result. ]]></Val>
+          <Val><![CDATA[## Impact Summary]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[## 影響摘要]A;下面的磚指出使用者數目或登入 (具體取決於所選條件式存取原則所套用的資料檢視參數) 。]A;]A;「未套用」磚顯示略過條件存取原則的使用者或登入數目。按一下磚可透過登入該結果來篩選報表。]]></Val>
+            <Val><![CDATA[## 影響摘要]]></Val>
           </Tgt>
           <Prev Cat="Text">
-            <Val><![CDATA[## Impact Summary]A;Click on a tile to filter by the policy result below]]></Val>
+            <Val><![CDATA[## Impact Summary]A;The tiles below indicate the number of users or sign-ins (depending on the data view parameter) where the selected Conditional Access policies applied. ]A;]A;The "Not applied" tile shows the number of users or sign-ins that are bypassing your Conditional Access policies. Click on a tile to filter the report by sign-ins with that result. ]]></Val>
           </Prev>
         </Str>
         <Disp Icon="Str" />

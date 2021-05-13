@@ -57,6 +57,15 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
+      <Item ItemId=";items.Gettingstarted.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[## Guide to using this workbook]D;]A;]D;]A;Organizations use Azure AD Conditional Access to determine who should have access to what resources under the right cicumstances. This workbook was designed to help admins understand the impact of their Conditional Access policies by aggregating sign-in results and highlighting users bypassing your Conditional Access policies. [Learn more]5D;(https://aka.ms/cainsights).]D;]A;]D;]A;### Steps to deploy a new Conditional Access policy using this workbook]D;]A;1. Read about [commonly applied Conditional Access policies]5D;(https://docs.microsoft.com/azure/active-directory/conditional-access/overview#commonly-applied-policies).]D;]A;2. Create a new Conditional Access policy in [report-only mode]5D;(https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-report-only).]D;]A;3. In this report, select the policy from the Conditional Access policy parameter to see its impact summary. ]D;]A;4. Click on a result tile to filter the report by success, failure, user action required, or not applied sign-ins. ]D;]A;5. Verify whether the policy is acting as intended by looking at the breakdown per condition and sign-in status. ]D;]A;6. Edit your policy if necessary, or switch the state of the policy from report-only to on. ]D;]A;7. In this report, view the impact of all enabled policies by selecting "All enabled policies" from the Conditional Access policy parameter. ]D;]A;]D;]A;### Workbook parameters ]D;]A;	• Conditional Access policy: Select all enabled policies or an individual enabled or report-only policy]D;]A;	• Time range: Select how long back the report will load. Longer time ranges may not load for large tenants]D;]A;	• User: Enter a username to filter the report to sign-ins from that account. Type "All users" to see all users. ]D;]A;	• App: Enter the app display name to filter the report to sign-ins to that application. Type "All apps" to see all applications.]D;]A;	• Data view: Select whether report should summarize the number of sign-ins or users]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Bu çalışma kitabını kullanma kılavuzu]D;]A;]D;]A;Kuruluşlar, doğru koşullar altında hangi kaynaklara kimlerin erişeceğini belirlemek için Azure AD Koşullu Erişimi kullanır. Bu çalışma kitabı, oturum açma sonuçlarını toplayarak ve Koşullu Erişim ilkelerinizi atlayan kullanıcıları vurgulayarak yöneticilerin Koşullu Erişim ilkelerinin etkilerini anlamasına yardımcı olmak için tasarlanmıştır. [Daha fazla bilgi]5D;(https://aka.ms/cainsights).]D;]A;]D;]A;### Bu çalışma kitabını kullanarak yeni bir Koşullu Erişim ilkesi dağıtma adımları]D;]A;1. [Yaygın olarak kullanılan Koşullu Erişim ilkeleri]5D;(https://docs.microsoft.com/azure/active-directory/conditional-access/overview#commonly-applied-policies) hakkında bilgi edinin.]D;]A;2. [Yalnızca rapor modunda]5D;(https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-report-only) yeni bir Koşullu Erişim ilkesi oluşturun.]D;]A;3. Bu raporda, etki özetini görmek için Koşullu Erişim ilkesi parametresinden ilkeyi seçin. ]D;]A;4. Raporu başarı, hata, kullanıcı eylemi gerekli veya uygulanmamış oturum açma işlemlerine göre filtrelemek için bir sonuç kutucuğuna tıklayın. ]D;]A;5. Koşul ve oturum açma durumu başına döküme bakarak ilkenin amaçlandığı gibi davranıp davranmadığını doğrulayın. ]D;]A;6. Gerekirse ilkenizi düzenleyin veya ilkenin durumunu yalnızca rapordan açık seçeneğine değiştirin. ]D;]A;7. Bu raporda, Koşullu Erişim ilkesi parametresinden "Tüm etkin ilkeler" seçeneğini belirleyerek tüm etkin ilkelerin etkisini görüntüleyin. ]D;]A;]D;]A;### Çalışma kitabı parametreleri ]D;]A;	• Koşullu Erişim ilkesi: Tüm etkin ilkeleri veya tek bir etkin ya da yalnızca rapor ilkesini seçin]D;]A;	• Zaman aralığı: Raporun ne kadar süreyle yükleneceğini seçin. Büyük kiracılar için uzun zaman aralıkları yüklenmeyebilir]D;]A;	• Kullanıcı: Raporu bu hesaptan yapılan oturum açma işlemlerine göre filtrelemek için bir kullanıcı adı girin. Tüm kullanıcıları görmek için "Tüm kullanıcılar" yazın. ]D;]A;	• Uygulama: Raporu bu uygulamada yapılan oturum açma işlemlerine göre filtrelemek için uygulama görünen adını girin. Tüm uygulamaları görmek için "Tüm uygulamalar" yazın.]D;]A;	• Veri görünümü: Raporun oturum açma veya kullanıcı sayısını özetleyip özetlemeyeceğini seçin]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.Locationallenabledpolicies.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Location - {resultName}]]></Val>
@@ -90,42 +99,6 @@
       <Item ItemId=";items.Signinriskindividualpolicy.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Sign-in risk - {resultName}]]></Val>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Unknown11.content.links.b89e7617cfe048cc9f1e1ed464be9913.linkLabel" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[here.]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[buradan edinin.]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Unknown11.content.links.b89e7617cfe048cc9f1e1ed464be9913.preText" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[ Learn more about using the workbook ]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[ Çalışma kitabını kullanma hakkında daha fazla bilgiyi ]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Unknown11.content.links.c1ee23a8544d4ba68ae2bed0dca43979.linkLabel" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[visit the Conditional Access blade.]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Koşullu Erişim dikey penceresini ziyaret edin.]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Unknown11.content.links.c1ee23a8544d4ba68ae2bed0dca43979.preText" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[View the impact of all enabled policies or select an individual policy. To modify a policy ]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Tüm etkin ilkelerin etkisini görüntüleyin veya tek bir ilke seçin. Bir ilkeyi değiştirmek için ]]></Val>
-          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -216,6 +189,15 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
+      <Item ItemId=";items.text28.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[### How is the impact summary calculated?]D;]A;The tiles below indicate the number of users or sign-ins (depending on the data view parameter) where the selected Conditional Access policies applied. ]D;]A;]D;]A;**Total**: Number of {unit:label} in the {TimeRange}</br>]D;]A;**Success**: Number of {unit:label} where the selected polic(ies) granted access and the required controls were satisifed</br>]D;]A;**Failure**: Number of {unit:label} where the selected polic(ies) denied access and the required controls were not satisfied</br>]D;]A;**User action required**: Number of {unit:label} where the selected report-only policy applied but user action (e.g. MFA or Terms of Use) would be required if the policy were enabled.</br>]D;]A;**Not applied**: Number of {unit:label} that are bypassing the selected polic(ies) because the sign-in did not match at least one of the assignments or conditions. ]D;]A;]D;]A;⚠️ Sign-ins the result "Not applied" are not protected by Conditional Access and may be a security vulnerability.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Etki özeti nasıl hesaplanır?]D;]A;Aşağıdaki kutucuklar, seçili Koşullu Erişim ilkelerinin uygulandığı kullanıcı veya oturum açma (veri görünümü parametresine bağlı olarak) sayısını gösterir. ]D;]A;]D;]A;**Toplam**: {TimeRange} içindeki {unit:label} sayısı</br>]D;]A;**Başarı**: Seçili ilkelerin erişim izni verildiği ve gerekli denetimlerin karşılandığı {unit:label} sayısı</br>]D;]A;**Hata**: Seçili ilkelerin erişim izni reddedildiği ve gerekli denetimlerin karşılanmadığı {unit:label} sayısı</br>]D;]A;**Kullanıcı eylemi gerekli**: Seçili yalnızca rapor ilkesinin uygulandığı, ancak ilke etkinleştirildiyse kullanıcı eyleminin (örneğin, MFA veya Kullanım Koşulları) gerekli olduğu {unit:label} sayısı. </br>]D;]A;**Uygulanmadı**: Oturum açma işlemi, atamalar veya koşullardan en az biri ile eşleşmediğinden seçili ilkeleri atlayan {unit:label} sayısı. ]D;]A;]D;]A;⚠️ "Uygulanmadı" sonucu olan oturum açma işlemleri, Koşullu Erişim ile korunmaz ve bir güvenlik açığı olabilir.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.text5.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Conditional Access Insights and Reporting]A;]]></Val>
@@ -227,12 +209,12 @@
       </Item>
       <Item ItemId=";items.text5b.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[## Impact Summary]A;The tiles below indicate the number of users or sign-ins (depending on the data view parameter) where the selected Conditional Access policies applied. ]A;]A;The "Not applied" tile shows the number of users or sign-ins that are bypassing your Conditional Access policies. Click on a tile to filter the report by sign-ins with that result. ]]></Val>
+          <Val><![CDATA[## Impact Summary]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[## Etki Özeti]A;Aşağıdaki kutucuklar, seçili Koşullu Erişim ilkelerinin uygulandığı kullanıcı veya oturum açma sayısını (veri görünümü parametresine bağlı olarak) gösterir. ]A;]A; "Uygulanmadı" kutucuğu, Koşullu Erişim ilkelerinizi atlayan kullanıcı veya oturum açma sayısını gösterir. Bu sonuçla oturum açarak raporu filtrelemek için bir kutucuğa tıklayın. ]]></Val>
+            <Val><![CDATA[## Etki Özeti]]></Val>
           </Tgt>
           <Prev Cat="Text">
-            <Val><![CDATA[## Impact Summary]A;Click on a tile to filter by the policy result below]]></Val>
+            <Val><![CDATA[## Impact Summary]A;The tiles below indicate the number of users or sign-ins (depending on the data view parameter) where the selected Conditional Access policies applied. ]A;]A;The "Not applied" tile shows the number of users or sign-ins that are bypassing your Conditional Access policies. Click on a tile to filter the report by sign-ins with that result. ]]></Val>
           </Prev>
         </Str>
         <Disp Icon="Str" />

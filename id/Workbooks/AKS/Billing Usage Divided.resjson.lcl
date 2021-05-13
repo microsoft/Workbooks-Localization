@@ -12,18 +12,27 @@
       <Item ItemId=";items.aksenginebillabledatashownappliestoentireworkspacenotjusttheclusterinfomessage.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Please note that the Container Insights Usage workbook for AKS Engine clusters shows your billable data usage for your cluster's entire workspace ({resource:name}), and not just the cluster itself ({clusterId}). ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Harap perhatikan bahwa Workbook Penggunaan Wawasan Kontainer untuk kluster Mesin AKS menampilkan penggunaan data yang dapat ditagih untuk keseluruhan ruang kerja cluster Anda ({resource:name}), dan bukan hanya kluster itu sendiri ({clusterId}). ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.pills.content.parameters.1b826776ab9945ab86dbcced05e8b36d.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Used to identify the cluster name when the cluster type is AKS Engine]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Digunakan untuk mengidentifikasi nama kluster jika jenis kluster adalah AKS Engine]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.pills.content.parameters.670aac260ffe4f2981c2d48911bc64b6.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Select time-range for data selection]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Pilih rentang waktu untuk pemilihan data]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -39,12 +48,18 @@
       <Item ItemId=";items.pills.content.parameters.8d48ec94fde6487c98bff1295f5d8b81.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Resource type of resource]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Jenis sumber daya sumber daya]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.tabs.content.links.3434a63bf3d54c1196201e731983041c.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[By Diagnostic Master Node ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Oleh Node Master diagnostik ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -60,36 +75,54 @@
       <Item ItemId=";items.tabs.content.links.7163b7647ab248b3b41741af3eea7ef0.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[By Table]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Menurut Tabel]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.tabs.content.links.7fbcc5bd62d64aebb55e7b1fab65716a.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[By Log Source]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Berdasarkan Sumber Log]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.tabs.content.links.960bbeea357f4c07bdd96f3f123d56fd.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[By Namespace]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Menurut Namespace]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.workbookexplanation.content.items.masternodelogsarenotenabledmsg.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[`Master node logs` are not enabled. [Learn how to enable]5D;(https://docs.microsoft.com/en-us/azure/aks/view-master-logs)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[`Log node master` tidak diaktifkan. [Pelajari cara mengaktifkan]5D;(https://docs.microsoft.com/en-us/azure/aks/view-master-logs)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.workbookexplanation.content.items.workbooksexplanationtext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<br/>]D;]A;This workbook provides you a summary and source for billable data collected by [Container Insights solution.]5D;(https://docs.microsoft.com/en-us/azure/azure-monitor/insights/container-insights-overview)]D;]A;]D;]A;The best way to understand how Container Insights ingests data in Log Analytics workspace is from this [article.]5D;(https://medium.com/microsoftazure/azure-monitor-for-containers-optimizing-data-collection-settings-for-cost-ce6f848aca32)]D;]A;]D;]A;In this workbook you can:]D;]A;]D;]A;* View billable data ingested by **solution**.]D;]A;* View billable data ingested by **Container logs (application logs)**]D;]A;* View billable container logs data ingested segregated by **Kubernetes namespace**]D;]A;* View billable container logs data ingested segregated by **Cluster name**]D;]A;* View billable container log data ingested by **logsource entry**]D;]A;* View billable diagnostic data ingested by **diagnostic master node logs**]D;]A;]D;]A;You can fine tune and control logging by turning off logging on the above mentioned vectors. [Learn how to fine-tune logging]5D;(https://docs.microsoft.com/en-us/azure/azure-monitor/insights/container-insights-agent-config)]D;]A;]D;]A;You can control your master node's logs by updating diagnostic settings. [Learn how to update diagnostic settings]5D;(https://docs.microsoft.com/en-us/azure/aks/view-master-logs)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<br/>]D;]A;Buku kerja ini memberikan ringkasan dan sumber data yang dapat ditagih yang dikumpulkan oleh [Solusi Wawasan Kontainer.]5D; (https://docs.microsoft.com/en-us/azure/azure-monitor/insights/container-insights-overview)]D;]A;]D;]A;Cara terbaik untuk memahami bagaimana Wawasan Kontainer mencerna data dalam ruang kerja Analitik Log adalah dari [artikel]5D; ini. (https://medium.com/microsoftazure/azure-monitor-for-containers-optimizing-data-collection-settings-for-cost-ce6f848aca32)]D;]A;]D;]A;Dalam workbook ini Anda dapat:]D;]A;]D;]A;* Lihat data yang dapat ditagih oleh **solusi**.]D;]A;* Lihat data yang dapat ditagih oleh **log kontainer (log aplikasi)**]D;]A;* Lihat data log kontainer yang dapat ditagih yang ditelan dipisahkan oleh **namespace Kubernetes**]D;]A;* Lihat data log kontainer yang dapat ditagih dipisahkan dengan **nama cluster**]D;]A;*Lihat data log kontainer yang dapat ditagih yang ditelan oleh **entri logsource**]D;]A;* Lihat data diagnostik yang dapat ditagih yang ditelan oleh **log node Master diagnostik**]D;]A;]D;]A;Anda dapat fine tune dan kontrol logging dengan menonaktifkan masuk pada vektor yang disebutkan di atas. [Pelajari cara menyempurnakan Logging]5D; (https://docs.microsoft.com/en-us/azure/azure-monitor/insights/container-insights-agent-config)]D;]A;]D;]A;Anda dapat mengontrol log node master dengan memperbarui pengaturan diagnostik. [Pelajari cara memperbarui pengaturan diagnostik]5D; (https://docs.microsoft.com/en-us/azure/aks/view-master-logs)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.workbookexplanation.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Container Insights Billing Usage]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Penggunaan Tagihan Wawasan Kontainer]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
