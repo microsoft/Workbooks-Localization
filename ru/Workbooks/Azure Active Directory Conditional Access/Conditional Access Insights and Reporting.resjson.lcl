@@ -57,6 +57,15 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
+      <Item ItemId=";items.Gettingstarted.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[## Guide to using this workbook]D;]A;]D;]A;Organizations use Azure AD Conditional Access to determine who should have access to what resources under the right cicumstances. This workbook was designed to help admins understand the impact of their Conditional Access policies by aggregating sign-in results and highlighting users bypassing your Conditional Access policies. [Learn more]5D;(https://aka.ms/cainsights).]D;]A;]D;]A;### Steps to deploy a new Conditional Access policy using this workbook]D;]A;1. Read about [commonly applied Conditional Access policies]5D;(https://docs.microsoft.com/azure/active-directory/conditional-access/overview#commonly-applied-policies).]D;]A;2. Create a new Conditional Access policy in [report-only mode]5D;(https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-report-only).]D;]A;3. In this report, select the policy from the Conditional Access policy parameter to see its impact summary. ]D;]A;4. Click on a result tile to filter the report by success, failure, user action required, or not applied sign-ins. ]D;]A;5. Verify whether the policy is acting as intended by looking at the breakdown per condition and sign-in status. ]D;]A;6. Edit your policy if necessary, or switch the state of the policy from report-only to on. ]D;]A;7. In this report, view the impact of all enabled policies by selecting "All enabled policies" from the Conditional Access policy parameter. ]D;]A;]D;]A;### Workbook parameters ]D;]A;	• Conditional Access policy: Select all enabled policies or an individual enabled or report-only policy]D;]A;	• Time range: Select how long back the report will load. Longer time ranges may not load for large tenants]D;]A;	• User: Enter a username to filter the report to sign-ins from that account. Type "All users" to see all users. ]D;]A;	• App: Enter the app display name to filter the report to sign-ins to that application. Type "All apps" to see all applications.]D;]A;	• Data view: Select whether report should summarize the number of sign-ins or users]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Руководство по использованию этой книги]D;]A;]D;]A;Организации используют условный доступ Azure AD, чтобы определить, каким пользователям и к каким ресурсам нужно предоставить доступ в соответствующих условиях. Эта книга помогает администраторам понять влияние политик условного доступа за счет агрегирования результатов входа и выделения пользователей, обходящих политики условного доступа. [Подробнее]5D;(https://aka.ms/cainsights).]D;]A;]D;]A;### Шаги по развертыванию новой политики условного доступа с помощью этой книги]D;]A;1. Ознакомьтесь с [часто используемыми политиками условного доступа]5D;(https://docs.microsoft.com/azure/active-directory/conditional-access/overview#commonly-applied-policies).]D;]A;2. Создайте новую политику условного доступа в [режиме "только отчет"]5D;(https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-report-only).]D;]A;3. В этом отчете выберите политику в параметре "Политика условного доступа", чтобы просмотреть сводку по ее влиянию. ]D;]A;4. Щелкните плитку результата, чтобы отфильтровать отчет по успеху, сбою, требуемому действию пользователя или входам с результатом "Не применимо". ]D;]A;5. Проверьте, правильно ли работает политика, просмотрев разбивку по условиям и состоянию входа. ]D;]A;6. Измените политику при необходимости или измените состояние политики с "Только отчет" на "Включено". ]D;]A;7. Просмотрите влияние всех включенных политик в этом отчете, выбрав "Все включенные политики" в параметре "Политика условного доступа". ]D;]A;]D;]A;### Параметры книги ]D;]A;	• Политика условного доступа: выберите все включенные политики, отдельную включенную политику или политику в режиме "только отчет"]D;]A;	• Диапазон времени: выберите, за какой период времени следует загрузить отчет. Отчеты за более длинные диапазоны времени могут не загружаться для больших клиентов]D;]A;	• Пользователь: введите имя пользователя, чтобы отфильтровать отчет по входам из этой учетной записи. Введите "Все пользователи", чтобы просмотреть всех пользователей. ]D;]A;	• Приложение: введите отображаемое имя приложения, чтобы отфильтровать отчет по входам в это приложение. Введите "Все приложения", чтобы просмотреть все приложения.]D;]A;	• Представление данных: укажите, что нужно суммировать в отчете — количество входов или пользователей]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.Locationallenabledpolicies.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Location - {resultName}]]></Val>
@@ -90,42 +99,6 @@
       <Item ItemId=";items.Signinriskindividualpolicy.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Sign-in risk - {resultName}]]></Val>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Unknown11.content.links.b89e7617cfe048cc9f1e1ed464be9913.linkLabel" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[here.]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[здесь.]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Unknown11.content.links.b89e7617cfe048cc9f1e1ed464be9913.preText" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[ Learn more about using the workbook ]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[ Дополнительные сведения об использовании книги ]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Unknown11.content.links.c1ee23a8544d4ba68ae2bed0dca43979.linkLabel" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[visit the Conditional Access blade.]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[перейдите к колонке условного доступа.]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Unknown11.content.links.c1ee23a8544d4ba68ae2bed0dca43979.preText" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[View the impact of all enabled policies or select an individual policy. To modify a policy ]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Просмотрите влияние всех включенных политик или выберите отдельную политику. Чтобы изменить политику ]]></Val>
-          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -216,6 +189,15 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
+      <Item ItemId=";items.text28.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[### How is the impact summary calculated?]D;]A;The tiles below indicate the number of users or sign-ins (depending on the data view parameter) where the selected Conditional Access policies applied. ]D;]A;]D;]A;**Total**: Number of {unit:label} in the {TimeRange}</br>]D;]A;**Success**: Number of {unit:label} where the selected polic(ies) granted access and the required controls were satisifed</br>]D;]A;**Failure**: Number of {unit:label} where the selected polic(ies) denied access and the required controls were not satisfied</br>]D;]A;**User action required**: Number of {unit:label} where the selected report-only policy applied but user action (e.g. MFA or Terms of Use) would be required if the policy were enabled.</br>]D;]A;**Not applied**: Number of {unit:label} that are bypassing the selected polic(ies) because the sign-in did not match at least one of the assignments or conditions. ]D;]A;]D;]A;⚠️ Sign-ins the result "Not applied" are not protected by Conditional Access and may be a security vulnerability.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Как рассчитывается сводка по влиянию?]D;]A;На плитках ниже указано число пользователей или входов (в зависимости от значения параметра "Представление данных"), к которым были применены выбранные политики условного доступа. ]D;]A;]D;]A;**Итого**: количество {unit:label} в {TimeRange}</br>]D;]A;**Успех**: количество {unit:label}, для которых выбранные политики предоставили доступ и нужные элементы управления были удовлетворены</br>]D;]A;**Сбой**: количество {unit:label}, для которых выбранные политики отказали в доступе и нужные элементы управления не были удовлетворены</br>]D;]A;**Требуемое действие пользователя**: количество {unit:label}, к которым была применена выбранная политика в режиме "только отчет", но в случае включения политики потребовалось бы действие пользователя (например, MFA или условия использования).</br>]D;]A;**Не применимо**: количество {unit:label}, которые обходят выбранные политики, так как вход не соответствовал по меньшей мере одному из назначений или условий. ]D;]A;]D;]A;⚠️ Входы с результатом "Не применимо" не защищаются условным доступом и могут привести к уязвимости системы безопасности.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.text5.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Conditional Access Insights and Reporting]A;]]></Val>
@@ -227,12 +209,12 @@
       </Item>
       <Item ItemId=";items.text5b.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[## Impact Summary]A;The tiles below indicate the number of users or sign-ins (depending on the data view parameter) where the selected Conditional Access policies applied. ]A;]A;The "Not applied" tile shows the number of users or sign-ins that are bypassing your Conditional Access policies. Click on a tile to filter the report by sign-ins with that result. ]]></Val>
+          <Val><![CDATA[## Impact Summary]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[## Сведения о последствиях выявленной проблемы]A;На плитках ниже указано количество пользователей или входов в систему (в зависимости от параметра представления данных), к которым применялись выбранные политики условного доступа. ]A;]A;На плитке "Не применяется" указано количество пользователей или входов в систему, к которым не применялись политики условного доступа. Нажмите на плитку, чтобы отфильтровать отчет по входам с этим результатом.]]></Val>
+            <Val><![CDATA[## Сводка по влиянию]]></Val>
           </Tgt>
           <Prev Cat="Text">
-            <Val><![CDATA[## Impact Summary]A;Click on a tile to filter by the policy result below]]></Val>
+            <Val><![CDATA[## Impact Summary]A;The tiles below indicate the number of users or sign-ins (depending on the data view parameter) where the selected Conditional Access policies applied. ]A;]A;The "Not applied" tile shows the number of users or sign-ins that are bypassing your Conditional Access policies. Click on a tile to filter the report by sign-ins with that result. ]]></Val>
           </Prev>
         </Str>
         <Disp Icon="Str" />
