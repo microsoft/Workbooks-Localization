@@ -57,6 +57,15 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
+      <Item ItemId=";items.Gettingstarted.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[## Guide to using this workbook]D;]A;]D;]A;Organizations use Azure AD Conditional Access to determine who should have access to what resources under the right cicumstances. This workbook was designed to help admins understand the impact of their Conditional Access policies by aggregating sign-in results and highlighting users bypassing your Conditional Access policies. [Learn more]5D;(https://aka.ms/cainsights).]D;]A;]D;]A;### Steps to deploy a new Conditional Access policy using this workbook]D;]A;1. Read about [commonly applied Conditional Access policies]5D;(https://docs.microsoft.com/azure/active-directory/conditional-access/overview#commonly-applied-policies).]D;]A;2. Create a new Conditional Access policy in [report-only mode]5D;(https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-report-only).]D;]A;3. In this report, select the policy from the Conditional Access policy parameter to see its impact summary. ]D;]A;4. Click on a result tile to filter the report by success, failure, user action required, or not applied sign-ins. ]D;]A;5. Verify whether the policy is acting as intended by looking at the breakdown per condition and sign-in status. ]D;]A;6. Edit your policy if necessary, or switch the state of the policy from report-only to on. ]D;]A;7. In this report, view the impact of all enabled policies by selecting "All enabled policies" from the Conditional Access policy parameter. ]D;]A;]D;]A;### Workbook parameters ]D;]A;	• Conditional Access policy: Select all enabled policies or an individual enabled or report-only policy]D;]A;	• Time range: Select how long back the report will load. Longer time ranges may not load for large tenants]D;]A;	• User: Enter a username to filter the report to sign-ins from that account. Type "All users" to see all users. ]D;]A;	• App: Enter the app display name to filter the report to sign-ins to that application. Type "All apps" to see all applications.]D;]A;	• Data view: Select whether report should summarize the number of sign-ins or users]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Útmutató a munkafüzet használatához]D;]A;]D;]A;A szervezetek az Azure AD-beli feltételes hozzáférést használják annak meghatározásához, hogy kinek milyen erőforrásokhoz legyen hozzáférése a megfelelő körülmények között. Ezt a munkafüzetet azért készítettük, hogy segítsünk a rendszergazdáknak megérteni a feltételes hozzáférési szabályzataik hatását. A munkafüzet összegzi a bejelentkezések eredményeit, és kiemeli a feltételes hozzáférési szabályzatokat megkerülő felhasználókat. [További információ]5D;(https://aka.ms/cainsights).]D;]A;]D;]A;### Új feltételes hozzáférési szabályzat üzembe helyezésének lépései a munkafüzet használatával]D;]A;1. Olvassa el a [gyakran alkalmazott feltételes hozzáférési szabályzatokra vonatkozó tudnivalókat]5D;(https://docs.microsoft.com/azure/active-directory/conditional-access/overview#commonly-applied-policies).]D;]A;2. Hozzon létre új feltételes hozzáférési szabályzatot [csak jelentési módban]5D;(https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-report-only).]D;]A;3. Ebben a jelentésben válasszon ki egy szabályzatot a „Feltételes hozzáférési szabályzat” paraméterrel, hogy megtekinthesse a szabályzat hatásának összegzését. ]D;]A;4. Egy eredménycsempére kattintva szűrheti a jelentést „sikeres”, „hiba”, „felhasználói beavatkozás szükséges” vagy „nem alkalmazott” eredményű bejelentkezések szerint. ]D;]A;5. Ellenőrizze, hogy a szabályzat rendeltetésszerűen működik-e, ehhez tekintse meg a feltétel és a bejelentkezési állapot szerinti bontást. ]D;]A;6. Szükség esetén szerkessze a szabályzatot, vagy állítsa át a szabályzat állapotát „csak jelentés” állapotról „bekapcsoltra”. ]D;]A;7. Ebben a jelentésben válassza ki „Az összes engedélyezett szabályzatot” a „Feltételes hozzáférési szabályzat” paraméterrel, hogy megtekinthesse az összes engedélyezett szabályzat hatásának összegzését. ]D;]A;]D;]A;### A munkafüzet paraméterei ]D;]A;	• Feltételes hozzáférési szabályzat: Kiválaszthatja az összes engedélyezett szabályzatot, illetve egy adott engedélyezett vagy csak jelentési szabályzatot.]D;]A;	• Időtartomány: Adja meg, hogy a jelentés visszamenőleg mennyi időre töltődjön be. Nagy bérlők esetén hosszabb időtartományok betöltése esetleg nem lehetséges.]D;]A;	• Felhasználó: Egy felhasználónév megadásával szűrheti a jelentést az adott fiók bejelentkezéseire. „Az összes felhasználó” lehetőség megadásával az összes felhasználó bejelentkezéseit megtekintheti. ]D;]A;	• Alkalmazás: Egy alkalmazás megjelenítendő nevének megadásával szűrheti a jelentést az adott alkalmazásba való bejelentkezésekre. „Az összes alkalmazás” lehetőség megadásával az összes alkalmazásba való bejelentkezéseket megtekintheti.]D;]A;	• Adatmegjelenítés: Válassza ki, hogy a jelentés a bejelentkezések vagy a felhasználók számát összegezze.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.Locationallenabledpolicies.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Location - {resultName}]]></Val>
@@ -90,42 +99,6 @@
       <Item ItemId=";items.Signinriskindividualpolicy.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Sign-in risk - {resultName}]]></Val>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Unknown11.content.links.b89e7617cfe048cc9f1e1ed464be9913.linkLabel" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[here.]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[itt.]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Unknown11.content.links.b89e7617cfe048cc9f1e1ed464be9913.preText" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[ Learn more about using the workbook ]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[ További információ a munkafüzet használatáról ]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Unknown11.content.links.c1ee23a8544d4ba68ae2bed0dca43979.linkLabel" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[visit the Conditional Access blade.]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[nyissa meg a Feltételes hozzáférés panelt.]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Unknown11.content.links.c1ee23a8544d4ba68ae2bed0dca43979.preText" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[View the impact of all enabled policies or select an individual policy. To modify a policy ]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Megtekintheti az összes engedélyezett szabályzatot, vagy egy egyedi szabályzatot is kiválaszthat. Egy szabályzat módosításához ]]></Val>
-          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -216,6 +189,15 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
+      <Item ItemId=";items.text28.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[### How is the impact summary calculated?]D;]A;The tiles below indicate the number of users or sign-ins (depending on the data view parameter) where the selected Conditional Access policies applied. ]D;]A;]D;]A;**Total**: Number of {unit:label} in the {TimeRange}</br>]D;]A;**Success**: Number of {unit:label} where the selected polic(ies) granted access and the required controls were satisifed</br>]D;]A;**Failure**: Number of {unit:label} where the selected polic(ies) denied access and the required controls were not satisfied</br>]D;]A;**User action required**: Number of {unit:label} where the selected report-only policy applied but user action (e.g. MFA or Terms of Use) would be required if the policy were enabled.</br>]D;]A;**Not applied**: Number of {unit:label} that are bypassing the selected polic(ies) because the sign-in did not match at least one of the assignments or conditions. ]D;]A;]D;]A;⚠️ Sign-ins the result "Not applied" are not protected by Conditional Access and may be a security vulnerability.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Hogyan számítjuk ki a hatás összegzését?]D;]A;Az alábbi csempék azoknak a felhasználóknak vagy bejelentkezéseknek (az adatmegjelenítési paramétertől függően) a számát jelzik, amelyekre a kiválasztott feltételes hozzáférési szabályzatok vonatkoztak. ]D;]A;]D;]A;**Összesen**: A {unit:label} száma a(z) {TimeRange} során</br>]D;]A;**Sikeres**: A {unit:label} száma azokban az esetekben, amikor a kiválasztott szabályzat(ok) hozzáférést biztosított(ak), és a szükséges vezérlők feltételei teljesültek</br>]D;]A;**Hiba**: A {unit:label} száma azokban az esetekben, amikor a kiválasztott szabályzat(ok) nem biztosított(ak) hozzáférést, és a szükséges vezérlők feltételei nem teljesültek</br>]D;]A;**Felhasználói beavatkozás szükséges**: A {unit:label} száma azokban az esetekben, amelyekre vonatkozott ugyan a kiválasztott csak jelentési szabályzat, de a szabályzat engedélyezése esetén felhasználói beavatkozásra (például többtényezős hitelesítésre vagy a használati feltételek elfogadására) lenne szükség</br>]D;]A;**Nem alkalmazott**: A {unit:label} száma azokban az esetekben, amelyek megkerülik a kiválasztott szabályzato(ka)t, mert a bejelentkezés nem felelt meg legalább egy hozzárendelésnek vagy feltételnek ]D;]A;]D;]A;⚠️ A „Nem alkalmazott” eredménnyel végződő bejelentkezéseket nem védi a feltételes hozzáférés, ezek biztonsági rést jelenthetnek.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.text5.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Conditional Access Insights and Reporting]A;]]></Val>
@@ -227,12 +209,12 @@
       </Item>
       <Item ItemId=";items.text5b.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[## Impact Summary]A;The tiles below indicate the number of users or sign-ins (depending on the data view parameter) where the selected Conditional Access policies applied. ]A;]A;The "Not applied" tile shows the number of users or sign-ins that are bypassing your Conditional Access policies. Click on a tile to filter the report by sign-ins with that result. ]]></Val>
+          <Val><![CDATA[## Impact Summary]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[## Hatás összegzése]A;Az alábbi csempék jelzik a felhasználók vagy bejelentkezések számát (az adatnézeti paramétertől függően), ahol a kiválasztott feltételes hozzáférési szabályzatok érvényesek. ]A;]A;A „Nem alkalmazott“ csempe azon felhasználók vagy bejelentkezések számát mutatja, amelyek figyelmen kívül hagyják a feltételes hozzáférési szabályzatokat. Kattintson egy csempére, ha a jelentést az ilyen eredményű bejelentkezések szerint szeretné szűrni. ]]></Val>
+            <Val><![CDATA[## A hatás összegzése]]></Val>
           </Tgt>
           <Prev Cat="Text">
-            <Val><![CDATA[## Impact Summary]A;Click on a tile to filter by the policy result below]]></Val>
+            <Val><![CDATA[## Impact Summary]A;The tiles below indicate the number of users or sign-ins (depending on the data view parameter) where the selected Conditional Access policies applied. ]A;]A;The "Not applied" tile shows the number of users or sign-ins that are bypassing your Conditional Access policies. Click on a tile to filter the report by sign-ins with that result. ]]></Val>
           </Prev>
         </Str>
         <Disp Icon="Str" />
