@@ -618,18 +618,6 @@
           <Disp Icon="Str" />
         </Item>
       </Item>
-      <Item ItemId=";@items.Usage.content.items.Hive.content.items.LLAPOverviewStatus.content.gridSettings.labelSettings.ResourceId.lab" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) el" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[ClusterName]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[ClusterName]]></Val>
-            </Tgt>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-      </Item>
       <Item ItemId=";@items.Usage.content.items.SystemMetrics.content.items.Disk.content.items.DiskWriteCountPerSecondbyHost.content.ti" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) tle" ItemType="0" PsrId="306" Leaf="true">
@@ -1145,6 +1133,15 @@
           <Val><![CDATA[No Hive Metrics found in Log Analytics. Hive Metrics are not yet supported for ESP clusters. If this cluster is not ESP, please open a support ticket so we can investigate the cause of the missing metrics]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Log Analytics에서 Hive 메트릭을 찾을 수 없습니다. ESP 클러스터에서는 아직 Hive 메트릭이 지원되지 않습니다. 해당 클러스터가 ESP가 아닌 경우 누락된 메트릭의 원인을 조사할 수 있도록 지원 티켓을 여세요.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Usage.content.items.LLAPOverviewStatus.content.gridSettings.labelSettings.ResourceId.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[ClusterName]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[ClusterName]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />

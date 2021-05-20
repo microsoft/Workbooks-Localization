@@ -35,11 +35,11 @@
       </Item>
       <Item ItemId=";@items.QueryAudit.content.items.SlowInefficientQueries.content.items.ResourceIntensiveQueries.content.gridSettings" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) .labelSettings.Column1.label" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) .labelSettings.Query.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Query Text]]></Val>
+            <Val><![CDATA[Query text]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Texto de la consulta]]></Val>
+              <Val><![CDATA[Texto de consulta]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
@@ -62,10 +62,28 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
+        <Item ItemId=";(...) .labelSettings.TimeRangeDays.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Time Range (days)]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Intervalo de tiempo (días)]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
       </Item>
       <Item ItemId=";@items.QueryAudit.content.items.SlowInefficientQueries.content.items.SlowestQueries.content.gridSettings.labelSett" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) ings.approximatesumResponseDurationMs.label" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) ings.Query.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Query Text]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Texto de consulta]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) ings.ResponseDurationMs.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Response Duration (ms)]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -74,11 +92,11 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
-        <Item ItemId=";(...) ings.purequerytext.label" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) ings.TimeRangeDays.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Query Text]]></Val>
+            <Val><![CDATA[Time Range (days)]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Texto de la consulta]]></Val>
+              <Val><![CDATA[Intervalo de tiempo (días)]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
@@ -98,6 +116,60 @@
           <Val><![CDATA[Workspace]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Área de trabajo]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.QueryAudit.content.items.NoQueryAuditRecords.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Query Audit records not found. To enable Query Auditing for this workspace, see [Audit queries in Azure Monitor Logs]5D;(https://docs.microsoft.com/en-us/azure/azure-monitor/logs/query-audit).]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[No se encontraron los registros de auditoría de consulta. Para habilitar la auditoría de consultas para esta área de trabajo, consulte [Audit queries in Azure Monitor Logs]5D; (https://docs.microsoft.com/en-us/azure/azure-monitor/logs/query-audit).]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.QueryAudit.content.items.QueryAudittabs.content.links.9171d5dae57d410c9ae68607a5ae8eaa.linkLabel" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Performance]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Rendimiento]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.QueryAudit.content.items.QueryAudittabs.content.links.9171d5dae57d410c9ae68607a5ae8eaa.preText" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Performance]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Rendimiento]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.QueryAudit.content.items.QueryAudittabs.content.links.bc7a9dcf8c4144f7b10604b2e3d30a53.linkLabel" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Slow & Inefficient Queries]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Consultas lentas e ineficaces]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.QueryAudit.content.items.QueryAudittabs.content.links.d93f90d9458c404e8e5362f06255e75b.linkLabel" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Users]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Usuarios]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.QueryAudit.content.items.QueryPerformance.content.items.ProcsessedDataKB.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Processed Data (KB)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Datos procesados (KB)]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -176,19 +248,25 @@
       </Item>
       <Item ItemId=";items.QueryAudit.content.items.QueryUsers.content.items.ThrottledUsers.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Query audit data not found]]></Val>
+          <Val><![CDATA[Query audit data not found or no users were throttled]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[No se encuentran los datos de auditoría de las consultas.]]></Val>
+            <Val><![CDATA[No se encontraron datos de auditoría de consulta o no hay ningún usuario con limitaciones.]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Query audit data not found]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.QueryAudit.content.items.QueryUsers.content.items.ThrottledUsers.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Throttled users (TimeRange:label)]]></Val>
+          <Val><![CDATA[Throttled users]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Usuarios limitados (TimeRange:label)]]></Val>
+            <Val><![CDATA[Usuario con limitaciones]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Throttled users (TimeRange:label)]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -224,42 +302,6 @@
           <Val><![CDATA[Slowest Queries]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Consultas más lentas]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.QueryAudit.content.items.links7.content.links.9171d5dae57d410c9ae68607a5ae8eaa.linkLabel" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Performance]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Rendimiento]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.QueryAudit.content.items.links7.content.links.9171d5dae57d410c9ae68607a5ae8eaa.preText" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Performance]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Rendimiento]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.QueryAudit.content.items.links7.content.links.bc7a9dcf8c4144f7b10604b2e3d30a53.linkLabel" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Slow & Inefficient Queries]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Consultas lentas e ineficaces]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.QueryAudit.content.items.links7.content.links.d93f90d9458c404e8e5362f06255e75b.linkLabel" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Users]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Usuarios]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
