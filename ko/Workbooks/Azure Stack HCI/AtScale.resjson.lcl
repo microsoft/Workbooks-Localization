@@ -154,10 +154,13 @@
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) lthStatus.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Health status]]></Val>
+            <Val><![CDATA[Node Health]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[정상 상태]]></Val>
+              <Val><![CDATA[노드 상태]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[Health status]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -322,6 +325,15 @@
             <Val><![CDATA[Cluster > Volume]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
               <Val><![CDATA[클러스터 > 볼륨]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) tings.labelSettings.Status.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Volume Health]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[볼륨 상태]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
@@ -569,10 +581,13 @@
       </Item>
       <Item ItemId=";items.TabsGroup.content.items.overviewgroup.content.items.OverviewDescription.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[<p> This view provides an overview of selected clusters and associated nodes that have connected to Azure in the last 24 hours. ]D;]A;If you don't see a particular cluster, check the filters here as well as the cluster's connection to Azure on the **Azure Stack HCI** resource page. To see if monitoring is enabled on the cluster, use the **Get started** tab.]]></Val>
+          <Val><![CDATA[<p> This view provides the health, usage, and network performance information about the nodes of selected clusters that have connected to Azure in the last 24 hours. It is adviced to check both of the node and storage health of your clusters.]D;]A;If you don't see a particular cluster, check the filters here as well as the cluster's connection to Azure on the **Azure Stack HCI** resource page. To see if monitoring is enabled on the cluster, use the **Get started** tab.]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[<p> 이 보기에서는 지난 24시간 동안 Azure에 연결한 선택한 클러스터 및 연결된 노드에 대한 개요를 제공합니다. ]D;]A;특정 클러스터가 표시되지 않으면 **AzureStack HCI** 리소스 페이지에서 Azure에 대한 클러스터 연결과 여기에 있는 필터를 확인하세요. 클러스터에서 모니터링이 사용 가능한지 확인하려면 **시작하기** 탭을 사용하세요.]]></Val>
+            <Val><![CDATA[<p> 이 보기는 지난 24시간 동안 Azure에 연결된 선택한 클러스터의 노드에 대한 상태, 사용량 및 네트워크 성능 정보를 제공합니다. 클러스터의 노드 및 저장소 상태를 모두 확인하는 것이 좋습니다. ]D;]A;특정 클러스터가 표시되지 않으면 여기에서 필터를 확인하고 **Azure Stack HCI** 리소스 페이지에서 클러스터의 Azure 연결을 확인하세요. 클러스터에서 모니터링이 활성화되어 있는지 확인하려면]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[<p> This view provides an overview of selected clusters and associated nodes that have connected to Azure in the last 24 hours. ]D;]A;If you don't see a particular cluster, check the filters here as well as the cluster's connection to Azure on the **Azure Stack HCI** resource page. To see if monitoring is enabled on the cluster, use the **Get started** tab.]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
