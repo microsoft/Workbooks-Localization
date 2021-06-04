@@ -446,28 +446,46 @@
       </Item>
       <Item ItemId=";items.Warning.content.items.AppInsightsWarning.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[<h2>No App Insights resources are selected.</h2>]D;]A;]D;]A;Select one or more App Insights resources to get started.]D;]A;]D;]A;**If you select more than 100 resources it will break the query**]]></Val>
+          <Val><![CDATA[<h2>No available App Insights resource has Webtests present or no resource has been selected.</h2>]D;]A;]D;]A;Ensure that your selected App Insights resources actually have Availability tests present. Select one or more qualifying App Insights resources to get started.]D;]A;]D;]A;**Selection of more than 100 resources is not supported**]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[<h2>Inga App Insights-resurser har valts.</h2>]D;]A;]D;]A;Välj en eller fler App Insights-resurser för att komma igång.]D;]A;]D;]A;**Om du väljer fler än 100 resurser bryts frågan**]]></Val>
+            <Val><![CDATA[<h2>Ingen tillgänglig App Insights-resurs har webbtester eller också har ingen resurs valts.</h2>]D;]A;]D;]A;Kontrollera att de valda App Insights-resurserna verkligen har tillgänglighetstester. Välj en eller flera kvalificerande App Insights-resurser för att komma igång.]D;]A;]D;]A;**Högst 100 resurser kan väljas**]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[<h2>No App Insights resources are selected.</h2>]D;]A;]D;]A;Select one or more App Insights resources to get started.]D;]A;]D;]A;**If you select more than 100 resources it will break the query**]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Warning.content.items.SubscriptionWarning.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[<h2>No Azure Subscriptions are selected.</h2>]D;]A;]D;]A;Select one or more subscriptions to get started.]D;]A;]D;]A;**If you select more than 100 resources it will break the query**]]></Val>
+          <Val><![CDATA[<h2>No available Azure Subscription has Availability tests present or no subscription has been selected.</h2>]D;]A;]D;]A;Ensure that your selected subscriptions actually have Availability tests present. You may have a subscription filter present. Select one or more qualifying subscriptions to get started.]D;]A;]D;]A;**Selection of more than 100 resources is not supported**]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[<h2>Inga Azure-prenumerationer har valts.</h2>]D;]A;]D;]A;Välj en eller flera prenumerationer för att komma igång.]D;]A;]D;]A;**Om du väljer fler än 100 resurser bryts frågan**]]></Val>
+            <Val><![CDATA[<h2>ingen tillgänglig Azure-prenumeration har några tillgänglighetstest eller också har ingen prenumeration valts. </h2>]D;]A;]D;]A;Kontrollera att de valda prenumerationerna verkligen har tillgänglighetstester. Du kan ha ett prenumerationsfilter. Välj en eller fler kvalificerande prenumerationer för att komma igång.]D;]A;]D;]A;**Högst 100 resurser kan väljas**]]></Val>
+          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[<h2>No Azure Subscriptions are selected.</h2>]D;]A;]D;]A;Select one or more subscriptions to get started.]D;]A;]D;]A;**If you select more than 100 resources it will break the query**]]></Val>
+          </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.WarningResourceGroup.content.items.AppInsightsWarning.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[<h2>No available Resource Group has App Insights resources present or no Resource Group has been selected.</h2>]D;]A;]D;]A;Ensure that your selected resource groups actually have App Insights resources present. Select one or more qualifying resource group to get started. You may need to update your subscription filter too.]D;]A;]D;]A;**Selection of more than 100 resources is not supported**]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<h2>Ingen tillgänglig resursgrupp har App Insights-resurser eller också har ingen resursgrupp valts. </h2>]D;]A;]D;]A;Se till att de valda resursgrupperna verkligen har App Insights-resurser. Välj en eller flera kvalificerande resursgrupper för att komma igång. Du kan även behöva uppdatera prenumerationsfiltret.]D;]A;]D;]A;**Högst 100 resurser kan väljas**]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.WebTestWarning.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[## No Web Tests are set.]D;]A;]D;]A;If you are experiencing resource parameter errors then edit the parameter & examine the error message from the generating query. ]D;]A;]D;]A;**If you select more than 100 resources it will break the query**]]></Val>
+          <Val><![CDATA[## No Web Tests are set.]D;]A;]D;]A;If you are experiencing resource parameter errors then edit the parameter & examine the error message from the generating query. ]D;]A;]D;]A;**Selection of more than 100 resources is not supported**]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[## Inga webbtester har angetts.]D;]A;]D;]A;Om det uppstår resursparameterfel kan du redigera parametern och undersöka felmeddelandet från den genererande frågan. ]D;]A;]D;]A;**Om du väljer fler än 100 resurser bryts frågan**]]></Val>
+            <Val><![CDATA[## Inga webbtester har angetts.]D;]A;]D;]A;Om det uppstår resursparameterfel kan du redigera parametern och undersöka felmeddelandet från den genererande frågan. ]D;]A;]D;]A;**Högst 100 resurser kan väljas**]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[## No Web Tests are set.]D;]A;]D;]A;If you are experiencing resource parameter errors then edit the parameter & examine the error message from the generating query. ]D;]A;]D;]A;**If you select more than 100 resources it will break the query**]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
