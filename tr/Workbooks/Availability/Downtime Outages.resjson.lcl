@@ -446,28 +446,46 @@
       </Item>
       <Item ItemId=";items.Warning.content.items.AppInsightsWarning.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[<h2>No App Insights resources are selected.</h2>]D;]A;]D;]A;Select one or more App Insights resources to get started.]D;]A;]D;]A;**If you select more than 100 resources it will break the query**]]></Val>
+          <Val><![CDATA[<h2>No available App Insights resource has Webtests present or no resource has been selected.</h2>]D;]A;]D;]A;Ensure that your selected App Insights resources actually have Availability tests present. Select one or more qualifying App Insights resources to get started.]D;]A;]D;]A;**Selection of more than 100 resources is not supported**]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[<h2>App Insights kaynağı seçilmedi.</h2>]D;]A;]D;]A;Kullanmaya başlamak için bir veya daha fazla App Insights kaynağı seçin.]D;]A;]D;]A;**100'den fazla kaynak seçerseniz sorgu kesilir**]]></Val>
+            <Val><![CDATA[<h2>Kullanılabilir App Insights kaynağında Web testi yok veya kaynak seçilmemiş.</h2>]D;]A;]D;]A;Seçili App Insights kaynaklarınızın Kullanılabilirlik testlerine sahip olduğundan emin olun. Kullanmaya başlamak için bir veya daha fazla uygun App Insights kaynağı seçin.]D;]A;]D;]A;**100'den fazla kaynağın seçilmesi desteklenmiyor**]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[<h2>No App Insights resources are selected.</h2>]D;]A;]D;]A;Select one or more App Insights resources to get started.]D;]A;]D;]A;**If you select more than 100 resources it will break the query**]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Warning.content.items.SubscriptionWarning.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[<h2>No Azure Subscriptions are selected.</h2>]D;]A;]D;]A;Select one or more subscriptions to get started.]D;]A;]D;]A;**If you select more than 100 resources it will break the query**]]></Val>
+          <Val><![CDATA[<h2>No available Azure Subscription has Availability tests present or no subscription has been selected.</h2>]D;]A;]D;]A;Ensure that your selected subscriptions actually have Availability tests present. You may have a subscription filter present. Select one or more qualifying subscriptions to get started.]D;]A;]D;]A;**Selection of more than 100 resources is not supported**]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[<h2>Azure Aboneliği seçilmedi.</h2>]D;]A;]D;]A;Kullanmaya başlamak için bir veya daha fazla abonelik seçin.]D;]A;]D;]A;**100'den fazla kaynak seçerseniz sorgu kesilir**]]></Val>
+            <Val><![CDATA[<h2>Kullanılabilir Azure aboneliğinde Kullanılabilirlik testi yok veya abonelik seçilmemiş.</h2>]D;]A;]D;]A;Seçili aboneliklerinizin Kullanılabilirlik testleri olduğundan emin olun. Mevcut bir abonelik filtreniz olabilir. Kullanmaya başlamak için bir veya daha fazla uygun abonelik seçin.]D;]A;]D;]A;**100'den fazla kaynağın seçilmesi desteklenmiyor**]]></Val>
+          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[<h2>No Azure Subscriptions are selected.</h2>]D;]A;]D;]A;Select one or more subscriptions to get started.]D;]A;]D;]A;**If you select more than 100 resources it will break the query**]]></Val>
+          </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.WarningResourceGroup.content.items.AppInsightsWarning.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[<h2>No available Resource Group has App Insights resources present or no Resource Group has been selected.</h2>]D;]A;]D;]A;Ensure that your selected resource groups actually have App Insights resources present. Select one or more qualifying resource group to get started. You may need to update your subscription filter too.]D;]A;]D;]A;**Selection of more than 100 resources is not supported**]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<h2>Kullanılabilir Kaynak Grubunda App Insights kaynağı yok veya Kaynak Grubu seçilmemiş.</h2>]D;]A;]D;]A;Seçili kaynak gruplarınızın App Insights kaynaklarına sahip olduğundan emin olun. Kullanmaya başlamak için bir veya daha fazla uygun kaynak grubu seçin. Abonelik filtrenizi de güncelleştirmeniz gerekebilir.]D;]A;]D;]A;**100'den fazla kaynağın seçilmesi desteklenmiyor**]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.WebTestWarning.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[## No Web Tests are set.]D;]A;]D;]A;If you are experiencing resource parameter errors then edit the parameter & examine the error message from the generating query. ]D;]A;]D;]A;**If you select more than 100 resources it will break the query**]]></Val>
+          <Val><![CDATA[## No Web Tests are set.]D;]A;]D;]A;If you are experiencing resource parameter errors then edit the parameter & examine the error message from the generating query. ]D;]A;]D;]A;**Selection of more than 100 resources is not supported**]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[## Web Testi ayarlanmadı.]D;]A;]D;]A;Kaynak parametre hatalarıyla karşılaşıyorsanız ilgili parametreyi düzenleyin ve oluşturulan sorgudaki hata iletisini inceleyin. ]D;]A;]D;]A;**100'den fazla kaynak seçerseniz sorgu kesilir**]]></Val>
+            <Val><![CDATA[## Web Testi ayarlanmadı.]D;]A;]D;]A;Kaynak parametre hatalarıyla karşılaşıyorsanız ilgili parametreyi düzenleyin ve oluşturulan sorgudaki hata iletisini inceleyin. ]D;]A;]D;]A;**100'den fazla kaynağın seçilmesi desteklenmiyor**]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[## No Web Tests are set.]D;]A;]D;]A;If you are experiencing resource parameter errors then edit the parameter & examine the error message from the generating query. ]D;]A;]D;]A;**If you select more than 100 resources it will break the query**]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
