@@ -443,28 +443,46 @@
       </Item>
       <Item ItemId=";items.Warning.content.items.AppInsightsWarning.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[<h2>No App Insights resources are selected.</h2>]D;]A;]D;]A;Select one or more App Insights resources to get started.]D;]A;]D;]A;**If you select more than 100 resources it will break the query**]]></Val>
+          <Val><![CDATA[<h2>No available App Insights resource has Webtests present or no resource has been selected.</h2>]D;]A;]D;]A;Ensure that your selected App Insights resources actually have Availability tests present. Select one or more qualifying App Insights resources to get started.]D;]A;]D;]A;**Selection of more than 100 resources is not supported**]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[<h2>tidak ada sumber daya App Insights yang dipilih. </h2>]D;]A;]D;]A;Pilih satu atau beberapa sumber daya App Insights untuk memulai.]D;]A;]D;]A;**Jika Anda memilih lebih dari 100 sumber daya, maka akan merusak kueri**]]></Val>
+            <Val><![CDATA[<h2>Tidak ada sumber daya Wawasan Aplikasi yang tersedia yang memiliki Webtests atau tidak ada sumber daya yang dipilih.</h2>]D;]A;]D;]A;Pastikan bahwa sumber daya Wawasan Aplikasi yang Anda pilih benar-benar memiliki Pengujian ketersediaan. Pilih satu atau beberapa sumber daya Wawasan Aplikasi yang memenuhi syarat untuk memulai.]D;]A;]D;]A;**Pemilihan lebih dari 100 sumber daya tidak didukung**]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[<h2>No App Insights resources are selected.</h2>]D;]A;]D;]A;Select one or more App Insights resources to get started.]D;]A;]D;]A;**If you select more than 100 resources it will break the query**]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Warning.content.items.SubscriptionWarning.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[<h2>No Azure Subscriptions are selected.</h2>]D;]A;]D;]A;Select one or more subscriptions to get started.]D;]A;]D;]A;**If you select more than 100 resources it will break the query**]]></Val>
+          <Val><![CDATA[<h2>No available Azure Subscription has Availability tests present or no subscription has been selected.</h2>]D;]A;]D;]A;Ensure that your selected subscriptions actually have Availability tests present. You may have a subscription filter present. Select one or more qualifying subscriptions to get started.]D;]A;]D;]A;**Selection of more than 100 resources is not supported**]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[<h2>tidak ada Langganan Azure yang dipilih.</h2>]D;]A;]D;]A;Pilih satu atau beberapa langganan untuk memulai.]D;]A;]D;]A;**Jika Anda memilih lebih dari 100 sumber daya, maka akan merusak kueri**]]></Val>
+            <Val><![CDATA[<h2>Tidak ada Langganan Azure yang tersedia yang memiliki Pengujian ketersediaan atau tidak ada langganan yang dipilih.</h2>]D;]A;]D;]A;Pastikan bahwa langganan yang Anda pilih benar-benar memiliki Pengujian ketersediaan. Anda mungkin memiliki filter langganan. Pilih satu atau beberapa langganan yang memenuhi syarat untuk memulai.]D;]A;]D;]A;**Pemilihan lebih dari 100 sumber daya tidak didukung**]]></Val>
+          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[<h2>No Azure Subscriptions are selected.</h2>]D;]A;]D;]A;Select one or more subscriptions to get started.]D;]A;]D;]A;**If you select more than 100 resources it will break the query**]]></Val>
+          </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.WarningResourceGroup.content.items.AppInsightsWarning.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[<h2>No available Resource Group has App Insights resources present or no Resource Group has been selected.</h2>]D;]A;]D;]A;Ensure that your selected resource groups actually have App Insights resources present. Select one or more qualifying resource group to get started. You may need to update your subscription filter too.]D;]A;]D;]A;**Selection of more than 100 resources is not supported**]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<h2>Tidak ada Grup Sumber Daya yang tersedia yang memiliki sumber daya Wawasan Aplikasi atau tidak ada Grup Sumber Daya yang dipilih.</h2>]D;]A;]D;]A;Pastikan bahwa grup sumber daya yang Anda pilih benar-benar memiliki sumber daya Wawasan Aplikasi. Pilih satu atau beberapa grup sumber daya yang memenuhi syarat untuk memulai. anda mungkin perlu memperbarui filter langganan juga.]D;]A;]D;]A;**Pemilihan lebih dari 100 sumber daya tidak didukung**]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.WebTestWarning.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[## No Web Tests are set.]D;]A;]D;]A;If you are experiencing resource parameter errors then edit the parameter & examine the error message from the generating query. ]D;]A;]D;]A;**If you select more than 100 resources it will break the query**]]></Val>
+          <Val><![CDATA[## No Web Tests are set.]D;]A;]D;]A;If you are experiencing resource parameter errors then edit the parameter & examine the error message from the generating query. ]D;]A;]D;]A;**Selection of more than 100 resources is not supported**]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[## Tidak ada Pengujian Web yang ditetapkan.]D;]A;]D;]A;Jika Anda mengalami kesalahan parameter sumber daya, edit parameter & periksa pesan kesalahan dari kueri pembuatan. ]D;]A;]D;]A;**Jika Anda memilih lebih dari 100 sumber daya, maka akan merusak kueri**]]></Val>
+            <Val><![CDATA[## Tidak ada Pengujian Web yang ditetapkan.]D;]A;]D;]A;Jika Anda mengalami kesalahan parameter sumber daya, edit parameter & periksa pesan kesalahan dari kueri pembuatan. ]D;]A;]D;]A;**Pemilihan lebih dari 100 sumber daya tidak didukung**]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[## No Web Tests are set.]D;]A;]D;]A;If you are experiencing resource parameter errors then edit the parameter & examine the error message from the generating query. ]D;]A;]D;]A;**If you select more than 100 resources it will break the query**]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>

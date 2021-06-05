@@ -446,28 +446,46 @@
       </Item>
       <Item ItemId=";items.Warning.content.items.AppInsightsWarning.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[<h2>No App Insights resources are selected.</h2>]D;]A;]D;]A;Select one or more App Insights resources to get started.]D;]A;]D;]A;**If you select more than 100 resources it will break the query**]]></Val>
+          <Val><![CDATA[<h2>No available App Insights resource has Webtests present or no resource has been selected.</h2>]D;]A;]D;]A;Ensure that your selected App Insights resources actually have Availability tests present. Select one or more qualifying App Insights resources to get started.]D;]A;]D;]A;**Selection of more than 100 resources is not supported**]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[<h2>App Insights リソースが選択されていません。</h2>]D;]A;]D;]A;開始するには、1 つ以上の App Insights リソースを選択してください。]D;]A;]D;]A;**100 を超えるリソースを選択すると、クエリが中断されます**]]></Val>
+            <Val><![CDATA[<h2>使用可能な App Insights リソースに Webtests が存在しないか、リソースが選択されていません。</h2>]D;]A;]D;]A;選択した App Insights リソースに、実際に可用性テストが存在することを確認してください。開始するには、1 つまたは複数の対象の App Insights リソースを選択します。]D;]A;]D;]A;**100 を超えるリソースを選択することはサポートされていません**]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[<h2>No App Insights resources are selected.</h2>]D;]A;]D;]A;Select one or more App Insights resources to get started.]D;]A;]D;]A;**If you select more than 100 resources it will break the query**]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Warning.content.items.SubscriptionWarning.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[<h2>No Azure Subscriptions are selected.</h2>]D;]A;]D;]A;Select one or more subscriptions to get started.]D;]A;]D;]A;**If you select more than 100 resources it will break the query**]]></Val>
+          <Val><![CDATA[<h2>No available Azure Subscription has Availability tests present or no subscription has been selected.</h2>]D;]A;]D;]A;Ensure that your selected subscriptions actually have Availability tests present. You may have a subscription filter present. Select one or more qualifying subscriptions to get started.]D;]A;]D;]A;**Selection of more than 100 resources is not supported**]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[<h2>Azure サブスクリプションが選択されていません。</h2>]D;]A;]D;]A;開始するには、1 つ以上のサブスクリプションを選択してください。]D;]A;]D;]A;**100 を超えるリソースを選択すると、クエリが中断されます**]]></Val>
+            <Val><![CDATA[<h2>使用可能な Azure サブスクリプションに可用性テストが存在しないか、サブスクリプションが選択されていません。</h2>]D;]A;]D;]A;選択したサブスクリプションに実際に可用性テストが存在することを確認してください。サブスクリプション フィルターが存在する可能性があります。開始するには、1 つまたは複数の対象のサブスクリプションを選択します。]D;]A;]D;]A;**100 を超えるリソースを選択することはサポートされていません**]]></Val>
+          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[<h2>No Azure Subscriptions are selected.</h2>]D;]A;]D;]A;Select one or more subscriptions to get started.]D;]A;]D;]A;**If you select more than 100 resources it will break the query**]]></Val>
+          </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.WarningResourceGroup.content.items.AppInsightsWarning.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[<h2>No available Resource Group has App Insights resources present or no Resource Group has been selected.</h2>]D;]A;]D;]A;Ensure that your selected resource groups actually have App Insights resources present. Select one or more qualifying resource group to get started. You may need to update your subscription filter too.]D;]A;]D;]A;**Selection of more than 100 resources is not supported**]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<h2>使用可能なリソース グループに App Insights リソースが存在しないか、リソース グループが選択されていません。</h2>]D;]A;]D;]A;選択したリソース グループに、実際に App Insights のリソースが存在することを確認してください。開始するには、1 つまたは複数の対象のリソース グループを選択します。サブスクリプション フィルターも更新する必要がある場合があります。]D;]A;]D;]A;** 100 を超えるリソースを選択することはサポートされていません**]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.WebTestWarning.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[## No Web Tests are set.]D;]A;]D;]A;If you are experiencing resource parameter errors then edit the parameter & examine the error message from the generating query. ]D;]A;]D;]A;**If you select more than 100 resources it will break the query**]]></Val>
+          <Val><![CDATA[## No Web Tests are set.]D;]A;]D;]A;If you are experiencing resource parameter errors then edit the parameter & examine the error message from the generating query. ]D;]A;]D;]A;**Selection of more than 100 resources is not supported**]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[## Web テストが設定されていません。]D;]A;]D;]A;リソースのパラメーター エラーが発生している場合は、パラメーターを編集して、生成元のクエリからのエラー メッセージを調べてください。]D;]A;]D;]A;**100 を超えるリソースを選択すると、クエリが中断されます**]]></Val>
+            <Val><![CDATA[## Web テストが設定されていません。]D;]A;]D;]A;リソースのパラメーター エラーが発生している場合は、パラメーターを編集して、生成元のクエリからのエラー メッセージを調べてください。]D;]A;]D;]A;**100 を超えるリソースを選択することはサポートされていません**]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[## No Web Tests are set.]D;]A;]D;]A;If you are experiencing resource parameter errors then edit the parameter & examine the error message from the generating query. ]D;]A;]D;]A;**If you select more than 100 resources it will break the query**]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
