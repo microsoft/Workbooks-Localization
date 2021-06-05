@@ -446,28 +446,46 @@
       </Item>
       <Item ItemId=";items.Warning.content.items.AppInsightsWarning.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[<h2>No App Insights resources are selected.</h2>]D;]A;]D;]A;Select one or more App Insights resources to get started.]D;]A;]D;]A;**If you select more than 100 resources it will break the query**]]></Val>
+          <Val><![CDATA[<h2>No available App Insights resource has Webtests present or no resource has been selected.</h2>]D;]A;]D;]A;Ensure that your selected App Insights resources actually have Availability tests present. Select one or more qualifying App Insights resources to get started.]D;]A;]D;]A;**Selection of more than 100 resources is not supported**]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[<h2>Nincs kiválasztva Application Insights-erőforrás.</h2>]D;]A;]D;]A;A kezdéshez válasszon ki legalább egy Application Insights-erőforrást.]D;]A;]D;]A;**Ha 100-nál több erőforrást választ ki, a lekérdezés megszakad**]]></Val>
+            <Val><![CDATA[<h2>Egyetlen elérhető Application Insights-erőforrás sem rendelkezik webtesztekkel, vagy nincs kiválasztva erőforrás. </h2>]D;]A;]D;]A;Győződjön meg arról, hogy a kiválasztott Application Insights-erőforrásokhoz valóban találhatók rendelkezésre állási tesztek. A kezdéshez válasszon ki egy vagy több minősítő Application Insights-erőforrást.]D;]A;]D;]A;**A rendszer legfeljebb 100 erőforrás kiválasztását támogatja**]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[<h2>No App Insights resources are selected.</h2>]D;]A;]D;]A;Select one or more App Insights resources to get started.]D;]A;]D;]A;**If you select more than 100 resources it will break the query**]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Warning.content.items.SubscriptionWarning.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[<h2>No Azure Subscriptions are selected.</h2>]D;]A;]D;]A;Select one or more subscriptions to get started.]D;]A;]D;]A;**If you select more than 100 resources it will break the query**]]></Val>
+          <Val><![CDATA[<h2>No available Azure Subscription has Availability tests present or no subscription has been selected.</h2>]D;]A;]D;]A;Ensure that your selected subscriptions actually have Availability tests present. You may have a subscription filter present. Select one or more qualifying subscriptions to get started.]D;]A;]D;]A;**Selection of more than 100 resources is not supported**]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[<h2>Nincs kiválasztva Azure-előfizetés.</h2>]D;]A;]D;]A;A kezdéshez válasszon ki legalább egy Azure-előfizetést.]D;]A;]D;]A;**Ha 100-nál több erőforrást választ ki, a lekérdezés megszakad**]]></Val>
+            <Val><![CDATA[<h2>Egyetlen elérhető Azure-előfizetés sem rendelkezik rendelkezésre állási tesztekkel, vagy nincs kiválasztva erőforrás. </h2>]D;]A;]D;]A;Győződjön meg arról, hogy a kiválasztott előfizetésekben valóban találhatók rendelkezésre állási tesztek. Lehetséges, hogy van egy aktív előfizetési szűrő. A kezdéshez válasszon ki egy vagy több minősítő előfizetést.]D;]A;]D;]A;**A rendszer legfeljebb 100 erőforrás kiválasztását támogatja**]]></Val>
+          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[<h2>No Azure Subscriptions are selected.</h2>]D;]A;]D;]A;Select one or more subscriptions to get started.]D;]A;]D;]A;**If you select more than 100 resources it will break the query**]]></Val>
+          </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.WarningResourceGroup.content.items.AppInsightsWarning.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[<h2>No available Resource Group has App Insights resources present or no Resource Group has been selected.</h2>]D;]A;]D;]A;Ensure that your selected resource groups actually have App Insights resources present. Select one or more qualifying resource group to get started. You may need to update your subscription filter too.]D;]A;]D;]A;**Selection of more than 100 resources is not supported**]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<h2>Egyetlen elérhető erőforráscsoportban sem találhatók Application Insights-erőforrások, vagy nincs kiválasztva erőforráscsoport. </h2>]D;]A;]D;]A;Győződjön meg arról, hogy a kiválasztott erőforráscsoportokban valóban találhatók Application Insights-erőforrások. A kezdéshez válasszon ki egy vagy több minősítő erőforráscsoportot. Szükség lehet az előfizetésszűrő frissítésére is.]D;]A;]D;]A;**A rendszer legfeljebb 100 erőforrás kiválasztását támogatja**]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.WebTestWarning.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[## No Web Tests are set.]D;]A;]D;]A;If you are experiencing resource parameter errors then edit the parameter & examine the error message from the generating query. ]D;]A;]D;]A;**If you select more than 100 resources it will break the query**]]></Val>
+          <Val><![CDATA[## No Web Tests are set.]D;]A;]D;]A;If you are experiencing resource parameter errors then edit the parameter & examine the error message from the generating query. ]D;]A;]D;]A;**Selection of more than 100 resources is not supported**]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[## Nincsenek beállítva webes tesztek.]D;]A;]D;]A;Ha hibát tapasztal az erőforrás-paraméterek esetében, módosítsa a paramétert, és ellenőrizze hibaüzenetet a létrejövő lekérdezésben. ]D;]A;]D;]A;**Ha 100-nál több erőforrást választ ki, a lekérdezés megszakad**]]></Val>
+            <Val><![CDATA[## Nincsenek beállítva webes tesztek.]D;]A;]D;]A;Ha hibát tapasztal az erőforrás-paraméterek esetében, módosítsa a paramétert, és ellenőrizze hibaüzenetet a létrejövő lekérdezésben. ]D;]A;]D;]A;**A rendszer legfeljebb 100 erőforrás kiválasztását támogatja**]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[## No Web Tests are set.]D;]A;]D;]A;If you are experiencing resource parameter errors then edit the parameter & examine the error message from the generating query. ]D;]A;]D;]A;**If you select more than 100 resources it will break the query**]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>

@@ -446,28 +446,46 @@
       </Item>
       <Item ItemId=";items.Warning.content.items.AppInsightsWarning.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[<h2>No App Insights resources are selected.</h2>]D;]A;]D;]A;Select one or more App Insights resources to get started.]D;]A;]D;]A;**If you select more than 100 resources it will break the query**]]></Val>
+          <Val><![CDATA[<h2>No available App Insights resource has Webtests present or no resource has been selected.</h2>]D;]A;]D;]A;Ensure that your selected App Insights resources actually have Availability tests present. Select one or more qualifying App Insights resources to get started.]D;]A;]D;]A;**Selection of more than 100 resources is not supported**]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[<h2>未選取任何 App Insights 資源。</h2>]D;]A;]D;]A;請選取一或多項 App Insights 資源以開始使用。]D;]A;]D;]A;**如果選取超過 100 項資源就會中斷查詢**]]></Val>
+            <Val><![CDATA[<h2>沒有可用的 App Insights 資源存在 Webtests，或尚未選取任何資源。</h2>]D;]A;]D;]A;請確認您選取的 App Insights 資源實際上有可用性測試。選取一或多個合格的 App Insights 資源以開始使用。]D;]A;]D;]A;**不支援選取超過 100 個資源**]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[<h2>No App Insights resources are selected.</h2>]D;]A;]D;]A;Select one or more App Insights resources to get started.]D;]A;]D;]A;**If you select more than 100 resources it will break the query**]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Warning.content.items.SubscriptionWarning.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[<h2>No Azure Subscriptions are selected.</h2>]D;]A;]D;]A;Select one or more subscriptions to get started.]D;]A;]D;]A;**If you select more than 100 resources it will break the query**]]></Val>
+          <Val><![CDATA[<h2>No available Azure Subscription has Availability tests present or no subscription has been selected.</h2>]D;]A;]D;]A;Ensure that your selected subscriptions actually have Availability tests present. You may have a subscription filter present. Select one or more qualifying subscriptions to get started.]D;]A;]D;]A;**Selection of more than 100 resources is not supported**]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[<h2>未選取任何 Azure 訂閱。</h2>]D;]A;]D;]A;請選取一或多個訂閱以開始使用。]D;]A;]D;]A;**如果選取超過 100 項資源就會中斷查詢**]]></Val>
+            <Val><![CDATA[<h2>沒有可用的 Azure 訂用帳戶存在可用性測試，或未選取任何訂用帳戶。</h2>]D;]A;]D;]A;請確認您選取的訂用帳戶實際上有可用性測試。您可能有訂用帳戶篩選。請選取一或多個合格的訂閱以開始使用。]D;]A;]D;]A;**不支援選取超過 100 個資源**]]></Val>
+          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[<h2>No Azure Subscriptions are selected.</h2>]D;]A;]D;]A;Select one or more subscriptions to get started.]D;]A;]D;]A;**If you select more than 100 resources it will break the query**]]></Val>
+          </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.WarningResourceGroup.content.items.AppInsightsWarning.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[<h2>No available Resource Group has App Insights resources present or no Resource Group has been selected.</h2>]D;]A;]D;]A;Ensure that your selected resource groups actually have App Insights resources present. Select one or more qualifying resource group to get started. You may need to update your subscription filter too.]D;]A;]D;]A;**Selection of more than 100 resources is not supported**]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<h2>沒有可用的資源群組具有 App Insights 資源，或未選取任何資源群組。</h2>]D;]A;]D;]A;請確認您選取的資源群組實際上已有 App Insights 資源。選取一或多個合格的資源群組即可開始使用。您也可能需要更新您的訂用帳戶篩選。]D;]A;]D;]A;**不支援選取超過 100 個資源**]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.WebTestWarning.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[## No Web Tests are set.]D;]A;]D;]A;If you are experiencing resource parameter errors then edit the parameter & examine the error message from the generating query. ]D;]A;]D;]A;**If you select more than 100 resources it will break the query**]]></Val>
+          <Val><![CDATA[## No Web Tests are set.]D;]A;]D;]A;If you are experiencing resource parameter errors then edit the parameter & examine the error message from the generating query. ]D;]A;]D;]A;**Selection of more than 100 resources is not supported**]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[## 未設定任何 Web 測試。]D;]A;]D;]A;如果遇到資源參數錯誤，請編輯參數並從產生的查詢中檢查錯誤訊息。]D;]A;]D;]A;**如果選取超過 100 項資源就會中斷查詢**]]></Val>
+            <Val><![CDATA[## 未設定任何 Web 測試。]D;]A;]D;]A;如果遇到資源參數錯誤，請編輯參數並從產生的查詢中檢查錯誤訊息。]D;]A;]D;]A;**不支援選取超過 100 個資源**]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[## No Web Tests are set.]D;]A;]D;]A;If you are experiencing resource parameter errors then edit the parameter & examine the error message from the generating query. ]D;]A;]D;]A;**If you select more than 100 resources it will break the query**]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
