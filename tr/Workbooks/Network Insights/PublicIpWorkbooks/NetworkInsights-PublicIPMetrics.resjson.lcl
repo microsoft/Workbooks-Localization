@@ -9,7 +9,40 @@
     <Disp Icon="Expand" Expand="true" Disp="true" LocTbl="false" />
     <Item ItemId=";Strings" ItemType="0" PsrId="306" Leaf="false">
       <Disp Icon="Str" Disp="true" LocTbl="false" />
-      <Item ItemId=";items.metric4.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.links15.content.links.25e36194f2e041d0a14753f9b651e768.linkLabel" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[DDoS data]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.links15.content.links.dc65ba50cbd24016a264b151d58097df.linkLabel" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Traffic]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Trafik]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.metric1.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Byte Count]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.metric10.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Inbound Packets Forwarded - DDoS]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.metric11.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Inbound Packets Dropped - DDoS]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.metric12.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Inbound Packets DDoS]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -18,7 +51,7 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.metric5.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.metric13.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Under DDoS attack?]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -27,21 +60,90 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.text0.content.json" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.metric2.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[### Useful documents (to be updated)]D;]A;* [Overview of the Azure ExpressRoute]5D;(https://docs.microsoft.com/en-us/azure/expressroute/expressroute-introduction)]D;]A;* [Frequently asked questions]5D;(https://docs.microsoft.com/en-us/azure/expressroute/expressroute-faqs)]D;]A;* [Guidance on monitoring, metrics, and alerts]5D;(https://docs.microsoft.com/en-us/azure/expressroute/expressroute-monitoring-metrics-alerts)]D;]A;* [Troubleshoot your Azure ExpressRoute]5D;(https://docs.microsoft.com/en-us/azure/expressroute/expressroute-troubleshooting-expressroute-overview)]]></Val>
+          <Val><![CDATA[Bytes In]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[### Yararlı belgeler (güncelleştirilecek)]D;]A;* [Azure ExpressRoute'a genel bakış]5D;(https://docs.microsoft.com/en-us/azure/expressroute/expressroute-introduction)]D;]A;* [Sık sorulan sorular]5D;(https://docs.microsoft.com/en-us/azure/expressroute/expressroute-faqs)]D;]A;* [İzleme, ölçümler ve uyarılar hakkında rehber]5D;(https://docs.microsoft.com/en-us/azure/expressroute/expressroute-monitoring-metrics-alerts)]D;]A;* [Azure ExpressRoute sorunlarınızı giderin]5D;(https://docs.microsoft.com/en-us/azure/expressroute/expressroute-troubleshooting-expressroute-overview)]]></Val>
+            <Val><![CDATA[Gelen Bayt]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.text1.content.json" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.metric3.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[### Associated Resource]]></Val>
+          <Val><![CDATA[Bytes Out]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[### İlişkili Kaynak]]></Val>
+            <Val><![CDATA[Giden Bayt]]></Val>
           </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.metric4.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Packet Count]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
+            <Val><![CDATA[Gelen Paketler DDoS]]></Val>
+          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Inbound Packets DDoS]]></Val>
+          </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.metric5.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Packets In]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
+            <Val><![CDATA[DDoS saldırısı altında mısınız?]]></Val>
+          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Under DDoS attack?]]></Val>
+          </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.metric6.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Packets Out]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.metric7.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[SYN Count]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.metric8.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Inbound SYNs ]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.metric9.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Outbound SYNs ]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.query2.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Resource Properties]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Kaynak Özellikleri]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.text0.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[### Useful documents]D;]A;* [Overview of Public IP resource]5D;(https://docs.microsoft.com/azure/virtual-network/public-ip-addresses)]D;]A;* [Manage Public IP addresses]5D;(https://docs.microsoft.com/azure/virtual-network/virtual-network-public-ip-address)]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
+            <Val><![CDATA[### Yararlı belgeler (güncelleştirilecek)]D;]A;* [Azure ExpressRoute'a genel bakış]5D;(https://docs.microsoft.com/en-us/azure/expressroute/expressroute-introduction)]D;]A;* [Sık sorulan sorular]5D;(https://docs.microsoft.com/en-us/azure/expressroute/expressroute-faqs)]D;]A;* [İzleme, ölçümler ve uyarılar hakkında rehber]5D;(https://docs.microsoft.com/en-us/azure/expressroute/expressroute-monitoring-metrics-alerts)]D;]A;* [Azure ExpressRoute sorunlarınızı giderin]5D;(https://docs.microsoft.com/en-us/azure/expressroute/expressroute-troubleshooting-expressroute-overview)]]></Val>
+          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[### Useful documents (to be updated)]D;]A;* [Overview of the Azure ExpressRoute]5D;(https://docs.microsoft.com/en-us/azure/expressroute/expressroute-introduction)]D;]A;* [Frequently asked questions]5D;(https://docs.microsoft.com/en-us/azure/expressroute/expressroute-faqs)]D;]A;* [Guidance on monitoring, metrics, and alerts]5D;(https://docs.microsoft.com/en-us/azure/expressroute/expressroute-monitoring-metrics-alerts)]D;]A;* [Troubleshoot your Azure ExpressRoute]5D;(https://docs.microsoft.com/en-us/azure/expressroute/expressroute-troubleshooting-expressroute-overview)]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
