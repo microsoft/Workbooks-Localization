@@ -146,10 +146,13 @@
       </Item>
       <Item ItemId=";items.parametersdurationThreshold.content.parameters.4ee0697dade043a889b993889c478326.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Apdex score is directly related to user's perception of responsiveness. By selecting a suitable threshold, you are defining the page view and request duration for which users are not impeded by application response time.]]></Val>
+          <Val><![CDATA[Apdex score is directly related to user's perception of responsiveness. By selecting a suitable threshold, you are defining the page view and request duration for which users are not impeded by application response time. ApdexScore <= 0.5 "Unacceptable", ApdexScore <= 0.7 "Poor", ApdexScore <= 0.85 "Fair", ApdexScore <= 0.94 "Good", ApdexScore > 0.94 "Excellent".]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Apdex 得分直接与用户对响应能力的感知有关。选择合适的阈值即表示你要定义页面视图和请求持续时间，而用户不会因为所定义的内容受到应用程序响应时间的影响。]]></Val>
+            <Val><![CDATA[Apdex 分数与用户对响应速度的感觉直接相关。通过选择合适的阈值，可以定义页面视图和请求持续时间，在此期间用户不会受应用程序响应时间限制。ApdexScore <= 0.5 "不可接受"，ApdexScore <= 0.7 "差"，ApdexScore <= 0.85 "良好"，ApdexScore <= 0.94 "优秀"，ApdexScore > 0.94 "出色"。]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Apdex score is directly related to user's perception of responsiveness. By selecting a suitable threshold, you are defining the page view and request duration for which users are not impeded by application response time.]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -200,15 +203,6 @@
           <Val><![CDATA[#### Last month]D;]A;]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[#### 上个月]D;]A;]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[MoreUsers]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[MoreUsers]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
