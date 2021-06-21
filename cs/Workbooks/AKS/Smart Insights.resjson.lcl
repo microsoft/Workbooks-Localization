@@ -22,16 +22,103 @@
         </Item>
         <Item ItemId=";(...) ntent.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Events per hour]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Events per Hour]]></Val>
+            <Tgt Cat="Text" Stat="Update" Orig="New">
               <Val><![CDATA[Události za hodinu]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[Events per hour]]></Val>
+            </Prev>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
+      <Item ItemId=";@items.smartdetectorscombinedworkbookEventAnomaly.content.items.smartdetectorscombinedworkbookEventAnomalygraphCop" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) y.content.gridSettings.labelSettings.counts.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Count]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Počet]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) y.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[(please select a row in the above table)]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[(Vyberte prosím řádek ve výše uvedené tabulce.)]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) y.content.title" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Raw Events (table limited to top 250 distinct events)]]></Val>
           </Str>
           <Disp Icon="Str" />
         </Item>
       </Item>
       <Item ItemId=";@items.smartdetectorscombinedworkbookEventAnomaly.content.items.smartdetectorscombinedworkbookEventAnomalylistalle" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) ventanomalygroups.content.gridSettings.labelSettings.commonmessagesegment.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Common Message Segment]]></Val>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) ventanomalygroups.content.gridSettings.labelSettings.namespaces.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Namespace]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Obor názvů]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) ventanomalygroups.content.gridSettings.labelSettings.objectKind.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Object Kind]]></Val>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) ventanomalygroups.content.gridSettings.labelSettings.reason.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Reason]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Důvod]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) ventanomalygroups.content.gridSettings.labelSettings.samplemessages.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Sample Message]]></Val>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) ventanomalygroups.content.gridSettings.labelSettings.sparkline.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Trend]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Trend]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) ventanomalygroups.content.gridSettings.labelSettings.spikiness.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Spikiness]]></Val>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) ventanomalygroups.content.gridSettings.labelSettings.totaloccurrences.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Total Occurences]]></Val>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
         <Item ItemId=";(...) ventanomalygroups.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[No events found.]]></Val>
@@ -55,10 +142,13 @@
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) anation.content.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[## Select an event to see a graph of occurrences]D;]A;]D;]A;This analyzer shows common "classes" of events and shows which event classes have increased in volume recently. ]D;]A;- Events in the list below are grouped based on common phrases, so two events with messages "pod-abc-123 failed, can not pull image" and "pod-def-456 failed, can not pull image" would be grouped together.]D;]A;- The Spikiness column rates which events have occureed more recently. For example, if Events A and B occurred on average 10 times a day in the last month, but event A occurred 1000 times yesterday, and event B occurred 2 times yesterday, then event A would have a much higher spikiness rating than B.]D;]A;]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Select an event to see a graph of occurrences]D;]A;]D;]A;This analyzer groups similar events together for easier analysis. It also shows which event groups have recently increased in volume. ]D;]A;- Events in the list below are grouped based on common phrases, so two events with messages "pod-abc-123 failed, can not pull image" and "pod-def-456 failed, can not pull image" would be grouped together.]D;]A;- The Spikiness column rates which events have occureed more recently. For example, if Events A and B occurred on average 10 times a day in the last month, but event A occurred 1000 times yesterday, and event B occurred 2 times yesterday, then event A would have a much higher spikiness rating than B.]D;]A;]]></Val>
+            <Tgt Cat="Text" Stat="Update" Orig="New">
               <Val><![CDATA[## Vyberte událost, aby se zobrazil graf výskytů.]D;]A;]D;]A;Tento analyzátor zobrazuje běžné „třídy“ událostí a uvádí, u kterých z nich v poslední době vzrostl objem. ]D;]A;– Události v seznamu níže se seskupují na základě společných frází, takže například události „pod-abc-123 failed, can not pull image“ a „pod-def-456 failed, can not pull image“ by skončily ve stejné skupině.]D;]A;– Sloupec Spikiness měří frekvenci událostí v poslední době. Pokud se například událost A a událost B v posledním měsíci vyskytuje v průměru 10krát denně, ale včera k události A došlo 1000krát, zatímco událost B se včera vyskytla 2krát, pak událost A bude mít mnohem vyšší hodnocení aktuální frekvence než událost B.]D;]A;]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[## Select an event to see a graph of occurrences]D;]A;]D;]A;This analyzer shows common "classes" of events and shows which event classes have increased in volume recently. ]D;]A;- Events in the list below are grouped based on common phrases, so two events with messages "pod-abc-123 failed, can not pull image" and "pod-def-456 failed, can not pull image" would be grouped together.]D;]A;- The Spikiness column rates which events have occureed more recently. For example, if Events A and B occurred on average 10 times a day in the last month, but event A occurred 1000 times yesterday, and event B occurred 2 times yesterday, then event A would have a much higher spikiness rating than B.]D;]A;]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -75,20 +165,470 @@
           <Disp Icon="Str" />
         </Item>
       </Item>
-      <Item ItemId=";@items.smartdetectorscombinedworkbooklivenessprobefailuresquery.content.items.smartdetectorscombinedworkbookeventa" ItemType="0" PsrId="306" Leaf="false">
+      <Item ItemId=";@items.smartdetectorscombinedworkbooklimitsandrequests.content.items.smartdetectorscombinedworkbooklimitsandreques" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) nomalytextexplanation.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) tschartgroup.content.items.smartdetectorscombinedworkbooklimitsandrequestscpuchart.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[## Select a container to view liveness probe failures]D;]A;]D;]A;This analyzer shows which liveness probes have failed recently and how often. Select one to see a time-series of occurrences.]D;]A;]D;]A;Column explanation:]D;]A;- total: counts liveness probe failures over the entire time range]D;]A;- recentTotal: counts liveness probe failures in the last 1/10th of the time frame (so for a 30 day view, recentTotal would show failures in the last 3 days)]D;]A;- controllerTotal: counts liveness probe failures from all containers managed by a controller]D;]A;]D;]A;]]></Val>
+            <Val><![CDATA[Select a container to see recommended requests and limits]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[## Vyberte kontejner, aby se zobrazily neúspěšné testy aktivit.]D;]A;]D;]A;Tento analyzátor zobrazuje testy aktivit, které byly v poslední době neúspěšné a s jakou frekvencí. Výběrem jednoho z nich si zobrazíte časovou řadu výskytů.]D;]A;]D;]A;Vysvětlení sloupců:]D;]A;– total: Uvádí počet neúspěšných testů aktivit za celý časový rozsah.]D;]A;– recentTotal: Uvádí počet neúspěšných testů aktivit během poslední desetiny (1/10) časového rozsahu (takže u 30denního zobrazení se v recentTotal zobrazí chyby za poslední 3 dny).]D;]A;– controllerTotal: Uvádí počet neúspěšných testů aktivit ze všech kontejnerů spravovaných kontrolerem.]D;]A;]D;]A;]]></Val>
+              <Val><![CDATA[Vyberte kontejner, aby se zobrazily doporučené požadavky a limity.]]></Val>
             </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) tschartgroup.content.items.smartdetectorscombinedworkbooklimitsandrequestscpuchart.content.title" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[CPU Usage (max) vs Request & Limit]]></Val>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) tschartgroup.content.items.smartdetectorscombinedworkbooklimitsandrequestsmemorychart.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Select a container to see recommended requests and limits]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Vyberte kontejner, aby se zobrazily doporučené požadavky a limity.]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) tschartgroup.content.items.smartdetectorscombinedworkbooklimitsandrequestsmemorychart.content.title" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Memory Usage (max) vs Request & Limit]]></Val>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) tsselectcontainer.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[No pods found in cluster. Is monitoring enabled?]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[V clusteru se nenašly žádné pody. Je monitorování povolené?]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) tsselectcontainer.content.title" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Request/Limit Unoptimality]]></Val>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) tsshowselectedcontainerdetails.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Select a container to see recommended requests and limits]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Vyberte kontejner, aby se zobrazily doporučené požadavky a limity.]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) tstabs.content.links.74b938cffd984d3ca280729bc0ced2dd.linkLabel" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[All]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Vše]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) tstabs.content.links.ba69d35d1cd94919bd4fd4d63e2605d4.linkLabel" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Limits and requests set]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Limity a požadavky nastaveny]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) tstabs.content.links.fef55d21802c43e899309bef73f4d6b1.linkLabel" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Limits or requests not set]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Limity nebo požadavky nenastaveny]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";@(...) tschartgroup.content.items.smartdetectorscombinedworkbooklimitsandrequestscpuchart.content.chartSettings.se" ItemType="0" PsrId="306" Leaf="false">
+          <Disp Icon="Dir" LocTbl="false" />
+          <Item ItemId=";(...) riesLabelSettings.0.label" ItemType="0" PsrId="306" Leaf="true">
+            <Str Cat="Text">
+              <Val><![CDATA[max cpu usage (nanocores)]]></Val>
+              <Tgt Cat="Text" Stat="Loc" Orig="New">
+                <Val><![CDATA[maximální využití CPU (nanojádra)]]></Val>
+              </Tgt>
+            </Str>
+            <Disp Icon="Str" />
+          </Item>
+          <Item ItemId=";(...) riesLabelSettings.1.label" ItemType="0" PsrId="306" Leaf="true">
+            <Str Cat="Text">
+              <Val><![CDATA[current request]]></Val>
+              <Tgt Cat="Text" Stat="Loc" Orig="New">
+                <Val><![CDATA[aktuální požadavek]]></Val>
+              </Tgt>
+            </Str>
+            <Disp Icon="Str" />
+          </Item>
+          <Item ItemId=";(...) riesLabelSettings.2.label" ItemType="0" PsrId="306" Leaf="true">
+            <Str Cat="Text">
+              <Val><![CDATA[current limit]]></Val>
+              <Tgt Cat="Text" Stat="Loc" Orig="New">
+                <Val><![CDATA[aktuální limit]]></Val>
+              </Tgt>
+            </Str>
+            <Disp Icon="Str" />
+          </Item>
+          <Item ItemId=";(...) riesLabelSettings.3.label" ItemType="0" PsrId="306" Leaf="true">
+            <Str Cat="Text">
+              <Val><![CDATA[suggested request]]></Val>
+              <Tgt Cat="Text" Stat="Loc" Orig="New">
+                <Val><![CDATA[navrhovaný požadavek]]></Val>
+              </Tgt>
+            </Str>
+            <Disp Icon="Str" />
+          </Item>
+          <Item ItemId=";(...) riesLabelSettings.4.label" ItemType="0" PsrId="306" Leaf="true">
+            <Str Cat="Text">
+              <Val><![CDATA[suggested limit]]></Val>
+              <Tgt Cat="Text" Stat="Loc" Orig="New">
+                <Val><![CDATA[navrhovaný limit]]></Val>
+              </Tgt>
+            </Str>
+            <Disp Icon="Str" />
+          </Item>
+        </Item>
+        <Item ItemId=";@(...) tschartgroup.content.items.smartdetectorscombinedworkbooklimitsandrequestsmemorychart.content.chartSettings" ItemType="0" PsrId="306" Leaf="false">
+          <Disp Icon="Dir" LocTbl="false" />
+          <Item ItemId=";(...) .seriesLabelSettings.0.label" ItemType="0" PsrId="306" Leaf="true">
+            <Str Cat="Text">
+              <Val><![CDATA[max memory usage (bytes)]]></Val>
+              <Tgt Cat="Text" Stat="Loc" Orig="New">
+                <Val><![CDATA[maximální využití paměti (bajty)]]></Val>
+              </Tgt>
+            </Str>
+            <Disp Icon="Str" />
+          </Item>
+          <Item ItemId=";(...) .seriesLabelSettings.1.label" ItemType="0" PsrId="306" Leaf="true">
+            <Str Cat="Text">
+              <Val><![CDATA[current request]]></Val>
+              <Tgt Cat="Text" Stat="Loc" Orig="New">
+                <Val><![CDATA[aktuální požadavek]]></Val>
+              </Tgt>
+            </Str>
+            <Disp Icon="Str" />
+          </Item>
+          <Item ItemId=";(...) .seriesLabelSettings.2.label" ItemType="0" PsrId="306" Leaf="true">
+            <Str Cat="Text">
+              <Val><![CDATA[current limit]]></Val>
+              <Tgt Cat="Text" Stat="Loc" Orig="New">
+                <Val><![CDATA[aktuální limit]]></Val>
+              </Tgt>
+            </Str>
+            <Disp Icon="Str" />
+          </Item>
+          <Item ItemId=";(...) .seriesLabelSettings.3.label" ItemType="0" PsrId="306" Leaf="true">
+            <Str Cat="Text">
+              <Val><![CDATA[suggested request]]></Val>
+              <Tgt Cat="Text" Stat="Loc" Orig="New">
+                <Val><![CDATA[navrhovaný požadavek]]></Val>
+              </Tgt>
+            </Str>
+            <Disp Icon="Str" />
+          </Item>
+          <Item ItemId=";(...) .seriesLabelSettings.4.label" ItemType="0" PsrId="306" Leaf="true">
+            <Str Cat="Text">
+              <Val><![CDATA[suggested limit]]></Val>
+              <Tgt Cat="Text" Stat="Loc" Orig="New">
+                <Val><![CDATA[navrhovaný limit]]></Val>
+              </Tgt>
+            </Str>
+            <Disp Icon="Str" />
+          </Item>
+        </Item>
+      </Item>
+      <Item ItemId=";@items.smartdetectorscombinedworkbooklimitsandrequests.content.items.smartdetectorscombinedworkbookrequestsandlimi" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) tstextexplanation.content.json" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[## Select a container to see recommended requests and limits]D;]A;]D;]A;This analyzer shows containers with excessive cpu/memory limits and requests. Each tile can represent multiple containers with the same spec. (ex: If deployment A creates 100 identical pods, each with a container C1 and C2, then there will be a single tile for all C1 containers and a single tile for all C2 containers).]D;]A;]D;]A;Tiles are colored like so:]D;]A;- white -> well set limits and requests  ]D;]A;- orange -> excessive limits or requests]D;]A;- turquoise -> unset limits or requests]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[## Vyberte kontejner, aby se zobrazily doporučené požadavky a limity.]D;]A;]D;]A;Tento analyzátor zobrazuje kontejnery s nadměrnými limity a požadavky na CPU/paměť. Jednotlivé dlaždice můžou představovat více kontejnerů se stejnou specifikací (např.: pokud nasazení A vytvoří 100 identických podů, každý s kontejnerem C1 a C2, pak bude k dispozici jedna dlaždice pro všechny kontejnery C1 a jedna dlaždice pro všechny kontejnery C2).]D;]A;]D;]A;Dlaždice můžou mít tyto barvy:]D;]A;– bílá -> dobře nastavené limity a požadavky  ]D;]A;– oranžová -> nadměrné limity nebo požadavky]D;]A;– tyrkysová -> nenastavené limity nebo požadavky]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
+      <Item ItemId=";@items.smartdetectorscombinedworkbooklimitsandrequestsCopy.content.items.smartdetectorscombinedworkbooklimitsandre" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) questschartgroup.content.items.smartdetectorscombinedworkbooklimitsandrequestscpuchart.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Select a container to see recommended requests and limits]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Vyberte kontejner, aby se zobrazily doporučené požadavky a limity.]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) questschartgroup.content.items.smartdetectorscombinedworkbooklimitsandrequestscpuchart.content.title" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[CPU Usage vs Request & Limit]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Porovnání využití procesoru s požadavky a limity]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) questschartgroup.content.items.smartdetectorscombinedworkbooklimitsandrequestsmemorychart.content.title" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[TODO: is memory P95? Memory Usage vs Request & Limit]]></Val>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) questsselectcontainer.content.gridSettings.labelSettings.cpuLimitDivSuggestion.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[CPU Limit / Suggestion]]></Val>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) questsselectcontainer.content.gridSettings.labelSettings.cpuRequestDivSuggestion.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[CPU Request / Suggestion]]></Val>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) questsselectcontainer.content.gridSettings.labelSettings.memLimitDivSuggestion.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Mem Limit / Suggestion]]></Val>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) questsselectcontainer.content.gridSettings.labelSettings.memRequestDivSuggestion.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Mem Request / Suggestion]]></Val>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) questsselectcontainer.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[No pods found in cluster. Is monitoring enabled?]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[V clusteru se nenašly žádné pody. Je monitorování povolené?]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) questsselectcontainer.content.title" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Request/limit unoptimality]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Neoptimální nastavení požadavků/limitů]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) questsshowselectedcontainerdetails.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Select a container to see recommended requests and limits]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Vyberte kontejner, aby se zobrazily doporučené požadavky a limity.]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) queststabs.content.links.74b938cffd984d3ca280729bc0ced2dd.linkLabel" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[All]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Vše]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) queststabs.content.links.ba69d35d1cd94919bd4fd4d63e2605d4.linkLabel" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Limits and requests set]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Limity a požadavky nastaveny]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) queststabs.content.links.fef55d21802c43e899309bef73f4d6b1.linkLabel" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Limits or requests not set]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Limity nebo požadavky nenastaveny]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";@(...) questschartgroup.content.items.smartdetectorscombinedworkbooklimitsandrequestscpuchart.content.chartSetting" ItemType="0" PsrId="306" Leaf="false">
+          <Disp Icon="Dir" LocTbl="false" />
+          <Item ItemId=";(...) s.seriesLabelSettings.0.label" ItemType="0" PsrId="306" Leaf="true">
+            <Str Cat="Text">
+              <Val><![CDATA[max cpu usage (nanocores)]]></Val>
+              <Tgt Cat="Text" Stat="Loc" Orig="New">
+                <Val><![CDATA[maximální využití CPU (nanojádra)]]></Val>
+              </Tgt>
+            </Str>
+            <Disp Icon="Str" />
+          </Item>
+          <Item ItemId=";(...) s.seriesLabelSettings.1.label" ItemType="0" PsrId="306" Leaf="true">
+            <Str Cat="Text">
+              <Val><![CDATA[current request]]></Val>
+              <Tgt Cat="Text" Stat="Loc" Orig="New">
+                <Val><![CDATA[aktuální požadavek]]></Val>
+              </Tgt>
+            </Str>
+            <Disp Icon="Str" />
+          </Item>
+          <Item ItemId=";(...) s.seriesLabelSettings.2.label" ItemType="0" PsrId="306" Leaf="true">
+            <Str Cat="Text">
+              <Val><![CDATA[current limit]]></Val>
+              <Tgt Cat="Text" Stat="Loc" Orig="New">
+                <Val><![CDATA[aktuální limit]]></Val>
+              </Tgt>
+            </Str>
+            <Disp Icon="Str" />
+          </Item>
+          <Item ItemId=";(...) s.seriesLabelSettings.3.label" ItemType="0" PsrId="306" Leaf="true">
+            <Str Cat="Text">
+              <Val><![CDATA[suggested request]]></Val>
+              <Tgt Cat="Text" Stat="Loc" Orig="New">
+                <Val><![CDATA[navrhovaný požadavek]]></Val>
+              </Tgt>
+            </Str>
+            <Disp Icon="Str" />
+          </Item>
+          <Item ItemId=";(...) s.seriesLabelSettings.4.label" ItemType="0" PsrId="306" Leaf="true">
+            <Str Cat="Text">
+              <Val><![CDATA[suggested limit]]></Val>
+              <Tgt Cat="Text" Stat="Loc" Orig="New">
+                <Val><![CDATA[navrhovaný limit]]></Val>
+              </Tgt>
+            </Str>
+            <Disp Icon="Str" />
+          </Item>
+        </Item>
+        <Item ItemId=";@(...) questschartgroup.content.items.smartdetectorscombinedworkbooklimitsandrequestsmemorychart.content.chartSett" ItemType="0" PsrId="306" Leaf="false">
+          <Disp Icon="Dir" LocTbl="false" />
+          <Item ItemId=";(...) ings.seriesLabelSettings.0.label" ItemType="0" PsrId="306" Leaf="true">
+            <Str Cat="Text">
+              <Val><![CDATA[max memory usage (bytes)]]></Val>
+              <Tgt Cat="Text" Stat="Loc" Orig="New">
+                <Val><![CDATA[maximální využití paměti (bajty)]]></Val>
+              </Tgt>
+            </Str>
+            <Disp Icon="Str" />
+          </Item>
+          <Item ItemId=";(...) ings.seriesLabelSettings.1.label" ItemType="0" PsrId="306" Leaf="true">
+            <Str Cat="Text">
+              <Val><![CDATA[current request]]></Val>
+              <Tgt Cat="Text" Stat="Loc" Orig="New">
+                <Val><![CDATA[aktuální požadavek]]></Val>
+              </Tgt>
+            </Str>
+            <Disp Icon="Str" />
+          </Item>
+          <Item ItemId=";(...) ings.seriesLabelSettings.2.label" ItemType="0" PsrId="306" Leaf="true">
+            <Str Cat="Text">
+              <Val><![CDATA[current limit]]></Val>
+              <Tgt Cat="Text" Stat="Loc" Orig="New">
+                <Val><![CDATA[aktuální limit]]></Val>
+              </Tgt>
+            </Str>
+            <Disp Icon="Str" />
+          </Item>
+          <Item ItemId=";(...) ings.seriesLabelSettings.3.label" ItemType="0" PsrId="306" Leaf="true">
+            <Str Cat="Text">
+              <Val><![CDATA[suggested request]]></Val>
+              <Tgt Cat="Text" Stat="Loc" Orig="New">
+                <Val><![CDATA[navrhovaný požadavek]]></Val>
+              </Tgt>
+            </Str>
+            <Disp Icon="Str" />
+          </Item>
+          <Item ItemId=";(...) ings.seriesLabelSettings.4.label" ItemType="0" PsrId="306" Leaf="true">
+            <Str Cat="Text">
+              <Val><![CDATA[suggested limit]]></Val>
+              <Tgt Cat="Text" Stat="Loc" Orig="New">
+                <Val><![CDATA[navrhovaný limit]]></Val>
+              </Tgt>
+            </Str>
+            <Disp Icon="Str" />
+          </Item>
+        </Item>
+        <Item ItemId=";@(...) questschartgroup.content.items.smartdetectorscombinedworkbooklimitsandrequestsmemorychart.content.noDataMes" ItemType="0" PsrId="306" Leaf="false">
+          <Disp Icon="Dir" LocTbl="false" />
+          <Item ItemId=";(...) sage" ItemType="0" PsrId="306" Leaf="true">
+            <Str Cat="Text">
+              <Val><![CDATA[Select a container to see recommended requests and limits]]></Val>
+              <Tgt Cat="Text" Stat="Loc" Orig="New">
+                <Val><![CDATA[Vyberte kontejner, aby se zobrazily doporučené požadavky a limity.]]></Val>
+              </Tgt>
+            </Str>
+            <Disp Icon="Str" />
+          </Item>
+        </Item>
+      </Item>
+      <Item ItemId=";@items.smartdetectorscombinedworkbooklimitsandrequestsCopy.content.items.smartdetectorscombinedworkbookrequestsand" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) limitstextexplanation.content.json" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[## Select a container to see recommended requests and limits]D;]A;]D;]A;This analyzer shows containers with excessive cpu/memory limits and requests. Each tile can represent multiple containers with the same spec. (ex: If deployment A creates 100 identical pods, each with a container C1 and C2, then there will be a single tile for all C1 containers and a single tile for all C2 containers).]D;]A;]]></Val>
           </Str>
           <Disp Icon="Str" />
         </Item>
       </Item>
       <Item ItemId=";@items.smartdetectorscombinedworkbooklivenessprobefailuresquery.content.items.smartdetectorscombinedworkbooklivene" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) ssprobeselect.content.gridSettings.labelSettings.ClusterName.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Cluster Name]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Název clusteru]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) ssprobeselect.content.gridSettings.labelSettings.ControllerName.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Controller Name]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Název kontroleru]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) ssprobeselect.content.gridSettings.labelSettings.controllerTotal.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Controller Total]]></Val>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) ssprobeselect.content.gridSettings.labelSettings.counts.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Counts]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Počty]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) ssprobeselect.content.gridSettings.labelSettings.recentTotal.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Recent Total]]></Val>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) ssprobeselect.content.gridSettings.labelSettings.total.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Total]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Celkem]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
         <Item ItemId=";(...) ssprobeselect.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[No liveness probe failures found!]]></Val>
@@ -116,218 +656,32 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
-      </Item>
-      <Item ItemId=";@items.smartdetectorscombinedworkbookrequestlimits.content.items.smartdetectorscombinedworkbooklimitsandrequeststa" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) bs.content.links.74b938cffd984d3ca280729bc0ced2dd.linkLabel" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) ssprobetextexplanation.content.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[All]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Vše]]></Val>
-            </Tgt>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-        <Item ItemId=";(...) bs.content.links.ba69d35d1cd94919bd4fd4d63e2605d4.linkLabel" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[Limits and requests set]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Limity a požadavky nastaveny]]></Val>
-            </Tgt>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-        <Item ItemId=";(...) bs.content.links.fef55d21802c43e899309bef73f4d6b1.linkLabel" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[Limits or requests not set]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Limity nebo požadavky nenastaveny]]></Val>
-            </Tgt>
+            <Val><![CDATA[## Select a container to view liveness probe failures]D;]A;]D;]A;This analyzer shows which liveness probes have failed recently and how often. Select one to see a time-series of occurrences.]D;]A;]D;]A;Column explanation:]D;]A;- Total: counts liveness probe failures over the entire time range]D;]A;- Controller Total: counts liveness probe failures from all containers managed by a controller]D;]A;]D;]A;]]></Val>
           </Str>
           <Disp Icon="Str" />
         </Item>
       </Item>
-      <Item ItemId=";@items.smartdetectorscombinedworkbookrequestlimits.content.items.smartdetectorscombinedworkbookrequestlimitschartg" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) roup.content.items.smartdetectorscombinedworkbookrequestlimitscpuchart.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[Select a container to see recommended requests and limits]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Vyberte kontejner, aby se zobrazily doporučené požadavky a limity.]]></Val>
-            </Tgt>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-        <Item ItemId=";(...) roup.content.items.smartdetectorscombinedworkbookrequestlimitscpuchart.content.title" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[CPU Usage vs Request & Limit]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Porovnání využití procesoru s požadavky a limity]]></Val>
-            </Tgt>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-        <Item ItemId=";(...) roup.content.items.smartdetectorscombinedworkbookrequestlimitsmemorychart.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[Select a container to see recommended requests and limits]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Vyberte kontejner, aby se zobrazily doporučené požadavky a limity.]]></Val>
-            </Tgt>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-        <Item ItemId=";(...) roup.content.items.smartdetectorscombinedworkbookrequestlimitsmemorychart.content.title" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[Memory Usage vs Request & Limit]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Porovnání využití paměti s požadavky a limity]]></Val>
-            </Tgt>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-        <Item ItemId=";@(...) roup.content.items.smartdetectorscombinedworkbookrequestlimitscpuchart.content.chartSettings.seriesLabelSet" ItemType="0" PsrId="306" Leaf="false">
-          <Disp Icon="Dir" LocTbl="false" />
-          <Item ItemId=";(...) tings.0.label" ItemType="0" PsrId="306" Leaf="true">
-            <Str Cat="Text">
-              <Val><![CDATA[max cpu usage (nanocores)]]></Val>
-              <Tgt Cat="Text" Stat="Loc" Orig="New">
-                <Val><![CDATA[maximální využití CPU (nanojádra)]]></Val>
-              </Tgt>
-            </Str>
-            <Disp Icon="Str" />
-          </Item>
-          <Item ItemId=";(...) tings.1.label" ItemType="0" PsrId="306" Leaf="true">
-            <Str Cat="Text">
-              <Val><![CDATA[current request]]></Val>
-              <Tgt Cat="Text" Stat="Loc" Orig="New">
-                <Val><![CDATA[aktuální požadavek]]></Val>
-              </Tgt>
-            </Str>
-            <Disp Icon="Str" />
-          </Item>
-          <Item ItemId=";(...) tings.2.label" ItemType="0" PsrId="306" Leaf="true">
-            <Str Cat="Text">
-              <Val><![CDATA[current limit]]></Val>
-              <Tgt Cat="Text" Stat="Loc" Orig="New">
-                <Val><![CDATA[aktuální limit]]></Val>
-              </Tgt>
-            </Str>
-            <Disp Icon="Str" />
-          </Item>
-          <Item ItemId=";(...) tings.3.label" ItemType="0" PsrId="306" Leaf="true">
-            <Str Cat="Text">
-              <Val><![CDATA[suggested request]]></Val>
-              <Tgt Cat="Text" Stat="Loc" Orig="New">
-                <Val><![CDATA[navrhovaný požadavek]]></Val>
-              </Tgt>
-            </Str>
-            <Disp Icon="Str" />
-          </Item>
-          <Item ItemId=";(...) tings.4.label" ItemType="0" PsrId="306" Leaf="true">
-            <Str Cat="Text">
-              <Val><![CDATA[suggested limit]]></Val>
-              <Tgt Cat="Text" Stat="Loc" Orig="New">
-                <Val><![CDATA[navrhovaný limit]]></Val>
-              </Tgt>
-            </Str>
-            <Disp Icon="Str" />
-          </Item>
-        </Item>
-        <Item ItemId=";@(...) roup.content.items.smartdetectorscombinedworkbookrequestlimitsmemorychart.content.chartSettings.seriesLabel" ItemType="0" PsrId="306" Leaf="false">
-          <Disp Icon="Dir" LocTbl="false" />
-          <Item ItemId=";(...) Settings.0.label" ItemType="0" PsrId="306" Leaf="true">
-            <Str Cat="Text">
-              <Val><![CDATA[max memory usage (bytes)]]></Val>
-              <Tgt Cat="Text" Stat="Loc" Orig="New">
-                <Val><![CDATA[maximální využití paměti (bajty)]]></Val>
-              </Tgt>
-            </Str>
-            <Disp Icon="Str" />
-          </Item>
-          <Item ItemId=";(...) Settings.1.label" ItemType="0" PsrId="306" Leaf="true">
-            <Str Cat="Text">
-              <Val><![CDATA[current request]]></Val>
-              <Tgt Cat="Text" Stat="Loc" Orig="New">
-                <Val><![CDATA[aktuální požadavek]]></Val>
-              </Tgt>
-            </Str>
-            <Disp Icon="Str" />
-          </Item>
-          <Item ItemId=";(...) Settings.2.label" ItemType="0" PsrId="306" Leaf="true">
-            <Str Cat="Text">
-              <Val><![CDATA[current limit]]></Val>
-              <Tgt Cat="Text" Stat="Loc" Orig="New">
-                <Val><![CDATA[aktuální limit]]></Val>
-              </Tgt>
-            </Str>
-            <Disp Icon="Str" />
-          </Item>
-          <Item ItemId=";(...) Settings.3.label" ItemType="0" PsrId="306" Leaf="true">
-            <Str Cat="Text">
-              <Val><![CDATA[suggested request]]></Val>
-              <Tgt Cat="Text" Stat="Loc" Orig="New">
-                <Val><![CDATA[navrhovaný požadavek]]></Val>
-              </Tgt>
-            </Str>
-            <Disp Icon="Str" />
-          </Item>
-          <Item ItemId=";(...) Settings.4.label" ItemType="0" PsrId="306" Leaf="true">
-            <Str Cat="Text">
-              <Val><![CDATA[suggested limit]]></Val>
-              <Tgt Cat="Text" Stat="Loc" Orig="New">
-                <Val><![CDATA[navrhovaný limit]]></Val>
-              </Tgt>
-            </Str>
-            <Disp Icon="Str" />
-          </Item>
-        </Item>
+      <Item ItemId=";items.pills.content.parameters.094c734bc49843a8a1e11c99facc76c1.description" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Resource to run queries off of]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Prostředek, ze kterého se mají spouštět dotazy]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";@items.smartdetectorscombinedworkbookrequestlimits.content.items.smartdetectorscombinedworkbookrequestlimitsselect" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) container.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[No pods found in cluster. Is monitoring enabled?]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[V clusteru se nenašly žádné pody. Je monitorování povolené?]]></Val>
-            </Tgt>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-        <Item ItemId=";(...) container.content.title" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[Request/limit unoptimality]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Neoptimální nastavení požadavků/limitů]]></Val>
-            </Tgt>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
+      <Item ItemId=";items.pills.content.parameters.7ca5d42437564ae7b65b26829f014c33.description" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Filter queries by cluster id]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Filtrovat dotazy podle ID clusteru]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";@items.smartdetectorscombinedworkbookrequestlimits.content.items.smartdetectorscombinedworkbookrequestlimitsshowse" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) lectedcontainerdetails.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[Select a container to see recommended requests and limits]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Vyberte kontejner, aby se zobrazily doporučené požadavky a limity.]]></Val>
-            </Tgt>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-      </Item>
-      <Item ItemId=";@items.smartdetectorscombinedworkbookrequestlimits.content.items.smartdetectorscombinedworkbookrequestsandlimitste" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) xtexplanation.content.json" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[## Select a container to see recommended requests and limits]D;]A;]D;]A;This analyzer shows containers with excessive cpu/memory limits and requests. Each tile can represent multiple containers with the same spec. (ex: If deployment A creates 100 identical pods, each with a container C1 and C2, then there will be a single tile for all C1 containers and a single tile for all C2 containers).]D;]A;]D;]A;Tiles are colored like so:]D;]A;- white -> well set limits and requests  ]D;]A;- orange -> excessive limits or requests]D;]A;- turquoise -> unset limits or requests]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[## Vyberte kontejner, aby se zobrazily doporučené požadavky a limity.]D;]A;]D;]A;Tento analyzátor zobrazuje kontejnery s nadměrnými limity a požadavky na CPU/paměť. Jednotlivé dlaždice můžou představovat více kontejnerů se stejnou specifikací (např.: pokud nasazení A vytvoří 100 identických podů, každý s kontejnerem C1 a C2, pak bude k dispozici jedna dlaždice pro všechny kontejnery C1 a jedna dlaždice pro všechny kontejnery C2).]D;]A;]D;]A;Dlaždice můžou mít tyto barvy:]D;]A;– bílá -> dobře nastavené limity a požadavky  ]D;]A;– oranžová -> nadměrné limity nebo požadavky]D;]A;– tyrkysová -> nenastavené limity nebo požadavky]]></Val>
-            </Tgt>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-      </Item>
-      <Item ItemId=";items.smartdetectorscombinedworkbookparameters.content.parameters.2649ee253d71404fb4a9d920dfdc454c.label" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.pills.content.parameters.d9ba2e0ded514222b6fa84275b6181f9.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Time Range]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -336,11 +690,47 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.smartdetectorscombinedworkbookparameters.content.parameters.6390427562704382ab34935932debe40.label" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.pills.content.parameters.f1c342720c594f41bd8af99734f355ac.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Kube Cluster]]></Val>
+          <Val><![CDATA[Filter queries by cluster id]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Cluster Kube]]></Val>
+            <Val><![CDATA[Filtrovat dotazy podle ID clusteru]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.pills.content.parameters.f7a7d37498be4c718475d217b99e869c.description" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Resource type to run queries off of]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Typ prostředku, ze kterého se mají spouštět dotazy]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.smartdetectorscombinedworkbookEventAnomaly.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Event Anomalies]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.smartdetectorscombinedworkbooklimitsandrequests.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Container Requests and Limits]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.smartdetectorscombinedworkbooklimitsandrequestsCopy.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Container Requests and Limits - 2]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.smartdetectorscombinedworkbooklivenessprobefailuresquery.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Liveness Probe Failures]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Selhání testu aktivity]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -368,15 +758,6 @@
           <Val><![CDATA[Limits and Requests]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Limity a požadavky]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Smart Insights]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Inteligentní přehledy]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
