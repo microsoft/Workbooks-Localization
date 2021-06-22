@@ -23,7 +23,7 @@
         <Item ItemId=";(...) ntent.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Events per Hour]]></Val>
-            <Tgt Cat="Text" Stat="Update" Orig="New">
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
               <Val><![CDATA[Événements par heure]]></Val>
             </Tgt>
             <Prev Cat="Text">
@@ -56,6 +56,9 @@
         <Item ItemId=";(...) y.content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Raw Events (table limited to top 250 distinct events)]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Événements bruts (table limitée aux 250 principaux événements distincts)]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -65,6 +68,9 @@
         <Item ItemId=";(...) ventanomalygroups.content.gridSettings.labelSettings.commonmessagesegment.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Common Message Segment]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Segment de message commun]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -80,6 +86,9 @@
         <Item ItemId=";(...) ventanomalygroups.content.gridSettings.labelSettings.objectKind.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Object Kind]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Genre d’objet]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -95,6 +104,9 @@
         <Item ItemId=";(...) ventanomalygroups.content.gridSettings.labelSettings.samplemessages.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Sample Message]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Exemple de message]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -110,12 +122,18 @@
         <Item ItemId=";(...) ventanomalygroups.content.gridSettings.labelSettings.spikiness.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Spikiness]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Spikiness]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) ventanomalygroups.content.gridSettings.labelSettings.totaloccurrences.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Total Occurences]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Nombre total des occurrences]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -143,8 +161,8 @@
         <Item ItemId=";(...) anation.content.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[## Select an event to see a graph of occurrences]D;]A;]D;]A;This analyzer groups similar events together for easier analysis. It also shows which event groups have recently increased in volume. ]D;]A;- Events in the list below are grouped based on common phrases, so two events with messages "pod-abc-123 failed, can not pull image" and "pod-def-456 failed, can not pull image" would be grouped together.]D;]A;- The Spikiness column rates which events have occureed more recently. For example, if Events A and B occurred on average 10 times a day in the last month, but event A occurred 1000 times yesterday, and event B occurred 2 times yesterday, then event A would have a much higher spikiness rating than B.]D;]A;]]></Val>
-            <Tgt Cat="Text" Stat="Update" Orig="New">
-              <Val><![CDATA[## Sélectionnez un événement pour voir un graphique des occurrences]D;]A;]D;]A;Cet analyseur affiche les « classes » d'événements courantes et indique celles dont le volume a augmenté récemment. ]D;]A;- Les événements de la liste ci-dessous sont regroupés en fonction des phrases communes, si bien que deux événements avec les messages « échec de pod-abc-123, tirage impossible de l'image » et « échec de pod-def-456, tirage impossible de l'image » sont regroupés.]D;]A;- La colonne Pic évalue les événements qui se sont produit le plus souvent récemment. Par exemple, si les événements A et B se sont produits en moyenne 10 fois par jour le mois dernier, mais que l'événement A s'est produit 1000 fois hier et que l'événement B s'est produit 2 fois hier, alors l'événement A a une note de pic beaucoup plus élevée que B.]D;]A;]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[## Sélectionnez un événement pour afficher un graphique d’occurrences]D;]A;]D;]A;Cet analyseur regroupe des événements similaires pour faciliter l’analyse. Il indique également les groupes d’événements qui ont récemment augmenté en volume. ]D;]A;- Les événements de la liste ci-dessous sont regroupés en fonction d’expressions courantes. Par conséquent, deux événements avec les messages « échec de pod-abc-123, impossible d’extraire l’image » et « échec de pod-def-456 a, impossible d’extraire l’image » sont regroupés.]D;]A;- Les taux de colonnes de disponibilité des événements qui se sont produits plus récemment. Par exemple, si les événements A et B se sont produits en moyenne 10 fois par jour au cours du mois dernier, mais que l’événement A s’est produit 1 000 fois hier et que l’événement B s’est produit 2 fois hier, l’événement A aurait une évaluation beaucoup plus élevée que B.]D;]A;]]></Val>
             </Tgt>
             <Prev Cat="Text">
               <Val><![CDATA[## Select an event to see a graph of occurrences]D;]A;]D;]A;This analyzer shows common "classes" of events and shows which event classes have increased in volume recently. ]D;]A;- Events in the list below are grouped based on common phrases, so two events with messages "pod-abc-123 failed, can not pull image" and "pod-def-456 failed, can not pull image" would be grouped together.]D;]A;- The Spikiness column rates which events have occureed more recently. For example, if Events A and B occurred on average 10 times a day in the last month, but event A occurred 1000 times yesterday, and event B occurred 2 times yesterday, then event A would have a much higher spikiness rating than B.]D;]A;]]></Val>
@@ -179,6 +197,9 @@
         <Item ItemId=";(...) tschartgroup.content.items.smartdetectorscombinedworkbooklimitsandrequestscpuchart.content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[CPU Usage (max) vs Request & Limit]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Utilisation du processeur (max) par rapport à la demande et limite]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -194,6 +215,9 @@
         <Item ItemId=";(...) tschartgroup.content.items.smartdetectorscombinedworkbooklimitsandrequestsmemorychart.content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Memory Usage (max) vs Request & Limit]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Utilisation de la mémoire (max) par rapport à la demande et limite]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -209,6 +233,9 @@
         <Item ItemId=";(...) tsselectcontainer.content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Request/Limit Unoptimality]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Non optimalité des demandes/limites]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -380,30 +407,45 @@
         <Item ItemId=";(...) questschartgroup.content.items.smartdetectorscombinedworkbooklimitsandrequestsmemorychart.content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[TODO: is memory P95? Memory Usage vs Request & Limit]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[TODO : la mémoire P95 est-elle disponible ? Utilisation de la mémoire et demande et limite]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) questsselectcontainer.content.gridSettings.labelSettings.cpuLimitDivSuggestion.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[CPU Limit / Suggestion]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Limite / suggestion de l’UC]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) questsselectcontainer.content.gridSettings.labelSettings.cpuRequestDivSuggestion.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[CPU Request / Suggestion]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Requête / suggestion de l’UC]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) questsselectcontainer.content.gridSettings.labelSettings.memLimitDivSuggestion.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Mem Limit / Suggestion]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Limite / suggestion de mém.]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) questsselectcontainer.content.gridSettings.labelSettings.memRequestDivSuggestion.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Mem Request / Suggestion]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Requête/suggestion de mém.]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -575,6 +617,9 @@
         <Item ItemId=";(...) limitstextexplanation.content.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[## Select a container to see recommended requests and limits]D;]A;]D;]A;This analyzer shows containers with excessive cpu/memory limits and requests. Each tile can represent multiple containers with the same spec. (ex: If deployment A creates 100 identical pods, each with a container C1 and C2, then there will be a single tile for all C1 containers and a single tile for all C2 containers).]D;]A;]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[## Sélectionner un conteneur pour voir les demandes et limites recommandées]D;]A;]D;]A;Cet analyseur montre les conteneurs avec des limites et demandes de processeur/mémoire en excès. Chaque vignette peut représenter plusieurs conteneurs avec la même spécification (par exemple, si le déploiement A crée 100]D;pods identiques, chacun avec des conteneurs C1 et C2, une seule vignette représente tous les conteneurs C1 et une autre les conteneurs C2).]A;]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -602,6 +647,9 @@
         <Item ItemId=";(...) ssprobeselect.content.gridSettings.labelSettings.controllerTotal.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Controller Total]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Total du contrôleur]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -617,6 +665,9 @@
         <Item ItemId=";(...) ssprobeselect.content.gridSettings.labelSettings.recentTotal.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Recent Total]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Total récent]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -659,6 +710,9 @@
         <Item ItemId=";(...) ssprobetextexplanation.content.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[## Select a container to view liveness probe failures]D;]A;]D;]A;This analyzer shows which liveness probes have failed recently and how often. Select one to see a time-series of occurrences.]D;]A;]D;]A;Column explanation:]D;]A;- Total: counts liveness probe failures over the entire time range]D;]A;- Controller Total: counts liveness probe failures from all containers managed by a controller]D;]A;]D;]A;]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[## Sélectionnez un conteneur pour voir les échecs de probe liveness]D;]A;]D;]A;Cet analyseur montre les probes liveness ayant échoué récemment et leur fréquence. Sélectionnez-en une pour voir une série chronologique des occurrences.]D;]A;]D;]A;Explication de la colonne]D;:]A;Total : compte les échecs de la sonde de lividité sur l'ensemble de la période.]D;]A;- Total contrôleur : compte les échecs de la sonde de lividité de tous les conteneurs gérés par un contrôleur.]D;]A;]D;]A;]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -711,18 +765,27 @@
       <Item ItemId=";items.smartdetectorscombinedworkbookEventAnomaly.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Event Anomalies]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Anomalies d’événement]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.smartdetectorscombinedworkbooklimitsandrequests.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Container Requests and Limits]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Demandes et limites de conteneur]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.smartdetectorscombinedworkbooklimitsandrequestsCopy.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Container Requests and Limits - 2]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Demandes et limites de conteneur : 2]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
