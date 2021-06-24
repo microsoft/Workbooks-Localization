@@ -32,39 +32,45 @@
       </Item>
       <Item ItemId=";@items.MVStep.content.items.MVHealth.content.gridSettings.labelSettings.microsoftkustoclustersMaterializedViewheal" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) thandperformanceMaterializedViewAgeMinutes.label" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) thandperformanceMaterializedViewAgeSeconds.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Materialized View Age (Average)]]></Val>
+            <Val><![CDATA[Materialized view age  (average)]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Idade da Vista Materializada (Média)]]></Val>
+              <Val><![CDATA[Idade da vista materializada (média)]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
-        <Item ItemId=";(...) thandperformanceMaterializedViewAgeMinutesTimeline.label" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) thandperformanceMaterializedViewAgeSecondsTimeline.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Materialized View Age (Average) Timeline]]></Val>
+            <Val><![CDATA[Materialized view age (average) timeline]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Linha Cronológica da Idade da Vista Materializada (Média)]]></Val>
+              <Val><![CDATA[Linha cronológica da idade da vista materializada (média)]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) thandperformanceMaterializedViewHealth.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Materialized View Health (Average)]]></Val>
+            <Val><![CDATA[Materialized view health (average)]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Estado de Funcionamento da Vista Materializada (Média)]]></Val>
+              <Val><![CDATA[Estado de funcionamento da vista materializada (média)]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[Materialized View Health (Average)]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) thandperformanceMaterializedViewHealthTimeline.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Materialized View Health (Average) Timeline]]></Val>
+            <Val><![CDATA[Materialized view health (average) timeline]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Linha Cronológica do Estado de Funcionamento da Vista Materializada (Média)]]></Val>
+              <Val><![CDATA[Linha cronológica do estado de funcionamento da vista materializada (média)]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[Materialized View Health (Average) Timeline]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -116,19 +122,25 @@
       </Item>
       <Item ItemId=";items.MVStep.content.items.textforage.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Materialize View Age]D;]A;</span> <br>The age of the view is defined by the current time minus the last ingestion time processed by the view. Metric value is time in minutes (the lower the value is, the view is "healthier").]]></Val>
+          <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Materialize View Age]D;]A;</span> <br>The age of the view is defined by the time of the last ingestion to the database minus the last ingestion time processed by the view. Metric value is time in seconds (the lower the value is, the view is "healthier").]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Idade da Vista Materializada]D;]A;</span> <br>A idade da vista é definida pela hora atual menos a hora da última ingestão processada pela vista. O valor da métrica é o tempo em minutos (quanto menor for o valor, melhor estado de funcionamento terá a vista).]]></Val>
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Idade da Vista Materializada]D;]A;</span> <br>A idade da vista é definida pela hora da última ingestão para a base de dados menos a hora da última ingestão processada pela vista. O valor da métrica é o tempo em segundos (quanto menor for o valor, melhor estado de funcionamento terá a vista).]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Materialize View Age]D;]A;</span> <br>The age of the view is defined by the current time minus the last ingestion time processed by the view. Metric value is time in minutes (the lower the value is, the view is "healthier").]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.MVStep.content.items.textforhealth.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Materialized View Health]D;]A;</span> <br>A materialized view can become unhealthy for any or all of the following reasons:]D;]A;</span> <br>- The materialization process is failing. The MaterializedViewResult metric and the .show materialized-view failures command can help identify the root cause of the failure.</span>]D;]A;</span> <br>- The cluster doesn't have sufficient capacity to materialize all incoming data on-time. In this case, there may not be failures in execution.</span>]]></Val>
+          <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Materialized View Health]D;]A;</span> <br>A materialized view can be unhealthy either due to failures in execution or because the cluster doesn’t have sufficient resources to materialize all ingested data on-time</span>]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Estado de Funcionamento da Vista Materializada]D;]A;</span> <br>Uma vista materializada pode ficar em mau estado de funcionamento por qualquer uma ou todas as seguintes razões:]D;]A;</span> <br>- O processo de materialização está a falhar. A métrica MaterializedViewResult e o comando .show materialized-view failures podem ajudar a identificar a causa principal da falha.</span>]D;]A;</span> <br>- O cluster não tem capacidade suficiente para materializar todos os dados de entrada a tempo. Neste caso, pode não haver falhas na execução.</span>]]></Val>
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Estado de funcionamento da vista materializada]D;]A;</span> <br>Uma visão materializada pode estar em mau estado de funcionamento, quer devido a falhas na execução, quer porque o cluster não tem recursos suficientes para materializar todos os dados ingeridos no tempo</span>]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Materialized View Health]D;]A;</span> <br>A materialized view can become unhealthy for any or all of the following reasons:]D;]A;</span> <br>- The materialization process is failing. The MaterializedViewResult metric and the .show materialized-view failures command can help identify the root cause of the failure.</span>]D;]A;</span> <br>- The cluster doesn't have sufficient capacity to materialize all incoming data on-time. In this case, there may not be failures in execution.</span>]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
