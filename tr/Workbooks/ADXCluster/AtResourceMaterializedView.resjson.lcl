@@ -32,39 +32,45 @@
       </Item>
       <Item ItemId=";@items.MVStep.content.items.MVHealth.content.gridSettings.labelSettings.microsoftkustoclustersMaterializedViewheal" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) thandperformanceMaterializedViewAgeMinutes.label" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) thandperformanceMaterializedViewAgeSeconds.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Materialized View Age (Average)]]></Val>
+            <Val><![CDATA[Materialized view age  (average)]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Gerçekleştirilmiş Görünüm Yaşı (Ortalama)]]></Val>
+              <Val><![CDATA[Gerçekleştirilmiş görünüm yaşı (ortalama)]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
-        <Item ItemId=";(...) thandperformanceMaterializedViewAgeMinutesTimeline.label" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) thandperformanceMaterializedViewAgeSecondsTimeline.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Materialized View Age (Average) Timeline]]></Val>
+            <Val><![CDATA[Materialized view age (average) timeline]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Gerçekleştirilmiş Görünüm Yaşı (Ortalama) Zaman Çizelgesi]]></Val>
+              <Val><![CDATA[Gerçekleştirilmiş görünüm yaşı (ortalama) zaman çizelgesi]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) thandperformanceMaterializedViewHealth.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Materialized View Health (Average)]]></Val>
+            <Val><![CDATA[Materialized view health (average)]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Gerçekleştirilmiş Görünüm Durumu (Ortalama)]]></Val>
+              <Val><![CDATA[Gerçekleştirilmiş görünüm durumu (ortalama)]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[Materialized View Health (Average)]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) thandperformanceMaterializedViewHealthTimeline.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Materialized View Health (Average) Timeline]]></Val>
+            <Val><![CDATA[Materialized view health (average) timeline]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Gerçekleştirilmiş Görünüm Durumu (Ortalama) Zaman Çizelgesi]]></Val>
+              <Val><![CDATA[Gerçekleştirilmiş görünüm durumu (ortalama) zaman çizelgesi]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[Materialized View Health (Average) Timeline]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -116,19 +122,25 @@
       </Item>
       <Item ItemId=";items.MVStep.content.items.textforage.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Materialize View Age]D;]A;</span> <br>The age of the view is defined by the current time minus the last ingestion time processed by the view. Metric value is time in minutes (the lower the value is, the view is "healthier").]]></Val>
+          <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Materialize View Age]D;]A;</span> <br>The age of the view is defined by the time of the last ingestion to the database minus the last ingestion time processed by the view. Metric value is time in seconds (the lower the value is, the view is "healthier").]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Gerçekleştirilmiş Görünüm Yaşı]D;]A;</span> <br>Görünümün yaşı, geçerli zamandan görünüm tarafından işlenen son alım zamanı çıkarılarak bulunur. Ölçüm değeri dakika cinsinden zamandır (değerin düşük olması görünümün "iyi durumda" olduğu anlamına gelir).]]></Val>
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Gerçekleştirilmiş Görünüm Yaşı]D;]A;</span> <br>Görünümün yaşı, veritabanına son alım zamanından görünüm tarafından işlenen son alım zamanı çıkarılarak bulunur. Ölçüm değeri saniye cinsinden zamandır (değerin düşük olması görünümün "iyi durumda" olduğu anlamına gelir).]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Materialize View Age]D;]A;</span> <br>The age of the view is defined by the current time minus the last ingestion time processed by the view. Metric value is time in minutes (the lower the value is, the view is "healthier").]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.MVStep.content.items.textforhealth.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Materialized View Health]D;]A;</span> <br>A materialized view can become unhealthy for any or all of the following reasons:]D;]A;</span> <br>- The materialization process is failing. The MaterializedViewResult metric and the .show materialized-view failures command can help identify the root cause of the failure.</span>]D;]A;</span> <br>- The cluster doesn't have sufficient capacity to materialize all incoming data on-time. In this case, there may not be failures in execution.</span>]]></Val>
+          <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Materialized View Health]D;]A;</span> <br>A materialized view can be unhealthy either due to failures in execution or because the cluster doesn’t have sufficient resources to materialize all ingested data on-time</span>]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Gerçekleştirilmiş Görünüm Durumu]D;]A;</span> <br>Gerçekleştirilmiş görünüm şunlardan biri veya tümü nedeniyle iyi durumda olmayabilir:]D;]A;</span> <br>- Gerçekleştirme işlemi başarısız oluyor. MaterializedViewResult ölçümü ve .show materialized-view failures komutu, hatanın kök nedenini belirlemeye yardımcı olabilir.</span>]D;]A;</span> <br>- Kümenin tüm gelen verileri zamanında gerçekleştirmek için yeterli kapasitesi yok. Bu durumda, yürütme hatası olmayabilir.</span>]]></Val>
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Gerçekleştirilmiş Görünüm Durumu]D;]A;</span> <br>Gerçekleştirilmiş görünüm, yürütme hataları nedeniyle veya kümede alınan tüm verileri zamanında gerçekleştirmek için yeterli kaynak olmaması nedeniyle iyi durumda olmayabilir</span>]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Materialized View Health]D;]A;</span> <br>A materialized view can become unhealthy for any or all of the following reasons:]D;]A;</span> <br>- The materialization process is failing. The MaterializedViewResult metric and the .show materialized-view failures command can help identify the root cause of the failure.</span>]D;]A;</span> <br>- The cluster doesn't have sufficient capacity to materialize all incoming data on-time. In this case, there may not be failures in execution.</span>]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>

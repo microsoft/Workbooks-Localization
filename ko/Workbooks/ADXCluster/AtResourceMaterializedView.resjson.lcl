@@ -32,18 +32,18 @@
       </Item>
       <Item ItemId=";@items.MVStep.content.items.MVHealth.content.gridSettings.labelSettings.microsoftkustoclustersMaterializedViewheal" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) thandperformanceMaterializedViewAgeMinutes.label" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) thandperformanceMaterializedViewAgeSeconds.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Materialized View Age (Average)]]></Val>
+            <Val><![CDATA[Materialized view age  (average)]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
               <Val><![CDATA[구체화된 뷰 에이지(평균)]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
-        <Item ItemId=";(...) thandperformanceMaterializedViewAgeMinutesTimeline.label" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) thandperformanceMaterializedViewAgeSecondsTimeline.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Materialized View Age (Average) Timeline]]></Val>
+            <Val><![CDATA[Materialized view age (average) timeline]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
               <Val><![CDATA[구체화된 뷰 기간(평균) 타임라인]]></Val>
             </Tgt>
@@ -52,19 +52,25 @@
         </Item>
         <Item ItemId=";(...) thandperformanceMaterializedViewHealth.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Materialized View Health (Average)]]></Val>
+            <Val><![CDATA[Materialized view health (average)]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
               <Val><![CDATA[구체화된 뷰 상태(평균)]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[Materialized View Health (Average)]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) thandperformanceMaterializedViewHealthTimeline.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Materialized View Health (Average) Timeline]]></Val>
+            <Val><![CDATA[Materialized view health (average) timeline]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
               <Val><![CDATA[구체화된 뷰 상태(평균) 타임라인]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[Materialized View Health (Average) Timeline]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -116,19 +122,25 @@
       </Item>
       <Item ItemId=";items.MVStep.content.items.textforage.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Materialize View Age]D;]A;</span> <br>The age of the view is defined by the current time minus the last ingestion time processed by the view. Metric value is time in minutes (the lower the value is, the view is "healthier").]]></Val>
+          <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Materialize View Age]D;]A;</span> <br>The age of the view is defined by the time of the last ingestion to the database minus the last ingestion time processed by the view. Metric value is time in seconds (the lower the value is, the view is "healthier").]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> 구체화 뷰 기간]D;]A;</span> <br>뷰 기간은 현재 시간에서 뷰에서 처리한 마지막 수집 시간을 뺀 값으로 정의됩니다. 측정 항목 값은 시간(분)입니다(값이 낮을 수록 뷰가 "더 양호"함).]]></Val>
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> 구체화 뷰 기간]D;]A;</span> <br>뷰 기간은 데이터베이스로의 마지막 수집 시간에서 뷰에서 처리한 마지막 수집 시간을 뺀 값으로 정의됩니다. 측정 항목 값은 시간(초)입니다(값이 낮을 수록 뷰가 "더 양호"함).]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Materialize View Age]D;]A;</span> <br>The age of the view is defined by the current time minus the last ingestion time processed by the view. Metric value is time in minutes (the lower the value is, the view is "healthier").]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.MVStep.content.items.textforhealth.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Materialized View Health]D;]A;</span> <br>A materialized view can become unhealthy for any or all of the following reasons:]D;]A;</span> <br>- The materialization process is failing. The MaterializedViewResult metric and the .show materialized-view failures command can help identify the root cause of the failure.</span>]D;]A;</span> <br>- The cluster doesn't have sufficient capacity to materialize all incoming data on-time. In this case, there may not be failures in execution.</span>]]></Val>
+          <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Materialized View Health]D;]A;</span> <br>A materialized view can be unhealthy either due to failures in execution or because the cluster doesn’t have sufficient resources to materialize all ingested data on-time</span>]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;">구체화된 뷰 상태]D;]A;</span> <br>구체화된 뷰는 다음과 같은 이유로 인해 비정상 상태가 될 수 있습니다.]D;]A;</span> <br>- 구체화 프로세스가 실패합니다. MaterializedViewResult 메트릭 및 .show materialized-view failures 명령은 실패의 근본 원인을 식별하는 데 도움이 될 수 있습니다.</span>]D;]A;</span> <br>- 클러스터에는 들어오는 모든 데이터를 제 시간에 구체화하기에 충분한 용량이 없습니다. 이 경우 실행에 실패가 없을 수 있습니다.</span>]]></Val>
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> 구체화된 뷰 상태]D;]A;</span><br>구체화된 뷰는 실행 오류로 인해 또는 클러스터에 수집된 모든 데이터를 정시에 구체화할 충분한 리소스가 없기 때문에 비정상일 수 있습니다</span>]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Materialized View Health]D;]A;</span> <br>A materialized view can become unhealthy for any or all of the following reasons:]D;]A;</span> <br>- The materialization process is failing. The MaterializedViewResult metric and the .show materialized-view failures command can help identify the root cause of the failure.</span>]D;]A;</span> <br>- The cluster doesn't have sufficient capacity to materialize all incoming data on-time. In this case, there may not be failures in execution.</span>]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
