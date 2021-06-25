@@ -30,6 +30,18 @@
           <Disp Icon="Str" />
         </Item>
       </Item>
+      <Item ItemId=";@items.Clusterboundariesall.content.items.CPUUtilization.content.items.Cpuoverview.content.items.CPUoverviewtitle." ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) content.json" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px -304px 0px 0px;position: relative;">Overview]D;]A;</span> ]D;]A;]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px -304px 0px 0px;position: relative;">Descripción general]D;]A;</span> ]D;]A;]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
       <Item ItemId=";@items.Clusterboundariesall.content.items.CPUUtilization.content.items.Cpuoverview.content.items.CPUutilizationove" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) rviewtable.content.gridSettings.labelSettings.LastDayPrecentile80.label" ItemType="0" PsrId="306" Leaf="true">
@@ -77,6 +89,15 @@
       </Item>
       <Item ItemId=";@items.Clusterboundariesall.content.items.CacheUtilization.content.items.CacheUtilizationOverview.content.items.Ca" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) cheoverviewtitle.content.json" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px -304px 0px 0px;position: relative;">Overview]D;]A;</span> ]D;]A;]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px -304px 0px 0px;position: relative;">Descripción general]D;]A;</span> ]D;]A;]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
         <Item ItemId=";(...) cheutilizationoverviewtable.content.gridSettings.labelSettings.CurrentCacheUtilization.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Current Cache Utilization (Last)]]></Val>
@@ -140,20 +161,20 @@
       </Item>
       <Item ItemId=";@items.Clusterboundariesall.content.items.IngestionUtilization.content.items.Ingestionutilizationoverviewgroup.con" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) tent.items.Ingestionoverviewtitle.content.json" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px -304px 0px 0px;position: relative;">Overview]D;]A;</span> ]D;]A;]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px -304px 0px 0px;position: relative;">Descripción general]D;]A;</span> ]D;]A;]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
         <Item ItemId=";(...) tent.items.ingestionoverviewtext.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[The ingestion score is decided as follows:]D;]A;</br>]D;]A;</br>]D;]A;]D83D;]DD34; <strong>High</strong> - If the precentile 90 of the last 5 days is higher than {IngestionHighThreshold}%]D;]A;</br>]D;]A;]D83D;]DFE1; <strong>Medium</strong> - If the precentile 90 of the last 5 days equals to {IngestionHighThreshold}%]D;]A;</br>]D;]A;]D83D;]DFE2; <strong>Low</strong> - Otherwise]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
               <Val><![CDATA[La puntuación de la ingesta se decide como se indica a continuación:]D;]A;</br>]D;]A;</br>]D;]A;]D83D;]DD34; <strong>Alta</strong>: si el percentil 90 de los últimos 5 días es superior al {IngestionHighThreshold} %.]D;]A;</br>]D;]A;]D83D;]DFE1; <strong>Media</strong>: si el percentil 90 de los últimos 5 días es del {IngestionHighThreshold} %.]D;]A;</br>]D;]A;]D83D;]DFE2; <strong>Baja</strong>: en cualquier otro caso.]]></Val>
-            </Tgt>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-        <Item ItemId=";(...) tent.title" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[Overview]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Información general]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
@@ -239,10 +260,13 @@
       </Item>
       <Item ItemId=";items.Clusterboundariesall.content.items.CPUUtilization.content.items.CPUUtilizationForecastingtext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[The dark blue line in the chart below presents the CPU utilization of your cluster in the last 15 days. The orange line presents the forecast for the CPU utilization - based on your past usage and assuming weekly seasonality. By looking at the difference between the lines you can observe the outliers of the ingestion usage.]D;]A;</br>]D;]A;</br>]D;]A;]D83D;]DCA1; You can zoom-in by selecting a specific time range.]]></Val>
+          <Val><![CDATA[The dark blue line in the chart below presents the CPU utilization of your cluster in the last 15 days. The orange line presents the forecast for the CPU utilization - based on your past usage and assuming weekly seasonality. By looking at the difference between the lines you can observe the outliers of the CPU usage.]D;]A;</br>]D;]A;</br>]D;]A;]D83D;]DCA1; You can zoom-in by selecting a specific time range.]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[La línea azul oscuro del gráfico siguiente presenta el uso de CPU del clúster en los últimos 15 días. La línea naranja presenta el pronóstico de uso de la CPU en función del uso anterior y suponiendo una estacionalidad semanal. Al observar la diferencia entre las líneas, se aprecian los valores atípicos del uso de la ingesta.]D;]A;</br>]D;]A;</br>]D;]A;]D83D;]DCA1; Para acercar la vista, seleccione un intervalo de tiempo específico.]]></Val>
+            <Val><![CDATA[La línea azul oscuro en el gráfico de abajo presenta la utilización de la CPU de su clúster en los últimos 15 días. La línea naranja presenta la previsión de la utilización de la CPU, basada en el uso anterior y asumiendo la estacionalidad semanal. Observando la diferencia entre las líneas puedes ver los valores atípicos del uso de la CPU.]D;]A;</br>]D;]A;</br>]D;]A;]D83D;]DCA1; Puede hacer un acercamiento seleccionando un rango de tiempo específico.]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[The dark blue line in the chart below presents the CPU utilization of your cluster in the last 15 days. The orange line presents the forecast for the CPU utilization - based on your past usage and assuming weekly seasonality. By looking at the difference between the lines you can observe the outliers of the ingestion usage.]D;]A;</br>]D;]A;</br>]D;]A;]D83D;]DCA1; You can zoom-in by selecting a specific time range.]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -282,29 +306,11 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Clusterboundariesall.content.items.CPUUtilization.content.items.Cpuoverview.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Clusterboundariesall.content.items.CPUUtilization.content.items.CPUutilizationtitle.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Overview]]></Val>
+          <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px -304px 0px 0px;position: relative;">]D83D;]DCC8; CPU Utilization]D;]A;</span> ]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Información general]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Clusterboundariesall.content.items.CPUUtilization.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[]D83D;]DCC8; CPU Utilization]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[]D83D;]DCC8; Uso de la CPU]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Clusterboundariesall.content.items.CacheUtilization.content.items.CacheUtilizationOverview.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Overview]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Información general]]></Val>
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px -304px 0px 0px;position: relative;">]D83D;]DCC8;Uso de la CPU]D;]A;</span> ]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -327,11 +333,11 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Clusterboundariesall.content.items.CacheUtilization.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Clusterboundariesall.content.items.CacheUtilization.content.items.Cacheutilizationtitle.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[]D83D;]DCC8;  Cache Utilization]]></Val>
+          <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px -304px 0px 0px;position: relative;">]D83D;]DCC8; Cache Utilization]D;]A;</span> ]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[]D83D;]DCC8;  Uso de la caché]]></Val>
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px -304px 0px 0px;position: relative;">]D83D;]DCC8; Uso de la caché]D;]A;</span> ]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -345,21 +351,24 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Clusterboundariesall.content.items.IngestionUtilization.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Clusterboundariesall.content.items.IngestionUtilization.content.items.Ingestionutilizationtitle.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[]D83D;]DCC8; Ingestion Utilization]]></Val>
+          <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px -304px 0px 0px;position: relative;">]D83D;]DCC8; Ingestion Utilization]D;]A;</span> ]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[]D83D;]DCC8; Uso de la ingesta]]></Val>
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px -304px 0px 0px;position: relative;">]D83D;]DCC8;Uso de la ingesta]D;]A;</span> ]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Clusterboundariesall.content.items.Utilizationtilesdescription.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 420; font-size: 14px;">]D;]A;In the following tab you can observe whether your cluster is bounded by data/CPU/ingestion. These boundaries and scores are taken into account in Azure Advisor when deciding on the optimal SKU and instances count recommendation for your cluster.]D;]A;</br>]D;]A;</br>]D;]A;]D83D;]DCA1; Select one of the utilization tiles to get more details.]D;]A;</span>]]></Val>
+          <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 420; font-size: 14px;">]D;]A;In the following tab you can observe whether your cluster is bounded by data/CPU/ingestion. These boundaries and scores are taken into account in Azure Advisor when deciding on the optimal SKU and instances count recommendation for your cluster. The data is not affected by the time range parameter.]D;]A;</br>]D;]A;</br>]D;]A;]D83D;]DCA1; Select one of the utilization tiles to get more details.]D;]A;</span>]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 420; font-size: 14px;">]D;]A;En la pestaña siguiente puede observar si el clúster está limitado por datos/CPU/ingesta. Estos límites y puntuaciones se tienen en cuenta en Azure Advisor a la hora de decidir una recomendación sobre el recuento óptimo de instancias y SKU para el clúster.]D;]A;</br>]D;]A;</br>]D;]A;]D83D;]DCA1; Seleccione uno de los iconos de uso para obtener más detalles.]D;]A;</span>]]></Val>
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 420; font-size: 14px;">]D;]A;En la siguiente pestaña puede observar si su clúster está limitado por datos/CPU/ingestión. Estos límites y puntuaciones se tienen en cuenta en Azure Advisor a la hora de decidir la recomendación óptima de SKU y recuento de instancias para su clúster. Los datos no se ven afectados por el parámetro de rango de tiempo.]D;]A;</br>]D;]A;</br>]D;]A;]D83D;]DCA1; Seleccione uno de los mosaicos de utilización para obtener más detalles.]D;]A;</span>]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 420; font-size: 14px;">]D;]A;In the following tab you can observe whether your cluster is bounded by data/CPU/ingestion. These boundaries and scores are taken into account in Azure Advisor when deciding on the optimal SKU and instances count recommendation for your cluster.]D;]A;</br>]D;]A;</br>]D;]A;]D83D;]DCA1; Select one of the utilization tiles to get more details.]D;]A;</span>]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
