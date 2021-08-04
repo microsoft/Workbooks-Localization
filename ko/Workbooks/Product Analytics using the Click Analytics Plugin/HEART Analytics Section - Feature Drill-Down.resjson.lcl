@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<LCX SchemaVersion="6.0" Name="S:\output\loc\Product Analytics using the Click Analytics Plugin\HEART Analytics Section - Feature Drill-Down.resjson" PsrId="306" SrcCul="en-US" xmlns="http://schemas.microsoft.com/locstudio/2006/6/lcx" TgtCul="ko-KR">
+<LCX SchemaVersion="6.0" Name="S:\output\loc\Product Analytics using the Click Analytics Plugin\HEART Analytics Section - Feature Drill-Down.resjson" PsrId="306" FileType="1" SrcCul="en-US" TgtCul="ko-KR" xmlns="http://schemas.microsoft.com/locstudio/2006/6/lcx">
   <OwnedComments>
     <Cmt Name="Dev" />
     <Cmt Name="LcxAdmin" />
@@ -14,6 +14,9 @@
         <Item ItemId=";(...) itle" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Active Users (Feature)]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[활성 사용자(기능)]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -23,6 +26,9 @@
         <Item ItemId=";(...) itle" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Median Interactions per User]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[사용자당 중앙값 상호작용]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -32,6 +38,9 @@
         <Item ItemId=";(...) itle" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Net New Active Users (Feature)]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[순 신규 활성 사용자(기능)]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -41,6 +50,9 @@
         <Item ItemId=";(...) .title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Retained Users (Feature)]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[보존된 사용자(기능)]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -50,6 +62,9 @@
         <Item ItemId=";(...) le" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Retention (Feature)]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[보존(기능)]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -57,48 +72,72 @@
       <Item ItemId=";items.group0.content.items.DateGrainCopy.content.parameters.cececf9ae1b54793bcf4e7bcde1fb739.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Date Grain]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[데이트 그레인]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group0.content.items.FeatureMetrics.content.items.FeatureParameterMissing.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No Feature is selected. Please select a value from the Feature parameter. Note: The Feature parameter requires the Click Analytics attribute parentId.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[기능이 선택되지 않았습니다. 기능 매개 변수에서 값을 선택하세요. 참고: 기능 매개 변수에는 클릭 분석 속성 parentId가 필요합니다.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group0.content.items.FeatureMetricsOverview.content.items.FeatureMetricsDefintions.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Feature Metrics]D;]A;]D;]A;### Why Feature Metrics?]D;]A;Feature Metrics allow for product owners to drill-down into the HEART Metrics to better understand trends. Feature Metrics allow product owners to understand the impact features have on the product on a more granular level than the experience-level metrics. This increased granularity helps identify Retention drivers and areas for improvement, streamlining product development.]D;]A;]D;]A;### Measuring Feature Metrics]D;]A;As Active Users must have at least one telemetry event with an actionType, **Feature metrics require the [Click Analytics plugin for Application Insights]5D;(https://docs.microsoft.com/en-us/azure/azure-monitor/app/javascript-click-analytics-plugin) implemented in the application**.]D;]A;]D;]A;### Defining Feature Metrics]D;]A;The HEART Framework considers a specific capability of an experience as a *feature*. This workbook identifies features with the *parentId* attribute within the Click Analytics plugin. Some examples of features include the following:]D;]A;* *a favorite button on a social media post*]D;]A;* *a search box within a website*]D;]A;* *a refresh button in a browser* ]D;]A;]D;]A;]D;]A;| Metric                   | Definition                                                                                                            | Question Answered                                           |]D;]A;|--------------------------|-----------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|]D;]A;| Net New Active Users (Feature)  | Count of users who have interacted with the feature for the first time                                                        | How quickly is this feature gaining new users?               |]D;]A;| Feature Active Users     | Count of users who have performed a user-initiated action on a specific feature                                       | How many users are actively using this feature?             |]D;]A;| Interactions             | Median number of user-initiated actions on a specific feature over a time period                                      | How deep is the usage for this feature?                |]D;]A;| Retained Users (Feature) | Count of Active Users for this feature who were also Active for this feature the previous period                      | How many users continually interact with this feature?       |]D;]A;| Retention (Feature)      | Proportion of Active Users for this feature from the previous period who are also Active for this feature this period | What percent of users continually interact with this feature? |]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## 기능 메트릭]D;]A;]D;]A;### 기능 메트릭이 필요한 이유]D;]A;기능 메트릭을 사용하면 제품 소유자가 HEART 메트릭으로 드릴다운하여 추세를 더 잘 이해할 수 있습니다. 기능 메트릭을 사용하면 제품 소유자가 환경 수준 메트릭보다 더 세분화된 수준에서 기능이 제품에 미치는 영향을 이해할 수 있습니다. 이렇게 증가된 세분화는 보존 드라이버와 개선 영역을 식별하여 제품 개발을 간소화하는 데 도움이 됩니다.]D;]A;]D;]A;### 기능 메트릭 측정]D;]A;활성 사용자에게는 원격 측정 이벤트가 하나 이상 있어야 하므로 actionType이 있는 경우 **기능 메트릭에는 [Application Insights용 Click Analytics 플러그인]5D;(https://docs.microsoft.com/en-us/azure/azure-monitor/app/javascript-click-analytics-plugin)이 애플리케이션**에 구현되어 있어야 합니다.]D;]A;]D;]A;### 기능 메트릭 정의]D;]A;HEART 프레임워크는 환경의 특정 기능을 *기능*으로 간주합니다. 이 통합 문서는 Click Analytics 플러그인 내에서 *parentId* 속성이 있는 기능을 식별합니다. 기능의 몇 가지 예는 다음과 같습니다.]D;]A;* *소셜 미디어 게시물의 즐겨찾기 버튼*]D;]A;* *웹사이트 내의 검색창*]D;]A;* *새로고침 버튼* ]D;]A;]D;]A;]D;]A;| 메트릭                  | 정의                                                                                                                        | 답변된 질문                                                                                      |]D;]A;|--------------------------|----------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|]D;]A;| 순 신규 활성 사용자(기능)  | 기능과 처음으로 상호 작용한 사용자 수                                   | 이 기능이 새로운 사용자를 얼마나 빨리 확보하고 있습니까?             |]D;]A;| 기능 활성 사용자     | 특정 기능에 대해 사용자가 시작한 작업을 수행한 사용자 수                                   | 얼마나 많은 사용자가 이 기능을 적극적으로 사용하고 있습니까?                  |]D;]A;| 상호 작용                  | 일정 기간 동안 특정 기능에 대해 사용자가 시작한 작업의 중앙값 수                                   | 이 기능의 사용량은 얼마나 됩니까                         ? |]D;]A;| 보존 사용자(기능) | 이전 기간 동안 이 기능에 대해 활성이었던 이 기능에 대한 활성 사용자 수                  | 얼마나 많은 사용자가 이 기능과 지속적으로 상호 작용합니까?                  |]D;]A;| 보존(기능) | 이 기능에 대해 활성인 이전 기간의 활성 사용자 비율                  | 이 기능과 지속적으로 상호 작용하는 사용자의 비율은 얼마입니까? |]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group0.content.items.FeatureMetricsOverview.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Feature Metrics Overview]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[기능 메트릭 개요]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group0.content.items.UsersbyFeature.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[The query returned no results - Ensure Click Analytics attribute parentId is instrumented.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[쿼리가 결과를 반환하지 않음 - Click Analytics 속성 parentId가 계측되었는지 확인하세요.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group0.content.items.UsersbyFeature.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Users by Feature]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[기능별 사용자]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group0.content.items.WorkbookParametersCopy.content.parameters.1aca87731d7c49ef8833bb9162ed947f.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Select Authenticated Users (most accurate) if user_AuthenticatedId is available. Otherwise, select Anonymous Users (least accurate) based on anonymous user_Id.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[user_AuthenticatedId를 사용할 수 있는 경우 인증된 사용자(가장 정확함)를 선택합니다. 그렇지 않으면 익명 user_Id를 기반으로 익명 사용자(가장 정확하지 않음)를 선택합니다.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group0.content.items.WorkbookParametersCopy.content.parameters.8d60d839d1b74482b239f654221134a1.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Operating System]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[운영 체제]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

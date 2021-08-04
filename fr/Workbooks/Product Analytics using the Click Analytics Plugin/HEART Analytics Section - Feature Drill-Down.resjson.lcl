@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<LCX SchemaVersion="6.0" Name="S:\output\loc\Product Analytics using the Click Analytics Plugin\HEART Analytics Section - Feature Drill-Down.resjson" PsrId="306" SrcCul="en-US" xmlns="http://schemas.microsoft.com/locstudio/2006/6/lcx" TgtCul="fr-FR">
+<LCX SchemaVersion="6.0" Name="S:\output\loc\Product Analytics using the Click Analytics Plugin\HEART Analytics Section - Feature Drill-Down.resjson" PsrId="306" FileType="1" SrcCul="en-US" TgtCul="fr-FR" xmlns="http://schemas.microsoft.com/locstudio/2006/6/lcx">
   <OwnedComments>
     <Cmt Name="Dev" />
     <Cmt Name="LcxAdmin" />
@@ -14,6 +14,9 @@
         <Item ItemId=";(...) itle" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Active Users (Feature)]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Utilisateurs actifs (fonctionnalité)]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -23,6 +26,9 @@
         <Item ItemId=";(...) itle" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Median Interactions per User]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Interactions médianes par utilisateur]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -32,6 +38,9 @@
         <Item ItemId=";(...) itle" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Net New Active Users (Feature)]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Nouveaux utilisateurs actifs nets (fonctionnalité)]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -41,6 +50,9 @@
         <Item ItemId=";(...) .title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Retained Users (Feature)]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Utilisateurs retenus (fonctionnalité)]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -50,6 +62,9 @@
         <Item ItemId=";(...) le" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Retention (Feature)]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Rétention (fonctionnalité)]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -57,48 +72,72 @@
       <Item ItemId=";items.group0.content.items.DateGrainCopy.content.parameters.cececf9ae1b54793bcf4e7bcde1fb739.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Date Grain]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Fragment de date]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group0.content.items.FeatureMetrics.content.items.FeatureParameterMissing.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No Feature is selected. Please select a value from the Feature parameter. Note: The Feature parameter requires the Click Analytics attribute parentId.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Aucune fonctionnalité n’est sélectionnée. Sélectionnez une valeur dans le paramètre Feature. Remarque : le paramètre Feature requiert l’attribut Click Analytics parentId.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group0.content.items.FeatureMetricsOverview.content.items.FeatureMetricsDefintions.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Feature Metrics]D;]A;]D;]A;### Why Feature Metrics?]D;]A;Feature Metrics allow for product owners to drill-down into the HEART Metrics to better understand trends. Feature Metrics allow product owners to understand the impact features have on the product on a more granular level than the experience-level metrics. This increased granularity helps identify Retention drivers and areas for improvement, streamlining product development.]D;]A;]D;]A;### Measuring Feature Metrics]D;]A;As Active Users must have at least one telemetry event with an actionType, **Feature metrics require the [Click Analytics plugin for Application Insights]5D;(https://docs.microsoft.com/en-us/azure/azure-monitor/app/javascript-click-analytics-plugin) implemented in the application**.]D;]A;]D;]A;### Defining Feature Metrics]D;]A;The HEART Framework considers a specific capability of an experience as a *feature*. This workbook identifies features with the *parentId* attribute within the Click Analytics plugin. Some examples of features include the following:]D;]A;* *a favorite button on a social media post*]D;]A;* *a search box within a website*]D;]A;* *a refresh button in a browser* ]D;]A;]D;]A;]D;]A;| Metric                   | Definition                                                                                                            | Question Answered                                           |]D;]A;|--------------------------|-----------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|]D;]A;| Net New Active Users (Feature)  | Count of users who have interacted with the feature for the first time                                                        | How quickly is this feature gaining new users?               |]D;]A;| Feature Active Users     | Count of users who have performed a user-initiated action on a specific feature                                       | How many users are actively using this feature?             |]D;]A;| Interactions             | Median number of user-initiated actions on a specific feature over a time period                                      | How deep is the usage for this feature?                |]D;]A;| Retained Users (Feature) | Count of Active Users for this feature who were also Active for this feature the previous period                      | How many users continually interact with this feature?       |]D;]A;| Retention (Feature)      | Proportion of Active Users for this feature from the previous period who are also Active for this feature this period | What percent of users continually interact with this feature? |]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# # Métriques de la fonctionnalité]D;]A;]D;]A;# # # Pourquoi les métriques de la fonctionnalité ?]D;]A;Les métriques de fonctionnalités permettent aux propriétaires de produits d’explorer les métriques HEART pour mieux comprendre les tendances. Les métriques de fonctionnalité permettent aux propriétaires de produits de comprendre les fonctionnalités de l’impact sur le produit à un niveau plus granulaire que les métriques de niveau d’expérimentation. Cette granularité accrue permet d’identifier les pilotes de rétention et les zones à améliorer, rationalisant le développement de produits.]D;]A;]D;]A; # # # Mesurer les métriques de la fonctionnalité]D;]A;Comme les utilisateurs actifs doivent avoir au moins un événement de télémétrie avec un actionType, ** les métriques de la fonctionnalité requièrent le [plug-in Click Analytics pour Application Insights]5D; (https://docs.microsoft.com/en-us/azure/azure-monitor/app/javascript-click-analytics-plugin) implémenté dans l’application **.]D;]A;]D;]A;### Definir les métriques de la fonctionnalité]D;]A; L’infrastructure HEART considère une fonctionnalité spécifique d’une expérimentation *. Ce classeur identifie les fonctionnalités avec l’attribut * parentId * dans le plug-in de clics Analytics. Voici quelques exemples de fonctionnalités :]D;]A;* * un bouton favori sur une publication de réseau social *]D;]A;* * une zone de recherche dans un site Web *]D;]A;* * un bouton Actualiser dans un navigateur * ]D;]A;]D;]A;]D;]A;| | Métrique | Définition | Question traitée |]D;]A;|--------------------------|-----------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|]D;]A;| Nouveaux utilisateurs actifs nets (fonctionnalité) | Nombre d’utilisateurs ayant interagi avec la fonctionnalité pour la première fois | Quelle est la rapidité de cette fonctionnalité ?]D;               ]A;| Fonctionnalités actives des utilisateurs | Nombre d’utilisateurs ayant effectué une action exécutée par l’utilisateur sur une fonctionnalité spécifique | Combien d’utilisateurs utilisent-ils activement cette fonctionnalité ?]D;]A;             | Interactions | Nombre médian d’actions initiées par l’utilisateur sur une fonctionnalité spécifique sur une période de temps | Quelle est la profondeur d’utilisation de cette fonctionnalité ?                |]D;]A;| Utilisateurs retenus (fonctionnalité) | Nombre d’utilisateurs actifs pour cette fonctionnalité qui étaient également actifs pour cette fonctionnalité la période précédente | Combien d’utilisateurs interagissent sans cesse avec cette fonction ?        |]D;]A;|Rétention (fonctionnalité) | Proportion d’utilisateurs actifs pour cette fonctionnalité à partir de la période précédente qui sont également actifs pour cette fonctionnalité cette période | Quel est le pourcentage d’utilisateurs qui interagissent continuellement avec cette fonctionnalité ? |]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group0.content.items.FeatureMetricsOverview.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Feature Metrics Overview]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Vue d’ensemble des métriques de fonctionnalités]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group0.content.items.UsersbyFeature.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[The query returned no results - Ensure Click Analytics attribute parentId is instrumented.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[La requête n’a retourné aucun résultat. Vérifiez que l’attribut parentId Click Analytics est instrumenté.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group0.content.items.UsersbyFeature.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Users by Feature]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Utilisateurs par fonctionnalité]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group0.content.items.WorkbookParametersCopy.content.parameters.1aca87731d7c49ef8833bb9162ed947f.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Select Authenticated Users (most accurate) if user_AuthenticatedId is available. Otherwise, select Anonymous Users (least accurate) based on anonymous user_Id.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Sélectionnez Utilisateurs authentifiés (le plus précis) si user_AuthenticatedId est disponible. Sinon, sélectionnez Utilisateurs anonymes (le moins précis) en fonction des user_Id anonymes.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group0.content.items.WorkbookParametersCopy.content.parameters.8d60d839d1b74482b239f654221134a1.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Operating System]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Système d'exploitation]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
