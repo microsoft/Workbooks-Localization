@@ -14,6 +14,9 @@
         <Item ItemId=";(...) itle" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Active Users (Feature)]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Usuários Ativos (Recurso)]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -23,6 +26,9 @@
         <Item ItemId=";(...) itle" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Median Interactions per User]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Interações Medianas por Usuário]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -32,6 +38,9 @@
         <Item ItemId=";(...) itle" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Net New Active Users (Feature)]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Novos Usuários Ativos Líquidos (Recurso)]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -41,6 +50,9 @@
         <Item ItemId=";(...) .title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Retained Users (Feature)]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Usuários retidos (recurso)]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -50,6 +62,9 @@
         <Item ItemId=";(...) le" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Retention (Feature)]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Retenção (Recurso)]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -57,42 +72,63 @@
       <Item ItemId=";items.group0.content.items.DateGrainCopy.content.parameters.cececf9ae1b54793bcf4e7bcde1fb739.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Date Grain]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Granularidade de Datas]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group0.content.items.FeatureMetrics.content.items.FeatureParameterMissing.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No Feature is selected. Please select a value from the Feature parameter. Note: The Feature parameter requires the Click Analytics attribute parentId.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Nenhum Recurso selecionado. Selecione um valor no parâmetro Recurso. Observação: o parâmetro Recurso requer o parentId do atributo Análise de Cliques.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group0.content.items.FeatureMetricsOverview.content.items.FeatureMetricsDefintions.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Feature Metrics]D;]A;]D;]A;### Why Feature Metrics?]D;]A;Feature Metrics allow for product owners to drill-down into the HEART Metrics to better understand trends. Feature Metrics allow product owners to understand the impact features have on the product on a more granular level than the experience-level metrics. This increased granularity helps identify Retention drivers and areas for improvement, streamlining product development.]D;]A;]D;]A;### Measuring Feature Metrics]D;]A;As Active Users must have at least one telemetry event with an actionType, **Feature metrics require the [Click Analytics plugin for Application Insights]5D;(https://docs.microsoft.com/en-us/azure/azure-monitor/app/javascript-click-analytics-plugin) implemented in the application**.]D;]A;]D;]A;### Defining Feature Metrics]D;]A;The HEART Framework considers a specific capability of an experience as a *feature*. This workbook identifies features with the *parentId* attribute within the Click Analytics plugin. Some examples of features include the following:]D;]A;* *a favorite button on a social media post*]D;]A;* *a search box within a website*]D;]A;* *a refresh button in a browser* ]D;]A;]D;]A;]D;]A;| Metric                   | Definition                                                                                                            | Question Answered                                           |]D;]A;|--------------------------|-----------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|]D;]A;| Net New Active Users (Feature)  | Count of users who have interacted with the feature for the first time                                                        | How quickly is this feature gaining new users?               |]D;]A;| Feature Active Users     | Count of users who have performed a user-initiated action on a specific feature                                       | How many users are actively using this feature?             |]D;]A;| Interactions             | Median number of user-initiated actions on a specific feature over a time period                                      | How deep is the usage for this feature?                |]D;]A;| Retained Users (Feature) | Count of Active Users for this feature who were also Active for this feature the previous period                      | How many users continually interact with this feature?       |]D;]A;| Retention (Feature)      | Proportion of Active Users for this feature from the previous period who are also Active for this feature this period | What percent of users continually interact with this feature? |]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Métricas de Recurso]D;]A;]D;]A;### Por que Métricas de Recurso?]D;]A;As Métricas de Recursos permitem que os proprietários de produtos se aprofundem nas Métricas HEART para entender melhor as tendências. As Métricas de Recurso permitem que os proprietários do produto entendam o impacto dos recursos no produto em um nível mais granular do que as métricas de nível de experiência. Essa granularidade aumentada ajuda a identificar as unidades de Retenção e as áreas para melhoria, otimizando o desenvolvimento de produtos.]D;]A;]D;]A;### Medindo as Métricas de Recurso]D;]A;Como os Usuários Ativos têm pelo menos um evento de telemetria com o actionType, **As métricas de recurso exigem o [plug-in Análise de Cliques do Application Insights]5D;(https://docs.microsoft.com/en-us/azure/azure-monitor/app/javascript-click-analytics-plugin) implementado no aplicativo**.]D;]A;]D;]A;### Definindo as Métricas de Recurso]D;]A;A Estrutura HEART considera uma capacidade específica de uma experiência como um *recurso*. Esta pasta de trabalho identifica os recursos com o atributo *parentId* no plug-in Análise de Cliques. Alguns dos exemplos de recursos incluem os seguintes:]D;]A;* *um botão favorito em uma postagem nas redes sociais*]D;]A;* *uma caixa de pesquisa em um site*]D;]A;* *um botão atualizar em um navegador* ]D;]A;]D;]A;]D;]A;| Métrica                   | Definição                                                                                                            | Pergunta Respondida                                           |]D;]A;|--------------------------|-----------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|]D;]A;| Novos Usuários Ativos Líquido (Recurso)  | Número de usuários que interagiram com o recurso pela primeira vez                                                        | Com que rapidez esse recurso está conquistando novos usuários?               |]D;]A;| Recurso de Usuários Ativos     | Número de usuários que executaram uma ação iniciada pelo usuário em um recurso específico                                       | Quantos usuários estão usando ativamente esse recurso?             |]D;]A;| Interações             | Número mediano de ações iniciadas pelo usuário em um recurso específico durante um período de tempo                                      | Qual a extensão do uso desse recurso?                |]D;]A;| Usuários Retidos (Recurso) | Número de Usuários Ativos que também estavam ativos nesse recurso no período anterior                      | Quantos usuários interagem continuamente com esse recurso?       |]D;]A;| Retenção (Recurso)      | Proporção de usuários que estiveram ativos nesse recurso tanto no período anterior quanto nesse período | Qual porcentagem de usuários interage continuamente com esse recurso? |]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group0.content.items.FeatureMetricsOverview.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Feature Metrics Overview]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Visão Geral das Métricas de Recurso]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group0.content.items.UsersbyFeature.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[The query returned no results - Ensure Click Analytics attribute parentId is instrumented.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[A consulta não retornou resultados - Verifique se o parentId do atributo Análise de Cliques é instrumentado.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group0.content.items.UsersbyFeature.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Users by Feature]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Usuários por recurso]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group0.content.items.WorkbookParametersCopy.content.parameters.1aca87731d7c49ef8833bb9162ed947f.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Select Authenticated Users (most accurate) if user_AuthenticatedId is available. Otherwise, select Anonymous Users (least accurate) based on anonymous user_Id.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Selecione Usuários Autenticados (mais precisos) se user_AuthenticatedId estiver disponível. Caso contrário, selecione Usuários Anônimos (menos precisos) com base na Id_usuário anônimo.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

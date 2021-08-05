@@ -14,6 +14,9 @@
         <Item ItemId=";(...) itle" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Active Users (Feature)]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Etkin Kullanıcılar (Özellik)]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -23,6 +26,9 @@
         <Item ItemId=";(...) itle" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Median Interactions per User]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Kullanıcı Başına Ortanca Etkileşimler]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -32,6 +38,9 @@
         <Item ItemId=";(...) itle" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Net New Active Users (Feature)]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Net Yeni Etkin Kullanıcılar (Özellik)]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -50,6 +59,9 @@
         <Item ItemId=";(...) le" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Retention (Feature)]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Elde Tutma (Özellik)]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -57,30 +69,45 @@
       <Item ItemId=";items.group0.content.items.DateGrainCopy.content.parameters.cececf9ae1b54793bcf4e7bcde1fb739.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Date Grain]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Tarih Dilimi]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group0.content.items.FeatureMetrics.content.items.FeatureParameterMissing.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No Feature is selected. Please select a value from the Feature parameter. Note: The Feature parameter requires the Click Analytics attribute parentId.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Özellik seçilmedi. Lütfen Özellik parametresinden bir değer seçin. Not: Özellik parametresi, Click Analytics öznitelik üst kimliği gerektirir.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group0.content.items.FeatureMetricsOverview.content.items.FeatureMetricsDefintions.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Feature Metrics]D;]A;]D;]A;### Why Feature Metrics?]D;]A;Feature Metrics allow for product owners to drill-down into the HEART Metrics to better understand trends. Feature Metrics allow product owners to understand the impact features have on the product on a more granular level than the experience-level metrics. This increased granularity helps identify Retention drivers and areas for improvement, streamlining product development.]D;]A;]D;]A;### Measuring Feature Metrics]D;]A;As Active Users must have at least one telemetry event with an actionType, **Feature metrics require the [Click Analytics plugin for Application Insights]5D;(https://docs.microsoft.com/en-us/azure/azure-monitor/app/javascript-click-analytics-plugin) implemented in the application**.]D;]A;]D;]A;### Defining Feature Metrics]D;]A;The HEART Framework considers a specific capability of an experience as a *feature*. This workbook identifies features with the *parentId* attribute within the Click Analytics plugin. Some examples of features include the following:]D;]A;* *a favorite button on a social media post*]D;]A;* *a search box within a website*]D;]A;* *a refresh button in a browser* ]D;]A;]D;]A;]D;]A;| Metric                   | Definition                                                                                                            | Question Answered                                           |]D;]A;|--------------------------|-----------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|]D;]A;| Net New Active Users (Feature)  | Count of users who have interacted with the feature for the first time                                                        | How quickly is this feature gaining new users?               |]D;]A;| Feature Active Users     | Count of users who have performed a user-initiated action on a specific feature                                       | How many users are actively using this feature?             |]D;]A;| Interactions             | Median number of user-initiated actions on a specific feature over a time period                                      | How deep is the usage for this feature?                |]D;]A;| Retained Users (Feature) | Count of Active Users for this feature who were also Active for this feature the previous period                      | How many users continually interact with this feature?       |]D;]A;| Retention (Feature)      | Proportion of Active Users for this feature from the previous period who are also Active for this feature this period | What percent of users continually interact with this feature? |]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Özellik Ölçümleri]D;]A;]D;]A;### Neden Özellik Ölçümleri?]D;]A;Özellik Ölçümleri, ürün sahiplerinin eğilimleri daha iyi anlamak için HEART Ölçümlerinde detaya gitmesini sağlar. Özellik Ölçümleri, ürün sahiplerinin, özelliklerin ürün üzerindeki etkisini deneyim düzeyindeki ölçümlere göre daha ayrıntılı bir düzeyde anlamasına olanak tanır. Bu artan ayrıntı düzeyi, geliştirme için Elde Tutma sürücülerinin ve alanlarının belirlenmesine yardımcı olarak ürün geliştirmesini kolaylaştırır.]D;]A;]D;]A;### Özellik Ölçümlerini Ölçme]D;]A;Etkin Kullanıcıların actionType içeren en az bir telemetri olayına sahip olması gerektiğinden **Özellik ölçümleri, uygulamada [Application Insights için Click Analytics eklentisinin]5D;(https://docs.microsoft.com/en-us/azure/azure-monitor/app/javascript-click-analytics-plugin) uygulanmasını gerektirir**.]D;]A;]D;]A;### Özellik Ölçümlerini Tanımlama]D;]A;HEART Framework, bir deneyimin belirli bir yeteneğini *özellik* olarak kabul eder. Bu çalışma kitabı, Click Analytics içindeki *parentId* özniteliğine sahip özellikleri belirler. Bazı özellik örneklerine şunlar dahildir:]D;]A;* *sosyal medya gönderisindeki bir sık kullanılan düğmesi*]D;]A;* *web sitesi içindeki bir arama kutusu*]D;]A;* *bir tarayıcıdaki yenile düğmesi* ]D;]A;]D;]A;]D;]A;| Ölçüm                   | Tanım                                                                                                            | Yanıtlanan Soru                                           |]D;]A;|--------------------------|-----------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|]D;]A;| Net Yeni Etkin Kullanıcılar (Özellik)  | Özellikle ilk kez etkileşim kuran kullanıcı sayısı                                                        | Bu özellik ne kadar hızlı kullanıcı kazanıyor?               |]D;]A;| Özellik Etkin Kullanıcıları     | Belirli bir özellik üzerinde kullanıcı tarafından başlatılan bir eylem gerçekleştiren kullanıcı sayısı                                       | Bu özelliği etkin olarak kaç kullanıcı kullanıyor?             |]D;]A;| Etkileşimler             | Bir zaman dilimi içindeki belirli bir özellik üzerinde kullanıcı tarafından başlatılan eylemlerin ortalama sayısı                                      | Bu özelliğin kullanımı ne kadar derin?                |]D;]A;| Elde Tutulan Kullanıcılar (Özellik) | Bu özellik için önceki dönemde de Etkin olan Etkin Kullanıcıların sayısı                      | Kaç kullanıcı bu özellikle sürekli olarak etkileşim kuruyor?       |]D;]A;| Elde Tutma (Özellik)      | Bu özellik için bu dönem de Etkin olan önceki dönemdeki Etkin Kullanıcıların oranı | Kullanıcıların yüzde kaçı bu özellikle sürekli olarak etkileşim kuruyor? |]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group0.content.items.FeatureMetricsOverview.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Feature Metrics Overview]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Özellik Ölçümlerine Genel Bakış]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group0.content.items.UsersbyFeature.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[The query returned no results - Ensure Click Analytics attribute parentId is instrumented.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Sorgu hiçbir sonuç döndürmedi - Click Analytics öznitelik üst kimliğine izleme eklendiğinden emin olun.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -93,6 +120,9 @@
       <Item ItemId=";items.group0.content.items.WorkbookParametersCopy.content.parameters.1aca87731d7c49ef8833bb9162ed947f.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Select Authenticated Users (most accurate) if user_AuthenticatedId is available. Otherwise, select Anonymous Users (least accurate) based on anonymous user_Id.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[User_AuthenticatedId kullanılabiliyorsa, Kimliği Doğrulanmış Kullanıcıları (en doğru) seçin. Aksi takdirde anonim user_Id’yi temel alarak Anonim Kullanıcıları (en az doğru) seçin.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
