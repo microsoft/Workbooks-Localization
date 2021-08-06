@@ -14,6 +14,9 @@
         <Item ItemId=";(...) itle" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Active Users (Feature)]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Aktiva användare (funktion)]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -23,6 +26,9 @@
         <Item ItemId=";(...) itle" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Median Interactions per User]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Medianinteraktioner per användare]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -32,6 +38,9 @@
         <Item ItemId=";(...) itle" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Net New Active Users (Feature)]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Nya aktiva användare (funktion)]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -50,6 +59,9 @@
         <Item ItemId=";(...) le" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Retention (Feature)]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Kvarhållning (funktion)]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -57,30 +69,45 @@
       <Item ItemId=";items.group0.content.items.DateGrainCopy.content.parameters.cececf9ae1b54793bcf4e7bcde1fb739.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Date Grain]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Tidsintervall]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group0.content.items.FeatureMetrics.content.items.FeatureParameterMissing.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No Feature is selected. Please select a value from the Feature parameter. Note: The Feature parameter requires the Click Analytics attribute parentId.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Ingen funktion har valts. Välj ett värde från funktionsparametern. Obs! Parametern Feature kräver attributet parentId för Click Analytics.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group0.content.items.FeatureMetricsOverview.content.items.FeatureMetricsDefintions.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Feature Metrics]D;]A;]D;]A;### Why Feature Metrics?]D;]A;Feature Metrics allow for product owners to drill-down into the HEART Metrics to better understand trends. Feature Metrics allow product owners to understand the impact features have on the product on a more granular level than the experience-level metrics. This increased granularity helps identify Retention drivers and areas for improvement, streamlining product development.]D;]A;]D;]A;### Measuring Feature Metrics]D;]A;As Active Users must have at least one telemetry event with an actionType, **Feature metrics require the [Click Analytics plugin for Application Insights]5D;(https://docs.microsoft.com/en-us/azure/azure-monitor/app/javascript-click-analytics-plugin) implemented in the application**.]D;]A;]D;]A;### Defining Feature Metrics]D;]A;The HEART Framework considers a specific capability of an experience as a *feature*. This workbook identifies features with the *parentId* attribute within the Click Analytics plugin. Some examples of features include the following:]D;]A;* *a favorite button on a social media post*]D;]A;* *a search box within a website*]D;]A;* *a refresh button in a browser* ]D;]A;]D;]A;]D;]A;| Metric                   | Definition                                                                                                            | Question Answered                                           |]D;]A;|--------------------------|-----------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|]D;]A;| Net New Active Users (Feature)  | Count of users who have interacted with the feature for the first time                                                        | How quickly is this feature gaining new users?               |]D;]A;| Feature Active Users     | Count of users who have performed a user-initiated action on a specific feature                                       | How many users are actively using this feature?             |]D;]A;| Interactions             | Median number of user-initiated actions on a specific feature over a time period                                      | How deep is the usage for this feature?                |]D;]A;| Retained Users (Feature) | Count of Active Users for this feature who were also Active for this feature the previous period                      | How many users continually interact with this feature?       |]D;]A;| Retention (Feature)      | Proportion of Active Users for this feature from the previous period who are also Active for this feature this period | What percent of users continually interact with this feature? |]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Funktionsmått]D;]A;]D;]A;### Varför funktionsmått?]D;]A;Funktions mått för produktägare kan detaljgranskas i hjärtat-måtten för att bättre förstå trender. Funktionsmåtten gör det möjligt för produktägarna att förstå konsekvenserna av produkten på en mer detaljerad nivå än måtten på upplevelsen. Den här ökade kornigheten hjälper till att identifiera bevarande drivrutiner och områden för förbättring, strömlinjeformad produktutveckling.]D;]A;]D;]A;### Mät funktions mått]D;]A;Eftersom aktiva användare måste ha minst en telemetri-händelse med en åtgärds, ** funktionsmått krävs [Click Analytics plugin for Application Insights]5D; (https://docs.microsoft.com/en-us/azure/azure-monitor/app/javascript-click-analytics-plugin) implementeras i programmet**]D;]A;]D;]A;### Definiera funktionsmått]D;]A;HJÄRTAT-ramverket betraktar en viss funktion som en *funktion*. Den här arbetsboken identifierar funktioner med attributet *inattribut* i Click Analytics-plugin-programmet. Några exempel på funktioner är följande:]D;]A;* *en favorit knapp i ett socialt media inlägg*]D;]A;* * en sökruta på en webbplats**]D;]A;* *en uppdaterings knapp i en webbläsare* ]D;]A;]D;]A;]D;]A;| Mått                   | Definition                                                                                                            | Svarad fråga                                           |]D;]A;|--------------------------|-----------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|]D;]A;| Funktions aktiva användare | Antal användare som har utfört en åtgärd som initierats av användaren för en specifik funktion                                                        | Hur snabbt är den här funktionen som ger nya användare?               |]D;]A;| Feature Active Users     | Antal användare som har utfört en åtgärd som initierats av användaren för en specifik funktion                                       |  Hur många användare använder aktivt den här funktionen?             |]D;]A;| Interaktioner             | Median antal åtgärder som initierats av användaren för en specifik funktion under en tidsperiod                                      | Hur djupt används den här funktionen?                |]D;]A;| Kvarhållning (funktion) |  | Andel aktiva användare för den här funktionen från föregående period som också är aktiva för den här funktionen den här perioden                      | Hur många procent av användarna interagerar kontinuerligt med den här funktionen?        |]D;]A;| Kvarhållning (funktion)      | Andel aktiva användare för denna funktion från föregående period som också är aktiva för denna funktion denna period | Hur många procent av användarna interagerar kontinuerligt med den här funktionen? |]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group0.content.items.FeatureMetricsOverview.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Feature Metrics Overview]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Översikt över funktionsmått]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group0.content.items.UsersbyFeature.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[The query returned no results - Ensure Click Analytics attribute parentId is instrumented.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Frågan returnerade inga resultat – kontrollera att attributet parentId för Click Analytics har instrumenterats.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -93,6 +120,9 @@
       <Item ItemId=";items.group0.content.items.WorkbookParametersCopy.content.parameters.1aca87731d7c49ef8833bb9162ed947f.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Select Authenticated Users (most accurate) if user_AuthenticatedId is available. Otherwise, select Anonymous Users (least accurate) based on anonymous user_Id.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Välj Autentiserade användare (mest exakta) om user_AuthenticatedId är tillgänglig. Annars väljer du Anonyma användare (minst exakta) baserat på anonyma user_Id.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

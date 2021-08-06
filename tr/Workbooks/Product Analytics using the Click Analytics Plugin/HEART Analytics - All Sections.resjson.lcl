@@ -14,6 +14,9 @@
         <Item ItemId=";(...) elSettings.Completion.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Completion%]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Tamamlanma Yüzdesi]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -23,6 +26,9 @@
         <Item ItemId=";(...) on" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[| Source          | Attribute            | Description                                |]D;]A;|-----------------|----------------------|--------------------------------------------|]D;]A;| customEvents    | user_AuthenticatedId | unique authenticated user identifier       |]D;]A;| customEvents    | session_Id           | unique session identifier                  |]D;]A;| customEvents    | appName              | unique Application Insights app identifier |]D;]A;| customEvents    | itemType             | category of customEvents record            |]D;]A;| customEvents    | timestamp            | datetime of event                          |]D;]A;| customEvents    | operation_Id         | correlate telemetry events                 |]D;]A;| customEvents    | user_Id         	 | unique user identifier                 	  |]D;]A;| customEvents*   | parentId             | name of feature                            |]D;]A;| customEvents*   | pageName             | name of page                               |]D;]A;| customEvents*   | actionType           | category of Click Analytics record         |]D;]A;| pageViews       | user_AuthenticatedId | unique authenticated user identifier       |]D;]A;| pageViews       | session_Id           | unique session identifier                  |]D;]A;| pageViews       | appName              | unique Application Insights app identifier |]D;]A;| pageViews       | timestamp            | datetime of event                          |]D;]A;| pageViews       | operation_Id         | correlate telemetry events                 |]D;]A;| pageViews       | user_Id         	 | unique user identifier                     |]D;]A;]D;]A;*The [Click Analytics plugin]5D;(https://docs.microsoft.com/en-us/azure/azure-monitor/app/javascript-click-analytics-plugin) must be implemented to emit these attributes.]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[| Kaynak          | Öznitelik            | Açıklama                                |]D;]A;|-----------------|----------------------|--------------------------------------------|]D;]A;| customEvents    | user_AuthenticatedId | kimliği doğrulanmış benzersiz kullanıcı tanımlayıcısı       |]D;]A;| customEvents    | session_Id           | benzersiz kullanıcı tanımlayıcısı                  |]D;]A;| customEvents    | appName              | benzersiz Application Insights uygulama tanımlayıcısı |]D;]A;| customEvents    | itemType             | customEvents kaydının kategorisi            |]D;]A;| customEvents    | timestamp            | olayın tarih/saati                          |]D;]A;| customEvents    | operation_Id         | bağıntılı telemetri olayları                 |]D;]A;| customEvents    | user_Id         	 | benzersiz kullanıcı tanımlayıcısı                 	  |]D;]A;| customEvents*   | parentId             | özelliğin adı                            |]D;]A;| customEvents*   | pageName             | sayfanın adı                               |]D;]A;| customEvents*   | actionType           | Click Analytics kaydının kategorisi         |]D;]A;| pageViews       | user_AuthenticatedId | kimliği doğrulanmış benzersiz kullanıcı tanımlayıcısı       |]D;]A;| pageViews       | session_Id           | benzersiz oturum tanımlayıcısı                  |]D;]A;| pageViews       | appName              | benzersiz Application Insights uygulama tanımlayıcısı |]D;]A;| pageViews       | timestamp            | olayın tarih/saati                          |]D;]A;| pageViews       | operation_Id         | bağıntılı telemetri olayları                 |]D;]A;| pageViews       | user_Id         	 | benzersiz kullanıcı tanımlayıcısı                     |]D;]A;]D;]A;*Bu öznitelikleri yayımlamak için [Click Analytics eklentisinin]5D;(https://docs.microsoft.com/en-us/azure/azure-monitor/app/javascript-click-analytics-plugin) uygulanması gerekir.]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -30,54 +36,81 @@
       <Item ItemId=";items.BrowserParameterMissing.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# No Browser is selected. Please select a value from the Browser parameter.]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# Tarayıcı seçilmedi. Lütfen Tarayıcı parametresinden bir değer seçin.]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.ConversionScopeParameterMissing.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# No ConversionScope is selected. Please select a value from the ConversionScope parameter.]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# ConversionScope seçilmedi. Lütfen ConversionScope parametresinden bir değer seçin.]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.CountryParameterMissing.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# No Country is selected. Please select a value from the Country parameter.]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# Ülke seçilmedi. Lütfen Ülke parametresinden bir değer seçin.]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.DateGrain.content.parameters.8940997a18f04050927d913c85c76182.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Date Grain]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Tarih Dilimi]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.HEARTMetricsTitle.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## HEART Metrics: User Activity Funnel]D;]A;---]D;]A;The below KPIs represent a subset of HEART Metrics. These visuals describe the user activity funnel: Adoption -> Engagement -> Retention.]D;]A;]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## HEART Ölçümleri: Kullanıcı Etkinliği Hunisi]D;]A;---]D;]A;Aşağıdaki KPI'lar HEART ölçümlerin bir alt kümesini temsil eder. Bu görseller, kullanıcı etkinliği hunisini tanımlar: Benimseme -> Etkileşim -> Elde Tutma.]D;]A;]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.HEARTOverview.content.items.RetentionTitle.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Retention: Month-over-Month Retained Users]D;]A;Count of unique users who were active in both the current and previous time periods.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Elde Tutma: Aylık Elde Tutulan Kullanıcılar]D;]A;Hem geçerli hem de önceki dönemlerde etkin olan benzersiz kullanıcı sayısı.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.HEARTOverview.content.items.text8.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Adoption: Aware Users]D;]A;Count of unique users who have visited the experience.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Benimseme: Bilinçli Kullanıcılar]D;]A;Deneyimi ziyaret eden benzersiz kullanıcı sayısı.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.HEARTOverview.content.items.text8Copy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Engagement: Active Users]D;]A;Count of unique users who have voluntarily interacted with the experience.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Kullanıcı Etkileşimi: Etkin Kullanıcılar]D;]A;Bu deneyim ile gönüllü olarak etkileşim kuran benzersiz kullanıcı sayısı.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.HEARTSummaryTitle.content.items.Overview.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# HEART ]A;---]A;A product analytics framework that enables holistic measurement of a user experience by focusing on 5 dimensions captured through telemetry.]A;]A;The 5 dimensions of HEART enable measurement of **H**appiness, **E**ngagement, **A**doption, **R**etention & **T**ask Success.]A;]A;Adoption, Engagement, and Retention form a user activity funnel: Adoption -> Engagement -> Retention. Some users will load the application (**Adoption**). A subset of those users will then choose to click on a component within the app, such as a button (**Engagement**). Some of the users active in the application will choose to return (**Retention**). Completing **tasks successfully** drives users down this funnel: users will choose to come back to the application if they are productive in the application. Finally, **Happiness** is the outcome of the other 4 dimensions. A product owner can measure how effectively the product converts adopted users to retained users with Happiness: users who progress down the Adoption -> Engagement -> Retention funnel and complete tasks successfully will show higher satisfaction.]A;]A;]A;The HEART Framework uses the [Click Analytics plugin for Application Insights]5D;(https://docs.microsoft.com/en-us/azure/azure-monitor/app/javascript-click-analytics-plugin). To calculate HEART Metrics, **the Click Analytics plugin must be implemented in the application.** Visit the **Development Requirements** tab to learn more about telemetry implementation.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# HEART ]A;---]A;Telemetri aracılığıyla yakalanan 5 boyuta odaklanarak bir kullanıcı deneyiminin bütünsel ölçümünü sağlayan ürün analizi çerçevesi.]A;]A;HEART'ın 5 boyutu; Mutluluk (**H**appiness), Etkileşim (**E**ngagement), Benimseme (**A**doption), Elde Tutma (**R**etention) ve Görev Başarısının (**T**ask Success) ölçülmesini sağlar.]A;]A;Benimseme, Etkileşim ve Elde Tutma bir kullanıcı etkinliği hunisi oluşturur: Benimseme -> Etkileşim -> Elde Tutma. Bazı kullanıcılar uygulamayı yükler (**Benimseme**). Daha sonra bu kullanıcıların alt kümesi uygulamada düğme gibi bir bileşene tıklamayı seçer (**Etkileşim**). Uygulamadaki etkin bazı kullanıcılar geri dönmeyi seçer (**Elde Tutma**). **Görevlerin başarıyla** tamamlanması kullanıcıları bu huniye yönlendirir. Kullanıcılar uygulamada verimliyse uygulamaya geri dönmeyi seçer. Son olarak **Mutluluk** diğer 4 boyutun sonucudur. Ürün sahibi, Mutluluk ile ürünün benimsenen kullanıcıları ne kadar etkili bir şekilde elde tutulan kullanıcılara dönüştürdüğünü ölçebilir. Benimseme -> Etkileşim -> Elde Tutma hunisine ilerleyen ve görevleri başarıyla tamamlayan kullanıcılar daha yüksek memnuniyet gösterir.]A;]A;]A;HEART Çerçevesi [Application Insights için Click Analytics eklentisini]5D;(https://docs.microsoft.com/en-us/azure/azure-monitor/app/javascript-click-analytics-plugin) kullanır. HEART ölçümlerini hesaplamak için **uygulamada Click Analytics eklentisinin uygulanması gerekir.**Telemetri uygulama hakkında daha fazla bilgi için **Geliştirme Gereksinimleri** sekmesini ziyaret edin.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -93,24 +126,36 @@
       <Item ItemId=";items.OSParameterMissing.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# No Operating System is selected. Please select a value from the Operating System parameter.]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# İşletim Sistemi seçilmedi. Lütfen İşletim Sistemi parametresinden bir değer seçin.]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.ResourceParameterMissing.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# No Resource is selected. Please select a value from the Resource parameter.]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# Kaynak seçilmedi. Lütfen Kaynak parametresinden bir değer seçin.]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Tabs.content.links.27dab657c15047c58a5fb73b0d1dc928.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Adoption]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Benimseme]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Tabs.content.links.3a770d7bf7cc4f678f88595d7aef489b.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Development Requirements]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Geliştirme Gereksinimleri]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -126,18 +171,27 @@
       <Item ItemId=";items.Tabs.content.links.6e195d7785b74889a32c86895244e337.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Engagement]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Etkileşim]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Tabs.content.links.76c92d0938fa42c1877a9d73ce5a435c.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Task Success]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Görev Başarısı]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Tabs.content.links.8b97dc750ecc45e8aa11675cd1697888.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Feature Metrics]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Özellik Ölçümleri]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -153,12 +207,18 @@
       <Item ItemId=";items.Tabs.content.links.f21fcfe27dfa4ac092bfc637a4545921.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Happiness]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Mutluluk]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.TechnicalValidation.content.items.DataRetention.content.items.DataRetention.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Data Retention]D;]A;Learn more about data retention in the [Application Insights documentation]5D;(https://docs.microsoft.com/en-us/azure/azure-monitor/app/pricing#change-the-data-retention-period). For the most informed product decisions, at least 13 months of data is recommended to consider seasonality and year-over-year growth. ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Veri Saklama]D;]A;[Application Insights belgelerinde]5D;(https://docs.microsoft.com/en-us/azure/azure-monitor/app/pricing#change-the-data-retention-period) veri saklama hakkında daha fazla bilgi edinin. En bilinçli ürün kararları için mevsimselliği ve yıllık büyümeyi dikkate almak üzere en az 13 aylık veriler önerilir. ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -174,6 +234,9 @@
       <Item ItemId=";items.TechnicalValidation.content.items.DataValidation.content.items.AttributeCompletion.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Attribute Completion]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Öznitelik Tamamlama]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -186,48 +249,72 @@
       <Item ItemId=";items.TechnicalValidation.content.items.DataValidation.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Data Validation]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Veri Doğrulama]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.TechnicalValidation.content.items.TelemetryRequirements.content.items.DataDictionaryTitle.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Data Dictionary]D;]A;The required attributes to calculate HEART metrics are listed below.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Veri Sözlüğü]D;]A;HEART ölçümlerini hesaplamak için gereken öznitelikler aşağıda listelenmiştir.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.TechnicalValidation.content.items.TelemetryRequirements.content.items.text12.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Click Analytics for Application Insights]D;]A;The HEART Framework uses the [Click Analytics plugin for Application Insights]5D;(https://docs.microsoft.com/en-us/azure/azure-monitor/app/javascript-click-analytics-plugin). To calculate HEART Metrics, the **[Click Analytics plugin for Application Insights]5D;(https://docs.microsoft.com/en-us/azure/azure-monitor/app/javascript-click-analytics-plugin) must be implemented in the application**.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Application Insights için Application Insights]D;]A;HEART Çerçevesi [Application Insights için Click Analytics eklentisini]5D;(https://docs.microsoft.com/en-us/azure/azure-monitor/app/javascript-click-analytics-plugin) kullanır. HEART Ölçümlerini hesaplamak için uygulamada **[Application Insights için Click Analytics eklentisinin]5D;(https://docs.microsoft.com/en-us/azure/azure-monitor/app/javascript-click-analytics-plugin) uygulanması gerekir**.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.TechnicalValidation.content.items.TelemetryRequirements.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Telemetry Requirements]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Telemetri Gereksinimleri]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.TechnicalValidation.content.items.TelemetryWarnings.content.items.TelemetryWarnings.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Good news: no warnings found!]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[İyi haber: Uyarı bulunamadı!]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.TechnicalValidation.content.items.TelemetryWarnings.content.items.TelemetryWarningsTitle.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Telemetry Warnings]D;]A;Common data discrepancies, along with their suggestion resolutions, are listed below.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Telemetri Uyarıları]D;]A;Öneri çözümlemeleriyle birlikte sık karşılaşılan veri tutarsızlıkları aşağıda listelenmiştir.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.TechnicalValidation.content.items.TelemetryWarnings.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Telemetry Warnings]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Telemetri Uyarıları]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.TimeParameterMissing.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# No Time is selected. Please select a value from the Time parameter.]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# Zaman seçilmedi. Lütfen Zaman parametresinden bir değer seçin.]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -243,6 +330,9 @@
       <Item ItemId=";items.WorkbookParameters.content.parameters.9e1d860609ba47548321330814617d16.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Select Authenticated Users (most accurate) if user_AuthenticatedId is available. Otherwise, select Anonymous Users (least accurate) based on anonymous user_Id.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[user_AuthenticatedId kullanılabiliyorsa Kimliği Doğrulanmış Kullanıcıları (en doğru) seçin. Aksi takdirde anonim user_Id’yi temel alarak Anonim Kullanıcıları (en az doğru) seçin.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
