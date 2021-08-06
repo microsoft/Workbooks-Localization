@@ -14,6 +14,9 @@
         <Item ItemId=";(...) itle" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Active Users (Feature)]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[作用中使用者 (功能)]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -23,6 +26,9 @@
         <Item ItemId=";(...) itle" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Median Interactions per User]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[每位使用者的中位數互動]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -32,6 +38,9 @@
         <Item ItemId=";(...) itle" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Net New Active Users (Feature)]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[新的作用中使用者淨值 (功能)]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -53,6 +62,9 @@
         <Item ItemId=";(...) le" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Retention (Feature)]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[保留 (功能)]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -60,30 +72,45 @@
       <Item ItemId=";items.group0.content.items.DateGrainCopy.content.parameters.cececf9ae1b54793bcf4e7bcde1fb739.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Date Grain]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[日期精細度]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group0.content.items.FeatureMetrics.content.items.FeatureParameterMissing.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No Feature is selected. Please select a value from the Feature parameter. Note: The Feature parameter requires the Click Analytics attribute parentId.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[未選取任何功能。請從功能參數選取值。注意: 功能參數需要 Click Analytics 屬性 parentId。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group0.content.items.FeatureMetricsOverview.content.items.FeatureMetricsDefintions.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Feature Metrics]D;]A;]D;]A;### Why Feature Metrics?]D;]A;Feature Metrics allow for product owners to drill-down into the HEART Metrics to better understand trends. Feature Metrics allow product owners to understand the impact features have on the product on a more granular level than the experience-level metrics. This increased granularity helps identify Retention drivers and areas for improvement, streamlining product development.]D;]A;]D;]A;### Measuring Feature Metrics]D;]A;As Active Users must have at least one telemetry event with an actionType, **Feature metrics require the [Click Analytics plugin for Application Insights]5D;(https://docs.microsoft.com/en-us/azure/azure-monitor/app/javascript-click-analytics-plugin) implemented in the application**.]D;]A;]D;]A;### Defining Feature Metrics]D;]A;The HEART Framework considers a specific capability of an experience as a *feature*. This workbook identifies features with the *parentId* attribute within the Click Analytics plugin. Some examples of features include the following:]D;]A;* *a favorite button on a social media post*]D;]A;* *a search box within a website*]D;]A;* *a refresh button in a browser* ]D;]A;]D;]A;]D;]A;| Metric                   | Definition                                                                                                            | Question Answered                                           |]D;]A;|--------------------------|-----------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|]D;]A;| Net New Active Users (Feature)  | Count of users who have interacted with the feature for the first time                                                        | How quickly is this feature gaining new users?               |]D;]A;| Feature Active Users     | Count of users who have performed a user-initiated action on a specific feature                                       | How many users are actively using this feature?             |]D;]A;| Interactions             | Median number of user-initiated actions on a specific feature over a time period                                      | How deep is the usage for this feature?                |]D;]A;| Retained Users (Feature) | Count of Active Users for this feature who were also Active for this feature the previous period                      | How many users continually interact with this feature?       |]D;]A;| Retention (Feature)      | Proportion of Active Users for this feature from the previous period who are also Active for this feature this period | What percent of users continually interact with this feature? |]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## 功能計量]D;]A;]D;]A;### 為什麼使用功能計量?]D;]A;功能計量允許產品擁有者向下鑽研到 HEART 計量，以更好地了解趨勢。功能計量允許產品擁有者在比體驗層級計量高的細微性層級上了解對產品的影響功能。這種增加的細微性有助於找出保留的驅動因素及需要改進的領域，以簡化產品開發。]D;]A;]D;]A;### 測量功能計量]D;]A;因為作用中的使用者必須至少有一個具有 actionType 的遙測事件，**功能計量需要在應用程式中實作 [適用於 Application Insights 的 Click Analytics 外掛程式]5D;(https://docs.microsoft.com/en-us/azure/azure-monitor/app/javascript-click-analytics-plugin)**。]D;]A;]D;]A;### 定義功能計量]D;]A;HEART 架構會將體驗的特定功能視為 *功能*。此活頁簿會在 Click Analytics 外掛程式中識別具有 *parentId* 屬性的功能。以下為一些功能的範例:]D;]A;* *社交媒體貼文上的我的最愛按鈕*]D;]A;* *網站中的搜尋方塊*]D;]A;* *瀏覽器中的重新整理按鈕*]D;]A;]D;]A;]D;]A;| 計量                   | 定義                                                                                                            | 已解答問題                                           |]D;]A;|--------------------------|-----------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|]D;]A;| 新的作用中使用者淨值 (功能) | 第一次與功能進行交互的使用者計數                                                        | 此功能取得新使用者的速度有多快?               |]D;]A;| 功能作用中使用者     | 在特定功能上執行使用者起始動作的使用者計數                                       | 多少使用者正在使用此功能?             |]D;]A;| 互動             | 在一段時間內，特定功能上使用者起始動作的中位數數值                                      | 此功能的使用量深度為何?                |]D;]A;| 保留的使用者 (功能)| 此功能作用中，前一個期間對於此功能中的使用者計數                      | 多少使用者持續與此功能互動?       |]D;]A;| 保留 (功能)     | 前一個期間對於此功能作用中的使用者在此期間也使用此功能的比例 | 多少百分比的使用者會持續使用此功能? |]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group0.content.items.FeatureMetricsOverview.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Feature Metrics Overview]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[功能計量概觀]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group0.content.items.UsersbyFeature.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[The query returned no results - Ensure Click Analytics attribute parentId is instrumented.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[查詢未傳回任何結果 - 請確認已檢測 Click Analytics 屬性 parentId。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -99,6 +126,9 @@
       <Item ItemId=";items.group0.content.items.WorkbookParametersCopy.content.parameters.1aca87731d7c49ef8833bb9162ed947f.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Select Authenticated Users (most accurate) if user_AuthenticatedId is available. Otherwise, select Anonymous Users (least accurate) based on anonymous user_Id.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[若有 user_AuthenticatedId 可用，請選取已驗證的使用者 (最準確)。否則，請根據匿名 user_Id，選取匿名使用者 (較不精確)。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
