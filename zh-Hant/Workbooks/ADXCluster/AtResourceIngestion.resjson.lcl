@@ -43,10 +43,13 @@
         </Item>
         <Item ItemId=";(...) type.content.items.batchingbytypetile.content.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Batching by type]D;]A;</span> <br>Batching type: whether the batch reached batching time, data size, or number of files limit set by batching policy]]></Val>
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Batching by type]D;]A;</span> <br>The types of triggers that sealed the batches (for example, the batch reached batching time, data size, or the number of files limit defined by the batching policy).]D;]A;</span> <br> [Learn more about batching types]5D;(https://docs.microsoft.com/azure/data-explorer/kusto/management/batchingpolicy#batching-types)]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> 批次排序類型]D;]A;</span> <br>批次類型: 指出批次是否達到批次原則所設定的批次時間、資料大小或檔案數目限制]]></Val>
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> 批次排序類型]D;]A;</span> <br>密封批次的觸發程序類型 (例如，批次達到批次原則所定義的批次時間、資料大小或檔案數目限制)。]D;]A;</span> <br> [深入了解批次類型]5D;(https://docs.microsoft.com/azure/data-explorer/kusto/management/batchingpolicy#batching-types)]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Batching by type]D;]A;</span> <br>Batching type: whether the batch reached batching time, data size, or number of files limit set by batching policy]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -205,10 +208,13 @@
         </Item>
         <Item ItemId=";(...) Copy.content.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Batching queue length]D;]A;</span> <br>Time in seconds from when the oldest message in the batching manager's input queue has been inserted.]]></Val>
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Batching queue length]D;]A;</span> <br>Number of pending messages in in the Batching manager's input queue.]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> 批次佇列長度]D;]A;</span> <br>自從批次管理員輸入佇列中最早的訊息插入後，所經過的時間 (秒)。]]></Val>
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> 批次佇列長度]D;]A;</span> <br>批次管理員輸入佇列中的暫止訊息數目。]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Batching queue length]D;]A;</span> <br>Time in seconds from when the oldest message in the batching manager's input queue has been inserted.]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
