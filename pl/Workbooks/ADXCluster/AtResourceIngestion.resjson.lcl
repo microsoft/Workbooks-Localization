@@ -43,10 +43,13 @@
         </Item>
         <Item ItemId=";(...) type.content.items.batchingbytypetile.content.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Batching by type]D;]A;</span> <br>Batching type: whether the batch reached batching time, data size, or number of files limit set by batching policy]]></Val>
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Batching by type]D;]A;</span> <br>The types of triggers that sealed the batches (for example, the batch reached batching time, data size, or the number of files limit defined by the batching policy).]D;]A;</span> <br> [Learn more about batching types]5D;(https://docs.microsoft.com/azure/data-explorer/kusto/management/batchingpolicy#batching-types)]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Przetwarzanie wsadowe według typu]D;]A;</span> <br>Typ przetwarzania wsadowego: określa, czy partia osiągnęła czas, rozmiar danych lub liczbę plików przetwarzania wsadowego określoną przez zasady przetwarzania wsadowego]]></Val>
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Dzielenie na partie według typu]D;]A;</span> <br>Typy wyzwalaczy, które zapieczętowały partie (na przykład partia osiągnęła limit czasu dzielenia na partie, rozmiaru danych lub liczby plików zdefiniowany przez zasady dzielenia na partie).]D;]A;</span> <br> [Dowiedz się więcej o typach dzielenia na partie]5D;(https://docs.microsoft.com/azure/data-explorer/kusto/management/batchingpolicy#batching-types)]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Batching by type]D;]A;</span> <br>Batching type: whether the batch reached batching time, data size, or number of files limit set by batching policy]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -205,10 +208,13 @@
         </Item>
         <Item ItemId=";(...) Copy.content.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Batching queue length]D;]A;</span> <br>Time in seconds from when the oldest message in the batching manager's input queue has been inserted.]]></Val>
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Batching queue length]D;]A;</span> <br>Number of pending messages in in the Batching manager's input queue.]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Długość kolejki przetwarzania wsadowego]D;]A;</span> <br>Czas (w sekundach) od chwili wstawienia najstarszego komunikatu do kolejki wejściowej menedżera przetwarzania wsadowego.]]></Val>
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Długość kolejki dzielenia na partie]D;]A;</span> <br>Liczba oczekujących komunikatów w kolejce wejściowej menedżera dzielenia na partie.]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Batching queue length]D;]A;</span> <br>Time in seconds from when the oldest message in the batching manager's input queue has been inserted.]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>

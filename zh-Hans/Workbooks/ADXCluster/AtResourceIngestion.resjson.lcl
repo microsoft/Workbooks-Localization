@@ -43,10 +43,13 @@
         </Item>
         <Item ItemId=";(...) type.content.items.batchingbytypetile.content.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Batching by type]D;]A;</span> <br>Batching type: whether the batch reached batching time, data size, or number of files limit set by batching policy]]></Val>
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Batching by type]D;]A;</span> <br>The types of triggers that sealed the batches (for example, the batch reached batching time, data size, or the number of files limit defined by the batching policy).]D;]A;</span> <br> [Learn more about batching types]5D;(https://docs.microsoft.com/azure/data-explorer/kusto/management/batchingpolicy#batching-types)]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> 按类型进行批处理]D;]A;</span> <br>批处理类型: 该批次是否已达到批处理策略设定的批处理时间、数据大小或文件数限制]]></Val>
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> 按类型进行批处理]D;]A;</span> <br>封装相应批次的触发器类型(例如，批次达到批处理策略定义的批处理时间、数据大小或文件数限制)。]D;]A;</span> <br> [了解有关批处理类型的详细信息]5D;(https://docs.microsoft.com/azure/data-explorer/kusto/management/batchingpolicy#batching-types)]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Batching by type]D;]A;</span> <br>Batching type: whether the batch reached batching time, data size, or number of files limit set by batching policy]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -205,10 +208,13 @@
         </Item>
         <Item ItemId=";(...) Copy.content.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Batching queue length]D;]A;</span> <br>Time in seconds from when the oldest message in the batching manager's input queue has been inserted.]]></Val>
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Batching queue length]D;]A;</span> <br>Number of pending messages in in the Batching manager's input queue.]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> 批处理队列长度]D;]A;</span> <br>从插入批处理管理器的输入队列中最早消息开始的时间(以秒为单位)。]]></Val>
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> 批处理队列长度]D;]A;</span> <br>批处理管理器的输入队列中的挂起消息数。]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Batching queue length]D;]A;</span> <br>Time in seconds from when the oldest message in the batching manager's input queue has been inserted.]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
