@@ -43,10 +43,13 @@
         </Item>
         <Item ItemId=";(...) type.content.items.batchingbytypetile.content.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Batching by type]D;]A;</span> <br>Batching type: whether the batch reached batching time, data size, or number of files limit set by batching policy]]></Val>
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Batching by type]D;]A;</span> <br>The types of triggers that sealed the batches (for example, the batch reached batching time, data size, or the number of files limit defined by the batching policy).]D;]A;</span> <br> [Learn more about batching types]5D;(https://docs.microsoft.com/azure/data-explorer/kusto/management/batchingpolicy#batching-types)]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Türe göre toplu işleme]D;]A;</span> <br>Toplu işleme türü: Toplu işlemin, toplu işleme ilkesi tarafından belirlenen toplu işleme süresine, veri boyutuna veya dosya sayısına ulaşıp ulaşmadığı]]></Val>
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Türe göre işlem grubu oluşturma]D;]A;</span> <br>Toplu işleri mühürleyen tetikleyici türleri (örneğin, işlem grubu oluşturma zamanına ulaşan toplu iş, veri boyutu veya işlem grubu oluşturma ilkesi tarafından tanımlanan dosya sayısı sınırı).]D;]A;</span> <br> [İşlem grubu oluşturma türleri hakkında daha fazla bilgi]5D;(https://docs.microsoft.com/azure/data-explorer/kusto/management/batchingpolicy#batching-types)]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Batching by type]D;]A;</span> <br>Batching type: whether the batch reached batching time, data size, or number of files limit set by batching policy]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -205,10 +208,13 @@
         </Item>
         <Item ItemId=";(...) Copy.content.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Batching queue length]D;]A;</span> <br>Time in seconds from when the oldest message in the batching manager's input queue has been inserted.]]></Val>
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Batching queue length]D;]A;</span> <br>Number of pending messages in in the Batching manager's input queue.]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Toplu işlem kuyruk uzunluğu]D;]A;</span> <br>Toplu işlem yöneticisinin giriş kuyruğundaki en eski ileti eklendikten sonra geçen süre (saniye).]]></Val>
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> İşlem grubu oluşturma kuyruğu uzunluğu]D;]A;</span> <br>İşlem grubu oluşturma yöneticisinin giriş kuyruğunda bekleyen ileti sayısı.]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Batching queue length]D;]A;</span> <br>Time in seconds from when the oldest message in the batching manager's input queue has been inserted.]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
