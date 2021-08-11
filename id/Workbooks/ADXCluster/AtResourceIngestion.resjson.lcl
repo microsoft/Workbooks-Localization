@@ -43,10 +43,13 @@
         </Item>
         <Item ItemId=";(...) type.content.items.batchingbytypetile.content.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Batching by type]D;]A;</span> <br>Batching type: whether the batch reached batching time, data size, or number of files limit set by batching policy]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Batching by type]D;]A;</span> <br>The types of triggers that sealed the batches (for example, the batch reached batching time, data size, or the number of files limit defined by the batching policy).]D;]A;</span> <br> [Learn more about batching types]5D;(https://docs.microsoft.com/azure/data-explorer/kusto/management/batchingpolicy#batching-types)]]></Val>
+            <Tgt Cat="Text" Stat="Update" Orig="New">
               <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Pembuatan batch berdasarkan jenis]D;]A;</span> <br>Jenis pembuatan batch: apakah batch mencapai waktu batch, ukuran data, atau jumlah file batas yang ditetapkan oleh kebijakan pembuatan batch]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Batching by type]D;]A;</span> <br>Batching type: whether the batch reached batching time, data size, or number of files limit set by batching policy]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -205,10 +208,13 @@
         </Item>
         <Item ItemId=";(...) Copy.content.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Batching queue length]D;]A;</span> <br>Time in seconds from when the oldest message in the batching manager's input queue has been inserted.]]></Val>
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Batching queue length]D;]A;</span> <br>Number of pending messages in in the Batching manager's input queue.]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Panjang antrean pembuatan batch]D;]A;</span> <br>Waktu dalam detik mulai dari pesan terlama dalam antrean input pengelola pembuatan batch dimasukkan.]]></Val>
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Panjang antrean batching]D;]A;</span> <br>Jumlah pesan tertunda dalam antrean input manajer Batching.]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Batching queue length]D;]A;</span> <br>Time in seconds from when the oldest message in the batching manager's input queue has been inserted.]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
