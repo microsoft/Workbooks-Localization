@@ -13,10 +13,13 @@
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) on" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Data Processed Successfuly]D;]A;</span> <br>Number of blobs processed by the Storage Engine.]]></Val>
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Data processed successfully]D;]A;</span> <br>Number of blobs processed by the Storage Engine. This data is ready for query.]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> 성공적으로 처리된 데이터]D;]A;</span> <br>스토리지 엔진에 의해 처리된 Blob의 개수입니다.]]></Val>
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> 성공적으로 처리된 데이터]D;]A;</span> <br>스토리지 엔진에 의해 처리된 Blob의 개수입니다. 이 데이터는 쿼리할 준비가 되었습니다.]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Data Processed Successfuly]D;]A;</span> <br>Number of blobs processed by the Storage Engine.]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -25,10 +28,13 @@
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) content.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Total latency]D;]A;</span> <br>Time from when a message is discovered by Azure Data Explorer until its content is received by the Engine Storage and available for query (accumulative latency).]]></Val>
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Total latency]D;]A;</span> <br>Time from when a message is accepted by Azure Data Explorer until its content is received by the Engine Storage and available for query (accumulative latency).]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> 총 대기 시간]D;]A;</span> <br>Azure Data Explorer가 메시지를 발견한 시점부터 엔진 스토리지가 해당 콘텐츠를 수신하고 쿼리에 이용 가능한 시점까지 걸리는 시간(누적 대기 시간)입니다.]]></Val>
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> 총 대기 시간]D;]A;</span> <br>Azure Data Explorer가 메시지를 수락한 시점부터 엔진 스토리지가 해당 콘텐츠를 수신하고 쿼리에 이용 가능한 시점까지 걸리는 시간(누적 대기 시간)입니다.]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Total latency]D;]A;</span> <br>Time from when a message is discovered by Azure Data Explorer until its content is received by the Engine Storage and available for query (accumulative latency).]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -238,12 +244,12 @@
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) tent.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[<div style="background-color:rgba(0, 0, 255, 0.04470588); padding:6px 6px 6px 6px">]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 13px;font-style: bold;"> What is Batching Manager?]D;]A;</span><br>]D;]A;The Batching Manager optimizes the ingestion throughput by taking the small ingress data chunks that it receives and batching them based on the <a href="https://docs.microsoft.com/azure/data-explorer/kusto/management/batchingpolicy">ingestion batching policy</a>.]D;]A;</div>]D;]A;]]></Val>
+            <Val><![CDATA[<div style="background-color:rgba(0, 0, 255, 0.04470588); padding:6px 6px 6px 6px">]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 13px;font-style: bold;"> What is Batching Manager?]D;]A;</span><br>]D;]A;The Batching Manager optimizes the ingestion throughput by taking the small ingress data chunks that it receives and batching them (to one or more blobs) based on the <a href="https://docs.microsoft.com/azure/data-explorer/kusto/management/batchingpolicy">ingestion batching policy</a>.]D;]A;</div>]D;]A;]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[<div style="background-color:rgba(0, 0, 255, 0.04470588); padding:6px 6px 6px 6px">]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 13px;font-style: bold;"> 일괄 처리 관리자란 무엇입니까?]D;]A;</span><br>]D;]A;일괄 처리 관리자는 수신하는 작은 수신 데이터 청크를 가져오고 <a href="https://docs.microsoft.com/azure/data-explorer/kusto/management/batchingpolicy">수집 일괄 처리 정책</a>을 기반으로 일괄 처리하여 수집 처리량을 최적화합니다.]D;]A;</div>]D;]A;]]></Val>
+              <Val><![CDATA[<div style="background-color:rgba(0, 0, 255, 0.04470588); padding:6px 6px 6px 6px">]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 13px;font-style: bold;"> 일괄 처리 관리자란 무엇입니까?]D;]A;</span><br>]D;]A;일괄 처리 관리자는 수신하는 작은 수신 데이터 청크를 (하나 이상의 Blob으로) 가져오고 <a href="https://docs.microsoft.com/azure/data-explorer/kusto/management/batchingpolicy">수집 일괄 처리 정책</a>을 기반으로 일괄 처리하여 수집 처리량을 최적화합니다.]D;]A;</div>]D;]A;]]></Val>
             </Tgt>
             <Prev Cat="Text">
-              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 15px;font-style: bold;margin:-10px -304px 0px 0px;position: relative;top:-5px">&nbsp;&nbsp;Batching Manager]D;]A;</span><br>]D;]A;&nbsp;&nbsp;&nbsp;]]></Val>
+              <Val><![CDATA[<div style="background-color:rgba(0, 0, 255, 0.04470588); padding:6px 6px 6px 6px">]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 13px;font-style: bold;"> What is Batching Manager?]D;]A;</span><br>]D;]A;The Batching Manager optimizes the ingestion throughput by taking the small ingress data chunks that it receives and batching them based on the <a href="https://docs.microsoft.com/azure/data-explorer/kusto/management/batchingpolicy">ingestion batching policy</a>.]D;]A;</div>]D;]A;]]></Val>
             </Prev>
           </Str>
           <Disp Icon="Str" />
@@ -253,12 +259,12 @@
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) tent.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Stage latency (avg per database)]D;]A;</span> <br>Time from when a message is discovered by Azure Data Explorer, until its content is received by the batching manager for processing.]]></Val>
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Stage latency (avg per database)]D;]A;</span> <br>Time from when a message is accepted by Azure Data Explorer, until its content is received by the batching manager for processing.]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> 단계 대기 시간(데이터베이스당 평균)]D;]A;</span> <br>Azure Data Explorer가 메시지를 발견한 시점부터 일괄 처리 관리자가 처리를 위해 해당 콘텐츠를 수신한 시점까지 걸리는 시간입니다.]]></Val>
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> 단계 대기 시간(데이터베이스당 평균)]D;]A;</span> <br>Azure Data Explorer가 메시지를 수락한 시점부터 일괄 처리 관리자가 처리를 위해 해당 콘텐츠를 수신한 시점까지 걸리는 시간입니다.]]></Val>
             </Tgt>
             <Prev Cat="Text">
-              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Stage latency (avg per database)]D;]A;</span> <br>Time from when a message is discovered by Azure Data Explorer, until its content is received by an ingestion component and is available for query.]]></Val>
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Stage latency (avg per database)]D;]A;</span> <br>Time from when a message is discovered by Azure Data Explorer, until its content is received by the batching manager for processing.]]></Val>
             </Prev>
           </Str>
           <Disp Icon="Str" />
@@ -268,10 +274,13 @@
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) .content.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Queue oldest message]D;]A;</span> <br>Time in seconds from when the oldest message in the batching manager's input queue has been inserted.]]></Val>
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Queue oldest message]D;]A;</span> <br>Time in seconds from when the oldest message (about a new batch) in the batching manager's input queue has been enqueued.]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> 큐에 있는 가장 오래된 메시지]D;]A;</span> <br>일괄 처리 관리자의 입력 큐에 있는 가장 오래된 메시지가 삽입된 시점으로부터 경과한 시간(초)입니다.]]></Val>
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> 큐에 있는 가장 오래된 메시지]D;]A;</span> <br>일괄 처리 관리자의 입력 큐에 있는 (새로운 배치에 대한) 가장 오래된 메시지가 큐에 대기된 시점으로부터 경과 시간입니다(단위: 초).]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Queue oldest message]D;]A;</span> <br>Time in seconds from when the oldest message in the batching manager's input queue has been inserted.]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -370,12 +379,12 @@
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) dtile.content.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Amount of data processed]D;]A;</span>]D;]A;<ul>]D;]A;<li>Blobs received - Number of blobs received from input stream by the Engine Storage.</li>]D;]A;<li>Blobs processed - Number of blobs processed by the Engine Storage.</li>]D;]A;<li>Blobs dropped - Number of blobs permanently dropped by the Engine Storage. For each such blob, an Ingestion result metric with a failure reason is sent.]D;]A;</li>]D;]A;</ul>]]></Val>
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Amount of data processed]D;]A;</span>]D;]A;<ul>]D;]A;<li>Blobs received - Number of blobs received from input stream by the Engine Storage.</li>]D;]A;<li>Blobs processed - Number of blobs processed by the Engine Storage. This data is ready for query.</li>]D;]A;<li>Blobs dropped - Number of blobs permanently dropped by the Engine Storage. For each such blob, an Ingestion result metric with a failure reason is sent.]D;]A;</li>]D;]A;</ul>]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> 처리된 데이터의 양]D;]A;</span>]D;]A;<ul>]D;]A;<li>수신된 Blob 수 - 엔진 스토리지에 의해 입력 스트림에서 수신된 Blob의 개수입니다.</li>]D;]A;<li>처리된 Blob 수 - 엔진 스토리지에 의해 처리된 Blob의 개수입니다.</li>]D;]A;<li>삭제된 Blob 수 - 엔진 스토리지에 의해 영구 삭제된 Blob의 개수입니다. 삭제된 각 Blob에 대해 실패 사유가 포함된 수집 결과 메트릭이 발송됩니다.]D;]A;</li>]D;]A;</ul>]]></Val>
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> 처리된 데이터의 양]D;]A;</span>]D;]A;<ul>]D;]A;<li>수신된 Blob 수 - 엔진 스토리지에 의해 입력 스트림에서 수신된 Blob의 개수입니다.</li>]D;]A;<li>처리된 Blob 수 - 엔진 스토리지에 의해 처리된 Blob의 개수입니다. 이 데이터는 쿼리할 준비가 되었습니다.</li>]D;]A;<li>삭제된 Blob 수 - 엔진 스토리지에 의해 영구 삭제된 Blob의 개수입니다. 삭제된 각 Blob에 대해 실패 사유가 포함된 수집 결과 메트릭이 발송됩니다.]D;]A;</li>]D;]A;</ul>]]></Val>
             </Tgt>
             <Prev Cat="Text">
-              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Amount of data processed]D;]A;</span>]D;]A;<ul>]D;]A;<li>Blobs processed - Number of blobs processed by the Engine Storage.</li>]D;]A;<li>Blobs received - Number of blobs received from input stream by the Engine Storage.</li>]D;]A;<li>Blobs dropped - Number of blobs permanently dropped by the Engine Storage. For each such blob, an Ingestion result metric with a failure reason is sent.]D;]A;</li>]D;]A;</ul>]]></Val>
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Amount of data processed]D;]A;</span>]D;]A;<ul>]D;]A;<li>Blobs received - Number of blobs received from input stream by the Engine Storage.</li>]D;]A;<li>Blobs processed - Number of blobs processed by the Engine Storage.</li>]D;]A;<li>Blobs dropped - Number of blobs permanently dropped by the Engine Storage. For each such blob, an Ingestion result metric with a failure reason is sent.]D;]A;</li>]D;]A;</ul>]]></Val>
             </Prev>
           </Str>
           <Disp Icon="Str" />
@@ -385,12 +394,12 @@
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) pyCopyCopyCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Stage latency (avg per database)]D;]A;</span> <br>Time from when a message is discovered by Azure Data Explorer, until its content is received by the Engine Storage and is available for query.]]></Val>
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Stage latency (avg per database)]D;]A;</span> <br>Time from when a message is accepted by Azure Data Explorer, until its content is received by the Engine Storage and is available for query.]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> 단계 대기 시간(데이터베이스당 평균)]D;]A;</span> <br>Azure Data Explorer가 메시지를 발견한 시점부터 엔진 스토리지가 해당 콘텐츠를 수신하고 쿼리에 이용 가능한 시점까지 걸리는 시간입니다.]]></Val>
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> 단계 대기 시간(데이터베이스당 평균)]D;]A;</span> <br>Azure Data Explorer가 메시지를 수락한 시점부터 엔진 스토리지가 해당 콘텐츠를 수신하고 쿼리에 이용 가능한 시점까지 걸리는 시간입니다.]]></Val>
             </Tgt>
             <Prev Cat="Text">
-              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Stage latency (avg per database)]D;]A;</span> <br>Time from when a message is discovered by Azure Data Explorer, until its content is received by the Engine Storage for processing.]]></Val>
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Stage latency (avg per database)]D;]A;</span> <br>Time from when a message is discovered by Azure Data Explorer, until its content is received by the Engine Storage and is available for query.]]></Val>
             </Prev>
           </Str>
           <Disp Icon="Str" />
@@ -442,12 +451,12 @@
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) ncytile.content.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Stage latency (avg per database)]D;]A;</span> <br>Time from when a message is discovered by Azure Data Explorer, until its content is received by the Ingestion manager for processing.]]></Val>
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Stage latency (avg per database)]D;]A;</span> <br>Time from when a message is accepted by Azure Data Explorer, until its content is received by the Ingestion manager for processing.]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> 단계 대기 시간(데이터베이스당 평균)]D;]A;</span> <br>Azure Data Explorer가 메시지를 발견한 시점부터 수집 관리자가 처리를 위해 해당 콘텐츠를 수신한 시점까지 걸리는 시간입니다.]]></Val>
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> 단계 대기 시간(데이터베이스당 평균)]D;]A;</span> <br>Azure Data Explorer가 메시지를 수락한 시점부터 수집 관리자가 처리를 위해 해당 콘텐츠를 수신한 시점까지 걸리는 시간입니다.]]></Val>
             </Tgt>
             <Prev Cat="Text">
-              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Stage latency (avg per database)]D;]A;</span> <br>Time from when a message is discovered by Azure Data Explorer, until its content is received by the Ingestion manager and is available for query.]]></Val>
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Stage latency (avg per database)]D;]A;</span> <br>Time from when a message is discovered by Azure Data Explorer, until its content is received by the Ingestion manager for processing.]]></Val>
             </Prev>
           </Str>
           <Disp Icon="Str" />
@@ -457,10 +466,13 @@
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) yCopyCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Queue oldest message]D;]A;</span> <br>Time in seconds from when the oldest message in the Ingestion manager's input queue has been inserted.]]></Val>
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Queue oldest message]D;]A;</span> <br>Time in seconds from when the oldest message (about a new batch) in the Ingestion manager's input queue has been enqueued.]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> 큐에 있는 가장 오래된 메시지]D;]A;</span> <br>수집 관리자의 입력 큐에 있는 가장 오래된 메시지가 삽입된 시점으로부터 경과 시간입니다(단위: 초).]]></Val>
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> 큐에 있는 가장 오래된 메시지]D;]A;</span> <br>수집 관리자의 입력 큐에 있는 (새로운 배치에 대한) 가장 오래된 메시지가 큐에 대기된 시점으로부터 경과 시간입니다(단위: 초).]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Queue oldest message]D;]A;</span> <br>Time in seconds from when the oldest message in the Ingestion manager's input queue has been inserted.]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -812,10 +824,13 @@
       </Item>
       <Item ItemId=";items.IngestionDetailsGroup.content.items.Overview.content.items.Failedingestions.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Failed ingestions by table and error (click on a row to see the timechart)]]></Val>
+          <Val><![CDATA[Failed ingestions by table and error]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[테이블 및 오류별 수집이 실패했습니다(시간 차트를 보려면 행 클릭).]]></Val>
+            <Val><![CDATA[테이블 및 오류별 수집 실패]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Failed ingestions by table and error (click on a row to see the timechart)]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -848,10 +863,13 @@
       </Item>
       <Item ItemId=";items.IngestionDetailsGroup.content.items.Overview.content.items.Succeededingestionstimechart.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Succeeded ingestions by table (click on a row to see the timechart)]]></Val>
+          <Val><![CDATA[Succeeded ingestions by table]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[테이블별 성공한 수집(시간 차트를 보려면 행 클릭)]]></Val>
+            <Val><![CDATA[테이블별 수집 성공]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Succeeded ingestions by table (click on a row to see the timechart)]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
