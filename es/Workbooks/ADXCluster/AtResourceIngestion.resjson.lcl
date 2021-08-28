@@ -13,10 +13,13 @@
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) on" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Data Processed Successfuly]D;]A;</span> <br>Number of blobs processed by the Storage Engine.]]></Val>
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Data processed successfully]D;]A;</span> <br>Number of blobs processed by the Storage Engine. This data is ready for query.]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Datos procesados correctamente]D;]A;</span> <br>Número de blobs procesados por el motor de almacenamiento.]]></Val>
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Datos procesados correctamente]D;]A;</span> <br>Número de blobs procesados por el motor de almacenamiento. Estos datos están listos para la consulta.]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Data Processed Successfuly]D;]A;</span> <br>Number of blobs processed by the Storage Engine.]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -25,10 +28,13 @@
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) content.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Total latency]D;]A;</span> <br>Time from when a message is discovered by Azure Data Explorer until its content is received by the Engine Storage and available for query (accumulative latency).]]></Val>
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Total latency]D;]A;</span> <br>Time from when a message is accepted by Azure Data Explorer until its content is received by the Engine Storage and available for query (accumulative latency).]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Latencia total]D;]A;</span> <br>Tiempo que pasa desde que Azure Data Explorer detecta un mensaje hasta que el almacenamiento del motor recibe su contenido y está disponible para realizar una consulta (latencia acumulativa).]]></Val>
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Latencia total]D;]A;</span> <br>Tiempo que pasa desde que Azure Data Explorer acepta un mensaje hasta que el almacenamiento del motor recibe su contenido y está disponible para realizar una consulta (latencia acumulativa).]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Total latency]D;]A;</span> <br>Time from when a message is discovered by Azure Data Explorer until its content is received by the Engine Storage and available for query (accumulative latency).]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -238,12 +244,12 @@
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) tent.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[<div style="background-color:rgba(0, 0, 255, 0.04470588); padding:6px 6px 6px 6px">]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 13px;font-style: bold;"> What is Batching Manager?]D;]A;</span><br>]D;]A;The Batching Manager optimizes the ingestion throughput by taking the small ingress data chunks that it receives and batching them based on the <a href="https://docs.microsoft.com/azure/data-explorer/kusto/management/batchingpolicy">ingestion batching policy</a>.]D;]A;</div>]D;]A;]]></Val>
+            <Val><![CDATA[<div style="background-color:rgba(0, 0, 255, 0.04470588); padding:6px 6px 6px 6px">]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 13px;font-style: bold;"> What is Batching Manager?]D;]A;</span><br>]D;]A;The Batching Manager optimizes the ingestion throughput by taking the small ingress data chunks that it receives and batching them (to one or more blobs) based on the <a href="https://docs.microsoft.com/azure/data-explorer/kusto/management/batchingpolicy">ingestion batching policy</a>.]D;]A;</div>]D;]A;]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[<div style="background-color:rgba(0, 0, 255, 0.04470588); padding:6px 6px 6px 6px">]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 13px;font-style: bold;"> ¿Qué es el administrador de procesamiento por lotes?]D;]A;</span><br>]D;]A;El administrador del procesamiento por lotes optimiza el rendimiento de la ingesta tomando los pequeños fragmentos de datos de entrada que recibe y procesándolos por lotes en función de la <a href="https://docs.microsoft.com/azure/data-explorer/kusto/management/batchingpolicy">directiva de procesamiento por lotes de ingesta</a>.]D;]A;</div>]D;]A;]]></Val>
+              <Val><![CDATA[<div style="background-color:rgba(0, 0, 255, 0.04470588); padding:6px 6px 6px 6px">]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 13px;font-style: bold;"> ¿Qué es el administrador de procesamiento por lotes?]D;]A;</span><br>]D;]A;El administrador del procesamiento por lotes optimiza el rendimiento de la ingesta tomando los pequeños fragmentos de datos de entrada que recibe y procesándolos por lotes (a uno o más blobs) en función de la <a href="https://docs.microsoft.com/azure/data-explorer/kusto/management/batchingpolicy">directiva de procesamiento por lotes de ingesta</a>.]D;]A;</div>]D;]A;]]></Val>
             </Tgt>
             <Prev Cat="Text">
-              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 15px;font-style: bold;margin:-10px -304px 0px 0px;position: relative;top:-5px">&nbsp;&nbsp;Batching Manager]D;]A;</span><br>]D;]A;&nbsp;&nbsp;&nbsp;]]></Val>
+              <Val><![CDATA[<div style="background-color:rgba(0, 0, 255, 0.04470588); padding:6px 6px 6px 6px">]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 13px;font-style: bold;"> What is Batching Manager?]D;]A;</span><br>]D;]A;The Batching Manager optimizes the ingestion throughput by taking the small ingress data chunks that it receives and batching them based on the <a href="https://docs.microsoft.com/azure/data-explorer/kusto/management/batchingpolicy">ingestion batching policy</a>.]D;]A;</div>]D;]A;]]></Val>
             </Prev>
           </Str>
           <Disp Icon="Str" />
@@ -253,12 +259,12 @@
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) tent.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Stage latency (avg per database)]D;]A;</span> <br>Time from when a message is discovered by Azure Data Explorer, until its content is received by the batching manager for processing.]]></Val>
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Stage latency (avg per database)]D;]A;</span> <br>Time from when a message is accepted by Azure Data Explorer, until its content is received by the batching manager for processing.]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Latencia de fase (promedio por base de datos)]D;]A;</span> <br>Tiempo desde que Azure Data Explorer detecta un mensaje hasta que el administrador del procesamiento por lotes lo recibe para su procesamiento.]]></Val>
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Latencia de fase (promedio por base de datos)]D;]A;</span> <br>Tiempo desde que Azure Data Explorer acepta un mensaje hasta que el administrador del procesamiento por lotes lo recibe para su procesamiento.]]></Val>
             </Tgt>
             <Prev Cat="Text">
-              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Stage latency (avg per database)]D;]A;</span> <br>Time from when a message is discovered by Azure Data Explorer, until its content is received by an ingestion component and is available for query.]]></Val>
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Stage latency (avg per database)]D;]A;</span> <br>Time from when a message is discovered by Azure Data Explorer, until its content is received by the batching manager for processing.]]></Val>
             </Prev>
           </Str>
           <Disp Icon="Str" />
@@ -268,10 +274,13 @@
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) .content.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Queue oldest message]D;]A;</span> <br>Time in seconds from when the oldest message in the batching manager's input queue has been inserted.]]></Val>
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Queue oldest message]D;]A;</span> <br>Time in seconds from when the oldest message (about a new batch) in the batching manager's input queue has been enqueued.]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Mensaje más antiguo de la cola]D;]A;</span> <br>Tiempo en segundos desde que se insertó el mensaje más antiguo de la cola de entrada del administrador del procesamiento por lotes.]]></Val>
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Mensaje más antiguo de la cola]D;]A;</span> <br>Tiempo en segundos desde que se quitó de la cola el mensaje más antiguo (sobre un nuevo lote) de la cola de entrada del administrador del procesamiento por lotes.]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Queue oldest message]D;]A;</span> <br>Time in seconds from when the oldest message in the batching manager's input queue has been inserted.]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -370,12 +379,12 @@
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) dtile.content.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Amount of data processed]D;]A;</span>]D;]A;<ul>]D;]A;<li>Blobs received - Number of blobs received from input stream by the Engine Storage.</li>]D;]A;<li>Blobs processed - Number of blobs processed by the Engine Storage.</li>]D;]A;<li>Blobs dropped - Number of blobs permanently dropped by the Engine Storage. For each such blob, an Ingestion result metric with a failure reason is sent.]D;]A;</li>]D;]A;</ul>]]></Val>
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Amount of data processed]D;]A;</span>]D;]A;<ul>]D;]A;<li>Blobs received - Number of blobs received from input stream by the Engine Storage.</li>]D;]A;<li>Blobs processed - Number of blobs processed by the Engine Storage. This data is ready for query.</li>]D;]A;<li>Blobs dropped - Number of blobs permanently dropped by the Engine Storage. For each such blob, an Ingestion result metric with a failure reason is sent.]D;]A;</li>]D;]A;</ul>]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Cantidad de datos procesados]D;]A;</span>]D;]A;<ul>]D;]A;<li>Blobs recibidos: número de blobs que el almacenamiento del motor ha recibido del flujo de entrada.</li>]D;]A;<li>Blobs procesados: número de blobs procesados por el almacenamiento del motor.</li>]D;]A;<li>Blobs anulados: número de blobs que el almacenamiento del motor ha anulado permanentemente. Para cada uno de estos blobs, se envía una métrica de resultado de ingesta con un motivo de error.]D;]A;</li>]D;]A;</ul>]]></Val>
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Cantidad de datos procesados]D;]A;</span>]D;]A;<ul>]D;]A;<li>Blobs recibidos: número de blobs que el almacenamiento del motor ha recibido del flujo de entrada.</li>]D;]A;<li>Blobs procesados: número de blobs procesados por el almacenamiento del motor. Estos datos están listos para la consulta.</li>]D;]A;<li>Blobs anulados: número de blobs que el almacenamiento del motor ha anulado permanentemente. Para cada uno de estos blobs, se envía una métrica de resultado de ingesta con un motivo de error.]D;]A;</li>]D;]A;</ul>]]></Val>
             </Tgt>
             <Prev Cat="Text">
-              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Amount of data processed]D;]A;</span>]D;]A;<ul>]D;]A;<li>Blobs processed - Number of blobs processed by the Engine Storage.</li>]D;]A;<li>Blobs received - Number of blobs received from input stream by the Engine Storage.</li>]D;]A;<li>Blobs dropped - Number of blobs permanently dropped by the Engine Storage. For each such blob, an Ingestion result metric with a failure reason is sent.]D;]A;</li>]D;]A;</ul>]]></Val>
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Amount of data processed]D;]A;</span>]D;]A;<ul>]D;]A;<li>Blobs received - Number of blobs received from input stream by the Engine Storage.</li>]D;]A;<li>Blobs processed - Number of blobs processed by the Engine Storage.</li>]D;]A;<li>Blobs dropped - Number of blobs permanently dropped by the Engine Storage. For each such blob, an Ingestion result metric with a failure reason is sent.]D;]A;</li>]D;]A;</ul>]]></Val>
             </Prev>
           </Str>
           <Disp Icon="Str" />
@@ -385,12 +394,12 @@
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) pyCopyCopyCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Stage latency (avg per database)]D;]A;</span> <br>Time from when a message is discovered by Azure Data Explorer, until its content is received by the Engine Storage and is available for query.]]></Val>
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Stage latency (avg per database)]D;]A;</span> <br>Time from when a message is accepted by Azure Data Explorer, until its content is received by the Engine Storage and is available for query.]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Latencia de fase (promedio por base de datos)]D;]A;</span> <br>Tiempo que pasa desde que Azure Data Explorer detecta un mensaje hasta que el almacenamiento del motor recibe su contenido y está disponible para realizar una consulta.]]></Val>
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Latencia de fase (promedio por base de datos)]D;]A;</span> <br>Tiempo que pasa desde que Azure Data Explorer acepta un mensaje hasta que el almacenamiento del motor recibe su contenido y está disponible para realizar una consulta.]]></Val>
             </Tgt>
             <Prev Cat="Text">
-              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Stage latency (avg per database)]D;]A;</span> <br>Time from when a message is discovered by Azure Data Explorer, until its content is received by the Engine Storage for processing.]]></Val>
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Stage latency (avg per database)]D;]A;</span> <br>Time from when a message is discovered by Azure Data Explorer, until its content is received by the Engine Storage and is available for query.]]></Val>
             </Prev>
           </Str>
           <Disp Icon="Str" />
@@ -442,12 +451,12 @@
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) ncytile.content.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Stage latency (avg per database)]D;]A;</span> <br>Time from when a message is discovered by Azure Data Explorer, until its content is received by the Ingestion manager for processing.]]></Val>
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Stage latency (avg per database)]D;]A;</span> <br>Time from when a message is accepted by Azure Data Explorer, until its content is received by the Ingestion manager for processing.]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Latencia de fase (promedio por base de datos)]D;]A;</span> <br>Tiempo desde que Azure Data Explorer detecta un mensaje hasta que el administrador de la ingesta lo recibe para su procesamiento.]]></Val>
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Latencia de fase (promedio por base de datos)]D;]A;</span> <br>Tiempo desde que Azure Data Explorer acepta un mensaje hasta que el administrador de la ingesta lo recibe para su procesamiento.]]></Val>
             </Tgt>
             <Prev Cat="Text">
-              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Stage latency (avg per database)]D;]A;</span> <br>Time from when a message is discovered by Azure Data Explorer, until its content is received by the Ingestion manager and is available for query.]]></Val>
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Stage latency (avg per database)]D;]A;</span> <br>Time from when a message is discovered by Azure Data Explorer, until its content is received by the Ingestion manager for processing.]]></Val>
             </Prev>
           </Str>
           <Disp Icon="Str" />
@@ -457,10 +466,13 @@
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) yCopyCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Queue oldest message]D;]A;</span> <br>Time in seconds from when the oldest message in the Ingestion manager's input queue has been inserted.]]></Val>
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Queue oldest message]D;]A;</span> <br>Time in seconds from when the oldest message (about a new batch) in the Ingestion manager's input queue has been enqueued.]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Mensaje más antiguo de la cola]D;]A;</span> <br>Tiempo en segundos desde que se insertó el mensaje más antiguo de la cola de entrada del administrador de la ingesta.]]></Val>
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Mensaje más antiguo de la cola]D;]A;</span> <br>Tiempo en segundos desde que se quitó de la cola el mensaje más antiguo (sobre un nuevo lote) de la cola de entrada del administrador de la ingesta.]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Queue oldest message]D;]A;</span> <br>Time in seconds from when the oldest message in the Ingestion manager's input queue has been inserted.]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -812,10 +824,13 @@
       </Item>
       <Item ItemId=";items.IngestionDetailsGroup.content.items.Overview.content.items.Failedingestions.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Failed ingestions by table and error (click on a row to see the timechart)]]></Val>
+          <Val><![CDATA[Failed ingestions by table and error]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Ingestas incorrectas por tabla y error (haga clic en una fila para ver el gráfico temporal)]]></Val>
+            <Val><![CDATA[Ingestas erróneas por tabla y error]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Failed ingestions by table and error (click on a row to see the timechart)]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -848,10 +863,13 @@
       </Item>
       <Item ItemId=";items.IngestionDetailsGroup.content.items.Overview.content.items.Succeededingestionstimechart.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Succeeded ingestions by table (click on a row to see the timechart)]]></Val>
+          <Val><![CDATA[Succeeded ingestions by table]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Ingestas correctas por tabla (haga clic en una fila para ver el gráfico temporal)]]></Val>
+            <Val><![CDATA[Ingestas correctas por tabla]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Succeeded ingestions by table (click on a row to see the timechart)]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
