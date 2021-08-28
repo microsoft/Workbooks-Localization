@@ -18,20 +18,20 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.ProvSummary.content.items.SyncErrors.content.json" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[## Recent Sync Errors]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[## 최근 동기화 오류]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
       <Item ItemId=";items.ProvSummary.content.items.SyncErrors.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[There were no sync errors during the selected time period.]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[선택한 기간 동안 동기화 오류가 없습니다.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.ProvSummary.content.items.SyncErrors.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Recent sync errors]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[근 동기화 오류]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -47,10 +47,13 @@
       </Item>
       <Item ItemId=";items.ProvSummary.content.items.SyncStatus.content.gridSettings.labelSettings.Objects.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Unique Synced objects]]></Val>
+          <Val><![CDATA[Unique synced objects]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[고유한 동기화된 개체]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Unique Synced objects]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -74,10 +77,13 @@
       </Item>
       <Item ItemId=";items.ProvSummary.content.items.SyncStatus.content.gridSettings.labelSettings.Total.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Sync Total]]></Val>
+          <Val><![CDATA[Sync total]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[총 동기화]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Sync Total]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -99,6 +105,15 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
+      <Item ItemId=";items.ProvSummary.content.items.SyncStatus.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Unique sync count by status]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[상태별 고유 동기화 수]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.ProvSummary.content.items.SyncobjectsbyAction.content.chartSettings.seriesLabelSettings.0.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# of synced objects]]></Val>
@@ -108,20 +123,38 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.ProvSummary.content.items.UniqueSynccount.content.json" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.ProvSummary.content.items.SyncobjectsbyAction.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[## Unique Sync Count by Status]]></Val>
+          <Val><![CDATA[Sync actions per day by action]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[## 상태별 고유 동기화 수]]></Val>
+            <Val><![CDATA[작업별 일별 작업 동기화]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.ProvSummary.content.items.text6.content.json" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.ProvSummary.content.items.SyncobjectsbyActionCopy.content.chartSettings.seriesLabelSettings.0.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[## Sync Actions per day]]></Val>
+          <Val><![CDATA[# of synced objects]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[## 일별 동기화 작업]]></Val>
+            <Val><![CDATA[동기화된 개체 수]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.ProvSummary.content.items.SyncobjectsbyActionCopy.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Sync actions per day by status]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[상태별 일별 작업 동기화]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.ProvSummary.content.items.query8.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Total synced objects by type]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[유형별 총 동기화된 개체 수]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -140,15 +173,6 @@
           <Val><![CDATA[Sync Summary]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[동기화 요약]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.TotalSycnedObjects.content.json" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[## Total Synced Objects by Type]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[유형별 총 동기화된 개체 수]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -218,9 +242,21 @@
       </Item>
       <Item ItemId=";items.text2.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[# Azure AD cloud sync insights (AD2AAD)]D;]A;]]></Val>
+          <Val><![CDATA[# Azure AD cloud sync insights (AD2AAD)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[# Azure AD 클라우드 동기화 인사이트(AD2AAD)]D;]A;]]></Val>
+            <Val><![CDATA[# Azure AD 클라우드 동기화 인사이트(AD2AAD)]]></Val>
+          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[# Azure AD cloud sync insights (AD2AAD)]D;]A;]]></Val>
+          </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.text6.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[<span style="font-family:Segoe UI; font-size:11pt;"> Azure AD Connect cloud sync is designed to meet and accomplish your hybrid identity goals for synchronization of users, groups and contacts to Azure AD using a light weight agent and can be use alongside Azure AD Connect sync. This workbook is intended for Hybrid Identity Admins who use cloud sync to sync users from AD to Azure AD to gain insights into sync status and details. [Learn more]5D;(https://aka.ms/cloudsync)</span>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<span style="font-family:Segoe UI; font-size:11pt;"> Azure AD Connect 클라우드 동기화는 가벼운 에이전트를 사용하여 사용자, 그룹 및 연락처를 Azure AD에 동기화하기 위한 하이브리드 ID 목표를 충족하고 달성하도록 설계되었으며 Azure AD Connect 동기화와 함께 사용할 수 있습니다. 이 통합 문서는 클라우드 동기화를 사용하여 AD에서 Azure AD로 사용자를 동기화하여 동기화 상태 및 세부 정보에 대한 인사이트를 얻는 하이브리드 ID 관리자를 위한 것입니다. [자세히 알아보기]5D;(https://aka.ms/cloudsync)</span>]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />

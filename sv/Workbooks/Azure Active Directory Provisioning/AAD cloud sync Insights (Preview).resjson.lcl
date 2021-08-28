@@ -18,20 +18,20 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.ProvSummary.content.items.SyncErrors.content.json" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[## Recent Sync Errors]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[## Senaste synkroniseringsfel]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
       <Item ItemId=";items.ProvSummary.content.items.SyncErrors.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[There were no sync errors during the selected time period.]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Det fanns inga synkroniseringsfel under den valda tidsperioden.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.ProvSummary.content.items.SyncErrors.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Recent sync errors]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Senaste synkroniseringsfelen]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -47,10 +47,13 @@
       </Item>
       <Item ItemId=";items.ProvSummary.content.items.SyncStatus.content.gridSettings.labelSettings.Objects.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Unique Synced objects]]></Val>
+          <Val><![CDATA[Unique synced objects]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Unika synkroniserade objekt]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Unique Synced objects]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -74,10 +77,13 @@
       </Item>
       <Item ItemId=";items.ProvSummary.content.items.SyncStatus.content.gridSettings.labelSettings.Total.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Sync Total]]></Val>
+          <Val><![CDATA[Sync total]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Synkronisering totalt]]></Val>
+            <Val><![CDATA[Totalt synkroniserat]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Sync Total]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -99,6 +105,15 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
+      <Item ItemId=";items.ProvSummary.content.items.SyncStatus.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Unique sync count by status]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Antal unika synkroniseringar efter status]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.ProvSummary.content.items.SyncobjectsbyAction.content.chartSettings.seriesLabelSettings.0.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# of synced objects]]></Val>
@@ -108,20 +123,38 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.ProvSummary.content.items.UniqueSynccount.content.json" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.ProvSummary.content.items.SyncobjectsbyAction.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[## Unique Sync Count by Status]]></Val>
+          <Val><![CDATA[Sync actions per day by action]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[## Antal unika synkroniseringar efter status]]></Val>
+            <Val><![CDATA[Synkroniseringsåtgärder per dag efter åtgärd]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.ProvSummary.content.items.text6.content.json" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.ProvSummary.content.items.SyncobjectsbyActionCopy.content.chartSettings.seriesLabelSettings.0.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[## Sync Actions per day]]></Val>
+          <Val><![CDATA[# of synced objects]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[## Synkroniseringsåtgärder per dag]]></Val>
+            <Val><![CDATA[antal synkroniserade objekt]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.ProvSummary.content.items.SyncobjectsbyActionCopy.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Sync actions per day by status]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Synkroniseringsåtgärder per dag efter status]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.ProvSummary.content.items.query8.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Total synced objects by type]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Totalt antal synkroniserade objekt efter typ]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -140,15 +173,6 @@
           <Val><![CDATA[Sync Summary]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Synkroniseringssammanfattning]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.TotalSycnedObjects.content.json" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[## Total Synced Objects by Type]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[## Totalt antal synkroniserade objekt efter typ]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -218,9 +242,21 @@
       </Item>
       <Item ItemId=";items.text2.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[# Azure AD cloud sync insights (AD2AAD)]D;]A;]]></Val>
+          <Val><![CDATA[# Azure AD cloud sync insights (AD2AAD)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[# Azure Active Directory-molnsynkroniseringsinsikter (AD2AAD)]D;]A;]]></Val>
+            <Val><![CDATA[# Azure Active Directory-molnsynkroniseringsinsikter (AD2AAD)]]></Val>
+          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[# Azure AD cloud sync insights (AD2AAD)]D;]A;]]></Val>
+          </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.text6.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[<span style="font-family:Segoe UI; font-size:11pt;"> Azure AD Connect cloud sync is designed to meet and accomplish your hybrid identity goals for synchronization of users, groups and contacts to Azure AD using a light weight agent and can be use alongside Azure AD Connect sync. This workbook is intended for Hybrid Identity Admins who use cloud sync to sync users from AD to Azure AD to gain insights into sync status and details. [Learn more]5D;(https://aka.ms/cloudsync)</span>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<span style="font-family:Segoe UI; font-size:11pt;"> Azure AD Connect-molnsynkronisering är utformat för att möta och uppnå dina hybrididentitetsmål för synkronisering av användare, grupper och kontakter till Azure AD med hjälp av ett lättviktsagent och kan användas tillsammans med Azure AD Connect-synkronisering. Den här arbetsboken är avsedd för hybrididentitetsadministratörer som använder molnsynkronisering för att synkronisera användare från AD till Azure AD och få insikter om synkroniseringsstatus och information. [Läs mer]5D; (https://aka.ms/cloudsync)</span>]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />

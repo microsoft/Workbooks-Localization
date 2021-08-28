@@ -18,20 +18,20 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.ProvSummary.content.items.SyncErrors.content.json" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[## Recent Sync Errors]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[## 最近的同步錯誤]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
       <Item ItemId=";items.ProvSummary.content.items.SyncErrors.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[There were no sync errors during the selected time period.]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[選取的時間週期內沒有任何同步錯誤。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.ProvSummary.content.items.SyncErrors.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Recent sync errors]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[最近的同步錯誤]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -47,10 +47,13 @@
       </Item>
       <Item ItemId=";items.ProvSummary.content.items.SyncStatus.content.gridSettings.labelSettings.Objects.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Unique Synced objects]]></Val>
+          <Val><![CDATA[Unique synced objects]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[唯一同步的物件]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Unique Synced objects]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -74,10 +77,13 @@
       </Item>
       <Item ItemId=";items.ProvSummary.content.items.SyncStatus.content.gridSettings.labelSettings.Total.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Sync Total]]></Val>
+          <Val><![CDATA[Sync total]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[同步總計]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Sync Total]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -99,6 +105,15 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
+      <Item ItemId=";items.ProvSummary.content.items.SyncStatus.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Unique sync count by status]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[唯一同步計數 (依狀態)]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.ProvSummary.content.items.SyncobjectsbyAction.content.chartSettings.seriesLabelSettings.0.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# of synced objects]]></Val>
@@ -108,20 +123,38 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.ProvSummary.content.items.UniqueSynccount.content.json" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.ProvSummary.content.items.SyncobjectsbyAction.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[## Unique Sync Count by Status]]></Val>
+          <Val><![CDATA[Sync actions per day by action]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[## 唯一同步計數 (依狀態)]]></Val>
+            <Val><![CDATA[每日同步動作 (依動作)]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.ProvSummary.content.items.text6.content.json" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.ProvSummary.content.items.SyncobjectsbyActionCopy.content.chartSettings.seriesLabelSettings.0.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[## Sync Actions per day]]></Val>
+          <Val><![CDATA[# of synced objects]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[## 每日同步動作]]></Val>
+            <Val><![CDATA[同步的物件數]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.ProvSummary.content.items.SyncobjectsbyActionCopy.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Sync actions per day by status]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[每日同步動作 (依狀態)]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.ProvSummary.content.items.query8.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Total synced objects by type]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[同步的物件總計 (依類型)]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -140,15 +173,6 @@
           <Val><![CDATA[Sync Summary]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[同步摘要]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.TotalSycnedObjects.content.json" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[## Total Synced Objects by Type]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[## 同步的物件總計 (依類型)]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -218,9 +242,21 @@
       </Item>
       <Item ItemId=";items.text2.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[# Azure AD cloud sync insights (AD2AAD)]D;]A;]]></Val>
+          <Val><![CDATA[# Azure AD cloud sync insights (AD2AAD)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[# Azure AD 雲端同步見解 (AD2AAD)]D;]A;]]></Val>
+            <Val><![CDATA[# Azure AD 雲端同步見解 (AD2AAD)]]></Val>
+          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[# Azure AD cloud sync insights (AD2AAD)]D;]A;]]></Val>
+          </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.text6.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[<span style="font-family:Segoe UI; font-size:11pt;"> Azure AD Connect cloud sync is designed to meet and accomplish your hybrid identity goals for synchronization of users, groups and contacts to Azure AD using a light weight agent and can be use alongside Azure AD Connect sync. This workbook is intended for Hybrid Identity Admins who use cloud sync to sync users from AD to Azure AD to gain insights into sync status and details. [Learn more]5D;(https://aka.ms/cloudsync)</span>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<span style="font-family:Segoe UI; font-size:11pt;"> Azure AD Connect 雲端同步處理的設計旨在達成並完成混合式身分識別目標，以使用輕量型代理程式將使用者、群組和連絡人同步處理至 Azure AD，並可以與 Azure AD Connect 同步處理一起使用。此活頁簿旨在使用雲端同步將使用者從 AD 同步到 Azure AD 的混合式身分識別系統管理員，以深入了解同步狀態和詳細資料。[深入了解]5D;(https://aka.ms/cloudsync)</span>]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
