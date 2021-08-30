@@ -21,21 +21,9 @@
           <Disp Icon="Str" />
         </Item>
       </Item>
-      <Item ItemId=";@items.flinkclustergroup.content.items.flinkclusterjobcheckpointinggroup.content.items.flinkjobmanagerjoblastCheck" ItemType="0" PsrId="306" Leaf="false">
+      <Item ItemId=";@items.flinkclustergroup.content.items.flinkclusterjobstatgroupbasic.content.items.flinkjobmanagerjobnumRestartsqu" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) pointSizequery.content.title" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[Job Last Checkpoint Size]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[작업 마지막 검사점 크기]]></Val>
-            </Tgt>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-      </Item>
-      <Item ItemId=";@items.flinkclustergroup.content.items.flinkclusterjobstatgroup.content.items.flinkjobmanagerjobnumRestartsquery.c" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) ontent.title" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) ery.content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Job Restart Count]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -45,14 +33,32 @@
           <Disp Icon="Str" />
         </Item>
       </Item>
-      <Item ItemId=";@items.flinkclustergroup.content.items.flinkclusterjobstatgroup.content.items.flinkjobmanagerjobrestartingTimequer" ItemType="0" PsrId="306" Leaf="false">
+      <Item ItemId=";@items.flinkclustergroup.content.items.flinkclusterjobstatgroupbasic.content.items.flinkjobmanagerjobrestartingTim" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) y.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) equery.content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Job Restarting Time]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
               <Val><![CDATA[작업 다시 시작 시간]]></Val>
             </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
+      <Item ItemId=";@items.flinkclustergroup.content.items.flinkclusterjobstatsgroupcheckpointing.content.items.flinkclusterjobcheckpo" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) intinggroup.content.items.flinkjobmanagerjobcheckpointhistory.content.title" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Checkpoint History]]></Val>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
+      <Item ItemId=";@items.flinkclustergroup.content.items.flinkclusterjobstatsgroupcheckpointing.content.items.flinkjobmanagerjoblast" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) CheckpointCountsquery.content.title" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Latest Job Checkpoint Counts (Completed vs. Failed)]]></Val>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -81,26 +87,59 @@
           <Disp Icon="Str" />
         </Item>
       </Item>
+      <Item ItemId=";@items.flinkclustergroup.content.items.flinkclusterjvmgroup.content.items.flinkjvmgcgroup.content.items.flinktaskm" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) anagergccount.content.title" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Task Manager Garbage Collection Count]]></Val>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) anagerstatusjvmgctimequery.content.title" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Task Manager Garbage Collection Time]]></Val>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
       <Item ItemId=";@items.flinkclustergroup.content.items.flinkclusterjvmgroup.content.items.flinkjvmmemorygroup.content.items.flinkj" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) obmanagerstatusjvmmemoryloadquery.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) obmanagerjvmmetaspacememoryquery.content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Job Manager JVM Memory Load]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[작업 관리자 JVM 메모리 로드]]></Val>
-            </Tgt>
+            <Val><![CDATA[Job Manager JVM Metaspace Memory]]></Val>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) obmanagerstatusflinkmanagedmemoryquery.content.title" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Task Manager Flink Managed Memory]]></Val>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) obmanagerstatusjvmmemoryquery.content.title" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Job Manager JVM (Heap/Non-Heap) Memory]]></Val>
           </Str>
           <Disp Icon="Str" />
         </Item>
       </Item>
       <Item ItemId=";@items.flinkclustergroup.content.items.flinkclusterjvmgroup.content.items.flinkjvmmemorygroup.content.items.flinkt" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) askmanagerstatusjvmmemoryloadquery.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) askmanagerflinknetworkmemoryquery.content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Task Manager JVM Memory Load]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[작업 관리자 JVM 메모리 로드]]></Val>
-            </Tgt>
+            <Val><![CDATA[Task Manager Flink Network Memory]]></Val>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) askmanagerjvmmetaspacememoryquery.content.title" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Task Manager JVM Metaspace Memory]]></Val>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) askmanagerstatusjvmmemoryquery.content.title" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Task Manager JVM (Heap/Non-Heap) Memory]]></Val>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -195,15 +234,6 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.flinkclustergroup.content.items.flinkTabs.content.links.5e12ff70e23c4d24aecf5e081809462e.linkLabel" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Checkpointing]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[검사점 설정 중]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
       <Item ItemId=";items.flinkclustergroup.content.items.flinkTabs.content.links.ae398761831f4a5398f59aa645b4a831.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[JVM]]></Val>
@@ -231,11 +261,38 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
+      <Item ItemId=";items.flinkclustergroup.content.items.flinkclusterjobstatgroupbasic.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Basics]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[기본 사항]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.flinkclustergroup.content.items.flinkclusterjobstatsgroupcheckpointing.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Checkpointing]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[검사점 설정 중]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.flinkclustergroup.content.items.flinkclusterjvmgroup.content.items.flinkjvmcpugroup.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[JVM CPU]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[JVM CPU]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.flinkclustergroup.content.items.flinkclusterjvmgroup.content.items.flinkjvmgcgroup.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[JVM Garbage Collection]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[JVM 가비지 수집]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
