@@ -231,6 +231,15 @@
           <Disp Icon="Str" />
         </Item>
       </Item>
+      <Item ItemId=";@items.Throughput.content.items.NormalizedRUConsumptionHeatMap.content.gridSettings.labelSettings.SegmentField.lab" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) el" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[PartitionKeyRanges]]></Val>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
       <Item ItemId=";@items.Throughput.content.items.NormalizedRUConsumptionHeatMap.content.gridSettings.labelSettings.Subscription.lab" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) el" ItemType="0" PsrId="306" Leaf="true">
@@ -245,19 +254,25 @@
       </Item>
       <Item ItemId=";items.AccountAudit.content.items.AccountManagement.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Cosmos DB Account Management (Creates, Deletes) and Account Key Updates]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[Cosmos DB Account Key Rotations]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[Správa účtu Cosmos DB (vytvoření, odstranění) a aktualizace klíče účtu]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Cosmos DB Account Management (Creates, Deletes) and Account Key Updates]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.AccountAudit.content.items.AccountSettings.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Cosmos DB Account Diagnostic, Network and Replication Settings Updates]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[Diagnostic, Network and Replication Settings Updates]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[Aktualizace nastavení diagnostiky, sítě a replikace u účtu Cosmos DB]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Cosmos DB Account Diagnostic, Network and Replication Settings Updates]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -326,10 +341,13 @@
       </Item>
       <Item ItemId=";items.Overview.content.items.CosmosDBAccountMetrics.content.gridSettings.labelSettings.Name.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Collections]]></Val>
+          <Val><![CDATA[Tables]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Kolekce]]></Val>
+            <Val><![CDATA[Tabulky]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Collections]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -524,10 +542,13 @@
       </Item>
       <Item ItemId=";items.Tabs.content.links.6d92257840b44c73b3cb71e32ec312d1.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Account Management]]></Val>
+          <Val><![CDATA[Management Operations]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Správa účtů]]></Val>
+            <Val><![CDATA[Operace správy]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Account Management]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -590,6 +611,15 @@
           <Val><![CDATA[Normalized RU Consumption (%) By PartitionKeyRangeID {DatabaseText} {ContainerText} ]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Normalizované využití RU (%) podle PartitionKeyRangeID {DatabaseText} {ContainerText} ]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Throughput.content.items.NormalizedRUConsumptionHeatMap.content.gridSettings.labelSettings.Name.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Tables]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Tabulky]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
