@@ -11,18 +11,69 @@
       <Disp Icon="Str" Disp="true" LocTbl="false" />
       <Item ItemId=";items.ExtentsCountGroup.content.items.ExtentSizeHistory.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Top tables by extent size ]]></Val>
+          <Val><![CDATA[Top tables by extent size - timechart]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[익스텐트 크기별 상위 테이블 ]]></Val>
+            <Val><![CDATA[익스텐트 크기별 상위 테이블 - 시간 차트]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Top tables by extent size ]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.ExtentsCountGroup.content.items.Extentcounthistory.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Top tables by extent count]]></Val>
+          <Val><![CDATA[Top tables by extent count - timechart]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[익스텐트 수별 상위 테이블]]></Val>
+            <Val><![CDATA[익스텐트 개수별 상위 테이블 - 시간 차트]]></Val>
+          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Top tables by extent count]]></Val>
+          </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.ExtentsCountGroup.content.items.Title3.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[<div style="background-color:rgba(232,246,255, 1); padding:3px 3px 3px 3px">]D;]A;<span style="font-family: Open Sans; font-weight: 600;  font-size: 14px;font-style: bold;">Extent count]D;]A;</span><br>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<div style="background-color:rgba(232,246,255, 1); padding:3px 3px 3px 3px">]D;]A;<span style="font-family: Open Sans; font-weight: 600;  font-size: 14px;font-style: bold;">익스텐트 개수]D;]A;</span><br>]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.ExtentsCountGroup.content.items.Title4.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[<div style="background-color:rgba(232,246,255, 1); padding:3px 3px 3px 3px">]D;]A;<span style="font-family: Open Sans; font-weight: 600;  font-size: 14px;font-style: bold;">Extent size]D;]A;</span><br>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<div style="background-color:rgba(232,246,255, 1); padding:3px 3px 3px 3px">]D;]A;<span style="font-family: Open Sans; font-weight: 600;  font-size: 14px;font-style: bold;">익스텐트 크기]D;]A;</span><br>]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.ExtentsCountGroup.content.items.TopTablesbyExtentCount.content.gridSettings.labelSettings.Category.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Table]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[테이블]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.ExtentsCountGroup.content.items.TopTablesbyExtentCount.content.gridSettings.labelSettings.Value.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Extent count]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[익스텐트 개수]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.ExtentsCountGroup.content.items.TopTablesbyExtentCount.content.gridSettings.labelSettings.percent.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Percentage out of total extent count]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[총 익스텐트 개수 중 백분율]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -32,6 +83,33 @@
           <Val><![CDATA[Top tables by extent count]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[익스텐트 수별 상위 테이블]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.ExtentsCountGroup.content.items.TopTablesbyExtentSize.content.gridSettings.labelSettings.Category.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Table]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[테이블]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.ExtentsCountGroup.content.items.TopTablesbyExtentSize.content.gridSettings.labelSettings.Value.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Extent size]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[익스텐트 크기]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.ExtentsCountGroup.content.items.TopTablesbyExtentSize.content.gridSettings.labelSettings.percent.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Percentage out of total extent size]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[총 익스텐트 크기 중 백분율]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -95,24 +173,24 @@
       </Item>
       <Item ItemId=";items.TableDetailsGoup.content.items.HotExtentSizeHistory.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Top tables by hot cache size ]]></Val>
+          <Val><![CDATA[Top tables by hot cache size - timechart]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[핫 캐시 크기별 상위 테이블 ]]></Val>
+            <Val><![CDATA[핫 캐시 크기별 상위 테이블 - 시간 차트]]></Val>
           </Tgt>
           <Prev Cat="Text">
-            <Val><![CDATA[Hot Extent Size History]]></Val>
+            <Val><![CDATA[Top tables by hot cache size ]]></Val>
           </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.TableDetailsGoup.content.items.RowCountHistory.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Top tables by row count ]]></Val>
+          <Val><![CDATA[Top tables by row count - timechart]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[행 개수별 상위 테이블 ]]></Val>
+            <Val><![CDATA[행 개수별 상위 테이블 - 시간 차트]]></Val>
           </Tgt>
           <Prev Cat="Text">
-            <Val><![CDATA[Row Count History]]></Val>
+            <Val><![CDATA[Top tables by row count ]]></Val>
           </Prev>
         </Str>
         <Disp Icon="Str" />
@@ -236,27 +314,81 @@
       </Item>
       <Item ItemId=";items.TableDetailsGoup.content.items.TablesHeader.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px -304px 0px 0px;position: relative;top:-5px">&nbsp;&nbsp;Table details]D;]A;</span><br>]D;]A;&nbsp;&nbsp;&nbsp;The data refreshes every 8 hours and not affected by the time range parameter.]]></Val>
+          <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px -304px 0px 0px;position: relative;top:-5px">&nbsp;&nbsp;Table details]D;]A;</span><br>]D;]A;&nbsp;&nbsp;&nbsp;The data refreshes every 8 hours and not affected by the time range parameter]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px -304px 0px 0px;position: relative;top:-5px">&nbsp;&nbsp;테이블 세부 정보]D;]A;</span><br>]D;]A;&nbsp;&nbsp;&nbsp;데이터는 8시간마다 새로 고치며 시간 범위 매개 변수의 영향을 받지 않습니다.]]></Val>
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px -304px 0px 0px;position: relative;top:-5px">&nbsp;&nbsp;테이블 세부 정보]D;]A;</span><br>]D;]A;&nbsp;&nbsp;&nbsp;데이터는 8시간마다 새로 고치며 시간 범위 매개 변수의 영향을 받지 않습니다]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px -304px 0px 0px;position: relative;top:-5px">&nbsp;&nbsp;Table details]D;]A;</span><br>]D;]A;&nbsp;&nbsp;&nbsp;The data refreshes every 8 hours and not affected by the time range parameter.]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.TableDetailsGoup.content.items.TablesHeaderovertime.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px -304px 0px 0px;position: relative;top:-5px">&nbsp;&nbsp;Table details over time]D;]A;</span><br>]D;]A;&nbsp;&nbsp;&nbsp;The data below is affected by the time range parameter.]]></Val>
+          <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px -304px 0px 0px;position: relative;top:-5px">&nbsp;&nbsp;Table details by category and over time ]D;]A;</span><br>]D;]A;&nbsp;&nbsp;&nbsp;The data below is affected by the time range parameter]D;]A;<!-- <div style="background-color:rgba(1, 1, 1, 0); padding:6px 6px 6px 6px">]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 15px;font-style: bold;">Table details over time]D;]A;</span><br>The data below is affected by the time range parameter -->]D;]A;]D;]A;]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px -304px 0px 0px;position: relative;top:-5px">&nbsp;&nbsp;시간 경과에 따른 테이블 세부 정보]D;]A;</span><br>]D;]A;&nbsp;&nbsp;&nbsp;아래 데이터는 시간 범위 매개 변수의 영향을 받습니다.]]></Val>
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px -304px 0px 0px;position: relative;top:-5px">&nbsp;&nbsp;범주 및 시간 경과별 테이블 세부 정보]D;]A;</span><br>]D;]A;&nbsp;&nbsp;&nbsp;아래 데이터는 시간 범위 매개 변수의 영향을 받습니다.]D;]A;<!-- <div style="background-color:rgba(1, 1, 1, 0); padding:6px 6px 6px 6px">]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 15px;font-style: bold;">Table details over time]D;]A;</span><br>The data below is affected by the time range parameter -->]D;]A;]D;]A;]]></Val>
+          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px -304px 0px 0px;position: relative;top:-5px">&nbsp;&nbsp;Table details over time]D;]A;</span><br>]D;]A;&nbsp;&nbsp;&nbsp;The data below is affected by the time range parameter.]]></Val>
+          </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.TableDetailsGoup.content.items.TablesHeaderovertimeCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[<!-- <div style="background-color:rgba(29,78,137, 1); padding:3px 3px 3px 3px">]D;]A;<span style="font-family: Open Sans; font-weight: 600; color:white; font-size: 13px;font-style: bold;">Row count]D;]A;</span> -->]D;]A;<div style="background-color:rgba(232,246,255, 1); padding:3px 3px 3px 3px">]D;]A;<span style="font-family: Open Sans; font-weight: 600; font-size: 14px;font-style: bold;">Row count]D;]A;</span><br>]D;]A;]D;]A;]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<!-- <div style="background-color:rgba(29,78,137, 1); padding:3px 3px 3px 3px">]D;]A;<span style="font-family: Open Sans; font-weight: 600; color:white; font-size: 13px;font-style: bold;">Row count]D;]A;</span> -->]D;]A;<div style="background-color:rgba(232,246,255, 1); padding:3px 3px 3px 3px">]D;]A;<span style="font-family: Open Sans; font-weight: 600; font-size: 14px;font-style: bold;">Row count]D;]A;</span><br>]D;]A;]D;]A;]D;]A;]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.TableDetailsGoup.content.items.TablesHelp.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[]D83D;]DCA1; For more table usage information, go to the **Cache** tab. For more documentation, see [Cache policy ]5D;(https://docs.microsoft.com/azure/data-explorer/kusto/management/cachepolicy) <svg width="10" viewBox="0 0 16 15" class="" role="presentation" focusable="false" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="FxSymbol0-055" data-type="31"><g><title></title><path d="M14.3 1H10V0h6v6h-1V1.7l-8 8-.7-.7z"></path><path d="M11 8v5a.9.9 0 01-1 1H2a.9.9 0 01-1-1V6a.9.9 0 011-1h6l1-1H2a2 2 0 00-2 2v7a2 2 0 002 2h8a2 2 0 002-2V7z"></path></g></svg> and  [Extents]5D;(https://docs.microsoft.com/azure/data-explorer/kusto/management/extents-overview) <svg width="10" viewBox="0 0 16 15" class="" role="presentation" focusable="false" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="FxSymbol0-055" data-type="31"><g><title></title><path d="M14.3 1H10V0h6v6h-1V1.7l-8 8-.7-.7z"></path><path d="M11 8v5a.9.9 0 01-1 1H2a.9.9 0 01-1-1V6a.9.9 0 011-1h6l1-1H2a2 2 0 00-2 2v7a2 2 0 002 2h8a2 2 0 002-2V7z"></path></g></svg>.]]></Val>
+          <Val><![CDATA[<!-- ]D83D;]DCA1; For more table usage information, go to the **Cache** tab. For more documentation, see [Cache policy ]5D;(https://docs.microsoft.com/azure/data-explorer/kusto/management/cachepolicy) <svg width="10" viewBox="0 0 16 15" class="" role="presentation" focusable="false" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="FxSymbol0-055" data-type="31"><g><title></title><path d="M14.3 1H10V0h6v6h-1V1.7l-8 8-.7-.7z"></path><path d="M11 8v5a.9.9 0 01-1 1H2a.9.9 0 01-1-1V6a.9.9 0 011-1h6l1-1H2a2 2 0 00-2 2v7a2 2 0 002 2h8a2 2 0 002-2V7z"></path></g></svg> and  [Extents]5D;(https://docs.microsoft.com/azure/data-explorer/kusto/management/extents-overview) <svg width="10" viewBox="0 0 16 15" class="" role="presentation" focusable="false" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="FxSymbol0-055" data-type="31"><g><title></title><path d="M14.3 1H10V0h6v6h-1V1.7l-8 8-.7-.7z"></path><path d="M11 8v5a.9.9 0 01-1 1H2a.9.9 0 01-1-1V6a.9.9 0 011-1h6l1-1H2a2 2 0 00-2 2v7a2 2 0 002 2h8a2 2 0 002-2V7z"></path></g></svg>. -->]D;]A;]D;]A; <div style="border: 2px solid gray; "></div>]D;]A;]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[]D83D;]DCA1; 자세한 테이블 사용량 정보를 확인하려면 **캐시** 탭으로 이동합니다. 자세한 내용은 [캐시 정책]5D;(https://docs.microsoft.com/azure/data-explorer/kusto/management/cachepolicy)<svg width="10" viewBox="0 0 16 15" class="" role="presentation" focusable="false" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="FxSymbol0-055" data-type="31"><g><title></title><path d="M14.3 1H10V0h6v6h-1V1.7l-8 8-.7-.7z"></path><path d="M11 8v5a.9.9 0 01-1 1H2a.9.9 0 01-1-1V6a.9.9 0 011-1h6l1-1H2a2 2 0 00-2 2v7a2 2 0 002 2h8a2 2 0 002-2V7z"></path></g></svg> 및 [익스텐트]5D;(https://docs.microsoft.com/azure/data-explorer/kusto/management/extents-overview)<svg width="10" viewBox="0 0 16 15" class="" role="presentation" focusable="false" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="FxSymbol0-055" data-type="31"><g><title></title><path d="M14.3 1H10V0h6v6h-1V1.7l-8 8-.7-.7z"></path><path d="M11 8v5a.9.9 0 01-1 1H2a.9.9 0 01-1-1V6a.9.9 0 011-1h6l1-1H2a2 2 0 00-2 2v7a2 2 0 002 2h8a2 2 0 002-2V7z"></path></g></svg>를 참조하세요.]]></Val>
+            <Val><![CDATA[<!-- ]D83D;]DCA1; For more table usage information, go to the **Cache** tab. For more documentation, see [Cache policy ]5D;(https://docs.microsoft.com/azure/data-explorer/kusto/management/cachepolicy) <svg width="10" viewBox="0 0 16 15" class="" role="presentation" focusable="false" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="FxSymbol0-055" data-type="31"><g><title></title><path d="M14.3 1H10V0h6v6h-1V1.7l-8 8-.7-.7z"></path><path d="M11 8v5a.9.9 0 01-1 1H2a.9.9 0 01-1-1V6a.9.9 0 011-1h6l1-1H2a2 2 0 00-2 2v7a2 2 0 002 2h8a2 2 0 002-2V7z"></path></g></svg> and  [Extents]5D;(https://docs.microsoft.com/azure/data-explorer/kusto/management/extents-overview) <svg width="10" viewBox="0 0 16 15" class="" role="presentation" focusable="false" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="FxSymbol0-055" data-type="31"><g><title></title><path d="M14.3 1H10V0h6v6h-1V1.7l-8 8-.7-.7z"></path><path d="M11 8v5a.9.9 0 01-1 1H2a.9.9 0 01-1-1V6a.9.9 0 011-1h6l1-1H2a2 2 0 00-2 2v7a2 2 0 002 2h8a2 2 0 002-2V7z"></path></g></svg>. -->]D;]A;]D;]A; <div style="border: 2px solid gray; "></div>]D;]A;]]></Val>
+          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[]D83D;]DCA1; For more table usage information, go to the **Cache** tab. For more documentation, see [Cache policy ]5D;(https://docs.microsoft.com/azure/data-explorer/kusto/management/cachepolicy) <svg width="10" viewBox="0 0 16 15" class="" role="presentation" focusable="false" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="FxSymbol0-055" data-type="31"><g><title></title><path d="M14.3 1H10V0h6v6h-1V1.7l-8 8-.7-.7z"></path><path d="M11 8v5a.9.9 0 01-1 1H2a.9.9 0 01-1-1V6a.9.9 0 011-1h6l1-1H2a2 2 0 00-2 2v7a2 2 0 002 2h8a2 2 0 002-2V7z"></path></g></svg> and  [Extents]5D;(https://docs.microsoft.com/azure/data-explorer/kusto/management/extents-overview) <svg width="10" viewBox="0 0 16 15" class="" role="presentation" focusable="false" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="FxSymbol0-055" data-type="31"><g><title></title><path d="M14.3 1H10V0h6v6h-1V1.7l-8 8-.7-.7z"></path><path d="M11 8v5a.9.9 0 01-1 1H2a.9.9 0 01-1-1V6a.9.9 0 011-1h6l1-1H2a2 2 0 00-2 2v7a2 2 0 002 2h8a2 2 0 002-2V7z"></path></g></svg>.]]></Val>
+          </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.TableDetailsGoup.content.items.Title2.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[<div style="background-color:rgba(232,246,255, 1); padding:3px 3px 3px 3px">]D;]A;<span style="font-family: Open Sans; font-weight: 600;  font-size: 14px;font-style: bold;">Hot cache size]D;]A;</span><br>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<div style="background-color:rgba(232,246,255, 1); padding:3px 3px 3px 3px">]D;]A;<span style="font-family: Open Sans; font-weight: 600;  font-size: 14px;font-style: bold;">핫 캐시 크기]D;]A;</span><br>]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.TableDetailsGoup.content.items.TopTablesbyHotCache.content.gridSettings.labelSettings.Category.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Table]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[테이블]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.TableDetailsGoup.content.items.TopTablesbyHotCache.content.gridSettings.labelSettings.Value.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Hot cache size]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[핫 캐시 크기]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.TableDetailsGoup.content.items.TopTablesbyHotCache.content.gridSettings.labelSettings.percent.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Percentage out of total hot cache size]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[총 핫 캐시 크기 중 백분율]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -270,6 +402,33 @@
           <Prev Cat="Text">
             <Val><![CDATA[Top Tables by Hot Cache (Database: Table)]]></Val>
           </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.TableDetailsGoup.content.items.TopTablesbyRowCount.content.gridSettings.labelSettings.Category.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Table]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[테이블]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.TableDetailsGoup.content.items.TopTablesbyRowCount.content.gridSettings.labelSettings.Value.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Row count]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[행 개수]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.TableDetailsGoup.content.items.TopTablesbyRowCount.content.gridSettings.labelSettings.percent.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Percentage out of total row count]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[총 행 개수 중 백분율]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
