@@ -555,6 +555,18 @@
           <Disp Icon="Str" />
         </Item>
       </Item>
+      <Item ItemId=";@items.IngestionDetailsGroup.content.items.Overview.content.items.Failgroup.content.items.Failedbystagetitle.conte" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) nt.json" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;color:black;"> Failed ingestions by component - timechart]D;]A;</span> ]D;]A;]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;color:black;"> 구성 요소별 실패한 수집 - 시간 차트]D;]A;</span> ]D;]A;]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
       <Item ItemId=";@items.IngestionDetailsGroup.content.items.Overview.content.items.Failgroup.content.items.Failedingestions.content" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) .gridSettings.formatters.6.formatOptions.linkLabel" ItemType="0" PsrId="306" Leaf="true">
@@ -1262,10 +1274,13 @@
       </Item>
       <Item ItemId=";items.IngestionDetailsGroup.content.items.Overview.content.items.Failgroup.content.items.text14.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;color:black"> Failed ingestions by database ]D;]A;</span> ]D;]A;]]></Val>
+          <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;color:black"> Failed ingestions by database (permanent)]D;]A;</span> ]D;]A;]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;color:black"> 데이터베이스별 실패한 수집]D;]A;</span> ]D;]A;]]></Val>
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;color:black"> 데이터베이스별 실패한 수집(영구)]D;]A;</span> ]D;]A;]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;color:black"> Failed ingestions by database ]D;]A;</span> ]D;]A;]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1280,10 +1295,13 @@
       </Item>
       <Item ItemId=";items.IngestionDetailsGroup.content.items.Overview.content.items.Failgroup.content.items.text14Copy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;color:black;"> Failed ingestions by table and error]D;]A;</span> ]D;]A;]]></Val>
+          <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;color:black;"> Failed ingestions by table and error]D;]A;</span> <br>]D;]A;Ingestion error code descriptions can be found [here]5D;(https://docs.microsoft.com/azure/data-explorer/error-codes).<br>]D;]A;Failure status can be Permanent or RetryAttemptsExceeded (indicates that operation has exceeded the retry attempts limit or timespan limit following a recurring transient error).]D;]A;]D;]A;]D;]A;]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;color:black;"> 테이블 및 오류별 실패한 수집]D;]A;</span> ]D;]A;]]></Val>
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;color:black;"> 테이블 및 오류별로 수집하지 못했습니다.]D;]A;</span> <br>]D;]A;수집 오류 코드 설명은 [여기]5D;(https://docs.microsoft.com/azure/data-explorer/error-codes)에서 찾을 수 있습니다.<br>]D;]A;실패 상태는 Permanent 또는 RetryAttemptsExceeded일 수 있습니다(작업이 반복적인 일시적 오류 후 재시도 제한 또는 시간 간격 제한을 초과했음을 나타냅니다).]D;]A;]D;]A;]D;]A;]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;color:black;"> Failed ingestions by table and error]D;]A;</span> ]D;]A;]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
