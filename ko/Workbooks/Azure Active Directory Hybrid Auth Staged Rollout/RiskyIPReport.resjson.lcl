@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<LCX SchemaVersion="6.0" Name="S:\output\loc\Azure Active Directory Hybrid Auth Staged Rollout\RiskyIPReport.resjson" PsrId="306" SrcCul="en-US" xmlns="http://schemas.microsoft.com/locstudio/2006/6/lcx" TgtCul="ko-KR">
+<LCX SchemaVersion="6.0" Name="S:\output\loc\Azure Active Directory Hybrid Auth Staged Rollout\RiskyIPReport.resjson" PsrId="306" FileType="1" SrcCul="en-US" TgtCul="ko-KR" xmlns="http://schemas.microsoft.com/locstudio/2006/6/lcx">
   <OwnedComments>
     <Cmt Name="Dev" />
     <Cmt Name="LcxAdmin" />
@@ -12,6 +12,9 @@
       <Item ItemId=";items.BarChartSelectIP.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Error Count for Selected IPs by Time]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[선택한 IP의 시간별 오류 수]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -24,6 +27,9 @@
       <Item ItemId=";items.HelpText.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[** Introduction: **]D;]A;]D;]A;This risky IP workbook analyzes data from ADFSSignInLogs to help you detect password spray or password brute force attacks. The workbook has two parts. The first part "Risky IP Analysis" identifies risky IP addresses based on designated error thresholds and detection window length. The second part provides the sign-in details and error eounts for selected IPs.]D;]A;]D;]A;** Prerequisites: **]D;]A;* Ensure that Azure AD Connect Health for AD FS is installed. Installation instructions can be found [here]5D;(https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-agent-install). This is required to send data to the ADFSSignInLogs Log Analytics stream.]D;]A;* Enable the ADFSSignInLogs Log Analytics stream in the Azure AD Diagnostic Settings blade prior to using the Workbook.]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[** 소개: **]D;]A;]D;]A;이 위험한 IP 통합 문서는 ADFSSignInLogs의 데이터를 분석하여 암호 스프레이 또는 암호 무차별 대입 공격을 검색하는 데 도움이 됩니다. 이 통합 문서는 두 부분으로 구성되어 있습니다. 첫 번째 부분인 "위험한 IP 분석"은 지정된 오류 임계값 및 검색 창 길이를 기반으로 위험한 IP 주소를 식별합니다. 두 번째 부분은 선택한 IP에 대한 로그인 세부 정보 및 오류 수를 제공합니다.]D;]A;]D;]A;** 필수 조건: **]D;]A;* AD FS용 Azure AD Connect Health가 설치되어 있는지 확인합니다. 설치 지침은 [여기]5D;(https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-agent-install)에서 확인할 수 있습니다. ADFSSignInLogs Log Analytics 스트림에 데이터를 보내기 위해 필요합니다.]D;]A;* 통합 문서를 사용하기 전에 Azure AD 진단 설정 블레이드에서 ADFSSignInLogs Log Analytics 스트림을 사용하도록 설정합니다.]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -42,6 +48,9 @@
       <Item ItemId=";items.IPAddressSelector.content.parameters.cc6539276afa44f3a3cbcd6f9a2fdb04.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[User Name]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[사용자 이름]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -54,108 +63,162 @@
       <Item ItemId=";items.ShowHelp.content.parameters.e8df00960969442391ec7952ec1615e2.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Toggle for Workbook Information]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[통합 문서 정보 토글]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.ShowHelp.content.parameters.e8df00960969442391ec7952ec1615e2.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Show Help]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[도움말 표시]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.SignInDetailsText.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Sign-in Details and Error Counts by IP]D;]A;Select one or multiple IP addresses to view failed sign-in details and error counts.]D;]A;The "Failed Sign-in Details for Selected IP Addresses" table shows the failed ADFS sign-in activities due to bad password errors or extranet lockout errors for the selected IP addresses.]D;]A;The "Error Count for Selected IPs by Time" chart visualizes the number of the errors for the selected IP addresses.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# 로그인 세부 정보 및 IP별 오류 수]D; ]A;실패한 로그인 세부 정보 및 오류 수를 보려면 하나 이상의 IP 주소를 선택하세요. ]D;]A;"선택한 IP 주소에 대한 로그인 실패 세부 정보 "표는 잘못된 암호 오류 또는 선택한 IP 주소에 대한 엑스트라넷 잠금 오류로 인해 실패한 ADFS 로그인 활동을 보여줍니다. ]D; ]A;"시간별 선택한 IP의 오류 수" 차트는 선택한 IP 주소에 대한 해당 오류의 수를 시각화합니다.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.parameters7.content.parameters.d359a31948134c2aa2546aaa647e781a.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[An IP address is considered risky if the sum of Bad Username/Password and Extranet Lockout errors from that IP exceeds this threshold.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[해당 IP의 잘못된 사용자 이름/비밀번호 및 엑스트라넷 잠금 오류의 합이 이 임계값을 초과하는 경우 IP 주소는 위험한 것으로 간주됩니다.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.parameters7.content.parameters.d359a31948134c2aa2546aaa647e781a.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Bad Password + Extranet Lockout Error Threshold]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[잘못된 암호 + 엑스트라넷 잠금 오류 임계 값]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.parameters7.content.parameters.db0cc9ee8c084a3983ef45627362795d.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Detection Window Length]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[감지 창 길이]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.parameters7.content.parameters.dd9af165620e4311ba9e86ca3d8bf339.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[An IP address is considered risky if the number of Extranet Lockout errors from that IP exceeds this threshold.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[해당 IP의 엑스트라넷 잠금 오류의 수가 이 임계값을 초과하는 경우 IP 주소는 위험한 것으로 간주됩니다.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.parameters7.content.parameters.dd9af165620e4311ba9e86ca3d8bf339.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Extranet Lockout Error Threshold]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[엑스트라넷 잠금 오류 임계값]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.parameters8.content.parameters.56e1768447a64d43bb3abdc24240f676.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Time Range]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[시간 범위]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.parameters9.content.parameters.86e67827003e436f84ab796f70313e0e.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[An IP address is considered risky if the number of Extranet Lockout errors from that IP exceeds this threshold.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[해당 IP의 엑스트라넷 잠금 오류의 수가 이 임계값을 초과하는 경우 IP 주소는 위험한 것으로 간주됩니다.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.parameters9.content.parameters.86e67827003e436f84ab796f70313e0e.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Lockout Error Threshold]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[잠금 오류 임계 값]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.parameters9.content.parameters.ee97dc6436c04605802efbd4cb0cae45.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[An IP address is considered risky if the sum of Bad Username/Password and Extranet Lockout errors from that IP exceeds this threshold.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[해당 IP의 잘못된 사용자 이름/비밀번호 및 엑스트라넷 잠금 오류의 합이 이 임계값을 초과하는 경우 IP 주소는 위험한 것으로 간주됩니다.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.parameters9.content.parameters.ee97dc6436c04605802efbd4cb0cae45.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Bad Password + Extranet Lockout Error Threshold]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[잘못된 암호 + 엑스트라넷 잠금 오류 임계 값]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.query10.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Top Regions with Most Risky IPs]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[가장 위험한 IP가 있는 상위 지역]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.query6.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Risky IPs Mapped by Location]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[위치별로 매핑된 위험한 IP]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.query7.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Risky IP Count by time]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[시간별 위험한 IP 수]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text13.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Risky IP Analysis]D;]A;An external IP address is considered risky if ]D;]A;1. The number of failed sign-ins due to extranet lockout errors exceeds the designated threshold  during a detection window]D;]A;2. Or the combined number of failed sign-ins due to bad password errors and extranet lockout errors exceeds the threshold.]D;]A;]D;]A;Select Risky IP detection window length and error thresholds to view the detected risky IP addresses.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[위험한 IP 분석]D;]A;다음의 경우 외부 IP 주소는 위험한 것으로 간주됩니다.]D;]A;1. 익스트라넷 잠금 오류로 인해 실패한 로그인 수가 감지 기간 동안 지정된 임계 값을 초과하는 경우]D;]A;2. 또는 잘못된 암호 오류 및 익스트라넷 잠금 오류로 인한 로그인 실패의 합이 임계값을 초과하는 경우.]D; ]A; ]D; ]A;위험한 IP 감지 창 길이 및 오류 임계값을 선택하여 감지된 위험한 IP 주소를 확인하세요.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.titleText.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Risky IP Workbook]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# 위험한 IP 통합 문서]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
