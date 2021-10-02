@@ -27,6 +27,9 @@
       <Item ItemId=";items.HelpText.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[** Introduction: **]D;]A;]D;]A;This risky IP workbook analyzes data from ADFSSignInLogs to help you detect password spray or password brute force attacks. The workbook has two parts. The first part "Risky IP Analysis" identifies risky IP addresses based on designated error thresholds and detection window length. The second part provides the sign-in details and error eounts for selected IPs.]D;]A;]D;]A;** Prerequisites: **]D;]A;* Ensure that Azure AD Connect Health for AD FS is installed. Installation instructions can be found [here]5D;(https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-agent-install). This is required to send data to the ADFSSignInLogs Log Analytics stream.]D;]A;* Enable the ADFSSignInLogs Log Analytics stream in the Azure AD Diagnostic Settings blade prior to using the Workbook.]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[** Giriş: **]D;]A;]D;]A;Bu riskli IP çalışma kitabı, parola spreyi veya parola deneme yanılma saldırılarını algılamanıza yardımcı olmak için ADFSSignInLogs verilerini analiz eder. Çalışma kitabı iki bölümden oluşur. İlk bölüm olan "Riskli IP Analizi", belirlenen hata eşiklerine ve algılama zaman aralığı uzunluğuna göre riskli IP adreslerini tanımlar. İkinci bölüm, seçili IP’ler için oturum açma ayrıntıları ve hata sayıları sağlar.]D;]A;]D;]A;** Önkoşullar: **]D;]A;* AD FS için Azure AD Connect Health’in yüklü olduğundan emin olun. Yükleme yönergelerini [burada]5D;(https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-agent-install) bulabilirsiniz. Bu, ADFSSignInLogs Log Analytics akışına veri göndermek için gereklidir.]D;]A;* Çalışma Kitabını kullanmadan önce Azure AD Tanılama Ayarları dikey penceresinde ADFSSignInLogs Log Analytics akışını etkinleştirin.]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -60,6 +63,9 @@
       <Item ItemId=";items.ShowHelp.content.parameters.e8df00960969442391ec7952ec1615e2.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Toggle for Workbook Information]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Çalışma Kitabı Bilgilerine yönelik iki durumlu denetim]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -201,6 +207,9 @@
       <Item ItemId=";items.text13.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Risky IP Analysis]D;]A;An external IP address is considered risky if ]D;]A;1. The number of failed sign-ins due to extranet lockout errors exceeds the designated threshold  during a detection window]D;]A;2. Or the combined number of failed sign-ins due to bad password errors and extranet lockout errors exceeds the threshold.]D;]A;]D;]A;Select Risky IP detection window length and error thresholds to view the detected risky IP addresses.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Riskli IP Analizi]D;]A;Bir dış IP adresi şu durumlarda riskli olarak kabul edilir: ]D;]A;1. Extranet kilitlenme hataları nedeniyle başarısız olan oturum açma sayısı, bir algılama zaman aralığında belirlenen eşiği aşıyor]D;]A;2. Veya yanlış parola hatalarından ve extranet kilitlenme hatalarından kaynaklanan başarısız oturum açmaların toplam sayısı eşiği aşıyor.]D;]A;]D;]A;Algılanan riskli IP adreslerini görüntülemek için Riskli IP algılama zaman aralığı uzunluğu ve hata eşiklerini seçin.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

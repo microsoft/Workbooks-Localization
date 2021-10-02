@@ -27,6 +27,9 @@
       <Item ItemId=";items.HelpText.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[** Introduction: **]D;]A;]D;]A;This risky IP workbook analyzes data from ADFSSignInLogs to help you detect password spray or password brute force attacks. The workbook has two parts. The first part "Risky IP Analysis" identifies risky IP addresses based on designated error thresholds and detection window length. The second part provides the sign-in details and error eounts for selected IPs.]D;]A;]D;]A;** Prerequisites: **]D;]A;* Ensure that Azure AD Connect Health for AD FS is installed. Installation instructions can be found [here]5D;(https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-agent-install). This is required to send data to the ADFSSignInLogs Log Analytics stream.]D;]A;* Enable the ADFSSignInLogs Log Analytics stream in the Azure AD Diagnostic Settings blade prior to using the Workbook.]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[** Bevezetés: **]D;]A;]D;]A;Ez a munkafüzet az ADFSSignInLogs adatait elemzi a szórásos vagy a találgatásos jelszófeltörést használó támadások észlelése céljából. A munkafüzet két részből áll. A kockázatos IP-címeket elemző első rész a kockázatos IP-címeket azonosítja a kijelölt hibaküszöbök és az észlelési időablak hossza alapján. A második rész a kiválasztott IP-címekkel kapcsolatos bejelentkezési adatokat és hibaszámokat tartalmazza.]D;]A;]D;]A;** Előfeltételek: **]D;]A;* Győződjön meg arról, hogy az AD FS-hez készült Azure AD Connect Health telepítve van. A telepítési utasítások [itt]5D;(https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-agent-install) találhatók. Ez a bővítmény az adatok ADFSSignInLogs Log Analytics-adatfolyamba való küldéséhez szükséges.]D;]A;* A munkafüzet használata előtt engedélyezze az ADFSSignInLogs Log Analytics-adatfolyamot az Azure AD Diagnosztikai beállítások paneljén.]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -60,6 +63,9 @@
       <Item ItemId=";items.ShowHelp.content.parameters.e8df00960969442391ec7952ec1615e2.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Toggle for Workbook Information]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Munkafüzetadatok be- és kikapcsolása]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -201,6 +207,9 @@
       <Item ItemId=";items.text13.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Risky IP Analysis]D;]A;An external IP address is considered risky if ]D;]A;1. The number of failed sign-ins due to extranet lockout errors exceeds the designated threshold  during a detection window]D;]A;2. Or the combined number of failed sign-ins due to bad password errors and extranet lockout errors exceeds the threshold.]D;]A;]D;]A;Select Risky IP detection window length and error thresholds to view the detected risky IP addresses.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Kockázatos IP-címek elemzése ]D;]A;Egy külső IP-cím akkor minősül kockázatosnak, ha ]D;]A; 1. Az extranetes zárolási hibák miatt meghiúsult bejelentkezések száma meghaladja a kijelölt küszöbértéket az észlelési időszakban, vagy]D;]A;2. A hibás jelszavak és az extranetes zárolási hibák miatt meghiúsult bejelentkezések összesített száma meghaladja a küszöbértéket.]D;]A;]D;]A;Az észlelt kockázatos IP-címek megtekintéséhez adja meg a kockázatos IP-címek észlelési időszakának hosszát és a hibaküszöbértékeket.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

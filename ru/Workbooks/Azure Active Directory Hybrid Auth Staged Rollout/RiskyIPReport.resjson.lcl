@@ -27,6 +27,9 @@
       <Item ItemId=";items.HelpText.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[** Introduction: **]D;]A;]D;]A;This risky IP workbook analyzes data from ADFSSignInLogs to help you detect password spray or password brute force attacks. The workbook has two parts. The first part "Risky IP Analysis" identifies risky IP addresses based on designated error thresholds and detection window length. The second part provides the sign-in details and error eounts for selected IPs.]D;]A;]D;]A;** Prerequisites: **]D;]A;* Ensure that Azure AD Connect Health for AD FS is installed. Installation instructions can be found [here]5D;(https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-agent-install). This is required to send data to the ADFSSignInLogs Log Analytics stream.]D;]A;* Enable the ADFSSignInLogs Log Analytics stream in the Azure AD Diagnostic Settings blade prior to using the Workbook.]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[** Введение. **]D;]A;]D;]A;В данной книга о рискованных IP-адресах рассматриваются данные из журналов ADFSSignInLogs, которые могут помочь вам обнаружить распыление пароля или атаки методом подбора пароля. Книга состоит из двух частей. В первой части «Анализ рискованных IP-адресов» приведено определение рискованных IP-адресов на основании назначенных порогов ошибок и длины окна обнаружения. Вторая часть содержит данные для входа и число ошибок для выбранных IP-адресов.]D;]A;]D;]A;** Предварительные условия. **]D;]A;* Установите Azure AD Connect Health для AD FS. Руководство по установке см. [здесь]5D;(https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-agent-install). Это необходимо для отправки данных в поток ADFSSignInLogs Log Analytics.]D;]A;* Перед использованием данной книги активируйте поток ADFSSignInLogs Log Analytics в колонке параметров диагностики Azure AD.]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -60,6 +63,9 @@
       <Item ItemId=";items.ShowHelp.content.parameters.e8df00960969442391ec7952ec1615e2.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Toggle for Workbook Information]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Переключиться на сведения о книге]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -201,6 +207,9 @@
       <Item ItemId=";items.text13.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Risky IP Analysis]D;]A;An external IP address is considered risky if ]D;]A;1. The number of failed sign-ins due to extranet lockout errors exceeds the designated threshold  during a detection window]D;]A;2. Or the combined number of failed sign-ins due to bad password errors and extranet lockout errors exceeds the threshold.]D;]A;]D;]A;Select Risky IP detection window length and error thresholds to view the detected risky IP addresses.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# Анализ рискованных IP-адресов]D;]A;Внешний IP-адрес считается рискованным, если ]D;]A;1. число неудавшихся входов в систему из-за ошибок блокировки экстрасети превышает назначенное пороговое значение во время работы окна обнаружения]D;]A;2. или общее число неудавшихся входов в систему из-за ошибок в пароле и ошибок блокировки экстрасети превышает пороговое значение.]D;]A;]D;]A;Выберите пункт «Длина окна обнаружения и пороговые значения ошибок рискованных IP-адресов», чтобы просмотреть обнаруженные рискованные IP-адреса.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

@@ -27,6 +27,9 @@
       <Item ItemId=";items.HelpText.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[** Introduction: **]D;]A;]D;]A;This risky IP workbook analyzes data from ADFSSignInLogs to help you detect password spray or password brute force attacks. The workbook has two parts. The first part "Risky IP Analysis" identifies risky IP addresses based on designated error thresholds and detection window length. The second part provides the sign-in details and error eounts for selected IPs.]D;]A;]D;]A;** Prerequisites: **]D;]A;* Ensure that Azure AD Connect Health for AD FS is installed. Installation instructions can be found [here]5D;(https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-agent-install). This is required to send data to the ADFSSignInLogs Log Analytics stream.]D;]A;* Enable the ADFSSignInLogs Log Analytics stream in the Azure AD Diagnostic Settings blade prior to using the Workbook.]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[** Introduzione: **]D;]A;]D;]A;Questa cartella di lavoro IP rischiosi consente di analizzare i dati da ADFSSignInLogs per rilevare la presenza di attacchi password spraying o brute force. La cartella di lavoro contiene due parti. La prima parte "Analisi IP rischiosi" identifica gli indirizzi IP rischiosi in base alle soglie di errore designate e alla lunghezza della finestra di rilevamento. La seconda parte fornisce i dettagli di accesso e i numeri di errori per gli indirizzi IP selezionati.]D;]A;]D;]A;** Prerequisiti: **]D;]A;* Verifica che sia installato Azure AD Connect Health per AD FS. È possibile trovare le istruzioni di installazione [qui]5D; (https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-agent-install). Questo è necessario per inviare i dati al flusso di analisi dei log ADFSSignInLogs.]D;]A;* Abilita il flusso di analisi dei log ADFSSignInLogs nel pannello delle impostazioni di diagnostica Azure AD prima di usare la cartella di lavoro.]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -60,6 +63,9 @@
       <Item ItemId=";items.ShowHelp.content.parameters.e8df00960969442391ec7952ec1615e2.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Toggle for Workbook Information]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Attiva/disattiva le informazioni della cartella di lavoro]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -201,6 +207,9 @@
       <Item ItemId=";items.text13.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Risky IP Analysis]D;]A;An external IP address is considered risky if ]D;]A;1. The number of failed sign-ins due to extranet lockout errors exceeds the designated threshold  during a detection window]D;]A;2. Or the combined number of failed sign-ins due to bad password errors and extranet lockout errors exceeds the threshold.]D;]A;]D;]A;Select Risky IP detection window length and error thresholds to view the detected risky IP addresses.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Analisi IP rischiosi]D;]A;Un indirizzo IP esterno è considerato rischioso nei casi seguenti: ]D;]A;1. Il numero di accessi non riusciti causati da errori di blocco Extranet supera la soglia specificata durante un intervallo di rilevamento]D;]A;2. Il numero combinato di accessi non riusciti a causa di errori di password non valida e di blocco Extranet supera la soglia.]D;]A;]D;]A;Selezionare la lunghezza dell'intervallo di rilevamento e le soglie di errore per gli indirizzi IP rischiosi per visualizzare gli indirizzi IP rischiosi rilevati.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
