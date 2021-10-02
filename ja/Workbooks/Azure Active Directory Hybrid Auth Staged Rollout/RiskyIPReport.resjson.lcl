@@ -27,6 +27,9 @@
       <Item ItemId=";items.HelpText.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[** Introduction: **]D;]A;]D;]A;This risky IP workbook analyzes data from ADFSSignInLogs to help you detect password spray or password brute force attacks. The workbook has two parts. The first part "Risky IP Analysis" identifies risky IP addresses based on designated error thresholds and detection window length. The second part provides the sign-in details and error eounts for selected IPs.]D;]A;]D;]A;** Prerequisites: **]D;]A;* Ensure that Azure AD Connect Health for AD FS is installed. Installation instructions can be found [here]5D;(https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-agent-install). This is required to send data to the ADFSSignInLogs Log Analytics stream.]D;]A;* Enable the ADFSSignInLogs Log Analytics stream in the Azure AD Diagnostic Settings blade prior to using the Workbook.]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[** はじめに: **]D;]A;]D;]A;この危険な IP ブックは、ADFSSignInLogs からのデータを分析し、パスワード スプレーやパスワード ブルート フォース攻撃を検出するのに役立ちます。このブックには 2 つの部分があります。最初の "危険な IP 分析" の部分では、指定されたエラーしきい値と検出期間の長さに基づいて、危険な IP アドレスを識別します。2 番目の部分では、選択された IP についてサインインの詳細とエラー数を提供します。]D;]A;]D;]A;** 前提条件: **]D;]A;* Azure AD Connect Health for AD FS がインストールされていることを確認します。インストールの手順については、[こちら]5D;(https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-agent-install)をご覧ください。これは、ADFSSignInLogs Log Analytics ストリームにデータを送信するため必要です。]D;]A;* このブックを使用する前に、Azure AD 診断設定ブレードで ADFSSignInLogs Log Analytics ストリームを有効にしてください。]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -60,6 +63,9 @@
       <Item ItemId=";items.ShowHelp.content.parameters.e8df00960969442391ec7952ec1615e2.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Toggle for Workbook Information]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[ブック情報の切り替え]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -201,6 +207,9 @@
       <Item ItemId=";items.text13.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Risky IP Analysis]D;]A;An external IP address is considered risky if ]D;]A;1. The number of failed sign-ins due to extranet lockout errors exceeds the designated threshold  during a detection window]D;]A;2. Or the combined number of failed sign-ins due to bad password errors and extranet lockout errors exceeds the threshold.]D;]A;]D;]A;Select Risky IP detection window length and error thresholds to view the detected risky IP addresses.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[危険な IP 分析]D;]A;外部 IP アドレスは、次の場合に危険であると見なされます]D;]A;1. 検出期間中に、エクストラネットのロックアウト エラーによって失敗したサインインの数が指定したしきい値を超えている場合]D;]A;2. または、無効なパスワード エラーとエクストラネットのロックアウト エラーによって失敗したサインインの合計数がしきい値を超えている場合。]D;]A;]D;]A;危険な IP 検出期間の長さとエラーのしきい値を選択して、検出された危険な IP アドレスを表示します。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
