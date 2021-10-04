@@ -27,6 +27,9 @@
       <Item ItemId=";items.HelpText.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[** Introduction: **]D;]A;]D;]A;This risky IP workbook analyzes data from ADFSSignInLogs to help you detect password spray or password brute force attacks. The workbook has two parts. The first part "Risky IP Analysis" identifies risky IP addresses based on designated error thresholds and detection window length. The second part provides the sign-in details and error eounts for selected IPs.]D;]A;]D;]A;** Prerequisites: **]D;]A;* Ensure that Azure AD Connect Health for AD FS is installed. Installation instructions can be found [here]5D;(https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-agent-install). This is required to send data to the ADFSSignInLogs Log Analytics stream.]D;]A;* Enable the ADFSSignInLogs Log Analytics stream in the Azure AD Diagnostic Settings blade prior to using the Workbook.]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[** Einführung: **]D;]A;]D;]A;Diese riskante IP-Arbeitsmappe analysiert Daten aus ADFSSignInLogs, um Sie bei der Erkennung von Spray- oder Brute-Force-Angriffen auf Kennwörter zu unterstützen. Die Arbeitsmappe umfasst zwei Teile. Der erste Teil „Analyse riskanter IP-Adressen“ identifiziert riskante IP-Adressen basierend auf den festgelegten Fehlerschwellenwerten und der Länge des Erkennungsfensters. Der zweite Teil stellt die Anmeldedetails und Fehlermeldungen für ausgewählte IP-Adressen bereit.]D;]A;]D;]A;** Voraussetzungen: **]D;]A;* Stellen Sie sicher, dass Azure AD Connect Health für AD FS installiert ist. Installationsanweisungen finden Sie [hier]5D;(https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-agent-install). Dies ist erforderlich, um Daten an den Log Analytics-Stream ADFSSignInLogs zu senden.]D;]A;* Aktivieren Sie vor der Verwendung der Arbeitsmappe den Log Analytics-Stream ADFS.SignInLogs auf dem Blatt „Azure AD-Diagnoseeinstellungen“.]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -60,6 +63,9 @@
       <Item ItemId=";items.ShowHelp.content.parameters.e8df00960969442391ec7952ec1615e2.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Toggle for Workbook Information]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Umschalten für Arbeitsmappeninformationen]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -201,6 +207,9 @@
       <Item ItemId=";items.text13.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Risky IP Analysis]D;]A;An external IP address is considered risky if ]D;]A;1. The number of failed sign-ins due to extranet lockout errors exceeds the designated threshold  during a detection window]D;]A;2. Or the combined number of failed sign-ins due to bad password errors and extranet lockout errors exceeds the threshold.]D;]A;]D;]A;Select Risky IP detection window length and error thresholds to view the detected risky IP addresses.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Analyse riskanter IP-Adressen]D;]A;Eine externe IP-Adresse wird als riskant eingestuft, wenn ]D;]A;1. die Anzahl der fehlerhaften Anmeldungen aufgrund von Extranet-Sperrfehlern den festgelegten Schwellenwert während eines Erkennungsfensters überschreitet, oder]D;]A;2. die kombinierte Anzahl fehlerhafter Anmeldungen aufgrund ungültiger Kennwörter und Extranet-Sperrfehlern den Schwellenwert überschreitet.]D;]A;]D;]A;Wählen Sie Länge des Erkennungsfensters für riskante IP-Adressen und Fehlerschwellenwerte, um die erkannten riskanten IP-Adressen anzuzeigen.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
