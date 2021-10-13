@@ -328,10 +328,13 @@
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) essage" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[No missing performace counters]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[No missing performance counters]]></Val>
+            <Tgt Cat="Text" Stat="Update" Orig="New">
               <Val><![CDATA[Tidak ada penghitung kinerja yang terlewat]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[No missing performace counters]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -477,6 +480,30 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
+      <Item ItemId=";items.DataGenGroup.content.items.BilledDataPieChart.content.chartSettings.seriesLabelSettings.0.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Perf Counters]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Penghitung Perf]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.DataGenGroup.content.items.BilledDataPieChart.content.chartSettings.seriesLabelSettings.1.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Events]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Kejadian]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.DataGenGroup.content.items.BilledDataPieChart.content.chartSettings.seriesLabelSettings.2.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[AVD Diagnostics]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.DataGenGroup.content.items.BilledDataPieChart.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Billed data over last 24hrs]]></Val>
@@ -531,57 +558,33 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.DataGenGroup.content.items.MB24hrTotal.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[no records found to total]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[tidak menemukan catatan untuk ditotalkan]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.DataGenGroup.content.items.MB24hrTotal.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Billed data over last 24hrs]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Data yang ditagihkan selama 24 jam terakhir]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.DataGenGroup.content.items.MB24hrTotalDiagnostics.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[no records found to total]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[tidak menemukan catatan untuk ditotalkan]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.DataGenGroup.content.items.MB24hrTotalDiagnostics.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Diagnostic billed data over last 24hrs]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Diagnostik data yang ditagihkan selama 24 jam terakhir]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
       <Item ItemId=";items.DataGenGroup.content.items.MBoverTime.content.chartSettings.seriesLabelSettings.0.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[PerfCounterData]]></Val>
+          <Val><![CDATA[Perf Counters]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[PerfCounterData]]></Val>
+            <Val><![CDATA[Penghitung Perf]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[PerfCounterData]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.DataGenGroup.content.items.MBoverTime.content.chartSettings.seriesLabelSettings.1.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[EventData]]></Val>
+          <Val><![CDATA[Events]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[EventData]]></Val>
+            <Val><![CDATA[Kejadian]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[EventData]]></Val>
+          </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.DataGenGroup.content.items.MBoverTime.content.chartSettings.seriesLabelSettings.2.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[AVD Diagnostics]]></Val>
         </Str>
         <Disp Icon="Str" />
       </Item>

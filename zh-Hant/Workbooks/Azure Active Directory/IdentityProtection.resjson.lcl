@@ -20,19 +20,25 @@
       </Item>
       <Item ItemId=";items.group13.content.items.group17.content.items.text2.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Map location is based on longitude and latiude data. Size of the circles are based on number of risk detections. Color of circles are based on the Weighted Risk = Number of Detections x Weight]D;]A;]D;]A;Weight: High Risk = 10, Medium Risk = 5, Low Risk = 1]D;]A;]D;]A;Lower risk circles are yellow and higher risk circles are red.]D;]A;]D;]A;]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[Map location is based on longitude and latitude data. Size of the circles are based on number of risk detections. Color of circles are based on the Weighted Risk = Number of Detections x Weight]D;]A;]D;]A;Weight: High Risk = 10, Medium Risk = 5, Low Risk = 1]D;]A;]D;]A;Lower risk circles are yellow and higher risk circles are red.]D;]A;]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[地圖位置以經度和緯度資料為基礎。圓形的大小是根據風險偵測的數目而定。圓形的色彩以加權風險 = 偵測次數 x 權數為准]D;]A;]D;]A;權數: 高風險 = 10，中度風險 = 5，低風險 = 1]D;]A;]D;]A;風險較低的圓形為黃色，而風險較高的圓形為紅色。]D;]A;]D;]A;]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Map location is based on longitude and latiude data. Size of the circles are based on number of risk detections. Color of circles are based on the Weighted Risk = Number of Detections x Weight]D;]A;]D;]A;Weight: High Risk = 10, Medium Risk = 5, Low Risk = 1]D;]A;]D;]A;Lower risk circles are yellow and higher risk circles are red.]D;]A;]D;]A;]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group13.content.items.group17.content.items.text23.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[# Heatmap of Risk Risk Detections]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[# Heatmap of Risk Detections]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[# 風險的熱度圖風險偵測]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[# Heatmap of Risk Risk Detections]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -434,54 +440,171 @@
       </Item>
       <Item ItemId=";items.group19.content.items.query25Copy.content.chartSettings.seriesLabelSettings.0.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[New Country]]></Val>
+          <Val><![CDATA[New country]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[新國家/地區]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[New Country]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group19.content.items.query25Copy.content.chartSettings.seriesLabelSettings.1.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Unfamiliar Features]]></Val>
+          <Val><![CDATA[Unfamiliar sign-in properties]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[不熟悉的功能]]></Val>
+            <Val><![CDATA[不熟悉的登入屬性]]></Val>
+          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Unfamiliar Features]]></Val>
+          </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.group19.content.items.query25Copy.content.chartSettings.seriesLabelSettings.10.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Malware linked IP address]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[已連結惡意程式碼的 IP 位址]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.group19.content.items.query25Copy.content.chartSettings.seriesLabelSettings.11.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Malicious IP address]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[惡意 IP 位址]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.group19.content.items.query25Copy.content.chartSettings.seriesLabelSettings.12.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Leaked credentials]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[認證外洩]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.group19.content.items.query25Copy.content.chartSettings.seriesLabelSettings.13.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Admin confirmed user compromised]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[系統管理員已確認使用者遭盜用]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.group19.content.items.query25Copy.content.chartSettings.seriesLabelSettings.14.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Suspicious inbox manipulation rules]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[可疑的收件匣操作規則]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.group19.content.items.query25Copy.content.chartSettings.seriesLabelSettings.15.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Azure AD threat intelligence]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Azure AD 威脅情報]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.group19.content.items.query25Copy.content.chartSettings.seriesLabelSettings.16.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Malicious IP address]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[惡意 IP 位址]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group19.content.items.query25Copy.content.chartSettings.seriesLabelSettings.2.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Risky IP Address]]></Val>
+          <Val><![CDATA[Activity from anonymous IP address]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[具風險的 IP 位址]]></Val>
+            <Val><![CDATA[來自匿名 IP 位址的活動]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Risky IP Address]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group19.content.items.query25Copy.content.chartSettings.seriesLabelSettings.3.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Password Spray]]></Val>
+          <Val><![CDATA[Password spray]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[密碼噴灑]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Password Spray]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group19.content.items.query25Copy.content.chartSettings.seriesLabelSettings.4.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Confirmed User Compromise]]></Val>
+          <Val><![CDATA[Admin confirmed user compromised]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[已確認使用者遭盜用]]></Val>
+            <Val><![CDATA[系統管理員已確認使用者遭盜用]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Confirmed User Compromise]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group19.content.items.query25Copy.content.chartSettings.seriesLabelSettings.5.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Anonymized IP Address]]></Val>
+          <Val><![CDATA[Anonymous IP address]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[匿名 IP 位址]]></Val>
+          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Anonymized IP Address]]></Val>
+          </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.group19.content.items.query25Copy.content.chartSettings.seriesLabelSettings.6.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Impossible travel]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[不可能的移動]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.group19.content.items.query25Copy.content.chartSettings.seriesLabelSettings.7.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Azure AD threat intelligence]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Azure AD 威脅情報]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.group19.content.items.query25Copy.content.chartSettings.seriesLabelSettings.8.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Atypical travel]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[非慣用移動]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.group19.content.items.query25Copy.content.chartSettings.seriesLabelSettings.9.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Malicious IP Address]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[惡意 IP 位址]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -497,63 +620,174 @@
       </Item>
       <Item ItemId=";items.group19.content.items.query25CopyCopy.content.chartSettings.seriesLabelSettings.0.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[New Country]]></Val>
+          <Val><![CDATA[New country]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[新國家/地區]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[New Country]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group19.content.items.query25CopyCopy.content.chartSettings.seriesLabelSettings.1.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Unfamiliar Features]]></Val>
+          <Val><![CDATA[Unfamiliar sign-in properties]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[不熟悉的功能]]></Val>
+            <Val><![CDATA[不熟悉的登入屬性]]></Val>
+          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Unfamiliar Features]]></Val>
+          </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.group19.content.items.query25CopyCopy.content.chartSettings.seriesLabelSettings.10.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Malware linked IP address]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[已連結惡意程式碼的 IP 位址]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.group19.content.items.query25CopyCopy.content.chartSettings.seriesLabelSettings.11.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Malicious IP address]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[惡意 IP 位址]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.group19.content.items.query25CopyCopy.content.chartSettings.seriesLabelSettings.12.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Leaked credentials]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[認證外洩]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.group19.content.items.query25CopyCopy.content.chartSettings.seriesLabelSettings.13.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Admin confirmed user compromised]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[系統管理員已確認使用者遭盜用]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.group19.content.items.query25CopyCopy.content.chartSettings.seriesLabelSettings.14.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Suspicious inbox manipulation rules]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[可疑的收件匣操作規則]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.group19.content.items.query25CopyCopy.content.chartSettings.seriesLabelSettings.15.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Azure AD threat intelligence]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Azure AD 威脅情報]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.group19.content.items.query25CopyCopy.content.chartSettings.seriesLabelSettings.16.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Malicious IP address]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[惡意 IP 位址]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group19.content.items.query25CopyCopy.content.chartSettings.seriesLabelSettings.2.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Risky IP Address]]></Val>
+          <Val><![CDATA[Activity from anonymous IP address]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[具風險的 IP 位址]]></Val>
+            <Val><![CDATA[來自匿名 IP 位址的活動]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Risky IP Address]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group19.content.items.query25CopyCopy.content.chartSettings.seriesLabelSettings.3.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Password Spray]]></Val>
+          <Val><![CDATA[Password spray]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[密碼噴灑]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Password Spray]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group19.content.items.query25CopyCopy.content.chartSettings.seriesLabelSettings.4.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Confirmed User Compromise]]></Val>
+          <Val><![CDATA[Admin confirmed user compromised]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[已確認使用者遭盜用]]></Val>
+            <Val><![CDATA[系統管理員已確認使用者遭盜用]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Confirmed User Compromise]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group19.content.items.query25CopyCopy.content.chartSettings.seriesLabelSettings.5.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Anonymized IP Address]]></Val>
+          <Val><![CDATA[Anonymous IP address]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[匿名 IP 位址]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Anonymized IP Address]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group19.content.items.query25CopyCopy.content.chartSettings.seriesLabelSettings.6.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[MCAS Impossible Travel]]></Val>
+          <Val><![CDATA[Impossible travel]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[MCAS 不可能的移動]]></Val>
+            <Val><![CDATA[不可能的移動]]></Val>
+          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[MCAS Impossible Travel]]></Val>
+          </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.group19.content.items.query25CopyCopy.content.chartSettings.seriesLabelSettings.7.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Azure AD threat intelligence]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Azure AD 威脅情報]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.group19.content.items.query25CopyCopy.content.chartSettings.seriesLabelSettings.8.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Atypical travel]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[非慣用移動]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.group19.content.items.query25CopyCopy.content.chartSettings.seriesLabelSettings.9.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Malicious IP address]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[惡意 IP 位址]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
