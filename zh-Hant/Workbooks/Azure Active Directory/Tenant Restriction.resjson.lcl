@@ -9,32 +9,26 @@
     <Disp Icon="Expand" Expand="true" Disp="true" LocTbl="false" />
     <Item ItemId=";Strings" ItemType="0" PsrId="306" Leaf="false">
       <Disp Icon="Str" Disp="true" LocTbl="false" />
-      <Item ItemId=";items.Usagenotpresentgroup.content.items.text0.content.json" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Usagenotpresentgroup.content.items.text0.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[The query does not detect Tenant Restriction usage for the last 30 days. To enable Tenant Restriction, please visit the [documentation]5D;(https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/tenant-restrictions?WT.mc_id=Portal-fx).]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[The query does not detect tenant restriction usage for the {TimeRange:label}. If you don't enable tenant restriction and want to enable, please visit the [documentation]5D;(https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/tenant-restrictions?WT.mc_id=Portal-fx). If you enabled, please try a bigger time range.]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[查詢不會偵測過去 30 天的租用戶限制使用量。若要啟用租用戶限制，請瀏覽 [文件]5D; (https://docs.microsoft.com/zh-tw/azure/active-directory/manage-apps/tenant-restrictions?WT.mc_id=Portal-fx)(部分機器翻譯)。]]></Val>
           </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Usagepresentgroup.content.items.parameters2.content.parameters.b75683ceb2e84a1e97c0e1b7b45b1ebc.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Time range]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[時間範圍]]></Val>
-          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[The query does not detect Tenant Restriction usage for the last 30 days. To enable Tenant Restriction, please visit the [documentation]5D;(https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/tenant-restrictions?WT.mc_id=Portal-fx).]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Usagepresentgroup.content.items.text0.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[## Sign-ins blocked by Tenant Restriction]D;]A;This section shows apps and tenants blocked by Tenant Restriction. A high volume of requests may indicate that users are unable to access something that they need access to. You may consider unblocking access to that tenant if so. If no users have been blocked by your Tenant Restrictions policy, the query will return no results. If you have a functioning Tenant Restrictions policy and expected results, double check that the Restrict-Access-Context header contains only the correct tenant ID - the one that matches this tenant.]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[## Sign-ins blocked by tenant restriction]D;]A;This section shows apps and tenants blocked by tenant restriction. A high volume of requests may indicate that users are unable to access something that they need access to. You may consider unblocking access to that tenant if so. If no users have been blocked by your tenant restrictions policy, the query will return no results. If you have a functioning tenant restrictions policy and expected results, double check that the Restrict-Access-Context header contains only the correct tenant ID - the one that matches this tenant.]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[## 租用戶限制已封鎖的登入]D;]A;此區段會顯示租用戶限制所封鎖的應用程式和租用戶。大量要求可能表示使用者無法存取他們需要存取的項目。如果是這種情況，您可以考慮解除封鎖對該租用戶的存取。若您的租用戶限制原則未封鎖任何使用者，查詢將不會傳回任何結果。若您有運作中的租用戶限制原則及預期的結果，請仔細確認限制存取內容標頭只包含與此租用戶相符的正確租用戶識別碼。]]></Val>
           </Tgt>
           <Prev Cat="Text">
-            <Val><![CDATA[## Sign-ins blocked by Tenant Restriction]D;]A;The following apps and tenants were blocked due to tenant restrictions.  A high volume of requests may indicate that users are unable to access something that they need access to.  You may consider unblocking access to that tenant if so. ]]></Val>
+            <Val><![CDATA[## Sign-ins blocked by Tenant Restriction]D;]A;This section shows apps and tenants blocked by Tenant Restriction. A high volume of requests may indicate that users are unable to access something that they need access to. You may consider unblocking access to that tenant if so. If no users have been blocked by your Tenant Restrictions policy, the query will return no results. If you have a functioning Tenant Restrictions policy and expected results, double check that the Restrict-Access-Context header contains only the correct tenant ID - the one that matches this tenant.]]></Val>
           </Prev>
         </Str>
         <Disp Icon="Str" />
@@ -48,12 +42,24 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
+      <Item ItemId=";items.parameters2.content.parameters.b75683ceb2e84a1e97c0e1b7b45b1ebc.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Time range]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[時間範圍]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.text3.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[# Tenant Restriction Insights]D;]A;Organizations use [Tenant Restrictions]5D;(https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/tenant-restrictions?WT.mc_id=Portal-fx) to specify the list of tenants that their users are permitted to access. Azure AD then only grants access to these permitted tenants.]D;]A;]D;]A;This workbook was designed to help admins understand the impact of their Tenant Restriction policy by aggregating sign-in results.]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[# Tenant restriction insights]D;]A;Organizations use [tenant restrictions]5D;(https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/tenant-restrictions?WT.mc_id=Portal-fx) to specify the list of tenants that their users are permitted to access. Azure AD then only grants access to these permitted tenants.]D;]A;]D;]A;This workbook was designed to help admins understand the impact of their tenant restriction policy by aggregating sign-in results.]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[# 租用戶限制深入解析]D;]A;組織使用 [租用戶限制]5D; (https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/tenant-restrictions?WT.mc_id=Portal-fx) 指定允許使用者存取的租用戶清單。Azure AD 就只會授與存取權給這些允許的租用戶。]D;]A;]D;]A;此活頁簿的設計目的是為了協助管理員透過匯總登入結果來瞭解其租用戶限制原則的影響。]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[# Tenant Restriction Insights]D;]A;Organizations use [Tenant Restrictions]5D;(https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/tenant-restrictions?WT.mc_id=Portal-fx) to specify the list of tenants that their users are permitted to access. Azure AD then only grants access to these permitted tenants.]D;]A;]D;]A;This workbook was designed to help admins understand the impact of their Tenant Restriction policy by aggregating sign-in results.]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>

@@ -9,32 +9,26 @@
     <Disp Icon="Expand" Expand="true" Disp="true" LocTbl="false" />
     <Item ItemId=";Strings" ItemType="0" PsrId="306" Leaf="false">
       <Disp Icon="Str" Disp="true" LocTbl="false" />
-      <Item ItemId=";items.Usagenotpresentgroup.content.items.text0.content.json" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Usagenotpresentgroup.content.items.text0.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[The query does not detect Tenant Restriction usage for the last 30 days. To enable Tenant Restriction, please visit the [documentation]5D;(https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/tenant-restrictions?WT.mc_id=Portal-fx).]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[The query does not detect tenant restriction usage for the {TimeRange:label}. If you don't enable tenant restriction and want to enable, please visit the [documentation]5D;(https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/tenant-restrictions?WT.mc_id=Portal-fx). If you enabled, please try a bigger time range.]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[La requête ne détecte pas l’utilisation de la restriction client au cours des 30 derniers jours. Pour activer la restriction client, consultez le [documentation]5D; (https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/tenant-restrictions?WT.mc_id=Portal-fx).]]></Val>
           </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Usagepresentgroup.content.items.parameters2.content.parameters.b75683ceb2e84a1e97c0e1b7b45b1ebc.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Time range]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Intervalle de temps]]></Val>
-          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[The query does not detect Tenant Restriction usage for the last 30 days. To enable Tenant Restriction, please visit the [documentation]5D;(https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/tenant-restrictions?WT.mc_id=Portal-fx).]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Usagepresentgroup.content.items.text0.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[## Sign-ins blocked by Tenant Restriction]D;]A;This section shows apps and tenants blocked by Tenant Restriction. A high volume of requests may indicate that users are unable to access something that they need access to. You may consider unblocking access to that tenant if so. If no users have been blocked by your Tenant Restrictions policy, the query will return no results. If you have a functioning Tenant Restrictions policy and expected results, double check that the Restrict-Access-Context header contains only the correct tenant ID - the one that matches this tenant.]]></Val>
+          <Val><![CDATA[## Sign-ins blocked by tenant restriction]D;]A;This section shows apps and tenants blocked by tenant restriction. A high volume of requests may indicate that users are unable to access something that they need access to. You may consider unblocking access to that tenant if so. If no users have been blocked by your tenant restrictions policy, the query will return no results. If you have a functioning tenant restrictions policy and expected results, double check that the Restrict-Access-Context header contains only the correct tenant ID - the one that matches this tenant.]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[# # Connexions bloquées par une restriction liée au client]D;]A;Cette section affiche les applications et clients bloqués par la restriction liée au client. Un volume élevé de demandes peut indiquer que les utilisateurs ne sont pas en mesure d’accéder à un élément auquel ils ont besoin d’accéder. Si tel est le cas, vous pouvez envisager de débloquer l’accès à ce client. Si aucun utilisateur n’a été bloqué par votre stratégie de restriction liée au client, la requête ne retourne aucun résultat. Si vous avez une stratégie de restriction des locataires opérationnelle et des résultats attendus, vérifiez que l’en-tête de restriction d’accès contient uniquement l’ID client correct, celui qui correspond à ce client.]]></Val>
+            <Val><![CDATA[## Connexions bloquées par restriction liée au locataire]D;]A;Cette section affiche les applications et locataires bloqués par restriction liée au locataire. Un volume élevé de demandes peut indiquer que les utilisateurs ne sont pas en mesure d’accéder à un élément auquel ils ont besoin d’accéder. Si tel est le cas, vous pouvez envisager de débloquer l’accès à ce locataire. Si aucun utilisateur n’a été bloqué par votre stratégie de restriction liée au locataire, la requête ne retourne aucun résultat. Si vous avez une stratégie de restriction liée au locataire opérationnelle et des résultats attendus, vérifiez que l’en-tête de restriction d’accès contient uniquement l’ID locataire correct, celui qui correspond à ce locataire.]]></Val>
           </Tgt>
           <Prev Cat="Text">
-            <Val><![CDATA[## Sign-ins blocked by Tenant Restriction]D;]A;The following apps and tenants were blocked due to tenant restrictions.  A high volume of requests may indicate that users are unable to access something that they need access to.  You may consider unblocking access to that tenant if so. ]]></Val>
+            <Val><![CDATA[## Sign-ins blocked by Tenant Restriction]D;]A;This section shows apps and tenants blocked by Tenant Restriction. A high volume of requests may indicate that users are unable to access something that they need access to. You may consider unblocking access to that tenant if so. If no users have been blocked by your Tenant Restrictions policy, the query will return no results. If you have a functioning Tenant Restrictions policy and expected results, double check that the Restrict-Access-Context header contains only the correct tenant ID - the one that matches this tenant.]]></Val>
           </Prev>
         </Str>
         <Disp Icon="Str" />
@@ -48,12 +42,24 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
+      <Item ItemId=";items.parameters2.content.parameters.b75683ceb2e84a1e97c0e1b7b45b1ebc.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Time range]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Intervalle de temps]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.text3.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[# Tenant Restriction Insights]D;]A;Organizations use [Tenant Restrictions]5D;(https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/tenant-restrictions?WT.mc_id=Portal-fx) to specify the list of tenants that their users are permitted to access. Azure AD then only grants access to these permitted tenants.]D;]A;]D;]A;This workbook was designed to help admins understand the impact of their Tenant Restriction policy by aggregating sign-in results.]]></Val>
+          <Val><![CDATA[# Tenant restriction insights]D;]A;Organizations use [tenant restrictions]5D;(https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/tenant-restrictions?WT.mc_id=Portal-fx) to specify the list of tenants that their users are permitted to access. Azure AD then only grants access to these permitted tenants.]D;]A;]D;]A;This workbook was designed to help admins understand the impact of their tenant restriction policy by aggregating sign-in results.]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[# Insights de restriction client]D;]A;Les organisations utilisent [Tenant Restrictions]5D; (https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/tenant-restrictions?WT.mc_id=Portal-fx) pour spécifier la liste des locataires auxquels les utilisateurs sont autorisés à accéder. Azure AD accorde alors uniquement l'accès à ces locataires autorisés.]D;]A;]D;]A;Ce classeur a été conçu pour aider les administrateurs à comprendre l’impact de leur stratégie de restriction client en regroupant les résultats de la connexion.]]></Val>
+            <Val><![CDATA[# Insights des restrictions liées au locataire]D;]A;Les organisations utilisent les [restrictions liées au locataire]5D;(https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/tenant-restrictions?WT.mc_id=Portal-fx) pour spécifier la liste des locataires auxquels les utilisateurs sont autorisés à accéder. Azure AD accorde alors uniquement l'accès à ces locataires autorisés.]D;]A;]D;]A;Ce classeur a été conçu pour aider les administrateurs à comprendre l’impact de leur stratégie de restriction liée au locataire en regroupant les résultats de la connexion.]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[# Tenant Restriction Insights]D;]A;Organizations use [Tenant Restrictions]5D;(https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/tenant-restrictions?WT.mc_id=Portal-fx) to specify the list of tenants that their users are permitted to access. Azure AD then only grants access to these permitted tenants.]D;]A;]D;]A;This workbook was designed to help admins understand the impact of their Tenant Restriction policy by aggregating sign-in results.]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>

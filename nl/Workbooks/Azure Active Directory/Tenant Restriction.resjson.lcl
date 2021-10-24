@@ -9,32 +9,26 @@
     <Disp Icon="Expand" Expand="true" Disp="true" LocTbl="false" />
     <Item ItemId=";Strings" ItemType="0" PsrId="306" Leaf="false">
       <Disp Icon="Str" Disp="true" LocTbl="false" />
-      <Item ItemId=";items.Usagenotpresentgroup.content.items.text0.content.json" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Usagenotpresentgroup.content.items.text0.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[The query does not detect Tenant Restriction usage for the last 30 days. To enable Tenant Restriction, please visit the [documentation]5D;(https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/tenant-restrictions?WT.mc_id=Portal-fx).]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[The query does not detect tenant restriction usage for the {TimeRange:label}. If you don't enable tenant restriction and want to enable, please visit the [documentation]5D;(https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/tenant-restrictions?WT.mc_id=Portal-fx). If you enabled, please try a bigger time range.]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[De query detecteert het gebruik van tenantbeperkingen gedurende de afgelopen 30 dagen niet. Als u tenantbeperking wilt inschakelen, gaat u naar de [documentatie]5D;(https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/tenant-restrictions?WT.mc_id=Portal-fx).]]></Val>
           </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Usagepresentgroup.content.items.parameters2.content.parameters.b75683ceb2e84a1e97c0e1b7b45b1ebc.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Time range]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Tijdsbereik]]></Val>
-          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[The query does not detect Tenant Restriction usage for the last 30 days. To enable Tenant Restriction, please visit the [documentation]5D;(https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/tenant-restrictions?WT.mc_id=Portal-fx).]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Usagepresentgroup.content.items.text0.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[## Sign-ins blocked by Tenant Restriction]D;]A;This section shows apps and tenants blocked by Tenant Restriction. A high volume of requests may indicate that users are unable to access something that they need access to. You may consider unblocking access to that tenant if so. If no users have been blocked by your Tenant Restrictions policy, the query will return no results. If you have a functioning Tenant Restrictions policy and expected results, double check that the Restrict-Access-Context header contains only the correct tenant ID - the one that matches this tenant.]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[## Sign-ins blocked by tenant restriction]D;]A;This section shows apps and tenants blocked by tenant restriction. A high volume of requests may indicate that users are unable to access something that they need access to. You may consider unblocking access to that tenant if so. If no users have been blocked by your tenant restrictions policy, the query will return no results. If you have a functioning tenant restrictions policy and expected results, double check that the Restrict-Access-Context header contains only the correct tenant ID - the one that matches this tenant.]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[## Aanmeldingen die zijn geblokkeerd door tenantbeperking]D;]A;Deze sectie toont apps en tenants die worden geblokkeerd door tenantbeperking. Een groot aantal aanvragen kan erop duiden dat gebruikers geen toegang hebben tot iets waartoe ze toegang nodig hebben. U kunt overwegen om de blokkering van de toegang tot die tenant op te heffen. Als geen gebruikers zijn geblokkeerd door uw tenantbeperkingsbeleid, retourneert de query geen resultaten. Als u een functionerend tenantbeperkingsbeleid hebt en resultaten verwachtte, dubbelcheckt u of de koptekst Restrict-Access-Context alleen de juiste tenant-id bevat, d.w.z. de id die overeenkomt met deze tenant.]]></Val>
           </Tgt>
           <Prev Cat="Text">
-            <Val><![CDATA[## Sign-ins blocked by Tenant Restriction]D;]A;The following apps and tenants were blocked due to tenant restrictions.  A high volume of requests may indicate that users are unable to access something that they need access to.  You may consider unblocking access to that tenant if so. ]]></Val>
+            <Val><![CDATA[## Sign-ins blocked by Tenant Restriction]D;]A;This section shows apps and tenants blocked by Tenant Restriction. A high volume of requests may indicate that users are unable to access something that they need access to. You may consider unblocking access to that tenant if so. If no users have been blocked by your Tenant Restrictions policy, the query will return no results. If you have a functioning Tenant Restrictions policy and expected results, double check that the Restrict-Access-Context header contains only the correct tenant ID - the one that matches this tenant.]]></Val>
           </Prev>
         </Str>
         <Disp Icon="Str" />
@@ -48,12 +42,24 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
+      <Item ItemId=";items.parameters2.content.parameters.b75683ceb2e84a1e97c0e1b7b45b1ebc.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Time range]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Tijdsbereik]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.text3.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[# Tenant Restriction Insights]D;]A;Organizations use [Tenant Restrictions]5D;(https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/tenant-restrictions?WT.mc_id=Portal-fx) to specify the list of tenants that their users are permitted to access. Azure AD then only grants access to these permitted tenants.]D;]A;]D;]A;This workbook was designed to help admins understand the impact of their Tenant Restriction policy by aggregating sign-in results.]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[# Tenant restriction insights]D;]A;Organizations use [tenant restrictions]5D;(https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/tenant-restrictions?WT.mc_id=Portal-fx) to specify the list of tenants that their users are permitted to access. Azure AD then only grants access to these permitted tenants.]D;]A;]D;]A;This workbook was designed to help admins understand the impact of their tenant restriction policy by aggregating sign-in results.]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[# Inzichten in tenantbeperkingen]D;]A;Organisaties gebruiken [tenantbeperkingen]5D;(https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/tenant-restrictions?WT.mc_id=Portal-fx) om de lijst met tenants op te geven waartoe hun gebruikers toegang hebben. Azure Active Directory verleent vervolgens alleen toegang tot deze toegestane tenants.]D;]A;]D;]A;Deze werkmap is ontworpen om beheerders inzicht te geven in de impact van hun tenantbeperkingsbeleid door aanmeldingsresultaten samen te voegen.]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[# Tenant Restriction Insights]D;]A;Organizations use [Tenant Restrictions]5D;(https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/tenant-restrictions?WT.mc_id=Portal-fx) to specify the list of tenants that their users are permitted to access. Azure AD then only grants access to these permitted tenants.]D;]A;]D;]A;This workbook was designed to help admins understand the impact of their Tenant Restriction policy by aggregating sign-in results.]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
