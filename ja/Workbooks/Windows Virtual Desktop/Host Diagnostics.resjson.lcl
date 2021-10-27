@@ -11,21 +11,24 @@
       <Disp Icon="Str" Disp="true" LocTbl="false" />
       <Item ItemId=";@items.HostDiagnostics.content.items.ComputerBrowserGroup.content.items.EventsBrowser.content.items.EventLogsSumma" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) ry.content.gridSettings.labelSettings.EventLog.label" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) ry.content.gridSettings.labelSettings.DistinctSources.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Event Log]]></Val>
+            <Val><![CDATA[Distinct sources]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[イベント ログ]]></Val>
+              <Val><![CDATA[個別のソース数]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
-        <Item ItemId=";(...) ry.content.gridSettings.labelSettings.TotalSources.label" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) ry.content.gridSettings.labelSettings.EventLog.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Distinct Sources]]></Val>
+            <Val><![CDATA[Event log]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[個別のソース数]]></Val>
+              <Val><![CDATA[イベント ログ]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[Event Log]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -773,22 +776,25 @@
       </Item>
       <Item ItemId=";items.HostDiagnostics.content.items.WVDAgentEventText.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[One or more WVD hosts are reporting issues to the event log. See the **WVD agent events** table below to learn more about these issues. Observed issue levels: **{EventLevelName}**, number of hosts affected: **{HostsWithAgentEvents}**, distinct issue types: **{DistinctEventCount}**, total instances of issues: **{TotalEventInstances}**]]></Val>
+          <Val><![CDATA[One or more AVD hosts are reporting issues to the event log. See the **AVD agent events** table below to learn more about these issues. Observed issue levels: **{EventLevelName}**, number of hosts affected: **{HostsWithAgentEvents}**, distinct issue types: **{DistinctEventCount}**, total instances of issues: **{TotalEventInstances}**]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[1 つまたは複数の WVD ホストによって、イベント ログに関する問題が報告されています。これらの問題の詳細については、下の **[WVD エージェントのイベント]5D;** テーブルをご覧ください。確認された問題レベル: **{EventLevelName}**、影響を受けるホスト数: **{HostsWithAgentEvents}**、個別の問題の種類: **{DistinctEventCount}**、問題のあるインスタンスの合計: **{TotalEventInstances}**]]></Val>
+            <Val><![CDATA[1 つまたは複数の AVD ホストによって、イベント ログに関する問題が報告されています。これらの問題の詳細については、下の **[AVD エージェントのイベント]5D;** テーブルをご覧ください。確認された問題レベル: **{EventLevelName}**、影響を受けるホスト数: **{HostsWithAgentEvents}**、個別の問題の種類: **{DistinctEventCount}**、問題のあるインスタンスの合計: **{TotalEventInstances}**]]></Val>
           </Tgt>
           <Prev Cat="Text">
-            <Val><![CDATA[There {HostVerb} **{HostsWithAgentEvents}** {HostPlural} reporting **{TotalEventInstances}** {EventInstancePlural} of **{DistinctEventCount}** WVD agent **{EventLevelName}** {DistinctEventPlural}. See the **WVD agent events** table below to learn more about these issues.]]></Val>
+            <Val><![CDATA[One or more WVD hosts are reporting issues to the event log. See the **WVD agent events** table below to learn more about these issues. Observed issue levels: **{EventLevelName}**, number of hosts affected: **{HostsWithAgentEvents}**, distinct issue types: **{DistinctEventCount}**, total instances of issues: **{TotalEventInstances}**]]></Val>
           </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.HostDiagnostics.content.items.WVDAgentEventTextForNoEvents.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[There are no WVD host agents reporting errors or warnings to the event log in the selected time range.]]></Val>
+          <Val><![CDATA[There are no AVD host agents reporting errors or warnings to the event log in the selected time range.]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[選択した時間の範囲のイベント ログに関するエラーまたは警告は、WVD ホスト エージェントによって報告されていません。]]></Val>
+            <Val><![CDATA[選択した時間の範囲のイベント ログに関するエラーまたは警告は、AVD ホスト エージェントによって報告されていません。]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[There are no WVD host agents reporting errors or warnings to the event log in the selected time range.]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -812,10 +818,13 @@
       </Item>
       <Item ItemId=";items.HostDiagnostics.content.items.WVDAgentEventsGroup.content.items.WVDagenteventsummary.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[WVD agent events by description]]></Val>
+          <Val><![CDATA[AVD agent events by description]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[説明ごとの WVD エージェント イベント]]></Val>
+            <Val><![CDATA[説明ごとの AVD エージェント イベント]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[WVD agent events by description]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
