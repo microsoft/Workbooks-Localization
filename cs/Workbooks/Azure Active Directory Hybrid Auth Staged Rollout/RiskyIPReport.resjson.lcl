@@ -11,25 +11,34 @@
       <Disp Icon="Str" Disp="true" LocTbl="false" />
       <Item ItemId=";items.BarChartSelectIP.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Error Count for Selected IPs by Time]]></Val>
+          <Val><![CDATA[Error count for selected IPs by time]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Počet chyb u vybraných adres IP v čase]]></Val>
+            <Val><![CDATA[Počet chyb u vybraných adres IP podle času]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Error Count for Selected IPs by Time]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.FailedSigninDetailsforSelectedIPs.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Failed Sign-in Details for Selected IPs]]></Val>
+          <Val><![CDATA[Failed sign-in details for selected IPs]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Podrobnosti o vybraných IP adresách s neúspěšným přihlášením]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.HelpText.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[** Introduction: **]D;]A;]D;]A;This risky IP workbook analyzes data from ADFSSignInLogs to help you detect password spray or password brute force attacks. The workbook has two parts. The first part "Risky IP Analysis" identifies risky IP addresses based on designated error thresholds and detection window length. The second part provides the sign-in details and error eounts for selected IPs.]D;]A;]D;]A;** Prerequisites: **]D;]A;* Ensure that Azure AD Connect Health for AD FS is installed. Installation instructions can be found [here]5D;(https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-agent-install). This is required to send data to the ADFSSignInLogs Log Analytics stream.]D;]A;* Enable the ADFSSignInLogs Log Analytics stream in the Azure AD Diagnostic Settings blade prior to using the Workbook.]D;]A;]]></Val>
+          <Val><![CDATA[** Introduction: **]D;]A;]D;]A;This risky IP workbook analyzes data from ADFSSignInLogs to help you detect password spray or password brute force attacks. The workbook has two parts. The first part "Risky IP Analysis" identifies risky IP addresses based on designated error thresholds and detection window length. The second part provides the sign-in details and error counts for selected IPs.]D;]A;]D;]A;** Prerequisites: **]D;]A;* Ensure that Azure AD Connect Health for AD FS is installed. Installation instructions can be found [here]5D;(https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-agent-install). This is required to send data to the ADFSSignInLogs Log Analytics stream.]D;]A;* Enable the ADFSSignInLogs Log Analytics stream in the Azure AD Diagnostic Settings blade prior to using the Workbook.]D;]A;]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[** Úvod: **]D;]A;]D;]A;Tento rizikovýc sešit IP analyzuje data z ADFSSignInLogs, aby vám pomohl rozpoznat útoky hrubou silou pomocí sprejování hesel (útok password spray) nebo hesla. Sešit má dvě části. První část „Analýza riskantních IP adres“ identifikuje rizikové IP adresy na základě určených prahových hodnot chyb a délky intervalu detekce. Druhá část obsahuje podrobnosti o přihlášeních a počty chyb pro vybrané IP adresy.]D;]A;]D;]A;** Požadavky: **]D;]A;* Ujistěte se, že je nainstalováno Azure AD Connect Health pro AD FS. Pokyny k instalaci najdete [tady]5D;(https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-agent-install). To se vyžaduje k odesílání dat do streamu ADFSSignInLogs Log Analytics.]D;]A;* Před použitím sešitu povolte v okně Nastavení diagnostiky Azure AD stream ADFSSignInLogs Log Analytics.]D;]A;]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[** Introduction: **]D;]A;]D;]A;This risky IP workbook analyzes data from ADFSSignInLogs to help you detect password spray or password brute force attacks. The workbook has two parts. The first part "Risky IP Analysis" identifies risky IP addresses based on designated error thresholds and detection window length. The second part provides the sign-in details and error eounts for selected IPs.]D;]A;]D;]A;** Prerequisites: **]D;]A;* Ensure that Azure AD Connect Health for AD FS is installed. Installation instructions can be found [here]5D;(https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-agent-install). This is required to send data to the ADFSSignInLogs Log Analytics stream.]D;]A;* Enable the ADFSSignInLogs Log Analytics stream in the Azure AD Diagnostic Settings blade prior to using the Workbook.]D;]A;]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -41,22 +50,67 @@
       </Item>
       <Item ItemId=";items.IPAddressSelector.content.parameters.29f3456945a94af2b4cb0d4170a2d776.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[IP Address]]></Val>
+          <Val><![CDATA[IP address]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[IP adresa]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.IPAddressSelector.content.parameters.cc6539276afa44f3a3cbcd6f9a2fdb04.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[User Name]]></Val>
+          <Val><![CDATA[User name]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Uživatelské jméno]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[User Name]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.IPswitherrorsexceedingthethreshold.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Risky IP Details]]></Val>
+          <Val><![CDATA[Risky IP details]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Podrobnosti o rizikových IP adresách]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.LockoutParameter.content.parameters.d359a31948134c2aa2546aaa647e781a.description" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[An IP address is considered risky if the sum of Bad Username/Password and Extranet Lockout errors from that IP exceeds this threshold.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[IP adresa se považuje za riskantní, pokud celkový počet chyb spočívajících v nesprávném uživatelském jménu nebo heslu a chyb způsobených uzamčeným extranetem u dané IP adresy překročí prahovou hodnotu.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.LockoutParameter.content.parameters.d359a31948134c2aa2546aaa647e781a.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Bad password + extranet lockout error threshold]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Prahová hodnota pro nesprávná hesla a chyby způsobené uzamčením extranetu]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.LockoutParameter.content.parameters.dd9af165620e4311ba9e86ca3d8bf339.description" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[An IP address is considered risky if the number of Extranet Lockout errors from that IP exceeds this threshold.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[IP adresa se považuje za riskantní, pokud počet chyb spočívajících v uzamčení extranetu z této IP adresy překročí prahovou hodnotu.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.LockoutParameter.content.parameters.dd9af165620e4311ba9e86ca3d8bf339.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Extranet lockout error threshold]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Prahová hodnota pro chyby způsobené uzamčením extranetu]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -71,10 +125,13 @@
       </Item>
       <Item ItemId=";items.ShowHelp.content.parameters.e8df00960969442391ec7952ec1615e2.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Show Help]]></Val>
+          <Val><![CDATA[Show help]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Zobrazit nápovědu]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Show Help]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -87,56 +144,11 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.parameters7.content.parameters.d359a31948134c2aa2546aaa647e781a.description" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.detectionParameter.content.parameters.db0cc9ee8c084a3983ef45627362795d.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[An IP address is considered risky if the sum of Bad Username/Password and Extranet Lockout errors from that IP exceeds this threshold.]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[IP adresa se považuje za riskantní, pokud celkový počet chyb spočívajících v nesprávném uživatelském jménu nebo heslu a chyb způsobených uzamčeným extranetem u dané IP adresy překročí prahovou hodnotu.]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.parameters7.content.parameters.d359a31948134c2aa2546aaa647e781a.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Bad Password + Extranet Lockout Error Threshold]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Prahová hodnota pro nesprávná hesla a chyby způsobené uzamčením extranetu]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.parameters7.content.parameters.db0cc9ee8c084a3983ef45627362795d.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Detection Window Length]]></Val>
+          <Val><![CDATA[Detection window length]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Detekční doba]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.parameters7.content.parameters.dd9af165620e4311ba9e86ca3d8bf339.description" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[An IP address is considered risky if the number of Extranet Lockout errors from that IP exceeds this threshold.]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[IP adresa se považuje za riskantní, pokud počet chyb spočívajících v uzamčení extranetu z této IP adresy překročí prahovou hodnotu.]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.parameters7.content.parameters.dd9af165620e4311ba9e86ca3d8bf339.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Extranet Lockout Error Threshold]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Prahová hodnota pro chyby způsobené uzamčením extranetu]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.parameters8.content.parameters.56e1768447a64d43bb3abdc24240f676.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Time Range]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Časový rozsah]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -152,10 +164,13 @@
       </Item>
       <Item ItemId=";items.parameters9.content.parameters.86e67827003e436f84ab796f70313e0e.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Lockout Error Threshold]]></Val>
+          <Val><![CDATA[Lockout error threshold]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Prahová hodnota pro chyby způsobené uzamčením]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Lockout Error Threshold]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -179,46 +194,67 @@
       </Item>
       <Item ItemId=";items.query10.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Top Regions with Most Risky IPs]]></Val>
+          <Val><![CDATA[Top regions with most risky IPs]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Oblasti s nejriskantnějšími IP adresami]]></Val>
+            <Val><![CDATA[Hlavní oblasti s nejrizikovějšími IP adresami]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Top Regions with Most Risky IPs]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.query6.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Risky IPs Mapped by Location]]></Val>
+          <Val><![CDATA[Risky IPs mapped by location]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Riskantní IP adresy mapované podle místa]]></Val>
+            <Val><![CDATA[Rizikové IP adresy mapované podle místa]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Risky IPs Mapped by Location]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.query7.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Risky IP Count by time]]></Val>
+          <Val><![CDATA[Risky IP count by time]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Počet riskantních IP adres v čase]]></Val>
+            <Val><![CDATA[Počet rizikových IP adres podle času]]></Val>
+          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Risky IP Count by time]]></Val>
+          </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.textDetails.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[An external risky IP address is considered risky under the following conditions:]D;]A;1. The number of failed sign-ins due to extranet lockout errors exceeds the designated threshold  during a detection window.]D;]A;2. The combined number of failed sign-ins due to bad password errors and extranet lockout errors exceeds the threshold.]D;]A;]D;]A;Select Risky IP detection window length and error thresholds to view the detected risky IP addresses.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Externí riziková IP adresa se považuje za rizikovou za následujících podmínek:]D;]A;1. Počet neúspěšných přihlášení způsobených chybami uzamčení extranetu v detekční době překročí stanovenou prahovou hodnotu.]D;]A;2. Součet neúspěšných přihlášení způsobených chybnými hesly a chybami uzamčení extranetu překročí prahovou hodnotu.]D;]A;]D;]A;Pokud chcete zobrazit zjištěné rizikové IP adresy, vyberte jejich detekční dobu a prahové hodnoty chyb.]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.text13.content.json" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.timeRangeParameter.content.parameters.56e1768447a64d43bb3abdc24240f676.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Risky IP Analysis]D;]A;An external IP address is considered risky if ]D;]A;1. The number of failed sign-ins due to extranet lockout errors exceeds the designated threshold  during a detection window]D;]A;2. Or the combined number of failed sign-ins due to bad password errors and extranet lockout errors exceeds the threshold.]D;]A;]D;]A;Select Risky IP detection window length and error thresholds to view the detected risky IP addresses.]]></Val>
+          <Val><![CDATA[Time range]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Analýza riskantních IP adres]D;]A;Externí IP adresa se považuje za riskantní, pokud: ]D;]A;1. Počet neúspěšných přihlášení způsobených chybami uzamčení extranetu v detekční době překročí stanovenou prahovou hodnotu.]D;]A;2. Nebo součet neúspěšných přihlášení způsobených chybnými hesly a chybami uzamčení extranetu překročí prahovou hodnotu.]D;]A;]D;]A;Pokud chcete zobrazit zjištěné riskantní IP adresy, vyberte jejich detekční dobu a prahové hodnoty chyb.]]></Val>
+            <Val><![CDATA[Časový rozsah]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.titleText.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[# Risky IP Workbook]]></Val>
+          <Val><![CDATA[# Risky IP report (AD FS)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[# Sešit riskantních IP adres]]></Val>
+            <Val><![CDATA[# Sestava rizikových IP adres (AD FS)]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[# Risky IP Workbook]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
