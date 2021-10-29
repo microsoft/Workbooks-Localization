@@ -12,7 +12,7 @@
       <Item ItemId=";items.BarChartSelectIP.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Error count for selected IPs by time]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[按时间列出的所选 IP 的错误计数]]></Val>
           </Tgt>
           <Prev Cat="Text">
@@ -24,13 +24,16 @@
       <Item ItemId=";items.FailedSigninDetailsforSelectedIPs.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Failed sign-in details for selected IPs]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[所选 IP 的失败登录详细信息]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.HelpText.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[** Introduction: **]D;]A;]D;]A;This risky IP workbook analyzes data from ADFSSignInLogs to help you detect password spray or password brute force attacks. The workbook has two parts. The first part "Risky IP Analysis" identifies risky IP addresses based on designated error thresholds and detection window length. The second part provides the sign-in details and error counts for selected IPs.]D;]A;]D;]A;** Prerequisites: **]D;]A;* Ensure that Azure AD Connect Health for AD FS is installed. Installation instructions can be found [here]5D;(https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-agent-install). This is required to send data to the ADFSSignInLogs Log Analytics stream.]D;]A;* Enable the ADFSSignInLogs Log Analytics stream in the Azure AD Diagnostic Settings blade prior to using the Workbook.]D;]A;]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[** 简介: **]D;]A;]D;]A;此风险 IP 工作簿对来自 ADFSSignInLogs 中的数据进行分析，以帮助检测密码喷射或密码暴力攻击。工作簿有两个部分。第一部分“风险 IP 分析”根据指定的错误阈值和检测时段长度标识有风险的 IP 地址。第二部分提供所选 IP 的登录详细信息和错误计数。]D;]A;]D;]A;** 先决条件: **]D;]A;* 确保已安装 AD FS 的 Azure AD Connect Health。可在 [此处]5D;(https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-agent-install)找到安装说明。需要将数据发送到 ADFSSignInLogs 日志分析数据流。]D;]A;* 使用工作簿之前，请先启用 Azure AD 诊断设置边栏选项卡中的 ADFSSignInLogs 日志分析数据流。]D;]A;]]></Val>
           </Tgt>
           <Prev Cat="Text">
@@ -69,6 +72,9 @@
       <Item ItemId=";items.IPswitherrorsexceedingthethreshold.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Risky IP details]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[有风险的 IP 详细信息]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -84,6 +90,9 @@
       <Item ItemId=";items.LockoutParameter.content.parameters.d359a31948134c2aa2546aaa647e781a.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Bad password + extranet lockout error threshold]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[错误密码 + Extranet 锁定错误阈值]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -99,6 +108,9 @@
       <Item ItemId=";items.LockoutParameter.content.parameters.dd9af165620e4311ba9e86ca3d8bf339.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Extranet lockout error threshold]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Extranet 锁定错误阈值]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -135,6 +147,9 @@
       <Item ItemId=";items.detectionParameter.content.parameters.db0cc9ee8c084a3983ef45627362795d.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Detection window length]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[检测时段长度]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -150,7 +165,7 @@
       <Item ItemId=";items.parameters9.content.parameters.86e67827003e436f84ab796f70313e0e.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Lockout error threshold]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[锁定错误阈值]]></Val>
           </Tgt>
           <Prev Cat="Text">
@@ -180,7 +195,7 @@
       <Item ItemId=";items.query10.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Top regions with most risky IPs]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[IP 风险最高的热门区域]]></Val>
           </Tgt>
           <Prev Cat="Text">
@@ -192,7 +207,7 @@
       <Item ItemId=";items.query6.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Risky IPs mapped by location]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[按位置映射的有风险的 IP]]></Val>
           </Tgt>
           <Prev Cat="Text">
@@ -204,7 +219,7 @@
       <Item ItemId=";items.query7.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Risky IP count by time]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[按时间列出的有风险的 IP 计数]]></Val>
           </Tgt>
           <Prev Cat="Text">
@@ -216,6 +231,9 @@
       <Item ItemId=";items.textDetails.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[An external risky IP address is considered risky under the following conditions:]D;]A;1. The number of failed sign-ins due to extranet lockout errors exceeds the designated threshold  during a detection window.]D;]A;2. The combined number of failed sign-ins due to bad password errors and extranet lockout errors exceeds the threshold.]D;]A;]D;]A;Select Risky IP detection window length and error thresholds to view the detected risky IP addresses.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[在以下情况下，外部有风险的 IP 地址将被视为存在风险:]D;]A;1. 在检测时段内因 Extranet 锁定错误导致登录失败次数超出指定阈值。]D;]A;2. 或因密码不正确错误和 Extranet 锁定错误导致登录失败的总次数超出阈值。]D;]A;]D;]A;选择风险 IP 检测时段长度和错误阈值，以查看检测到的有风险的 IP 地址。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -231,8 +249,8 @@
       <Item ItemId=";items.titleText.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Risky IP report (AD FS)]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[# 有风险的 IP 工作簿]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[#有风险的 IP 报告(AD FS)]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[# Risky IP Workbook]]></Val>

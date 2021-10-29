@@ -12,8 +12,8 @@
       <Item ItemId=";items.BarChartSelectIP.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Error count for selected IPs by time]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[Hibák száma a kiválasztott IP-címekre idő szerint]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Kiválasztott IP-címekhez kapcsolódó hibák száma időtartomány szerint]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Error Count for Selected IPs by Time]]></Val>
@@ -24,14 +24,17 @@
       <Item ItemId=";items.FailedSigninDetailsforSelectedIPs.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Failed sign-in details for selected IPs]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Adott IP-címekhez kapcsolódó sikertelen bejelentkezések részletei]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.HelpText.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[** Introduction: **]D;]A;]D;]A;This risky IP workbook analyzes data from ADFSSignInLogs to help you detect password spray or password brute force attacks. The workbook has two parts. The first part "Risky IP Analysis" identifies risky IP addresses based on designated error thresholds and detection window length. The second part provides the sign-in details and error counts for selected IPs.]D;]A;]D;]A;** Prerequisites: **]D;]A;* Ensure that Azure AD Connect Health for AD FS is installed. Installation instructions can be found [here]5D;(https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-agent-install). This is required to send data to the ADFSSignInLogs Log Analytics stream.]D;]A;* Enable the ADFSSignInLogs Log Analytics stream in the Azure AD Diagnostic Settings blade prior to using the Workbook.]D;]A;]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[** Bevezetés: **]D;]A;]D;]A;Ez a munkafüzet az ADFSSignInLogs adatait elemzi a szórásos vagy a találgatásos jelszófeltörést használó támadások észlelése céljából. A munkafüzet két részből áll. A kockázatos IP-címeket elemző első rész a kockázatos IP-címeket azonosítja a kijelölt hibaküszöbök és az észlelési időablak hossza alapján. A második rész a kiválasztott IP-címekkel kapcsolatos bejelentkezési adatokat és hibaszámokat tartalmazza.]D;]A;]D;]A;** Előfeltételek: **]D;]A;* Győződjön meg arról, hogy az AD FS-hez készült Azure AD Connect Health telepítve van. A telepítési utasítások [itt]5D;(https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-agent-install) találhatók. Ez a bővítmény az adatok ADFSSignInLogs Log Analytics-adatfolyamba való küldéséhez szükséges.]D;]A;* A munkafüzet használata előtt engedélyezze az ADFSSignInLogs Log Analytics-adatfolyamot az Azure AD Diagnosztikai beállítások paneljén.]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[** Bevezetés: **]D;]A;]D;]A;Ez a kockázatos IP-címekről szóló munkafüzet az ADFSSignInLogs adatait elemzi, így segít észlelni a szórásos jelszófeltöréseket és a találgatásos támadásokat. A munkafüzet két részből áll. Az első rész, a „Kockázatos IP-címek elemzése” azonosítja a kockázatos IP-címeket a kijelölt hibahatárok és az észlelési ablak időtartama alapján. A második részben megtalálhatók a bejelentkezési adatok és az adott IP-címek hibáinak száma.]D;]A;]D;]A;** Előfeltételek: **]D;]A;* Győződjön meg arról, hogy az Azure AD Connect Health for AD FS telepítve van. A telepítési útmutatókat megtalálhatja [itt]5D;(https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-agent-install). Erre azért van szükség, hogy az adatok továbbítódjanak az ADFSSignInLogs Log Analytics-streambe.]D;]A;* A munkafüzet használata előtt engedélyezze az ADFSSignInLogs Log Analytics-streamet az Azure AD diagnosztikai beállításainak paneljén.]D;]A;]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[** Introduction: **]D;]A;]D;]A;This risky IP workbook analyzes data from ADFSSignInLogs to help you detect password spray or password brute force attacks. The workbook has two parts. The first part "Risky IP Analysis" identifies risky IP addresses based on designated error thresholds and detection window length. The second part provides the sign-in details and error eounts for selected IPs.]D;]A;]D;]A;** Prerequisites: **]D;]A;* Ensure that Azure AD Connect Health for AD FS is installed. Installation instructions can be found [here]5D;(https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-agent-install). This is required to send data to the ADFSSignInLogs Log Analytics stream.]D;]A;* Enable the ADFSSignInLogs Log Analytics stream in the Azure AD Diagnostic Settings blade prior to using the Workbook.]D;]A;]]></Val>
@@ -69,6 +72,9 @@
       <Item ItemId=";items.IPswitherrorsexceedingthethreshold.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Risky IP details]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Kockázatos IP-címek részletei]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -84,6 +90,9 @@
       <Item ItemId=";items.LockoutParameter.content.parameters.d359a31948134c2aa2546aaa647e781a.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Bad password + extranet lockout error threshold]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Helytelen jelszó + extranet zárolási hibahatára]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -99,6 +108,9 @@
       <Item ItemId=";items.LockoutParameter.content.parameters.dd9af165620e4311ba9e86ca3d8bf339.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Extranet lockout error threshold]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Extranet zárolási hibahatára]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -114,7 +126,7 @@
       <Item ItemId=";items.ShowHelp.content.parameters.e8df00960969442391ec7952ec1615e2.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Show help]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Súgó megjelenítése]]></Val>
           </Tgt>
           <Prev Cat="Text">
@@ -135,6 +147,9 @@
       <Item ItemId=";items.detectionParameter.content.parameters.db0cc9ee8c084a3983ef45627362795d.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Detection window length]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Észlelési ablak időtartama]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -150,8 +165,8 @@
       <Item ItemId=";items.parameters9.content.parameters.86e67827003e436f84ab796f70313e0e.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Lockout error threshold]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[Zárolási hibák küszöbértéke]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Zárolási hibahatár]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Lockout Error Threshold]]></Val>
@@ -180,8 +195,8 @@
       <Item ItemId=";items.query10.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Top regions with most risky IPs]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[A legkockázatosabb IP-címekkel rendelkező régiók]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[A legtöbb kockázatos IP-címmel rendelkező régiók]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Top Regions with Most Risky IPs]]></Val>
@@ -192,8 +207,8 @@
       <Item ItemId=";items.query6.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Risky IPs mapped by location]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[Feltárt kockázatos IP-címek hely szerint]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Kockázatos IP-címek hely alapján rendezve]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Risky IPs Mapped by Location]]></Val>
@@ -204,8 +219,8 @@
       <Item ItemId=";items.query7.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Risky IP count by time]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[Kockázatos IP-címek száma idő szerint]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Kockázatos IP-címek száma időtartomány szerint]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Risky IP Count by time]]></Val>
@@ -216,6 +231,9 @@
       <Item ItemId=";items.textDetails.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[An external risky IP address is considered risky under the following conditions:]D;]A;1. The number of failed sign-ins due to extranet lockout errors exceeds the designated threshold  during a detection window.]D;]A;2. The combined number of failed sign-ins due to bad password errors and extranet lockout errors exceeds the threshold.]D;]A;]D;]A;Select Risky IP detection window length and error thresholds to view the detected risky IP addresses.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Egy külső IP-cím az alábbi esetekben minősül kockázatosnak:]D;]A;1. Az extranet zárolási hibái okozta sikertelen bejelentkezések száma meghaladja az adott észlelési ablakban megengedett küszöbértéket.]D;]A;2. A helytelen jelszó típusú hibák és extranet zárolási hibái által együttesen okozott sikertelen bejelentkezések száma meghaladja a küszöbértéket.]D;]A;]D;]A;Válassza ki a kockázatos IP-címek észlelési ablakának időtartamát és hibahatárait az észlelt kockázatos IP-címek megtekintéséhez.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -231,8 +249,8 @@
       <Item ItemId=";items.titleText.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Risky IP report (AD FS)]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[# Kockázatos IP-címek munkafüzet]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# Kockázatos IP-címek jelentése (AD FS)]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[# Risky IP Workbook]]></Val>
