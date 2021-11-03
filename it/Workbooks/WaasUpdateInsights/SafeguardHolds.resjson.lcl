@@ -30,6 +30,9 @@
       <Item ItemId=";items.Deviceview.content.items.Devicetable.content.gridSettings.labelSettings.SafeguardHoldIDs.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Safeguard Hold IDs]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[ID blocchi di sicurezza]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -54,24 +57,36 @@
       <Item ItemId=";items.Deviceview.content.items.Devicetable.content.gridSettings.labelSettings.TotalSafeguards.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Total Safeguards]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Misure di sicurezza totali]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Deviceview.content.items.Deviceviewtitle.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Device view]D;]A;]D;]A;This view shows the devices in your organization that are affected by safeguard holds. You can use the **Safeguard hold ID(s)** dropdown at the top of the page to filter the list of devices.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Visualizzazione dispositivo]D;]A;]D;]A;Questa visualizzazione mostra i dispositivi dell'organizzazione interessati dai blocchi di sicurezza. È possibile usare l'elenco a discesa **ID blocchi di sicurezza** nella parte superiore della pagina per filtrare l'elenco dei dispositivi.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.SafeguardholdIDsparameter.content.parameters.b650e0a46e954021b4ba72fa7d0f7e06.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Select a safeguard hold ID to list all devices affected by that safeguard hold.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Selezionare un ID del blocco di sicurezza per elencare tutti i dispositivi interessati da tale blocco.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.SafeguardholdIDsparameter.content.parameters.b650e0a46e954021b4ba72fa7d0f7e06.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Safeguard hold ID(s)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[ID blocchi di sicurezza]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -87,12 +102,18 @@
       <Item ItemId=";items.Safeguardholdview.content.items.Safeguardholdtable.content.gridSettings.labelSettings.SafeguardHoldID.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Safeguard Hold ID]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[ID blocco di sicurezza]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Safeguardholdview.content.items.Safeguardholdviewtitle.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Safeguard hold view]D;]A;]D;]A;This view shows the safeguard holds that are active for your population, and how many devices are affected by each safeguard hold. Note that a device can be affected by more than one safeguard hold.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Visualizzazione del blocco di sicurezza]D;]A;]D;]A;Questa visualizzazione mostra i blocchi di sicurezza attivi per l'insieme di dati e il numero di dispositivi interessati da ogni blocco di protezione. Si noti che un dispositivo può essere interessato da più di un blocco di sicurezza.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -100,7 +121,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Time indicating the latest snapshot]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Ora che indica l'ultimo snapshot]]></Val>
+            <Val><![CDATA[Ora dell'ultimo snapshot]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -109,7 +130,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Snapshot time]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Ora snapshot]]></Val>
+            <Val><![CDATA[Ora dello snapshot]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -117,6 +138,9 @@
       <Item ItemId=";items.Title.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Update Compliance - Safeguard Holds]A;---]A;This Workbook utilizes data from [**Update Compliance**]5D;(https://docs.microsoft.com/windows/deployment/update/update-compliance-monitor) to provide a report on active [**safeguard holds**]5D;(https://docs.microsoft.com/windows/deployment/update/safeguard-holds) in your environment.]A;]A;Safeguard holds each have an 8-digit identifier, which can be used (in most cases) to determine why the safeguard hold is in place.]A;]A;To search for a safeguard hold on a release:]A;]A;1. In [Windows release health]5D;(https://docs.microsoft.com/windows/release-health/), go to the **Known issues** page for a specific release (e.g. [Windows 11 known issues and notifications]5D;(https://docs.microsoft.com/windows/release-health/status-windows-11-21h2)).]A;2. Search within the webpage (e.g. "CTRL + F") for the safeguard hold ID.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# Conformità aggiornamenti - Blocchi di sicurezza]A;---]A;Questa cartella di lavoro usa i dati di [**Conformità aggiornamenti**]5D;(https://docs.microsoft.com/windows/deployment/update/update-compliance-monitor) per fornire un report sui [**blocchi di sicurezza**]5D; attivi (https://docs.microsoft.com/windows/deployment/update/safeguard-holds) nell'ambiente.]A;]A;I blocchi di protezione hanno ciascuno un identificatore di 8 cifre, che può essere usato (nella maggior parte dei casi) per determinare il motivo per cui è attivo il blocco di sicurezza.]A;]A;Per cercare un blocco di sicurezza in un rilascio:]A;]A;1. In [Integrità della versione di Windows]5D;(https://docs.microsoft.com/windows/release-health/), passare alla pagina **Problemi noti** di una versione specifica, ad esempio [Problemi noti e notifiche di Windows 11]5D;(https://docs.microsoft.com/windows/release-health/status-windows-11-21h2).]A;2. Cercare nell'interno della pagina Web (ad esempio "CTRL+F") l'ID del blocco di sicurezza.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

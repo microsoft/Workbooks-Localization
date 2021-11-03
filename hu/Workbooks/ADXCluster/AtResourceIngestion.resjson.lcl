@@ -28,12 +28,12 @@
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) content.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Total latency]D;]A;</span> <br>Time from when a message is accepted by Azure Data Explorer until its content is received by the Engine Storage and available for query (accumulative latency).]]></Val>
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Total latency]D;]A;</span> <br>Time from when a message is accepted by Azure Data Explorer until its content is received by the Storage Engine and available for query (accumulative latency).]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Teljes késés]D;]A;</span> <br>Az üzenet Azure Data Explorer általi elfogadásától a feldolgozandó üzenettartalom tárolási összetevő általi fogadásáig és lekérdezhetőségéig eltelő idő (halmozódó késés).]]></Val>
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Teljes késés]D;]A;</span> <br>Az üzenet Azure Data Explorer általi elfogadásától a feldolgozandó üzenettartalom tárolómotor általi fogadásáig és lekérdezhetőségéig eltelő idő (halmozódó késés).]]></Val>
             </Tgt>
             <Prev Cat="Text">
-              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Total latency]D;]A;</span> <br>Time from when a message is discovered by Azure Data Explorer until its content is received by the Engine Storage and available for query (accumulative latency).]]></Val>
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Total latency]D;]A;</span> <br>Time from when a message is accepted by Azure Data Explorer until its content is received by the Engine Storage and available for query (accumulative latency).]]></Val>
             </Prev>
           </Str>
           <Disp Icon="Str" />
@@ -55,19 +55,25 @@
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) rder.content.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[<div style="background-color:rgba(231, 206, 243, 1); padding:6px 0px 6px 6px">]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 15px;font-style: bold;"> Batching per database]D;]A;</span><br>]D;]A;]D;]A;]]></Val>
+            <Val><![CDATA[<div style="background-color:rgba(231, 206, 243, 1); padding:6px 0px 6px 6px">]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 15px;font-style: bold;color:black;"> Batching per database]D;]A;</span><br>]D;]A;]D;]A;]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[<div style="background-color:rgba(231, 206, 243, 1); padding:6px 0px 6px 6px">]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 15px;font-style: bold;"> Kötegelés adatbázisonként]D;]A;</span><br>]D;]A;]D;]A;]]></Val>
+              <Val><![CDATA[<div style="background-color:rgba(231, 206, 243, 1); padding:6px 0px 6px 6px">]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 15px;font-style: bold;color:black;"> Kötegelés adatbázisonként]D;]A;</span><br>]D;]A;]D;]A;]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[<div style="background-color:rgba(231, 206, 243, 1); padding:6px 0px 6px 6px">]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 15px;font-style: bold;"> Batching per database]D;]A;</span><br>]D;]A;]D;]A;]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) rderCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[<div style="background-color:rgba(209, 228, 255, 1); padding:6px 6px 6px 6px">]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 15px;font-style: bold;"> Batching per table]D;]A;</span><br>]D;]A;]D;]A;]D;]A;]D;]A;]]></Val>
+            <Val><![CDATA[<div style="background-color:rgba(209, 228, 255, 1); padding:6px 6px 6px 6px">]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 15px;font-style: bold;color:black;"> Batching per table]D;]A;</span><br>]D;]A;]D;]A;]D;]A;]D;]A;]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Táblázat <div style="background-color:rgba(209, 228, 255, 1); padding:6px 6px 6px 6px">]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 15px;font-style: bold;"> Kötegelés táblánként]D;]A;</span><br>]D;]A;]D;]A;]D;]A;]D;]A;]]></Val>
+              <Val><![CDATA[Táblázat <div style="background-color:rgba(209, 228, 255, 1); padding:6px 6px 6px 6px">]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 15px;font-style: bold;color:black;"> Kötegelés táblánként]D;]A;</span><br>]D;]A;]D;]A;]D;]A;]D;]A;]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[<div style="background-color:rgba(209, 228, 255, 1); padding:6px 6px 6px 6px">]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 15px;font-style: bold;"> Batching per table]D;]A;</span><br>]D;]A;]D;]A;]D;]A;]D;]A;]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -244,12 +250,12 @@
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) tent.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[<div style="background-color:rgba(0, 0, 255, 0.04470588); padding:6px 6px 6px 6px">]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 13px;font-style: bold;"> What is Batching Manager?]D;]A;</span><br>]D;]A;The Batching Manager optimizes the ingestion throughput by taking the small ingress data chunks that it receives and batching them (to one or more blobs) based on the <a href="https://docs.microsoft.com/azure/data-explorer/kusto/management/batchingpolicy">ingestion batching policy</a>.]D;]A;</div>]D;]A;]]></Val>
+            <Val><![CDATA[]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 13px;font-style: bold;"> What is Batching Manager?]D;]A;</span><br>]D;]A;The Batching Manager optimizes the ingestion throughput by taking the small ingress data chunks that it receives and batching them (to one or more blobs) based on the <a href="https://docs.microsoft.com/azure/data-explorer/kusto/management/batchingpolicy">ingestion batching policy</a>.]D;]A;]D;]A;]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[<div style="background-color:rgba(0, 0, 255, 0.04470588); padding:6px 6px 6px 6px">]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 13px;font-style: bold;"> Mi a Kötegeléskezelő?]D;]A;</span><br>]D;]A;A Kötegeléskezelő optimalizálja a betöltési sebességet azáltal, hogy a fogadott kis adattömböket az <a href="https://docs.microsoft.com/azure/data-explorer/kusto/management/batchingpolicy">adatbetöltés-kötegelési szabályzata</a> alapján (egy vagy több blobba) kötegeli.]D;]A;</div>]D;]A;]]></Val>
+              <Val><![CDATA[]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 13px;font-style: bold;"> Mi a Kötegeléskezelő?]D;]A;</span><br>]D;]A;A Kötegeléskezelő optimalizálja a betöltési sebességet azáltal, hogy a fogadott kis adattömböket az <a href="https://docs.microsoft.com/azure/data-explorer/kusto/management/batchingpolicy">adatbetöltés-kötegelési szabályzata</a> alapján (egy vagy több blobba) kötegeli.]D;]A;]D;]A;]]></Val>
             </Tgt>
             <Prev Cat="Text">
-              <Val><![CDATA[<div style="background-color:rgba(0, 0, 255, 0.04470588); padding:6px 6px 6px 6px">]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 13px;font-style: bold;"> What is Batching Manager?]D;]A;</span><br>]D;]A;The Batching Manager optimizes the ingestion throughput by taking the small ingress data chunks that it receives and batching them based on the <a href="https://docs.microsoft.com/azure/data-explorer/kusto/management/batchingpolicy">ingestion batching policy</a>.]D;]A;</div>]D;]A;]]></Val>
+              <Val><![CDATA[<div style="background-color:rgba(0, 0, 255, 0.04470588); padding:6px 6px 6px 6px">]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 13px;font-style: bold;"> What is Batching Manager?]D;]A;</span><br>]D;]A;The Batching Manager optimizes the ingestion throughput by taking the small ingress data chunks that it receives and batching them (to one or more blobs) based on the <a href="https://docs.microsoft.com/azure/data-explorer/kusto/management/batchingpolicy">ingestion batching policy</a>.]D;]A;</div>]D;]A;]]></Val>
             </Prev>
           </Str>
           <Disp Icon="Str" />
@@ -316,10 +322,13 @@
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) content.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[<div style="background-color:rgba(0, 0, 255, 0.04470588); padding:6px 6px 6px 6px">]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 13px;font-style: bold;"> What is Data Connection?]D;]A;</span><br>]D;]A;For Event Grid, Event Hub, and IoT Hub ingestion, there is a Data Connection that gets the data from external sources and performs initial data rearrangement. You can skip this step if you don't use Event Grid, Event Hub, or IoT Hub ingestion.]D;]A;</div>]D;]A;]]></Val>
+            <Val><![CDATA[]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 13px;font-style: bold;"> What is Data Connection?]D;]A;</span><br>]D;]A;For Event Grid, Event Hub, and IoT Hub ingestion, there is a Data Connection that gets the data from external sources and performs initial data rearrangement. You can skip this step if you don't use Event Grid, Event Hub, or IoT Hub ingestion.]D;]A;]D;]A;]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[<div style="background-color:rgba(0, 0, 255, 0.04470588); padding:6px 6px 6px 6px">]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 13px;font-style: bold;"> Mi az adatkapcsolat? ]D;]A;</span><br>]D;]A;Az Event Grid, az Event Hub és az IoT Hub betöltéséhez van egy adatkapcsolat, amely külső forrásokból beolvassa az adatokat, és elvégzi a kezdeti adatátrendezést. Ezt a lépést kihagyhatja, ha nem használja az Event Grid, az Event Hub vagy az IoT Hub adatbetöltéét.]D;]A;</div>]D;]A;]]></Val>
+              <Val><![CDATA[]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 13px;font-style: bold;"> Mi az adatkapcsolat? ]D;]A;</span><br>]D;]A;Az Event Grid, az Event Hub és az IoT Hub betöltéséhez van egy adatkapcsolat, amely külső forrásokból beolvassa az adatokat, és elvégzi a kezdeti adatátrendezést. Ezt a lépést kihagyhatja, ha nem használja az Event Grid, az Event Hub vagy az IoT Hub adatbetöltéét.]D;]A;]D;]A;]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[<div style="background-color:rgba(0, 0, 255, 0.04470588); padding:6px 6px 6px 6px">]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 13px;font-style: bold;"> What is Data Connection?]D;]A;</span><br>]D;]A;For Event Grid, Event Hub, and IoT Hub ingestion, there is a Data Connection that gets the data from external sources and performs initial data rearrangement. You can skip this step if you don't use Event Grid, Event Hub, or IoT Hub ingestion.]D;]A;</div>]D;]A;]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -370,51 +379,6 @@
             </Tgt>
             <Prev Cat="Text">
               <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Events dropped]D;]A;</span> <br>Number of events permanently dropped by data connections.]]></Val>
-            </Prev>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-      </Item>
-      <Item ItemId=";@items.IngestionDetailsGroup.content.items.IngestionProcess.content.items.Enginestorage.content.items.dataprocesse" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) dtile.content.json" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Amount of data processed]D;]A;</span>]D;]A;<ul>]D;]A;<li>Blobs received - Number of blobs received from input stream by the Engine Storage.</li>]D;]A;<li>Blobs processed - Number of blobs processed successfully by the Engine Storage. This data is ready for query.</li>]D;]A;<li>Blobs dropped - Number of blobs permanently dropped by the Engine Storage. For each such blob, an Ingestion result metric with a failure reason is sent.]D;]A;</li>]D;]A;</ul>]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Feldolgozott adatok mennyisége]D;]A;</span>]D;]A;<ul>]D;]A;<li>Fogadott blobok – a tárolási összetevő által a bemeneti streamből fogadott blobok száma.</li>]D;]A;<li>Feldolgozott blobok – a tárolási összetevő által sikerrel feldolgozott blobok száma. Ezek az adatok készen állnak a lekérdezésre.</li>]D;]A;<li>Eldobott blobok – a tárolási összetevő által véglegesen eldobott blobok száma. E blobok esetében a rendszer elküldi a betöltésieredmény-metrikát és a hiba okát.]D;]A;</li>]D;]A;</ul>]]></Val>
-            </Tgt>
-            <Prev Cat="Text">
-              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Amount of data processed]D;]A;</span>]D;]A;<ul>]D;]A;<li>Blobs received - Number of blobs received from input stream by the Engine Storage.</li>]D;]A;<li>Blobs processed - Number of blobs processed by the Engine Storage. This data is ready for query.</li>]D;]A;<li>Blobs dropped - Number of blobs permanently dropped by the Engine Storage. For each such blob, an Ingestion result metric with a failure reason is sent.]D;]A;</li>]D;]A;</ul>]]></Val>
-            </Prev>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-      </Item>
-      <Item ItemId=";@items.IngestionDetailsGroup.content.items.IngestionProcess.content.items.Enginestorage.content.items.text13CopyCo" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) pyCopyCopyCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Stage latency (avg per database)]D;]A;</span> <br>Time from when a message is accepted by Azure Data Explorer, until its content is received by the Engine Storage and is available for query.]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;">Átmeneti tárolási késés (adatbázisonkénti átlag)]D;]A;</span> <br>Az üzenet Azure Data Explorer általi elfogadásától a feldolgozandó üzenettartalom tárolási összetevő általi fogadásáig és lekérdezhetőségéig eltelő idő.]]></Val>
-            </Tgt>
-            <Prev Cat="Text">
-              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Stage latency (avg per database)]D;]A;</span> <br>Time from when a message is discovered by Azure Data Explorer, until its content is received by the Engine Storage and is available for query.]]></Val>
-            </Prev>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-      </Item>
-      <Item ItemId=";@items.IngestionDetailsGroup.content.items.IngestionProcess.content.items.Enginestorage.content.items.text2.conten" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) t.json" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[<div style="background-color:rgba(0, 0, 255, 0.04470588); padding:6px 6px 6px 6px">]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 13px;font-style: bold;"> What is Engine Storage?]D;]A;</span><br>]D;]A;The Azure Data Explorer Engine Storage stores the ingested data, making it available for query.]D;]A;</div>]D;]A;]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[<div style="background-color:rgba(0, 0, 255, 0.04470588); padding:6px 6px 6px 6px">]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 13px;font-style: bold;"> Mi a Tárolási összetevő?]D;]A;</span><br>]D;]A;Az Azure Data Explorer tárolási összetevője tárolja a betöltött adatokat, lekérdezhetővé téve azokat.]D;]A;</div>]D;]A;]]></Val>
-            </Tgt>
-            <Prev Cat="Text">
-              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 15px;font-style: bold;margin:-10px -304px 0px 0px;position: relative;top:-5px">&nbsp;&nbsp;Engine Storage]D;]A;</span><br>]D;]A;&nbsp;&nbsp;&nbsp;]]></Val>
             </Prev>
           </Str>
           <Disp Icon="Str" />
@@ -481,13 +445,49 @@
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) tent.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[<div style="background-color:rgba(0, 0, 255, 0.04470588); padding:6px 6px 6px 6px">]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 13px;font-style: bold;"> What is Ingestion Manager?]D;]A;</span><br>]D;]A;The Ingestion Manager sends the ingestion commands to the Azure Data Explorer Storage Engine.]D;]A;</div>]D;]A;]]></Val>
+            <Val><![CDATA[]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 13px;font-style: bold;"> What is Ingestion Manager?]D;]A;</span><br>]D;]A;The Ingestion Manager sends the ingestion commands to the Azure Data Explorer Storage Engine.]D;]A;]D;]A;]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[<div style="background-color:rgba(0, 0, 255, 0.04470588); padding:6px 6px 6px 6px">]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 13px;font-style: bold;"> Mi a Betöltéskezelő?]D;]A;</span><br>]D;]A;A Betöltéskezelő elküldi a betöltési parancsokat az Azure Data Explorer tárolási összetevőjének.]D;]A;</div>]D;]A;]]></Val>
+              <Val><![CDATA[]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 13px;font-style: bold;"> Mi a Betöltéskezelő?]D;]A;</span><br>]D;]A;A Betöltéskezelő elküldi a betöltési parancsokat az Azure Data Explorer tárolási összetevőjének.]D;]A;]D;]A;]]></Val>
             </Tgt>
             <Prev Cat="Text">
-              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 15px;font-style: bold;margin:-10px -304px 0px 0px;position: relative;top:-5px">&nbsp;&nbsp;Ingestion Manager]D;]A;</span><br>]D;]A;&nbsp;&nbsp;&nbsp;]]></Val>
+              <Val><![CDATA[<div style="background-color:rgba(0, 0, 255, 0.04470588); padding:6px 6px 6px 6px">]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 13px;font-style: bold;"> What is Ingestion Manager?]D;]A;</span><br>]D;]A;The Ingestion Manager sends the ingestion commands to the Azure Data Explorer Storage Engine.]D;]A;</div>]D;]A;]]></Val>
             </Prev>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
+      <Item ItemId=";@items.IngestionDetailsGroup.content.items.IngestionProcess.content.items.StorageEngine.content.items.dataprocesse" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) dtile.content.json" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Amount of data processed]D;]A;</span>]D;]A;<ul>]D;]A;<li>Blobs received - Number of blobs received from input stream by the Storage Engine.</li>]D;]A;<li>Blobs processed - Number of blobs processed successfully by the Storage Engine. This data is ready for query.</li>]D;]A;<li>Blobs dropped - Number of blobs permanently dropped by the Storage Engine. For each such blob, an Ingestion result metric with a failure reason is sent.]D;]A;</li>]D;]A;</ul>]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Feldolgozott adatok mennyisége]D;]A;</span>]D;]A;<ul>]D;]A;<li>Fogadott blobok – a tárolómotor által a bemeneti streamből fogadott blobok száma.</li>]D;]A;<li>Feldolgozott blobok – a tárolómotor által sikerrel feldolgozott blobok száma. Ezek az adatok készen állnak a lekérdezésre.</li>]D;]A;<li>Eldobott blobok – a tárolómotor által véglegesen eldobott blobok száma. E blobok esetében a rendszer elküldi a betöltésieredmény-metrikát és a hiba okát.]D;]A;</li>]D;]A;</ul>]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
+      <Item ItemId=";@items.IngestionDetailsGroup.content.items.IngestionProcess.content.items.StorageEngine.content.items.text13CopyCo" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) pyCopyCopyCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Stage latency (avg per database)]D;]A;</span> <br>Time from when a message is accepted by Azure Data Explorer, until its content is received by the Storage Engine and is available for query.]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;">Átmeneti tárolási késés (adatbázisonkénti átlag)]D;]A;</span> <br>Az üzenet Azure Data Explorer általi elfogadásától a feldolgozandó üzenettartalom tárolómotor általi fogadásáig és lekérdezhetőségéig eltelő idő.]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
+      <Item ItemId=";@items.IngestionDetailsGroup.content.items.IngestionProcess.content.items.StorageEngine.content.items.text2.conten" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) t.json" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 13px;font-style: bold;"> What is Storage Engine?]D;]A;</span><br>]D;]A;The Azure Data Explorer Storage Engine stores the ingested data, making it available for query.]D;]A;]D;]A;]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 13px;font-style: bold;"> Mi a Tárolómotor?]D;]A;</span><br>]D;]A;Az Azure Data Explorer tárolómotorja tárolja a betöltött adatokat, lekérdezhetővé téve azokat.]D;]A;]D;]A;]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -1076,10 +1076,13 @@
       </Item>
       <Item ItemId=";items.IngestionDetailsGroup.content.items.IngestionProcess.content.items.HelpForIngestionSteps.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[<div style="background-color:rgba(0, 0, 255, 0.04470588); padding:6px 6px 1px 6px">]D;]A;<ul>]D;]A;<li>In the batching ingestion process, Azure Data Explorer optimizes data ingestion for high throughput by batching incoming small chunks of data into batches based on a configurable ingestion batching policy.]D;]A;</li>]D;]A;<li>Batching ingestion occurs in stages, and each stage is governed by an ingestion component. ]D;]A;<a href="https://docs.microsoft.com//azure/data-explorer/monitor-batching-ingestion">Lean more</a>]D;]A;</li> ]D;]A;</ul>]D;]A;</div>]]></Val>
+          <Val><![CDATA[]D;]A;<ul>]D;]A;<li>In the batching ingestion process, Azure Data Explorer optimizes data ingestion for high throughput by batching incoming small chunks of data into batches based on a configurable ingestion batching policy.]D;]A;</li>]D;]A;<li>Batching ingestion occurs in stages, and each stage is governed by an ingestion component. ]D;]A;<a href="https://docs.microsoft.com//azure/data-explorer/monitor-batching-ingestion">Lean more</a>]D;]A;</li> ]D;]A;</ul>]D;]A;]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[<div style="background-color:rgba(0, 0, 255, 0.04470588); padding:6px 6px 1px 6px">]D;]A;<ul>]D;]A;<li>A kötegelésbetöltési folyamat során az Azure Data Explorer egy konfigurálható adatbetöltés-kötegelési szabályzat alapján magas átviteli sebességhez optimalizálja az adatok betöltését a bejövő kis adattömböket.]D;]A;</li>]D;]A;<li>A kötegelésbetöltés szakaszokban történik, és az egyes szakaszokat egy betöltési összetevő szabályozza. ]D;]A;<a href="https://docs.microsoft.com//azure/data-explorer/monitor-batching-ingestion">További információ</a>]D;]A;</li> ]D;]A;</ul>]D;]A;</div>]]></Val>
+            <Val><![CDATA[]D;]A;<ul>]D;]A;<li>A kötegelésbetöltési folyamat során az Azure Data Explorer egy konfigurálható adatbetöltés-kötegelési szabályzat alapján magas átviteli sebességhez optimalizálja az adatok betöltését a bejövő kis adattömböket.]D;]A;</li>]D;]A;<li>A kötegelésbetöltés szakaszokban történik, és az egyes szakaszokat egy betöltési összetevő szabályozza. ]D;]A;<a href="https://docs.microsoft.com//azure/data-explorer/monitor-batching-ingestion">További információ</a>]D;]A;</li> ]D;]A;</ul>]D;]A;]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[<div style="background-color:rgba(0, 0, 255, 0.04470588); padding:6px 6px 1px 6px">]D;]A;<ul>]D;]A;<li>In the batching ingestion process, Azure Data Explorer optimizes data ingestion for high throughput by batching incoming small chunks of data into batches based on a configurable ingestion batching policy.]D;]A;</li>]D;]A;<li>Batching ingestion occurs in stages, and each stage is governed by an ingestion component. ]D;]A;<a href="https://docs.microsoft.com//azure/data-explorer/monitor-batching-ingestion">Lean more</a>]D;]A;</li> ]D;]A;</ul>]D;]A;</div>]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1160,10 +1163,13 @@
       </Item>
       <Item ItemId=";items.IngestionDetailsGroup.content.items.IngestionProcess.content.items.links12.content.links.3.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Engine Storage]]></Val>
+          <Val><![CDATA[Storage Engine]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Tárolási összetevő]]></Val>
+            <Val><![CDATA[Tárolómotor]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Engine Storage]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
