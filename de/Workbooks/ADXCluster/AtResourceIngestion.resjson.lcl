@@ -28,12 +28,12 @@
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) content.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Total latency]D;]A;</span> <br>Time from when a message is accepted by Azure Data Explorer until its content is received by the Engine Storage and available for query (accumulative latency).]]></Val>
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Total latency]D;]A;</span> <br>Time from when a message is accepted by Azure Data Explorer until its content is received by the Storage Engine and available for query (accumulative latency).]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Gesamtlatenz]D;]A;</span> <br>Zeitspanne ab dem Zeitpunkt, zu dem eine Nachricht von Azure Data Explorer angenommen wird, bis zu dem Zeitpunkt, zu dem der zugehörige Inhalt vom Engine-Speicher empfangen wird und für Abfragen verfügbar ist (akkumulative Latenz).]]></Val>
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Gesamtlatenz]D;]A;</span> <br>Zeit von der Annahme einer Nachricht durch Azure Data Explorer bis zum Empfang ihres Inhalts durch die Speicher-Engine und ihrer Verfügbarkeit für Abfragen (kumulative Latenz).]]></Val>
             </Tgt>
             <Prev Cat="Text">
-              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Total latency]D;]A;</span> <br>Time from when a message is discovered by Azure Data Explorer until its content is received by the Engine Storage and available for query (accumulative latency).]]></Val>
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Total latency]D;]A;</span> <br>Time from when a message is accepted by Azure Data Explorer until its content is received by the Engine Storage and available for query (accumulative latency).]]></Val>
             </Prev>
           </Str>
           <Disp Icon="Str" />
@@ -55,19 +55,25 @@
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) rder.content.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[<div style="background-color:rgba(231, 206, 243, 1); padding:6px 0px 6px 6px">]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 15px;font-style: bold;"> Batching per database]D;]A;</span><br>]D;]A;]D;]A;]]></Val>
+            <Val><![CDATA[<div style="background-color:rgba(231, 206, 243, 1); padding:6px 0px 6px 6px">]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 15px;font-style: bold;color:black;"> Batching per database]D;]A;</span><br>]D;]A;]D;]A;]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[<div style="background-color:rgba(231, 206, 243, 1); padding:6px 0px 6px 6px">]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 15px;font-style: bold;"> Batchverarbeitung pro Datenbank]D;]A;</span><br>]D;]A;]D;]A;]]></Val>
+              <Val><![CDATA[<div style="background-color:rgba(231, 206, 243, 1); padding:6px 0px 6px 6px">]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 15px;font-style: bold;color:black;"> Batchverarbeitung pro Datenbank]D;]A;</span><br>]D;]A;]D;]A;]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[<div style="background-color:rgba(231, 206, 243, 1); padding:6px 0px 6px 6px">]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 15px;font-style: bold;"> Batching per database]D;]A;</span><br>]D;]A;]D;]A;]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) rderCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[<div style="background-color:rgba(209, 228, 255, 1); padding:6px 6px 6px 6px">]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 15px;font-style: bold;"> Batching per table]D;]A;</span><br>]D;]A;]D;]A;]D;]A;]D;]A;]]></Val>
+            <Val><![CDATA[<div style="background-color:rgba(209, 228, 255, 1); padding:6px 6px 6px 6px">]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 15px;font-style: bold;color:black;"> Batching per table]D;]A;</span><br>]D;]A;]D;]A;]D;]A;]D;]A;]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[<div style="background-color:rgba(209, 228, 255, 1); padding:6px 6px 6px 6px">]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 15px;font-style: bold;"> Batchverarbeitung pro Tabelle]D;]A;</span><br>]D;]A;]D;]A;]D;]A;]D;]A;]]></Val>
+              <Val><![CDATA[<div style="background-color:rgba(209, 228, 255, 1); padding:6px 6px 6px 6px">]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 15px;font-style: bold;color:black;"> Batchverarbeitung pro Tabelle]D;]A;</span><br>]D;]A;]D;]A;]D;]A;]D;]A;]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[<div style="background-color:rgba(209, 228, 255, 1); padding:6px 6px 6px 6px">]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 15px;font-style: bold;"> Batching per table]D;]A;</span><br>]D;]A;]D;]A;]D;]A;]D;]A;]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -244,12 +250,12 @@
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) tent.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[<div style="background-color:rgba(0, 0, 255, 0.04470588); padding:6px 6px 6px 6px">]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 13px;font-style: bold;"> What is Batching Manager?]D;]A;</span><br>]D;]A;The Batching Manager optimizes the ingestion throughput by taking the small ingress data chunks that it receives and batching them (to one or more blobs) based on the <a href="https://docs.microsoft.com/azure/data-explorer/kusto/management/batchingpolicy">ingestion batching policy</a>.]D;]A;</div>]D;]A;]]></Val>
+            <Val><![CDATA[]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 13px;font-style: bold;"> What is Batching Manager?]D;]A;</span><br>]D;]A;The Batching Manager optimizes the ingestion throughput by taking the small ingress data chunks that it receives and batching them (to one or more blobs) based on the <a href="https://docs.microsoft.com/azure/data-explorer/kusto/management/batchingpolicy">ingestion batching policy</a>.]D;]A;]D;]A;]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[<div style="background-color:rgba(0, 0, 255, 0.04470588); padding:6px 6px 6px 6px">]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 13px;font-style: bold;"> Was ist der Batchverarbeitungs-Manager? ]D;]A;</span><br>]D;]A;Der Batchverarbeitung-Manager optimiert den Erfassungsdurchsatz, indem er die kleinen Datenblöcke, die er empfängt, basierend auf der <a href="https://docs.microsoft.com/azure/data-explorer/kusto/management/batchingpolicy">Erfassungs-Batchverarbeitungsrichtlinie</a> (zu einem oder mehreren Batches) zusammenfasst.]D;]A;</div>]D;]A;]]></Val>
+              <Val><![CDATA[]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 13px;font-style: bold;"> Was ist der Batchverarbeitungsmanager?]D;]A;</span><br>]D;]A;Der Batchverarbeitungsmanager optimiert den Erfassungsdurchsatz, indem er die kleinen eingehenden Datenblöcke, die er empfängt, auf Grundlage der <a href="https://docs.microsoft.com/azure/data-explorer/kusto/management/batchingpolicy">Batchverarbeitungsrichtlinie für die Erfassung</a> in Batches zusammenfasst (in einen oder mehrere Blobs).]D;]A;]D;]A;]]></Val>
             </Tgt>
             <Prev Cat="Text">
-              <Val><![CDATA[<div style="background-color:rgba(0, 0, 255, 0.04470588); padding:6px 6px 6px 6px">]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 13px;font-style: bold;"> What is Batching Manager?]D;]A;</span><br>]D;]A;The Batching Manager optimizes the ingestion throughput by taking the small ingress data chunks that it receives and batching them based on the <a href="https://docs.microsoft.com/azure/data-explorer/kusto/management/batchingpolicy">ingestion batching policy</a>.]D;]A;</div>]D;]A;]]></Val>
+              <Val><![CDATA[<div style="background-color:rgba(0, 0, 255, 0.04470588); padding:6px 6px 6px 6px">]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 13px;font-style: bold;"> What is Batching Manager?]D;]A;</span><br>]D;]A;The Batching Manager optimizes the ingestion throughput by taking the small ingress data chunks that it receives and batching them (to one or more blobs) based on the <a href="https://docs.microsoft.com/azure/data-explorer/kusto/management/batchingpolicy">ingestion batching policy</a>.]D;]A;</div>]D;]A;]]></Val>
             </Prev>
           </Str>
           <Disp Icon="Str" />
@@ -316,10 +322,13 @@
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) content.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[<div style="background-color:rgba(0, 0, 255, 0.04470588); padding:6px 6px 6px 6px">]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 13px;font-style: bold;"> What is Data Connection?]D;]A;</span><br>]D;]A;For Event Grid, Event Hub, and IoT Hub ingestion, there is a Data Connection that gets the data from external sources and performs initial data rearrangement. You can skip this step if you don't use Event Grid, Event Hub, or IoT Hub ingestion.]D;]A;</div>]D;]A;]]></Val>
+            <Val><![CDATA[]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 13px;font-style: bold;"> What is Data Connection?]D;]A;</span><br>]D;]A;For Event Grid, Event Hub, and IoT Hub ingestion, there is a Data Connection that gets the data from external sources and performs initial data rearrangement. You can skip this step if you don't use Event Grid, Event Hub, or IoT Hub ingestion.]D;]A;]D;]A;]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[<div style="background-color:rgba(0, 0, 255, 0.04470588); padding:6px 6px 6px 6px">]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 13px;font-style: bold;"> Was ist eine Datenverbindung? ]D;]A;</span><br>]D;]A;Für Event Grid-, Event Hub- und IoT Hub-Erfassung ist eine Datenverbindung vorhanden, die die Daten aus externen Quellen abruft und die erste Datenneuanordnung ausführt. Sie können diesen Schritt überspringen, wenn Sie die Event Grid-, Event Hub- oder IoT Hub-Erfassung nicht verwenden.]D;]A;</div>]D;]A;]]></Val>
+              <Val><![CDATA[]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 13px;font-style: bold;"> Was ist die Datenverbindung?]D;]A;</span><br>]D;]A;Für die Event Grid-, Event Hub- und IoT Hub-Erfassung gibt es eine Datenverbindung, welche die Daten aus externen Quellen abruft und die anfängliche Datenneuanordnung durchführt. Sie können diesen Schritt überspringen, wenn Sie die Event Grid-, Event Hub- oder IoT Hub-Erfassung nicht verwenden.]D;]A;]D;]A;]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[<div style="background-color:rgba(0, 0, 255, 0.04470588); padding:6px 6px 6px 6px">]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 13px;font-style: bold;"> What is Data Connection?]D;]A;</span><br>]D;]A;For Event Grid, Event Hub, and IoT Hub ingestion, there is a Data Connection that gets the data from external sources and performs initial data rearrangement. You can skip this step if you don't use Event Grid, Event Hub, or IoT Hub ingestion.]D;]A;</div>]D;]A;]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -370,51 +379,6 @@
             </Tgt>
             <Prev Cat="Text">
               <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Events dropped]D;]A;</span> <br>Number of events permanently dropped by data connections.]]></Val>
-            </Prev>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-      </Item>
-      <Item ItemId=";@items.IngestionDetailsGroup.content.items.IngestionProcess.content.items.Enginestorage.content.items.dataprocesse" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) dtile.content.json" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Amount of data processed]D;]A;</span>]D;]A;<ul>]D;]A;<li>Blobs received - Number of blobs received from input stream by the Engine Storage.</li>]D;]A;<li>Blobs processed - Number of blobs processed successfully by the Engine Storage. This data is ready for query.</li>]D;]A;<li>Blobs dropped - Number of blobs permanently dropped by the Engine Storage. For each such blob, an Ingestion result metric with a failure reason is sent.]D;]A;</li>]D;]A;</ul>]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Anzahl der verarbeiteten Daten]D;]A;</span>]D;]A;<ul>]D;]A;<li>Empfangene Blobs – Anzahl der vom Engine-Speicher aus dem Eingabestream empfangenen Blobs.</li>]D;]A;<li>Verarbeitete Blobs – Anzahl der vom Engine-Speicher erfolgreich verarbeiteten Blobs. Diese Daten können abgefragt werden.</li>]D;]A;<li>Verworfene Blobs – Anzahl der dauerhaft vom Engine-Speicher verworfenen Blobs. Für jedes dieser Blobs wird eine Metrik für das Erfassungsergebnis mit einem Fehlergrund gesendet.]D;]A;</li>]D;]A;</ul>]]></Val>
-            </Tgt>
-            <Prev Cat="Text">
-              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Amount of data processed]D;]A;</span>]D;]A;<ul>]D;]A;<li>Blobs received - Number of blobs received from input stream by the Engine Storage.</li>]D;]A;<li>Blobs processed - Number of blobs processed by the Engine Storage. This data is ready for query.</li>]D;]A;<li>Blobs dropped - Number of blobs permanently dropped by the Engine Storage. For each such blob, an Ingestion result metric with a failure reason is sent.]D;]A;</li>]D;]A;</ul>]]></Val>
-            </Prev>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-      </Item>
-      <Item ItemId=";@items.IngestionDetailsGroup.content.items.IngestionProcess.content.items.Enginestorage.content.items.text13CopyCo" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) pyCopyCopyCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Stage latency (avg per database)]D;]A;</span> <br>Time from when a message is accepted by Azure Data Explorer, until its content is received by the Engine Storage and is available for query.]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Phasenlatenz (Durchschnitt pro Datenbank)]D;]A;</span> <br>Zeitspanne ab dem Zeitpunkt, zu dem eine Nachricht von Azure Data Explorer angenommen wird, bis zu dem Zeitpunkt, zu dem der zugehörige Inhalt vom Engine-Speicher empfangen wird und für Abfragen verfügbar ist.]]></Val>
-            </Tgt>
-            <Prev Cat="Text">
-              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Stage latency (avg per database)]D;]A;</span> <br>Time from when a message is discovered by Azure Data Explorer, until its content is received by the Engine Storage and is available for query.]]></Val>
-            </Prev>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-      </Item>
-      <Item ItemId=";@items.IngestionDetailsGroup.content.items.IngestionProcess.content.items.Enginestorage.content.items.text2.conten" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) t.json" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[<div style="background-color:rgba(0, 0, 255, 0.04470588); padding:6px 6px 6px 6px">]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 13px;font-style: bold;"> What is Engine Storage?]D;]A;</span><br>]D;]A;The Azure Data Explorer Engine Storage stores the ingested data, making it available for query.]D;]A;</div>]D;]A;]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[<div style="background-color:rgba(0, 0, 255, 0.04470588); padding:6px 6px 6px 6px">]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 13px;font-style: bold;"> Was ist der Engine-Speicher? ]D;]A;</span><br>]D;]A;Der Azure Data Explorer-Engine-Speicher speichert die erfassten Daten und stellt diese für die Abfrage zur Verfügung.]D;]A;</div>]D;]A;]]></Val>
-            </Tgt>
-            <Prev Cat="Text">
-              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 15px;font-style: bold;margin:-10px -304px 0px 0px;position: relative;top:-5px">&nbsp;&nbsp;Engine Storage]D;]A;</span><br>]D;]A;&nbsp;&nbsp;&nbsp;]]></Val>
             </Prev>
           </Str>
           <Disp Icon="Str" />
@@ -481,13 +445,49 @@
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) tent.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[<div style="background-color:rgba(0, 0, 255, 0.04470588); padding:6px 6px 6px 6px">]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 13px;font-style: bold;"> What is Ingestion Manager?]D;]A;</span><br>]D;]A;The Ingestion Manager sends the ingestion commands to the Azure Data Explorer Storage Engine.]D;]A;</div>]D;]A;]]></Val>
+            <Val><![CDATA[]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 13px;font-style: bold;"> What is Ingestion Manager?]D;]A;</span><br>]D;]A;The Ingestion Manager sends the ingestion commands to the Azure Data Explorer Storage Engine.]D;]A;]D;]A;]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[<div style="background-color:rgba(0, 0, 255, 0.04470588); padding:6px 6px 6px 6px">]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 13px;font-style: bold;"> Was ist der Erfassungs-Manager? ]D;]A;</span><br>]D;]A;Der Erfassungs-Manager sendet die Erfassungsbefehle an die Azure Data Explorer-Speicher-Engine.]D;]A;</div>]D;]A;]]></Val>
+              <Val><![CDATA[]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 13px;font-style: bold;"> Was ist der Erfassungsmanager?]D;]A;</span><br>]D;]A;Der Erfassungsmanager sendet die Erfassungsbefehle an die Azure Data Explorer-Speicher-Engine.]D;]A;]D;]A;]]></Val>
             </Tgt>
             <Prev Cat="Text">
-              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 15px;font-style: bold;margin:-10px -304px 0px 0px;position: relative;top:-5px">&nbsp;&nbsp;Ingestion Manager]D;]A;</span><br>]D;]A;&nbsp;&nbsp;&nbsp;]]></Val>
+              <Val><![CDATA[<div style="background-color:rgba(0, 0, 255, 0.04470588); padding:6px 6px 6px 6px">]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 13px;font-style: bold;"> What is Ingestion Manager?]D;]A;</span><br>]D;]A;The Ingestion Manager sends the ingestion commands to the Azure Data Explorer Storage Engine.]D;]A;</div>]D;]A;]]></Val>
             </Prev>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
+      <Item ItemId=";@items.IngestionDetailsGroup.content.items.IngestionProcess.content.items.StorageEngine.content.items.dataprocesse" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) dtile.content.json" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Amount of data processed]D;]A;</span>]D;]A;<ul>]D;]A;<li>Blobs received - Number of blobs received from input stream by the Storage Engine.</li>]D;]A;<li>Blobs processed - Number of blobs processed successfully by the Storage Engine. This data is ready for query.</li>]D;]A;<li>Blobs dropped - Number of blobs permanently dropped by the Storage Engine. For each such blob, an Ingestion result metric with a failure reason is sent.]D;]A;</li>]D;]A;</ul>]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Menge der verarbeiteten Daten]D;]A;</span>]D;]A;<ul>]D;]A;<li>Empfangene Blobs – Anzahl der von der Speicher-Engine aus dem Eingabestream empfangenen Blobs.</li>]D;]A;<li>Verarbeitete Blobs – Anzahl der von der Speicher-Engine erfolgreich verarbeiteten Blobs. Diese Daten sind bereit für die Abfrage.</li>]D;]A;<li>Verworfene Blobs – Anzahl der von der Speicher-Engine permanent verworfenen Blobs. Für jeden solchen Blob wird eine Erfassungsergebnismetrik mit einem Fehlergrund gesendet.]D;]A;</li>]D;]A;</ul>]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
+      <Item ItemId=";@items.IngestionDetailsGroup.content.items.IngestionProcess.content.items.StorageEngine.content.items.text13CopyCo" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) pyCopyCopyCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Stage latency (avg per database)]D;]A;</span> <br>Time from when a message is accepted by Azure Data Explorer, until its content is received by the Storage Engine and is available for query.]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Phasenlatenz (Durchschnitt pro Datenbank)]D;]A;</span> <br>Zeit von der Annahme einer Nachricht durch Azure Data Explorer bis zum Empfang ihres Inhalts durch die Speicher-Engine und ihrer Verfügbarkeit für Abfragen.]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
+      <Item ItemId=";@items.IngestionDetailsGroup.content.items.IngestionProcess.content.items.StorageEngine.content.items.text2.conten" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) t.json" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 13px;font-style: bold;"> What is Storage Engine?]D;]A;</span><br>]D;]A;The Azure Data Explorer Storage Engine stores the ingested data, making it available for query.]D;]A;]D;]A;]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 13px;font-style: bold;"> Was ist die Speicher-Engine?]D;]A;</span><br>]D;]A;Die Azure Data Explorer-Speicher-Engine speichert die erfassten Daten und macht sie für die Abfrage verfügbar.]D;]A;]D;]A;]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -1076,10 +1076,13 @@
       </Item>
       <Item ItemId=";items.IngestionDetailsGroup.content.items.IngestionProcess.content.items.HelpForIngestionSteps.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[<div style="background-color:rgba(0, 0, 255, 0.04470588); padding:6px 6px 1px 6px">]D;]A;<ul>]D;]A;<li>In the batching ingestion process, Azure Data Explorer optimizes data ingestion for high throughput by batching incoming small chunks of data into batches based on a configurable ingestion batching policy.]D;]A;</li>]D;]A;<li>Batching ingestion occurs in stages, and each stage is governed by an ingestion component. ]D;]A;<a href="https://docs.microsoft.com//azure/data-explorer/monitor-batching-ingestion">Lean more</a>]D;]A;</li> ]D;]A;</ul>]D;]A;</div>]]></Val>
+          <Val><![CDATA[]D;]A;<ul>]D;]A;<li>In the batching ingestion process, Azure Data Explorer optimizes data ingestion for high throughput by batching incoming small chunks of data into batches based on a configurable ingestion batching policy.]D;]A;</li>]D;]A;<li>Batching ingestion occurs in stages, and each stage is governed by an ingestion component. ]D;]A;<a href="https://docs.microsoft.com//azure/data-explorer/monitor-batching-ingestion">Lean more</a>]D;]A;</li> ]D;]A;</ul>]D;]A;]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[<div style="background-color:rgba(0, 0, 255, 0.04470588); padding:6px 6px 1px 6px">]D;]A;<ul>]D;]A;<li>Azure Data Explorer optimiert die Datenerfassung für hohen Durchsatz im Batchverarbeitungs-Erfassungsprozess, indem eingehende kleine Datenblöcke basierend auf einer konfigurierbaren Erfassungs-Batchverarbeitungsrichtlinie in Batches zusammengefasst werden. ]D;]A;</li>]D;]A;<li>Die Erfassung für die Batchverarbeitung erfolgt stufenweise, und jede Stufe wird durch eine Erfassungskomponente gesteuert. ]D;]A;<a href="https://docs.microsoft.com//azure/data-explorer/monitor-batching-ingestion">Weitere Informationen</a>]D;]A;</li> ]D;]A;</ul>]D;]A;</div>]]></Val>
+            <Val><![CDATA[]D;]A;<ul>]D;]A;<li>Im Batchverarbeitungsprozess für die Erfassung optimiert Azure Data Explorer die Datenerfassung für hohen Durchsatz, indem eingehende kleine Datenblöcke basierend auf einer konfigurierbaren Batchverarbeitungsrichtlinie für die Erfassung in Batches zusammengefasst werden.]D;]A;</li>]D;]A;<li>Die Erfassung für die Batchverarbeitung erfolgt in Phasen, und jede Phase wird von einer Erfassungskomponente gesteuert. ]D;]A;<a href="https://docs.microsoft.com//azure/data-explorer/monitor-batching-ingestion">Weitere Informationen</a>]D;]A;</li> ]D;]A;</ul>]D;]A;]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[<div style="background-color:rgba(0, 0, 255, 0.04470588); padding:6px 6px 1px 6px">]D;]A;<ul>]D;]A;<li>In the batching ingestion process, Azure Data Explorer optimizes data ingestion for high throughput by batching incoming small chunks of data into batches based on a configurable ingestion batching policy.]D;]A;</li>]D;]A;<li>Batching ingestion occurs in stages, and each stage is governed by an ingestion component. ]D;]A;<a href="https://docs.microsoft.com//azure/data-explorer/monitor-batching-ingestion">Lean more</a>]D;]A;</li> ]D;]A;</ul>]D;]A;</div>]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1160,10 +1163,13 @@
       </Item>
       <Item ItemId=";items.IngestionDetailsGroup.content.items.IngestionProcess.content.items.links12.content.links.3.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Engine Storage]]></Val>
+          <Val><![CDATA[Storage Engine]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Engine-Speicher]]></Val>
+            <Val><![CDATA[Speicher-Engine]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Engine Storage]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
