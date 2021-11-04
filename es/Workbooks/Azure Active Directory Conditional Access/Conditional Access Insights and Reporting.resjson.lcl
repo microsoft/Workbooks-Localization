@@ -9,108 +9,258 @@
     <Disp Icon="Expand" Expand="true" Disp="true" LocTbl="false" />
     <Item ItemId=";Strings" ItemType="0" PsrId="306" Leaf="false">
       <Disp Icon="Str" Disp="true" LocTbl="false" />
-      <Item ItemId=";items.Applicationindividualpolicies.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Applications - {resultName}]]></Val>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Applicationsallenabledpolicies.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Applications - {resultName}]]></Val>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Clientappallenabledpolicies.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Client app - {resultName}]]></Val>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Clientappindividualpolicy.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Client app - {resultName}]]></Val>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Deviceplatformallenabledpolicies.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Device platform - {resultName}]]></Val>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Deviceplatformindividualpolicy.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Device platform - {resultName}]]></Val>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Devicestateallenabledpolicies.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Device State - {resultName}]]></Val>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Devicestateindividualpolicies.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Device State - {resultName}]]></Val>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
       <Item ItemId=";items.Gettingstarted.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[## Guide to using this workbook]D;]A;]D;]A;Organizations use Azure AD Conditional Access to determine who should have access to what resources under the right cicumstances. This workbook was designed to help admins understand the impact of their Conditional Access policies by aggregating sign-in results and highlighting users bypassing your Conditional Access policies. [Learn more]5D;(https://aka.ms/cainsights).]D;]A;]D;]A;### Steps to deploy a new Conditional Access policy using this workbook]D;]A;1. Read about [commonly applied Conditional Access policies]5D;(https://docs.microsoft.com/azure/active-directory/conditional-access/overview#commonly-applied-policies).]D;]A;2. Create a new Conditional Access policy in [report-only mode]5D;(https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-report-only).]D;]A;3. In this report, select the policy from the Conditional Access policy parameter to see its impact summary. ]D;]A;4. Click on a result tile to filter the report by success, failure, user action required, or not applied sign-ins. ]D;]A;5. Verify whether the policy is acting as intended by looking at the breakdown per condition and sign-in status. ]D;]A;6. Edit your policy if necessary, or switch the state of the policy from report-only to on. ]D;]A;7. In this report, view the impact of all enabled policies by selecting "All enabled policies" from the Conditional Access policy parameter. ]D;]A;]D;]A;### Workbook parameters ]D;]A;	• Conditional Access policy: Select all enabled policies or an individual enabled or report-only policy]D;]A;	• Time range: Select how long back the report will load. Longer time ranges may not load for large tenants]D;]A;	• User: Enter a username to filter the report to sign-ins from that account. Type "All users" to see all users. ]D;]A;	• App: Enter the app display name to filter the report to sign-ins to that application. Type "All apps" to see all applications.]D;]A;	• Data view: Select whether report should summarize the number of sign-ins or users]]></Val>
+          <Val><![CDATA[Organizations use Azure AD Conditional Access to determine who should have access to what resources under the right cicumstances. This workbook was designed to help admins understand the impact of their Conditional Access policies by aggregating sign-in results and highlighting users bypassing your Conditional Access policies. [Learn more]5D;(https://aka.ms/cainsights).]D;]A;]D;]A;### Steps to deploy a new Conditional Access policy using this workbook]D;]A;1. Read about [commonly applied Conditional Access policies]5D;(https://docs.microsoft.com/azure/active-directory/conditional-access/overview#commonly-applied-policies).]D;]A;2. Create a new Conditional Access policy in [report-only mode]5D;(https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-report-only).]D;]A;3. In this report, select the policy from the Conditional Access policy parameter to see its impact summary. ]D;]A;4. Click on a result tile to filter the report by success, failure, user action required, or not applied sign-ins. ]D;]A;5. Verify whether the policy is acting as intended by looking at the breakdown per condition and sign-in status. ]D;]A;6. Edit your policy if necessary, or switch the state of the policy from report-only to on. ]D;]A;7. In this report, view the impact of all enabled policies by selecting "All enabled policies" from the Conditional Access policy parameter. ]D;]A;]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[## Guía para usar este libro]D;]A;]D;]A;Las organizaciones usan el acceso condicional de Azure AD para determinar quién debe tener acceso a los recursos y en qué circunstancias. Este libro se ha diseñado para ayudar a los administradores a comprender el impacto de sus directivas de acceso condicional mediante los resultados de inicio de sesión y resaltando a los usuarios que omitieron las directivas de acceso condicional. [Más información]5D;(https://aka.ms/cainsights).]D;]A;]D;]A;### Pasos para implementar una nueva directiva de acceso condicional con este libro]D;]A;1. Más información [sobre las directivas de acceso condicional que se aplican habitualmente]5D;(https://docs.microsoft.com/azure/active-directory/conditional-access/overview#commonly-applied-policies).]D;]A;2. Cree una nueva directiva de acceso condicional en [modo solo informe]5D;(https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-report-only).]D;]A;3. En este informe, seleccione el parámetro de la directiva de acceso condicional para ver el resumen de impacto. ]D;]A;4. Haga clic en un icono de resultado para filtrar el informe por operaciones correctas, errores, acciones del usuario obligatorias o inicios de sesión a los que no se aplicó la directiva. ]D;]A;5. Observe el desglose por condición y estado de inicio de sesión para comprobar si la directiva está actuando como se esperaba. ]D;]A;6. Edite la directiva si es necesario o cambie su estado de solo informe a activa. ]D;]A;7. En este informe, seleccione "Todas las directivas habilitadas" del parámetro de la directiva de acceso condicional para ver el impacto de todas las directivas habilitadas. ]D;]A;]D;]A;### Parámetros del libro ]D;]A;	• Directiva de acceso condicional: seleccione todas las políticas habilitadas o una individual habilitada o una de solo informe]D;]A;	• Intervalo de tiempo: seleccione desde qué fecha pasada se cargará el informe. Es posible que los intervalos de tiempo más largos no carguen para los inquilinos grandes]D;]A;	• Usuario: escriba un nombre de usuario para filtrar el informe según los inicios de sesión desde esa cuenta. Escriba "Todos los usuarios" para ver todos los usuarios. ]D;]A;	• Aplicación: escriba el nombre para mostrar de la aplicación para filtrar el informe según los inicios de sesión en esa aplicación. Escriba "Todas las aplicaciones" para ver todas las aplicaciones.]D;]A;	• Vista de datos: seleccione si el informe debe resumir la cantidad de inicios de sesión o de usuarios]]></Val>
+            <Val><![CDATA[Las organizaciones usan el acceso condicional de Azure AD para determinar quién debe tener acceso a los recursos que se encuentran bajo las circunstancias adecuadas. Este libro se diseñó para ayudar a los administradores a comprender el impacto de sus directivas de acceso condicional agregando los resultados de inicio de sesión y resaltando a los usuarios omitiendo las directivas de acceso condicional. [Más información]5D; (https://aka.ms/cainsights).]D;]A;]D;]A;### Pasos para implementar una nueva directiva de acceso condicional con este libro]D;]A;1. Obtener información sobre [directivas de acceso condicional aplicadas habitualmente]5D;(https://docs.microsoft.com/azure/active-directory/conditional-access/overview#commonly-applied-policies).]D;]A;2. Crear una nueva directiva de acceso condicional en [modo de solo informe]5D;(https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-report-only).]D;]A;3. En este informe, seleccionar la directiva en el parámetro de directiva de acceso condicional para ver su resumen de impacto. ]D;]A;4. Hacer clic en un icono de resultado para filtrar el informe por inicios de sesión correctos, erróneos, de acción del usuario o no aplicados. ]D;]A;5. Comprobar si la directiva actúa según lo previsto examinando el desglose por condición y estado de inicio de sesión. ]D;]A;6. Editar la directiva si es necesario o cambie el estado de la directiva de solo informe a activado. ]D;]A;7. En este informe, para ver el impacto de todas las directivas habilitadas, seleccionar "Todas las directivas habilitadas" en el parámetro de directiva de acceso condicional. ]D;]A;]]></Val>
+          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[## Guide to using this workbook]D;]A;]D;]A;Organizations use Azure AD Conditional Access to determine who should have access to what resources under the right cicumstances. This workbook was designed to help admins understand the impact of their Conditional Access policies by aggregating sign-in results and highlighting users bypassing your Conditional Access policies. [Learn more]5D;(https://aka.ms/cainsights).]D;]A;]D;]A;### Steps to deploy a new Conditional Access policy using this workbook]D;]A;1. Read about [commonly applied Conditional Access policies]5D;(https://docs.microsoft.com/azure/active-directory/conditional-access/overview#commonly-applied-policies).]D;]A;2. Create a new Conditional Access policy in [report-only mode]5D;(https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-report-only).]D;]A;3. In this report, select the policy from the Conditional Access policy parameter to see its impact summary. ]D;]A;4. Click on a result tile to filter the report by success, failure, user action required, or not applied sign-ins. ]D;]A;5. Verify whether the policy is acting as intended by looking at the breakdown per condition and sign-in status. ]D;]A;6. Edit your policy if necessary, or switch the state of the policy from report-only to on. ]D;]A;7. In this report, view the impact of all enabled policies by selecting "All enabled policies" from the Conditional Access policy parameter. ]D;]A;]D;]A;### Workbook parameters ]D;]A;	• Conditional Access policy: Select all enabled policies or an individual enabled or report-only policy]D;]A;	• Time range: Select how long back the report will load. Longer time ranges may not load for large tenants]D;]A;	• User: Enter a username to filter the report to sign-ins from that account. Type "All users" to see all users. ]D;]A;	• App: Enter the app display name to filter the report to sign-ins to that application. Type "All apps" to see all applications.]D;]A;	• Data view: Select whether report should summarize the number of sign-ins or users]]></Val>
+          </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Serviceprincipalsigninstab.content.items.Applicationindividualpolicies.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Resources - {resultName}]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Serviceprincipalsigninstab.content.items.Applicationsallenabledpolicies.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Resources - {resultName}]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Serviceprincipalsigninstab.content.items.Instructions3.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[**Total**: Number of {unit:label} in the {TimeRange}</br>]D;]A;**Success**: Number of {unit:label} where the selected polic(ies) granted access and the required controls were satisifed</br>]D;]A;**Failure**: Number of {unit:label} where the selected polic(ies) denied access and the required controls were not satisfied</br>]D;]A;**User action required**: Number of {unit:label} where the selected report-only policy applied but user action (e.g. MFA or Terms of Use) would be required if the policy were enabled.</br>]D;]A;**Not applied**: Number of {unit:label} that are bypassing the selected polic(ies) because the sign-in did not match at least one of the assignments or conditions. ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[**Total**: número de {unit:label} en el {TimeRange}</br>]D;]A;**Correcto**: número de {unit:label} donde se concedió acceso a las directivas seleccionadas y se cumplieron los controles necesarios</br>]D;]A;**Error**: número de {unit:label} en los que los servidores seleccionados denegaron el acceso y no se cumplieron los controles necesarios</br>]D;]A;**Acción del usuario requerida**: Número de {unit:label} donde se aplicó la directiva de solo informe seleccionada, pero se requeriría la acción del usuario (por ejemplo, MFA o términos de uso) si se habilitara la directiva.</br>]D;]A;**No aplicado**: número de {unit:label} que omiten las tareas seleccionadas porque el inicio de sesión no coincidía con al menos una de las asignaciones o condiciones. ]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Locationallenabledpolicies.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+      <Item ItemId=";items.Serviceprincipalsigninstab.content.items.Instructions4.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[____________________________________________]D;]A;## Sign-in details]D;]A;]D83D;]DCA1; _To investigate sign-in details of a specific service principal, filter by service principal ID at the top of the workbook_]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[____________________________________________]D;]A;## Detalles de inicio de sesión]D;]A;]D83D;]DCA1; _Para investigar los detalles de inicio de sesión de una entidad de servicio específica, filtrar por identificador de entidad de servicio en la parte superior del libro_]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Serviceprincipalsigninstab.content.items.Locationallenabledpolicies.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Location - {resultName}]]></Val>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Locationindividualpolicies.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+      <Item ItemId=";items.Serviceprincipalsigninstab.content.items.Locationindividualpolicies.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Location - {resultName}]]></Val>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Signindetailsallenabledpolicies.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+      <Item ItemId=";items.Serviceprincipalsigninstab.content.items.Signindetailsallenabledpolicies.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Sign-in events - {resultName}]]></Val>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Signindetailsindividualpolicies.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+      <Item ItemId=";items.Serviceprincipalsigninstab.content.items.Signindetailsindividualpolicies.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Sign-in events - {resultName}]]></Val>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Signinriskallenabedpolicies.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+      <Item ItemId=";items.Serviceprincipalsigninstab.content.items.Usersignincountallenabledpolicies.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Sign-in risk - {resultName}]]></Val>
+          <Val><![CDATA[Service principal sign-in count - {resultName}]]></Val>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Signinriskindividualpolicy.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Sign-in risk - {resultName}]]></Val>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Usersignincountallenabledpolicies.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+      <Item ItemId=";items.Serviceprincipalsigninstab.content.items.Usersigninindividualpolicies.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[User sign-in count - {resultName}]]></Val>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Usersigninindividualpolicies.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+      <Item ItemId=";items.Serviceprincipalsigninstab.content.items.text14.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[__________________________________________]D;]A;## Breakdown per condition and sign-in status]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[__________________________________________]D;]A;## Desglose por condición y estado de inicio de sesión]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Serviceprincipalsigninstab.content.items.text21.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[## Impact summary]D;]A;]D83D;]DCA1; *Click on the tiles below to filter the report by the selected Conditional Access result.*]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Resumen de impacto]D;]A;]D83D;]DCA1; *Haga clic en los iconos siguientes para filtrar el informe por el resultado de acceso condicional seleccionado.*]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Usersigninstab.content.items.Applicationindividualpolicies.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Applications - {resultName}]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Usersigninstab.content.items.Applicationsallenabledpolicies.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Applications - {resultName}]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Usersigninstab.content.items.Clientappallenabledpolicies.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Client app - {resultName}]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Usersigninstab.content.items.Clientappindividualpolicy.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Client app - {resultName}]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Usersigninstab.content.items.Deviceplatformallenabledpolicies.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Device platform - {resultName}]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Usersigninstab.content.items.Deviceplatformindividualpolicy.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Device platform - {resultName}]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Usersigninstab.content.items.Devicestateallenabledpolicies.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Device State - {resultName}]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Usersigninstab.content.items.Devicestateindividualpolicies.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Device State - {resultName}]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Usersigninstab.content.items.Instructions1.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[**Total**: Number of {unit:label} in the {TimeRange}</br>]D;]A;**Success**: Number of {unit:label} where the selected polic(ies) granted access and the required controls were satisifed</br>]D;]A;**Failure**: Number of {unit:label} where the selected polic(ies) denied access and the required controls were not satisfied</br>]D;]A;**User action required**: Number of {unit:label} where the selected report-only policy applied but user action (e.g. MFA or Terms of Use) would be required if the policy were enabled.</br>]D;]A;**Not applied**: Number of {unit:label} that are bypassing the selected polic(ies) because the sign-in did not match at least one of the assignments or conditions. ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[**Total**: número de {unit:label} en el {TimeRange}</br>]D;]A;**Correcto**: número de {unit:label} donde se concedió acceso a las directivas seleccionadas y se cumplieron los controles necesarios</br>]D;]A;**Error**: número de {unit:label} en los que los servidores seleccionados denegaron el acceso y no se cumplieron los controles necesarios</br>]D;]A;**Acción del usuario requerida**: Número de {unit:label} donde se aplicó la directiva de solo informe seleccionada, pero se requeriría la acción del usuario (por ejemplo, MFA o términos de uso) si se habilitara la directiva.</br>]D;]A;**No aplicado**: número de {unit:label} que omiten las tareas seleccionadas porque el inicio de sesión no coincidía con al menos una de las asignaciones o condiciones. ]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Usersigninstab.content.items.Instructions2.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[____________________________________________]D;]A;## Sign-in details]D;]A;]D83D;]DCA1; _To investigate sign-in details of a specific user, filter by user principal name (UPN) at the top of the workbook_]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[]D;]A;## Detalles de inicio de sesión]D;]A;]D83D;]DCA1; _Para investigar los detalles de inicio de sesión de un usuario específico, filtrar por nombre principal de usuario (UPN) en la parte superior del libro_]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Usersigninstab.content.items.Locationallenabledpolicies.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Location - {resultName}]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Usersigninstab.content.items.Locationindividualpolicies.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Location - {resultName}]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Usersigninstab.content.items.Signindetailsallenabledpolicies.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Sign-in events - {resultName}]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Usersigninstab.content.items.Signindetailsindividualpolicies.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Sign-in events - {resultName}]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Usersigninstab.content.items.Signinriskallenabedpolicies.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Sign-in risk - {resultName}]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Usersigninstab.content.items.Signinriskindividualpolicy.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Sign-in risk - {resultName}]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Usersigninstab.content.items.Usersignincountallenabledpolicies.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[User sign-in count - {resultName}]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Usersigninstab.content.items.Usersigninindividualpolicies.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[User sign-in count - {resultName}]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Usersigninstab.content.items.text14.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[__________________________________________]D;]A;## Breakdown per condition and sign-in status]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[__________________________________________]D;]A;## Desglose por condición y estado de inicio de sesión]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Usersigninstab.content.items.text21.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[## Impact summary]D;]A;]D83D;]DCA1; *Click on the tiles below to filter the report by the selected Conditional Access result.*]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Resumen de impacto]D;]A;]D83D;]DCA1; *Haga clic en los iconos siguientes para filtrar el informe por el resultado de acceso condicional seleccionado.*]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.links29.content.links.08b8034bb2f04ed28c28dc6d79af1c3b.linkLabel" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Service principal sign-ins]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Inicios de sesión de entidad de servicio]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.links29.content.links.54488ef3321b4eee9670f57303cb4265.linkLabel" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[User sign-ins]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Inicios de sesión de usuario]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.links29.content.links.54488ef3321b4eee9670f57303cb4265.preText" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[User sign-ins]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Inicios de sesión de usuario]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -134,19 +284,25 @@
       </Item>
       <Item ItemId=";items.parameters1.content.parameters.60a4d33d0d7347e8a32d6798d0f5730e.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Default value is All apps]]></Val>
+          <Val><![CDATA[Exact match on app display name. Default value is "All apps"]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[El valor predeterminado es Todas las aplicaciones.]]></Val>
+            <Val><![CDATA[Coincidencia exacta en el nombre para mostrar de la aplicación. El valor predeterminado es "Todas las aplicaciones"]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Default value is All apps]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.parameters1.content.parameters.93cfc5e192f343a3aad5dc7fc507eb57.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Default value is All users]]></Val>
+          <Val><![CDATA[Exact match on full user principal name (e.g. user@domain.com). Default value is "All users"]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[El valor predeterminado es Todos los usuarios.]]></Val>
+            <Val><![CDATA[Coincidencia exacta en el nombre principal de usuario completo (por ejemplo, user@domain.com). El valor predeterminado es "Todos los usuarios"]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Default value is All users]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -168,53 +324,113 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.text14.content.json" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.parameters1Copy.content.parameters.3b0b16aace0a4940813cec722560223a.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[__________________________________________]D;]A;## Breakdown per condition and sign-in status]D;]A;]D83D;]DCA1; *Download results to Excel or open query in Log Analytics by clicking the three dots in the upper right corner of each query.*]]></Val>
+          <Val><![CDATA[Display results by number of service principals or number of sign-ins]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[__________________________________________]D;]A;## Desglose por condición y estado de inicio de sesión]D;]A;]D83D;]DCA1; *Descargue los resultados en Excel o abra una consulta en Log Analytics mediante un clic en los tres puntos de la esquina superior derecha de cada consulta.*]]></Val>
-          </Tgt>
-          <Prev Cat="Text">
-            <Val><![CDATA[__________________________________________]D;]A;## Breakdown per condition and sign-in status]D;]A;]D83D;]DCA1; *Download results to Excel or open query in Log Analytics by clicking the icons in the upper right corner of each query.*]]></Val>
-          </Prev>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.text22.content.json" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[____________________________________________]D;]A;## Sign-in Details]D;]A;]D83D;]DCA1; _To investigate sign-in details of a specific user, filter by username at the top of the workbook_]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[____________________________________________]D;]A;## Detalles de inicio de sesión]D;]A;]D83D;]DCA1; _Para investigar los detalles de inicio de sesión de un usuario específico, filtre por nombre de usuario en la parte superior del libro._]]></Val>
+            <Val><![CDATA[Mostrar resultados por número de entidades de servicio o número de inicios de sesión]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.text28.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+      <Item ItemId=";items.parameters1Copy.content.parameters.3b0b16aace0a4940813cec722560223a.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[### How is the impact summary calculated?]D;]A;The tiles below indicate the number of users or sign-ins (depending on the data view parameter) where the selected Conditional Access policies applied. ]D;]A;]D;]A;**Total**: Number of {unit:label} in the {TimeRange}</br>]D;]A;**Success**: Number of {unit:label} where the selected polic(ies) granted access and the required controls were satisifed</br>]D;]A;**Failure**: Number of {unit:label} where the selected polic(ies) denied access and the required controls were not satisfied</br>]D;]A;**User action required**: Number of {unit:label} where the selected report-only policy applied but user action (e.g. MFA or Terms of Use) would be required if the policy were enabled.</br>]D;]A;**Not applied**: Number of {unit:label} that are bypassing the selected polic(ies) because the sign-in did not match at least one of the assignments or conditions. ]D;]A;]D;]A;⚠️ Sign-ins the result "Not applied" are not protected by Conditional Access and may be a security vulnerability.]]></Val>
+          <Val><![CDATA[Data view]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[### ¿Cómo se calcula el resumen de impacto?]D;]A;Los iconos siguientes indican la cantidad de usuarios o inicios de sesión (según el parámetro de la vista de datos) a los que se aplicaron las directivas de acceso condicional seleccionadas. ]D;]A;]D;]A;**Total**: cantidad de {unit:label} en {TimeRange}</br>]D;]A;**Operación correcta**: cantidad de {unit:label} a los que las directivas seleccionadas otorgaron acceso y se cumplieron los controles obligatorios</br>]D;]A;**Error**: cantidad de {unit:label} a los que las directivas seleccionadas denegaron acceso y no se cumplieron los controles obligatorios</br>]D;]A;**Acción del usuario obligatoria**: cantidad de {unit:label} a los que se aplicó la directiva seleccionada de solo informe, pero la acción del usuario (p.ej., MFA o condiciones de uso) es obligatoria si la directiva está habilitada.</br>]D;]A;**No aplicada**: cantidad de {unit:label} que omitieron las directivas seleccionadas debido a que el inicio de sesión no coincidió con al menos una de las asignaciones o condiciones. ]D;]A;]D;]A;⚠️ Los inicios de sesión que muestran el resultado "No aplicada" no están protegidos por el acceso condicional y pueden constituir una vulnerabilidad de seguridad.]]></Val>
+            <Val><![CDATA[Vista de datos]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.parameters1Copy.content.parameters.a51f76137f1e4f77835fb5390b13a4f3.description" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Show result for all enabled policies. Cannot select individual policies that apply to service principals.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Mostrar el resultado de todas las directivas habilitadas. No se pueden seleccionar directivas individuales que se apliquen a entidades de servicio.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.parameters1Copy.content.parameters.a51f76137f1e4f77835fb5390b13a4f3.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Conditional Access policy]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Directiva de acceso condicional]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.parameters1Copy.content.parameters.dc9f0dd1cbfe4610a8c7414da5856a60.description" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Exact match on resource display name. Default value is "All apps"]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Coincidencia exacta en el nombre para mostrar del recurso. El valor predeterminado es "Todas las aplicaciones"]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.parameters1Copy.content.parameters.dc9f0dd1cbfe4610a8c7414da5856a60.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Resource]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Recurso]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.parameters1Copy.content.parameters.dfa8db4a0f30479b9f1170ad8d619a1e.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Time range]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Intervalo de tiempo]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.parameters1Copy.content.parameters.e3b79b8a986640aa9261ed6aab1f76b2.description" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Exact match on service principal ID. Default value is "All service principals"]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Coincidencia exacta en la identificación de entidad de servicio. El valor predeterminado es "Todas las entidades de servicio"]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.parameters1Copy.content.parameters.e3b79b8a986640aa9261ed6aab1f76b2.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Service Prinicpal ID]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Identidad de la entidad de servicio]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.text11.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[In order to view user sign-ins, ensure that Diagnostic Settings are configured to send SignInLogs to your log analytics workspace. [Learn more]5D;(https://docs.microsoft.com/azure/active-directory/reports-monitoring/howto-integrate-activity-logs-with-log-analytics). ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Para ver los inicios de sesión de usuario, asegúrese de que la configuración de diagnóstico está configurada para enviar SignInLogs al área de trabajo de Log Analytics. [Más información]5D; (https://docs.microsoft.com/azure/active-directory/reports-monitoring/howto-integrate-activity-logs-with-log-analytics). ]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.text11Copy.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[In order to view service prinicpal sign-ins, ensure that Diagnostic Settings are configured to send ServicePrincipalSignInLogs to your log analytics workspace. [Learn more]5D;(https://docs.microsoft.com/azure/active-directory/reports-monitoring/howto-integrate-activity-logs-with-log-analytics). ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Para ver los inicios de sesión de la entidad de servicio, asegúrese de que la Configuración de diagnóstico esté configurada para enviar los ServicePrincipalSignInLogs a su área de trabajo de Log Analytics.[Más información]5D; (https://docs.microsoft.com/azure/active-directory/reports-monitoring/howto-integrate-activity-logs-with-log-analytics). ]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text5.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[# Conditional Access Insights and Reporting]A;]]></Val>
+          <Val><![CDATA[# Conditional Access insights and reporting]A;]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[# Informes e información del acceso condicional]A;]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.text5b.content.json" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[## Impact Summary]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[## Resumen de impacto]]></Val>
+            <Val><![CDATA[# Informes y conclusiones de acceso condicional]A;]]></Val>
           </Tgt>
           <Prev Cat="Text">
-            <Val><![CDATA[## Impact Summary]A;The tiles below indicate the number of users or sign-ins (depending on the data view parameter) where the selected Conditional Access policies applied. ]A;]A;The "Not applied" tile shows the number of users or sign-ins that are bypassing your Conditional Access policies. Click on a tile to filter the report by sign-ins with that result. ]]></Val>
+            <Val><![CDATA[# Conditional Access Insights and Reporting]A;]]></Val>
           </Prev>
         </Str>
         <Disp Icon="Str" />
