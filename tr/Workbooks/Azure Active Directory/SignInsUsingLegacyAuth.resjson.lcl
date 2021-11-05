@@ -12,6 +12,9 @@
       <Item ItemId=";items.interactive.content.items.text3.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Step 3]D;]A;View all legacy auth sign-ins for the user selected in **Step 2** to understand how legacy auth is being used. ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### 3. Adım]D;]A;Eski kimlik doğrulamasının nasıl kullanıldığını anlamak için **2. Adımda** seçilen kullanıcının tüm eski kimlik doğrulamalı oturum açma işlemlerini görüntüleyin. ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -19,7 +22,7 @@
         <Str Cat="Text">
           <Val><![CDATA[User sign-ins (non-interactive)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Kullanıcı oturum açmaları (etkileşimli olmayan)]]></Val>
+            <Val><![CDATA[Kullanıcı oturum açma işlemleri (etkileşimli olmayan)]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -28,7 +31,7 @@
         <Str Cat="Text">
           <Val><![CDATA[User sign-ins (interactive)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Kullanıcı oturum açmaları (etkileşimli)]]></Val>
+            <Val><![CDATA[Kullanıcı oturum açma işlemleri (etkileşimli)]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -36,6 +39,9 @@
       <Item ItemId=";items.noninteractive.content.items.text3.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Step 3]D;]A;View all legacy auth sign-ins for the selected user to understand how legacy auth is being used.]D;]A;]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### 3. Adım]D;]A;Eski kimlik doğrulamasının nasıl kullanıldığını anlamak için seçilen kullanıcının tüm eski kimlik doğrulamalı oturum açma işlemlerini görüntüleyin.]D;]A;]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -60,8 +66,8 @@
       <Item ItemId=";items.text0.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Sign-ins using legacy authentication]D;]A;This workbooks highlights which legacy authentication protocols are used throughout your tenant. Legacy authentication (or basic authentication) protocols do not support multi-factor authentication. Microsoft highly recommends blocking legacy authentication and will be deprecating the use of legacy protocols for Exchange Online.]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[## Eski Kimlik Doğrulaması Kullanılan Oturum Açma İşlemleri]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Eski kimlik doğrulaması bilgileriyle oturum açma işlemleri]D;]A;Bu çalışma kitaplarında kiracınız genelinde kullanılan eski kimlik doğrulaması protokolleri vurgulanır. Eski kimlik doğrulaması (veya temel kimlik doğrulaması) protokolleri çok faktörlü kimlik doğrulamasını desteklemez. Microsoft eski kimlik doğrulamasının engellenmesini kesinlikle önerir ve Exchange Online’da eski protokolleri kullanımdan kaldıracaktır.]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[## Sign-ins using Legacy Auth]]></Val>
@@ -72,18 +78,27 @@
       <Item ItemId=";items.text6.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Steps to blocking legacy authentication]D;]A;- Read about [blocking legacy authentication in your tenants]5D;(https://techcommunity.microsoft.com/t5/azure-active-directory-identity/new-tools-to-block-legacy-authentication-in-your-organization/ba-p/1225302).]D;]A;- Understand legacy authentication usage in your tenant using this report.]D;]A;- [Create a Conditional Access policy]5D;(https://docs.microsoft.com/azure/active-directory/conditional-access/block-legacy-authentication) to block legacy authentication. ]D;]A;- Disable basic authentication in [Exchange Online]5D;(https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online).]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Eski kimlik doğrulamasını engelleme adımları]D;]A;- [Kiracılarınızda eski kimlik doğrulamasını engelleme]5D;(https://techcommunity.microsoft.com/t5/azure-active-directory-identity/new-tools-to-block-legacy-authentication-in-your-organization/ba-p/1225302) konusunu okuyun.]D;]A;- Bu raporu kullanarak kiracınızda eski kimlik doğrulamasının kullanımını anlayın.]D;]A;- Eski kimlik doğrulamasını engellemek için [Koşullu Erişim ilkesi oluşturun]5D;(https://docs.microsoft.com/azure/active-directory/conditional-access/block-legacy-authentication). ]D;]A;- [Exchange Online]5D; içinde temel kimlik doğrulamasını devre dışı bırakın (https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online).]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text8.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Step 1]D;]A;Start by selecting a legacy authentication protocol from the table below by expanding the row. Then select an application to filter by users accessing that application in **Step 2**.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### 1. Adım]D;]A;Başlangıç olarak aşağıdaki tablodan satırı genişleterek eski bir kimlik doğrulaması protokolü seçin. Ardından bir uygulama seçip **2. Adımda** bu uygulamaya erişen kullanıcılara göre filtreleyin.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text8Copy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Step 2]D;]A;Select a user to see all their legacy auth sign-ins to the selected app in **Step 3** (below).]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### 2. Adım]D;]A;**3. Adımda** (aşağıda) seçilen uygulamada yaptığı tüm eski kimlik doğrulamalı oturum açma işlemlerini görmek için bir kullanıcı seçin.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
