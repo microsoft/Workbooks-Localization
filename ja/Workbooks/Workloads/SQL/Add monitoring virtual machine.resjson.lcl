@@ -140,10 +140,13 @@
       </Item>
       <Item ItemId=";items.Stepsaftervalidjson.content.items.Keyvaultaccesslabel.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[#### Enable access to Azure Key Vaults (Optional)]A;If your connection strings reference secrets from Key Vaults, you need to provide access to it from the virtual machine via a Managed Service Identity.]]></Val>
+          <Val><![CDATA[#### Enable access to Azure Key Vault]A;Use Key Vault access policy to provide the Get Secret permission for all key vaults referenced in configuration. Permission must be provided to the Managed Service Identity of the monitoring virtual machine.]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[#### Azure Key Vault へのアクセスを有効にする (省略可能)]A;接続文字列でキー コンテナーからシークレットを参照している場合は、マネージド サービス ID を介して仮想マシンからアクセスできるようにする必要があります。]]></Val>
+            <Val><![CDATA[#### Azure Key Vault へのアクセスを有効にする]A;Key Vaultアクセス ポリシーを使用して、構成で参照されているすべてのキー コンテナーにシークレットの取得アクセス許可を付与します。監視仮想マシンのマネージド サービス ID にアクセス許可を指定する必要があります。]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[#### Enable access to Azure Key Vaults (Optional)]A;If your connection strings reference secrets from Key Vaults, you need to provide access to it from the virtual machine via a Managed Service Identity.]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -161,6 +164,24 @@
           <Val><![CDATA[Add monitoring virtual machine]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[監視仮想マシンの追加]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Stepsaftervalidjson.content.items.text7.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Please provide access to Key Vault.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Key Vault へのアクセスを提供してください。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Stepsaftervalidjson.content.items.text8.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Please provide access to Key Vault.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Key Vault へのアクセスを提供してください。]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -197,6 +218,15 @@
           <Val><![CDATA[### Select virtual machine]D;]A;Select a virtual machine you would like for monitoring.]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[### 仮想マシンを選択する]D;]A;監視する仮想マシンを選択してください。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.text11.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Please reference passwords stored as Key Vault secrets.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Key Vault シークレットとして保存されているパスワードを参照してください。]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
