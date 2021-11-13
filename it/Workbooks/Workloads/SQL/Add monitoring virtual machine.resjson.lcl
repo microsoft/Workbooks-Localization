@@ -140,10 +140,13 @@
       </Item>
       <Item ItemId=";items.Stepsaftervalidjson.content.items.Keyvaultaccesslabel.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[#### Enable access to Azure Key Vaults (Optional)]A;If your connection strings reference secrets from Key Vaults, you need to provide access to it from the virtual machine via a Managed Service Identity.]]></Val>
+          <Val><![CDATA[#### Enable access to Azure Key Vault]A;Use Key Vault access policy to provide the Get Secret permission for all key vaults referenced in configuration. Permission must be provided to the Managed Service Identity of the monitoring virtual machine.]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[#### Abilitare l'accesso agli insiemi di credenziali delle chiavi di Azure (facoltativo)]A;Se le stringhe di connessione fanno riferimento a segreti degli insiemi di credenziali delle chiavi, è necessario fornirvi l'accesso dalla macchina virtuale tramite un'identità del servizio gestita.]]></Val>
+            <Val><![CDATA[#### Abilitare l'accesso a Azure Key Vault]A;Usare il criterio di accesso di Key Vault per fornire l'autorizzazione Recupera segreto per tutti gli insiemi di credenziali delle chiavi a cui viene fatto riferimento nella configurazione. È necessario fornire l'autorizzazione all'identità del servizio gestita della macchina virtuale di monitoraggio.]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[#### Enable access to Azure Key Vaults (Optional)]A;If your connection strings reference secrets from Key Vaults, you need to provide access to it from the virtual machine via a Managed Service Identity.]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -161,6 +164,24 @@
           <Val><![CDATA[Add monitoring virtual machine]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Aggiungi macchina virtuale di monitoraggio]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Stepsaftervalidjson.content.items.text7.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Please provide access to Key Vault.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Fornire l'accesso a Key Vault.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Stepsaftervalidjson.content.items.text8.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Please provide access to Key Vault.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Fornire l'accesso a Key Vault.]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -197,6 +218,15 @@
           <Val><![CDATA[### Select virtual machine]D;]A;Select a virtual machine you would like for monitoring.]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[### Selezionare la macchina virtuale]D;]A;Selezionare una macchina virtuale da monitorare.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.text11.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Please reference passwords stored as Key Vault secrets.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Fare riferimento alle password archiviate come segreti di Key Vault.]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
