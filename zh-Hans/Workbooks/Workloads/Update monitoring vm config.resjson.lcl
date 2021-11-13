@@ -101,10 +101,13 @@
       </Item>
       <Item ItemId=";items.Keyvaultaccesslabel.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[#### Enable access to Azure Key Vaults (Optional)]A;If your connection strings reference secrets from Key Vaults, you need to provide access to it from the virtual machine via a Managed Service Identity.]]></Val>
+          <Val><![CDATA[#### Enable access to Azure Key Vault]A;Use Key Vault access policy to provide the Get Secret permission for all key vaults referenced in configuration. Permission must be provided to the Managed Service Identity of the monitoring virtual machine.]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[#### 启用对 Azure 密钥保管库的访问(可选)]A;如果连接字符串引用密钥保管库中的机密，则需要通过托管服务标识从虚拟机提供对它的访问权限。]]></Val>
+            <Val><![CDATA[#### 启用对 Azure 密钥保管库的访问权限]A;使用密钥保管库访问策略为配置中引用的所有密钥保管库提供获取机密权限。必须向监视虚拟机的托管服务标识提供权限。]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[#### Enable access to Azure Key Vaults (Optional)]A;If your connection strings reference secrets from Key Vaults, you need to provide access to it from the virtual machine via a Managed Service Identity.]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -167,6 +170,33 @@
           <Val><![CDATA[#### Add SQL Server connection strings]D;]A;Add the monitoring config for this virtual machine. It involves providing a set of connection strings for the SQL databases you would like to monitor. ]D;]A;]D;]A;Note that you have the option to define parameters to reference secrets from an Azure Key Vault or for just reuse of tokens across connection strings. [Learn more<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" height="12" width="12" style="margin: 0px 0px -2px 3px">]D;]A;  <path d="M14.3,1.5H10V.5h6v6H15V2.2l-8,8-.7-.7Z" />]D;]A;  <path d="M11,8.5v5a.9.9,0,0,1-.787,1,.948.948,0,0,1-.213,0H2a.9.9,0,0,1-1-.787A.948.948,0,0,1,1,13.5v-7a.9.9,0,0,1,.787-1A.948.948,0,0,1,2,5.5H8l1-1H2a2,2,0,0,0-2,2v7a2,2,0,0,0,2,2h8a2,2,0,0,0,2-2v-6Z" />]D;]A;</svg>]5D;(https://aka.ms/azuresqlinsights/docs/vmconfig).]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[#### 添加 SQL Server 连接字符串]D;]A;为此虚拟机添加监视配置。它涉及为要监视的 SQL 数据库提供一组连接字符串。]D;]A;]D;]A;请注意，你可以视需要选择定义参数来从 Azure Key Vault 引用机密，或只是跨连接字符串重用令牌。[了解更多<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" height="12" width="12" style="margin: 0px 0px -2px 3px">]D;]A;  <path d="M14.3,1.5H10V.5h6v6H15V2.2l-8,8-.7-.7Z" />]D;]A;  <path d="M11,8.5v5a.9.9,0,0,1-.787,1,.948.948,0,0,1-.213,0H2a.9.9,0,0,1-1-.787A.948.948,0,0,1,1,13.5v-7a.9.9,0,0,1,.787-1A.948.948,0,0,1,2,5.5H8l1-1H2a2,2,0,0,0-2,2v7a2,2,0,0,0,2,2h8a2,2,0,0,0,2-2v-6Z" />]D;]A;</svg>]5D;(https://aka.ms/azuresqlinsights/docs/vmconfig)。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.text14.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Please provide access to Key Vault.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[请提供对密钥保管库的访问权限。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.text15.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Please provide access to Key Vault.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[请提供对密钥保管库的访问权限。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.text16.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Please reference passwords stored as Key Vault secrets.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[请引用存储为密钥保管库机密的密码。]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
