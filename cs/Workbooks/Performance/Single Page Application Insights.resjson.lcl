@@ -21,6 +21,9 @@
       <Item ItemId=";items.10.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<h2 style="text-decoration: underline; margin-bottom: 0;">Performance of Components Loaded in Route "{Route}"</h2>]D;]A;If the <strong>VLT</strong> has regressed, the chart below will show you all the components make up the <strong>VLT</strong> time.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<h2 style="text-decoration: underline; margin-bottom: 0;">Výkon komponent načtených na trase {Route}</h2>.]D;]A;Pokud došlo k regresi <strong>VLT</strong>, zobrazí se v níže uvedeném grafu všechny komponenty, které tvoří čas <strong>VLT</strong>.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -36,6 +39,9 @@
       <Item ItemId=";items.13.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<h2 style="text-decoration: underline; margin-bottom: 0;">Performance of Application Load Sub-Timings for Route "{Route}"</h2>]D;]A;This chart is used if your <strong>ALT</strong> has regress.  The timings here are from the Performance timings object from the browser.  These sub timings come from the Perfomance Navigation timing from the browser and are based on the <a href="https://www.w3.org/TR/2012/REC-navigation-timing-20121217/">W3C standards</a>.  See the <a href="https://github.com/Microsoft/Mezzurite">Mezzurite GitHub</a> for more info.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<h2 style="text-decoration: underline; margin-bottom: 0;">Výkon dílčích časování načítání aplikace pro trasu {Route}</h2>.]D;]A;Tento graf se používá, pokud došlo k regresi <strong>ALT</strong>. Časování pochází z objektu Časování výkonu z prohlížeče. Tato dílčí časování pocházejí z časování Navigace výkonu z prohlížeče a jsou založená na <a href="https://www.w3.org/TR/2012/REC-navigation-timing-20121217/">standardech W3C</a>. Další informace najdete na <a href="https://github.com/Microsoft/Mezzurite">GitHubu Mezzurite</a>.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -123,6 +129,9 @@
       <Item ItemId=";items.7.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<hr>]D;]A;<h2 style="text-decoration: underline; margin-bottom: 0;">Performance for Route "{Route}"</h2>]D;]A;<p>The <strong>FLT</strong> gives you the length of time of the first load of the route.  It includes the first <strong>VLT</strong> and the <strong>ALT</strong>. </p>]D;]A;<p>If the route is hit after the first load, there won't be an <strong>ALT</strong> for it.  There will only be a <strong>VLT</strong>.</p>]D;]A;]D;]A;<p>This chart gives you a high-level view of your site, and can tell you if your <strong>VLT</strong> or <strong>ALT</strong> has regressed from the <strong>FLT</strong>.</p>]D;]A;<p>When the <strong>VLT</strong> has regressed use the "Performance of the Components Loaded In Route" chart to further explore what happened on the page</p>]D;]A;]D;]A;<p>For <strong>ALT</strong> regressions, use the "Performance of Application Sub-Timings for Route" to see what sub timings are affecting your <strong>ALT</strong>.</p>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<hr>]D;]A;<h2 style="text-decoration: underline; margin-bottom: 0;">Výkon pro trasu {Route}</h2>]D;]A;<p><strong>FLT</strong> udává dobu prvního načítání trasy.  Zahrnuje první <strong>VLT</strong> a <strong>ALT</strong>. </p>]D;]A;<p>Pokud se trasa najde po prvním načtení, nebude pro ni existovat <strong>ALT</strong>. K dispozici bude pouze <strong>VLT</strong>.</p>]D;]A;]D;]A;<p>Tento graf poskytuje přehled o vašem webu a může vás upozornit, pokud dojde k regresi <strong>VLT</strong> nebo <strong>ALT</strong> z <strong>FLT</strong>.</p>]D;]A;<p>Když dojde k regresi <strong>VLT</strong>, využijte graf Výkon komponent načtených na trase k dalšímu zkoumání, co se na stránce stalo.</p>]D;]A;]D;]A;<p>Pro regrese <strong>ALT</strong> použijte Výkon dílčích časování aplikace pro trasu, abyste viděli, jaká dílčí časování ovlivňují <strong>ALT</strong>.</p>]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -131,24 +140,6 @@
           <Val><![CDATA[<hr>]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[<hr>]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";settings.description" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Visiualization of Single Page Application Telemetry created by Mezzurite Timing Library]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Vizualizace telemetrie jednostránkové aplikace vytvořené knihovnou Mezzurite Timing Library]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Single Page Application Insights]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Jednostránková aplikace – přehledy]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
