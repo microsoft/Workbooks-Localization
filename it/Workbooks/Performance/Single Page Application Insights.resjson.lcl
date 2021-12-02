@@ -21,6 +21,9 @@
       <Item ItemId=";items.10.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<h2 style="text-decoration: underline; margin-bottom: 0;">Performance of Components Loaded in Route "{Route}"</h2>]D;]A;If the <strong>VLT</strong> has regressed, the chart below will show you all the components make up the <strong>VLT</strong> time.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<h2 style="text-decoration: underline; margin-bottom: 0;">Prestazioni dei componenti caricati nella route "{Route}"</h2>]D;]A;Se il <strong>tempo di caricamento viewport</strong> è regredito, nel grafico seguente verranno visualizzati tutti i componenti che costituiscono il <strong>tempo di caricamento viewport</strong>.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -36,6 +39,9 @@
       <Item ItemId=";items.13.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<h2 style="text-decoration: underline; margin-bottom: 0;">Performance of Application Load Sub-Timings for Route "{Route}"</h2>]D;]A;This chart is used if your <strong>ALT</strong> has regress.  The timings here are from the Performance timings object from the browser.  These sub timings come from the Perfomance Navigation timing from the browser and are based on the <a href="https://www.w3.org/TR/2012/REC-navigation-timing-20121217/">W3C standards</a>.  See the <a href="https://github.com/Microsoft/Mezzurite">Mezzurite GitHub</a> for more info.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<h2 style="text-decoration: underline; margin-bottom: 0;">Prestazioni dei tempi secondari di caricamento applicazione per la route "{Route}"</h2>]D;]A;Questo grafico viene usato se il <strong>tempo di caricamento applicazione</strong> è in fase di regressione. I tempi provengono dall'oggetto Tempi prestazioni del browser. Questi tempi secondari provengono dai tempi delle prestazioni di navigazione del browser e sono basati sugli <a href="https://www.w3.org/TR/2012/REC-navigation-timing-20121217/">standard W3C</a>. Per altre informazioni, vedere <a href="https://github.com/Microsoft/Mezzurite">Mezzurite su GitHub</a>.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -123,6 +129,9 @@
       <Item ItemId=";items.7.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<hr>]D;]A;<h2 style="text-decoration: underline; margin-bottom: 0;">Performance for Route "{Route}"</h2>]D;]A;<p>The <strong>FLT</strong> gives you the length of time of the first load of the route.  It includes the first <strong>VLT</strong> and the <strong>ALT</strong>. </p>]D;]A;<p>If the route is hit after the first load, there won't be an <strong>ALT</strong> for it.  There will only be a <strong>VLT</strong>.</p>]D;]A;]D;]A;<p>This chart gives you a high-level view of your site, and can tell you if your <strong>VLT</strong> or <strong>ALT</strong> has regressed from the <strong>FLT</strong>.</p>]D;]A;<p>When the <strong>VLT</strong> has regressed use the "Performance of the Components Loaded In Route" chart to further explore what happened on the page</p>]D;]A;]D;]A;<p>For <strong>ALT</strong> regressions, use the "Performance of Application Sub-Timings for Route" to see what sub timings are affecting your <strong>ALT</strong>.</p>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<hr>]D;]A;<h2 style="text-decoration: underline; margin-bottom: 0;">Prestazioni per route "{Route}"</h2>]D;]A;<p>Il <strong>primo tempo di caricamento</strong> fornisce la durata del primo caricamento della route. Include il primo <strong>tempo di caricamento viewport</strong> e il <strong>tempo di caricamento applicazione</strong>. </p>]D;]A;<p>Se la route viene raggiunta dopo il primo caricamento, non mostrerà un valore per il <strong>tempo di caricamento applicazione</strong>, ma solo un valore per il <strong>tempo di caricamento viewport</strong>.</p>]D;]A;]D;]A;<p>Questo grafico offre una visualizzazione generale del sito e può indicare se le prestazioni del <strong>tempo di caricamento viewport</strong> o del <strong>tempo di caricamento applicazione</strong> registrano una regressione rispetto al <strong>primo tempo di caricamento</strong>.</p>]D;]A;<p>Quando il <strong>tempo di caricamento viewport</strong> mostra una regressione, usare il grafico "Prestazioni dei componenti caricati nella route" per esplorare ulteriormente quanto si è verificato nella pagina</p>]D;]A;]D;]A;<p>Per le regressioni del <strong>tempo di caricamento applicazione</strong> usare il grafico "Prestazioni dei tempi secondari di caricamento applicazione per la route" per visualizzare i tempi secondari che influiscono sul <strong>tempo di caricamento applicazione</strong>.</p>]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -131,24 +140,6 @@
           <Val><![CDATA[<hr>]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[<hr>]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";settings.description" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Visiualization of Single Page Application Telemetry created by Mezzurite Timing Library]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Visualizzazione dei dati di telemetria delle applicazioni a pagina singola creata dalla libreria dei tempi Mezzurite]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Single Page Application Insights]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Informazioni dettagliate applicazione a pagina singola]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />

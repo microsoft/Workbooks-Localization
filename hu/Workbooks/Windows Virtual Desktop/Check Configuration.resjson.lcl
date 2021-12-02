@@ -248,6 +248,9 @@
         <Item ItemId=";(...) .links.6bcd709a730445118baba14094ebb4c0.templateRunContext.description" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[We will configure the following hosts to send data to the selected workspace:  ]D;]A;{VmNames}]D;]A;]D;]A;]D;]A;Normal storage charges for Log Analytics will apply. [Learn more about Log Analytics pricing]5D;(https://docs.microsoft.com/en-us/azure/azure-monitor/platform/manage-cost-storage).]D;]A;]D;]A;]D;]A;The configuration workbook only supports installing the Log Analytics agent on *running* hosts in the same region as the Resource Group. Installation will fail if these scenarios are not met. Check your host status and region in the [Azure Portal Virtual Machines blade.]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[A következő gazdagépeket konfiguráljuk úgy, hogy adatokat küldjenek a kiválasztott munkaterületre:  ]D;]A;{VmNames}]D;]A;]D;]A;]D;]A;A Log Analytics normál tárolási díjai lesznek felszámítva. [További információ a Log Analytics díjszabásáról]5D;(https://docs.microsoft.com/en-us/azure/azure-monitor/platform/manage-cost-storage).]D;]A;]D;]A;]D;]A;A konfigurációs munkafüzet csak olyan *futó* gazdagépeken támogatja a Log Analytics-ügynök telepítését, amelyek az erőforráscsoportéval megegyező régióban vannak. A telepítés sikertelen lesz, ha ezek a forgatókönyvek nem teljesülnek. Ellenőrizze a gazdagép állapotát és régióját az [Azure Portal Virtuális gépek panelén.]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -513,30 +516,45 @@
       <Item ItemId=";items.CheckHostPool.content.items.CheckDiagSettingsMessage.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Check diagnostic settings for host pool: {HostPool:label}]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Ellenőrizze a gazdagépkészlet diagnosztikai beállításait: {HostPool:label}]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.CheckHostPool.content.items.WVDHostpool.content.items.HostPoolDiag.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Host pool diagnostic settings: {HostPool}]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Gazdagépkészlet diagnosztikai beállításai: {HostPool}]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.CheckHostPool.content.items.WVDHostpool.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Host pool {HostPool:name}]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[{HostPool:name} gazdagépkészlet]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.CheckHostPool.content.items.WVDWorkspace.content.items.WVDWorkspaceConfig.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[AVD workspace diagnostic settings: {wvdworkspace}]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[AVD-munkaterület diagnosztikai beállításai: {wvdworkspace}]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.CheckHostPool.content.items.WVDWorkspace.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Workspace {wvdworkspace:name}]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[{wvdworkspace:name} munkaterület]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -699,6 +717,9 @@
       <Item ItemId=";items.DataGenGroup.content.items.MBoverTime.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Billed data over {TimeRange:label}]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Számlázott adatok a következő időszakban: {TimeRange:label}]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

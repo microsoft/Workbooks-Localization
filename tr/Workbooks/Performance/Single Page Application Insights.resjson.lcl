@@ -21,6 +21,9 @@
       <Item ItemId=";items.10.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<h2 style="text-decoration: underline; margin-bottom: 0;">Performance of Components Loaded in Route "{Route}"</h2>]D;]A;If the <strong>VLT</strong> has regressed, the chart below will show you all the components make up the <strong>VLT</strong> time.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<h2 style="text-decoration: underline; margin-bottom: 0;">"{Route}" Rotasına Yüklenen Bileşenlerin Performansı</h2>]D;]A;<strong>VLT</strong> gerilemişse aşağıdaki grafik <strong>VLT</strong> zamanını oluşturan tüm bileşenleri gösterir.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -36,6 +39,9 @@
       <Item ItemId=";items.13.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<h2 style="text-decoration: underline; margin-bottom: 0;">Performance of Application Load Sub-Timings for Route "{Route}"</h2>]D;]A;This chart is used if your <strong>ALT</strong> has regress.  The timings here are from the Performance timings object from the browser.  These sub timings come from the Perfomance Navigation timing from the browser and are based on the <a href="https://www.w3.org/TR/2012/REC-navigation-timing-20121217/">W3C standards</a>.  See the <a href="https://github.com/Microsoft/Mezzurite">Mezzurite GitHub</a> for more info.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<h2 style="text-decoration: underline; margin-bottom: 0;">"{Route}" Rotası için Uygulama Yükü Alt Zamanlamalarının Performansı</h2>]D;]A;<strong>ALT</strong>’niz gerilemişse bu grafik kullanılır. Buradaki zamanlamalar, tarayıcıdaki Performans zamanlamaları nesnesinden alınır. Bu alt zamanlamalar, tarayıcıdaki Performans Gezintisi zamanlamasından gelir ve <a href="https://www.w3.org/TR/2012/REC-navigation-timing-20121217/">W3C standartlarını</a> temel alır. Daha fazla bilgi için <a href="https://github.com/Microsoft/Mezzurite">Mezzurite GitHub</a>’a bakın.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -123,6 +129,9 @@
       <Item ItemId=";items.7.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<hr>]D;]A;<h2 style="text-decoration: underline; margin-bottom: 0;">Performance for Route "{Route}"</h2>]D;]A;<p>The <strong>FLT</strong> gives you the length of time of the first load of the route.  It includes the first <strong>VLT</strong> and the <strong>ALT</strong>. </p>]D;]A;<p>If the route is hit after the first load, there won't be an <strong>ALT</strong> for it.  There will only be a <strong>VLT</strong>.</p>]D;]A;]D;]A;<p>This chart gives you a high-level view of your site, and can tell you if your <strong>VLT</strong> or <strong>ALT</strong> has regressed from the <strong>FLT</strong>.</p>]D;]A;<p>When the <strong>VLT</strong> has regressed use the "Performance of the Components Loaded In Route" chart to further explore what happened on the page</p>]D;]A;]D;]A;<p>For <strong>ALT</strong> regressions, use the "Performance of Application Sub-Timings for Route" to see what sub timings are affecting your <strong>ALT</strong>.</p>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<hr>]D;]A;<h2 style="text-decoration: underline; margin-bottom: 0;">"{Route}" Rotasının Performansı</h2>]D;]A;<p><strong>FLT</strong>, rotaya ait ilk yükün zaman uzunluğunu gösterir. İlk <strong>VLT</strong>’yi ve <strong>ALT</strong>’yi gösterir. </p>]D;]A;<p>İlk yükten sonra rotaya ulaşılırsa rota için <strong>ALT</strong> olmaz, yalnızca <strong>VLT</strong> olur.</p>]D;]A;]D;]A;<p>Bu grafik, sitenizin yüksek düzeyde bir görünümünü sunar ve <strong>VLT</strong>’nizin veya <strong>ALT</strong>’nizin <strong>FLT</strong>’den gerileyip gerilemediğini gösterir.</p>]D;]A;<p><strong>VLT</strong> gerilemişse sayfada ne olduğunu daha iyi anlamak için "Rotaya Yüklenen Bileşenlerin Performansı" grafiğini kullanın</p>]D;]A;]D;]A;<p><strong>ALT</strong> gerilemeleri için alt zamanlamaların <strong>ALT</strong>’nizi nasıl etkilediğini görmek için "Rota için Uygulama Alt Zamanlamalarının Performansı" grafiğini kullanın.</p>]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -131,24 +140,6 @@
           <Val><![CDATA[<hr>]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[<hr>]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";settings.description" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Visiualization of Single Page Application Telemetry created by Mezzurite Timing Library]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Mezzurite Timing Library tarafından oluşturulan Tek Sayfalı Uygulama Telemetrisinin görselleştirmesi]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Single Page Application Insights]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Tek Sayfalı Uygulama İçgörüleri]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />

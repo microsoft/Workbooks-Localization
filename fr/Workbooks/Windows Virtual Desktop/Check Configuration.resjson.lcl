@@ -260,6 +260,9 @@
         <Item ItemId=";(...) .links.6bcd709a730445118baba14094ebb4c0.templateRunContext.description" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[We will configure the following hosts to send data to the selected workspace:  ]D;]A;{VmNames}]D;]A;]D;]A;]D;]A;Normal storage charges for Log Analytics will apply. [Learn more about Log Analytics pricing]5D;(https://docs.microsoft.com/en-us/azure/azure-monitor/platform/manage-cost-storage).]D;]A;]D;]A;]D;]A;The configuration workbook only supports installing the Log Analytics agent on *running* hosts in the same region as the Resource Group. Installation will fail if these scenarios are not met. Check your host status and region in the [Azure Portal Virtual Machines blade.]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Nous allons configurer les hôtes suivants pour envoyer des données à l’espace de travail sélectionné : ]D;]A;{VmNames}]D;]A;]D;]A;]D;]A;des frais de stockage normaux pour Log Analytics s’appliqueront. [En savoir plus sur la tarification Log Analytics]5D; (https://docs.microsoft.com/en-us/azure/azure-monitor/platform/manage-cost-storage).]D;]A;]D;]A;]D;]A;Le classeur de configuration prend uniquement en charge l’installation de l’agent Log Analytics sur les hôtes *en cours d’exécution* dans la même région que le groupe de ressources. L’installation échoue si ces scénarios ne sont pas satisfaits. Vérifiez l’état et la région de votre hôte dans le [panneau Machines virtuelles du portail Azure.]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -525,30 +528,45 @@
       <Item ItemId=";items.CheckHostPool.content.items.CheckDiagSettingsMessage.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### Check diagnostic settings for host pool: {HostPool:label}]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### Vérifier les paramètres de diagnostic pour le pool d’hôtes : {HostPool:label}]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.CheckHostPool.content.items.WVDHostpool.content.items.HostPoolDiag.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Host pool diagnostic settings: {HostPool}]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Paramètres de diagnostic du pool d’hôtes : {HostPool}]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.CheckHostPool.content.items.WVDHostpool.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Host pool {HostPool:name}]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Pool d’hôtes {HostPool:name}]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.CheckHostPool.content.items.WVDWorkspace.content.items.WVDWorkspaceConfig.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[AVD workspace diagnostic settings: {wvdworkspace}]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Paramètres de diagnostic de l’espace de travail AVD : {wvdworkspace}]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.CheckHostPool.content.items.WVDWorkspace.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Workspace {wvdworkspace:name}]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Espace de travail {wvdworkspace:name}]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -711,6 +729,9 @@
       <Item ItemId=";items.DataGenGroup.content.items.MBoverTime.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Billed data over {TimeRange:label}]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Données facturées sur {TimeRange:label}]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

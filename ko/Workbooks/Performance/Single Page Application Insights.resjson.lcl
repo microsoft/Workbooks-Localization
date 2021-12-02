@@ -21,6 +21,9 @@
       <Item ItemId=";items.10.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<h2 style="text-decoration: underline; margin-bottom: 0;">Performance of Components Loaded in Route "{Route}"</h2>]D;]A;If the <strong>VLT</strong> has regressed, the chart below will show you all the components make up the <strong>VLT</strong> time.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<h2 style="text-decoration: underline; margin-bottom: 0;">경로 "{Route}"에 로드된 구성 요소의 성능</h2>]D;]A;<strong>VLT</strong>가 회귀한 경우 아래 차트에 <strong>VLT</strong> 시간을 구성하는 모든 구성 요소가 표시됩니다.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -36,6 +39,9 @@
       <Item ItemId=";items.13.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<h2 style="text-decoration: underline; margin-bottom: 0;">Performance of Application Load Sub-Timings for Route "{Route}"</h2>]D;]A;This chart is used if your <strong>ALT</strong> has regress.  The timings here are from the Performance timings object from the browser.  These sub timings come from the Perfomance Navigation timing from the browser and are based on the <a href="https://www.w3.org/TR/2012/REC-navigation-timing-20121217/">W3C standards</a>.  See the <a href="https://github.com/Microsoft/Mezzurite">Mezzurite GitHub</a> for more info.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<h2 style="text-decoration: underline; margin-bottom: 0;">경로 "{Route}"에 대한 애플리케이션 로드 하위 타이밍의 성능</h2>]D;]A;이 차트는 <strong>ALT</strong>에 회귀가 있는 경우에 사용됩니다. 여기의 타이밍은 브라우저의 성능 타이밍 개체에서 가져온 것입니다. 이러한 하위 타이밍은 브라우저의 성능 탐색 타이밍에서 가져오며 <a href="https://www.w3.org/TR/2012/REC-navigation-timing-20121217/">W3C 표준</a>을 기반으로 합니다. 자세한 내용은 <a href="https://github.com/Microsoft/Mezzurite">Mezzurite GitHub</a>를 참조하세요.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -123,6 +129,9 @@
       <Item ItemId=";items.7.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<hr>]D;]A;<h2 style="text-decoration: underline; margin-bottom: 0;">Performance for Route "{Route}"</h2>]D;]A;<p>The <strong>FLT</strong> gives you the length of time of the first load of the route.  It includes the first <strong>VLT</strong> and the <strong>ALT</strong>. </p>]D;]A;<p>If the route is hit after the first load, there won't be an <strong>ALT</strong> for it.  There will only be a <strong>VLT</strong>.</p>]D;]A;]D;]A;<p>This chart gives you a high-level view of your site, and can tell you if your <strong>VLT</strong> or <strong>ALT</strong> has regressed from the <strong>FLT</strong>.</p>]D;]A;<p>When the <strong>VLT</strong> has regressed use the "Performance of the Components Loaded In Route" chart to further explore what happened on the page</p>]D;]A;]D;]A;<p>For <strong>ALT</strong> regressions, use the "Performance of Application Sub-Timings for Route" to see what sub timings are affecting your <strong>ALT</strong>.</p>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<hr>]D;]A;<h2 style="text-decoration: underline; margin-bottom: 0;">경로 "{Route}"에 대한 성능</h2>]D;]A;<p> <strong>FLT</strong>는 경로의 첫 번째 로드 시간을 제공합니다. 여기에는 첫 번째 <strong>VLT</strong>과 <strong>ALT</strong>가 포함됩니다. </p>]D;]A;<p>첫 번째 로드 후에 경로가 적중되면 해당 경로에 대한 <strong>ALT</strong>가 없습니다. <strong>VLT</strong>만 있을 것입니다.</p>]D;]A;]D;]A;<p>이 차트는 사이트에 대한 개략적인 보기를 제공하며 <strong>VLT</strong> 또는 <strong>ALT</strong>가 <strong>FLT</strong>에서 회귀했는지 여부를 알려줍니다.</p>]D;]A;<p><strong>VLT</strong>가 회귀한 경우 "경로에 로드된 구성 요소의 성능" 차트를 사용하여 페이지에서 발생한 일을 더 자세히 살펴보세요.</p>]D;]A;]D;]A;<p><strong>ALT</strong> 회귀의 경우 "경로에 대한 애플리케이션 하위 타이밍의 성능"을 사용하여 <strong>ALT</strong>에 영향을 미치는 하위 타이밍을 확인하세요.</p>]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -131,24 +140,6 @@
           <Val><![CDATA[<hr>]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[<hr>]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";settings.description" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Visiualization of Single Page Application Telemetry created by Mezzurite Timing Library]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Mezzurite Timing Library에서 만든 단일 페이지 애플리케이션 원격 분석 시각화]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Single Page Application Insights]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[단일 페이지 Application Insights]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />

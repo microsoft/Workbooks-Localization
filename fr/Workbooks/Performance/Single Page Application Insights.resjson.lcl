@@ -21,6 +21,9 @@
       <Item ItemId=";items.10.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<h2 style="text-decoration: underline; margin-bottom: 0;">Performance of Components Loaded in Route "{Route}"</h2>]D;]A;If the <strong>VLT</strong> has regressed, the chart below will show you all the components make up the <strong>VLT</strong> time.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<h2 style="text-decoration: underline; margin-bottom: 0;">Performances des composants chargés dans l’itinéraire « {Route} »</h2>]D;]A;Si le <strong>VLT</strong> a régressé, le graphique ci-dessous affiche tous les composants qui constituent le temps <strong></strong> VLT.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -36,6 +39,9 @@
       <Item ItemId=";items.13.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<h2 style="text-decoration: underline; margin-bottom: 0;">Performance of Application Load Sub-Timings for Route "{Route}"</h2>]D;]A;This chart is used if your <strong>ALT</strong> has regress.  The timings here are from the Performance timings object from the browser.  These sub timings come from the Perfomance Navigation timing from the browser and are based on the <a href="https://www.w3.org/TR/2012/REC-navigation-timing-20121217/">W3C standards</a>.  See the <a href="https://github.com/Microsoft/Mezzurite">Mezzurite GitHub</a> for more info.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<h2 style="text-decoration: underline; margin-bottom: 0;">Performance des sous-minutages de chargement d’application pour l’itinéraire « {Route}"</h2>]D;]A;Ce graphique est utilisé si votre <strong>ALT</strong> est régressé.  Les minutages ici proviennent de l’objet Minutage des performances du navigateur.  Ces sous-minutages proviennent du minutage de navigation perfomance du navigateur et sont basés sur les normes <a href="https://www.w3.org/TR/2012/REC-navigation-timing-20121217/">standards W3C</a>.  Pour plus d’informations, consultez le <a href="https://github.com/Microsoft/Mezzurite">Mezzurite GitHub</a>.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -123,6 +129,9 @@
       <Item ItemId=";items.7.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<hr>]D;]A;<h2 style="text-decoration: underline; margin-bottom: 0;">Performance for Route "{Route}"</h2>]D;]A;<p>The <strong>FLT</strong> gives you the length of time of the first load of the route.  It includes the first <strong>VLT</strong> and the <strong>ALT</strong>. </p>]D;]A;<p>If the route is hit after the first load, there won't be an <strong>ALT</strong> for it.  There will only be a <strong>VLT</strong>.</p>]D;]A;]D;]A;<p>This chart gives you a high-level view of your site, and can tell you if your <strong>VLT</strong> or <strong>ALT</strong> has regressed from the <strong>FLT</strong>.</p>]D;]A;<p>When the <strong>VLT</strong> has regressed use the "Performance of the Components Loaded In Route" chart to further explore what happened on the page</p>]D;]A;]D;]A;<p>For <strong>ALT</strong> regressions, use the "Performance of Application Sub-Timings for Route" to see what sub timings are affecting your <strong>ALT</strong>.</p>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<hr>]D;]A;<h2 style="text-decoration: underline; margin-bottom: 0;">Performance pour l’itinéraire « {Route} »</h2>]D;]A;<p>La <strong>FLT</strong> vous donne la durée de la première charge de l’itinéraire.  Il inclut le premier <strong>VLT</strong> et le <strong>ALT</strong>. </p>]D;]A;<p>Si l’itinéraire est atteint après le premier chargement, il n’y aura pas de <strong>ALT</strong> pour celui-ci.  Il n’y aura qu’un <strong>VLT</strong>.</p>]D;]A;]D;]A;<p>Ce graphique vous donne une vue générale de votre site, et peut vous indiquer si votre <strong>VLT</strong> ou <strong>ALT</strong> a régressé du <strong>FLT</strong>.</p>]D;]A;<p>Si le graphique <strong>VLT</strong> a régressé, utilisez le graphique « Performances des composants chargés en route » pour explorer plus en détail ce qui s’est passé sur la page</p>]D;]A;]D;]A;<p>Pour  les régressions <strong>ALT</strong>, utilisez les « Performances des sous-minutages d’application pour route » pour voir quels sous-minutages affectent votre <strong>ALT</strong>.</p>]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -131,24 +140,6 @@
           <Val><![CDATA[<hr>]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[<hr>]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";settings.description" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Visiualization of Single Page Application Telemetry created by Mezzurite Timing Library]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Visualisation de la télémétrie d'application monopage créée par la bibliothèque Minutage de Mezzurite]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Single Page Application Insights]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Insights des applications monopages]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
