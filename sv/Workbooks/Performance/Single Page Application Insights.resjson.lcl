@@ -21,6 +21,9 @@
       <Item ItemId=";items.10.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<h2 style="text-decoration: underline; margin-bottom: 0;">Performance of Components Loaded in Route "{Route}"</h2>]D;]A;If the <strong>VLT</strong> has regressed, the chart below will show you all the components make up the <strong>VLT</strong> time.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<h2 style="text-decoration: underline; margin-bottom: 0;">Prestanda för komponenter som lästs in på vägen {Route}</h2>]D;]A;Om <strong>VLT</strong>-tiden har regredierats visar diagrammet nedan alla komponenter som utgör <strong>VLT</strong>-tiden.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -36,6 +39,9 @@
       <Item ItemId=";items.13.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<h2 style="text-decoration: underline; margin-bottom: 0;">Performance of Application Load Sub-Timings for Route "{Route}"</h2>]D;]A;This chart is used if your <strong>ALT</strong> has regress.  The timings here are from the Performance timings object from the browser.  These sub timings come from the Perfomance Navigation timing from the browser and are based on the <a href="https://www.w3.org/TR/2012/REC-navigation-timing-20121217/">W3C standards</a>.  See the <a href="https://github.com/Microsoft/Mezzurite">Mezzurite GitHub</a> for more info.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<h2 style="text-decoration: underline; margin-bottom: 0;">Prestanda för programmets minustid för vägen {Route}</h2>]D;]A;Det här diagrammet används om <strong>ALT</strong>-tiden har regredierat. Tiderna här kommer från prestandatidsobjektet från webbläsaren. De här minustiderna kommer från tiderna för prestandanavigering från webbläsaren och baseras på <a href="https://www.w3.org/TR/2012/REC-navigation-timing-20121217/">W3C-standarder</a>. Mer information finns i <a href="https://github.com/Microsoft/Mezzurite">Mezzurite GitHub</a>.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -123,6 +129,9 @@
       <Item ItemId=";items.7.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<hr>]D;]A;<h2 style="text-decoration: underline; margin-bottom: 0;">Performance for Route "{Route}"</h2>]D;]A;<p>The <strong>FLT</strong> gives you the length of time of the first load of the route.  It includes the first <strong>VLT</strong> and the <strong>ALT</strong>. </p>]D;]A;<p>If the route is hit after the first load, there won't be an <strong>ALT</strong> for it.  There will only be a <strong>VLT</strong>.</p>]D;]A;]D;]A;<p>This chart gives you a high-level view of your site, and can tell you if your <strong>VLT</strong> or <strong>ALT</strong> has regressed from the <strong>FLT</strong>.</p>]D;]A;<p>When the <strong>VLT</strong> has regressed use the "Performance of the Components Loaded In Route" chart to further explore what happened on the page</p>]D;]A;]D;]A;<p>For <strong>ALT</strong> regressions, use the "Performance of Application Sub-Timings for Route" to see what sub timings are affecting your <strong>ALT</strong>.</p>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<hr>]D;]A;<h2 style="text-decoration: underline; margin-bottom: 0;">Prestanda för vägen {Route}</h2>]D;]A;<p><strong>FLT-</strong>-tiden ger dig tidslängden för den första inläsningen av vägen. Den innehåller den första <strong>VLT</strong>-tiden och <strong>ALT</strong>-tiden. </p>]D;]A;<p>Om vägen nås efter den första inläsningen visas ingen <strong>ALT</strong>-tid för den. Det visas endast en <strong>VLT</strong>-tid.</p>]D;]A;]D;]A;<p>Det här diagrammet ger dig en vy på hög nivå av din webbplats, och visar om din <strong>VLT</strong>- eller <strong>ALT</strong>-tid har regredierats från <strong>FLT</strong>-tiden.</p>]D;]A;<p>När <strong>VLT</strong>-tiden har regredierats använder du diagrammet Prestanda för komponenter som lästs in på vägen, för att ytterligare utforska vad som hände på sidan</p>]D;]A;]D;]A;<p>Om <strong>ALT</strong>tiden har regredierats använder du Prestanda för programmets minustid för vägen för att se vilka minustider som påverkar din <strong>ALT</strong>-tid.</p>]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -131,15 +140,6 @@
           <Val><![CDATA[<hr>]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[<hr>]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Single Page Application Insights]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Enkel sida för Application Insights]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />

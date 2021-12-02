@@ -21,6 +21,9 @@
       <Item ItemId=";items.10.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<h2 style="text-decoration: underline; margin-bottom: 0;">Performance of Components Loaded in Route "{Route}"</h2>]D;]A;If the <strong>VLT</strong> has regressed, the chart below will show you all the components make up the <strong>VLT</strong> time.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<h2 style="text-decoration: underline; margin-bottom: 0;">A(z) „{Route}” útvonalon betöltött összetevők teljesítménye</h2>]D;]A;Ha a <strong>VLT</strong> visszaesett, az alábbi diagram megjeleníti a <strong>VLT</strong> időt alkotó összes összetevőt.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -36,6 +39,9 @@
       <Item ItemId=";items.13.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<h2 style="text-decoration: underline; margin-bottom: 0;">Performance of Application Load Sub-Timings for Route "{Route}"</h2>]D;]A;This chart is used if your <strong>ALT</strong> has regress.  The timings here are from the Performance timings object from the browser.  These sub timings come from the Perfomance Navigation timing from the browser and are based on the <a href="https://www.w3.org/TR/2012/REC-navigation-timing-20121217/">W3C standards</a>.  See the <a href="https://github.com/Microsoft/Mezzurite">Mezzurite GitHub</a> for more info.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<h2 style="text-decoration: underline; margin-bottom: 0;">A(z) „{Route}” útvonal alkalmazásbetöltési alidőzítéseinek teljesítménye</h2>]D;]A;Ez a diagram akkor használatos, ha a <strong>ALT</strong> visszaesett. Az itt szereplő időzítések a böngésző Teljesítményidőzítések objektumából származnak. Ezek az alidőzítések a böngésző Teljesítménynavigációs időzítéséből származnak, és a <a href="https://www.w3.org/TR/2012/REC-navigation-timing-20121217/">W3C szabványokon</a> alapulnak. További információért tekintse meg a <a href="https://github.com/Microsoft/Mezzurite">Mezzurite GitHubot</a>.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -123,6 +129,9 @@
       <Item ItemId=";items.7.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<hr>]D;]A;<h2 style="text-decoration: underline; margin-bottom: 0;">Performance for Route "{Route}"</h2>]D;]A;<p>The <strong>FLT</strong> gives you the length of time of the first load of the route.  It includes the first <strong>VLT</strong> and the <strong>ALT</strong>. </p>]D;]A;<p>If the route is hit after the first load, there won't be an <strong>ALT</strong> for it.  There will only be a <strong>VLT</strong>.</p>]D;]A;]D;]A;<p>This chart gives you a high-level view of your site, and can tell you if your <strong>VLT</strong> or <strong>ALT</strong> has regressed from the <strong>FLT</strong>.</p>]D;]A;<p>When the <strong>VLT</strong> has regressed use the "Performance of the Components Loaded In Route" chart to further explore what happened on the page</p>]D;]A;]D;]A;<p>For <strong>ALT</strong> regressions, use the "Performance of Application Sub-Timings for Route" to see what sub timings are affecting your <strong>ALT</strong>.</p>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<hr>]D;]A;<h2 style="text-decoration: underline; margin-bottom: 0;">A(z) „{Route}” útvonal teljesítménye</h2>]D;]A;<p>Az <strong>FLT</strong> az útvonal első betöltésének idejét adja meg. Tartalmazza az első <strong>VLT</strong> és az <strong>ALT</strong> elemet. </p>]D;]A;<p>Ha az első betöltés után eléri az útvonalat, nem lesz hozzá <strong>ALT</strong>. Csak <strong>VLT</strong> lesz hozzá.</p>]D;]A;]D;]A;<p>Ez a diagram a webhely magas szintű nézetét nyújtja, és képes megmutatni, hogy a <strong>VLT</strong> vagy az <strong>ALT</strong> visszaesett-e az <strong>FLT</strong>-hez képest.</p>]D;]A;<p>Amikor a <strong>VLT</strong> visszaesett, „Az útvonalon betöltött összetevők teljesítménye” diagramon vizsgálhatja meg jobban, mi történt a lapon</p>]D;]A;]D;]A;<p>Az <strong>ALT</strong> visszaesései esetén használja „Az útvonal alkalmazásbetöltési alidőzítéseinek teljesítménye” diagramot annak megtekintéséhez, hogy mely alidőzítések vannak hatással az <strong>ALT</strong> elemre.</p>]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -131,24 +140,6 @@
           <Val><![CDATA[<hr>]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[<hr>]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";settings.description" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Visiualization of Single Page Application Telemetry created by Mezzurite Timing Library]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Egyoldalas alkalmazás telemetriai adatainak Mezzurite Timing Library használatával létrehozott vizualizációja]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Single Page Application Insights]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Egyoldalas alkalmazások elemzései]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />

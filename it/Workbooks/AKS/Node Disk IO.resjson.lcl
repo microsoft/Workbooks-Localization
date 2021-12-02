@@ -204,12 +204,18 @@
       <Item ItemId=";items.text5.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<h3>Read {unit:label}/sec</h3>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<h3>{unit:label} letti/sec</h3>]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text5Copy.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<h3>Write {unit:label}/sec</h3>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<h3>{unit:label} scritti/sec</h3>]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -217,7 +223,7 @@
         <Str Cat="Text">
           <Val><![CDATA[<h3>Total {unit:label} Read ({timeRange:grain} intervals)</h3>]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[<h3>Totale {unit:label} letti (per intervalli {timerange:grain})</h3>]]></Val>
+            <Val><![CDATA[<h3>Totale {unit:label} letti (per intervalli {timeRange:grain})</h3>]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -225,6 +231,9 @@
       <Item ItemId=";items.text5CopyCopyCopy.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<h3>Milliseconds Per {unit:label} Read</h3>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<h3>Millisecondi per {unit:label} letti</h3>]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -249,6 +258,9 @@
       <Item ItemId=";items.text5CopyCopyCopyCopya.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<h3>Milliseconds Per {unit:label} Written</h3>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<h3>Millisecondi per {unit:label} scritti</h3>]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -256,25 +268,7 @@
         <Str Cat="Text">
           <Val><![CDATA[<h3>Total {unit:label} Written ({timeRange:grain} intervals)</h3>]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[<h3>Totale {unit:label} scritti (per intervalli {timerange:grain})</h3>]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";settings.description" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Shows data input/output across your nodes]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Mostra input/output dei dati nei nodi]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Node Disk IO]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Operazioni di I/O su disco nodo]]></Val>
+            <Val><![CDATA[<h3>Totale {unit:label} scritti (per intervalli {timeRange:grain})</h3>]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />

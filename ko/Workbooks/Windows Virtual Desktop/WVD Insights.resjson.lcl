@@ -222,12 +222,18 @@
       <Item ItemId=";items.MissingVMGroup.content.items.MissingVmWarning.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[There are session hosts not sending data to the expected Log Analytics workspace. Number of session hosts needing attention: {MissingSHNumber}]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[예상 Log Analytics 작업 영역으로 데이터를 보내지 않는 세션 호스트가 있습니다. 주의가 필요한 세션 호스트 수: {MissingSHNumber}]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.MissingVMGroup.content.items.WvdWorkSpaceWarning.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[The Azure Virtual Desktop workspace **{wvdworkspace:name}** does not have diagnostic settings configured correctly.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Azure Virtual Desktop 작업 영역 **{wvdworkspace:name}**에 진단 설정이 올바르게 구성되어 있지 않습니다.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
