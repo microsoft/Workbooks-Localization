@@ -201,12 +201,18 @@
       <Item ItemId=";items.text5.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<h3>Sent {unit:label}/sec</h3>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<h3>已傳送 {unit:label}/秒</h3>]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text5Copy.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<h3>Received {unit:label}/sec</h3>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<h3>已接受 {unit:label}/秒</h3>]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -240,12 +246,18 @@
       <Item ItemId=";items.text5CopyCopyCopyCopyCopy.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<h3>Total Errors In (by {timeRange:grain} intervals)</h3>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<h3>傳入的錯誤總數 (依 {timeRange:grain} 間隔)</h3>]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text5CopyCopyCopyCopya.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<h3>Total Errors Out (by {timeRange:grain} intervals)</h3>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<h3>傳出的錯誤總數 (依 {timeRange:grain} 間隔)</h3>]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -254,24 +266,6 @@
           <Val><![CDATA[<h3>Total {unit:label} Received (by {timeRange:grain} intervals)</h3>]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[<h3>接收的 {unit:label} 總計，(依 {timeRange:grain} 間隔)</h3>]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";settings.description" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Shows data and errors sent and received across nodes/interfaces]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[顯示各節點/介面間傳送與接收的資料和錯誤]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Node Network]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[節點網路]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
