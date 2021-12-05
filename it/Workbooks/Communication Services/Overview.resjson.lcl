@@ -714,30 +714,45 @@
       <Item ItemId=";items.SMSgroup.content.items.smsoutgoingmsggroup.content.items.smsoutgoingmsg.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No SMS messages found in the specified time range]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Non sono stati trovati messaggi SMS nell'intervallo di tempo specificato]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.SMSgroup.content.items.smsoutgoingmsggroup.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[SMS Outgoing Message Lengths]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Lunghezza messaggi SMS in uscita]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.SMSgroup.content.items.smsphonedrilldowngroup.content.items.smsphonedetails.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No SMS operations found for the specified time range and phone number]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Non sono state trovate operazioni SMS per l'intervallo di tempo e il numero di telefono specificati]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.SMSgroup.content.items.smsphonedrilldowngroup.content.items.smsphonedetails.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[SMS operations for phone number {sms_phone}]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Operazioni SMS per il numero di telefono {sms_phone}]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.SMSgroup.content.items.smsphonedrilldowngroup.content.items.smsphonedrilldowninfo.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[**Select a phone number from the drop-down menu to display its associated data**]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[**Selezionare un numero di telefono dal menu a discesa per visualizzare i dati associati**]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -789,6 +804,9 @@
       <Item ItemId=";items.SMSgroup.content.items.smssignaturesgroup.content.items.smsbysignature.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No SMS operations found for the specified time range and result signature]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Non sono state trovate operazioni SMS per l'intervallo di tempo e il tipo di risultato specificati]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -804,12 +822,18 @@
       <Item ItemId=";items.SMSgroup.content.items.smssignaturesgroup.content.items.smsresultssignature.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No SMS operations found in the specified time range]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Non sono state trovate operazioni SMS nell'intervallo di tempo specificato]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.SMSgroup.content.items.smssignaturesgroup.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[SMS API Result Signatures]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Firme dei risultati dell'API di chat]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -837,6 +861,9 @@
       <Item ItemId=";items.callquality.content.items.calldrilldown.content.items.calldetails.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Details for call {call_id}]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Dettagli per la chiamata {call_id}]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -852,18 +879,27 @@
       <Item ItemId=";items.callquality.content.items.calldrilldown.content.items.callids.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No calls found for the specified time range]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Non è stata trovata alcuna chiamata per l'intervallo di tempo specificato]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.callquality.content.items.calldrilldown.content.items.text5.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[The Details tab within "Voice and video" displays an expandable view of individual calls, broken down to the participant and stream level, with duration and quality metrics.]D;]A;]D;]A;To easily detect problematic calls and participants, the following icons denote specific situations:]D;]A;- ]D83D;]DED1; indicates a failed participant end reason]D;]A;- ]D83D;]DEA9; indicates a call with at least one stream with unhealthy telemetry values]D;]A;- ]D83D;]DD04; marks Teams interop calls or participants]D;]A;- ]D83D;]DCDE; marks a call that consists entirely of Azure Communication Services (ACS)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[La scheda Dettagli all'interno di "Voce e video" mostra una visualizzazione espandibile delle singole chiamate, suddivise a livello di partecipante e di flusso, con metriche di durata e qualità.]D;]A;]D;]A;Per rilevare facilmente chiamate e partecipanti con problematiche, le icone seguenti indicano situazioni specifiche:]D;]A;- ]D83D;]DED1; indica il motivo di uscita non riuscita di un partecipante ]D;]A;- ]D83D;]DEA9; indica una chiamata con almeno un flusso con valori di telemetria non integri]D;]A;- ]D83D;]DD04; contrassegna i partecipanti o le chiamate di interoperabilità di Teams]D;]A;- ]D83D;]DCDE; contrassegna una chiamata costituita interamente da Servizi di comunicazione di Azure (ACS)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.callquality.content.items.calldrilldown.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Call drill-down]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Drill-down chiamata]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -879,6 +915,9 @@
       <Item ItemId=";items.callquality.content.items.callquality.content.items.streamhealthgroup.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Stream health]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Integrità del flusso dei dati]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -897,6 +936,9 @@
       <Item ItemId=";items.callquality.content.items.callquality.content.items.voicevideoqualityparticipantendreasons.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Participant end reasons {end_reason_category}]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Motivi di uscita del partecipante {end_reason_category}]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -984,6 +1026,9 @@
       <Item ItemId=";items.callquality.content.items.voicevideosummary.content.items.voicevideoosusage.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No OS information reported in the specified time range]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Nessuna informazione sul sistema operativo segnalata nell'intervallo di tempo specificato]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1017,6 +1062,9 @@
       <Item ItemId=";items.callquality.content.items.voicevideovolume.content.items.voicevideovolumecalls.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No calls found in the specified time range]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Non è stata trovata alcuna chiamata nell'intervallo di tempo specificato]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1035,6 +1083,9 @@
       <Item ItemId=";items.callquality.content.items.voicevideovolume.content.items.voicevideovolumeparticipants.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No participant found in the specified time range]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Non è stato trovato alcun partecipante nell'intervallo di tempo specificato]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1062,18 +1113,27 @@
       <Item ItemId=";items.chatgroup.content.items.authtext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[The following visualizations represent data from the Chat Operational logs.]D;]A;]D;]A;**Click on any part of the pie charts below to visualize filtered logs.**]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Le visualizzazioni seguenti rappresentano i dati dei log operativi della chat.]D;]A;]D;]A;**Fare clic su una parte qualsiasi dei grafici a torta seguenti per visualizzare i log filtrati.**]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.chatgroup.content.items.chatidentitydrilldowngroup.content.items.chatidentitycalldetails.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Calls for identity {chat_identity}]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Chiamate per l'identità {chat_identity}]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.chatgroup.content.items.chatidentitydrilldowngroup.content.items.chatidentitychatdetails.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Chat operations for identity {chat_identity}]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Operazioni di chat per l'identità {chat_identity}]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1107,12 +1167,18 @@
       <Item ItemId=";items.chatgroup.content.items.chatipdrilldowngroup.content.items.chatipdetails.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Chat operations for IP address {chat_ip}]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Operazioni di chat per l'indirizzo IP {chat_ip}]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.chatgroup.content.items.chatipdrilldowngroup.content.items.chatipdrilldowninfo.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[**Select an IP address from the drop-down menu to display its associated data**]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[**Selezionare un indirizzo IP dal menu a discesa per visualizzare i dati associati**]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1137,6 +1203,9 @@
       <Item ItemId=";items.chatgroup.content.items.chatmeetingdrilldowngroup.content.items.chatmeetingdetails.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Chat operations for meeting {chat_meeting}]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Operazioni di chat per la riunione {chat_meeting}]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1152,12 +1221,18 @@
       <Item ItemId=";items.chatgroup.content.items.chatmeetingdrilldowngroup.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Chat meeting drill-down]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Drill-down della riunione in chat]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.chatgroup.content.items.chatoperationnamesgroup.content.items.chatbyoperation.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No chat operations found for the specified time range and operation name]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Non sono state trovate operazioni di chat per l'intervallo di tempo e il nome dell'operazione specificati]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1173,6 +1248,9 @@
       <Item ItemId=";items.chatgroup.content.items.chatoperationnamesgroup.content.items.chatoperationnames.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No chat operations found in the specified time range]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Non sono state trovate operazioni di chat nell'intervallo di tempo specificato]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1188,18 +1266,27 @@
       <Item ItemId=";items.chatgroup.content.items.chatoperationversionsgroup.content.items.chatbyversion.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No chat operations found for the specified time range and operation version]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Non sono state trovate operazioni di chat per la versione dell'operazione e l'intervallo di tempo specificati]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.chatgroup.content.items.chatoperationversionsgroup.content.items.chatbyversion.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Chat operations with operation version {chat_version}]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Operazioni di chat con versione dell'operazione {chat_version}]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.chatgroup.content.items.chatoperationversionsgroup.content.items.chatoperationversions.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No chat operations found in the specified time range]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Non sono state trovate operazioni di chat nell'intervallo di tempo specificato]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1215,6 +1302,9 @@
       <Item ItemId=";items.chatgroup.content.items.chatresultsgroup.content.items.chatbyresult.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No chat operations found for the specified time range and result type]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Non sono state trovate operazioni di chat per l'intervallo di tempo e il tipo di risultato specificati]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1248,6 +1338,9 @@
       <Item ItemId=";items.chatgroup.content.items.chatsignaturesgroup.content.items.chatbysignature.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No chat operations found for the specified time range and result signature]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Non sono state trovate operazioni di chat per l'intervallo di tempo e la firma del risultato specificati]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1371,6 +1464,9 @@
       <Item ItemId=";items.overview.content.items.authoverview.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No authentication API requests registered in this time period]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Non sono state registrate richieste API di autenticazione in questo periodo di tempo]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1386,6 +1482,9 @@
       <Item ItemId=";items.overview.content.items.chatoverview.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No chat API requests registered in this time period]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Non sono state registrate richieste API di chat in questo periodo di tempo]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
