@@ -101,6 +101,9 @@
         <Item ItemId=";(...) t.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Streams are classified as healthy if they exhibit telemetry values within the following ranges:]D;]A;]D;]A;- Round trip time under 500 milliseconds]D;]A;- Packet loss rate of less than 10%]D;]A;- Jitter under 30 milliseconds]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[A streamek akkor minősülnek kifogástalan állapotúnak, ha a telemetriai értékeik a következő tartományokba esnek:]D;]A;]D;]A;– Adatváltás a kiszolgálóval 500 ms-en belül]D;]A;– A csomagvesztési arány kevesebb mint 10%]D;]A;– A vibrálás kevesebb mint 30 ms]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -191,6 +194,9 @@
         <Item ItemId=";(...) ailsgroup.content.items.callimpactdetails.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Details for call {call_impact_id}]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[A(z) {call_impact_id} hívás részletei]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -215,6 +221,9 @@
         <Item ItemId=";(...) ailsgroup.content.items.callimpactlist.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[{call_impact_type} calls aat {call_impact_time}]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[{call_impact_type}-hívások ekkor: {call_impact_time}]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -224,6 +233,9 @@
         <Item ItemId=";(...) tedcallstext.content.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[This chart provides information about the proportion of impacted calls, either by poor telemetry or failed participant end reasons.]D;]A;]D;]A;**Click any bar in the chart to display the associated usage logs (note that this only works for the last bar that is clicked)**]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Ez a diagram azon hívások arányáról nyújt információt, amelyek érintettek a telemetriai adatok gyengesége miatt, vagy a sikertelen résztvevők befejezésének okai által.]D;]A;]D;]A;**Kattintson a diagram bármely sávjára a vonatkozó használati naplók megjelenítéséhez (vegye figyelembe, hogy ez csak az utoljára kattintott sávra vonatkozik)**]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -233,6 +245,9 @@
         <Item ItemId=";(...) .content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[No usage logs found in the specified time range]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Nem találhatók használati naplók a megadott időtartományban]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -507,6 +522,9 @@
       <Item ItemId=";items.Authgroup.content.items.authtext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[The following visualizations represent data from the Authentication Operational logs.]D;]A;]D;]A;**Click on any part of the pie charts below to visualize filtered logs.**]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[A következő vizualizációk az Hitelesítés műveleti naplóiból származó adatokat ábrázolnak.]D;]A;]D;]A;**Kattintson az alábbi kördiagramok bármely részére a szűrt naplók megjelenítéséhez.**]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -891,6 +909,9 @@
       <Item ItemId=";items.SMSgroup.content.items.smstext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[The following visualizations represent data from the SMS Operational logs.]D;]A;]D;]A;**Click on any part of the pie charts below to visualize filtered logs.**]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[A következő vizualizációk az SMS-ek műveleti naplóiból származó adatokat ábrázolnak.]D;]A;]D;]A;**Kattintson az alábbi kördiagramok bármely részére a szűrt naplók megjelenítéséhez.**]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -933,6 +954,9 @@
       <Item ItemId=";items.callquality.content.items.calldrilldown.content.items.text5.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[The Details tab within "Voice and video" displays an expandable view of individual calls, broken down to the participant and stream level, with duration and quality metrics.]D;]A;]D;]A;To easily detect problematic calls and participants, the following icons denote specific situations:]D;]A;- ]D83D;]DED1; indicates a failed participant end reason]D;]A;- ]D83D;]DEA9; indicates a call with at least one stream with unhealthy telemetry values]D;]A;- ]D83D;]DD04; marks Teams interop calls or participants]D;]A;- ]D83D;]DCDE; marks a call that consists entirely of Azure Communication Services (ACS)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[A „Hang és videó“ alatt található Részletek lapon látható az egyes hívások kibontható nézete, amely a résztvevők és a streamek szintjéig van részletezve, és időtartamra és minőségre vonatkozó metrikákat tartalmaz.]D;]A;]D;]A;A problémás hívások és résztvevők könnyebb észlelését a következő ikonok segítik, amelyek konkrét helyzeteket jeleznek:]D;]A;- ]D83D;]DED1; egy sikertelen résztvevői befejezési indoklást jelez]D;]A;- ]D83D;]DEA9; azt jelzi, hogy egy hívásban legalább egy stream telemetriaértékei nem kifogástalanok]D;]A;- ]D83D;]DD04; a Teams együttműködési hívásait vagy résztvevőit jelöli]D;]A;- ]D83D;]DCDE; egy teljes egészében az Azure Communication Services (ACS)-ből álló hívást jelöl]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1146,6 +1170,9 @@
       <Item ItemId=";items.chatgroup.content.items.authtext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[The following visualizations represent data from the Chat Operational logs.]D;]A;]D;]A;**Click on any part of the pie charts below to visualize filtered logs.**]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[A következő vizualizációk a Csevegés műveleti naplóiból származó adatokat ábrázolnak.]D;]A;]D;]A;**Kattintson az alábbi kördiagramok bármely részére a szűrt naplók megjelenítéséhez.**]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1557,24 +1584,36 @@
       <Item ItemId=";items.overview.content.items.overviewusagegroup.content.items.text2.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[This chart provides information about the usage of this Communication Services resource over time segmented by primitive.]D;]A;]D;]A;**Click any bar in the chart to display the associated usage logs (note that this only works for the last bar that is clicked)**]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Ez a diagram a Communication Services-erőforrás használatával kapcsolatos információkat tartalmaz, primitív szerint lebontva.]D;]A;]D;]A;**Kattintson a diagram bármelyik sávjára a vonatkozó használati naplók megjelenítéséhez (vegye figyelembe, hogy ez csak az utoljára kattintott sávra vonatkozik)**]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.overview.content.items.overviewusagegroup.content.items.usagebarchart.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No usage logs found in the specified time range]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Nem találhatók használati naplók a megadott időtartományban]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.overview.content.items.overviewusagegroup.content.items.usagedetails.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No usage logs found in the specified time range]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Nem találhatók használati naplók a megadott időtartományban]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.overview.content.items.overviewusagegroup.content.items.usagedetails.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[{usage_logs_type} usage logs at {usage_logs_time}]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[{usage_logs_type} típusú használati naplók ekkor: {usage_logs_time}]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
