@@ -101,6 +101,9 @@
         <Item ItemId=";(...) t.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Streams are classified as healthy if they exhibit telemetry values within the following ranges:]D;]A;]D;]A;- Round trip time under 500 milliseconds]D;]A;- Packet loss rate of less than 10%]D;]A;- Jitter under 30 milliseconds]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[如果流在以下范围内显示遥测值，则将其分类为正常运行:]D;]A;]D;]A;- 往返时间在 500 毫秒以下]D;]A;- 数据包丢失率小于 10%]D;]A;- 抖动时间在 30 毫秒以下]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -191,6 +194,9 @@
         <Item ItemId=";(...) ailsgroup.content.items.callimpactdetails.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Details for call {call_impact_id}]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[通话 {call_impact_id} 的详细信息]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -215,6 +221,9 @@
         <Item ItemId=";(...) ailsgroup.content.items.callimpactlist.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[{call_impact_type} calls aat {call_impact_time}]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[{call_impact_type} 调用，时间: {call_impact_time}]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -224,6 +233,9 @@
         <Item ItemId=";(...) tedcallstext.content.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[This chart provides information about the proportion of impacted calls, either by poor telemetry or failed participant end reasons.]D;]A;]D;]A;**Click any bar in the chart to display the associated usage logs (note that this only works for the last bar that is clicked)**]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[此图表提供有关因遥测不佳或失败的参与者原因而受到影响的通话比例的信息。]D;]A;]D;]A;**单击图表中的任何条形以显示关联的使用日志(请注意，这仅适用于单击的最后一个条形)**]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -233,6 +245,9 @@
         <Item ItemId=";(...) .content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[No usage logs found in the specified time range]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[在指定的时间范围内找不到使用情况日志]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -507,6 +522,9 @@
       <Item ItemId=";items.Authgroup.content.items.authtext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[The following visualizations represent data from the Authentication Operational logs.]D;]A;]D;]A;**Click on any part of the pie charts below to visualize filtered logs.**]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[以下可视化效果表示身份验证操作日志中的数据。]D;]A;]D;]A;**单击下面饼图的任何部分以可视化筛选的日志。**]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -891,6 +909,9 @@
       <Item ItemId=";items.SMSgroup.content.items.smstext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[The following visualizations represent data from the SMS Operational logs.]D;]A;]D;]A;**Click on any part of the pie charts below to visualize filtered logs.**]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[以下可视化效果表示短信操作日志中的数据。]D;]A;]D;]A;**单击下面饼图的任何部分以可视化筛选的日志。**]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -933,6 +954,9 @@
       <Item ItemId=";items.callquality.content.items.calldrilldown.content.items.text5.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[The Details tab within "Voice and video" displays an expandable view of individual calls, broken down to the participant and stream level, with duration and quality metrics.]D;]A;]D;]A;To easily detect problematic calls and participants, the following icons denote specific situations:]D;]A;- ]D83D;]DED1; indicates a failed participant end reason]D;]A;- ]D83D;]DEA9; indicates a call with at least one stream with unhealthy telemetry values]D;]A;- ]D83D;]DD04; marks Teams interop calls or participants]D;]A;- ]D83D;]DCDE; marks a call that consists entirely of Azure Communication Services (ACS)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[“语音和视频”中的“详细信息”选项卡显示各个通话的可扩展视图(细分到参与者和流级别并包含持续时间和质量指标)。]D;]A;]D;]A;为轻松检测有问题的通话和参与者，使用以下图标代表特定情况:]D;]A;- ]D83D;]DED1; 表示失败的参与者结束原因]D;]A;- ]D83D;]DEA9; 表示通话至少有一个流具有不正常遥测值]D;]A;- ]D83D;]DD04; 标记 Teams 互操作通话或参与者]D;]A;- ]D83D;]DCDE; 标记完全由 Azure 通信服务(ACS)组成的通话]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1146,6 +1170,9 @@
       <Item ItemId=";items.chatgroup.content.items.authtext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[The following visualizations represent data from the Chat Operational logs.]D;]A;]D;]A;**Click on any part of the pie charts below to visualize filtered logs.**]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[以下可视化效果表示聊天操作日志中的数据。]D;]A;]D;]A;**单击下面饼图的任何部分以可视化筛选的日志。**]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1557,24 +1584,36 @@
       <Item ItemId=";items.overview.content.items.overviewusagegroup.content.items.text2.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[This chart provides information about the usage of this Communication Services resource over time segmented by primitive.]D;]A;]D;]A;**Click any bar in the chart to display the associated usage logs (note that this only works for the last bar that is clicked)**]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[此图表提供有关此通信服务资源在按基元分段的一段时间内使用情况的信息。]D;]A;]D;]A;**单击图表中的任意条形以显示关联的使用日志(请注意，这仅适用于单击的最后一个条形)**]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.overview.content.items.overviewusagegroup.content.items.usagebarchart.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No usage logs found in the specified time range]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[在指定的时间范围内找不到使用情况日志]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.overview.content.items.overviewusagegroup.content.items.usagedetails.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No usage logs found in the specified time range]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[在指定的时间范围内找不到使用情况日志]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.overview.content.items.overviewusagegroup.content.items.usagedetails.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[{usage_logs_type} usage logs at {usage_logs_time}]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[{usage_logs_type} 使用日志，时间: {usage_logs_time}]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

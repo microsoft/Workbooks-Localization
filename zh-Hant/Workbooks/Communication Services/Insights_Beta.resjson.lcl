@@ -101,6 +101,9 @@
         <Item ItemId=";(...) t.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Streams are classified as healthy if they exhibit telemetry values within the following ranges:]D;]A;]D;]A;- Round trip time under 500 milliseconds]D;]A;- Packet loss rate of less than 10%]D;]A;- Jitter under 30 milliseconds]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[如果串流顯示的遙測值在以下範圍內，則會將其分類為良好:]D;]A;]D;]A;- 來回行程時間少於 500 毫秒]D;]A;- 封包遺漏率少於 10%]D;]A;- 抖動少於 30 毫秒]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -183,7 +186,7 @@
           <Str Cat="Text">
             <Val><![CDATA[Please select a call from the left column]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[請從左側資料行中選取通話]]></Val>
+              <Val><![CDATA[請從左側欄位選取通話]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
@@ -191,6 +194,9 @@
         <Item ItemId=";(...) ailsgroup.content.items.callimpactdetails.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Details for call {call_impact_id}]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[通話 {call_impact_id} 的詳細資料]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -207,7 +213,7 @@
           <Str Cat="Text">
             <Val><![CDATA[No calls found in the specified time range]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[在指定時間範圍內找不到通話]]></Val>
+              <Val><![CDATA[在指定的時間範圍內找不到通話]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
@@ -215,6 +221,9 @@
         <Item ItemId=";(...) ailsgroup.content.items.callimpactlist.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[{call_impact_type} calls aat {call_impact_time}]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[{call_impact_type} 通話於 {call_impact_time}]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -224,6 +233,9 @@
         <Item ItemId=";(...) tedcallstext.content.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[This chart provides information about the proportion of impacted calls, either by poor telemetry or failed participant end reasons.]D;]A;]D;]A;**Click any bar in the chart to display the associated usage logs (note that this only works for the last bar that is clicked)**]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[此圖表提供受影響通話 (可能是因為遙測不佳或失敗的參與者結束原因) 比例的相關資訊。]D;]A;]D;]A;**按一下圖表中的任何橫條，可顯示相關聯的使用量記錄 (請注意，這僅適用最後一個按下的橫條)**]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -233,6 +245,9 @@
         <Item ItemId=";(...) .content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[No usage logs found in the specified time range]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[在指定的時間範圍內找不到使用量記錄]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -243,7 +258,7 @@
           <Str Cat="Text">
             <Val><![CDATA[No participants found in the specified time range]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[在指定時間範圍內找不到參與者]]></Val>
+              <Val><![CDATA[在指定的時間範圍內找不到參與者]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
@@ -507,6 +522,9 @@
       <Item ItemId=";items.Authgroup.content.items.authtext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[The following visualizations represent data from the Authentication Operational logs.]D;]A;]D;]A;**Click on any part of the pie charts below to visualize filtered logs.**]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[下列視覺效果呈現來自驗證作業記錄的資料。]D;]A;]D;]A;**按一下下方圓形圖的任何部分，可將已篩選的記錄視覺化。**]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -891,6 +909,9 @@
       <Item ItemId=";items.SMSgroup.content.items.smstext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[The following visualizations represent data from the SMS Operational logs.]D;]A;]D;]A;**Click on any part of the pie charts below to visualize filtered logs.**]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[下列視覺效果呈現來自 SMS 作業記錄的資料。]D;]A;]D;]A;**按一下下方圓形圖的任何部分，可將已篩選的記錄視覺化。**]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -933,6 +954,9 @@
       <Item ItemId=";items.callquality.content.items.calldrilldown.content.items.text5.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[The Details tab within "Voice and video" displays an expandable view of individual calls, broken down to the participant and stream level, with duration and quality metrics.]D;]A;]D;]A;To easily detect problematic calls and participants, the following icons denote specific situations:]D;]A;- ]D83D;]DED1; indicates a failed participant end reason]D;]A;- ]D83D;]DEA9; indicates a call with at least one stream with unhealthy telemetry values]D;]A;- ]D83D;]DD04; marks Teams interop calls or participants]D;]A;- ]D83D;]DCDE; marks a call that consists entirely of Azure Communication Services (ACS)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[「語音和視訊」內的 [詳細資料]5D; 索引標籤顯示個別通話的可展開檢視，劃分為參與者和串流層級，具有持續時間和品質評量。]D;]A;]D;]A;為了方便地偵測有問題的通話和參與者，以下圖示表示特定情况:]D;]A;- ]D83D;]DED1; 指出失敗的參與者結束原因]D;]A;- ]D83D;]DEA9; 指出至少有一個具有狀況不良遙測值串流的通話]D;]A;- ]D83D;]DD04; 標記 Teams Interop 通話或參與者]D;]A;- ]D83D;]DCDE; 標記完全由 Azure 通訊服務 (ACS) 組成的通話]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1146,6 +1170,9 @@
       <Item ItemId=";items.chatgroup.content.items.authtext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[The following visualizations represent data from the Chat Operational logs.]D;]A;]D;]A;**Click on any part of the pie charts below to visualize filtered logs.**]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[下列視覺效果呈現來自聊天作業記錄的資料。]D;]A;]D;]A;**按一下下方圓形圖的任何部分，可將已篩選的記錄視覺化。**]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1557,24 +1584,36 @@
       <Item ItemId=";items.overview.content.items.overviewusagegroup.content.items.text2.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[This chart provides information about the usage of this Communication Services resource over time segmented by primitive.]D;]A;]D;]A;**Click any bar in the chart to display the associated usage logs (note that this only works for the last bar that is clicked)**]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[此圖表提供一段時間內此通訊服務資源的相關使用量，依基本分段。]D;]A;]D;]A;**按一下圖表中的任何橫條，可顯示相關聯的使用量記錄 (請注意，這僅適用最後一個按下的橫條)**]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.overview.content.items.overviewusagegroup.content.items.usagebarchart.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No usage logs found in the specified time range]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[在指定的時間範圍內找不到使用量記錄]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.overview.content.items.overviewusagegroup.content.items.usagedetails.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No usage logs found in the specified time range]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[在指定的時間範圍內找不到使用量記錄]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.overview.content.items.overviewusagegroup.content.items.usagedetails.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[{usage_logs_type} usage logs at {usage_logs_time}]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[{usage_logs_type} 使用量記錄於 {usage_logs_time}]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

@@ -101,6 +101,9 @@
         <Item ItemId=";(...) t.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Streams are classified as healthy if they exhibit telemetry values within the following ranges:]D;]A;]D;]A;- Round trip time under 500 milliseconds]D;]A;- Packet loss rate of less than 10%]D;]A;- Jitter under 30 milliseconds]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Las secuencias se clasifican como correctas si muestran valores de telemetría dentro de los intervalos siguientes:]D;]A;]D;]A;- Tiempo de ida y vuelta inferior a 500 milisegundos]D;]A;- Tasa de pérdida de paquetes inferior al 10 %]D;]A;- Vibración inferior a 30 milisegundos]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -183,7 +186,7 @@
           <Str Cat="Text">
             <Val><![CDATA[Please select a call from the left column]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Seleccione una llamada de la columna izquierda.]]></Val>
+              <Val><![CDATA[Seleccione una llamada de la columna izquierda]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
@@ -191,6 +194,9 @@
         <Item ItemId=";(...) ailsgroup.content.items.callimpactdetails.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Details for call {call_impact_id}]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Detalles de la llamada {call_impact_id}]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -215,6 +221,9 @@
         <Item ItemId=";(...) ailsgroup.content.items.callimpactlist.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[{call_impact_type} calls aat {call_impact_time}]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[{call_impact_type} llamadas en {call_impact_time}]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -224,6 +233,9 @@
         <Item ItemId=";(...) tedcallstext.content.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[This chart provides information about the proportion of impacted calls, either by poor telemetry or failed participant end reasons.]D;]A;]D;]A;**Click any bar in the chart to display the associated usage logs (note that this only works for the last bar that is clicked)**]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Este gráfico proporciona información sobre la proporción de llamadas afectadas, ya sea por telemetría deficiente o por motivos de finalización de participantes con errores.]D;]A;]D;]A;**Haga clic en cualquier barra del gráfico para mostrar los registros de uso asociados (tenga en cuenta que esto solo funciona con la última barra en la que se hace clic)**]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -233,6 +245,9 @@
         <Item ItemId=";(...) .content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[No usage logs found in the specified time range]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[No se encontraron registros de uso en el intervalo de tiempo especificado]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -507,6 +522,9 @@
       <Item ItemId=";items.Authgroup.content.items.authtext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[The following visualizations represent data from the Authentication Operational logs.]D;]A;]D;]A;**Click on any part of the pie charts below to visualize filtered logs.**]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Las siguientes visualizaciones representan datos de los registros operativos de autenticación.]D;]A;]D;]A;**Haga clic en cualquier parte de los siguientes gráficos circulares para visualizar los registros filtrados.**]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -891,6 +909,9 @@
       <Item ItemId=";items.SMSgroup.content.items.smstext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[The following visualizations represent data from the SMS Operational logs.]D;]A;]D;]A;**Click on any part of the pie charts below to visualize filtered logs.**]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Las siguientes visualizaciones representan datos de los registros operativos de SMS.]D;]A;]D;]A;**Haga clic en cualquier parte de los siguientes gráficos circulares para visualizar los registros filtrados.**]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -933,6 +954,9 @@
       <Item ItemId=";items.callquality.content.items.calldrilldown.content.items.text5.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[The Details tab within "Voice and video" displays an expandable view of individual calls, broken down to the participant and stream level, with duration and quality metrics.]D;]A;]D;]A;To easily detect problematic calls and participants, the following icons denote specific situations:]D;]A;- ]D83D;]DED1; indicates a failed participant end reason]D;]A;- ]D83D;]DEA9; indicates a call with at least one stream with unhealthy telemetry values]D;]A;- ]D83D;]DD04; marks Teams interop calls or participants]D;]A;- ]D83D;]DCDE; marks a call that consists entirely of Azure Communication Services (ACS)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[La pestaña Detalles de "Voz y vídeo" muestra una vista ampliable de llamadas individuales, desglosadas por el participante y el nivel de transmisión, con métricas de duración y calidad.]D;]A;]D;]A;Para detectar fácilmente llamadas y participantes problemáticos, los siguientes iconos denotan situaciones específicas:]D;]A;- ]D83D;]DED1; indica un motivo de finalización de participante con error]D;]A;- ]D83D;]DEA9; indica una llamada con al menos una secuencia con valores de telemetría incorrectos]D;]A;- ]D83D;]DD04; marca los participantes o las llamadas de interoperabilidad de Teams]D;]A;- ]D83D;]DCDE; marca una llamada que consta únicamente de Azure Communication Services (ACS)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1146,6 +1170,9 @@
       <Item ItemId=";items.chatgroup.content.items.authtext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[The following visualizations represent data from the Chat Operational logs.]D;]A;]D;]A;**Click on any part of the pie charts below to visualize filtered logs.**]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Las siguientes visualizaciones representan datos de los registros operativos de chat.]D;]A;]D;]A;**Haga clic en cualquier parte de los siguientes gráficos circulares para visualizar los registros filtrados.**]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1557,24 +1584,36 @@
       <Item ItemId=";items.overview.content.items.overviewusagegroup.content.items.text2.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[This chart provides information about the usage of this Communication Services resource over time segmented by primitive.]D;]A;]D;]A;**Click any bar in the chart to display the associated usage logs (note that this only works for the last bar that is clicked)**]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Este gráfico proporciona información sobre el uso de este recurso de Communication Services a lo largo del tiempo segmentado por primitivo.]D;]A;]D;]A;**Haga clic en cualquier barra del gráfico para mostrar los registros de uso asociados (tenga en cuenta que esto solo funciona con la última barra en la que se hace clic)**]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.overview.content.items.overviewusagegroup.content.items.usagebarchart.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No usage logs found in the specified time range]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[No se encontraron registros de uso en el intervalo de tiempo especificado]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.overview.content.items.overviewusagegroup.content.items.usagedetails.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No usage logs found in the specified time range]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[No se encontraron registros de uso en el intervalo de tiempo especificado]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.overview.content.items.overviewusagegroup.content.items.usagedetails.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[{usage_logs_type} usage logs at {usage_logs_time}]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[{usage_logs_type} registros de uso en {usage_logs_time}]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

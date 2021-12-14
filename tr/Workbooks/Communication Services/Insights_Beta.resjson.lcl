@@ -101,6 +101,9 @@
         <Item ItemId=";(...) t.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Streams are classified as healthy if they exhibit telemetry values within the following ranges:]D;]A;]D;]A;- Round trip time under 500 milliseconds]D;]A;- Packet loss rate of less than 10%]D;]A;- Jitter under 30 milliseconds]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Akışlar, şu aralıklar içinde telemetri değerleri gösterirse iyi durumda olarak sınıflandırılır:]D;]A;]D;]A;- Gidiş dönüş süresi 500 milisaniyenin altında]D;]A;- %10’dan az paket kaybı oranı]D;]A;- 30 milisaniyenin altında gecikme]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -191,6 +194,9 @@
         <Item ItemId=";(...) ailsgroup.content.items.callimpactdetails.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Details for call {call_impact_id}]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[{call_impact_id} çağrısı ayrıntıları]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -215,6 +221,9 @@
         <Item ItemId=";(...) ailsgroup.content.items.callimpactlist.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[{call_impact_type} calls aat {call_impact_time}]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[{call_impact_time} saatindeki {call_impact_type} çağrıları]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -224,6 +233,9 @@
         <Item ItemId=";(...) tedcallstext.content.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[This chart provides information about the proportion of impacted calls, either by poor telemetry or failed participant end reasons.]D;]A;]D;]A;**Click any bar in the chart to display the associated usage logs (note that this only works for the last bar that is clicked)**]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Bu grafik, zayıf telemetri verilerine veya hatalı katılımcı sonlandırma nedenlerine bağlı olarak etkilenen çağrıların oranı hakkında bilgiler sağlar.]D;]A;]D;]A;**İlişkili kullanım günlüklerini görüntülemek için grafikte herhangi bir çubuğa tıklayın (bunun yalnızca tıklanan son çubuk için geçerli olduğuna dikkat edin)**]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -233,6 +245,9 @@
         <Item ItemId=";(...) .content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[No usage logs found in the specified time range]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Belirtilen zaman aralığında kullanım günlüğü bulunamadı]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -507,6 +522,9 @@
       <Item ItemId=";items.Authgroup.content.items.authtext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[The following visualizations represent data from the Authentication Operational logs.]D;]A;]D;]A;**Click on any part of the pie charts below to visualize filtered logs.**]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Aşağıdaki görselleştirmeler Kimlik Doğrulaması İşlem günlüklerindeki verileri temsil eder.]D;]A;]D;]A;**Filtrelenen günlükleri görselleştirmek için aşağıdaki pasta grafiklerinin herhangi bir kısmına tıklayın.**]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -891,6 +909,9 @@
       <Item ItemId=";items.SMSgroup.content.items.smstext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[The following visualizations represent data from the SMS Operational logs.]D;]A;]D;]A;**Click on any part of the pie charts below to visualize filtered logs.**]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Aşağıdaki görselleştirmeler SMS İşlem günlüklerindeki verileri temsil eder.]D;]A;]D;]A;**Filtrelenen günlükleri görselleştirmek için aşağıdaki pasta grafiklerinin herhangi bir kısmına tıklayın.**]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -933,6 +954,9 @@
       <Item ItemId=";items.callquality.content.items.calldrilldown.content.items.text5.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[The Details tab within "Voice and video" displays an expandable view of individual calls, broken down to the participant and stream level, with duration and quality metrics.]D;]A;]D;]A;To easily detect problematic calls and participants, the following icons denote specific situations:]D;]A;- ]D83D;]DED1; indicates a failed participant end reason]D;]A;- ]D83D;]DEA9; indicates a call with at least one stream with unhealthy telemetry values]D;]A;- ]D83D;]DD04; marks Teams interop calls or participants]D;]A;- ]D83D;]DCDE; marks a call that consists entirely of Azure Communication Services (ACS)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA["Sesli ve görüntülü" içindeki Ayrıntılar sekmesi, her aramanın süre ve kalite ölçümleriyle birlikte katılımcıya ve akış düzeyine ayrıldığı genişletilebilir bir görünümünü gösterir.]D;]A;]D;]A;Aşağıdaki simgeler, sorunlu çağrıları ve katılımcıları kolayca algılamak için belirli durumları gösterir:]D;]A;- ]D83D;]DED1;, başarısız olmuş bir katılımcının bitiş nedenini gösterir]D;]A;- ]D83D;]DEA9;, iyi durumda olmayan telemetri değerlerine sahip en az bir akış içeren çağrıyı gösterir]D;]A;- ]D83D;]DD04;, Teams birlikte çalışma çağrılarını veya katılımcılarını işaretler]D;]A;- ]D83D;]DCDE;, tamamen Azure İletişim Hizmetleri’nden (ACS) oluşan bir çağrıyı işaretler]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1146,6 +1170,9 @@
       <Item ItemId=";items.chatgroup.content.items.authtext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[The following visualizations represent data from the Chat Operational logs.]D;]A;]D;]A;**Click on any part of the pie charts below to visualize filtered logs.**]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Aşağıdaki görselleştirmeler Sohbet İşlem günlüklerindeki verileri temsil eder.]D;]A;]D;]A;**Filtrelenen günlükleri görselleştirmek için aşağıdaki pasta grafiklerinin herhangi bir kısmına tıklayın.**]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1557,24 +1584,36 @@
       <Item ItemId=";items.overview.content.items.overviewusagegroup.content.items.text2.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[This chart provides information about the usage of this Communication Services resource over time segmented by primitive.]D;]A;]D;]A;**Click any bar in the chart to display the associated usage logs (note that this only works for the last bar that is clicked)**]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Bu grafik, bu İletişim Hizmetleri kaynağının temel öğeye göre segmentlere ayrılmış zaman içindeki kullanımı hakkında bilgiler sağlar.]D;]A;]D;]A;**İlişkili kullanım günlüklerini görüntülemek için grafikte herhangi bir çubuğa tıklayın (bunun yalnızca tıklanan son çubuk için geçerli olduğuna dikkat edin)**]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.overview.content.items.overviewusagegroup.content.items.usagebarchart.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No usage logs found in the specified time range]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Belirtilen zaman aralığında kullanım günlüğü bulunamadı]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.overview.content.items.overviewusagegroup.content.items.usagedetails.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No usage logs found in the specified time range]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Belirtilen zaman aralığında kullanım günlüğü bulunamadı]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.overview.content.items.overviewusagegroup.content.items.usagedetails.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[{usage_logs_type} usage logs at {usage_logs_time}]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[{usage_logs_type} kullanım günlüklerinin zamanı: {usage_logs_time}]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
