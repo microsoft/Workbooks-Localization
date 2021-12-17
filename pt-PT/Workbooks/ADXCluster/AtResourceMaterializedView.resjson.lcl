@@ -11,23 +11,20 @@
       <Disp Icon="Str" Disp="true" LocTbl="false" />
       <Item ItemId=";@items.MVStep.content.items.Healthperdb.content.gridSettings.labelSettings.microsoftkustoclustersMaterializedViewh" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) ealthandperformanceMaterializedViewHealth.label" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) ealthandperformanceMaterializedViewAgeSeconds.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Average health of the materialized views in the database]]></Val>
+            <Val><![CDATA[Materialized views health]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Estado de funcionamento médio das vistas materializadas na base de dados]]></Val>
+              <Val><![CDATA[Estado de funcionamento das vistas materializadas]]></Val>
             </Tgt>
-            <Prev Cat="Text">
-              <Val><![CDATA[Health of the materialized views in the database (average)]]></Val>
-            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
-        <Item ItemId=";(...) ealthandperformanceMaterializedViewHealthTimeline.label" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) ealthandperformanceMaterializedViewAgeSecondsTimeline.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Materialized View Health (Average) Timeline]]></Val>
+            <Val><![CDATA[Materialized View Age (Average) Timeline]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Linha Cronológica do Estado de Funcionamento da Vista Materializada (Média)]]></Val>
+              <Val><![CDATA[Linha Cronológica da Idade da Vista Materializada (Média)]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
@@ -35,12 +32,33 @@
       </Item>
       <Item ItemId=";@items.MVStep.content.items.MVHealth.content.gridSettings.labelSettings.microsoftkustoclustersMaterializedViewheal" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) thandperformanceMaterializedViewAgeMinutes.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Details]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Detalhes]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) thandperformanceMaterializedViewAgeMinutesTimeline.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Materialized View Age (Average) Timeline]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Linha Cronológica da Idade da Vista Materializada (Média)]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
         <Item ItemId=";(...) thandperformanceMaterializedViewAgeSeconds.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Materialized view age  (average)]]></Val>
+            <Val><![CDATA[Age  (average)]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Idade da vista materializada (média)]]></Val>
+              <Val><![CDATA[Idade  (média)]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[Materialized view age  (average)]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -53,45 +71,12 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
-        <Item ItemId=";(...) thandperformanceMaterializedViewHealth.label" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[Materialized view health (average)]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Estado de funcionamento da vista materializada (média)]]></Val>
-            </Tgt>
-            <Prev Cat="Text">
-              <Val><![CDATA[Materialized View Health (Average)]]></Val>
-            </Prev>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-        <Item ItemId=";(...) thandperformanceMaterializedViewHealthTimeline.label" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[Materialized view health (average) timeline]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Linha cronológica do estado de funcionamento da vista materializada (média)]]></Val>
-            </Tgt>
-            <Prev Cat="Text">
-              <Val><![CDATA[Materialized View Health (Average) Timeline]]></Val>
-            </Prev>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
       </Item>
       <Item ItemId=";items.MVStep.content.items.Healthperdb.content.gridSettings.labelSettings.Segment.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Database name]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Nome da base de dados]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.MVStep.content.items.Healthperdb.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Database Materialized View Health (choose a database to drill down)]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Estado de Funcionamento da Vista Materializada da Base de Dados (escolha uma base de dados para desagregar)]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -107,10 +92,13 @@
       </Item>
       <Item ItemId=";items.MVStep.content.items.MVHealth.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Materialized View Health And Age (choose a Materialized View to drill down)]]></Val>
+          <Val><![CDATA[Materialized view age]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Estado de Funcionamento e Idade da Vista Materializada (escolha uma Vista Materializada para desagregar)]]></Val>
+            <Val><![CDATA[Idade da vista materializada]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Materialized View Health And Age (choose a Materialized View to drill down)]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -119,6 +107,15 @@
           <Val><![CDATA[Learn more about materialized views monitoring >]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Saiba mais sobre a monitorização de vistas materializadas >]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.MVStep.content.items.text12.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Materialized views health per database]D;]A;</span> <br>Click on a row to drill down]D;]A;</span>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Estado de funcionamento das vistas materializadas por base de dados]D;]A;</span> <br>Clique numa linha para desagregar]D;]A;</span>]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />

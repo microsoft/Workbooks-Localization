@@ -89,7 +89,7 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
-        <Item ItemId=";(...) type.content.items.Ingestionbatchingbytype.content.gridSettings.labelSettings.count.label" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) type.content.items.Ingestionbatchingbytype.content.gridSettings.labelSettings.triggercount.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Count]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -492,6 +492,39 @@
           <Disp Icon="Str" />
         </Item>
       </Item>
+      <Item ItemId=";@items.IngestionDetailsGroup.content.items.Overview.content.items.Failgroup.content.items.FailedIngestionbystatus." ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) content.gridSettings.labelSettings.Segment.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Category]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[类别]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) content.gridSettings.labelSettings.microsoftkustoclustersIngestionhealthandperformanceIngestionResult.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Count]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[计数]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";@(...) content.gridSettings.labelSettings.microsoftkustoclustersIngestionhealthandperformanceIngestionResultTimeli" ItemType="0" PsrId="306" Leaf="false">
+          <Disp Icon="Dir" LocTbl="false" />
+          <Item ItemId=";(...) ne.label" ItemType="0" PsrId="306" Leaf="true">
+            <Str Cat="Text">
+              <Val><![CDATA[Trend]]></Val>
+              <Tgt Cat="Text" Stat="Loc" Orig="New">
+                <Val><![CDATA[趋势]]></Val>
+              </Tgt>
+            </Str>
+            <Disp Icon="Str" />
+          </Item>
+        </Item>
+      </Item>
       <Item ItemId=";@items.IngestionDetailsGroup.content.items.Overview.content.items.Failgroup.content.items.Failedbystagetitle.conte" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) nt.json" ItemType="0" PsrId="306" Leaf="true">
@@ -622,6 +655,18 @@
             <Val><![CDATA[Database]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
               <Val><![CDATA[数据库]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
+      <Item ItemId=";@items.IngestionDetailsGroup.content.items.Overview.content.items.Failgroup.content.items.categoryfailuresheader.c" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) ontent.json" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Failed ingestions by category]D;]A;</span> <br> A failure category is a set of one or more error codes.]D;]A;<br>Error code details are available in the 'By Table' tab below.]D;]A;</span>[Learn more about failure categories]5D;(https://docs.microsoft.com/azure/data-explorer/error-codes#category-blobalreadyreceived)]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;">按类别的失败引入]D;]A;</span> <br> 失败类别是一组一个或多个错误代码。]D;]A;<br>下面的“按表”选项卡提供了错误代码详细信息。]D;]A;</span>[了解失败类别的详细信息]5D;(https://docs.microsoft.com/azure/data-explorer/error-codes#category-blobalreadyreceived)]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
@@ -1340,24 +1385,24 @@
       </Item>
       <Item ItemId=";items.IngestionDetailsGroup.content.items.Overview.content.items.links12.content.links.2.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-family: Open Sans;  font-size: 16px;"> Total latency </span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]]></Val>
+          <Val><![CDATA[&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-family: Open Sans;  font-size: 16px;"> Total latency </span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-family: Open Sans;  font-size: 16px;">延迟总计</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]]></Val>
+            <Val><![CDATA[&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-family: Open Sans;  font-size: 16px;">总延迟</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]]></Val>
           </Tgt>
           <Prev Cat="Text">
-            <Val><![CDATA[&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-family: Open Sans;  font-size: 16px;color:black;"> Total latency </span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]]></Val>
+            <Val><![CDATA[&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-family: Open Sans;  font-size: 16px;"> Total latency </span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]]></Val>
           </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.IngestionDetailsGroup.content.items.Overview.content.items.links12.content.links.3.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-family: Open Sans;  font-size: 16px;"> Ingestion utilization </span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]]></Val>
+          <Val><![CDATA[&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-family: Open Sans;  font-size: 16px;"> Ingestion utilization </span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-family: Open Sans;  font-size: 16px;">引入利用率</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]]></Val>
+            <Val><![CDATA[&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-family: Open Sans;  font-size: 16px;">引入利用率</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]]></Val>
           </Tgt>
           <Prev Cat="Text">
-            <Val><![CDATA[&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-family: Open Sans;  font-size: 16px;color:black;"> Ingestion utilization </span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]]></Val>
+            <Val><![CDATA[&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-family: Open Sans;  font-size: 16px;"> Ingestion utilization </span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]]></Val>
           </Prev>
         </Str>
         <Disp Icon="Str" />
