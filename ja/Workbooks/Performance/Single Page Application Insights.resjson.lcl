@@ -9,70 +9,7 @@
     <Disp Icon="Expand" Expand="true" Disp="true" LocTbl="false" />
     <Item ItemId=";Strings" ItemType="0" PsrId="306" Leaf="false">
       <Disp Icon="Str" Disp="true" LocTbl="false" />
-      <Item ItemId=";items.0.content.json" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[# Initial Load Performance Insights of Single Page Applications]D;]A;This Workbook template allows you to view your Single Page Application (SPA) performance data logged by the <a href="https://github.com/Microsoft/Mezzurite">Mezzurite Timing Library</a> and the <a href="https://github.com/Microsoft/ApplicationInsights-JS-Mezzurite">Application Insights Mezzurite Plugin</a>]D;]A;]D;]A;]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[# シングルページ アプリケーションの初期読み込みのパフォーマンスに関する分析情報]D;]A;このブック テンプレートを使用すると、<a href="https://github.com/Microsoft/Mezzurite">Mezzurite Timing Library</a> と <a href="https://github.com/Microsoft/ApplicationInsights-JS-Mezzurite">Application Insights Mezzurite プラグイン</a>によってログされた、シングルページ アプリケーション (SPA) のパフォーマンス データを表示できます]D;]A;]D;]A;]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.10.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[<h2 style="text-decoration: underline; margin-bottom: 0;">Performance of Components Loaded in Route "{Route}"</h2>]D;]A;If the <strong>VLT</strong> has regressed, the chart below will show you all the components make up the <strong>VLT</strong> time.]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[<h2 style="text-decoration: underline; margin-bottom: 0;">ルート "{Route}" の読み込まれたコンポーネントのパフォーマンス</h2>]D;]A;<strong>VLT</strong> が低下している場合、以下のグラフには <strong>VLT</strong> 時間を構成するすべてのコンポーネントが示されます。]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.12.content.json" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[<hr>]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[<hr>]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.13.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[<h2 style="text-decoration: underline; margin-bottom: 0;">Performance of Application Load Sub-Timings for Route "{Route}"</h2>]D;]A;This chart is used if your <strong>ALT</strong> has regress.  The timings here are from the Performance timings object from the browser.  These sub timings come from the Perfomance Navigation timing from the browser and are based on the <a href="https://www.w3.org/TR/2012/REC-navigation-timing-20121217/">W3C standards</a>.  See the <a href="https://github.com/Microsoft/Mezzurite">Mezzurite GitHub</a> for more info.]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[<h2 style="text-decoration: underline; margin-bottom: 0;">ルート "{Route}" のアプリケーション読み込みサブタイミングのパフォーマンス</h2>]D;]A;このグラフは、<strong>ALT</strong> が低下している場合に使用されます。こちらに示されるタイミングは、ブラウザーのパフォーマンス タイミング オブジェクトから取得されます。これらのサブタイミングは、ブラウザーのパフォーマンス ナビゲーション タイミングから取得され、<a href="https://www.w3.org/TR/2012/REC-navigation-timing-20121217/">W3C 標準</a>に基づいています。詳細については、<a href="https://github.com/Microsoft/Mezzurite">Mezzurite GitHub</a>を参照してください。]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.15.content.json" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[<h1>Definitions</h1>]D;]A;<p><strong>SPA:</strong> Single Page Application built on top of JavaScript frameworks like Angular or React]D;]A;<p><strong>Route:</strong> This is the SPA route (URL segment) for the given page.</p>]D;]A;<p><strong>Component:</strong> A Component can be a single html element or a group of elements. These are defined inside your JavaScript and are the building blocks for your SPA page. A route can have more than one component inside of it. The chart below shows performance timings for all components present in the currently selected route.</p>]D;]A;<p><strong>Component Load Time (CLT):</strong> The time it takes for a given component to load on the page.</p>]D;]A;<p><strong>Viewport:</strong> The area which is viewable in your browser.</p>]D;]A;<p><strong>Viewport Load Time (VLT):</strong> The time it takes from the route start to when the last component is loaded in your viewport.</p>]D;]A;<p><strong>Application Load Time (ALT):</strong> The time it takes from the navigation start to when your router starts processing the first route.</p>]D;]A;<p><strong>First Load Time (FLT):</strong> The high level metric which is a sum of the <strong>application load time</strong> and the first <strong>viewport load time</strong> of our route.</p>]D;]A;<p><h3>The following are all pulled from the Browser Performance Timing object</h3></p>]D;]A;<p><strong>Send Duration</strong>Request Start to Response Start </p>]D;]A;<p><strong>Receive Duration</strong>Responce Start to Response End</p>]D;]A;<p><strong>Network Duration</strong> is Navigation Start to Connection End</p>]D;]A;<br>]D;]A;]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[<h1>定義</h1>]D;]A;<p><strong>SPA:</strong> JavaScript フレームワーク (Angular や React など) 上に構築されたシングル ページ アプリケーション]D;]A;<p><strong>ルート:</strong> これは、特定のページの SPA ルート (URL セグメント) です。</p>]D;]A;<p><strong>コンポーネント:</strong> コンポーネントは、単一の html 要素または要素のグループである場合があります。これらは JavaScript 内で定義される、SPA ページの構築ブロックです。ルートの中には複数のコンポーネントを含めることができます。下のグラフには、現在選択されているルートに存在するすべてのコンポーネントについて、パフォーマンスのタイミングが示されています。</p>]D;]A;<p><strong>コンポーネントの読み込み時間 (CLT):</strong> 特定のコンポーネントをページに読み込むためにかかる時間</p>]D;]A;<p><strong>ビューポート:</strong> ブラウザーで表示可能な領域</p>]D;]A;<p><strong>ビューポートの読み込み時間 (VLT):</strong> ルートの開始から最後のコンポーネントがビューポートに読み込まれるまでにかかる時間。</p>]D;]A;<p><strong>アプリケーションの読み込み時間 (ALT):</strong> ナビゲーションの開始からルーターが最初のルートの処理を開始するまでにかかる時間。</p>]D;]A;<p><strong>初回読み込み時間 (FLT):</strong> 自分のルートの<strong>アプリケーションの読み込み時間</strong>と初回の<strong>ビューポートの読み込み時間</strong>の合計である概要メトリック。</p>]D;]A;<p><h3>以下はすべて、ブラウザー パフォーマンス タイミング オブジェクトからプルされます</h3></p>]D;]A;<p><strong>送信期間</strong>は要求の開始から応答の開始までです</p>]D;]A;<p><strong>受信期間</strong>は応答の開始から応答の終了までです</p>]D;]A;<p><strong>ネットワーク期間</strong>はナビゲーションの開始から接続の終了までです</p>]D;]A;<br>]D;]A;]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.2.content.json" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[<p><strong><h2>This workbook was unable to load because no Mezzurite Timing data was detected.</h2></strong></p>]D;]A;<p>]D;]A;To configure Mezzurite, please follow the guide below for your site’s specific framework Implementation]D;]A;<ul>]D;]A;<li><a href="https://github.com/Microsoft/Mezzurite/blob/master/Mezzurite.React/README.md">React based sites</a></li>]D;]A;<li> <a href="https://github.com/Microsoft/Mezzurite/blob/master/Mezzurite.Angular/README.md">Angular based sites</a></li>]D;]A;</ul>]D;]A;]D;]A;Once the Mezzurite Timing library is added, you will need ]D;]A;<ul>]D;]A;<li><a href="https://github.com/Microsoft/ApplicationInsights-JS-Mezzurite/blob/master/README.md">Onboarding steps here</a></li>]D;]A;</ul></p>]D;]A;]D;]A;<h3>Mezzurite Ecosystem</h3>]D;]A;<table>]D;]A;<tr><th>Project</th><th>Description</th></tr>]D;]A;<tr><td><a href="https://github.com/Microsoft/ApplicationInsights-JS-Mezzurite">ApplicationInsights-JS-Mezzurite</a></td><td><a href="https://github.com/Microsoft/ApplicationInsights-JS">Application Insights</a> plugin of Mezzurite</td></tr>]D;]A;<tr><td><a href="https://github.com/Microsoft/Mezzurite">Mezzurite</a></td><td>Base SDK for Mezzurite with Angular, AngularJS and React integration</td></tr>]D;]A;<tr><td><a href="https://github.com/Microsoft/Mezzurite-DevTools">Mezzurite DevTools</a></td><td>See Mezzurite metrics being captured with a browser extension</td></tr>]D;]A;<tr><td><a href="https://github.com/Microsoft/vscode-mezzurite">VSCode Mezzurite</a></td><td>Check which components and modules are instrumented within VS Code</td></tr>]D;]A;</table>]D;]A;]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[<p><strong><h2>Mezzurite Timing データが検出されなかったため、このブックを読み込めませんでした。</h2></strong></p>]D;]A;<p>]D;]A;Mezzurite を構成するには、ご自分のサイト特有のフレームワーク実装に合った以下のガイドに従ってください]D;]A;<ul>]D;]A;<li><a href="https://github.com/Microsoft/Mezzurite/blob/master/Mezzurite.React/README.md">React ベースのサイト</a></li>]D;]A;<li> <a href="https://github.com/Microsoft/Mezzurite/blob/master/Mezzurite.Angular/README.md">Angular ベースのサイト</a></li>]D;]A;</ul>]D;]A;]D;]A;Mezzurite Timing ライブラリを追加したら、次に従う必要があります]D;]A;<ul>]D;]A;<li><a href="https://github.com/Microsoft/ApplicationInsights-JS-Mezzurite/blob/master/README.md">こちらのオンボード手順</a></li>]D;]A;</ul></p>]D;]A;]D;]A;<h3>Mezzurite のエコシステム</h3>]D;]A;<table>]D;]A;<tr><th>プロジェクト</th><th>説明</th></tr>]D;]A;<tr><td><a href="https://github.com/Microsoft/ApplicationInsights-JS-Mezzurite">ApplicationInsights-JS-Mezzurite</a></td><td>Mezzurite の <a href="https://github.com/Microsoft/ApplicationInsights-JS">Application Insights</a> プラグイン</td></tr>]D;]A;<tr><td><a href="https://github.com/Microsoft/Mezzurite">Mezzurite</a></td><td>Angular、AngularJS、React 統合を備えた Mezzurite の基本 SDK</td></tr>]D;]A;<tr><td><a href="https://github.com/Microsoft/Mezzurite-DevTools">Mezzurite DevTools</a></td><td>ブラウザー拡張機能でキャプチャされた Mezzurite メトリックを表示します</td></tr>]D;]A;<tr><td><a href="https://github.com/Microsoft/vscode-mezzurite">VSCode Mezzurite</a></td><td>VS Code 内でインストルメント化されるコンポーネントとモジュールを確認します</td></tr>]D;]A;</table>]D;]A;]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.3.content.json" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[<Strong>The flow of the template</Strong>:]D;]A;]D;]A;1. View the performance of your routes]D;]A;2. <strong>Select a route </strong> to dive deeper into diagnostics. ]D;]A;3. Charts provided for the selected route are:]D;]A;<br>   a. Component Load Time for each of the components included in the selected route]D;]A;<br>   b. Application Load Time break down]D;]A;]D;]A;<p>**The below parameters affect all charts below:**</p>]D;]A;]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[<Strong>テンプレートのフロー</Strong>:]D;]A;]D;]A;1. ルートのパフォーマンスを表示します]D;]A;2. <strong>ルートを選択</strong>して、診断の詳細を調べます。]D;]A;3. 選択したルートに対して提供されているグラフは次のとおりです:]D;]A;<br>   a. 選択したルートに含まれている各コンポーネントのコンポーネント読み込み時間]D;]A;<br>   b. アプリケーション読み込み時間の内訳]D;]A;]D;]A;<p>**以下のパラメーターは、下のすべてのグラフに影響を与えます:**</p>]D;]A;]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.4.content.parameters.39725ecb66f740c5bae740bc1eef8ca7.description" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.parameters4.content.parameters.39725ecb66f740c5bae740bc1eef8ca7.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Scopes the timeframe of the workbook]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -81,7 +18,7 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.4.content.parameters.6178b34acf9a42cfb4b13d1ec46ca34c.description" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.parameters4.content.parameters.6178b34acf9a42cfb4b13d1ec46ca34c.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Group results by time]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -90,7 +27,7 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.4.content.parameters.7196f5c4bfe64fc09712aa345a56927c.description" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.parameters4.content.parameters.7196f5c4bfe64fc09712aa345a56927c.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Percentile which all charts are calcualted]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -99,7 +36,7 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.4.content.parameters.a12146364e9f41b395029b42064553fa.description" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.parameters4.content.parameters.a12146364e9f41b395029b42064553fa.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Foucs the results to a specific browser]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -108,7 +45,7 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.4.content.parameters.df4a6862502942c093712fc97279e1ad.description" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.parameters4.content.parameters.df4a6862502942c093712fc97279e1ad.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Focus the results to a specific country]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -117,7 +54,61 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.5.content.json" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.text0.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[# Initial Load Performance Insights of Single Page Applications]D;]A;This Workbook template allows you to view your Single Page Application (SPA) performance data logged by the <a href="https://github.com/Microsoft/Mezzurite">Mezzurite Timing Library</a> and the <a href="https://github.com/Microsoft/ApplicationInsights-JS-Mezzurite">Application Insights Mezzurite Plugin</a>]D;]A;]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# シングルページ アプリケーションの初期読み込みのパフォーマンスに関する分析情報]D;]A;このブック テンプレートを使用すると、<a href="https://github.com/Microsoft/Mezzurite">Mezzurite Timing Library</a> と <a href="https://github.com/Microsoft/ApplicationInsights-JS-Mezzurite">Application Insights Mezzurite プラグイン</a>によってログされた、シングルページ アプリケーション (SPA) のパフォーマンス データを表示できます]D;]A;]D;]A;]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.text10.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[<h2 style="text-decoration: underline; margin-bottom: 0;">Performance of Components Loaded in Route "{Route}"</h2>]D;]A;If the <strong>VLT</strong> has regressed, the chart below will show you all the components make up the <strong>VLT</strong> time.]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.text12.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[<hr>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<hr>]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.text13.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[<h2 style="text-decoration: underline; margin-bottom: 0;">Performance of Application Load Sub-Timings for Route "{Route}"</h2>]D;]A;This chart is used if your <strong>ALT</strong> has regress.  The timings here are from the Performance timings object from the browser.  These sub timings come from the Perfomance Navigation timing from the browser and are based on the <a href="https://www.w3.org/TR/2012/REC-navigation-timing-20121217/">W3C standards</a>.  See the <a href="https://github.com/Microsoft/Mezzurite">Mezzurite GitHub</a> for more info.]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.text15.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[<h1>Definitions</h1>]D;]A;<p><strong>SPA:</strong> Single Page Application built on top of JavaScript frameworks like Angular or React]D;]A;<p><strong>Route:</strong> This is the SPA route (URL segment) for the given page.</p>]D;]A;<p><strong>Component:</strong> A Component can be a single html element or a group of elements. These are defined inside your JavaScript and are the building blocks for your SPA page. A route can have more than one component inside of it. The chart below shows performance timings for all components present in the currently selected route.</p>]D;]A;<p><strong>Component Load Time (CLT):</strong> The time it takes for a given component to load on the page.</p>]D;]A;<p><strong>Viewport:</strong> The area which is viewable in your browser.</p>]D;]A;<p><strong>Viewport Load Time (VLT):</strong> The time it takes from the route start to when the last component is loaded in your viewport.</p>]D;]A;<p><strong>Application Load Time (ALT):</strong> The time it takes from the navigation start to when your router starts processing the first route.</p>]D;]A;<p><strong>First Load Time (FLT):</strong> The high level metric which is a sum of the <strong>application load time</strong> and the first <strong>viewport load time</strong> of our route.</p>]D;]A;<p><h3>The following are all pulled from the Browser Performance Timing object</h3></p>]D;]A;<p><strong>Send Duration</strong>Request Start to Response Start </p>]D;]A;<p><strong>Receive Duration</strong>Responce Start to Response End</p>]D;]A;<p><strong>Network Duration</strong> is Navigation Start to Connection End</p>]D;]A;<br>]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<h1>定義</h1>]D;]A;<p><strong>SPA:</strong> JavaScript フレームワーク (Angular や React など) 上に構築されたシングル ページ アプリケーション]D;]A;<p><strong>ルート:</strong> これは、特定のページの SPA ルート (URL セグメント) です。</p>]D;]A;<p><strong>コンポーネント:</strong> コンポーネントは、単一の html 要素または要素のグループである場合があります。これらは JavaScript 内で定義される、SPA ページの構築ブロックです。ルートの中には複数のコンポーネントを含めることができます。下のグラフには、現在選択されているルートに存在するすべてのコンポーネントについて、パフォーマンスのタイミングが示されています。</p>]D;]A;<p><strong>コンポーネントの読み込み時間 (CLT):</strong> 特定のコンポーネントをページに読み込むためにかかる時間</p>]D;]A;<p><strong>ビューポート:</strong> ブラウザーで表示可能な領域</p>]D;]A;<p><strong>ビューポートの読み込み時間 (VLT):</strong> ルートの開始から最後のコンポーネントがビューポートに読み込まれるまでにかかる時間。</p>]D;]A;<p><strong>アプリケーションの読み込み時間 (ALT):</strong> ナビゲーションの開始からルーターが最初のルートの処理を開始するまでにかかる時間。</p>]D;]A;<p><strong>初回読み込み時間 (FLT):</strong> 自分のルートの<strong>アプリケーションの読み込み時間</strong>と初回の<strong>ビューポートの読み込み時間</strong>の合計である概要メトリック。</p>]D;]A;<p><h3>以下はすべて、ブラウザー パフォーマンス タイミング オブジェクトからプルされます</h3></p>]D;]A;<p><strong>送信期間</strong>は要求の開始から応答の開始までです</p>]D;]A;<p><strong>受信期間</strong>は応答の開始から応答の終了までです</p>]D;]A;<p><strong>ネットワーク期間</strong>はナビゲーションの開始から接続の終了までです</p>]D;]A;<br>]D;]A;]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.text16.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[# This workbook is deprecated.]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.text3.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[<Strong>The flow of the template</Strong>:]D;]A;]D;]A;1. View the performance of your routes]D;]A;2. <strong>Select a route </strong> to dive deeper into diagnostics. ]D;]A;3. Charts provided for the selected route are:]D;]A;<br>   a. Component Load Time for each of the components included in the selected route]D;]A;<br>   b. Application Load Time break down]D;]A;]D;]A;<p>**The below parameters affect all charts below:**</p>]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<Strong>テンプレートのフロー</Strong>:]D;]A;]D;]A;1. ルートのパフォーマンスを表示します]D;]A;2. <strong>ルートを選択</strong>して、診断の詳細を調べます。]D;]A;3. 選択したルートに対して提供されているグラフは次のとおりです:]D;]A;<br>   a. 選択したルートに含まれている各コンポーネントのコンポーネント読み込み時間]D;]A;<br>   b. アプリケーション読み込み時間の内訳]D;]A;]D;]A;<p>**以下のパラメーターは、下のすべてのグラフに影響を与えます:**</p>]D;]A;]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.text5.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<h2 style="text-decoration: underline; margin-bottom: 0;">Performance of All Routes</h2>]D;]A;This is a landing page for your <strong>SPA</strong>, it maps to the route name in your application code.]D;]A;<p>Select a route below to view route-specific data:</p>]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -126,16 +117,13 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.7.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+      <Item ItemId=";items.text7.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<hr>]D;]A;<h2 style="text-decoration: underline; margin-bottom: 0;">Performance for Route "{Route}"</h2>]D;]A;<p>The <strong>FLT</strong> gives you the length of time of the first load of the route.  It includes the first <strong>VLT</strong> and the <strong>ALT</strong>. </p>]D;]A;<p>If the route is hit after the first load, there won't be an <strong>ALT</strong> for it.  There will only be a <strong>VLT</strong>.</p>]D;]A;]D;]A;<p>This chart gives you a high-level view of your site, and can tell you if your <strong>VLT</strong> or <strong>ALT</strong> has regressed from the <strong>FLT</strong>.</p>]D;]A;<p>When the <strong>VLT</strong> has regressed use the "Performance of the Components Loaded In Route" chart to further explore what happened on the page</p>]D;]A;]D;]A;<p>For <strong>ALT</strong> regressions, use the "Performance of Application Sub-Timings for Route" to see what sub timings are affecting your <strong>ALT</strong>.</p>]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[<hr>]D;]A;<h2 style="text-decoration: underline; margin-bottom: 0;">ルート "{Route}" のパフォーマンス</h2>]D;]A;<p><strong>FLT</strong> はルートの初回読み込みの時間の長さを示します。これには初回の <strong>VLT</strong> と <strong>ALT</strong> が含まれます。</p>]D;]A;<p>初回読み込みの後にルートがヒットした場合、それに関する <strong>ALT</strong> はありません。あるのは <strong>VLT</strong> だけです。</p>]D;]A;]D;]A;<p>このグラフはサイトの概要を示し、<strong>VLT</strong> または <strong>ALT</strong> が <strong>FLT</strong> から低下しているかどうかを示すことができます。</p>]D;]A;<p><strong>VLT</strong> が低下している場合は、"ルートの読み込まれたコンポーネントのパフォーマンス" グラフを使用して、ページで生じたことをさらに調査してください</p>]D;]A;]D;]A;<p><strong>ALT</strong> の低下の場合は、"ルートのアプリケーション サブタイミングのパフォーマンス" を使用して、どのサブタイミングが <strong>ALT</strong> に影響しているかをご確認ください。</p>]]></Val>
-          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.9.content.json" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.text9.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<hr>]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
