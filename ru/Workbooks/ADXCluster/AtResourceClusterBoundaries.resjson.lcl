@@ -25,10 +25,13 @@
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) ontent.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[The CPU score is decided as follows:]D;]A;</br>]D;]A;</br>]D;]A;]D83D;]DD34; <strong>High</strong> - If the precentile 80 of the last day is higher than {CpuHighThreshold}%]D;]A;</br>]D;]A;]D83D;]DFE1; <strong>Medium</strong> - If the median of the precentile 90 of the last week is higher than {CpuLowThreshold}%]D;]A;</br>]D;]A;]D83D;]DFE2; <strong>Low</strong> - Otherwise]]></Val>
+            <Val><![CDATA[The CPU score is decided as follows:]D;]A;</br>]D;]A;</br>]D;]A;]D83D;]DD34; <strong>High</strong> - If the percentile 80 of the last day is higher than {CpuHighThreshold}%]D;]A;</br>]D;]A;]D83D;]DFE1; <strong>Medium</strong> - If the median of the percentile 90 of the last week is higher than {CpuLowThreshold}%]D;]A;</br>]D;]A;]D83D;]DFE2; <strong>Low</strong> - Otherwise]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Оценка ЦП выбирается следующим образом.]D;]A;</br>]D;]A;</br>]D;]A;]D83D;]DD34; <strong>Высокая</strong> — если 80-й процентиль за последний день выше, чем {CpuHighThreshold}%.]D;]A;</br>]D;]A;]D83D;]DFE1; <strong>Средняя</strong> — если медиана 90-го процентиля за последнюю неделю выше, чем {CpuLowThreshold}%.]D;]A;</br>]D;]A;]D83D;]DFE2; <strong>Низкая</strong> — в ином случае]]></Val>
+              <Val><![CDATA[Оценка ЦП определяется следующим образом.]D;]A;</br>]D;]A;</br>]D;]A;]D83D;]DD34; <strong>Высокая</strong> — если 80-й процентиль за последний день выше, чем {CpuHighThreshold} %.]D;]A;</br>]D;]A;]D83D;]DFE1; <strong>Средняя</strong> — если медиана 90-го процентиля за последнюю неделю выше, чем {CpuLowThreshold} %.]D;]A;</br>]D;]A;]D83D;]DFE2; <strong>Низкая</strong> — в ином случае.]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[The CPU score is decided as follows:]D;]A;</br>]D;]A;</br>]D;]A;]D83D;]DD34; <strong>High</strong> - If the precentile 80 of the last day is higher than {CpuHighThreshold}%]D;]A;</br>]D;]A;]D83D;]DFE1; <strong>Medium</strong> - If the median of the precentile 90 of the last week is higher than {CpuLowThreshold}%]D;]A;</br>]D;]A;]D83D;]DFE2; <strong>Low</strong> - Otherwise]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -49,10 +52,13 @@
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) rviewtable.content.gridSettings.labelSettings.LastDayPrecentile80.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Last Day Precentile 80]]></Val>
+            <Val><![CDATA[Last Day Percentile 80]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
               <Val><![CDATA[80-й процентиль за последний день]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[Last Day Precentile 80]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -178,10 +184,13 @@
         </Item>
         <Item ItemId=";(...) tent.items.ingestionoverviewtext.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[The ingestion score is decided as follows:]D;]A;</br>]D;]A;</br>]D;]A;]D83D;]DD34; <strong>High</strong> - If the precentile 90 of the last 5 days is higher than {IngestionHighThreshold}%]D;]A;</br>]D;]A;]D83D;]DFE1; <strong>Medium</strong> - If the precentile 90 of the last 5 days equals to {IngestionHighThreshold}%]D;]A;</br>]D;]A;]D83D;]DFE2; <strong>Low</strong> - Otherwise]]></Val>
+            <Val><![CDATA[The ingestion score is decided as follows:]D;]A;</br>]D;]A;</br>]D;]A;]D83D;]DD34; <strong>High</strong> - If the percentile 90 of the last 5 days is higher than {IngestionHighThreshold}%]D;]A;</br>]D;]A;]D83D;]DFE1; <strong>Medium</strong> - If the percentile 90 of the last 5 days equals to {IngestionHighThreshold}%]D;]A;</br>]D;]A;]D83D;]DFE2; <strong>Low</strong> - Otherwise]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Оценка приема выбирается следующим образом.]D;]A;</br>]D;]A;</br>]D;]A;]D83D;]DD34; <strong>Высокая</strong> — если 90-й процентиль за последние 5 дней выше, чем {IngestionHighThreshold} %.]D;]A;</br>]D;]A;]D83D;]DFE1; <strong>Средняя</strong> — если 90-й процентиль за последние 5 дней равен {IngestionHighThreshold} %.]D;]A;</br>]D;]A;]D83D;]DFE2; <strong>Низкая</strong> — в ином случае]]></Val>
+              <Val><![CDATA[Оценка приема данных определяется следующим образом.]D;]A;</br>]D;]A;</br>]D;]A;]D83D;]DD34; <strong>Высокая</strong> — если 90-й процентиль за последние 5 дней выше, чем {IngestionHighThreshold} %.]D;]A;</br>]D;]A;]D83D;]DFE1; <strong>Средняя</strong> — если 90-й процентиль за последние 5 дней равен {IngestionHighThreshold} %.]D;]A;</br>]D;]A;]D83D;]DFE2; <strong>Низкая</strong> — в ином случае.]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[The ingestion score is decided as follows:]D;]A;</br>]D;]A;</br>]D;]A;]D83D;]DD34; <strong>High</strong> - If the precentile 90 of the last 5 days is higher than {IngestionHighThreshold}%]D;]A;</br>]D;]A;]D83D;]DFE1; <strong>Medium</strong> - If the precentile 90 of the last 5 days equals to {IngestionHighThreshold}%]D;]A;</br>]D;]A;]D83D;]DFE2; <strong>Low</strong> - Otherwise]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -202,10 +211,13 @@
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) text.content.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[The bar chart below shows the precentile 90 of the ingestion utilization in the last 7 days.]]></Val>
+            <Val><![CDATA[The bar chart below shows the percentile 90 of the ingestion utilization in the last 7 days.]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[На линейчатой диаграмме ниже показан 90-й процентиль использования приема за последние 7 дней.]]></Val>
+              <Val><![CDATA[На линейчатой диаграмме ниже показан 90-й процентиль использования приема данных за последние 7 дней.]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[The bar chart below shows the precentile 90 of the ingestion utilization in the last 7 days.]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -287,10 +299,13 @@
       </Item>
       <Item ItemId=";items.Clusterboundariesall.content.items.CPUUtilization.content.items.CPUpercentile90bydaytext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[The bar chart below shows the precentile 90 of the CPU utilization in the last 7 days. ]D;]A;]D;]A;]]></Val>
+          <Val><![CDATA[The bar chart below shows the percentile 90 of the CPU utilization in the last 7 days. ]D;]A;]D;]A;]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[На линейчатой диаграмме ниже показан 90-й процентиль загрузки ЦП за последние 7 дней. ]D;]A;]D;]A;]]></Val>
+            <Val><![CDATA[На линейчатой диаграмме ниже показан 90-й процентиль использования ЦП за последние 7 дней. ]D;]A;]D;]A;]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[The bar chart below shows the precentile 90 of the CPU utilization in the last 7 days. ]D;]A;]D;]A;]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -344,15 +359,6 @@
           <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px -304px 0px 0px;position: relative;">]D83D;]DCC8; Cache Utilization]D;]A;</span> ]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px -304px 0px 0px;position: relative;">]D83D;]DCC8; Использование кэша]D;]A;</span> ]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Clusterboundariesall.content.items.Clusterboundariestitle.content.json" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 18px;font-style: bold;margin:-10px -304px 0px 0px;position: relative;top:-5px;">]D83D;]DCCA; Cluster Boundaries]D;]A;</span> ]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 18px;font-style: bold;margin:-10px -304px 0px 0px;position: relative;top:-5px;">]D83D;]DCCA; Границы кластера]D;]A;</span> ]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
