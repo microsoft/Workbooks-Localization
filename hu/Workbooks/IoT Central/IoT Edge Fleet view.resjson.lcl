@@ -9,9 +9,9 @@
     <Disp Icon="Expand" Expand="true" Disp="true" LocTbl="false" />
     <Item ItemId=";Strings" ItemType="0" PsrId="306" Leaf="false">
       <Disp Icon="Str" Disp="true" LocTbl="false" />
-      <Item ItemId=";@items.devicegroup.content.items.devicehealthgroup.content.items.devicehealthgraph.content.gridSettings.labelSetti" ItemType="0" PsrId="306" Leaf="false">
+      <Item ItemId=";@items.fleetview.content.items.summaryreportgroup.content.items.devicehealthgroup.content.items.devicehealthgraph." ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) ngs.agoText.label" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) content.gridSettings.labelSettings.agoText.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Last seen]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -20,19 +20,16 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
-        <Item ItemId=";(...) ngs.device.label" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) content.gridSettings.labelSettings.device.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Name]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
               <Val><![CDATA[Név]]></Val>
             </Tgt>
-            <Prev Cat="Text">
-              <Val><![CDATA[Device name]]></Val>
-            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
-        <Item ItemId=";(...) ngs.iotresource.label" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) content.gridSettings.labelSettings.iotresource.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[IoT Resource]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -41,7 +38,7 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
-        <Item ItemId=";(...) ngs.p95Disk.label" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) content.gridSettings.labelSettings.p95Disk.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Disk (p95)]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -50,7 +47,7 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
-        <Item ItemId=";(...) ngs.p95HostCpu.label" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) content.gridSettings.labelSettings.p95HostCpu.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[CPU (p95)]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -59,7 +56,7 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
-        <Item ItemId=";(...) ngs.p95HostMem.label" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) content.gridSettings.labelSettings.p95HostMem.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Memory (p95)]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -68,16 +65,16 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
-        <Item ItemId=";(...) ngs.p95QLen.label" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) content.gridSettings.labelSettings.p95QLen.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[QLen (p95)]]></Val>
+            <Val><![CDATA[Queue (p95)]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Várólista hossza (QLen) (95%)]]></Val>
+              <Val><![CDATA[Várakozási sor (95%)]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
-        <Item ItemId=";(...) ngs.recentLocalMessages.label" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) content.gridSettings.labelSettings.recentLocalMessages.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[△ Msg. (local)]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -86,7 +83,7 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
-        <Item ItemId=";(...) ngs.recentUpstreamMessages.label" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) content.gridSettings.labelSettings.recentUpstreamMessages.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[△ Msg. (upstream)]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -95,7 +92,7 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
-        <Item ItemId=";(...) ngs.statusHelper.label" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) content.gridSettings.labelSettings.statusHelper.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Status]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -104,28 +101,49 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
-        <Item ItemId=";(...) ngs.totalLocalMessages.label" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) content.gridSettings.labelSettings.totalLocalMessages.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[# Msg. (local)]]></Val>
+            <Val><![CDATA[Local Msg. Count]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Üzenetek száma (helyi)]]></Val>
+              <Val><![CDATA[Helyi üzenetszám]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
-        <Item ItemId=";(...) ngs.totalUpstreamMessages.label" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) content.gridSettings.labelSettings.totalUpstreamMessages.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[# Msg. (upstream)]]></Val>
+            <Val><![CDATA[Upstream Msg. Count]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Üzenetek száma (kiinduló)]]></Val>
+              <Val><![CDATA[Kiinduló üzenetszám]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[No results to display.  Some may have been filtered.]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Nincs megjeleníthető eredmény.  Lehet, hogy néhányat szűrtek.]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
       </Item>
-      <Item ItemId=";@items.devicegroup.content.items.devicehealthgroup.content.items.filtergroup.content.items.DatatableFilters.conten" ItemType="0" PsrId="306" Leaf="false">
+      <Item ItemId=";@items.fleetview.content.items.summaryreportgroup.content.items.devicehealthgroup.content.items.devicelistmaintip." ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) t.parameters.03f75ae10f9445d4985bcb518303f184.label" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) content.json" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Click the device _Name_ to see device details.  Click the device _Status_ to see a snapshot of health metrics.]D;]A;]D;]A;When a device is _Unhealthy_ an arrow icon will appear beside the number in each column that has surpassed its expected threshold value.]D;]A;]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Az eszköz adatainak megtekintéséhez kattintson az eszköz _Név_ elemére.  Kattintson az eszköz _Állapot_  elemére az állapotmetrikák pillanatképének megtekintéséhez.]D;]A;]D;]A;Ha egy eszköz _Nem kifogástalan_ állapotú, egy nyíl ikon jelenik meg a szám mellett minden olyan oszlopban, amely meghaladta a várt küszöbértéket.]D;]A;]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
+      <Item ItemId=";@items.fleetview.content.items.summaryreportgroup.content.items.devicehealthgroup.content.items.filtergroup.conten" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) t.items.DatatableFilters.content.parameters.03f75ae10f9445d4985bcb518303f184.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Memory >= (%)]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -134,7 +152,7 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
-        <Item ItemId=";(...) t.parameters.26af57753dba4947b12bf1356a3ee67d.label" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) t.items.DatatableFilters.content.parameters.26af57753dba4947b12bf1356a3ee67d.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Health Status]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -143,7 +161,7 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
-        <Item ItemId=";(...) t.parameters.60ffd2b53c704dff9690645879a77a3d.label" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) t.items.DatatableFilters.content.parameters.60ffd2b53c704dff9690645879a77a3d.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[CPU >= (%)]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -152,7 +170,7 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
-        <Item ItemId=";(...) t.parameters.6dbef6182d8c401e840b17683610312d.label" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) t.items.DatatableFilters.content.parameters.6dbef6182d8c401e840b17683610312d.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Disk >= (%)]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -161,7 +179,7 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
-        <Item ItemId=";(...) t.parameters.a4fe1e430c9e436882a06800438bca8e.label" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) t.items.DatatableFilters.content.parameters.a4fe1e430c9e436882a06800438bca8e.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Last seen >= (mins)]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -170,9 +188,9 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
-        <Item ItemId=";(...) t.parameters.eb232a4cf8b6473492f4ac2e5e1bb096.label" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) t.items.DatatableFilters.content.parameters.eb232a4cf8b6473492f4ac2e5e1bb096.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[QLen >= (#)]]></Val>
+            <Val><![CDATA[Queue Length >= (#)]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
               <Val><![CDATA[Várólista hossza >= (#)]]></Val>
             </Tgt>
@@ -180,9 +198,9 @@
           <Disp Icon="Str" />
         </Item>
       </Item>
-      <Item ItemId=";@items.devicegroup.content.items.fleetsummarygroup.content.items.fleetsummarytext.content.items.healthsummarytextb" ItemType="0" PsrId="306" Leaf="false">
+      <Item ItemId=";@items.fleetview.content.items.summaryreportgroup.content.items.fleetsummarygroup.content.items.fleetsummarytext.c" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) asequery.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) ontent.items.healthsummarytextbasequery.content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Health Summary Text - Base Query]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -191,10 +209,7 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
-      </Item>
-      <Item ItemId=";@items.devicegroup.content.items.fleetsummarygroup.content.items.fleetsummarytext.content.items.loadingtext.conten" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) t.json" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) ontent.items.loadingtext.content.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[#### Loading...]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -203,10 +218,7 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
-      </Item>
-      <Item ItemId=";@items.devicegroup.content.items.fleetsummarygroup.content.items.fleetsummarytext.content.items.textsummaries.cont" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) ent.items.allOK.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) ontent.items.textsummaries.content.items.allOK.content.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[All devices appear to be healthy!]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -215,7 +227,7 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
-        <Item ItemId=";(...) ent.items.firstpanicsummary.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+        <Item ItemId=";(...) ontent.items.textsummaries.content.items.firstpanicsummary.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[** {NumDevicesFirstPanicNoData} ** devices **have not been seen in over {firstPanicNoDataThresholdMins} mins** (warning)]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -224,7 +236,7 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
-        <Item ItemId=";(...) ent.items.highCPUsummary.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+        <Item ItemId=";(...) ontent.items.textsummaries.content.items.highCPUsummary.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[** {NumDevicesHighCPU} ** device(s) reporting **high CPU usage** (>= {hostCpuPercentThreshold}%)]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -233,7 +245,7 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
-        <Item ItemId=";(...) ent.items.highQlengthsummary.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+        <Item ItemId=";(...) ontent.items.textsummaries.content.items.highQlengthsummary.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[** {NumDevicesHighQLen} ** device(s) reporting **high queue length** (>= {qlenThreshold})]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -242,7 +254,7 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
-        <Item ItemId=";(...) ent.items.highdisksummary.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+        <Item ItemId=";(...) ontent.items.textsummaries.content.items.highdisksummary.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[** {NumDevicesHighDisk} ** device(s) reporting **high disk usage** (>= {hostDiskPercentThreshold}%)]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -251,7 +263,7 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
-        <Item ItemId=";(...) ent.items.highmemorysummary.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+        <Item ItemId=";(...) ontent.items.textsummaries.content.items.highmemorysummary.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[** {NumDevicesHighMem} ** device(s) reporting **high memory usage** (>= {hostMemPercentThreshold}%)]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -260,7 +272,7 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
-        <Item ItemId=";(...) ent.items.secondpanicsummary.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+        <Item ItemId=";(...) ontent.items.textsummaries.content.items.secondpanicsummary.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[** {NumDevicesSecondPanicNoData} ** devices **have not been seen in over {secondPanicNoDataThresholdMins} mins**]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -270,124 +282,37 @@
           <Disp Icon="Str" />
         </Item>
       </Item>
-      <Item ItemId=";@items.devicegroup.content.items.thresholdparamsgroup.content.items.thresholdparameters.content.parameters.1d855e6" ItemType="0" PsrId="306" Leaf="false">
+      <Item ItemId=";@items.fleetview.content.items.summaryreportgroup.content.items.showtipexpandscopetomultipleIoTResources.content.j" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) 45e594595849393c2aae5e625.label" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) son" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Disk (%)]]></Val>
+            <Val><![CDATA[Use the "IoT resources" drop-down above to select a different IoT Resource or include multiple IoT resources.]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Lemez (%)]]></Val>
+              <Val><![CDATA[Az „IoT-erőforrások“ legördülő menüből válasszon egy másik IoT-erőforrást, vagy adjon hozzá több IoT-erőforrást.]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
       </Item>
-      <Item ItemId=";@items.devicegroup.content.items.thresholdparamsgroup.content.items.thresholdparameters.content.parameters.34be45f" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) 487ac4df192a16959e2875ff3.label" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[Msgs sent (upstream)]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Elküldött üzenetek (kiinduló)]]></Val>
-            </Tgt>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-      </Item>
-      <Item ItemId=";@items.devicegroup.content.items.thresholdparamsgroup.content.items.thresholdparameters.content.parameters.4e1c32f" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) 90aaa4678b745f292e1751993.label" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[CPU (%)]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[CPU (%)]]></Val>
-            </Tgt>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-      </Item>
-      <Item ItemId=";@items.devicegroup.content.items.thresholdparamsgroup.content.items.thresholdparameters.content.parameters.66e46f1" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) ac3374edc895e485ac1fceb70.label" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[Error: No data received (mins)]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Hiba: Nem érkeztek adatok (perc)]]></Val>
-            </Tgt>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-      </Item>
-      <Item ItemId=";@items.devicegroup.content.items.thresholdparamsgroup.content.items.thresholdparameters.content.parameters.7727ab3" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) 8dc51415f8d03e8fb7fc3c775.label" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[Msgs sent (local)]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Elküldött üzenetek (helyi)]]></Val>
-            </Tgt>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-      </Item>
-      <Item ItemId=";@items.devicegroup.content.items.thresholdparamsgroup.content.items.thresholdparameters.content.parameters.c4cc0d1" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) 84fae4639bcf371ae674a7db4.label" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[Memory (%)]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Memória (%)]]></Val>
-            </Tgt>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-      </Item>
-      <Item ItemId=";@items.devicegroup.content.items.thresholdparamsgroup.content.items.thresholdparameters.content.parameters.d3501cb" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) 86dd64fddab9b954a5f937cf9.label" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[Warn: No data received (mins)]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Figyelmeztetés: Nem érkeztek adatok (perc)]]></Val>
-            </Tgt>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-      </Item>
-      <Item ItemId=";@items.devicegroup.content.items.thresholdparamsgroup.content.items.thresholdparameters.content.parameters.debf892" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) 1313c4d44910ebf15585440cd.label" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[QLen]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Várólista hossza (QLen)]]></Val>
-            </Tgt>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-      </Item>
-      <Item ItemId=";items.devicegroup.content.items.devicehealthgroup.content.items.devicehealthgraph.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.fleetview.content.items.healthparameterstip.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[No results to display.  Some may have been filtered.]]></Val>
+          <Val><![CDATA[**Thresholds**]D;]A;]D;]A;<p style="padding:0px 8px">]D;]A;Devices that exceed these threshold parameters are considered _Unhealthy_.  If a device has not recently reported data within a specific warning / error window then it is marked as _Unknown_.]D;]A;</p>]D;]A;]D;]A;<p style="padding:0px 8px">]D;]A;To permanently change the default health thresholds you you need to _Edit_ this workbook.]D;]A;</p>]D;]A;]D;]A;<p style="padding:0px 8px">]D;]A;Use the ↻ icon that appears beside the threshold's name to reset the value to its default.]D;]A;</p>]D;]A;]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Nincs megjeleníthető eredmény.  Lehet, hogy néhányat szűrtek.]]></Val>
+            <Val><![CDATA[**Küszöbértékek**]D;]A;]D;]A;<p style="padding:0px 8px">]D;]A;Az eszközök, amelyek meghaladják ezeket a küszöbérték-paramétereket _Nem kifogástalan_ állapotúnak minősülnek.  Ha egy eszköz nem jelentett mostanában adatokat egy adott figyelmeztetési vagy hibaablakban, akkor az _Ismeretlen_ jelöléssel jelenik meg.]D;]A;</p>]D;]A;]D;]A;<p style="padding:0px 8px">]D;]A;Az alapértelmezett állapotküszöbök végleges módosításához _szerkesztenie_ kell ezt a munkafüzetet.]D;]A;</p>]D;]A;]D;]A;<p style="padding:0px 8px">]D;]A;A küszöbérték neve mellett megjelenő ↻ ikon használatával állítsa vissza az értéket az alapértelmezett értékre.]D;]A;</p>]D;]A;]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.devicegroup.content.items.devicehealthgroup.content.items.devicelistmaintip.content.json" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.fleetview.content.items.showtipparameter.content.parameters.060313e0e2a64cc198fb70d6cdd8c198.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Click the device _Name_ to see device details.  Click the device _Status_ to see a snapshot of health metrics.]D;]A;]D;]A;When a device is _Unhealthy_ an arrow icon will appear beside the number in each column that has surpassed its expected threshold value.]D;]A;]]></Val>
+          <Val><![CDATA[Show Tips]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Az eszköz adatainak megtekintéséhez kattintson az eszköz _Név_ elemére.  Kattintson az eszköz _Állapot_  elemére az állapotmetrikák pillanatképének megtekintéséhez.]D;]A;]D;]A;Ha egy eszköz _Nem kifogástalan_ állapotú, egy nyíl ikon jelenik meg a szám mellett minden olyan oszlopban, amely meghaladta a várt küszöbértéket.]D;]A;]]></Val>
+            <Val><![CDATA[Tippek megjelenítése]]></Val>
           </Tgt>
-          <Prev Cat="Text">
-            <Val><![CDATA[**Click Device name in Hive cell to see device snapshot.** You can modify the thresholds for "health" or define your own by editing the query. See https://aka.ms/edgemon-customize-visuals for more info.]]></Val>
-          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.devicegroup.content.items.devicehealthgroup.content.loadButtonText" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.fleetview.content.items.summaryreportgroup.content.items.devicehealthgroup.content.loadButtonText" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Details]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -396,38 +321,92 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.devicegroup.content.items.fleetsummarygroup.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.fleetview.content.items.thresholdparameters.content.parameters.1d855e645e594595849393c2aae5e625.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Disk (%)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Lemez (%)]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.fleetview.content.items.thresholdparameters.content.parameters.34be45f487ac4df192a16959e2875ff3.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Msgs sent (upstream)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Elküldött üzenetek (kiinduló)]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.fleetview.content.items.thresholdparameters.content.parameters.4e1c32f90aaa4678b745f292e1751993.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[CPU (%)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[CPU (%)]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.fleetview.content.items.thresholdparameters.content.parameters.66e46f1ac3374edc895e485ac1fceb70.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Error: No data received (mins)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Hiba: Nem érkeztek adatok (perc)]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.fleetview.content.items.thresholdparameters.content.parameters.7727ab38dc51415f8d03e8fb7fc3c775.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Msgs sent (local)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Elküldött üzenetek (helyi)]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.fleetview.content.items.thresholdparameters.content.parameters.c4cc0d184fae4639bcf371ae674a7db4.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Memory (%)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Memória (%)]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.fleetview.content.items.thresholdparameters.content.parameters.d3501cb86dd64fddab9b954a5f937cf9.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Warn: No data received (mins)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Figyelmeztetés: Nem érkeztek adatok (perc)]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.fleetview.content.items.thresholdparameters.content.parameters.debf8921313c4d44910ebf15585440cd.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Queue Length]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Várólista hossza]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.fleetview.content.items.toplevelnavigation.content.links.206b27872c5342fd8d0b7d56e9c11603.linkLabel" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Settings]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Beállítások]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.fleetview.content.items.toplevelnavigation.content.links.b0791589c9e0414bb09512dec3091e9c.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Summary Report]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Összefoglaló jelentés]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.devicegroup.content.items.thresholdparamsgroup.content.items.healthparameterstip.content.json" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[_**Reset a threshold value to its original default by clicking the**_  ↻  _**icon that appears beside the header if the default has been changed.**_]D;]A;]D;]A;You can enter _Edit_ mode for this workbook to modify and persist different default health thresholds.]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[_**A küszöbérték eredeti alapértékre való visszaállításához kattintson a fejléc mellett megjelenő**_  ↻  _**ikonra, ha módosult az alapérték.**_]D;]A;]D;]A;A munkafüzet _Szerkesztés_ módjába léphet az állapotküszöbök módosításához és a különböző alapértelmezett állapotküszöbök megőrzéséhez.]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.devicegroup.content.items.thresholdparamsgroup.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Health Thresholds (defaults)]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Állapotküszöbök (alapértelmezések)]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.fleetviewparameters.content.parameters.060313e0e2a64cc198fb70d6cdd8c198.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Show Tips]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Tippek megjelenítése]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -446,15 +425,6 @@
           <Val><![CDATA[Current IoT resource]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Aktuális IoT-erőforrás]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.fleetviewparameters.content.parameters.8f6ac903cbd049bba996ede1f2596644.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Show Thresholds]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Küszöbértékek megjelenítése]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -527,15 +497,6 @@
           <Val><![CDATA[Insights Metrics Exist]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Léteznek elemzési metrikák]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.showtipexpandscopetomultipleIoTResources.content.json" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Use the _IoT resources_ drop-down to select a different IoT Resource or include others.]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Az _IoT-erőforrások_ legördülő menüből válasszon egy másik IoT-erőforrást, vagy adjon hozzá többet.]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
