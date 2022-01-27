@@ -9,18 +9,6 @@
     <Disp Icon="Expand" Expand="true" Disp="true" LocTbl="false" />
     <Item ItemId=";Strings" ItemType="0" PsrId="306" Leaf="false">
       <Disp Icon="Str" Disp="true" LocTbl="false" />
-      <Item ItemId=";@items.group0.content.items.Insights.content.items.MacOS.content.gridSettings.labelSettings.AvgPromptsPerMacUser.l" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) abel" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[Average prompts per Mac user]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Mac 사용자당 평균 프롬프트]]></Val>
-            </Tgt>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-      </Item>
       <Item ItemId=";items.group0.content.items.Insights.content.items.MacOS.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[ MacOS user authentication prompts]]></Val>
@@ -131,10 +119,13 @@
       </Item>
       <Item ItemId=";items.group0.content.items.query1.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[% Authentication prompts by method]]></Val>
+          <Val><![CDATA[% Prompts by method]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[방법별 인증 프롬프트 비율(%)]]></Val>
+            <Val><![CDATA[메서드별 프롬프트 비율]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[% Authentication prompts by method]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -149,10 +140,13 @@
       </Item>
       <Item ItemId=";items.group0.content.items.query10.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Average authentication prompts per user]]></Val>
+          <Val><![CDATA[Average prompts for users]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[사용자당 평균 인증 프롬프트]]></Val>
+            <Val><![CDATA[사용자에 대한 평균 프롬프트]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Average authentication prompts per user]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -167,10 +161,13 @@
       </Item>
       <Item ItemId=";items.group0.content.items.query11.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Median authentication prompts per user]]></Val>
+          <Val><![CDATA[Median prompts for users]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[사용자당 중간 인증 프롬프트]]></Val>
+            <Val><![CDATA[사용자에 대한 중앙값 프롬프트]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Median authentication prompts per user]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -185,10 +182,13 @@
       </Item>
       <Item ItemId=";items.group0.content.items.query12.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[% Authenticaton prompts by app]]></Val>
+          <Val><![CDATA[% Prompts by application]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[앱별 인증 프롬프트 비율(%)]]></Val>
+            <Val><![CDATA[응용 프로그램별 프롬프트 비율]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[% Authenticaton prompts by app]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -203,10 +203,13 @@
       </Item>
       <Item ItemId=";items.group0.content.items.query13.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Hourly authentication prompts by application]]></Val>
+          <Val><![CDATA[Hourly prompts by application]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[애플리케이션별 시간별 인증 프롬프트]]></Val>
+            <Val><![CDATA[애플리케이션별 시간별 프롬프트]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Hourly authentication prompts by application]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -239,10 +242,13 @@
       </Item>
       <Item ItemId=";items.group0.content.items.query14.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Authentication prompts per application]]></Val>
+          <Val><![CDATA[Prompts by application]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[애플리케이션당 인증 프롬프트]]></Val>
+            <Val><![CDATA[애플리케이션별 프롬프트]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Authentication prompts per application]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -257,63 +263,69 @@
       </Item>
       <Item ItemId=";items.group0.content.items.query15.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Average authentication prompts per app]]></Val>
+          <Val><![CDATA[Average prompts for applications]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[앱당 평균 인증 프롬프트]]></Val>
+            <Val><![CDATA[애플리케이션에 대한 평균 프롬프트]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Average authentication prompts per app]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group0.content.items.query16.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Median authentication prompts per app]]></Val>
+          <Val><![CDATA[Median prompts for applications]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[앱당 중간 인증 프롬프트]]></Val>
+            <Val><![CDATA[애플리케이션에 대한 중앙값 프롬프트]]></Val>
+          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Median authentication prompts per app]]></Val>
+          </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.group0.content.items.query19Copy.content.chartSettings.seriesLabelSettings.0.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[ADFS]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[ADFS]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.group0.content.items.query17.content.chartSettings.seriesLabelSettings.0.label" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.group0.content.items.query19Copy.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Client-side policy (App requires MFA)]]></Val>
+          <Val><![CDATA[Prompts by authentication policy]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[클라이언트 쪽 정책(앱에 MFA 필요)]]></Val>
+            <Val><![CDATA[인증 정책별 프롬프트]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.group0.content.items.query17.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.group0.content.items.query19CopyCopy.content.chartSettings.seriesLabelSettings.0.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[% Authentication by policy type]]></Val>
+          <Val><![CDATA[Client-side (App requires MFA)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[정책 유형별 인증 비율(%)]]></Val>
+            <Val><![CDATA[클라이언트 측(앱에서 MFA 필요)]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.group0.content.items.query18.content.chartSettings.seriesLabelSettings.2.label" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.group0.content.items.query19CopyCopy.content.chartSettings.seriesLabelSettings.1.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Client-side policy (App requires MFA)]]></Val>
+          <Val><![CDATA[ADFS]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[클라이언트 쪽 정책(앱에 MFA 필요)]]></Val>
+            <Val><![CDATA[ADFS]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.group0.content.items.query18.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.group0.content.items.query19CopyCopy.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Hourly prompts by authentication policy]]></Val>
+          <Val><![CDATA[Prompts by authentication policy]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[인증 정책별 시간별 프롬프트]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.group0.content.items.query19.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[% ADFS  authentications by method]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[메서드별 ADFS 인증 비율(%)]]></Val>
+            <Val><![CDATA[인증 정책별 프롬프트]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -329,37 +341,13 @@
       </Item>
       <Item ItemId=";items.group0.content.items.query2.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Daily authentication prompts by method]]></Val>
+          <Val><![CDATA[Daily prompts by method]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[방법별 일일 인증 프롬프트]]></Val>
+            <Val><![CDATA[메서드별 일일 프롬프트]]></Val>
           </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.group0.content.items.query20.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Hourly ADFS authentications]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[시간별 ADFS 인증]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.group0.content.items.query21.content.gridSettings.labelSettings.ADFSAuth.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[ADFS authentication]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[ADFS 인증]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.group0.content.items.query21.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Summary of count by authentication policy]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[인증 정책별 개수 요약]]></Val>
-          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Daily authentication prompts by method]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -374,9 +362,48 @@
       </Item>
       <Item ItemId=";items.group0.content.items.query3.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[% Authentication prompts by operating system]]></Val>
+          <Val><![CDATA[% Prompts by operating system]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[운영 체제별 인증 프롬프트 비율(%)]]></Val>
+            <Val><![CDATA[운영 체제별 프롬프트 비율]]></Val>
+          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[% Authentication prompts by operating system]]></Val>
+          </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.group0.content.items.query36.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[% Prompts by process detail]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[프로세스별 프롬프트 비율 세부 정보]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.group0.content.items.query36Copy.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Hourly Prompts by process detail]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[프로세스별 시간별 프롬프트 세부 정보]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.group0.content.items.query36CopyCopy.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Interactive Legacy TLS]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[대화형 레거시 TLS]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.group0.content.items.query36CopyCopyCopy.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Non-Interactive Legacy TLS]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[비대화형 레거시 TLS]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -392,28 +419,37 @@
       </Item>
       <Item ItemId=";items.group0.content.items.query4.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Hourly authentication prompts by operating system]]></Val>
+          <Val><![CDATA[Hourly prompts by operating system]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[운영 체제별 시간별 인증 프롬프트]]></Val>
+            <Val><![CDATA[운영 체제별 시간별 프롬프트]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Hourly authentication prompts by operating system]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group0.content.items.query5.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[% Authentication prompts by device state]]></Val>
+          <Val><![CDATA[% Prompts by device state]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[디바이스 상태별 인증 프롬프트 비율(%)]]></Val>
+            <Val><![CDATA[장치 상태별 프롬프트 비율(%)]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[% Authentication prompts by device state]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group0.content.items.query6.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Hourly authentication prompts by device state]]></Val>
+          <Val><![CDATA[Hourly prompts by device state]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[디바이스 상태별 시간별 인증 프롬프트]]></Val>
+            <Val><![CDATA[디바이스 상태별 시간별 프롬프트]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Hourly authentication prompts by device state]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -428,10 +464,13 @@
       </Item>
       <Item ItemId=";items.group0.content.items.query7.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[% Authentication prompts by user]]></Val>
+          <Val><![CDATA[% Prompts by user]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[사용자별 인증 프롬프트 비율(%)]]></Val>
+            <Val><![CDATA[사용자별 프롬프트 비율]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[% Authentication prompts by user]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -446,19 +485,25 @@
       </Item>
       <Item ItemId=";items.group0.content.items.query8.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Hourly authentication prompts by user]]></Val>
+          <Val><![CDATA[Hourly prompts by user]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[사용자별 시간별 인증 프롬프트]]></Val>
+            <Val><![CDATA[사용자별 시간별 프롬프트]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Hourly authentication prompts by user]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group0.content.items.query9.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Authentication prompts per user]]></Val>
+          <Val><![CDATA[Prompts by user]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[사용자당 인증 프롬프트]]></Val>
+            <Val><![CDATA[사용자별 프롬프트]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Authentication prompts per user]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -471,21 +516,15 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.group0.content.items.text10.content.json" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[# ADFS Authentications]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[# ADFS 인증]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
       <Item ItemId=";items.group0.content.items.text11.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[# Insights]]></Val>
+          <Val><![CDATA[# Recommendations for reducing prompts and improving user experience]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[# 인사이트]]></Val>
+            <Val><![CDATA[# 프롬프트를 줄이고 사용자 환경을 개선하기 위한 권장 사항]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[# Insights]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -543,6 +582,15 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
+      <Item ItemId=";items.group0.content.items.text7Copy.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[# Authentication prompts by process detail]D;]A;### Reminder: Enable TLS 1.2 support as Azure AD TLS 1.0/1.1 is deprecated ]D;]A;https://docs.microsoft.com/en-us/troubleshoot/azure/active-directory/enable-support-tls-environment?tabs=azure-monitor]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# 프로세스 세부 정보별 인증 프롬프트]D;]A;### 미리 알림: Azure AD TLS 1.0/1.1이 더 이상 사용되지 않으므로 TLS 1.2 지원을 사용하세요]D;]A;https://docs.microsoft.com/en-us/troubleshoot/azure/active-directory/enable-support-tls-environment?tabs=azure-monitor]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.group0.content.items.text8.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Note: A high count of failures per application can skew the average so consider both the average and the median when analyzing the data. The median represents the 50th percentile, where 50% of the applications have prompts equal to or less than the median value.]]></Val>
@@ -554,10 +602,13 @@
       </Item>
       <Item ItemId=";items.group0.content.items.text9.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[# Authentications by policy]D;]A;### Authentication policies describe how MFA is enforced and can include Conditional Acces, Security Defaults, Per User MFA, App requires MFA, and others. ]D;]A;]D;]A;### "App requires MFA" occurs when the application itself enforce the policy and requires a fresh MFA.]D;]A;]]></Val>
+          <Val><![CDATA[# Authentications prompts by policy]D;]A;### Authentication policies describe how MFA is enforced and can include Conditional Acces, Security Defaults, Per User MFA, App requires MFA, and others. ]D;]A;]D;]A;### "App requires MFA" occurs when the application itself enforce the policy and requires a fresh MFA.]D;]A;]D;]A;]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[# 정책별 인증]D;]A;### 인증 정책에는 MFA 적용 방법이 설명되며 조건부 액세스, 보안 기본값, 사용자별 MFA, 앱에 MFA 필요 등이 포함될 수 있습니다. ]D;]A;]D;]A;### "앱에 MFA 필요"는 애플리케이션 자체가 정책을 시행하고 새로운 MFA가 필요할 때 발생합니다.]D;]A;]]></Val>
+            <Val><![CDATA[# 정책별 인증 프롬프트]D;]A;### 인증 정책에는 MFA 적용 방법이 설명되며 조건부 액세스, 보안 기본값, 사용자별 MFA, 앱에 MFA 필요 등이 포함될 수 있습니다. ]D;]A;]D;]A;### "앱에 MFA 필요"는 애플리케이션 자체가 정책을 시행하고 새로운 MFA가 필요할 때 발생합니다.]D;]A;]D;]A;]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[# Authentications by policy]D;]A;### Authentication policies describe how MFA is enforced and can include Conditional Acces, Security Defaults, Per User MFA, App requires MFA, and others. ]D;]A;]D;]A;### "App requires MFA" occurs when the application itself enforce the policy and requires a fresh MFA.]D;]A;]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>

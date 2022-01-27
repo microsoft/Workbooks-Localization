@@ -9,18 +9,6 @@
     <Disp Icon="Expand" Expand="true" Disp="true" LocTbl="false" />
     <Item ItemId=";Strings" ItemType="0" PsrId="306" Leaf="false">
       <Disp Icon="Str" Disp="true" LocTbl="false" />
-      <Item ItemId=";@items.group0.content.items.Insights.content.items.MacOS.content.gridSettings.labelSettings.AvgPromptsPerMacUser.l" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) abel" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[Average prompts per Mac user]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Mac kullanıcısı başına ortalama istem sayısı]]></Val>
-            </Tgt>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-      </Item>
       <Item ItemId=";items.group0.content.items.Insights.content.items.MacOS.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[ MacOS user authentication prompts]]></Val>
@@ -131,10 +119,13 @@
       </Item>
       <Item ItemId=";items.group0.content.items.query1.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[% Authentication prompts by method]]></Val>
+          <Val><![CDATA[% Prompts by method]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Yönteme göre kimlik doğrulama istemleri yüzdesi]]></Val>
+            <Val><![CDATA[Yönteme göre istemlerin yüzdesi]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[% Authentication prompts by method]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -149,10 +140,13 @@
       </Item>
       <Item ItemId=";items.group0.content.items.query10.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Average authentication prompts per user]]></Val>
+          <Val><![CDATA[Average prompts for users]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Kullanıcı başına ortalama kimlik doğrulama istemi sayısı]]></Val>
+            <Val><![CDATA[Kullanıcılar için istemlerin ortalaması]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Average authentication prompts per user]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -167,10 +161,13 @@
       </Item>
       <Item ItemId=";items.group0.content.items.query11.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Median authentication prompts per user]]></Val>
+          <Val><![CDATA[Median prompts for users]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Kullanıcı başına kimlik doğrulama istemlerinin medyanı]]></Val>
+            <Val><![CDATA[Kullanıcılar için istemlerin medyanı]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Median authentication prompts per user]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -185,10 +182,13 @@
       </Item>
       <Item ItemId=";items.group0.content.items.query12.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[% Authenticaton prompts by app]]></Val>
+          <Val><![CDATA[% Prompts by application]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Uygulamaya göre kimlik doğrulama istemleri yüzdesi]]></Val>
+            <Val><![CDATA[Uygulamaya göre istemlerin yüzdesi]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[% Authenticaton prompts by app]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -203,10 +203,13 @@
       </Item>
       <Item ItemId=";items.group0.content.items.query13.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Hourly authentication prompts by application]]></Val>
+          <Val><![CDATA[Hourly prompts by application]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Uygulamaya göre saatlik kimlik doğrulama istemi sayısı]]></Val>
+            <Val><![CDATA[Saatlik uygulamaya göre istemler]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Hourly authentication prompts by application]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -239,10 +242,13 @@
       </Item>
       <Item ItemId=";items.group0.content.items.query14.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Authentication prompts per application]]></Val>
+          <Val><![CDATA[Prompts by application]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Uygulama başına kimlik doğrulama istemi sayısı]]></Val>
+            <Val><![CDATA[Uygulamaya göre istemler]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Authentication prompts per application]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -257,63 +263,69 @@
       </Item>
       <Item ItemId=";items.group0.content.items.query15.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Average authentication prompts per app]]></Val>
+          <Val><![CDATA[Average prompts for applications]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Uygulama başına ortalama kimlik doğrulama istemi sayısı]]></Val>
+            <Val><![CDATA[Uygulamalar için istemlerin ortalaması]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Average authentication prompts per app]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group0.content.items.query16.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Median authentication prompts per app]]></Val>
+          <Val><![CDATA[Median prompts for applications]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Uygulama başına kimlik doğrulama istemlerinin medyanı]]></Val>
+            <Val><![CDATA[Uygulamalar için istemlerin medyanı]]></Val>
+          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Median authentication prompts per app]]></Val>
+          </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.group0.content.items.query19Copy.content.chartSettings.seriesLabelSettings.0.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[ADFS]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[ADFS]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.group0.content.items.query17.content.chartSettings.seriesLabelSettings.0.label" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.group0.content.items.query19Copy.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Client-side policy (App requires MFA)]]></Val>
+          <Val><![CDATA[Prompts by authentication policy]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[İstemci tarafı ilkesi (Uygulama MFA gerektirir)]]></Val>
+            <Val><![CDATA[Kimlik doğrulama ilkesine göre istemler]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.group0.content.items.query17.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.group0.content.items.query19CopyCopy.content.chartSettings.seriesLabelSettings.0.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[% Authentication by policy type]]></Val>
+          <Val><![CDATA[Client-side (App requires MFA)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[İlke türüne göre kimlik doğrulama yüzdesi]]></Val>
+            <Val><![CDATA[İstemci tarafı (Uygulama MFA gerektirir)]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.group0.content.items.query18.content.chartSettings.seriesLabelSettings.2.label" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.group0.content.items.query19CopyCopy.content.chartSettings.seriesLabelSettings.1.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Client-side policy (App requires MFA)]]></Val>
+          <Val><![CDATA[ADFS]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[İstemci tarafı ilkesi (Uygulama MFA gerektirir)]]></Val>
+            <Val><![CDATA[ADFS]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.group0.content.items.query18.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.group0.content.items.query19CopyCopy.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Hourly prompts by authentication policy]]></Val>
+          <Val><![CDATA[Prompts by authentication policy]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Kimlik doğrulama ilkesine göre saatlik istem sayısı]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.group0.content.items.query19.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[% ADFS  authentications by method]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Yönteme göre ADFS kimlik doğrulamaları yüzdesi]]></Val>
+            <Val><![CDATA[Kimlik doğrulama ilkesine göre istemler]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -329,37 +341,13 @@
       </Item>
       <Item ItemId=";items.group0.content.items.query2.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Daily authentication prompts by method]]></Val>
+          <Val><![CDATA[Daily prompts by method]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Yönteme göre günlük kimlik doğrulama istemi sayısı]]></Val>
+            <Val><![CDATA[Günlük yönteme göre istemler]]></Val>
           </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.group0.content.items.query20.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Hourly ADFS authentications]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Saatlik ADFS kimlik doğrulaması sayısı]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.group0.content.items.query21.content.gridSettings.labelSettings.ADFSAuth.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[ADFS authentication]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[ADFS kimlik doğrulaması]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.group0.content.items.query21.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Summary of count by authentication policy]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Kimlik doğrulama ilkesine göre sayma özeti]]></Val>
-          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Daily authentication prompts by method]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -374,9 +362,48 @@
       </Item>
       <Item ItemId=";items.group0.content.items.query3.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[% Authentication prompts by operating system]]></Val>
+          <Val><![CDATA[% Prompts by operating system]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[İşletim sistemine göre kimlik doğrulama istemleri yüzdesi]]></Val>
+            <Val><![CDATA[İşletim sistemine göre istemlerin yüzdesi]]></Val>
+          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[% Authentication prompts by operating system]]></Val>
+          </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.group0.content.items.query36.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[% Prompts by process detail]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[İşlem ayrıntısına göre İstem Yüzdesi]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.group0.content.items.query36Copy.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Hourly Prompts by process detail]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[İşlem ayrıntısına göre Saatlik İstemler]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.group0.content.items.query36CopyCopy.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Interactive Legacy TLS]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Etkileşimli Eski TLS]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.group0.content.items.query36CopyCopyCopy.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Non-Interactive Legacy TLS]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Etkileşimli Olmayan Eski TLS]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -392,28 +419,37 @@
       </Item>
       <Item ItemId=";items.group0.content.items.query4.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Hourly authentication prompts by operating system]]></Val>
+          <Val><![CDATA[Hourly prompts by operating system]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[İşletim sistemine göre saatlik kimlik doğrulama istemi sayısı]]></Val>
+            <Val><![CDATA[Saatlik işletim sistemine göre istemler]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Hourly authentication prompts by operating system]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group0.content.items.query5.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[% Authentication prompts by device state]]></Val>
+          <Val><![CDATA[% Prompts by device state]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Cihaz durumuna göre kimlik doğrulama istemleri yüzdesi]]></Val>
+            <Val><![CDATA[Cihaz durumuna göre istemlerin yüzdesi]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[% Authentication prompts by device state]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group0.content.items.query6.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Hourly authentication prompts by device state]]></Val>
+          <Val><![CDATA[Hourly prompts by device state]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Cihaz durumuna göre saatlik kimlik doğrulama istemi sayısı]]></Val>
+            <Val><![CDATA[Saatlik cihaz durumuna göre istemler]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Hourly authentication prompts by device state]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -428,10 +464,13 @@
       </Item>
       <Item ItemId=";items.group0.content.items.query7.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[% Authentication prompts by user]]></Val>
+          <Val><![CDATA[% Prompts by user]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Kullanıcıya göre kimlik doğrulama istemleri yüzdesi]]></Val>
+            <Val><![CDATA[Kullanıcıya göre istemlerin yüzdesi]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[% Authentication prompts by user]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -446,19 +485,25 @@
       </Item>
       <Item ItemId=";items.group0.content.items.query8.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Hourly authentication prompts by user]]></Val>
+          <Val><![CDATA[Hourly prompts by user]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Kullanıcıya göre saatlik kimlik doğrulama istemi sayısı]]></Val>
+            <Val><![CDATA[Saatlik kullanıcıya göre istemler]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Hourly authentication prompts by user]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group0.content.items.query9.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Authentication prompts per user]]></Val>
+          <Val><![CDATA[Prompts by user]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Kullanıcı başına kimlik doğrulama istemi sayısı]]></Val>
+            <Val><![CDATA[Kullanıcıya göre istemler]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Authentication prompts per user]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -471,21 +516,15 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.group0.content.items.text10.content.json" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[# ADFS Authentications]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[ADFS Kimlik Doğrulaması Sayısı]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
       <Item ItemId=";items.group0.content.items.text11.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[# Insights]]></Val>
+          <Val><![CDATA[# Recommendations for reducing prompts and improving user experience]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[İçgörü sayısı]]></Val>
+            <Val><![CDATA[# İstemleri azaltma ve kullanıcı deneyimini iyileştirme önerileri]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[# Insights]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -543,6 +582,15 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
+      <Item ItemId=";items.group0.content.items.text7Copy.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[# Authentication prompts by process detail]D;]A;### Reminder: Enable TLS 1.2 support as Azure AD TLS 1.0/1.1 is deprecated ]D;]A;https://docs.microsoft.com/en-us/troubleshoot/azure/active-directory/enable-support-tls-environment?tabs=azure-monitor]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# İşlem ayrıntısına göre kimlik doğrulama istemleri]D;]A;### Anımsatıcı: Azure AD TLS 1.0/1.1 kullanım dışı olduğundan TLS 1.2 desteğini etkinleştir ]D;]A;https://docs.microsoft.com/en-us/troubleshoot/azure/active-directory/enable-support-tls-environment?tabs=azure-monitor]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.group0.content.items.text8.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Note: A high count of failures per application can skew the average so consider both the average and the median when analyzing the data. The median represents the 50th percentile, where 50% of the applications have prompts equal to or less than the median value.]]></Val>
@@ -554,10 +602,13 @@
       </Item>
       <Item ItemId=";items.group0.content.items.text9.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[# Authentications by policy]D;]A;### Authentication policies describe how MFA is enforced and can include Conditional Acces, Security Defaults, Per User MFA, App requires MFA, and others. ]D;]A;]D;]A;### "App requires MFA" occurs when the application itself enforce the policy and requires a fresh MFA.]D;]A;]]></Val>
+          <Val><![CDATA[# Authentications prompts by policy]D;]A;### Authentication policies describe how MFA is enforced and can include Conditional Acces, Security Defaults, Per User MFA, App requires MFA, and others. ]D;]A;]D;]A;### "App requires MFA" occurs when the application itself enforce the policy and requires a fresh MFA.]D;]A;]D;]A;]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[İlkeye göre kimlik doğrulama sayısı]D;]A;### Kimlik doğrulama ilkeleri, MFA'nın nasıl zorlandığını açıklar ve Koşullu Erişim, Güvenlik Varsayılanları, Kullanıcı Başına MFA, Uygulama MFA gerektirir gibi seçenekleri içerebilir. ]D;]A;]D;]A;### "Uygulama MFA gerektirir" seçeneği, uygulama ilkeyi zorladığında ve yeni bir MFA gerektirdiğinde ortaya çıkar.]D;]A;]]></Val>
+            <Val><![CDATA[İlkeye göre kimlik doğrulama istemlerinin sayısı]D;]A;### Kimlik doğrulama ilkeleri, MFA'nın nasıl zorlandığını açıklar ve Koşullu Erişim, Güvenlik Varsayılanları, Kullanıcı Başına MFA, Uygulama MFA gerektirir gibi seçenekleri içerebilir. ]D;]A;]D;]A;### "Uygulama MFA gerektirir" seçeneği, uygulama ilkeyi zorladığında ve yeni bir MFA gerektirdiğinde ortaya çıkar.]D;]A;]D;]A;]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[# Authentications by policy]D;]A;### Authentication policies describe how MFA is enforced and can include Conditional Acces, Security Defaults, Per User MFA, App requires MFA, and others. ]D;]A;]D;]A;### "App requires MFA" occurs when the application itself enforce the policy and requires a fresh MFA.]D;]A;]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>

@@ -9,18 +9,6 @@
     <Disp Icon="Expand" Expand="true" Disp="true" LocTbl="false" />
     <Item ItemId=";Strings" ItemType="0" PsrId="306" Leaf="false">
       <Disp Icon="Str" Disp="true" LocTbl="false" />
-      <Item ItemId=";@items.group0.content.items.Insights.content.items.MacOS.content.gridSettings.labelSettings.AvgPromptsPerMacUser.l" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) abel" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[Average prompts per Mac user]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[每個 Mac 使用者的平均提示數]]></Val>
-            </Tgt>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-      </Item>
       <Item ItemId=";items.group0.content.items.Insights.content.items.MacOS.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[ MacOS user authentication prompts]]></Val>
@@ -131,10 +119,13 @@
       </Item>
       <Item ItemId=";items.group0.content.items.query1.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[% Authentication prompts by method]]></Val>
+          <Val><![CDATA[% Prompts by method]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[依方法排序的驗證提示百分比]]></Val>
+            <Val><![CDATA[依方法排序的提示 %]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[% Authentication prompts by method]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -149,10 +140,13 @@
       </Item>
       <Item ItemId=";items.group0.content.items.query10.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Average authentication prompts per user]]></Val>
+          <Val><![CDATA[Average prompts for users]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[每位使用者的平均驗證提示]]></Val>
+            <Val><![CDATA[使用者的平均提示數]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Average authentication prompts per user]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -167,10 +161,13 @@
       </Item>
       <Item ItemId=";items.group0.content.items.query11.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Median authentication prompts per user]]></Val>
+          <Val><![CDATA[Median prompts for users]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[每位使用者的中位數驗證提示]]></Val>
+            <Val><![CDATA[使用者的中位數提示]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Median authentication prompts per user]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -185,10 +182,13 @@
       </Item>
       <Item ItemId=";items.group0.content.items.query12.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[% Authenticaton prompts by app]]></Val>
+          <Val><![CDATA[% Prompts by application]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[依應用程序排序的 Authenticaton 提示百分比]]></Val>
+            <Val><![CDATA[依應用程式排列的提示 %]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[% Authenticaton prompts by app]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -203,10 +203,13 @@
       </Item>
       <Item ItemId=";items.group0.content.items.query13.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Hourly authentication prompts by application]]></Val>
+          <Val><![CDATA[Hourly prompts by application]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[依應用程式排序的每小時驗證提示]]></Val>
+            <Val><![CDATA[依應用程式排列的每小時提示]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Hourly authentication prompts by application]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -239,10 +242,13 @@
       </Item>
       <Item ItemId=";items.group0.content.items.query14.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Authentication prompts per application]]></Val>
+          <Val><![CDATA[Prompts by application]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[每個應用程序的驗證提示]]></Val>
+            <Val><![CDATA[依應用程式排列的提示]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Authentication prompts per application]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -257,63 +263,69 @@
       </Item>
       <Item ItemId=";items.group0.content.items.query15.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Average authentication prompts per app]]></Val>
+          <Val><![CDATA[Average prompts for applications]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[每個應用程式的平均驗證提示]]></Val>
+            <Val><![CDATA[應用程式的平均提示]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Average authentication prompts per app]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group0.content.items.query16.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Median authentication prompts per app]]></Val>
+          <Val><![CDATA[Median prompts for applications]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[每個應用程式的中位數驗證提示]]></Val>
+            <Val><![CDATA[應用程式的中位數提示]]></Val>
+          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Median authentication prompts per app]]></Val>
+          </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.group0.content.items.query19Copy.content.chartSettings.seriesLabelSettings.0.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[ADFS]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[ADFS]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.group0.content.items.query17.content.chartSettings.seriesLabelSettings.0.label" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.group0.content.items.query19Copy.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Client-side policy (App requires MFA)]]></Val>
+          <Val><![CDATA[Prompts by authentication policy]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[用戶端原則 (應用程式需要 MFA)]]></Val>
+            <Val><![CDATA[依驗證原則排序的提示]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.group0.content.items.query17.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.group0.content.items.query19CopyCopy.content.chartSettings.seriesLabelSettings.0.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[% Authentication by policy type]]></Val>
+          <Val><![CDATA[Client-side (App requires MFA)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[依原則類型排序的驗證百分比]]></Val>
+            <Val><![CDATA[用戶端 (應用程式需要 MFA)]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.group0.content.items.query18.content.chartSettings.seriesLabelSettings.2.label" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.group0.content.items.query19CopyCopy.content.chartSettings.seriesLabelSettings.1.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Client-side policy (App requires MFA)]]></Val>
+          <Val><![CDATA[ADFS]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[用戶端原則 (應用程式需要 MFA)]]></Val>
+            <Val><![CDATA[ADFS]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.group0.content.items.query18.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.group0.content.items.query19CopyCopy.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Hourly prompts by authentication policy]]></Val>
+          <Val><![CDATA[Prompts by authentication policy]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[依驗證原則排序的每小時提示]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.group0.content.items.query19.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[% ADFS  authentications by method]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[依方法排序的 ADFS 驗證百分比]]></Val>
+            <Val><![CDATA[依驗證原則排序的提示]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -329,37 +341,13 @@
       </Item>
       <Item ItemId=";items.group0.content.items.query2.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Daily authentication prompts by method]]></Val>
+          <Val><![CDATA[Daily prompts by method]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[依方法排序的每日驗證提示]]></Val>
+            <Val><![CDATA[依方法排序的每日提示]]></Val>
           </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.group0.content.items.query20.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Hourly ADFS authentications]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[每小時 ADFS 驗證]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.group0.content.items.query21.content.gridSettings.labelSettings.ADFSAuth.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[ADFS authentication]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[ADFS 驗證]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.group0.content.items.query21.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Summary of count by authentication policy]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[依驗證原則排序的計數摘要]]></Val>
-          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Daily authentication prompts by method]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -374,9 +362,48 @@
       </Item>
       <Item ItemId=";items.group0.content.items.query3.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[% Authentication prompts by operating system]]></Val>
+          <Val><![CDATA[% Prompts by operating system]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[依作業系統排序的驗證提示百分比]]></Val>
+            <Val><![CDATA[依作業系統排序的提示 %]]></Val>
+          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[% Authentication prompts by operating system]]></Val>
+          </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.group0.content.items.query36.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[% Prompts by process detail]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[依處理序詳細資料顯示的提示 %]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.group0.content.items.query36Copy.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Hourly Prompts by process detail]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[依處理序詳細資料排列的每小時提示]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.group0.content.items.query36CopyCopy.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Interactive Legacy TLS]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[互動式舊版 TLS]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.group0.content.items.query36CopyCopyCopy.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Non-Interactive Legacy TLS]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[非互動式舊版 TLS]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -392,28 +419,37 @@
       </Item>
       <Item ItemId=";items.group0.content.items.query4.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Hourly authentication prompts by operating system]]></Val>
+          <Val><![CDATA[Hourly prompts by operating system]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[依作業系統排序的每小時驗證提示]]></Val>
+            <Val><![CDATA[依作業系統排序的每小時提示]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Hourly authentication prompts by operating system]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group0.content.items.query5.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[% Authentication prompts by device state]]></Val>
+          <Val><![CDATA[% Prompts by device state]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[依裝置狀態排序的驗證提示百分比]]></Val>
+            <Val><![CDATA[依裝置狀態排序的提示 %]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[% Authentication prompts by device state]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group0.content.items.query6.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Hourly authentication prompts by device state]]></Val>
+          <Val><![CDATA[Hourly prompts by device state]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[依裝置狀態排序的每小時驗證]]></Val>
+            <Val><![CDATA[依裝置狀態排序的每小時提示]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Hourly authentication prompts by device state]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -428,10 +464,13 @@
       </Item>
       <Item ItemId=";items.group0.content.items.query7.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[% Authentication prompts by user]]></Val>
+          <Val><![CDATA[% Prompts by user]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[依使用者排序的驗證提示百分比]]></Val>
+            <Val><![CDATA[依使用者排列的提示 %]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[% Authentication prompts by user]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -446,19 +485,25 @@
       </Item>
       <Item ItemId=";items.group0.content.items.query8.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Hourly authentication prompts by user]]></Val>
+          <Val><![CDATA[Hourly prompts by user]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[依使用者排序的每小時驗證提示]]></Val>
+            <Val><![CDATA[依使用者排列的每小時提示]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Hourly authentication prompts by user]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group0.content.items.query9.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Authentication prompts per user]]></Val>
+          <Val><![CDATA[Prompts by user]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[每位使用者的驗證提示]]></Val>
+            <Val><![CDATA[依使用者排列的提示]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Authentication prompts per user]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -471,21 +516,15 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.group0.content.items.text10.content.json" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[# ADFS Authentications]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[# ADFS 驗證]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
       <Item ItemId=";items.group0.content.items.text11.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[# Insights]]></Val>
+          <Val><![CDATA[# Recommendations for reducing prompts and improving user experience]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[# 見解]]></Val>
+            <Val><![CDATA[# 減少提示並改善使用者體驗的建議]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[# Insights]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -543,6 +582,15 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
+      <Item ItemId=";items.group0.content.items.text7Copy.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[# Authentication prompts by process detail]D;]A;### Reminder: Enable TLS 1.2 support as Azure AD TLS 1.0/1.1 is deprecated ]D;]A;https://docs.microsoft.com/en-us/troubleshoot/azure/active-directory/enable-support-tls-environment?tabs=azure-monitor]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# 依處理序詳細資料排序的驗證提示]D;]A;### 提醒: 因為 Azure AD TLS 1.0/1.1 已過時，請啟用 TLS 1.2 支援]D;]A;https://docs.microsoft.com/zh-tw/troubleshoot/azure/active-directory/enable-support-tls-environment?tabs=azure-monitor]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.group0.content.items.text8.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Note: A high count of failures per application can skew the average so consider both the average and the median when analyzing the data. The median represents the 50th percentile, where 50% of the applications have prompts equal to or less than the median value.]]></Val>
@@ -554,10 +602,13 @@
       </Item>
       <Item ItemId=";items.group0.content.items.text9.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[# Authentications by policy]D;]A;### Authentication policies describe how MFA is enforced and can include Conditional Acces, Security Defaults, Per User MFA, App requires MFA, and others. ]D;]A;]D;]A;### "App requires MFA" occurs when the application itself enforce the policy and requires a fresh MFA.]D;]A;]]></Val>
+          <Val><![CDATA[# Authentications prompts by policy]D;]A;### Authentication policies describe how MFA is enforced and can include Conditional Acces, Security Defaults, Per User MFA, App requires MFA, and others. ]D;]A;]D;]A;### "App requires MFA" occurs when the application itself enforce the policy and requires a fresh MFA.]D;]A;]D;]A;]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[# 依原則驗證]D;]A;### 驗證原則描述如何強制執行 MFA，而且可以包含條件式帳戶、安全性預設值、每個使用者 MFA、應用程式需要 MFA 等等。]D;]A;]D;]A;### 當應用程式本身強制執行原則且需要新的 MFA 時，會發生「應用程式需要 MFA」的問題。]D;]A;]]></Val>
+            <Val><![CDATA[# 依原則排序的驗證提示]D;]A;###驗證原則會描述強制執行 MFA 的方式，並且可以包含條件式存取、安全性預設值、每一使用者 MFA、應用程式需要 MFA 等內容。]D;]A;]D;]A;### 當應用程式本身強制執行原則且需要新的 MFA 時，會發生「應用程式需要 MFA」的問題。]D;]A;]D;]A;]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[# Authentications by policy]D;]A;### Authentication policies describe how MFA is enforced and can include Conditional Acces, Security Defaults, Per User MFA, App requires MFA, and others. ]D;]A;]D;]A;### "App requires MFA" occurs when the application itself enforce the policy and requires a fresh MFA.]D;]A;]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>

@@ -9,18 +9,6 @@
     <Disp Icon="Expand" Expand="true" Disp="true" LocTbl="false" />
     <Item ItemId=";Strings" ItemType="0" PsrId="306" Leaf="false">
       <Disp Icon="Str" Disp="true" LocTbl="false" />
-      <Item ItemId=";@items.group0.content.items.Insights.content.items.MacOS.content.gridSettings.labelSettings.AvgPromptsPerMacUser.l" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) abel" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[Average prompts per Mac user]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Durchschnittliche Aufforderungen pro Mac-Benutzer]]></Val>
-            </Tgt>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-      </Item>
       <Item ItemId=";items.group0.content.items.Insights.content.items.MacOS.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[ MacOS user authentication prompts]]></Val>
@@ -131,10 +119,13 @@
       </Item>
       <Item ItemId=";items.group0.content.items.query1.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[% Authentication prompts by method]]></Val>
+          <Val><![CDATA[% Prompts by method]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[% Authentifizierungsaufforderungen nach Methode]]></Val>
+            <Val><![CDATA[% der Eingabeaufforderungen nach Methode]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[% Authentication prompts by method]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -149,10 +140,13 @@
       </Item>
       <Item ItemId=";items.group0.content.items.query10.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Average authentication prompts per user]]></Val>
+          <Val><![CDATA[Average prompts for users]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Durchschnittliche Authentifizierungsaufforderungen pro Benutzer]]></Val>
+            <Val><![CDATA[Durchschnittliche Eingabeaufforderungen für Benutzer]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Average authentication prompts per user]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -167,10 +161,13 @@
       </Item>
       <Item ItemId=";items.group0.content.items.query11.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Median authentication prompts per user]]></Val>
+          <Val><![CDATA[Median prompts for users]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Median-Authentifizierungsaufforderungen pro Benutzer]]></Val>
+            <Val><![CDATA[Median der Eingabeaufforderungen für Benutzer]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Median authentication prompts per user]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -185,10 +182,13 @@
       </Item>
       <Item ItemId=";items.group0.content.items.query12.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[% Authenticaton prompts by app]]></Val>
+          <Val><![CDATA[% Prompts by application]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[% Authentifizierungsaufforderungen nach App]]></Val>
+            <Val><![CDATA[% der Eingabeaufforderungen nach Anwendung]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[% Authenticaton prompts by app]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -203,10 +203,13 @@
       </Item>
       <Item ItemId=";items.group0.content.items.query13.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Hourly authentication prompts by application]]></Val>
+          <Val><![CDATA[Hourly prompts by application]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Stündliche Authentifizierungsaufforderungen nach Anwendung]]></Val>
+            <Val><![CDATA[Stündliche Eingabeaufforderungen nach Anwendung]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Hourly authentication prompts by application]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -239,10 +242,13 @@
       </Item>
       <Item ItemId=";items.group0.content.items.query14.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Authentication prompts per application]]></Val>
+          <Val><![CDATA[Prompts by application]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Authentifizierungsaufforderungen pro Anwendung]]></Val>
+            <Val><![CDATA[Eingabeaufforderungen nach Anwendung]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Authentication prompts per application]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -257,63 +263,69 @@
       </Item>
       <Item ItemId=";items.group0.content.items.query15.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Average authentication prompts per app]]></Val>
+          <Val><![CDATA[Average prompts for applications]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Durchschnittliche Authentifizierungsaufforderungen pro App]]></Val>
+            <Val><![CDATA[Durchschnittliche Eingabeaufforderungen für Anwendungen]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Average authentication prompts per app]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group0.content.items.query16.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Median authentication prompts per app]]></Val>
+          <Val><![CDATA[Median prompts for applications]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Median-Authentifizierungsaufforderungen pro App]]></Val>
+            <Val><![CDATA[Median der Eingabeaufforderungen für Anwendungen]]></Val>
+          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Median authentication prompts per app]]></Val>
+          </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.group0.content.items.query19Copy.content.chartSettings.seriesLabelSettings.0.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[ADFS]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[ADFS]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.group0.content.items.query17.content.chartSettings.seriesLabelSettings.0.label" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.group0.content.items.query19Copy.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Client-side policy (App requires MFA)]]></Val>
+          <Val><![CDATA[Prompts by authentication policy]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Clientseitige Richtlinie (App erfordert MFA)]]></Val>
+            <Val><![CDATA[Eingabeaufforderungen nach Authentifizierungsrichtlinie]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.group0.content.items.query17.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.group0.content.items.query19CopyCopy.content.chartSettings.seriesLabelSettings.0.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[% Authentication by policy type]]></Val>
+          <Val><![CDATA[Client-side (App requires MFA)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[% Authentifizierung nach Richtlinientyp]]></Val>
+            <Val><![CDATA[Clientseitig (App erfordert MFA)]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.group0.content.items.query18.content.chartSettings.seriesLabelSettings.2.label" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.group0.content.items.query19CopyCopy.content.chartSettings.seriesLabelSettings.1.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Client-side policy (App requires MFA)]]></Val>
+          <Val><![CDATA[ADFS]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Clientseitige Richtlinie (App erfordert MFA)]]></Val>
+            <Val><![CDATA[ADFS]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.group0.content.items.query18.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.group0.content.items.query19CopyCopy.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Hourly prompts by authentication policy]]></Val>
+          <Val><![CDATA[Prompts by authentication policy]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Stündliche Aufforderungen nach Authentifizierungsrichtlinie]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.group0.content.items.query19.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[% ADFS  authentications by method]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[% ADFS-Authentifizierungen nach Methode]]></Val>
+            <Val><![CDATA[Eingabeaufforderungen nach Authentifizierungsrichtlinie]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -329,37 +341,13 @@
       </Item>
       <Item ItemId=";items.group0.content.items.query2.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Daily authentication prompts by method]]></Val>
+          <Val><![CDATA[Daily prompts by method]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Tägliche Authentifizierungsaufforderungen nach Methode]]></Val>
+            <Val><![CDATA[Tägliche Eingabeaufforderungen nach Methode]]></Val>
           </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.group0.content.items.query20.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Hourly ADFS authentications]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Stündliche ADFS-Authentifizierungen]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.group0.content.items.query21.content.gridSettings.labelSettings.ADFSAuth.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[ADFS authentication]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[ADFS-Authentifizierung]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.group0.content.items.query21.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Summary of count by authentication policy]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Zusammenfassung der Anzahl nach Authentifizierungsrichtlinie]]></Val>
-          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Daily authentication prompts by method]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -374,9 +362,48 @@
       </Item>
       <Item ItemId=";items.group0.content.items.query3.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[% Authentication prompts by operating system]]></Val>
+          <Val><![CDATA[% Prompts by operating system]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[% Authentifizierungsaufforderungen nach Betriebssystem]]></Val>
+            <Val><![CDATA[% der Eingabeaufforderungen nach Betriebssystem]]></Val>
+          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[% Authentication prompts by operating system]]></Val>
+          </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.group0.content.items.query36.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[% Prompts by process detail]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[% der Eingabeaufforderungen nach Prozessdetails]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.group0.content.items.query36Copy.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Hourly Prompts by process detail]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Stündliche Eingabeaufforderungen nach Prozessdetails]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.group0.content.items.query36CopyCopy.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Interactive Legacy TLS]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Interaktives Legacy-TLS]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.group0.content.items.query36CopyCopyCopy.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Non-Interactive Legacy TLS]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Nicht interaktives Legacy-TLS]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -392,28 +419,37 @@
       </Item>
       <Item ItemId=";items.group0.content.items.query4.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Hourly authentication prompts by operating system]]></Val>
+          <Val><![CDATA[Hourly prompts by operating system]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Stündliche Authentifizierungsaufforderungen nach Betriebssystem]]></Val>
+            <Val><![CDATA[Stündliche Eingabeaufforderungen nach Betriebssystem]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Hourly authentication prompts by operating system]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group0.content.items.query5.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[% Authentication prompts by device state]]></Val>
+          <Val><![CDATA[% Prompts by device state]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[% Authentifizierungsaufforderungen nach Gerätestatus]]></Val>
+            <Val><![CDATA[% der Eingabeaufforderungen nach Gerätestatus]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[% Authentication prompts by device state]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group0.content.items.query6.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Hourly authentication prompts by device state]]></Val>
+          <Val><![CDATA[Hourly prompts by device state]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Stündliche Authentifizierungsaufforderungen nach Gerätestatus]]></Val>
+            <Val><![CDATA[Stündliche Eingabeaufforderungen nach Gerätestatus]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Hourly authentication prompts by device state]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -428,10 +464,13 @@
       </Item>
       <Item ItemId=";items.group0.content.items.query7.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[% Authentication prompts by user]]></Val>
+          <Val><![CDATA[% Prompts by user]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[% Authentifizierungsaufforderungen nach Benutzer]]></Val>
+            <Val><![CDATA[% der Eingabeaufforderungen nach Benutzer]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[% Authentication prompts by user]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -446,19 +485,25 @@
       </Item>
       <Item ItemId=";items.group0.content.items.query8.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Hourly authentication prompts by user]]></Val>
+          <Val><![CDATA[Hourly prompts by user]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Stündliche Authentifizierungsaufforderungen nach Benutzer]]></Val>
+            <Val><![CDATA[Stündliche Eingabeaufforderungen nach Benutzer]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Hourly authentication prompts by user]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group0.content.items.query9.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Authentication prompts per user]]></Val>
+          <Val><![CDATA[Prompts by user]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Authentifizierungsaufforderungen pro Benutzer]]></Val>
+            <Val><![CDATA[Eingabeaufforderungen nach Benutzer]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Authentication prompts per user]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -471,21 +516,15 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.group0.content.items.text10.content.json" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[# ADFS Authentications]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[# ADFS-Authentifizierungen]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
       <Item ItemId=";items.group0.content.items.text11.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[# Insights]]></Val>
+          <Val><![CDATA[# Recommendations for reducing prompts and improving user experience]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[# Insights]]></Val>
+            <Val><![CDATA[# der Empfehlungen zum Reduzieren von Eingabeaufforderungen und zum Verbessern des Benutzererlebnisses]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[# Insights]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -543,6 +582,15 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
+      <Item ItemId=";items.group0.content.items.text7Copy.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[# Authentication prompts by process detail]D;]A;### Reminder: Enable TLS 1.2 support as Azure AD TLS 1.0/1.1 is deprecated ]D;]A;https://docs.microsoft.com/en-us/troubleshoot/azure/active-directory/enable-support-tls-environment?tabs=azure-monitor]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# Authentifizierungseingabeaufforderungen nach Prozessdetails]D;]A;### Erinnerung: Aktivieren Sie die TLS 1.2-Unterstützung, da Azure AD TLS 1.0/1.1 veraltet ist ]D;]A;https://docs.microsoft.com/en-us/troubleshoot/azure/active-directory/enable-support-tls-environment?tabs=azure-monitor]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.group0.content.items.text8.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Note: A high count of failures per application can skew the average so consider both the average and the median when analyzing the data. The median represents the 50th percentile, where 50% of the applications have prompts equal to or less than the median value.]]></Val>
@@ -554,10 +602,13 @@
       </Item>
       <Item ItemId=";items.group0.content.items.text9.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[# Authentications by policy]D;]A;### Authentication policies describe how MFA is enforced and can include Conditional Acces, Security Defaults, Per User MFA, App requires MFA, and others. ]D;]A;]D;]A;### "App requires MFA" occurs when the application itself enforce the policy and requires a fresh MFA.]D;]A;]]></Val>
+          <Val><![CDATA[# Authentications prompts by policy]D;]A;### Authentication policies describe how MFA is enforced and can include Conditional Acces, Security Defaults, Per User MFA, App requires MFA, and others. ]D;]A;]D;]A;### "App requires MFA" occurs when the application itself enforce the policy and requires a fresh MFA.]D;]A;]D;]A;]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[# Authentifizierungen nach Richtlinie]D;]A;### Authentifizierungsrichtlinien beschreiben, wie die MFA erzwungen wird, und können die Optionen „Bedingten Zugriff“, „Sicherheitsstandards“, „MFA pro Benutzer“, „App erfordert MFA“ und andere Optionen umfassen. ]D;]A;]D;]A;### „App erfordert MFA“ wird verwendet, wenn die Anwendung selbst die Richtlinie erzwingt und eine neue MFA erfordert.]D;]A;]]></Val>
+            <Val><![CDATA[# Authentifizierungsaufforderungen nach Richtlinie]D;]A;### Authentifizierungsrichtlinien beschreiben, wie MFA erzwungen wird und können bedingten Zugriff, Sicherheitsstandards, MFA pro Benutzer, App erfordert MFA und andere enthalten. ]D;]A;]D;]A;### „App erfordert MFA“ tritt auf, wenn die Anwendung selbst die Richtlinie erzwingt und eine neue MFA erfordert.]D;]A;]D;]A;]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[# Authentications by policy]D;]A;### Authentication policies describe how MFA is enforced and can include Conditional Acces, Security Defaults, Per User MFA, App requires MFA, and others. ]D;]A;]D;]A;### "App requires MFA" occurs when the application itself enforce the policy and requires a fresh MFA.]D;]A;]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>

@@ -25,10 +25,13 @@
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) belSettings.0.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[CPU %]]></Val>
+            <Val><![CDATA[% disk usage]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[CPU %]]></Val>
+              <Val><![CDATA[디스크 사용(%)]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[CPU %]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -329,6 +332,24 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
+        <Item ItemId=";(...) ssagedetails.content.gridSettings.labelSettings.msgsDelivered.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Tx]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Tx]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) ssagedetails.content.gridSettings.labelSettings.msgsReceived.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Rx]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Rx]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
         <Item ItemId=";(...) ssagedetails.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[No messages were routed]]></Val>
@@ -338,23 +359,32 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
-      </Item>
-      <Item ItemId=";@items.devicedetailsgroup.content.items.messagingviewdetails.content.items.messagedetailsrightpane.content.items.c" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) onnectedclientsgroup.content.items.infotipgroup.content.items.tipselectrowtodrillin.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) ssagedetailsdescription.content.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[<br>]A;]A;]D83D;]DCA1; **Select a row on the left to further drill-in**]]></Val>
+            <Val><![CDATA[Use this summary table of EdgeHub metrics to understand overall messaging performance. The results are grouped by receivers (parent).]A;Select a row to drill-in further.]A; * _Rx_ == messages EdgeHub received from the sender (and before the route is determined)]A; * _Tx_ == messages EdgeHub delivered to the parent receiver]A; * _Count_ == total count of messages delivered from all senders.]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[<br>]A;]A;]D83D;]DCA1; **왼쪽에서 행을 선택하여 드릴인합니다.**]]></Val>
+              <Val><![CDATA[이 EdgeHub 메트릭 요약 표를 사용하여 전반적인 메시지 성능을 이해하세요. 결과는 수신자(상위)별로 그룹화됩니다.]A;추가로 드릴 인할 행을 선택합니다.]A; * _Rx_ == 보낸 사람으로부터 수신된 EdgeHub 메시지(경로가 결정되기 전)]A; * _Tx_ == EdgeHub가 부모 수신기에게 전달한 메시지]A; * _Count_ == 모든 보낸 사람으로부터 전달된 총 메시지 수.]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
+      </Item>
+      <Item ItemId=";@items.devicedetailsgroup.content.items.messagingviewdetails.content.items.messagedetailsrightpane.content.items.c" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) onnectedclientsgroup.content.items.queryconnectedclientscount.content.title" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Connected clients count]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
               <Val><![CDATA[연결된 클라이언트 수]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) onnectedclientsgroup.content.items.textconnectedclienttrends.content.json" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[The graph below displays the trend of clients connected to EdgeHub.]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[아래 그래프는 EdgeHub에 연결된 클라이언트의 추세를 표시합니다.]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
@@ -373,10 +403,13 @@
         </Item>
         <Item ItemId=";(...) essagingrouting.content.items.querymessagesdelivered.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Messages delivered from {ep} to {pid}]]></Val>
+            <Val><![CDATA[Messages from {ep}]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[{ep}에서 {pid}(으)로 배달된 메시지]]></Val>
+              <Val><![CDATA[{ep}의 메시지]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[Messages delivered from {ep} to {pid}]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -385,15 +418,6 @@
             <Val><![CDATA[Messages delivered to {ep}]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
               <Val><![CDATA[{ep}(으)로 배달된 메시지]]></Val>
-            </Tgt>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-        <Item ItemId=";(...) essagingrouting.content.items.querymessagesreceivedfromendpoint.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[Messages received from {ep}]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[{ep}에서 받은 메시지]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
@@ -443,6 +467,24 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
+        <Item ItemId=";(...) essagingrouting.content.items.textreceivermessagingtrends.content.json" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Use the _Queue length trend_ to identify when message flow be impeded. Use the _Messages delivered_ to visualize the trend of messages successfully delivered to the receiver.]A;]A;Drill into individual senders to spot if the messages received is exceeding what is successfully sent.]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[_큐 길이 추세_를 사용하여 메시지 흐름이 방해받는 시기를 식별합니다. _메시지 전달_을 사용하여 수신기에 성공적으로 전달된 메시지의 추세를 시각화합니다.]A;]A;수신된 메시지가 성공적으로 전송된 메시지를 초과하는지 확인하기 위해 개별 보낸 사람을 상세히 알아봅니다.]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) essagingrouting.content.items.textsendermessagingtrends.content.json" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Use the graphs below to understand when bottlenecks occurred. Note that in _Messages from_ "received" messages are counted before the destination endpoint is determined. A module that sends to multiple receivers can exhibit a "received" count that is greater than "delivered". Delivered messages are only counted for the known receiver.]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[병목 현상이 발생한 시기를 이해하려면 아래 그래프를 사용하세요. _Messages from_에서 "received" 메시지는 대상 엔드포인트가 결정되기 전에 계산됩니다. 여러 수신기에 보내는 모듈은 "전달됨"보다 더 많은 "수신됨" 횟수를 나타낼 수 있습니다. 전달된 메시지는 알려진 수신기에 대해서만 계산됩니다.]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
         <Item ItemId=";@(...) essagingrouting.content.items.querymessagesdeliveredtoendpoint.content.chartSettings.seriesLabelSettings.0." ItemType="0" PsrId="306" Leaf="false">
           <Disp Icon="Dir" LocTbl="false" />
           <Item ItemId=";(...) label" ItemType="0" PsrId="306" Leaf="true">
@@ -450,18 +492,6 @@
               <Val><![CDATA[Messages sent]]></Val>
               <Tgt Cat="Text" Stat="Loc" Orig="New">
                 <Val><![CDATA[보낸 메시지]]></Val>
-              </Tgt>
-            </Str>
-            <Disp Icon="Str" />
-          </Item>
-        </Item>
-        <Item ItemId=";@(...) essagingrouting.content.items.querymessagesreceivedfromendpoint.content.chartSettings.seriesLabelSettings.0" ItemType="0" PsrId="306" Leaf="false">
-          <Disp Icon="Dir" LocTbl="false" />
-          <Item ItemId=";(...) .label" ItemType="0" PsrId="306" Leaf="true">
-            <Str Cat="Text">
-              <Val><![CDATA[Messages received]]></Val>
-              <Tgt Cat="Text" Stat="Loc" Orig="New">
-                <Val><![CDATA[받은 메시지]]></Val>
               </Tgt>
             </Str>
             <Disp Icon="Str" />
@@ -603,6 +633,18 @@
           <Disp Icon="Str" />
         </Item>
       </Item>
+      <Item ItemId=";@items.devicedetailsgroup.content.items.nameplustoplevelnavbar.content.items.topleveltabs.content.links.62b7e52332" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) bc454986cdbbfcf066bfaf.linkLabel" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[]D83D;]DD27; Settings]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[]D83D;]DD27; 설정]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
       <Item ItemId=";@items.devicedetailsgroup.content.items.nameplustoplevelnavbar.content.items.topleveltabs.content.links.715cf5f811" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) f049de82cf0a2b7c5b9841.linkLabel" ItemType="0" PsrId="306" Leaf="true">
@@ -622,6 +664,30 @@
             <Val><![CDATA[]D83D;]DCBB; Host]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
               <Val><![CDATA[]D83D;]DCBB; 호스트]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
+      <Item ItemId=";@items.devicedetailsgroup.content.items.settingsview.content.items.settingsparameters.content.parameters.060313e0e" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) 2a64cc198fb70d6cdd8c198.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Show Tips]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[팁 표시]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
+      <Item ItemId=";@items.devicedetailsgroup.content.items.settingsview.content.items.settingsparameters.content.parameters.73e69eef0" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) 28d47389d9ff98b25f15352.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Metric Sampling Frequency]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[메트릭 샘플링 빈도]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
@@ -650,10 +716,13 @@
       </Item>
       <Item ItemId=";items.devicedetailsgroup.content.items.hostdetailsview.content.items.hostdiskquery.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Available disk space]]></Val>
+          <Val><![CDATA[Disk space usage (%)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[사용 가능한 디스크 공간]]></Val>
+            <Val><![CDATA[디스크 공간 사용(%)]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Available disk space]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -711,6 +780,15 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
+      <Item ItemId=";items.devicedetailsgroup.content.items.settingsview.content.items.textsettings.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Queries in this workbook assume metrics were sampled at a 5 minute interval. If you use a different frequency to collect and transport metrics then set it here to adjust the bin size used in queries.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[이 통합 문서의 쿼리는 메트릭이 5분 간격으로 샘플링되었다고 가정합니다. 다른 빈도를 사용하여 메트릭을 수집하고 전송하는 경우 여기에서 설정하여 쿼리에 사용되는 빈 크기를 조정합니다.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.devicedetailsgroup.content.items.troubleshootgroup.content.items.lastupdatedtext.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Metrics updated <span style="font-weight:600"> _{LastUpdated}_ </span>]]></Val>
@@ -758,10 +836,13 @@
       </Item>
       <Item ItemId=";items.hubanddeviceselectionparams.content.parameters.63aa6750da914e11af9850e156843464.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[]D83D;]DCBB; Device]]></Val>
+          <Val><![CDATA[Device]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[]D83D;]DCBB; 디바이스]]></Val>
+            <Val><![CDATA[디바이스]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[]D83D;]DCBB; Device]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -803,10 +884,13 @@
       </Item>
       <Item ItemId=";items.textselecteddevice.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[<div style="display:flex; align-items: flex-end; flex-wrap: wrap;">]D;]A;  <div class="msportalfx-text-ellipsis ext-usage-param"  style="align-self:end; cursor: auto;">]D;]A;    <span style="margin:0px 4px;">IoT resource: &nbsp; <span style="font-weight:600">{SelectedResource}</span></span>]D;]A;  </div>]D;]A;  <div class="msportalfx-text-ellipsis ext-usage-param" style="align-self:end; cursor: auto;">]D;]A;    <span style="margin:0px 4px">]D83D;]DCBB; Device: &nbsp; <span style="font-weight:600">{SelectedDevice}</span></span>]D;]A;  </div>]D;]A; </div>]]></Val>
+          <Val><![CDATA[<div style="display:flex; align-items: flex-end; flex-wrap: wrap;">]D;]A;  <div class="msportalfx-text-ellipsis ext-usage-param"  style="align-self:end; cursor: auto;">]D;]A;    <span style="margin:0px 4px;">IoT resource: &nbsp; <span style="font-weight:600">{SelectedResource}</span></span>]D;]A;  </div>]D;]A;  <div class="msportalfx-text-ellipsis ext-usage-param" style="align-self:end; cursor: auto;">]D;]A;    <span style="margin:0px 4px">Device: &nbsp; <span style="font-weight:600">{SelectedDevice}</span></span>]D;]A;  </div>]D;]A; </div>]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[<div style="display:flex; align-items: flex-end; flex-wrap: wrap;">]D;]A;  <div class="msportalfx-text-ellipsis ext-usage-param"  style="align-self:end; cursor: auto;">]D;]A;    <span style="margin:0px 4px;">IoT resource: &nbsp; <span style="font-weight:600">{SelectedResource}</span></span>]D;]A;  </div>]D;]A;  <div class="msportalfx-text-ellipsis ext-usage-param" style="align-self:end; cursor: auto;">]D;]A;    <span style="margin:0px 4px">]D83D;]DCBB; Device: &nbsp; <span style="font-weight:600">{SelectedDevice}</span></span>]D;]A;  </div>]D;]A; </div>]]></Val>
+            <Val><![CDATA[<div style="display:flex; align-items: flex-end; flex-wrap: wrap;">]D;]A;  <div class="msportalfx-text-ellipsis ext-usage-param"  style="align-self:end; cursor: auto;">]D;]A;    <span style="margin:0px 4px;">IoT resource: &nbsp; <span style="font-weight:600">{SelectedResource}</span></span>]D;]A;  </div>]D;]A;  <div class="msportalfx-text-ellipsis ext-usage-param" style="align-self:end; cursor: auto;">]D;]A;    <span style="margin:0px 4px">Device: &nbsp; <span style="font-weight:600">{SelectedDevice}</span></span>]D;]A;  </div>]D;]A; </div>]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[<div style="display:flex; align-items: flex-end; flex-wrap: wrap;">]D;]A;  <div class="msportalfx-text-ellipsis ext-usage-param"  style="align-self:end; cursor: auto;">]D;]A;    <span style="margin:0px 4px;">IoT resource: &nbsp; <span style="font-weight:600">{SelectedResource}</span></span>]D;]A;  </div>]D;]A;  <div class="msportalfx-text-ellipsis ext-usage-param" style="align-self:end; cursor: auto;">]D;]A;    <span style="margin:0px 4px">]D83D;]DCBB; Device: &nbsp; <span style="font-weight:600">{SelectedDevice}</span></span>]D;]A;  </div>]D;]A; </div>]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
