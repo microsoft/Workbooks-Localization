@@ -737,10 +737,13 @@
       </Item>
       <Item ItemId=";items.devicedetailsgroup.content.items.hostdetailsview.content.items.hostosinformation.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[**OS info<br>**]A;{hostInfoOs}<br>]A;{hostInfoOstype} {hostInfoArch}<br>]A;]A;**IoT Edge daemon version<br>**]A;{hostInfoEdgedVer}<br>]A;]A;**Docker daemon version<br>**]A;{hostInfoDockerVer}<br>]A;]A;**# CPUs<br>**]A;{hostInfoNumCpus}<br>]A;]A;]A;]A;]]></Val>
+          <Val><![CDATA[**OS info<br>**]A;{hostInfoOs}<br>]A;{hostInfoOstype} {hostInfoArch}<br>]A;]A;**IoT Edge daemon version<br>**]A;{hostInfoEdgedVer}<br>]A;]A;**Docker daemon version<br>**]A;{hostInfoDockerVer}<br>]A;]A;<table style="border:none">]A;<tr style="border:none">]A;<th style="border:none;padding:0px"># CPUs</th>]A;<th style="border:none">Memory</th>]A;</tr>]A;<tr style="border:none">]A;<td style="border:none;background:none">{hostInfoNumCpus}</td>]A;<td style="border:none;background:none">{hostInfoMemoryBytesFormatted}</td>]A;</tr>]A;</table>]A;]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[**OS 정보<br>**]A;{hostInfoOs}<br>]A;{hostInfoOstype} {hostInfoArch}<br>]A;]A;**IoT Edge 데몬 버전<br>**]A;{hostInfoEdgedVer}<br>]A;]A;**Docker 데몬 버전<br>**]A;{hostInfoDockerVer}<br>]A;]A;**# CPU<br>**]A;{hostInfoNumCpus}<br>]A;]A;]A;]A;]]></Val>
+            <Val><![CDATA[**OS info<br>**]A;{hostInfoOs}<br>]A;{hostInfoOstype} {hostInfoArch}<br>]A;]A;**IoT Edge 디먼 버전<br>**]A;{hostInfoEdgedVer}<br>]A;]A;**Docker 디먼 버전<br>**]A;{hostInfoDockerVer}<br>]A;]A;<table style="border:none">]A;<tr style="border:none">]A;<th style="border:none;padding:0px"># CPUs</th>]A;<th style="border:none">Memory</th>]A;</tr>]A;<tr style="border:none">]A;<td style="border:none;background:none">{hostInfoNumCpus}</td>]A;<td style="border:none;background:none">{hostInfoMemoryBytesFormatted}</td>]A;</tr>]A;</table>]A;]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[**OS info<br>**]A;{hostInfoOs}<br>]A;{hostInfoOstype} {hostInfoArch}<br>]A;]A;**IoT Edge daemon version<br>**]A;{hostInfoEdgedVer}<br>]A;]A;**Docker daemon version<br>**]A;{hostInfoDockerVer}<br>]A;]A;**# CPUs<br>**]A;{hostInfoNumCpus}<br>]A;]A;]A;]A;]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
