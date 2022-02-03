@@ -12,48 +12,72 @@
       <Item ItemId=";items.Summary.content.items.OperationsDetail.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Operations Detail]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Szczegóły operacji]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Summary.content.items.SummarybyCategoryValue.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Summary by Category Value]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Podsumowanie według wartości kategorii]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Summary.content.items.query3.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Summary by ResourceProviderValue]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Podsumowanie według ResourceProviderValue]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group10.content.items.query0.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[ AZURE ACTIVITY LOG ENTRIES]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[ WPISY DZIENNIKÓW AKTYWNOŚCI PLATFORMY AZURE]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group10.content.items.query1.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[ACTIVITY LOGS BY STATUS]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[DZIENNIKI AKTYWNOŚCI WEDŁUG STANU]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group10.content.items.query2.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[ACTIVITY LOGS BY RESOURCE]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[DZIENNIKI AKTYWNOŚCI WEDŁUG ZASOBU]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group10.content.items.query3.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[ACTIVITY LOGS BY RESOURCE PROVIDER]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[DZIENNIKI AKTYWNOŚCI WEDŁUG DOSTAWCY ZASOBÓW]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group6.content.items.query0.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Failures by Operation Name]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Niepowodzenia według nazwy operacji]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -61,7 +85,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Failures by Resources]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Błędy według zasobów]]></Val>
+            <Val><![CDATA[Niepowodzenia według zasobów]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -70,7 +94,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Failures by Category]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Błędy według kategorii]]></Val>
+            <Val><![CDATA[Niepowodzenia według kategorii]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -78,6 +102,9 @@
       <Item ItemId=";items.group6.content.items.text4.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[1. When user clicks on any section of the above pie chart, the below section should display related top 100 records]D;]A;For example, if a user clicks on a section of a pie chart under "Failures by Resources" then ideally the bottom half of the insights page displays top 100 records using the following query:]D;]A;]D;]A;AzureActivity]D;]A;| where ActivityStatusValue has "Failure" or ActivityStatusValue has "Failed"]D;]A;| where OperationNameValue has "AUDITIFNOTEXISTS"]D;]A;| top 100 by TimeGenerated desc]D;]A;]D;]A;2. The below displayed records will refresh as user moves a) between sections of the same pie chart, and b) when traversing through the different pie charts]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[1. Gdy użytkownik kliknie dowolną sekcję powyższego wykresu kołowego, w poniższej sekcji powinno być wyświetlanych powiązanych 100 najważniejszych rekordów.]D;]A;Jeśli na przykład użytkownik kliknie sekcję wykresu kołowego w obszarze „Błędy według zasobów”, najlepiej, aby w dolnej połowie strony szczegółowych informacji było wyświetlanych 100 najważniejszych rekordów przy użyciu następującego zapytania:]D;]A;]D;]A;AzureActivity]D;]A;| gdzie właściwość ActivityStatusValue ma wartość „Failure” lub "Failed"]D;]A;| gdzie właściwość OperationNameValue ma atrybut „AUDITIFNOTEXISTS”]D;]A;| 100 najważniejszych według parametru TimeGenerated desc]D;]A;]D;]A;2. Poniższe wyświetlane rekordy zostaną odświeżone, gdy użytkownik przenosi a) między sekcjami tego samego wykresu kołowego, oraz b) podczas przechodzenia przez różne wykresy kołowe]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -102,12 +129,18 @@
       <Item ItemId=";items.group8.content.items.query0.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Scaleup Result by Activity Status]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Wynik skalowania w górę według stanu działania]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group8.content.items.query1.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Scale down Result by Activity Status]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Wynik skalowania w dół według stanu działania]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -241,7 +274,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Operations ]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Operacje]]></Val>
+            <Val><![CDATA[Operacje ]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -249,18 +282,27 @@
       <Item ItemId=";items.query3.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[ResourceProviderValue grouped by ActivityStatusValue]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[ResourceProviderValue pogrupowane według ActivityStatusValue]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text11.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[**NOTE**]A;* It is required to enable Log Analytics in Diagnotic Settings for this workbook to work.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[**UWAGA**]A;* Aby ten skoroszyt działał, należy włączyć usługę Log Analytics w ustawieniach diagnostycznych.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text5.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Summary by ResourceProviderValue chart will be displayed below Summary by Category Value]D;]A;Clicking on a tile displayed under ResourceProviderValue will a) Open a new window b) Top of the window will have the chart 'ResourceProviderValue grouped by ActivityStatusValue' c) Clicking on any section of the pie chart should display the grid, as shown right above this section displaying latest 100 records by Time.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Podsumowanie według wykresu ResourceProviderValue zostanie wyświetlone poniżej podsumowania według wartości kategorii]D;]A;Kliknięcie kafelka wyświetlanego w obszarze ResourceProviderValue spowoduje a) Otwarcie nowego okna b) W górnej części okna zostanie wyświetlony wykres „ResourceProviderValue pogrupowany według wartości ActivityStatusValue” c) Kliknięcie dowolnej sekcji wykresu kołowego powinno wyświetlić siatkę, tak jak pokazano bezpośrednio nad tą sekcją, wyświetlając najnowsze 100 rekordów według czasu.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

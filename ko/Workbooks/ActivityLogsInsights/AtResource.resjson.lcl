@@ -12,48 +12,72 @@
       <Item ItemId=";items.Summary.content.items.OperationsDetail.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Operations Detail]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[작업 세부 정보]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Summary.content.items.SummarybyCategoryValue.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Summary by Category Value]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[범주 값별 요약]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Summary.content.items.query3.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Summary by ResourceProviderValue]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[ResourceProviderValue별 요약]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group10.content.items.query0.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[ AZURE ACTIVITY LOG ENTRIES]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[ AZURE 활동 로그 항목]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group10.content.items.query1.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[ACTIVITY LOGS BY STATUS]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[상태별 활동 로그]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group10.content.items.query2.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[ACTIVITY LOGS BY RESOURCE]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[리소스별 활동 로그]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group10.content.items.query3.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[ACTIVITY LOGS BY RESOURCE PROVIDER]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[리소스 공급자별 활동 로그]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group6.content.items.query0.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Failures by Operation Name]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[작업 이름별 오류]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -78,6 +102,9 @@
       <Item ItemId=";items.group6.content.items.text4.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[1. When user clicks on any section of the above pie chart, the below section should display related top 100 records]D;]A;For example, if a user clicks on a section of a pie chart under "Failures by Resources" then ideally the bottom half of the insights page displays top 100 records using the following query:]D;]A;]D;]A;AzureActivity]D;]A;| where ActivityStatusValue has "Failure" or ActivityStatusValue has "Failed"]D;]A;| where OperationNameValue has "AUDITIFNOTEXISTS"]D;]A;| top 100 by TimeGenerated desc]D;]A;]D;]A;2. The below displayed records will refresh as user moves a) between sections of the same pie chart, and b) when traversing through the different pie charts]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[1. 사용자가 위 원형 차트의 아무 구역이나 클릭하면 아래 구역에 관련된 상위 100개 레코드가 표시됩니다.]D;]A;예를 들어 사용자가 "리소스별 오류" 아래의 원형 차트 구역을 클릭하는 경우 인사이트 페이지 아래쪽 절반에는 다음 쿼리를 사용하는 상위 100개 레코드가 표시되어야 정상입니다.]D;]A;]D;]A;AzureActivity]D;]A;| ActivityStatusValue에 "Failure"가 있거나 ActivityStatusValue에 "Failed"가 있는 경우]D;]A;| OperationNameValue에 "AUDITIFNOTEXISTS"가 있는 경우]D;]A;| TimeGenerated desc별 상위 100개]D;]A;]D;]A;2. 아래 표시되는 레코드는 a) 사용자가 같은 원형 차트 구역 간을 이동할 때 b) 서로 다른 원형 차트를 오갈 때 새로 고침됩니다.]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -102,12 +129,18 @@
       <Item ItemId=";items.group8.content.items.query0.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Scaleup Result by Activity Status]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[활동 상태별 스케일 업 결과]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group8.content.items.query1.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Scale down Result by Activity Status]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[활동 상태별 스케일 다운 결과]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -178,7 +211,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Failures]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[실패]]></Val>
+            <Val><![CDATA[오류]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -249,18 +282,27 @@
       <Item ItemId=";items.query3.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[ResourceProviderValue grouped by ActivityStatusValue]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[ActivityStatusValue별로 그룹화된 ResourceProviderValue]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text11.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[**NOTE**]A;* It is required to enable Log Analytics in Diagnotic Settings for this workbook to work.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[**참고**]A;* 이 통합 문서가 작동하려면 진단 설정에서 Log Analytics를 사용하도록 설정해야 합니다.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text5.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Summary by ResourceProviderValue chart will be displayed below Summary by Category Value]D;]A;Clicking on a tile displayed under ResourceProviderValue will a) Open a new window b) Top of the window will have the chart 'ResourceProviderValue grouped by ActivityStatusValue' c) Clicking on any section of the pie chart should display the grid, as shown right above this section displaying latest 100 records by Time.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[ResourceProviderValue 차트별 요약이 범주 값별 요약 아래에 표시됩니다.]D;]A;ResourceProviderValue 아래에 표시된 타일을 클릭하면 a) 새 창이 열리고 b) 창 맨 위에 ‘ActivityStatusValue별로 그룹화된 ResourceProviderValue’가 표시되고 c) 원형 차트의 아무 구역이나 클릭하면 이 구역 바로 위에 나온 시간별 최근 100개 레코드와 같이 그리드가 표시됩니다.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
