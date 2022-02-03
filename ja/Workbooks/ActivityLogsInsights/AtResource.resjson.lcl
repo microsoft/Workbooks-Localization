@@ -12,48 +12,72 @@
       <Item ItemId=";items.Summary.content.items.OperationsDetail.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Operations Detail]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[操作の詳細]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Summary.content.items.SummarybyCategoryValue.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Summary by Category Value]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[カテゴリ値別の概要]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Summary.content.items.query3.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Summary by ResourceProviderValue]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[ResourceProviderValue ごとの概要]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group10.content.items.query0.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[ AZURE ACTIVITY LOG ENTRIES]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[ Azure アクティビティ ログの項目]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group10.content.items.query1.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[ACTIVITY LOGS BY STATUS]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[状態別のアクティビティ ログ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group10.content.items.query2.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[ACTIVITY LOGS BY RESOURCE]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[リソースごとのアクティビティ ログ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group10.content.items.query3.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[ACTIVITY LOGS BY RESOURCE PROVIDER]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[リソース プロバイダーごとのアクティビティ ログ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group6.content.items.query0.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Failures by Operation Name]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[操作名ごとのエラー]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -78,6 +102,9 @@
       <Item ItemId=";items.group6.content.items.text4.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[1. When user clicks on any section of the above pie chart, the below section should display related top 100 records]D;]A;For example, if a user clicks on a section of a pie chart under "Failures by Resources" then ideally the bottom half of the insights page displays top 100 records using the following query:]D;]A;]D;]A;AzureActivity]D;]A;| where ActivityStatusValue has "Failure" or ActivityStatusValue has "Failed"]D;]A;| where OperationNameValue has "AUDITIFNOTEXISTS"]D;]A;| top 100 by TimeGenerated desc]D;]A;]D;]A;2. The below displayed records will refresh as user moves a) between sections of the same pie chart, and b) when traversing through the different pie charts]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[1. ユーザーが上の円グラフのいずれかのセクションをクリックすると、関連する上位 100 件のレコードが下のセクションに表示されます]D;]A;たとえば、ユーザーが [リソースによるエラー]5D; の下にある円グラフのセクションをクリックすると、分析情報ページの下半分に、次のクエリを使用して上位 100 件のレコードが表示されます。]D;]A;]D;]A;AzureActivity]D;]A;| ActivityStatusValue に "Failure" または ActivityStatusValue に "Failed" が指定されている場合]D;]A;| OperationNameValue に "AUDITIFNOTEXISTS" が指定されている場合]D;]A;| TimeGenerated desc による上位 100 件]D;]A;]D;]A;2. 以下に表示されているレコードは、ユーザーが a) 同じ円グラフのセクション間、b) 異なる円グラフ間を移動する場合に更新されます。]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -94,7 +121,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Scale down]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[スケール ダウン]]></Val>
+            <Val><![CDATA[スケールダウン]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -102,12 +129,18 @@
       <Item ItemId=";items.group8.content.items.query0.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Scaleup Result by Activity Status]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[アクティビティの状態別のスケールアップ結果]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group8.content.items.query1.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Scale down Result by Activity Status]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[アクティビティの状態別のスケールダウン結果]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -178,7 +211,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Failures]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[失敗]]></Val>
+            <Val><![CDATA[エラー]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -241,7 +274,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Operations ]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[操作]]></Val>
+            <Val><![CDATA[操作 ]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -249,18 +282,27 @@
       <Item ItemId=";items.query3.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[ResourceProviderValue grouped by ActivityStatusValue]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[ActivityStatusValue でグループ化された ResourceProviderValue]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text11.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[**NOTE**]A;* It is required to enable Log Analytics in Diagnotic Settings for this workbook to work.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[**注**]A;* このブックを機能させるには、診断設定でログ分析を有効にする必要があります。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text5.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Summary by ResourceProviderValue chart will be displayed below Summary by Category Value]D;]A;Clicking on a tile displayed under ResourceProviderValue will a) Open a new window b) Top of the window will have the chart 'ResourceProviderValue grouped by ActivityStatusValue' c) Clicking on any section of the pie chart should display the grid, as shown right above this section displaying latest 100 records by Time.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[ResourceProviderValue グラフごとの概要は、カテゴリ値別の概要の下に表示されます]D;]A;ResourceProviderValue の下に表示されているタイルをクリックすると、a) 新しいウィンドウを開きます。b) ウィンドウの上部に、'ActivityStatusValue でグループ化された ResourceProviderValue' グラフがあります。c) 円グラフの任意のセクションをクリックすると、このセクションの右上にグリッドが表示され、最新の 100 レコードが時間別に表示されます。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

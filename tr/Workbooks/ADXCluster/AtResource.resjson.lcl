@@ -608,10 +608,13 @@
       </Item>
       <Item ItemId=";items.ClusterGroup.content.items.cache.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Cache Utilization]]></Val>
+          <Val><![CDATA[Cache Utilization Factor]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Önbellek Kullanımı]]></Val>
+            <Val><![CDATA[Önbellek Kullanımı Faktörü]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Cache Utilization]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1259,12 +1262,12 @@
       </Item>
       <Item ItemId=";items.Overview.content.items.expander.content.items.TopUsersHeader.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[<svg viewBox="0 0 50 50" class="fxt-escapeShadow" width="20" role="presentation" focusable="false" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"><g><path d="M35.859 10.269c0 5.671-4.638 10.269-10.359 10.269S15.142 15.94 15.142 10.269 19.779 0 25.5 0s10.359 4.598 10.359 10.269m-2.785 13.789L25.5 34.578l-7.574-10.52H7.001V50H44V24.058z" class="msportalfx-svg-c15"></path><path opacity=".2" d="M15.143 10.269c0 5.587 4.501 10.122 10.104 10.257L27.848.276A10.37 10.37 0 0 0 25.5 0c-5.721 0-10.357 4.598-10.357 10.269m2.786 13.789H7V50h14.508l2.287-17.79z" class="msportalfx-svg-c01"></path></g></svg>&nbsp;<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px 0px 0px 0px;position: relative;top:-3px;left:-4px;"> Top resource consumers]D;]A;</span> <br>]D;]A;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The aggregated usage in the cluster, out of the total used CPU and memory. ]D;]A;To see more details, go to the **Usage** tab.]]></Val>
+          <Val><![CDATA[<svg viewBox="0 0 50 50" class="fxt-escapeShadow" width="20" role="presentation" focusable="false" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"><g><path d="M35.859 10.269c0 5.671-4.638 10.269-10.359 10.269S15.142 15.94 15.142 10.269 19.779 0 25.5 0s10.359 4.598 10.359 10.269m-2.785 13.789L25.5 34.578l-7.574-10.52H7.001V50H44V24.058z" class="msportalfx-svg-c15"></path><path opacity=".2" d="M15.143 10.269c0 5.587 4.501 10.122 10.104 10.257L27.848.276A10.37 10.37 0 0 0 25.5 0c-5.721 0-10.357 4.598-10.357 10.269m2.786 13.789H7V50h14.508l2.287-17.79z" class="msportalfx-svg-c01"></path></g></svg>&nbsp;<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px 0px 0px 0px;position: relative;top:-3px;left:-4px;"> Top resource consumers]D;]A;</span> <br>]D;]A;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The aggregated usage in the cluster, within the CPU and memory consumption of the cluster. ]D;]A;To see more details, go to the **Usage** tab.]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[<svg viewBox="0 0 50 50" class="fxt-escapeShadow" width="20" role="presentation" focusable="false" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"><g><path d="M35.859 10.269c0 5.671-4.638 10.269-10.359 10.269S15.142 15.94 15.142 10.269 19.779 0 25.5 0s10.359 4.598 10.359 10.269m-2.785 13.789L25.5 34.578l-7.574-10.52H7.001V50H44V24.058z" class="msportalfx-svg-c15"></path><path opacity=".2" d="M15.143 10.269c0 5.587 4.501 10.122 10.104 10.257L27.848.276A10.37 10.37 0 0 0 25.5 0c-5.721 0-10.357 4.598-10.357 10.269m2.786 13.789H7V50h14.508l2.287-17.79z" class="msportalfx-svg-c01"></path></g></svg>&nbsp;<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px 0px 0px 0px;position: relative;top:-3px;left:-4px;"> En fazla kaynak tüketenler]D;]A;</span> <br>]D;]A;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kullanılan toplam CPU ve bellek içinden kümedeki toplam kullanım. ]D;]A;Daha fazla ayrıntı için **Kullanım** sekmesine gidin.]]></Val>
+            <Val><![CDATA[<svg viewBox="0 0 50 50" class="fxt-escapeShadow" width="20" role="presentation" focusable="false" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"><g><path d="M35.859 10.269c0 5.671-4.638 10.269-10.359 10.269S15.142 15.94 15.142 10.269 19.779 0 25.5 0s10.359 4.598 10.359 10.269m-2.785 13.789L25.5 34.578l-7.574-10.52H7.001V50H44V24.058z" class="msportalfx-svg-c15"></path><path opacity=".2" d="M15.143 10.269c0 5.587 4.501 10.122 10.104 10.257L27.848.276A10.37 10.37 0 0 0 25.5 0c-5.721 0-10.357 4.598-10.357 10.269m2.786 13.789H7V50h14.508l2.287-17.79z" class="msportalfx-svg-c01"></path></g></svg>&nbsp;<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px 0px 0px 0px;position: relative;top:-3px;left:-4px;"> En fazla kaynak tüketenler]D;]A;</span> <br>]D;]A;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kümenin CPU ve bellek tüketimi içinden kümedeki toplam kullanım. ]D;]A;Daha fazla ayrıntı görmek için **Kullanım** sekmesine gidin.]]></Val>
           </Tgt>
           <Prev Cat="Text">
-            <Val><![CDATA[<svg viewBox="0 0 50 50" class="fxt-escapeShadow" width="20" role="presentation" focusable="false" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"><g><path d="M35.859 10.269c0 5.671-4.638 10.269-10.359 10.269S15.142 15.94 15.142 10.269 19.779 0 25.5 0s10.359 4.598 10.359 10.269m-2.785 13.789L25.5 34.578l-7.574-10.52H7.001V50H44V24.058z" class="msportalfx-svg-c15"></path><path opacity=".2" d="M15.143 10.269c0 5.587 4.501 10.122 10.104 10.257L27.848.276A10.37 10.37 0 0 0 25.5 0c-5.721 0-10.357 4.598-10.357 10.269m2.786 13.789H7V50h14.508l2.287-17.79z" class="msportalfx-svg-c01"></path></g></svg>&nbsp;<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px 0px 0px 0px;position: relative;top:-3px;left:-4px;"> Top resource consumers]D;]A;</span> <br>]D;]A;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is the top consumers' usage distribution within the CPU and memory consumption of the cluster. ]D;]A;To see more details, go to the **Usage** tab.]]></Val>
+            <Val><![CDATA[<svg viewBox="0 0 50 50" class="fxt-escapeShadow" width="20" role="presentation" focusable="false" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"><g><path d="M35.859 10.269c0 5.671-4.638 10.269-10.359 10.269S15.142 15.94 15.142 10.269 19.779 0 25.5 0s10.359 4.598 10.359 10.269m-2.785 13.789L25.5 34.578l-7.574-10.52H7.001V50H44V24.058z" class="msportalfx-svg-c15"></path><path opacity=".2" d="M15.143 10.269c0 5.587 4.501 10.122 10.104 10.257L27.848.276A10.37 10.37 0 0 0 25.5 0c-5.721 0-10.357 4.598-10.357 10.269m2.786 13.789H7V50h14.508l2.287-17.79z" class="msportalfx-svg-c01"></path></g></svg>&nbsp;<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px 0px 0px 0px;position: relative;top:-3px;left:-4px;"> Top resource consumers]D;]A;</span> <br>]D;]A;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The aggregated usage in the cluster, out of the total used CPU and memory. ]D;]A;To see more details, go to the **Usage** tab.]]></Val>
           </Prev>
         </Str>
         <Disp Icon="Str" />
@@ -1316,160 +1319,205 @@
       </Item>
       <Item ItemId=";items.Tabs.content.links.0.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Overview]]></Val>
+          <Val><![CDATA[<span style="font-family: Open Sans;  font-size: 16px;"> Overview </span>]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Genel Bakış]]></Val>
+            <Val><![CDATA[<span style="font-family: Open Sans;  font-size: 16px;"> Genel Bakış </span>]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Overview]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Tabs.content.links.1.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Key Metrics]]></Val>
+          <Val><![CDATA[<span style="font-family: Open Sans;  font-size: 16px;"> Key Metrics </span>]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Temel Ölçümler]]></Val>
+            <Val><![CDATA[<span style="font-family: Open Sans;  font-size: 16px;"> Temel Ölçümler </span>]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Key Metrics]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Tabs.content.links.2.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Usage]]></Val>
+          <Val><![CDATA[<span style="font-family: Open Sans;  font-size: 16px;"> Usage </span>]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Kullanım]]></Val>
+            <Val><![CDATA[<span style="font-family: Open Sans;  font-size: 16px;"> Kullanım </span>]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Usage]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Tabs.content.links.3.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Tables]]></Val>
+          <Val><![CDATA[<span style="font-family: Open Sans;  font-size: 16px;"> Tables </span>]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Tablolar]]></Val>
+            <Val><![CDATA[<span style="font-family: Open Sans;  font-size: 16px;"> Tablolar </span>]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Tables]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Tabs.content.links.4.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Cache]]></Val>
+          <Val><![CDATA[<span style="font-family: Open Sans;  font-size: 16px;"> Cache </span>]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Önbellek]]></Val>
+            <Val><![CDATA[<span style="font-family: Open Sans;  font-size: 16px;"> Önbellek </span>]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Cache]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Tabs.content.links.5.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Ingestion (preview)]]></Val>
+          <Val><![CDATA[<span style="font-family: Open Sans;  font-size: 16px;"> Ingestion</span>]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Alım (önizleme)]]></Val>
+            <Val><![CDATA[<span style="font-family: Open Sans;  font-size: 16px;"> Alım</span>]]></Val>
           </Tgt>
           <Prev Cat="Text">
-            <Val><![CDATA[Ingestion]]></Val>
+            <Val><![CDATA[Ingestion (preview)]]></Val>
           </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Tabs.content.links.6.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Cluster Boundaries]]></Val>
+          <Val><![CDATA[<span style="font-family: Open Sans;  font-size: 16px;"> Cluster Boundedness </span>]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Küme Sınırları]]></Val>
+            <Val><![CDATA[<span style="font-family: Open Sans;  font-size: 16px;"> Küme Sınırlılığı </span>]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Cluster Boundaries]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Tabs.content.links.7.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Materialized Views]]></Val>
+          <Val><![CDATA[<span style="font-family: Open Sans;  font-size: 16px;"> Materialized Views </span>]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Gerçekleştirilmiş Görünümler]]></Val>
+            <Val><![CDATA[<span style="font-family: Open Sans;  font-size: 16px;"> Gerçekleştirilmiş Görünümler </span>]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Materialized Views]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Tabs.content.links.8.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Virtual Networks]]></Val>
+          <Val><![CDATA[<span style="font-family: Open Sans;  font-size: 16px;"> Virtual Network </span>]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Sanal Ağlar]]></Val>
+            <Val><![CDATA[<span style="font-family: Open Sans;  font-size: 16px;"> Sanal Ağ </span>]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Virtual Networks]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.TabsCopy.content.links.0.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Overview]]></Val>
+          <Val><![CDATA[<span style="font-family: Open Sans;  font-size: 16px;"> Overview </span>]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Genel Bakış]]></Val>
+            <Val><![CDATA[<span style="font-family: Open Sans;  font-size: 16px;"> Genel Bakış </span>]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Overview]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.TabsCopy.content.links.1.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Key Metrics]]></Val>
+          <Val><![CDATA[<span style="font-family: Open Sans;  font-size: 16px;"> Key Metrics </span>]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Temel Ölçümler]]></Val>
+            <Val><![CDATA[<span style="font-family: Open Sans;  font-size: 16px;"> Temel Ölçümler </span>]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Key Metrics]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.TabsCopy.content.links.2.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Usage]]></Val>
+          <Val><![CDATA[<span style="font-family: Open Sans;  font-size: 16px;"> Usage </span>]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Kullanım]]></Val>
+            <Val><![CDATA[<span style="font-family: Open Sans;  font-size: 16px;"> Kullanım </span>]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Usage]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.TabsCopy.content.links.3.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Tables]]></Val>
+          <Val><![CDATA[<span style="font-family: Open Sans;  font-size: 16px;"> Tables </span>]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Tablolar]]></Val>
+            <Val><![CDATA[<span style="font-family: Open Sans;  font-size: 16px;"> Tablolar </span>]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Tables]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.TabsCopy.content.links.4.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Cache]]></Val>
+          <Val><![CDATA[<span style="font-family: Open Sans;  font-size: 16px;"> Cache </span>]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Önbellek]]></Val>
+            <Val><![CDATA[<span style="font-family: Open Sans;  font-size: 16px;"> Önbellek </span>]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Cache]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.TabsCopy.content.links.5.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Ingestion (preview)]]></Val>
+          <Val><![CDATA[<span style="font-family: Open Sans;  font-size: 16px;"> Ingestion</span>]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Alım (önizleme)]]></Val>
+            <Val><![CDATA[<span style="font-family: Open Sans;  font-size: 16px;"> Alım</span>]]></Val>
           </Tgt>
           <Prev Cat="Text">
-            <Val><![CDATA[Ingestion]]></Val>
+            <Val><![CDATA[Ingestion (preview)]]></Val>
           </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.TabsCopy.content.links.6.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Cluster Boundaries]]></Val>
+          <Val><![CDATA[<span style="font-family: Open Sans;  font-size: 16px;"> Cluster Boundedness </span>]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Küme Sınırları]]></Val>
+            <Val><![CDATA[<span style="font-family: Open Sans;  font-size: 16px;"> Küme Sınırlılığı </span>]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Cluster Boundaries]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.TabsCopy.content.links.7.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Materialized Views]]></Val>
+          <Val><![CDATA[<span style="font-family: Open Sans;  font-size: 16px;"> Materialized Views </span>]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Gerçekleştirilmiş Görünümler]]></Val>
+            <Val><![CDATA[<span style="font-family: Open Sans;  font-size: 16px;"> Gerçekleştirilmiş Görünümler </span>]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Materialized Views]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1497,18 +1545,6 @@
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Zaman aralığı]]></Val>
           </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.text12.content.json" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 420; font-size: 16px;">**Is the insights page helpful? We'd love your feedback, so please go to the feedback button above this message (☺) and tell us what you think.**]D;]A;</span>]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 420; font-size: 16px;">**İçgörüler sayfası faydalı mı? Görüşlerinizi almak isteriz. Lütfen bu iletinin yukarısındaki geri bildirim düğmesini (☺) kullanarak bize ne düşündüğünüzü söyleyin.**]D;]A;</span>]]></Val>
-          </Tgt>
-          <Prev Cat="Text">
-            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 420; font-size: 16px;">Is the insights page helpful? We'd love your feedback, so please go to the feedback button above this message (☺) and tell us what you think.</span>]]></Val>
-          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
