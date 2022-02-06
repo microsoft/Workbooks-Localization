@@ -239,12 +239,12 @@
       </Item>
       <Item ItemId=";items.snapshot.content.items.snapshotcharts.content.items.diskquery.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Disk space usage]]></Val>
+          <Val><![CDATA[Disk space usage (%)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Lemezterület-használat]]></Val>
+            <Val><![CDATA[Lemezterület-használat (%)]]></Val>
           </Tgt>
           <Prev Cat="Text">
-            <Val><![CDATA[Disk space]]></Val>
+            <Val><![CDATA[Disk space usage]]></Val>
           </Prev>
         </Str>
         <Disp Icon="Str" />
@@ -305,10 +305,13 @@
       </Item>
       <Item ItemId=";items.snapshot.content.items.snapshotcharts.content.items.queuequery.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Queue length (sum)]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[Queue length (max)]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[Várólista átlagos hossza (össz.)]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Queue length (sum)]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
