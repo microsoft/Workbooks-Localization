@@ -47,6 +47,24 @@
       </Item>
       <Item ItemId=";@items.groupselectedtenant.content.items.groupinbound.content.items.groupinboundappuser.content.items.queryappsinb" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) ound.content.gridSettings.labelSettings.AppDisplayName.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Local Client App Display Name]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Отображаемое имя локального клиентского приложения]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) ound.content.gridSettings.labelSettings.AppId.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Local Client App Id]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Идентификатор приложения локального клиента]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
         <Item ItemId=";(...) ound.content.gridSettings.labelSettings.InboundAppSignInsTotal.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Inbound App Sign-Ins Total]]></Val>
@@ -76,19 +94,25 @@
         </Item>
         <Item ItemId=";(...) ound.content.gridSettings.labelSettings.ResourceDisplayName.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Local App Display Name]]></Val>
+            <Val><![CDATA[Local Resource App Display Name]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Локальное отображаемое имя приложения]]></Val>
+              <Val><![CDATA[Отображаемое имя приложения локального ресурса]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[Local App Display Name]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) ound.content.gridSettings.labelSettings.ResourceIdentity.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Local App Id]]></Val>
+            <Val><![CDATA[Local Resource App Id]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[ИД локального приложения]]></Val>
+              <Val><![CDATA[Идентификатор приложения локального ресурса]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[Local App Id]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -251,6 +275,24 @@
       </Item>
       <Item ItemId=";@items.groupselectedtenant.content.items.groupoutbound.content.items.groupoutboundappuser.content.items.queryappso" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) utbound.content.gridSettings.labelSettings.AppDisplayName.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[External Client App Display Name]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Отображаемое имя приложения внешнего клиента]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) utbound.content.gridSettings.labelSettings.AppId.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[External Client App Id]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Идентификатор приложения внешнего клиента]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
         <Item ItemId=";(...) utbound.content.gridSettings.labelSettings.OutboundAppSignInsTotal.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Outbound App Sign-Ins Total]]></Val>
@@ -280,19 +322,25 @@
         </Item>
         <Item ItemId=";(...) utbound.content.gridSettings.labelSettings.ResourceDisplayName.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[External App Display Name]]></Val>
+            <Val><![CDATA[External Resource App Display Name]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Внешнее отображаемое имя приложения]]></Val>
+              <Val><![CDATA[Отображаемое имя приложения внешнего ресурса]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[External App Display Name]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) utbound.content.gridSettings.labelSettings.ResourceIdentity.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[External App Id]]></Val>
+            <Val><![CDATA[External Resource App Id]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[ИД внешнего приложения]]></Val>
+              <Val><![CDATA[Идентификатор приложения внешнего ресурса]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[External App Id]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -525,6 +573,24 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
+      <Item ItemId=";items.groupoverview.content.items.queryexternaltenantcount.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[No inbound or outbound cross-tenant activity]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Нет входящих и исходящих действий между клиентами]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.groupoverview.content.items.queryexternaltenantcount.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Number of external tenants with cross-tenant access activity]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Число внешних клиентов с действиями доступа между клиентами]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.groupoverview.content.items.queryoverview.content.gridSettings.labelSettings.ExternalTenantId.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[External Tenant]]></Val>
@@ -644,10 +710,13 @@
       </Item>
       <Item ItemId=";items.textguideoverview.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[### Discovery of cross-tenant access activity]D;]A;To use this workbook, you must first understand the difference between **outbound** access and **inbound** access. As businesses collaborate across organizations, they access external tenant resources or invite external users to access local resources using Azure AD B2B. Outbound access occurs when local users in your tenant access resources in external tenants. Inbound access occurs when external users access local resources in your tenant after signing in. With Azure AD interactive sign-in log telemetry, a tenant administrator can visualize and review the inbound and outbound cross-tenant activity. ]D;]A;]D;]A;This workbook is divided into 4 steps, each of which builds on the previous step. You will start by selecting an external tenant represented by the tenantId in step 1. From there, you choose whether to focus on inbound access or outbound access in step 2. In step 3, you can select an app to zoom in on the users of that app in step 4.  You can also disable showing this guide with the toggle above.]D;]A;]]></Val>
+          <Val><![CDATA[### Discovery of cross-tenant access activity]D;]A;To use this workbook, you must first understand the difference between **outbound** access and **inbound** access. As businesses collaborate across organizations, they access external tenant resources or invite external users to access local resources using Azure AD B2B. Outbound access occurs when local users in your tenant access resources in external tenants. Inbound access occurs when external users access local resources in your tenant after signing in. With Azure AD interactive sign-in log telemetry, a tenant administrator can visualize and review the inbound and outbound cross-tenant activity.]D;]A;]D;]A;This workbook is divided into 4 steps, each of which builds on the previous step. You will start by selecting an external tenant represented by the tenantId in step 1. From there, you choose whether to focus on inbound access or outbound access in step 2. In step 3, you can select an app to zoom in on the users of that app in step 4.  You can also disable showing this guide with the toggle above.]D;]A;]D;]A;Additional information on using this workbook can be found at [Cross-tenant access activity workbook]5D;(https://aka.ms/cross-tenant-signins-workbook)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[### Обнаружение действия доступа между клиентами]D;]A;Чтобы использовать эту книгу, необходимо сначала понять разницу между **исходящим** и **входящим** доступом. В рамках совместной работы организации получают доступ к ресурсам внешних клиентов или приглашают внешних пользователей в локальные ресурсы с помощью Azure AD B2B. Исходящий доступ происходит, когда локальные пользователи в вашем клиенте получают доступ к ресурсам во внешних клиентах. Входящий доступ происходит, когда внешние пользователи получают доступ к локальным ресурсам после входа в ваш клиент. С помощью интерактивной телеметрии журнала входа Azure AD администратор клиента может визуализировать и просматривать входящие и исходящие действия между клиентами. ]D;]A;]D;]A;Эта книга разделена на 4 шага, каждый из которых последовательно развивает действия предыдущего шага. Вы начнете с выбора внешнего клиента, представленного в виде tenantId, на шаге 1. Затем на шаге 2 вы выберете, следует ли сосредоточиться на входящем или исходящем доступе. На шаге 3 можно выбрать приложение, а на шаге 4 — подробно просмотреть пользователей этого приложения. Вы также можете отключить отображение этого руководства с помощью переключателя выше.]D;]A;]]></Val>
+            <Val><![CDATA[### Обнаружение действия доступа между клиентами]D;]A;Чтобы использовать эту книгу, необходимо сначала понять разницу между **исходящим** и **входящим** доступом. В рамках совместной работы организации получают доступ к ресурсам внешних клиентов или приглашают внешних пользователей в локальные ресурсы с помощью Azure AD B2B. Исходящий доступ происходит, когда локальные пользователи в вашем клиенте получают доступ к ресурсам во внешних клиентах. Входящий доступ происходит, когда внешние пользователи получают доступ к локальным ресурсам после входа в ваш клиент. С помощью интерактивной телеметрии журнала входа Azure AD администратор клиента может визуализировать и просматривать входящие и исходящие действия между клиентами.]D;]A;]D;]A;Эта книга разделена на 4 шага, каждый из которых последовательно развивает действия предыдущего шага. Вы начнете с выбора внешнего клиента, представленного в виде tenantId, на шаге 1. Затем на шаге 2 вы выберете, следует ли сосредоточиться на входящем или исходящем доступе. На шаге 3 можно выбрать приложение, а на шаге 4 — подробно просмотреть пользователей этого приложения. Вы также можете отключить отображение этого руководства с помощью переключателя выше.]D;]A;]D;]A;Дополнительные сведения об использовании этой книги см. в книге [Действие доступа между клиентами]5D;(https://aka.ms/cross-tenant-signins-workbook)]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[### Discovery of cross-tenant access activity]D;]A;To use this workbook, you must first understand the difference between **outbound** access and **inbound** access. As businesses collaborate across organizations, they access external tenant resources or invite external users to access local resources using Azure AD B2B. Outbound access occurs when local users in your tenant access resources in external tenants. Inbound access occurs when external users access local resources in your tenant after signing in. With Azure AD interactive sign-in log telemetry, a tenant administrator can visualize and review the inbound and outbound cross-tenant activity. ]D;]A;]D;]A;This workbook is divided into 4 steps, each of which builds on the previous step. You will start by selecting an external tenant represented by the tenantId in step 1. From there, you choose whether to focus on inbound access or outbound access in step 2. In step 3, you can select an app to zoom in on the users of that app in step 4.  You can also disable showing this guide with the toggle above.]D;]A;]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
