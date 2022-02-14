@@ -12,8 +12,8 @@
       <Item ItemId=";items.group0.content.items.Insights.content.items.MacOS.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[% | Count of Mac Authentications]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[ Запросы проверки подлинности пользователей macOS]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[% | Число проверок подлинности на Mac]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[ MacOS user authentication prompts]]></Val>
@@ -24,8 +24,8 @@
       <Item ItemId=";items.group0.content.items.Insights.content.items.ManagedDevices.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[%      |      Count of Managed Devices]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[Управляемые устройства]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[%      |      Число управляемых устройств]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Managed Devices]]></Val>
@@ -36,8 +36,8 @@
       <Item ItemId=";items.group0.content.items.Insights.content.items.Mobile.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[%  Auth App Authentications  | Count of Android/iOS Devices]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[Входы в приложение Authenticator на мобильном устройстве]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[% проверок подлинности приложения проверки подлинности | Число устройств с Android или iOS]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Authenticator app sign-ins on mobile]]></Val>
@@ -48,8 +48,8 @@
       <Item ItemId=";items.group0.content.items.Insights.content.items.WHFB.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[% WHFB | Count of Windows Devices]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[Проверки подлинности WHFB]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[% WHFB | Число устройств с Windows]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[WHFB authentications]]></Val>
@@ -108,6 +108,9 @@
       <Item ItemId=";items.group0.content.items.Tiles.content.items.text2.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Authentication Prompts Summary]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Сводка запросов проверки подлинности]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -351,6 +354,9 @@
       <Item ItemId=";items.group0.content.items.query19Copy.content.chartSettings.seriesLabelSettings.5.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[All Other]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Все остальное]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -390,6 +396,9 @@
       <Item ItemId=";items.group0.content.items.query19CopyCopy.content.chartSettings.seriesLabelSettings.5.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[All Other Policies]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Все остальные политики]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -465,18 +474,27 @@
       <Item ItemId=";items.group0.content.items.query36.content.chartSettings.seriesLabelSettings.3.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[All other process details]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Все остальные сведения о процессе]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group0.content.items.query36.content.chartSettings.seriesLabelSettings.5.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[User Impersonation]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Олицетворение пользователя]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group0.content.items.query36.content.chartSettings.seriesLabelSettings.6.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Privilege Acess]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Привилегированный доступ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -492,36 +510,54 @@
       <Item ItemId=";items.group0.content.items.query36Copy.content.chartSettings.seriesLabelSettings.0.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Oauth Scope Info ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Сведения области OAuth ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group0.content.items.query36Copy.content.chartSettings.seriesLabelSettings.3.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[All other process details]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Все остальные сведения о процессе]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group0.content.items.query36Copy.content.chartSettings.seriesLabelSettings.5.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[User Impersonation ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Олицетворение пользователя ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group0.content.items.query36Copy.content.chartSettings.seriesLabelSettings.6.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Privilege Access]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Привилегированный доступ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group0.content.items.query36Copy.content.chartSettings.seriesLabelSettings.7.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[IP CA Policy]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Политика IP центра сертификации]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group0.content.items.query36Copy.content.chartSettings.seriesLabelSettings.9.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Sensitive Info]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Конфиденциальная информация]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -543,6 +579,9 @@
       <Item ItemId=";items.group0.content.items.query36CopyCopy.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Zero Interactive TLS Sign-ins]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Ноль интерактивных входов с использованием TLS]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -558,6 +597,9 @@
       <Item ItemId=";items.group0.content.items.query36CopyCopyCopy.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Zero Non-Interactive TLS Sign-ins]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Ноль неинтерактивных входов с использованием TLS]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -648,6 +690,9 @@
       <Item ItemId=";items.group0.content.items.query8.content.chartSettings.seriesLabelSettings.8.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Joey Cruz]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Джоуи Круз]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -690,7 +735,7 @@
       <Item ItemId=";items.group0.content.items.text11.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Recommendations for reducing prompts and improving user experience]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[# Рекомендации по снижению запросов и улучшению взаимодействия с пользователями]]></Val>
           </Tgt>
           <Prev Cat="Text">
@@ -702,7 +747,7 @@
       <Item ItemId=";items.group0.content.items.text2.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Filters]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[# Фильтры]]></Val>
           </Tgt>
           <Prev Cat="Text">
@@ -756,8 +801,8 @@
       <Item ItemId=";items.group0.content.items.text6.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[A high count of failures per user can skew the average so consider both the average and the median when analyzing the data. The median represents the 50th percentile, where 50% of the users  have prompts equal to or less than the median value.]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[Примечание. Большое количество сбоев на пользователя может исказить среднее значение, поэтому при анализе данных следует учитывать как среднее, так и медианное значение. Медиана представляет 50-й процентиль, где 50 % пользователей получают количество запросов, меньшее или равное значению медианы.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Большое количество сбоев на пользователя может исказить среднее значение, поэтому при анализе данных следует учитывать как среднее, так и медианное значение. Медиана представляет 50-й процентиль, где 50 % пользователей получают количество запросов, меньшее или равное значению медианы.]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Note: A high count of failures per user can skew the average so consider both the average and the median when analyzing the data. The median represents the 50th percentile, where 50% of the users  have prompts equal to or less than the median value.]]></Val>
@@ -792,8 +837,8 @@
       <Item ItemId=";items.group0.content.items.text8.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[A high count of failures per application can skew the average so consider both the average and the median when analyzing the data. The median represents the 50th percentile, where 50% of the applications have prompts equal to or less than the median value.]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[Примечание. Большое количество сбоев на приложение может исказить среднее значение, поэтому при анализе данных следует учитывать как среднее, так и медианное значение. Медиана представляет 50-й процентиль, где 50 % приложений получают количество запросов, меньшее или равное значению медианы.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Большое количество сбоев на приложение может исказить среднее значение, поэтому при анализе данных следует учитывать как среднее, так и медианное значение. Медиана представляет 50-й процентиль, где 50% приложений получают количество запросов, меньшее или равное значению медианы.]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Note: A high count of failures per application can skew the average so consider both the average and the median when analyzing the data. The median represents the 50th percentile, where 50% of the applications have prompts equal to or less than the median value.]]></Val>
