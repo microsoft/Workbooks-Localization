@@ -11,34 +11,40 @@
       <Disp Icon="Str" Disp="true" LocTbl="false" />
       <Item ItemId=";items.Charts.content.items.BatchDuration.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Batch Duration]]></Val>
+          <Val><![CDATA[Batch Duration (ms)]]></Val>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Charts.content.items.InputRate.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Input Rate]]></Val>
+          <Val><![CDATA[Input Rate (records/sec)]]></Val>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Charts.content.items.InputRows.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Input Rows]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Wiersze danych wejściowych]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Charts.content.items.OperationDuration.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Operation Duration]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[Operation Duration (ms)]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[Czas trwania operacji]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Operation Duration]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Charts.content.items.ProcessRate.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Process Rate]]></Val>
+          <Val><![CDATA[Process Rate (records/sec)]]></Val>
         </Str>
         <Disp Icon="Str" />
       </Item>
