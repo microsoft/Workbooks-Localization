@@ -1071,12 +1071,18 @@
       <Item ItemId=";items.Nodemonitoringgroup.content.items.Metricsgroup.content.items.Systeminformation.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## System information]D;]A;---]D;]A;<b style="color:DodgerBlue;">Hostname :</b> {hostname}</br>]D;]A;<b style="color:DodgerBlue;">Kernel version :</b> {kernelVersion}]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Sistem bilgileri]D;]A;---]D;]A;<b style="color:DodgerBlue;">Ana bilgisayar adı:</b> {hostname}</br>]D;]A;<b style="color:DodgerBlue;">Çekirdek sürümü:</b> {kernelVersion}]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Nodemonitoringgroup.content.items.Metricsgroup.content.items.Warningfornodatareceived.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Please note that we have stopped receiving telemetry data for {hostname}. The last telemetry was received at "{lastTime}", please make sure that both the host and node_exporter agent is up and running to fetch the latest values.]D;]A;]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[{hostname} için telemetri verileri almayı durdurduğumuza lütfen dikkat edin. Son telemetrinin alınma saati: "{lastTime}". En son değerleri getirmek için hem ana bilgisayar hem de node_exporter aracısının çalışır durumda olduğundan emin olun.]D;]A;]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

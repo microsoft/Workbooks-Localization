@@ -1071,12 +1071,18 @@
       <Item ItemId=";items.Nodemonitoringgroup.content.items.Metricsgroup.content.items.Systeminformation.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## System information]D;]A;---]D;]A;<b style="color:DodgerBlue;">Hostname :</b> {hostname}</br>]D;]A;<b style="color:DodgerBlue;">Kernel version :</b> {kernelVersion}]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Systémové informace]D;]A;---]D;]A;<b style="color:DodgerBlue;">Název hostitele:</b> {hostname}</br>]D;]A;<b style="color:DodgerBlue;">Verze jádra:</b> {kernelVersion}]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Nodemonitoringgroup.content.items.Metricsgroup.content.items.Warningfornodatareceived.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Please note that we have stopped receiving telemetry data for {hostname}. The last telemetry was received at "{lastTime}", please make sure that both the host and node_exporter agent is up and running to fetch the latest values.]D;]A;]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Poznámka: Už nedostáváme data telemetrie pro {hostname}. Poslední telemetrie přišla v {lastTime}. Pokud chcete načíst nejnovější hodnoty, ujistěte se prosím, že je spuštěný agent host i node_exporter.]D;]A;]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
