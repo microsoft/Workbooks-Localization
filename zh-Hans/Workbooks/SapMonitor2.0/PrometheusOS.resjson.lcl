@@ -1071,12 +1071,18 @@
       <Item ItemId=";items.Nodemonitoringgroup.content.items.Metricsgroup.content.items.Systeminformation.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## System information]D;]A;---]D;]A;<b style="color:DodgerBlue;">Hostname :</b> {hostname}</br>]D;]A;<b style="color:DodgerBlue;">Kernel version :</b> {kernelVersion}]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## 系统信息]D;]A;---]D;]A;<b style="color:DodgerBlue;">主机名:</b> {hostname}</br>]D;]A;<b style="color:DodgerBlue;">内核版本:</b> {kernelVersion}]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Nodemonitoringgroup.content.items.Metricsgroup.content.items.Warningfornodatareceived.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Please note that we have stopped receiving telemetry data for {hostname}. The last telemetry was received at "{lastTime}", please make sure that both the host and node_exporter agent is up and running to fetch the latest values.]D;]A;]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[请注意，我们已停止接收 {hostname} 的遥测数据。最后一次接收遥测时间为“{lastTime}”。请确保主机和 node_exporter 代理都已启动并运行以提取最新值。]D;]A;]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
