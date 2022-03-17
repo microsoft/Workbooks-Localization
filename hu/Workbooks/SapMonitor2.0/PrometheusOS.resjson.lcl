@@ -1071,12 +1071,18 @@
       <Item ItemId=";items.Nodemonitoringgroup.content.items.Metricsgroup.content.items.Systeminformation.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## System information]D;]A;---]D;]A;<b style="color:DodgerBlue;">Hostname :</b> {hostname}</br>]D;]A;<b style="color:DodgerBlue;">Kernel version :</b> {kernelVersion}]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Rendszerinformáció]D;]A;---]D;]A;<b style="color:DodgerBlue;">Állomásnév :</b> {hostname}</br>]D;]A;<b style="color:DodgerBlue;">Kernelverzió :</b> {kernelVersion}]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Nodemonitoringgroup.content.items.Metricsgroup.content.items.Warningfornodatareceived.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Please note that we have stopped receiving telemetry data for {hostname}. The last telemetry was received at "{lastTime}", please make sure that both the host and node_exporter agent is up and running to fetch the latest values.]D;]A;]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Tájékoztatjuk, hogy már nem kapunk telemetriai adatokat a(z) {hostname} állomástól. Az utolsó telemetriai adatok {lastTime} időben érkeztek be. A legfrissebb értékek beolvasása érdekében győződjön meg arról, hogy az állomás és a node_exporter ügynök fut.]D;]A;]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
