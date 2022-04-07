@@ -599,15 +599,6 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
-        <Item ItemId=";(...) gs.SID.label" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[SID]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[SID]]></Val>
-            </Tgt>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
         <Item ItemId=";(...) gs.id.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Name]]></Val>
@@ -760,15 +751,6 @@
             <Val><![CDATA[Resource Group]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
               <Val><![CDATA[Groupe de ressources]]></Val>
-            </Tgt>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-        <Item ItemId=";(...) gs.tags.label" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[tags]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[balises]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
@@ -3205,10 +3187,13 @@
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) itle" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Orphan Load Balancer without Backendpool]]></Val>
+            <Val><![CDATA[Orphan Load Balancer without Backend pool]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Load Balancer orphelin sans back-endpool]]></Val>
+              <Val><![CDATA[Load Balancer orphelin sans pool de back-ends]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[Orphan Load Balancer without Backendpool]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -3259,6 +3244,42 @@
             <Val><![CDATA[No Orphan NSG found, well done!]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
               <Val><![CDATA[Nous n’avons trouvé aucun groupe de sécurité réseau orphelin, c’est terminé !]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
+      <Item ItemId=";@items.groupSAPOverview.content.items.groupSAPGroup.content.items.links2.content.links.efd7256b80324c88bedd748f04b" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) e4a11.linkLabel" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Instance]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Instance]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
+      <Item ItemId=";@items.groupSAPOverview.content.items.groupSAPGroup.content.items.links2.content.links.f813f331ea124570b1ef474b359" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) 52b77.linkLabel" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Overview]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Vue d’ensemble]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
+      <Item ItemId=";@items.groupSAPOverview.content.items.groupSAPGroup.content.items.links2.content.links.fc4741ab393a478e895a1b94183" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) 49e03.linkLabel" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[SAP_SID]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[SAP_SID]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
@@ -3318,6 +3339,18 @@
           <Disp Icon="Str" />
         </Item>
       </Item>
+      <Item ItemId=";@items.groupSAPOverview.content.items.groupStorageOverview.content.items.linksStorageOptions.content.links.5866d0e" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) 128974ac68c7d852aaf1af4bc.linkLabel" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Standard Storage Accounts with PvtEndPnts]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Comptes Stockage Standard avec PvtEndPnts]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
       <Item ItemId=";@items.groupSAPOverview.content.items.groupStorageOverview.content.items.linksStorageOptions.content.links.9877b4a" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) 662484f25924cc0def997a621.linkLabel" ItemType="0" PsrId="306" Leaf="true">
@@ -3337,6 +3370,27 @@
             <Val><![CDATA[Classic Storage Accounts]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
               <Val><![CDATA[Comptes de stockage classiques]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
+      <Item ItemId=";@items.groupSAPOverview.content.items.groupStorageOverview.content.items.parametersStorageAccountCountMessages.con" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) tent.parameters.5c66155e78f14b2dab20a63989dd9ea5.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Classic Storage]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Stockage classique]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) tent.parameters.f2261fb21f0442cca0a8059e521ab235.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Storage_Account_PvtEndpoint]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Storage_Account_PvtEndpoint]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
@@ -3413,29 +3467,11 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
-        <Item ItemId=";(...) ettings.labelSettings.PrivateEndPoint.label" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[PrivateEndPoint]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[PrivateEndpoint]]></Val>
-            </Tgt>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
         <Item ItemId=";(...) ettings.labelSettings.SecondaryAvailable.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Secondary Region]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
               <Val><![CDATA[Région secondaire]]></Val>
-            </Tgt>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-        <Item ItemId=";(...) ettings.labelSettings.Tier.label" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[Tier]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Niveau]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
@@ -3520,6 +3556,162 @@
             <Val><![CDATA[No Standard Storage Account found in the selected Subscription.]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
               <Val><![CDATA[Aucun compte Stockage Standard n’a été trouvé dans l’abonnement sélectionné.]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
+      <Item ItemId=";@items.groupSAPOverview.content.items.groupStorageOverview.content.items.queryStandardStorageAccountwithPvtEndPoin" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) t.content.gridSettings.labelSettings.CreateTime.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Create Time]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Heure de création]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) t.content.gridSettings.labelSettings.PrimaryRegion.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Primary Region]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Région primaire]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) t.content.gridSettings.labelSettings.SecondaryAvailable.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Secondary Region]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Région secondaire]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) t.content.gridSettings.labelSettings.accessTier.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Access Tier]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Niveau d’accès]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) t.content.gridSettings.labelSettings.allowBlobPublicAccess.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Public Access?]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Accès public ?]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) t.content.gridSettings.labelSettings.id.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Name]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Nom]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) t.content.gridSettings.labelSettings.minimumTlsVersion.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Min. TLS Version]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Version minimale de TLS]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) t.content.gridSettings.labelSettings.sku.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[SKU]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[SKU]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) t.content.gridSettings.labelSettings.status.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Status]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Statut]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) t.content.gridSettings.labelSettings.statusOfPrimary.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Primary Status]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[État principal]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) t.content.gridSettings.labelSettings.supportsHttpsTrafficOnly.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[HTTPS Only?]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[HTTPS uniquement ?]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) t.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[No Standard Storage Account with PvtEndPoint found in the selected Subscription.]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Aucun compte Stockage Standard avec PvtEndPoint n’a été trouvé dans l’abonnement sélectionné.]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) t.content.title" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Standard Storage Account with PvtEndPoint]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Comptes Stockage Standard avec PvtEndPoint]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
+      <Item ItemId=";@items.groupSAPOverview.content.items.groupStorageOverview.content.items.textClassicStorageCountMessage.content.js" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) on" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[{Classic_Storage}]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[{Classic_Storage}]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
+      <Item ItemId=";@items.groupSAPOverview.content.items.groupStorageOverview.content.items.textStandardStorageCountMessage.content.j" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) son" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[{Standard_Storage}]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[{Standard_Storage}]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
+      <Item ItemId=";@items.groupSAPOverview.content.items.groupStorageOverview.content.items.textStandardStoragewithPrivateEndpointCou" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) ntMessage.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[{Storage_Account_PvtEndPnt}]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[{Storage_Account_PvtEndPnt}]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
@@ -4521,6 +4713,24 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
+      <Item ItemId=";items.groupSAPOverview.content.items.groupSAPGroup.content.items.querySAPInstance.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[No SAP Instance exist]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Il n’existe aucune instance SAP]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.groupSAPOverview.content.items.groupSAPGroup.content.items.querySAPInstance.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[SAP Instances]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Instances SAP]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.groupSAPOverview.content.items.groupStorageOverview.content.items.query0.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Storage Overview]]></Val>
@@ -4805,6 +5015,15 @@
           <Val><![CDATA[### Orphan Resources Group]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[### Groupe de ressources orphelines]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.groupSAPOverview.content.items.textSAPOverview.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[### SAP]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### SAP]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
