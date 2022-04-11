@@ -22,7 +22,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Connection Time]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Kapcsolati idő]]></Val>
+            <Val><![CDATA[Csatlakozási idő]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -49,7 +49,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Hostname]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Állomásnév]]></Val>
+            <Val><![CDATA[Gazdagépnév]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -57,12 +57,18 @@
       <Item ItemId=";items.AppsConnections.content.gridSettings.labelSettings.CLIENTPIDd.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Client PID]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Ügyfél folyamatazonosítója]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.AppsConnections.content.gridSettings.labelSettings.COMMITSQLSTMTSd.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[SQL Commits]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[SQL-véglegesítések]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -87,12 +93,18 @@
       <Item ItemId=";items.AppsConnections.content.gridSettings.labelSettings.TOTALSORTSd.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Total Sort]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Rendezések teljes száma]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.AppsConnections.content.gridSettings.labelSettings.UOWSTOPTIMEs.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[UOW Stop Time]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[UOW leállítási ideje]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -126,24 +138,36 @@
       <Item ItemId=";items.AppsTop20.content.gridSettings.labelSettings.TIMESECONDSd.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Avg. runtime (s)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Átlagos futásidő (mp)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.AppsTop20.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Top 20 Runtime & Executions]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Az első 20 futtatókörnyezet és végrehajtás]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Availability.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Availability ({Days:label} - Grain: {Days:grain})]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Rendelkezésre állás ({Days:label} – időfelbontási szint: {Days:grain})]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.AvgTransactionTime.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Avg. Transaction Time ({Days:label} - Grain: {Days:grain})]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Tranzakciók átlagos időtartama ({Days:label} – időfelbontási szint: {Days:grain})]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -159,24 +183,36 @@
       <Item ItemId=";items.Connections.content.chartSettings.seriesLabelSettings.0.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[#Connections]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[#Kapcsolatok]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Connections.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Number of Connections ({Days:label} - Grain: {Days:grain})]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Kapcsolatok száma ({Days:label} – időfelbontási szint: {Days:grain})]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.FailedSQL.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Failed SQL ({Days:label} - Grain: {Days:grain})]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[SQL-hiba ({Days:label} – időfelbontási szint: {Days:grain})]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.IOBufferpool.content.gridSettings.labelSettings.BLOCKSIZEd.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Blocksize]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Blokkméret]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -201,6 +237,9 @@
       <Item ItemId=";items.IOBufferpool.content.gridSettings.labelSettings.DBPARTGRPs.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Partition Group]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Partíciócsoport]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -216,12 +255,18 @@
       <Item ItemId=";items.IOBufferpool.content.gridSettings.labelSettings.NUMBLOCKPAGESd.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Blockpages]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Letiltott lapok]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.IOBufferpool.content.gridSettings.labelSettings.PAGESIZEd.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Pagesize]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Oldalméret]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -229,7 +274,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Time]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Időpont]]></Val>
+            <Val><![CDATA[Idő]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -237,30 +282,45 @@
       <Item ItemId=";items.IOBufferpool.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Bufferpools]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Pufferkészletek]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.LockWaits.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Lock Waits ({Days:label} - Grain: {Days:grain})]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Zárolási várakozások ({Days:label} – időfelbontási szint: {Days:grain})]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.LocksLocksAndBlocks.content.gridSettings.labelSettings.APPLICATIONHANDLEd.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Appl. Handle]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Alk. leírója]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.LocksLocksAndBlocks.content.gridSettings.labelSettings.APPLICATIONIDs.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Appl. ID]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Alk. azonosítója]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.LocksLocksAndBlocks.content.gridSettings.labelSettings.APPLICATIONNAMEs.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Appl .Name]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Alk. neve]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -276,6 +336,9 @@
       <Item ItemId=";items.LocksLocksAndBlocks.content.gridSettings.labelSettings.LOCKHOLDCOUNTd.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Hold Locks]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Zárolások visszatartása]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -328,7 +391,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Time]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Időpont]]></Val>
+            <Val><![CDATA[Idő]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -336,36 +399,54 @@
       <Item ItemId=";items.LocksLocksAndBlocks.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Current Locks]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Jelenlegi zárolások]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.LogicalReads.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Logical Reads ({Days:label} - Grain: {Days:grain})]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Logikai olvasások ({Days:label} – időfelbontási szint: {Days:grain})]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.PhysicalReads.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Physical Reads ({Days:label} - Grain: {Days:grain})]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Fizikai olvasások ({Days:label} – időfelbontási szint: {Days:grain})]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Rows.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Rows ({Days:label} - Grain: {Days:grain})]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Sorok ({Days:label} – időfelbontási szint: {Days:grain})]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Statements.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Statements ({Days:label} - Grain: {Days:grain})]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Utasítások ({Days:label} – időfelbontási szint: {Days:grain})]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.StorageTablesizes.content.gridSettings.labelSettings.ALLOCATEDMBb.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Allocated Space (MB)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Lefoglalt terület (MB)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -390,6 +471,9 @@
       <Item ItemId=";items.StorageTablesizes.content.gridSettings.labelSettings.STATSTIMEs.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Statistic Time]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Statisztikai idő]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -405,18 +489,27 @@
       <Item ItemId=";items.StorageTablesizes.content.gridSettings.labelSettings.USEDMBd.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Used Space (MB)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Felhasznált terület (MB)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.StorageTablesizes.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Tablesizes (top 100)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Táblák mérete (első 100)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.StorageTablespaces.content.gridSettings.labelSettings.TBSPAUTORESIZEENABLEDs.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[auto resize]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[automatikus átméretezés]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -432,6 +525,9 @@
       <Item ItemId=";items.StorageTablespaces.content.gridSettings.labelSettings.TBSPFREESIZEKBd.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Free size (kb)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Szabad méret (kb)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -447,12 +543,18 @@
       <Item ItemId=";items.StorageTablespaces.content.gridSettings.labelSettings.TBSPINCREASESIZEs.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Resize size]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Átméretezés mérete]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.StorageTablespaces.content.gridSettings.labelSettings.TBSPLASTRESIZETIMEs.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[last auto resize]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[utolsó automatikus átméretezés]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -477,6 +579,9 @@
       <Item ItemId=";items.StorageTablespaces.content.gridSettings.labelSettings.TBSPTOTALSIZEKBd.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Total size (kb)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Teljes méret (kb)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -492,12 +597,18 @@
       <Item ItemId=";items.StorageTablespaces.content.gridSettings.labelSettings.TBSPUSABLESIZEKBd.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Usable size (kb)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Használható méret (kb)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.StorageTablespaces.content.gridSettings.labelSettings.TBSPUSEDSIZEKBd.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Used size (kb)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Felhasznált méret (kb)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -505,7 +616,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Time]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Időpont]]></Val>
+            <Val><![CDATA[Idő]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -513,6 +624,9 @@
       <Item ItemId=";items.StorageTablespaces.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Tablespaces]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Táblaterek]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -528,12 +642,18 @@
       <Item ItemId=";items.Tabs.content.links.469af889e9b14a94baa3395271181de1.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Database Usage]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Adatbázis-használat]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Tabs.content.links.469af889e9b14a94baa3395271181de1.preText" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Database Usage]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Adatbázis-használat]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -558,6 +678,9 @@
       <Item ItemId=";items.Tabs.content.links.8e4004dd592047f7b373620bd095f67e.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[IO]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[IO]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -565,7 +688,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Statement]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Kivonat]]></Val>
+            <Val><![CDATA[Utasítás]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -574,7 +697,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Storage]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Tárolás]]></Val>
+            <Val><![CDATA[Tárterület]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -600,36 +723,54 @@
       <Item ItemId=";items.Top20Prob.content.gridSettings.labelSettings.AVGEXECTIME.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Average Execution Time]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Általános végrehajtási idő]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Top20Prob.content.gridSettings.labelSettings.NUMEXECUTIONSd.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Number of Execution]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Végrehajtás száma]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Top20Prob.content.gridSettings.labelSettings.PCTTOTCPU.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Percent CPU]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Processzorhasználat százalékos aránya]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Top20Prob.content.gridSettings.labelSettings.PCTTOTEXEC.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Percent Executions]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Végrehajtások százalékos aránya]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Top20Prob.content.gridSettings.labelSettings.PCTTOTRR.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Percent Reads]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Olvasások százalékos aránya]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Top20Prob.content.gridSettings.labelSettings.PCTTOTSRT.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Percent Sorts]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Rendezések százalékos aránya]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -654,48 +795,72 @@
       <Item ItemId=";items.Top20Prob.content.gridSettings.labelSettings.STMTEXECTIMEd.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Statement Execution Time]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Utasítás végrehajtási ideje]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Top20Prob.content.gridSettings.labelSettings.TOTALCPUTIMEd.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Total CPU Time]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Teljes processzoridő]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Top20Prob.content.gridSettings.labelSettings.TOTALSECTIONSORTTIMEd.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Total Sort Time]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Teljes rendezési idő]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Top20Prob.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Top 20 expensive statements (with more than 5% of total costs)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[A 20 legköltségesebb utasítás (a teljes költség több mint 5%-ával)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.TotalSorts.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Total Sorts ({Days:label} - Grain: {Days:grain})]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Rendezések teljes száma ({Days:label} – időfelbontási szint: {Days:grain})]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.TransactionRate.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Transaction Rate ({Days:label} - Grain: {Days:grain})]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Tranzakciók sebessége ({Days:label} – időfelbontási szint: {Days:grain})]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Waits.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Waits (SYSDEFAULTUSERWORKLOAD) ({Days:label} - Grain: {Days:grain})]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Várakozások (SYSDEFAULTUSERWORKLOAD) ({Days:label} – időfelbontási szint: {Days:grain})]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Waitsp4.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Waits ({Days:label} - Grain: {Days:grain})]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Várakozások ({Days:label} – időfelbontási szint: {Days:grain})]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -729,6 +894,9 @@
       <Item ItemId=";items.query18.content.gridSettings.labelSettings.ELAPSEDTIMESECd.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Elapsed Time (s)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Eltelt idő (mp)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -772,7 +940,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Time]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Időpont]]></Val>
+            <Val><![CDATA[Idő]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -780,12 +948,18 @@
       <Item ItemId=";items.query18.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[In-Flight statements]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Menet közbeni utasítások]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text2.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Azure Monitor for SAP Solutions on IBM DB2]A;---]A;]A;<b style="color:DodgerBlue;">OS Hostname:</b> {Hostname} on {OSRelease}</br>]A;<b style="color:DodgerBlue;">DB2 Instance:</b> {DB2Instance} Version {DB2Version}  (FP: {DB2FixPack}) {DB2License} ({DB2LicenseType})  </br>]A;<b style="color:DodgerBlue;">SAP Instance:</b> {DB2SID}]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## Azure Monitor for SAP Solutions az IBM DB2-n]A;---]A;]A;<b style="color:DodgerBlue;">Operációs rendszer gazdagépneve:</b> {Hostname} a következőn: {OSRelease}</br>]A;<b style="color:DodgerBlue;">DB2-példány:</b> {DB2Instance} {DB2Version} verzió  (FP: {DB2FixPack}) {DB2License} ({DB2LicenseType})  </br>]A;<b style="color:DodgerBlue;">SAP-példány:</b> {DB2SID}]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
