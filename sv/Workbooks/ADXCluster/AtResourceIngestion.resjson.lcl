@@ -250,12 +250,12 @@
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) tent.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 13px;font-style: bold;"> What is Batching Manager?]D;]A;</span><br>]D;]A;The Batching Manager optimizes the ingestion throughput by taking the small ingress data chunks that it receives and batching them (to one or more blobs) based on the <a href="https://docs.microsoft.com/azure/data-explorer/kusto/management/batchingpolicy">ingestion batching policy</a>.]D;]A;]D;]A;]]></Val>
+            <Val><![CDATA[]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 13px;font-style: bold;"> What is Batching Manager?]D;]A;</span><br>]D;]A;The Batching Manager optimizes the ingestion throughput by taking the small ingress data chunks (blobs) that it receives and batching them together to form one ingest command, based on the <a href="https://docs.microsoft.com/azure/data-explorer/kusto/management/batchingpolicy">ingestion batching policy</a>.]D;]A;]D;]A;]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 13px;font-style: bold;"> Vad är batchhanteraren? ]D;]A;</span><br>]D;]A;Batchhanteraren optimerar inmatningsflödet genom att ta de små indatasegment som den tar emot och grupperar dem (till en eller flera blobbar) baserat på <a href="https://docs.microsoft.com/azure/data-explorer/kusto/management/batchingpolicy">för batchinmatningsprincipen</a>.]D;]A;]D;]A;]]></Val>
+              <Val><![CDATA[]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 13px;font-style: bold;"> Vad är Batchningshanteraren?]D;]A;</span><br>]D;]A;Batchningshanteraren optimerar inmatningsdataflödet genom att gruppera de små inkommande datasegment (blobbar) den tar emot så att de bildar ett enda inmatningskommando, baserat på <a href="https://docs.microsoft.com/azure/data-explorer/kusto/management/batchingpolicy">batchbearbetningsprincipen av inmatning</a>.]D;]A;]D;]A;]]></Val>
             </Tgt>
             <Prev Cat="Text">
-              <Val><![CDATA[<div style="background-color:rgba(0, 0, 255, 0.04470588); padding:6px 6px 6px 6px">]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 13px;font-style: bold;"> What is Batching Manager?]D;]A;</span><br>]D;]A;The Batching Manager optimizes the ingestion throughput by taking the small ingress data chunks that it receives and batching them (to one or more blobs) based on the <a href="https://docs.microsoft.com/azure/data-explorer/kusto/management/batchingpolicy">ingestion batching policy</a>.]D;]A;</div>]D;]A;]]></Val>
+              <Val><![CDATA[]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 13px;font-style: bold;"> What is Batching Manager?]D;]A;</span><br>]D;]A;The Batching Manager optimizes the ingestion throughput by taking the small ingress data chunks that it receives and batching them (to one or more blobs) based on the <a href="https://docs.microsoft.com/azure/data-explorer/kusto/management/batchingpolicy">ingestion batching policy</a>.]D;]A;]D;]A;]]></Val>
             </Prev>
           </Str>
           <Disp Icon="Str" />
@@ -303,6 +303,78 @@
           <Disp Icon="Str" />
         </Item>
       </Item>
+      <Item ItemId=";@items.IngestionDetailsGroup.content.items.IngestionProcess.content.items.DataConnection.content.items.Blobhelp.co" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) ntent.json" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Blob metrics]D;]A;</span> <br>]D;]A;<ul>]D;]A;<li>For <strong>Event Hub/Iot Hub</strong> data connections: </br>&nbsp;&nbsp;&nbsp;&nbsp; The data connection pre-batches the events. It processes the events and creates one or more blobs. These blobs will appear in the Blob processed metric, and be used on the subsequent stages. </br>&nbsp;&nbsp;&nbsp;&nbsp; For Event Hub/Iot Hub data connections, the Blob received metric of the data connection is 0.</li>]D;]A;<li>For <strong>Event Grid</strong> data connections: </br>&nbsp;&nbsp;&nbsp;&nbsp;  There is an event per blob (user blob). The events are actually notifications about the user blobs.</br>&nbsp;&nbsp;&nbsp;&nbsp; Both the events processed and the blobs processed metrics should have similar numbers (values may vary based on various time intervals and processing latency). </li>]D;]A;</ul>]D;]A;</br>]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Blob metrics]D;]A;</span> <br>]D;]A;<ul>]D;]A;<li>För <strong>Event Hub/Iot Hub</strong>-dataanslutningar: </br>&nbsp;&nbsp;&nbsp;&nbsp; Dataanslutningen förbereder händelserna för batchbearbetning. Den bearbetar händelserna och skapar en eller flera bobbar. Blobbarna visas i måttet Bearbetade blobbar och används i efterföljande steg. </br>&nbsp;&nbsp;&nbsp;&nbsp; För Event Hub/Iot Hub-dataanslutningar är måttet Mottagna blobbar 0.</li>]D;]A;<li>För <strong>Event Grid</strong>-dataanslutningar: </br>&nbsp;&nbsp;&nbsp;&nbsp;  Det finns en händelse per blob (användarblob). Händelserna är egentligen meddelanden om användarblobbarna.</br>&nbsp;&nbsp;&nbsp;&nbsp; Måtten Bearbetade händelser och Bearbetade blobbar bör ha liknande tal (värdena kan variera baserat på olika tidsintervall och fördröjning i bearbetningen). </li>]D;]A;</ul>]D;]A;</br>]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
+      <Item ItemId=";@items.IngestionDetailsGroup.content.items.IngestionProcess.content.items.DataConnection.content.items.DataConnect" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) ionBlobEventGridCopy.content.items.blobdroppedtile.content.json" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Blobs dropped (Event Grid)]D;]A;</span> <br>Number of blobs (sum) permanently dropped by the data connection. For each such blob, an Ingestion result metric with a failure reason is sent.]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Utelämnade blobbar (Event Grid)]D;]A;</span> <br>Antal blobbar (summa) som utelämnats permanent av dataanslutningen. För varje sådan blob skickas ett Inmatningsresultat-mått med orsaken till misslyckandet.]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) ionBlobEventGridCopy.content.items.blobprocessedtileCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Blobs processed (Event Grid)]D;]A;</span> <br>Number of blobs (sum) processed successfully by the data connection.]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Bearbetade blobbar (Event Grid)]D;]A;</span> <br>Antal blobbar (summa) som bearbetats av dataanslutningen.]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) ionBlobEventGridCopy.content.items.received.content.json" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Blobs received (Event Grid)]D;]A;</span> <br>Number of blobs (sum) received by data connections from input stream.]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Mottagna blobbar (Event Grid)]D;]A;</span> <br>Det antal blobbar (summa) som tagits emot av dataanslutningar från indataströmmen.]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) ionBlobEventHub.content.items.blobdroppedtile.content.json" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Blobs dropped (Event Hub/Iot Hub)]D;]A;</span> <br>Number of blobs (sum) permanently dropped by the data connection. For each such blob, an Ingestion result metric with a failure reason is sent.]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Utelämnade blobbar (Event Hub/Iot Hub)]D;]A;</span> <br>Antal blobbar (summa) som utelämnats permanent av dataanslutningen. För varje sådan blob skickas ett inmatningsmåttresultat med orsaken till misslyckandet.]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) ionBlobEventHub.content.items.blobprocessedtileCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Blobs processed (Event Hub/Iot Hub)]D;]A;</span> <br>Number of blobs (sum) processed successfully by the data connection.]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Bearbetade blobbar (Event Hub/Iot Hub)]D;]A;</span> <br>Antal blobbar (summa) som bearbetats av dataanslutningen.]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
+      <Item ItemId=";@items.IngestionDetailsGroup.content.items.IngestionProcess.content.items.DataConnection.content.items.Eventsdropp" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) edtile.content.json" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Events dropped]D;]A;</span> <br>Number of events (sum) permanently dropped by data connections. For each such event, an Ingestion result metric with a failure reason is sent.]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Utelämnade händelser]D;]A;</span> <br>Antal händelser (summa) som utelämnats permanent av dataanslutningar. För varje sådan händelse skickas ett Inmatningsresultat-mått med orsaken till misslyckandet.]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
       <Item ItemId=";@items.IngestionDetailsGroup.content.items.IngestionProcess.content.items.DataConnection.content.items.eventsrecei" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) vedtile.content.json" ItemType="0" PsrId="306" Leaf="true">
@@ -329,6 +401,18 @@
             <Prev Cat="Text">
               <Val><![CDATA[<div style="background-color:rgba(0, 0, 255, 0.04470588); padding:6px 6px 6px 6px">]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 13px;font-style: bold;"> What is Data Connection?]D;]A;</span><br>]D;]A;For Event Grid, Event Hub, and IoT Hub ingestion, there is a Data Connection that gets the data from external sources and performs initial data rearrangement. You can skip this step if you don't use Event Grid, Event Hub, or IoT Hub ingestion.]D;]A;</div>]D;]A;]]></Val>
             </Prev>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
+      <Item ItemId=";@items.IngestionDetailsGroup.content.items.IngestionProcess.content.items.DataConnection.content.items.parameters1" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) 1Copy.content.parameters.bb676041129a4faa9fb3316cc1b68a1f.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Blob metrics - filter by data connection type:]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Blobmått – filtrera efter dataanslutningstyp:]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -367,18 +451,6 @@
             </Tgt>
             <Prev Cat="Text">
               <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Events processed]D;]A;</span> <br>Number of events (sum) processed by data connections.]]></Val>
-            </Prev>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-        <Item ItemId=";(...) opyCopyCopyCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Events dropped]D;]A;</span> <br>Number of events (sum) permanently dropped by data connections.]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Utelämnade händelser]D;]A;</span> <br>Det antal händelser (sum) som utelämnats permanent av dataanslutningar.]]></Val>
-            </Tgt>
-            <Prev Cat="Text">
-              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Events dropped]D;]A;</span> <br>Number of events permanently dropped by data connections.]]></Val>
             </Prev>
           </Str>
           <Disp Icon="Str" />

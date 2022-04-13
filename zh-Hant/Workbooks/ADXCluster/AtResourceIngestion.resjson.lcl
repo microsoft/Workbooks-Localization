@@ -250,12 +250,12 @@
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) tent.json" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 13px;font-style: bold;"> What is Batching Manager?]D;]A;</span><br>]D;]A;The Batching Manager optimizes the ingestion throughput by taking the small ingress data chunks that it receives and batching them (to one or more blobs) based on the <a href="https://docs.microsoft.com/azure/data-explorer/kusto/management/batchingpolicy">ingestion batching policy</a>.]D;]A;]D;]A;]]></Val>
+            <Val><![CDATA[]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 13px;font-style: bold;"> What is Batching Manager?]D;]A;</span><br>]D;]A;The Batching Manager optimizes the ingestion throughput by taking the small ingress data chunks (blobs) that it receives and batching them together to form one ingest command, based on the <a href="https://docs.microsoft.com/azure/data-explorer/kusto/management/batchingpolicy">ingestion batching policy</a>.]D;]A;]D;]A;]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 13px;font-style: bold;"> 什麼是批次管理員?]D;]A;</span><br>]D;]A;批次管理員會先取用收到的小型輸入資料區塊，然後依據<a href="https://docs.microsoft.com/zh-tw/azure/data-explorer/kusto/management/batchingpolicy">批次擷取原則</a>加以批次處理 (變成一或多個 blob)，藉此將擷取輸入量最佳化。]D;]A;]D;]A;]]></Val>
+              <Val><![CDATA[]D;]A;7<span style="font-family: Open Sans; font-weight: 620; font-size: 13px;font-style: bold;"> 什麼是批次管理員?]D;]A;</span><br>]D;]A;批次管理員會先取用收到的小型輸入資料區塊 (Blob)，然後依據<a href="https://docs.microsoft.com/azure/data-explorer/kusto/management/batchingpolicy">批次擷取原則</a>加以一起批次處理來形成一個內嵌命令，藉此將擷取輸送量最佳化。]D;]A;]D;]A;]]></Val>
             </Tgt>
             <Prev Cat="Text">
-              <Val><![CDATA[<div style="background-color:rgba(0, 0, 255, 0.04470588); padding:6px 6px 6px 6px">]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 13px;font-style: bold;"> What is Batching Manager?]D;]A;</span><br>]D;]A;The Batching Manager optimizes the ingestion throughput by taking the small ingress data chunks that it receives and batching them (to one or more blobs) based on the <a href="https://docs.microsoft.com/azure/data-explorer/kusto/management/batchingpolicy">ingestion batching policy</a>.]D;]A;</div>]D;]A;]]></Val>
+              <Val><![CDATA[]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 13px;font-style: bold;"> What is Batching Manager?]D;]A;</span><br>]D;]A;The Batching Manager optimizes the ingestion throughput by taking the small ingress data chunks that it receives and batching them (to one or more blobs) based on the <a href="https://docs.microsoft.com/azure/data-explorer/kusto/management/batchingpolicy">ingestion batching policy</a>.]D;]A;]D;]A;]]></Val>
             </Prev>
           </Str>
           <Disp Icon="Str" />
@@ -303,6 +303,78 @@
           <Disp Icon="Str" />
         </Item>
       </Item>
+      <Item ItemId=";@items.IngestionDetailsGroup.content.items.IngestionProcess.content.items.DataConnection.content.items.Blobhelp.co" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) ntent.json" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Blob metrics]D;]A;</span> <br>]D;]A;<ul>]D;]A;<li>For <strong>Event Hub/Iot Hub</strong> data connections: </br>&nbsp;&nbsp;&nbsp;&nbsp; The data connection pre-batches the events. It processes the events and creates one or more blobs. These blobs will appear in the Blob processed metric, and be used on the subsequent stages. </br>&nbsp;&nbsp;&nbsp;&nbsp; For Event Hub/Iot Hub data connections, the Blob received metric of the data connection is 0.</li>]D;]A;<li>For <strong>Event Grid</strong> data connections: </br>&nbsp;&nbsp;&nbsp;&nbsp;  There is an event per blob (user blob). The events are actually notifications about the user blobs.</br>&nbsp;&nbsp;&nbsp;&nbsp; Both the events processed and the blobs processed metrics should have similar numbers (values may vary based on various time intervals and processing latency). </li>]D;]A;</ul>]D;]A;</br>]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Blob 計量]D;]A;</span> <br>]D;]A;<ul>]D;]A;<li>針對<strong>事件中樞/Iot 中樞</strong>資料連線: </br>&nbsp;&nbsp;&nbsp;&nbsp;資料連線會預先批次事件。它會處理事件並建立一或多個 Blob。這些 Blob 將會出現在 Blob 處理的計量中，並用於後續階段。&nbsp;&nbsp;&nbsp;&nbsp; </br> 對於事件中樞/Iot 中樞資料連線，Blob 收到的資料連線計量為 0.</li>]D;]A;<li>對於<strong>事件方格</strong>資料連線: </br>&nbsp;&nbsp;&nbsp;&nbsp; 每個 Blob (使用者 blob) 都有事件。事件實際上是使用者 Blob 的通知。</br>&nbsp;&nbsp;&nbsp;&nbsp; 處理的事件和處理的 Blob 計量應該有類似的數字，(值可能因不同時間間隔和處理延遲而有所不同)。</li>]D;]A;</ul>]D;]A;</br>]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
+      <Item ItemId=";@items.IngestionDetailsGroup.content.items.IngestionProcess.content.items.DataConnection.content.items.DataConnect" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) ionBlobEventGridCopy.content.items.blobdroppedtile.content.json" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Blobs dropped (Event Grid)]D;]A;</span> <br>Number of blobs (sum) permanently dropped by the data connection. For each such blob, an Ingestion result metric with a failure reason is sent.]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Blob 已捨棄 (事件方格)]D;]A;</span> <br>資料連線永久捨棄的 Blob 數目 (加總)。系統會針對每個這類 Blob 傳送失敗原因的擷取結果計量。]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) ionBlobEventGridCopy.content.items.blobprocessedtileCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Blobs processed (Event Grid)]D;]A;</span> <br>Number of blobs (sum) processed successfully by the data connection.]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> 處理的Blob 數 (事件方格)]D;]A;</span> <br>資料連線成功處理的 Blob 數目 (加總)。]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) ionBlobEventGridCopy.content.items.received.content.json" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Blobs received (Event Grid)]D;]A;</span> <br>Number of blobs (sum) received by data connections from input stream.]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> 接收的 Blob 數 (事件方格)]D;]A;</span> <br>資料連線透過輸入資料流接收的 Blob 數目 (加總)。]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) ionBlobEventHub.content.items.blobdroppedtile.content.json" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Blobs dropped (Event Hub/Iot Hub)]D;]A;</span> <br>Number of blobs (sum) permanently dropped by the data connection. For each such blob, an Ingestion result metric with a failure reason is sent.]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Blob 已捨棄 (事件中樞/Iot 中樞)]D;]A;</span> <br>資料連線永久捨棄的 Blob 數目 (加總)。系統會針對每個這類 Blob 傳送失敗原因的擷取結果計量。]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) ionBlobEventHub.content.items.blobprocessedtileCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Blobs processed (Event Hub/Iot Hub)]D;]A;</span> <br>Number of blobs (sum) processed successfully by the data connection.]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> 處理的Blob 數 (事件中樞/Iot 中樞)]D;]A;</span> <br>資料連線成功處理的 Blob 數目 (加總)。]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
+      <Item ItemId=";@items.IngestionDetailsGroup.content.items.IngestionProcess.content.items.DataConnection.content.items.Eventsdropp" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) edtile.content.json" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Events dropped]D;]A;</span> <br>Number of events (sum) permanently dropped by data connections. For each such event, an Ingestion result metric with a failure reason is sent.]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> 事件已捨棄]D;]A;</span> <br>資料連線永久捨棄的事件數目 (加總)。系統會針對每個這類事件傳送失敗原因的擷取結果計量。]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
       <Item ItemId=";@items.IngestionDetailsGroup.content.items.IngestionProcess.content.items.DataConnection.content.items.eventsrecei" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) vedtile.content.json" ItemType="0" PsrId="306" Leaf="true">
@@ -329,6 +401,18 @@
             <Prev Cat="Text">
               <Val><![CDATA[<div style="background-color:rgba(0, 0, 255, 0.04470588); padding:6px 6px 6px 6px">]D;]A;<span style="font-family: Open Sans; font-weight: 620; font-size: 13px;font-style: bold;"> What is Data Connection?]D;]A;</span><br>]D;]A;For Event Grid, Event Hub, and IoT Hub ingestion, there is a Data Connection that gets the data from external sources and performs initial data rearrangement. You can skip this step if you don't use Event Grid, Event Hub, or IoT Hub ingestion.]D;]A;</div>]D;]A;]]></Val>
             </Prev>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
+      <Item ItemId=";@items.IngestionDetailsGroup.content.items.IngestionProcess.content.items.DataConnection.content.items.parameters1" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) 1Copy.content.parameters.bb676041129a4faa9fb3316cc1b68a1f.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Blob metrics - filter by data connection type:]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Blob 計量 - 依資料連線類型篩選:]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -367,18 +451,6 @@
             </Tgt>
             <Prev Cat="Text">
               <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Events processed]D;]A;</span> <br>Number of events (sum) processed by data connections.]]></Val>
-            </Prev>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-        <Item ItemId=";(...) opyCopyCopyCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Events dropped]D;]A;</span> <br>Number of events (sum) permanently dropped by data connections.]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> 捨棄的事件數]D;]A;</span> <br>資料連線永久捨棄的事件數目 (加總)。]]></Val>
-            </Tgt>
-            <Prev Cat="Text">
-              <Val><![CDATA[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;"> Events dropped]D;]A;</span> <br>Number of events permanently dropped by data connections.]]></Val>
             </Prev>
           </Str>
           <Disp Icon="Str" />
