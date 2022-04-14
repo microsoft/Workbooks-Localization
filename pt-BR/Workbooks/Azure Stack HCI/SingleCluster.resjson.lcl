@@ -52,10 +52,13 @@
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) elSettings.Hostname.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Nodes]]></Val>
+            <Val><![CDATA[Servers]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Nós]]></Val>
+              <Val><![CDATA[Servidores]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[Nodes]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -114,9 +117,9 @@
           <Disp Icon="Str" />
         </Item>
       </Item>
-      <Item ItemId=";@items.TabsGroup.content.items.healthgroup.content.items.healthdetailquery.content.gridSettings.formatters.1.forma" ItemType="0" PsrId="306" Leaf="false">
+      <Item ItemId=";@items.TabsGroup.content.items.healthgroup.content.items.alertsgroup.content.items.healthdetailquery.content.gridS" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) tOptions.linkLabel" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) ettings.formatters.1.formatOptions.linkLabel" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Open]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -125,47 +128,50 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
-      </Item>
-      <Item ItemId=";@items.TabsGroup.content.items.healthgroup.content.items.healthdetailquery.content.gridSettings.labelSettings.Faul" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) tingResourceId.label" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) ettings.labelSettings.FaultingResourceId.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Faulting Resource ID]]></Val>
+            <Val><![CDATA[Faulting resource ID]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[ID do Recurso com Falha]]></Val>
+              <Val><![CDATA[ID do recurso com falha]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
-        <Item ItemId=";(...) tingResourceType.label" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) ettings.labelSettings.FaultingResourceType.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Faulting Resource Type]]></Val>
+            <Val><![CDATA[Faulting resource type]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Tipo de Recurso de Falha]]></Val>
+              <Val><![CDATA[Tipo de recurso com falha]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) ettings.labelSettings.ReportedTime.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Initial fault time]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Tempo de falha inicial]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) ettings.labelSettings.ShortDescription.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Fault]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Falha]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
       </Item>
-      <Item ItemId=";@items.TabsGroup.content.items.healthgroup.content.items.healthdetailquery.content.gridSettings.labelSettings.Repo" ItemType="0" PsrId="306" Leaf="false">
+      <Item ItemId=";@items.TabsGroup.content.items.healthgroup.content.items.alertsgroup.content.items.healthdetailquery.content.noDat" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) rtedTime.label" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) aMessage" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Reported Time]]></Val>
+            <Val><![CDATA[There are no health faults on this cluster.]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Hora Relatada]]></Val>
-            </Tgt>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-      </Item>
-      <Item ItemId=";@items.TabsGroup.content.items.healthgroup.content.items.healthdetailquery.content.gridSettings.labelSettings.Shor" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) tDescription.label" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[Short Description]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Descrição resumida]]></Val>
+              <Val><![CDATA[Não há falhas de integridade neste cluster.]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
@@ -253,10 +259,13 @@
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) p.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Domain group]]></Val>
+            <Val><![CDATA[Domain name]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Grupo de domínio]]></Val>
+              <Val><![CDATA[Nome do domínio]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[Domain group]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -277,10 +286,13 @@
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) cessors.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Log. Processors]]></Val>
+            <Val><![CDATA[Logical processors]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Processadores Log.]]></Val>
+              <Val><![CDATA[Processadores lógicos]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[Log. Processors]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -301,10 +313,13 @@
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) ocessors.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Phy. Processors]]></Val>
+            <Val><![CDATA[CPUs]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Processadores Phy.]]></Val>
+              <Val><![CDATA[CPUs]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[Phy. Processors]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -313,10 +328,13 @@
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) bel" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Cpu usage]]></Val>
+            <Val><![CDATA[CPU usage]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
               <Val><![CDATA[Uso da CPU]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[Cpu usage]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -328,6 +346,117 @@
             <Val><![CDATA[Servers]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
               <Val><![CDATA[Servidores]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
+      <Item ItemId=";@items.TabsGroup.content.items.storagegroup.content.items.drivesgroup.content.items.driveinfoquery.content.gridSet" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) tings.labelSettings.AvailableCapacity.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Available capacity]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Capacidade disponível]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) tings.labelSettings.CanPool.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Can pool?]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Pode fazer pool?]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) tings.labelSettings.LastUpdated.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Last updated]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Última atualização]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) tings.labelSettings.TotalCapacity.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Total capacity]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Capacidade total]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
+      <Item ItemId=";@items.TabsGroup.content.items.storagegroup.content.items.drivesgroup.content.items.driveinfoquery.content.noDataM" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) essage" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Install the latest OS update on this cluster to show complete drive info.]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Instale a atualização mais recente do sistema operacional neste cluster para mostrar as informações completas da unidade.]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
+      <Item ItemId=";@items.TabsGroup.content.items.storagegroup.content.items.volumesgroup.content.items.chartparameters.content.param" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) eters.15e4aa47e8e743c1b587666848241b29.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Volumes]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Volumes]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) eters.d5adce371bdb4c6b91c702ed15d5ae78.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Time range for chart]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Intervalo de tempo para o gráfico]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
+      <Item ItemId=";@items.TabsGroup.content.items.storagegroup.content.items.volumesgroup.content.items.volumeinfoquery.content.gridS" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) ettings.labelSettings.AvailableCap.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Available capacity]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Capacidade disponível]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) ettings.labelSettings.FileSystem.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[File system]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Sistema de arquivos]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) ettings.labelSettings.LastUpdated.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Last updated]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Última atualização]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) ettings.labelSettings.TotalCap.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Total capacity]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Capacidade total]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
@@ -347,15 +476,6 @@
           <Val><![CDATA[Log analytics]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Log analytics]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.TabsGroup.content.items.Tabs.content.links.5806bcb9905843088d2df573cd5961c3.linkLabel" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Networking]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Rede]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -389,10 +509,13 @@
       </Item>
       <Item ItemId=";items.TabsGroup.content.items.Tabs.content.links.773370400e9f48488ad84ecf61d11ae1.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Server]]></Val>
+          <Val><![CDATA[Servers]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Servidor]]></Val>
+            <Val><![CDATA[Servidores]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Server]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -423,39 +546,63 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
+      <Item ItemId=";items.TabsGroup.content.items.VirtualMachinesGroup.content.items.VirtualMachineChart.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[VM states]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Estados da VM]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.TabsGroup.content.items.VirtualMachinesGroup.content.items.VirtualMachineDescription.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[### State of all the virtual machines in the cluster]D;]A;VM can be in one of the following states: Running, Stopped, Failed, or Other (Unknown, Starting, Snapshoting, Saving, Stopping, Pausing, Resuming, Paused, Suspended)]]></Val>
+          <Val><![CDATA[View the state of virtual machines on each server in the cluster. ]D;]A;]D;]A;**Other VMs** could be in one of the following states: Starting, Snapshotting, Saving, Stopping, Pausing, Resuming, Paused, Suspended, or Unknown.]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[### O estado de todas as máquinas virtuais no cluster]D;]A;VM pode estar em um dos seguintes estados: Executando, Parado, Falha ou Outro (Desconhecido, Iniciando, Instantâneo, Salvando, Parando, Pausando, Retomando, Pausado, Suspenso)]]></Val>
+            <Val><![CDATA[Exiba o estado das máquinas virtuais em cada servidor no cluster. ]D;]A;]D;]A;**Outras VMs** podem estar em um dos seguintes estados: Iniciando, Instantâneo, Salvando, Parando, Pausando, Retomando, Pausando, Suspenso ou Desconhecido.]]></Val>
+          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[### State of all the virtual machines in the cluster]D;]A;VM can be in one of the following states: Running, Stopped, Failed, or Other (Unknown, Starting, Snapshoting, Saving, Stopping, Pausing, Resuming, Paused, Suspended)]]></Val>
+          </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.TabsGroup.content.items.healthgroup.content.items.alertsgroup.content.items.healthtext.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[View health faults on the cluster—select the fault to see the details and remediation actions. The reported time is the time the fault first occurred.]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Exibir falhas de integridade no cluster. Selecione a falha para ver os detalhes e as ações de correção. A hora relatada é a hora em que a falha ocorreu pela primeira vez.]D;]A;]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.TabsGroup.content.items.healthgroup.content.items.healthdetailquery.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.TabsGroup.content.items.healthgroup.content.items.noalerttext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[All nodes are healthy.]]></Val>
+          <Val><![CDATA[There is no health faults on this cluster.]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Todos os nós estão íntegros.]]></Val>
+            <Val><![CDATA[Não há falhas de integridade neste cluster.]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.TabsGroup.content.items.networkinggroup.content.items.networkingtext.content.json" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.TabsGroup.content.items.nohealthgroup.content.items.healthwarningtext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[## We are working on the networking section, stay tuned]]></Val>
+          <Val><![CDATA[To see health data, go to the **Log Analytics workspace** used for the cluster and make sure that the **Agent configuration** is capturing data from the **microsoft-windows-health/operational** log. [Learn more]5D;(https://aka.ms/enable-hci-monitoring)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[## Estamos trabalhando na seção de rede, fique atento]]></Val>
+            <Val><![CDATA[Para ver os dados de integridade, acesse o **workspace do Log Analytics** usado para o cluster e verifique se a **Configuração do Agente** está capturando dados do log **microsoft-windows-health/operational**. [Saiba mais]5D;(https://aka.ms/enable-hci-monitoring)]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.TabsGroup.content.items.servergroup.content.items.Cpuandmemoryusagegroup.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Cpu and memory usage]]></Val>
+          <Val><![CDATA[CPU and memory usage]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Uso de CPU e memória]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Cpu and memory usage]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -488,18 +635,87 @@
       </Item>
       <Item ItemId=";items.TabsGroup.content.items.servergroup.content.items.rdmagroup.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[RDMA]]></Val>
+          <Val><![CDATA[Network usage]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Uso da rede]]></Val>
+          </Tgt>
+          <Prev Cat="Text">
             <Val><![CDATA[RDMA]]></Val>
+          </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.TabsGroup.content.items.servergroup.content.items.servertext.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[View health and usage info for the servers in the cluster.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Exiba informações de integridade e uso dos servidores no cluster.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.TabsGroup.content.items.storagegroup.content.items.drivesgroup.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Drives]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Unidades]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.TabsGroup.content.items.storagegroup.content.items.storagetext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[## We are working on the storage section, stay tuned]]></Val>
+          <Val><![CDATA[<p> View the health of volumes and drives in the cluster. Drive health is at the bottom of the page.]D;]A;]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[## Estamos trabalhando na seção de armazenamento, fique atento]]></Val>
+            <Val><![CDATA[<p> Exibir a integridade de volumes e unidades no cluster. A integridade da unidade está na parte inferior da página.]D;]A;]]></Val>
+          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[## We are working on the storage section, stay tuned]]></Val>
+          </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.TabsGroup.content.items.storagegroup.content.items.volumesgroup.content.items.iopsquery.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[IOPS]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[IOPS]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.TabsGroup.content.items.storagegroup.content.items.volumesgroup.content.items.latencyquery.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Latency]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Latência]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.TabsGroup.content.items.storagegroup.content.items.volumesgroup.content.items.throughputquery.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Throughput]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Taxa de transferência]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.TabsGroup.content.items.storagegroup.content.items.volumesgroup.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Volumes]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Volumes]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.linktext.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[You can monitor multiple clusters across your subscription with Insights. ]D;]A;[Monitor with Insights]5D;(https://portal.azure.com/#blade/Microsoft_Azure_Monitoring/AzureMonitoringBrowseBlade/azureStackHCIInsights)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Você pode monitorar vários clusters em sua assinatura com o Insights. ]D;]A;[Monitorar com Insights]5D;(https://portal.azure.com/#blade/Microsoft_Azure_Monitoring/AzureMonitoringBrowseBlade/azureStackHCIInsights)]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
