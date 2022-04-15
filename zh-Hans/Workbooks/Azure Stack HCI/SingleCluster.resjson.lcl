@@ -131,18 +131,27 @@
         <Item ItemId=";(...) ettings.labelSettings.FaultingResourceId.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Faulting resource ID]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[出错资源 ID]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) ettings.labelSettings.FaultingResourceType.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Faulting resource type]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[出错资源类型]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) ettings.labelSettings.ReportedTime.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Initial fault time]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[初始错误时间]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -161,6 +170,9 @@
         <Item ItemId=";(...) aMessage" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[There are no health faults on this cluster.]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[此群集上没有运行状况错误。]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -275,8 +287,8 @@
         <Item ItemId=";(...) cessors.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Logical processors]]></Val>
-            <Tgt Cat="Text" Stat="Update" Orig="New">
-              <Val><![CDATA[Log. 处理器]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[逻辑处理器]]></Val>
             </Tgt>
             <Prev Cat="Text">
               <Val><![CDATA[Log. Processors]]></Val>
@@ -318,7 +330,7 @@
           <Str Cat="Text">
             <Val><![CDATA[CPU usage]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[CPU 使用率]]></Val>
+              <Val><![CDATA[CPU 使用情况]]></Val>
             </Tgt>
             <Prev Cat="Text">
               <Val><![CDATA[Cpu usage]]></Val>
@@ -353,6 +365,9 @@
         <Item ItemId=";(...) tings.labelSettings.CanPool.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Can pool?]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[可共用吗?]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -380,6 +395,9 @@
         <Item ItemId=";(...) essage" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Install the latest OS update on this cluster to show complete drive info.]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[在此群集上安装最新的操作系统更新，以显示完整的驱动器信息。]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -531,14 +549,17 @@
       <Item ItemId=";items.TabsGroup.content.items.VirtualMachinesGroup.content.items.VirtualMachineChart.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[VM states]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[虚拟机状态]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.TabsGroup.content.items.VirtualMachinesGroup.content.items.VirtualMachineDescription.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[View the state of virtual machines on each server in the cluster. ]D;]A;]D;]A;**Other VMs** could be in one of the following states: Starting, Snapshotting, Saving, Stopping, Pausing, Resuming, Paused, Suspended, or Unknown.]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[###群集中所有虚拟机的状态]D;]A;虚拟机可以处于以下状态之一: 正在运行、已停止、失败或其他(未知、正在启动、快照、保存、停止、暂停、继续、暂停、挂起)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[查看群集中每台服务器上虚拟机的状态。]D;]A;]D;]A;**其他虚拟机**可能处于以下状态之一: 正在启动、正在拍摄快照、正在保存、正在停止、正在暂停、正在恢复、已暂停、已挂起或未知。]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[### State of all the virtual machines in the cluster]D;]A;VM can be in one of the following states: Running, Stopped, Failed, or Other (Unknown, Starting, Snapshoting, Saving, Stopping, Pausing, Resuming, Paused, Suspended)]]></Val>
@@ -549,25 +570,34 @@
       <Item ItemId=";items.TabsGroup.content.items.healthgroup.content.items.alertsgroup.content.items.healthtext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[View health faults on the cluster—select the fault to see the details and remediation actions. The reported time is the time the fault first occurred.]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[查看群集上的运行状况错误 - 选择错误以查看详细信息和修正操作。报告的时间是首次发生错误的时间。]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.TabsGroup.content.items.healthgroup.content.items.noalerttext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[There is no health faults on this cluster.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[此群集上没有运行状况错误。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.TabsGroup.content.items.nohealthgroup.content.items.healthwarningtext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[To see health data, go to the **Log Analytics workspace** used for the cluster and make sure that the **Agent configuration** is capturing data from the **microsoft-windows-health/operational** log. [Learn more]5D;(https://aka.ms/enable-hci-monitoring)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[若要查看运行状况数据，请转至用于群集的 **Log Analytics 工作区**，并确保**代理配置**正在从 **microsoft-windows-health/operational** 日志中捕获数据。[了解详细信息]5D;(https://aka.ms/enable-hci-monitoring)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.TabsGroup.content.items.servergroup.content.items.Cpuandmemoryusagegroup.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[CPU and memory usage]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[CPU 和内存使用情况]]></Val>
           </Tgt>
           <Prev Cat="Text">
@@ -606,8 +636,8 @@
       <Item ItemId=";items.TabsGroup.content.items.servergroup.content.items.rdmagroup.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Network usage]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[RDMA]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[网络使用情况]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[RDMA]]></Val>
@@ -618,6 +648,9 @@
       <Item ItemId=";items.TabsGroup.content.items.servergroup.content.items.servertext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[View health and usage info for the servers in the cluster.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[查看群集中服务器的运行状况和使用情况信息。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -633,8 +666,8 @@
       <Item ItemId=";items.TabsGroup.content.items.storagegroup.content.items.storagetext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<p> View the health of volumes and drives in the cluster. Drive health is at the bottom of the page.]D;]A;]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[## 我们正在处理存储部分，敬请关注]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<p>查看群集中卷和驱动器的运行状况。驱动器运行状况位于页面底部。]D;]A;]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[## We are working on the storage section, stay tuned]]></Val>
@@ -681,6 +714,9 @@
       <Item ItemId=";items.linktext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[You can monitor multiple clusters across your subscription with Insights. ]D;]A;[Monitor with Insights]5D;(https://portal.azure.com/#blade/Microsoft_Azure_Monitoring/AzureMonitoringBrowseBlade/azureStackHCIInsights)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[可以使用 Insights 监视订阅中的多个群集。]D;]A;[使用 Insights 监视]5D;(https://portal.azure.com/#blade/Microsoft_Azure_Monitoring/AzureMonitoringBrowseBlade/azureStackHCIInsights)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

@@ -131,18 +131,27 @@
         <Item ItemId=";(...) ettings.labelSettings.FaultingResourceId.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Faulting resource ID]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[障害が発生しているリソース ID]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) ettings.labelSettings.FaultingResourceType.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Faulting resource type]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[障害が発生しているリソースの種類]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) ettings.labelSettings.ReportedTime.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Initial fault time]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[障害が最初に発生した時刻]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -150,7 +159,7 @@
           <Str Cat="Text">
             <Val><![CDATA[Fault]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[フォールト]]></Val>
+              <Val><![CDATA[障害]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
@@ -161,6 +170,9 @@
         <Item ItemId=";(...) aMessage" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[There are no health faults on this cluster.]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[このクラスターには、正常性の障害はありません。]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -275,7 +287,7 @@
         <Item ItemId=";(...) cessors.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Logical processors]]></Val>
-            <Tgt Cat="Text" Stat="Update" Orig="New">
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
               <Val><![CDATA[論理プロセッサ]]></Val>
             </Tgt>
             <Prev Cat="Text">
@@ -353,6 +365,9 @@
         <Item ItemId=";(...) tings.labelSettings.CanPool.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Can pool?]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[プール可能ですか?]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -380,6 +395,9 @@
         <Item ItemId=";(...) essage" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Install the latest OS update on this cluster to show complete drive info.]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[このクラスター上で最新の OS 更新プログラムをインストールして、完全なドライブ情報を表示します。]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -531,14 +549,17 @@
       <Item ItemId=";items.TabsGroup.content.items.VirtualMachinesGroup.content.items.VirtualMachineChart.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[VM states]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[VM の状態]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.TabsGroup.content.items.VirtualMachinesGroup.content.items.VirtualMachineDescription.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[View the state of virtual machines on each server in the cluster. ]D;]A;]D;]A;**Other VMs** could be in one of the following states: Starting, Snapshotting, Saving, Stopping, Pausing, Resuming, Paused, Suspended, or Unknown.]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[### クラスター内のすべての仮想マシンの状態]D;]A;VM は次のいずれかの状態になります: 実行中、停止済み、失敗、またはその他 (不明、開始中、スナップショット中、保存中、停止中、一時停止中、再開中、一時停止済み、中断済み)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[クラスター内の各サーバー上の仮想マシンの状態を表示します。]D;]A;]D;]A;**[その他の VM]5D;** の状態は次のいずれかになる可能性があります: 開始中、スナップショット中、保存中、停止中、一時停止中、再開中、一時停止、中断、または不明。]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[### State of all the virtual machines in the cluster]D;]A;VM can be in one of the following states: Running, Stopped, Failed, or Other (Unknown, Starting, Snapshoting, Saving, Stopping, Pausing, Resuming, Paused, Suspended)]]></Val>
@@ -549,25 +570,34 @@
       <Item ItemId=";items.TabsGroup.content.items.healthgroup.content.items.alertsgroup.content.items.healthtext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[View health faults on the cluster—select the fault to see the details and remediation actions. The reported time is the time the fault first occurred.]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[クラスターの正常性の障害を表示します。詳細と修復操作を表示するには、障害を選択します。障害が最初に発生した時刻が報告されます。]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.TabsGroup.content.items.healthgroup.content.items.noalerttext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[There is no health faults on this cluster.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[このクラスターには正常性の障害はありません。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.TabsGroup.content.items.nohealthgroup.content.items.healthwarningtext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[To see health data, go to the **Log Analytics workspace** used for the cluster and make sure that the **Agent configuration** is capturing data from the **microsoft-windows-health/operational** log. [Learn more]5D;(https://aka.ms/enable-hci-monitoring)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[正常性データを表示するには、クラスターで使用されている **[Log Analytics ワークスペース]5D;** に移動し、**[エージェントの構成]5D;**で **[microsoft-windows-health/operational]5D;** ログからデータがキャプチャされていることを確認してください。[詳細情報]5D;(https://aka.ms/enable-hci-monitoring)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.TabsGroup.content.items.servergroup.content.items.Cpuandmemoryusagegroup.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[CPU and memory usage]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[CPU とメモリの使用量]]></Val>
           </Tgt>
           <Prev Cat="Text">
@@ -606,8 +636,8 @@
       <Item ItemId=";items.TabsGroup.content.items.servergroup.content.items.rdmagroup.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Network usage]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[RDMA]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[ネットワーク使用量]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[RDMA]]></Val>
@@ -618,6 +648,9 @@
       <Item ItemId=";items.TabsGroup.content.items.servergroup.content.items.servertext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[View health and usage info for the servers in the cluster.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[クラスター内のサーバーの正常性と使用状況の情報を表示します。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -633,8 +666,8 @@
       <Item ItemId=";items.TabsGroup.content.items.storagegroup.content.items.storagetext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<p> View the health of volumes and drives in the cluster. Drive health is at the bottom of the page.]D;]A;]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[## 記憶域セクションに取り組んでいます。お待ちください]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<p> クラスター内のボリュームとドライブの正常性を表示します。ドライブの正常性はページのボトムにあります。]D;]A;]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[## We are working on the storage section, stay tuned]]></Val>
@@ -681,6 +714,9 @@
       <Item ItemId=";items.linktext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[You can monitor multiple clusters across your subscription with Insights. ]D;]A;[Monitor with Insights]5D;(https://portal.azure.com/#blade/Microsoft_Azure_Monitoring/AzureMonitoringBrowseBlade/azureStackHCIInsights)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[分析情報を使用すると、サブスクリプション全体で複数のクラスターを監視できます。]D;]A;[分析情報を使用した監視]5D;(https://portal.azure.com/#blade/Microsoft_Azure_Monitoring/AzureMonitoringBrowseBlade/azureStackHCIInsights)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
