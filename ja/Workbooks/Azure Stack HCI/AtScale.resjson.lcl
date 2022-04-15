@@ -62,8 +62,8 @@
         <Item ItemId=";(...) elSettings.Name.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Cluster > Server]]></Val>
-            <Tgt Cat="Text" Stat="Update" Orig="New">
-              <Val><![CDATA[クラスター > ノード]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[クラスター > サーバー]]></Val>
             </Tgt>
             <Prev Cat="Text">
               <Val><![CDATA[Cluster > Node]]></Val>
@@ -183,7 +183,7 @@
           <Str Cat="Text">
             <Val><![CDATA[Total servers]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[サーバーの総数]]></Val>
+              <Val><![CDATA[サーバーの合計数]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
@@ -194,6 +194,9 @@
         <Item ItemId=";(...) bel" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Faulting resource]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[障害が発生しているリソース]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -227,6 +230,9 @@
         <Item ItemId=";(...) label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Cluster > Server]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[クラスター > サーバー]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -236,6 +242,9 @@
         <Item ItemId=";(...) tate.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Server state]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[サーバーの状態]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -302,8 +311,8 @@
         <Item ItemId=";(...) tings.labelSettings.Status.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Volume health]]></Val>
-            <Tgt Cat="Text" Stat="Update" Orig="New">
-              <Val><![CDATA[ボリュームの正常性]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[ボリューム正常性]]></Val>
             </Tgt>
             <Prev Cat="Text">
               <Val><![CDATA[Volume Health]]></Val>
@@ -435,8 +444,8 @@
       <Item ItemId=";items.TabsGroup.content.items.Tabs.content.links.97fae1180614439799aa45b2e4213754.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Cluster health]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[概要]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[クラスター正常性]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Overview]]></Val>
@@ -465,8 +474,8 @@
       <Item ItemId=";items.TabsGroup.content.items.Tabs.content.links.99cd5df5c4ca465d8aeb0caf2ad03ff4.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Add to monitoring]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[作業の開始]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[監視への追加]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Get started]]></Val>
@@ -477,14 +486,17 @@
       <Item ItemId=";items.TabsGroup.content.items.VirtualMachinesGroup.content.items.VirtualMachineChart.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[VM states]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[VM の状態]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.TabsGroup.content.items.VirtualMachinesGroup.content.items.VirtualMachineDescription.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### State of all the virtual machines in selected clusters]D;]A;<p>View the state of virtual machines running across monitored clusters—expand a cluster to see the state of VMs on individual servers. ]D;]A;]D;]A;<p>**Other VMs** could be in one of the following states: Starting, Snapshotting, Saving, Stopping, Pausing, Resuming, Paused, Suspended, or Unknown.]D;]A;]D;]A;]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[### 選択されたクラスター内のすべての仮想マシンの状態]D;]A;VM は次のいずれかの状態にある場合があります: 実行中、停止済み、失敗、またはその他 (不明、開始中、スナップショット中、保存中、停止中、一時停止中、再開中、一時停止済み、中断済み)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### 選択したクラスター内のすべての仮想マシンの状態]D;]A;<p>監視対象のクラスター間で実行されている仮想マシンの状態を表示します。個々のサーバー上の VM の状態を表示するには、クラスターを展開します。]D;]A;]D;]A;<p>**[その他の VM]5D;** は、次のいずれかの状態になる可能性があります: 開始中、スナップショット中、保存中、停止中、一時停止中、再開中、一時停止、中断、または不明。]D;]A;]D;]A;]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[### State of all the virtual machines in selected clusters]D;]A;VM can be in one of the following states: Running, Stopped, Failed, or Other (Unknown, Starting, Snapshoting, Saving, Stopping, Pausing, Resuming, Paused, Suspended)]]></Val>
@@ -495,8 +507,8 @@
       <Item ItemId=";items.TabsGroup.content.items.gettingstartedgroup.content.items.GettingStartedDescription.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<p>View the clusters running Azure Stack HCI, version 21H2 (or later) in your subscription that aren’t monitored yet. To start monitoring a cluster, select it to open that cluster, and then go to **Capabilities > Insights**. If you don’t see your cluster, make sure it’s connected recently to Azure.]D;]A;]D;]A;[How much will this cost?]5D;(https://docs.microsoft.com/azure-stack/hci/manage/monitor-azure-portal#azure-monitor-pricing)]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[<p> このビューでは、Azure に接続されており、監視の対象になっている登録済みの Azure Stack HCI バージョン 21H2 クラスターの正常性、パフォーマンス、使用状況に関する分析情報を示します。この機能はプレビューで利用できます。Log Analytics に取り込まれたデータ量とデータ保有期間の設定に基づいて課金されます。[Azure Stack HCI Insights による複数のクラスターの監視に関する詳細情報]5D;(https://aka.ms/hci-insights-docs)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<p>まだ監視されていないサブスクリプションで Azure Stack HCI バージョン 21H2 以降を実行しているクラスターを表示します。クラスターの監視を開始するには、選択してそのクラスターを開き、**[機能]5D; > [分析情報]5D;** に移動します。クラスターが表示されない場合は、最近クラスターが Azure に接続されていることを確認してください。]D;]A;]D;]A;[このコストの金額]5D;(https://docs.microsoft.com/azure-stack/hci/manage/monitor-azure-portal#azure-monitor-pricing)]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[<p> This view provides health, performance and usage insights about registered Azure Stack HCI, version 21H2 clusters that are connected to Azure and are enrolled in monitoring. This feature is available in preview. You will be billed based on the amount of data ingested into Log Analytics and your data retention settings. [Learn more about monitoring multiple clusters with Azure Stack HCI Insights ]5D;(https://aka.ms/hci-insights-docs)]]></Val>
@@ -507,8 +519,8 @@
       <Item ItemId=";items.TabsGroup.content.items.gettingstartedgroup.content.items.MonitoredClusters.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### {Message}]D;]A;]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[{Message} 監視対象クラスター]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### {Message}]D;]A;]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[{Message} Monitored clusters]D;]A;]]></Val>
@@ -537,12 +549,18 @@
       <Item ItemId=";items.TabsGroup.content.items.overviewgroup.content.items.overviewtext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[If your cluster is missing or showing the status **Other**, go to the **Log Analytics workspace** used for the cluster and make sure that the **Agent configuration** is capturing data from the **microsoft-windows-health/operational** log. Also make sure the clusters have connected recently to Azure and check that the clusters aren’t filtered out in this workbook. [Learn more]5D;(https://aka.ms/enable-hci-monitoring)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[クラスターがないか、**[その他]5D;** の状態が表示される場合は、クラスターで使用されている **[Log Analytics ワークスペース]5D;** に移動し、**[エージェントの構成]5D;** で **[microsoft-windows-health/operational]5D;** ログからデータがキャプチャされていることを確認してください。最近クラスターが Azure に接続されていることと、このブック内でクラスターがフィルターで除外されていないことも確認してください。[詳細情報]5D;(https://aka.ms/enable-hci-monitoring)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.TabsGroup.content.items.servergroup.content.items.OverviewDescription.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<p>View the health of servers within a cluster—expand a cluster to see individual servers. If your cluster is missing or showing the status **Other**, see the **Cluster health** tab for instructions.]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<p>クラスター内のサーバーの正常性を表示します。個々のサーバーを表示するには、クラスターを展開します。クラスターがないか、**[その他]5D;** の状態が表示される場合は、**[クラスター正常性]5D;** タブで指示をご覧ください。]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -558,6 +576,9 @@
       <Item ItemId=";items.TabsGroup.content.items.storagegroup.content.items.storagetext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[View the health of volumes accross monitored clusters—expand a cluster to see the state of individual volumes.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[監視対象のクラスター間でのボリュームの正常性を表示します。個々のボリュームの状態を表示するには、クラスターを展開します。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

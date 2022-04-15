@@ -131,18 +131,27 @@
         <Item ItemId=";(...) ettings.labelSettings.FaultingResourceId.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Faulting resource ID]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Meghibásodó erőforrás azonosítója]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) ettings.labelSettings.FaultingResourceType.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Faulting resource type]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Meghibásodó erőforrás típusa]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) ettings.labelSettings.ReportedTime.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Initial fault time]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Kezdeti hibaidő]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -161,6 +170,9 @@
         <Item ItemId=";(...) aMessage" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[There are no health faults on this cluster.]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Ezen a fürtön nincsenek állapothibák.]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -275,7 +287,7 @@
         <Item ItemId=";(...) cessors.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Logical processors]]></Val>
-            <Tgt Cat="Text" Stat="Update" Orig="New">
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
               <Val><![CDATA[Logikai processzorok]]></Val>
             </Tgt>
             <Prev Cat="Text">
@@ -318,7 +330,7 @@
           <Str Cat="Text">
             <Val><![CDATA[CPU usage]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Processzorhasználat]]></Val>
+              <Val><![CDATA[CPU-használat]]></Val>
             </Tgt>
             <Prev Cat="Text">
               <Val><![CDATA[Cpu usage]]></Val>
@@ -353,6 +365,9 @@
         <Item ItemId=";(...) tings.labelSettings.CanPool.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Can pool?]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Készletbe helyezhető?]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -380,6 +395,9 @@
         <Item ItemId=";(...) essage" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Install the latest OS update on this cluster to show complete drive info.]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Az összes meghajtóadat megjelenítéséhez telepítse a legújabb operációsrendszer-frissítést erre a fürtre.]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -531,6 +549,9 @@
       <Item ItemId=";items.TabsGroup.content.items.VirtualMachinesGroup.content.items.VirtualMachineChart.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[VM states]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Virtuálisgép-állapotok]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -555,20 +576,26 @@
       <Item ItemId=";items.TabsGroup.content.items.healthgroup.content.items.noalerttext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[There is no health faults on this cluster.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Ezen a fürtön nincsenek állapothibák.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.TabsGroup.content.items.nohealthgroup.content.items.healthwarningtext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[To see health data, go to the **Log Analytics workspace** used for the cluster and make sure that the **Agent configuration** is capturing data from the **microsoft-windows-health/operational** log. [Learn more]5D;(https://aka.ms/enable-hci-monitoring)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Az állapotadatok megtekintéséhez nyissa meg a fürthöz használt **Log Analytics-munkaterületet**, és győződjön meg arról, hogy az **Ügynökkonfiguráció** rögzíti az adatokat a **microsoft-windows-állapot/műveleti** naplóból. [További információ]5D;(https://aka.ms/enable-hci-monitoring)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.TabsGroup.content.items.servergroup.content.items.Cpuandmemoryusagegroup.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[CPU and memory usage]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[Processzor- és memóriahasználat]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[CPU- és memóriahasználat]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Cpu and memory usage]]></Val>
@@ -606,8 +633,8 @@
       <Item ItemId=";items.TabsGroup.content.items.servergroup.content.items.rdmagroup.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Network usage]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[RDMA]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Hálózathasználat]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[RDMA]]></Val>
@@ -618,6 +645,9 @@
       <Item ItemId=";items.TabsGroup.content.items.servergroup.content.items.servertext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[View health and usage info for the servers in the cluster.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[A fürt kiszolgálóinak állapot- és használati adatainak megtekintése.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

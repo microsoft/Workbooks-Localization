@@ -62,8 +62,8 @@
         <Item ItemId=";(...) elSettings.Name.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Cluster > Server]]></Val>
-            <Tgt Cat="Text" Stat="Update" Orig="New">
-              <Val><![CDATA[群集 > 节点]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[群集 > 服务器]]></Val>
             </Tgt>
             <Prev Cat="Text">
               <Val><![CDATA[Cluster > Node]]></Val>
@@ -183,7 +183,7 @@
           <Str Cat="Text">
             <Val><![CDATA[Total servers]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[服务器总计]]></Val>
+              <Val><![CDATA[服务器总数]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
@@ -194,6 +194,9 @@
         <Item ItemId=";(...) bel" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Faulting resource]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[出错资源]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -227,6 +230,9 @@
         <Item ItemId=";(...) label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Cluster > Server]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[群集 > 服务器]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -236,6 +242,9 @@
         <Item ItemId=";(...) tate.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Server state]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[服务器状态]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -302,7 +311,7 @@
         <Item ItemId=";(...) tings.labelSettings.Status.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Volume health]]></Val>
-            <Tgt Cat="Text" Stat="Update" Orig="New">
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
               <Val><![CDATA[卷运行状况]]></Val>
             </Tgt>
             <Prev Cat="Text">
@@ -435,8 +444,8 @@
       <Item ItemId=";items.TabsGroup.content.items.Tabs.content.links.97fae1180614439799aa45b2e4213754.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Cluster health]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[概述]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[群集运行状况]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Overview]]></Val>
@@ -465,8 +474,8 @@
       <Item ItemId=";items.TabsGroup.content.items.Tabs.content.links.99cd5df5c4ca465d8aeb0caf2ad03ff4.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Add to monitoring]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[开始]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[添加到监视]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[Get started]]></Val>
@@ -477,14 +486,17 @@
       <Item ItemId=";items.TabsGroup.content.items.VirtualMachinesGroup.content.items.VirtualMachineChart.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[VM states]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[虚拟机状态]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.TabsGroup.content.items.VirtualMachinesGroup.content.items.VirtualMachineDescription.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### State of all the virtual machines in selected clusters]D;]A;<p>View the state of virtual machines running across monitored clusters—expand a cluster to see the state of VMs on individual servers. ]D;]A;]D;]A;<p>**Other VMs** could be in one of the following states: Starting, Snapshotting, Saving, Stopping, Pausing, Resuming, Paused, Suspended, or Unknown.]D;]A;]D;]A;]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[### 所选群集中所有虚拟机的状态]D;]A;VM 可能处于以下其中一种状态: 正在运行、已停止、失败或其他(未知、正在启动、正在快照、正在保存、正在停止、正在暂停、正在继续、已暂停、已挂起)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### 选定群集中所有虚拟机的状态]D;]A;<p>查看跨受监视群集运行的虚拟机的状态 - 展开群集以查看各个服务器上虚拟机的状态。]D;]A;]D;]A;<p>**其他虚拟机**可能处于以下状态之一: 正在启动、正在拍摄快照、正在保存、正在停止、正在暂停、正在恢复、已暂停、已挂起或未知。]D;]A;]D;]A;]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[### State of all the virtual machines in selected clusters]D;]A;VM can be in one of the following states: Running, Stopped, Failed, or Other (Unknown, Starting, Snapshoting, Saving, Stopping, Pausing, Resuming, Paused, Suspended)]]></Val>
@@ -495,8 +507,8 @@
       <Item ItemId=";items.TabsGroup.content.items.gettingstartedgroup.content.items.GettingStartedDescription.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<p>View the clusters running Azure Stack HCI, version 21H2 (or later) in your subscription that aren’t monitored yet. To start monitoring a cluster, select it to open that cluster, and then go to **Capabilities > Insights**. If you don’t see your cluster, make sure it’s connected recently to Azure.]D;]A;]D;]A;[How much will this cost?]5D;(https://docs.microsoft.com/azure-stack/hci/manage/monitor-azure-portal#azure-monitor-pricing)]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[<p> 此视图提供有关已注册 Azure Stack HCI、版本21H2 群集(连接到 Azure 并已注册监视)的运行状况、性能和使用情况见解。此功能在预览中可用。我们将根据引入到 Log Analytics 的数据量以及数据保留设置对你进行计费。[详细了解通过 Azure Stack HCI 见解监视多个群集]5D;(https://aka.ms/hci-insights-docs)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<p>查看订阅中运行 Azure Stack HCI 版本 21H2 (或更高版本)但尚未受监视的群集。若要开始监视群集，请选择它以打开该群集，然后转到“**功能”>“Insights**”。如果未看到你的群集，请确保它最近已连接到 Azure。]D;]A;]D;]A;[此费用是多少?]5D;(https://docs.microsoft.com/azure-stack/hci/manage/monitor-azure-portal#azure-monitor-pricing)]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[<p> This view provides health, performance and usage insights about registered Azure Stack HCI, version 21H2 clusters that are connected to Azure and are enrolled in monitoring. This feature is available in preview. You will be billed based on the amount of data ingested into Log Analytics and your data retention settings. [Learn more about monitoring multiple clusters with Azure Stack HCI Insights ]5D;(https://aka.ms/hci-insights-docs)]]></Val>
@@ -507,8 +519,8 @@
       <Item ItemId=";items.TabsGroup.content.items.gettingstartedgroup.content.items.MonitoredClusters.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### {Message}]D;]A;]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[{Message} 受监视的群集]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### {Message}]D;]A;]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[{Message} Monitored clusters]D;]A;]]></Val>
@@ -537,12 +549,18 @@
       <Item ItemId=";items.TabsGroup.content.items.overviewgroup.content.items.overviewtext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[If your cluster is missing or showing the status **Other**, go to the **Log Analytics workspace** used for the cluster and make sure that the **Agent configuration** is capturing data from the **microsoft-windows-health/operational** log. Also make sure the clusters have connected recently to Azure and check that the clusters aren’t filtered out in this workbook. [Learn more]5D;(https://aka.ms/enable-hci-monitoring)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[如果群集丢失或显示状态“**其他**”，请转至用于群集的 **Log Analytics 工作区**，并确保**代理配置**正在从 **microsoft-windows-health/operational** 日志中捕获数据。还要确保群集最近已连接到 Azure，并检查群集是否在此工作簿中被筛选掉。[了解详细信息]5D;(https://aka.ms/enable-hci-monitoring)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.TabsGroup.content.items.servergroup.content.items.OverviewDescription.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<p>View the health of servers within a cluster—expand a cluster to see individual servers. If your cluster is missing or showing the status **Other**, see the **Cluster health** tab for instructions.]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<p>查看群集内服务器的运行状况 - 展开群集以查看各个服务器。如果群集丢失或显示状态“**其他**”，请参阅“**群集运行状况**”选项卡以获取说明。]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -558,6 +576,9 @@
       <Item ItemId=";items.TabsGroup.content.items.storagegroup.content.items.storagetext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[View the health of volumes accross monitored clusters—expand a cluster to see the state of individual volumes.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[跨受监视群集查看卷的运行状况 - 展开群集以查看各个卷的状态。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
