@@ -9,6 +9,48 @@
     <Disp Icon="Expand" Expand="true" Disp="true" LocTbl="false" />
     <Item ItemId=";Strings" ItemType="0" PsrId="306" Leaf="false">
       <Disp Icon="Str" Disp="true" LocTbl="false" />
+      <Item ItemId=";items.AWS.content.items.AWSpercentage.content.gridSettings.labelSettings.CSPM1.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Cloud Security Posture Management]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Beheer van cloudbeveiligingspostuur]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.AWS.content.items.AWSpercentage.content.gridSettings.labelSettings.Containers1.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Defender for Containers]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Azure Defender voor Containers]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.AWS.content.items.AWSpercentage.content.gridSettings.labelSettings.Servers1.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Defender for Servers]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Azure Defender voor Servers]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.AWS.content.items.AWSpercentage.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[No AWS connectors found in your selected subscriptions.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Er zijn geen AWS-connectors gevonden in de geselecteerde abonnementen.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.AWS.content.items.AWSpercentage.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Relative coverage across AWS connectors]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.AWS.content.items.headingAWS.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Defender for Cloud coverage by AWS connectors]]></Val>
@@ -23,10 +65,13 @@
       </Item>
       <Item ItemId=";items.AWS.content.items.infoAWS.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[This table provides an overview of all native AWS connectors in your subscriptions, including coverage for Defender for Cloud capabilities. You can click any status value from the table to be automatically redirected to the connector's configuration blade on which you can enable additional plans.]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[This section provides an overview of all native AWS connectors in your subscriptions, including coverage for Defender for Cloud capabilities. The ***Relative coverage across AWS connectors*** table shows the percentage of connectors with a particular plan enabled. In the ***Absolute coverage across AWS connectors*** table, you can click any status value from the table to be automatically redirected to the connector's configuration blade on which you can enable additional plans.]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[Deze tabel biedt een overzicht van alle systeemeigen AWS-connectors in uw abonnementen, inclusief dekking voor Defender voor Cloud-mogelijkheden. U kunt op een statuswaarde in de tabel klikken om automatisch te worden omgeleid naar de configuratieblade van de connector waarop u aanvullende plannen kunt inschakelen.]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[This table provides an overview of all native AWS connectors in your subscriptions, including coverage for Defender for Cloud capabilities. You can click any status value from the table to be automatically redirected to the connector's configuration blade on which you can enable additional plans.]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -44,6 +89,15 @@
           <Val><![CDATA[Defender for Containers]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Azure Defender voor Containers]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.AWS.content.items.queryAWS.content.gridSettings.labelSettings.Servers.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Defender for Servers]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Azure Defender voor Servers]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -66,6 +120,66 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
+      <Item ItemId=";items.AWS.content.items.queryAWS.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Absolute coverage across AWS connectors]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Azure.content.items.Azurepercentage.content.gridSettings.labelSettings.AppSrv1.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[App Services]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[App Services]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Azure.content.items.Azurepercentage.content.gridSettings.labelSettings.Containers1.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Containers]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Containers]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Azure.content.items.Azurepercentage.content.gridSettings.labelSettings.DNS1.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[DNS]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[DNS]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Azure.content.items.Azurepercentage.content.gridSettings.labelSettings.SQL1.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[SQL]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[SQL]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Azure.content.items.Azurepercentage.content.gridSettings.labelSettings.Servers1.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Servers]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Servers]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Azure.content.items.Azurepercentage.content.gridSettings.labelSettings.Storage1.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Storage]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Opslag]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.Azure.content.items.headingAzure.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Defender for Cloud coverage by Azure subscriptions]]></Val>
@@ -80,10 +194,13 @@
       </Item>
       <Item ItemId=";items.Azure.content.items.infoAzure.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[This table provides an overview of all selected subscriptions and their corresponding Defender status per plan. You can click the on/off status per plan and subscription. Doing so, you will be redirected to the subscription's Defender for Cloud plan configuration page. With that, you can easily see your Defender for Cloud coverage per subscription and immediately react in case you want to enable additional plans on it.]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[This section provides an overview of all selected subscriptions and their corresponding Defender status per plan. The ***Relative coverage across Azure subscriptions*** table shows the percentage of subscriptions that have a particular plan enabled. In the ***Absolute coverage across Azure subscriptions*** table, you can click the on/off status per plan and subscription. Doing so, you will be redirected to the subscription's Defender for Cloud plan configuration page. With that, you can easily see your Defender for Cloud coverage per subscription and immediately react in case you want to enable additional plans on it.]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[Deze tabel bevat een overzicht van alle geselecteerde abonnementen en de bijbehorende Defender-status per abonnement. U kunt per plan en abonnement op de aan/uit-status klikken. Hierdoor wordt u omgeleid naar de configuratiepagina van het Defender voor Cloud-abonnement van dit abonnement. Hiermee kunt u eenvoudig uw Defender voor Cloud-dekking per abonnement zien en direct reageren als u er aanvullende plannen voor wilt inschakelen.]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[This table provides an overview of all selected subscriptions and their corresponding Defender status per plan. You can click the on/off status per plan and subscription. Doing so, you will be redirected to the subscription's Defender for Cloud plan configuration page. With that, you can easily see your Defender for Cloud coverage per subscription and immediately react in case you want to enable additional plans on it.]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -213,6 +330,12 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
+      <Item ItemId=";items.Azure.content.items.queryAzure.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Absolute coverage across Azure subscriptions]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.DefenderforCloudCoverage.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Coverage]A;This workbook has been created to provide a consolidated view of coverage for Defender for Cloud plans and offerings across all selected subscriptions and multi-cloud connectors.]A;]A;<svg viewBox="0 0 19 19" width="20" class="fxt-escapeShadow" role="presentation" focusable="false" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"><g><path fill="#1b93eb" d="M16.82 8.886c0 4.81-5.752 8.574-7.006 9.411a.477.477 0 01-.523 0C8.036 17.565 2.18 13.7 2.18 8.886V3.135a.451.451 0 01.42-.419C7.2 2.612 6.154.625 9.5.625s2.3 1.987 6.8 2.091a.479.479 0 01.523.419z"></path><path fill="url(#0024423711759027356)" d="M16.192 8.99c0 4.392-5.333 7.947-6.483 8.575a.319.319 0 01-.418 0c-1.15-.732-6.483-4.183-6.483-8.575V3.762a.575.575 0 01.313-.523C7.2 3.135 6.258 1.357 9.4 1.357s2.2 1.882 6.274 1.882a.45.45 0 01.419.418z"></path><path d="M9.219 5.378a.313.313 0 01.562 0l.875 1.772a.314.314 0 00.236.172l1.957.284a.314.314 0 01.174.535l-1.416 1.38a.312.312 0 00-.09.278l.334 1.949a.313.313 0 01-.455.33l-1.75-.92a.314.314 0 00-.292 0l-1.75.92a.313.313 0 01-.455-.33L7.483 9.8a.312.312 0 00-.09-.278L5.977 8.141a.314.314 0 01.174-.535l1.957-.284a.314.314 0 00.236-.172z" class="msportalfx-svg-c01"></path></g></svg>&nbsp;<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px 0px 0px 0px;position: relative;top:-3px;left:-4px;"> Please take the time to answer a quick survey. To submit your feedback,]A;</span>[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px 0px 0px 0px;position: relative;top:-3px;left:-4px;"> click here. </span>]5D;(https://aka.ms/mdfcsurveycoverageworkbook)]]></Val>
@@ -222,6 +345,48 @@
           <Prev Cat="Text">
             <Val><![CDATA[## Defender for Cloud Coverage]A;This workbook has been created to provide a consolidated view of Defender for Cloud Coverage across all selected subscriptions.]A;]A;<svg viewBox="0 0 19 19" width="20" class="fxt-escapeShadow" role="presentation" focusable="false" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"><g><path fill="#1b93eb" d="M16.82 8.886c0 4.81-5.752 8.574-7.006 9.411a.477.477 0 01-.523 0C8.036 17.565 2.18 13.7 2.18 8.886V3.135a.451.451 0 01.42-.419C7.2 2.612 6.154.625 9.5.625s2.3 1.987 6.8 2.091a.479.479 0 01.523.419z"></path><path fill="url(#0024423711759027356)" d="M16.192 8.99c0 4.392-5.333 7.947-6.483 8.575a.319.319 0 01-.418 0c-1.15-.732-6.483-4.183-6.483-8.575V3.762a.575.575 0 01.313-.523C7.2 3.135 6.258 1.357 9.4 1.357s2.2 1.882 6.274 1.882a.45.45 0 01.419.418z"></path><path d="M9.219 5.378a.313.313 0 01.562 0l.875 1.772a.314.314 0 00.236.172l1.957.284a.314.314 0 01.174.535l-1.416 1.38a.312.312 0 00-.09.278l.334 1.949a.313.313 0 01-.455.33l-1.75-.92a.314.314 0 00-.292 0l-1.75.92a.313.313 0 01-.455-.33L7.483 9.8a.312.312 0 00-.09-.278L5.977 8.141a.314.314 0 01.174-.535l1.957-.284a.314.314 0 00.236-.172z" class="msportalfx-svg-c01"></path></g></svg>&nbsp;<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px 0px 0px 0px;position: relative;top:-3px;left:-4px;"> Please take the time to answer a quick survey. To submit your feedback,]A;</span>[<span style="font-family: Open Sans; font-weight: 620; font-size: 14px;font-style: bold;margin:-10px 0px 0px 0px;position: relative;top:-3px;left:-4px;"> click here. </span>]5D;(https://aka.ms/mdfcsurveycoverageworkbook)]]></Val>
           </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.GCP.content.items.GCPpercentage.content.gridSettings.labelSettings.CSPM1.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Cloud Security Posture Management]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Beheer van cloudbeveiligingspostuur]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.GCP.content.items.GCPpercentage.content.gridSettings.labelSettings.Containers1.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Defender for Containers]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Azure Defender voor Containers]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.GCP.content.items.GCPpercentage.content.gridSettings.labelSettings.Servers1.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Defender for Servers]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Azure Defender voor Servers]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.GCP.content.items.GCPpercentage.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[No GCP connectors found in your selected subscriptions.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Er zijn geen GCP-connectors gevonden in de geselecteerde abonnementen.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.GCP.content.items.GCPpercentage.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Relative coverage across GCP connectors]]></Val>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -239,10 +404,13 @@
       </Item>
       <Item ItemId=";items.GCP.content.items.infoGCP.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[This table provides an overview of all native GCP connectors in your subscriptions, including coverage for Defender for Cloud capabilities. You can click any status value from the table to be automatically redirected to the connector's configuration blade on which you can enable additional plans.]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[This section provides an overview of all native GCP connectors in your subscriptions, including coverage for Defender for Cloud capabilities. The ***Relative coverage across GCP connectors*** table shows the percentage of connectors with a particular plan enabled. In the ***Absolute coverage across GCP connectors*** table, you can click any status value from the table to be automatically redirected to the connector's configuration blade on which you can enable additional plans.]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[Deze tabel biedt een overzicht van alle systeemeigen GCP-connectors in uw abonnementen, inclusief dekking voor Defender voor Cloud-mogelijkheden. U kunt op een statuswaarde in de tabel klikken om automatisch te worden omgeleid naar de configuratieblade van de connector waarop u aanvullende plannen kunt inschakelen.]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[This table provides an overview of all native GCP connectors in your subscriptions, including coverage for Defender for Cloud capabilities. You can click any status value from the table to be automatically redirected to the connector's configuration blade on which you can enable additional plans.]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -264,6 +432,15 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
+      <Item ItemId=";items.GCP.content.items.queryGCP.content.gridSettings.labelSettings.Servers.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Defender for Servers]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Azure Defender voor Servers]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.GCP.content.items.queryGCP.content.gridSettings.labelSettings.id.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Connector ID]]></Val>
@@ -279,6 +456,12 @@
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Er zijn geen GCP-connectors gevonden in de geselecteerde abonnementen.]]></Val>
           </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.GCP.content.items.queryGCP.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Absolute coverage across GCP connectors]]></Val>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -329,7 +512,7 @@
       </Item>
       <Item ItemId=";items.releaseNotes.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[## Release notes]A;]A;|Version|Description|Date|]A;|---|---|---|]A;|v1.0|initial release, public availability of Defender for Cloud Coverage Workbook|1/20/2022|]A;|v1.1|adding navigation menu and coverage for AWS connectors|2/21/2022|]A;|v1.2|Updating AWS query and adding coverage for GCP connectors after API update|3/23/2022|]A;|v1.3|adding Defender for Servers P1/P2|4/7/2022|]]></Val>
+          <Val><![CDATA[## Release notes]A;]A;|Version|Description|Date|]A;|---|---|---|]A;|v1.0|initial release, public availability of Defender for Cloud Coverage Workbook|1/20/2022|]A;|v1.1|adding navigation menu and coverage for AWS connectors|2/21/2022|]A;|v1.2|Updating AWS query and adding coverage for GCP connectors after API update|3/23/2022|]A;|v1.3|adding Defender for Servers P1/P2|4/7/2022|]A;|v1.4|adding relative coverage|4/14/2022|]]></Val>
           <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[## Opmerkingen bij de release]A;]A;| Versie| Beschrijving| Datum|]A;|---|---|---|]A;|v1.0|eerste release, openbare beschikbaarheid van Defender voor Cloud Coverage Workbook|1/20/2022|]A;|v1.1|navigatiemenu en dekking voor AWS-connectors toevoegen|2/21/2022|]A;|v1.2| AWS-query bijwerken en dekking toevoegen voor GCP-connectors na API-update|3/23/2022|]]></Val>
           </Tgt>
