@@ -9,11 +9,29 @@
     <Disp Icon="Expand" Expand="true" Disp="true" LocTbl="false" />
     <Item ItemId=";Strings" ItemType="0" PsrId="306" Leaf="false">
       <Disp Icon="Str" Disp="true" LocTbl="false" />
+      <Item ItemId=";items.group10.content.items.ActivityLogsbyResourceName.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[There are no Activity Logs for the selected time range]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Pro vybraný časový rozsah neexistují žádné protokoly aktivit.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.group10.content.items.ActivityLogsbyResourceName.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[ACTIVITY LOGS BY RESOURCE]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[PROTOKOLY AKTIVIT PODLE PROSTŘEDKU]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.group10.content.items.ActivityLogsbyResourceProviderValue.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[There are no Activity Logs for the selected time range]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Pro vybraný časový rozsah neexistují žádné protokoly aktivit.]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -27,11 +45,29 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
+      <Item ItemId=";items.group10.content.items.ActivityLogsbycategoryvalue.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[There are no Activity Logs for the selected time range]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Pro vybraný časový rozsah neexistují žádné protokoly aktivit.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.group10.content.items.ActivityLogsbycategoryvalue.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[ AZURE ACTIVITY LOG ENTRIES]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[ POLOŽKY PROTOKOLU AKTIVIT AZURE]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.group10.content.items.ActivityLogsbystatus.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[There are no Activity Logs for the selected time range]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Pro vybraný časový rozsah neexistují žádné protokoly aktivit.]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -81,21 +117,15 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.parameters0.content.parameters.b616a3a342714208b1a9a92a78efed08.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Resourcegroup]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Skupina prostředků]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
       <Item ItemId=";items.text11.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[**NOTE**]A;* It is required to enable Log Analytics in Diagnostic Settings for this workbook to work.]]></Val>
+          <Val><![CDATA[**NOTE**]A;* It is required to enable Log Analytics in Diagnostic Settings for this workbook to work.]A;* Please make sure to select one or more Resource Groups.]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[**POZNÁMKA**]A;* Aby tento sešit fungoval, musí se v nastaveních diagnostiky povolit Log Analytics.]]></Val>
+            <Val><![CDATA[**POZNÁMKA**]A;* Aby tento sešit fungoval, musí se v Nastavení diagnostiky povolit Log Analytics.]A;* Ujistěte se prosím, že jste vybrali nejméně jednu skupinu prostředků.]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[**NOTE**]A;* It is required to enable Log Analytics in Diagnostic Settings for this workbook to work.]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
