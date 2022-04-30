@@ -41,10 +41,13 @@
       </Item>
       <Item ItemId=";items.Serviceprincipalsigninstab.content.items.Instructions3.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[**Total**: Number of {unit:label} in the {TimeRange}</br>]D;]A;**Success**: Number of {unit:label} where the selected polic(ies) granted access and the required controls were satisifed</br>]D;]A;**Failure**: Number of {unit:label} where the selected polic(ies) denied access and the required controls were not satisfied</br>]D;]A;**User action required**: Number of {unit:label} where the selected report-only policy applied but user action (e.g. MFA or Terms of Use) would be required if the policy were enabled.</br>]D;]A;**Not applied**: Number of {unit:label} that are bypassing the selected polic(ies) because the sign-in did not match at least one of the assignments or conditions. ]]></Val>
+          <Val><![CDATA[**Total**: Number of {unit:label} in the {TimeRange}</br>]D;]A;**Success**: Number of {unit:label} where the selected polic(ies) granted access and the required controls were satisifed</br>]D;]A;**Failure**: Number of {unit:label} where the selected polic(ies) denied access and the required controls were not satisfied</br>]D;]A;**Not applied**: Number of {unit:label} that are bypassing the selected polic(ies) because the sign-in did not match at least one of the assignments or conditions. ]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[**合計**: {TimeRange} の {unit:label} の数</br>]D;]A;**成功**: 選択したポリシーによってアクセスが付与され、必要な制御が満たされた {unit:label} の数</br>]D;]A;**失敗**: 選択したポリシーによってアクセスが拒否され、必要な制御が満たされなかった {unit:label} の数</br>]D;]A;**ユーザー アクションが必要です**: 選択したレポート専用ポリシーが適用されたものの、ポリシーが有効だったらユーザー アクション (例: MFA または利用規約) が必要になるはずだった {unit:label} の数。</br>]D;]A;**適用されていません**: サインインが少なくとも 1 つの割り当てや条件に一致しなかったために、選択したポリシーが回避された {unit:label} の数。]]></Val>
+            <Val><![CDATA[**合計**: {TimeRange} の {unit:label} の数</br>]D;]A;**成功**: 選択したポリシーによってアクセスが付与され、必要な制御が満たされた {unit:label} の数</br>]D;]A;**失敗**: 選択したポリシーによってアクセスが拒否され、必要な制御が満たされなかった {unit:label} の数</br>]D;]A;**適用されていません**: サインインが少なくとも 1 つの割り当てや条件に一致しなかったために、選択したポリシーが回避された {unit:label} の数。 ]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[**Total**: Number of {unit:label} in the {TimeRange}</br>]D;]A;**Success**: Number of {unit:label} where the selected polic(ies) granted access and the required controls were satisifed</br>]D;]A;**Failure**: Number of {unit:label} where the selected polic(ies) denied access and the required controls were not satisfied</br>]D;]A;**User action required**: Number of {unit:label} where the selected report-only policy applied but user action (e.g. MFA or Terms of Use) would be required if the policy were enabled.</br>]D;]A;**Not applied**: Number of {unit:label} that are bypassing the selected polic(ies) because the sign-in did not match at least one of the assignments or conditions. ]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -104,10 +107,13 @@
       </Item>
       <Item ItemId=";items.Serviceprincipalsigninstab.content.items.Usersigninindividualpolicies.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[User sign-in count - {resultName}]]></Val>
+          <Val><![CDATA[Service Principal sign-in count - {resultName}]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[ユーザーのサインイン数 - {resultName}]]></Val>
+            <Val><![CDATA[サービス プリンシパルのサインイン数 - {resultName}]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[User sign-in count - {resultName}]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>

@@ -41,10 +41,13 @@
       </Item>
       <Item ItemId=";items.Serviceprincipalsigninstab.content.items.Instructions3.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[**Total**: Number of {unit:label} in the {TimeRange}</br>]D;]A;**Success**: Number of {unit:label} where the selected polic(ies) granted access and the required controls were satisifed</br>]D;]A;**Failure**: Number of {unit:label} where the selected polic(ies) denied access and the required controls were not satisfied</br>]D;]A;**User action required**: Number of {unit:label} where the selected report-only policy applied but user action (e.g. MFA or Terms of Use) would be required if the policy were enabled.</br>]D;]A;**Not applied**: Number of {unit:label} that are bypassing the selected polic(ies) because the sign-in did not match at least one of the assignments or conditions. ]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[**Total**: Number of {unit:label} in the {TimeRange}</br>]D;]A;**Success**: Number of {unit:label} where the selected polic(ies) granted access and the required controls were satisifed</br>]D;]A;**Failure**: Number of {unit:label} where the selected polic(ies) denied access and the required controls were not satisfied</br>]D;]A;**Not applied**: Number of {unit:label} that are bypassing the selected polic(ies) because the sign-in did not match at least one of the assignments or conditions. ]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[**Total**: número de {unit:label} no {TimeRange}</br>]D;]A;**Sucesso**: número de {unit:label} em que a política selecionada concedeu acesso e os controles necessários foram satisfeitos</br>]D;]A;**Falha**: número de {unit:label} em que a política selecionada negou o acesso e os controles necessários não foram satisfeitos</br>]D;]A;**Ação do usuário necessária**: número de {unit:label} em que a política somente relatório selecionada foi aplicada, mas a ação do usuário (por exemplo, MFA ou Termos de Uso) seria necessária se a política fosse habilitada.</br>]D;]A;**Não aplicado**: número de {unit:label} que estão ignorando a política selecionada porque a entrada não correspondia a pelo menos uma das atribuições ou condições. ]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[**Total**: Number of {unit:label} in the {TimeRange}</br>]D;]A;**Success**: Number of {unit:label} where the selected polic(ies) granted access and the required controls were satisifed</br>]D;]A;**Failure**: Number of {unit:label} where the selected polic(ies) denied access and the required controls were not satisfied</br>]D;]A;**User action required**: Number of {unit:label} where the selected report-only policy applied but user action (e.g. MFA or Terms of Use) would be required if the policy were enabled.</br>]D;]A;**Not applied**: Number of {unit:label} that are bypassing the selected polic(ies) because the sign-in did not match at least one of the assignments or conditions. ]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -104,10 +107,13 @@
       </Item>
       <Item ItemId=";items.Serviceprincipalsigninstab.content.items.Usersigninindividualpolicies.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[User sign-in count - {resultName}]]></Val>
+          <Val><![CDATA[Service Principal sign-in count - {resultName}]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Contagem de entradas do usuários - {resultName}]]></Val>
+            <Val><![CDATA[Contagem de entradas da Entidade de Serviço - {resultName}]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[User sign-in count - {resultName}]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>

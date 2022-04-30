@@ -41,10 +41,13 @@
       </Item>
       <Item ItemId=";items.Serviceprincipalsigninstab.content.items.Instructions3.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[**Total**: Number of {unit:label} in the {TimeRange}</br>]D;]A;**Success**: Number of {unit:label} where the selected polic(ies) granted access and the required controls were satisifed</br>]D;]A;**Failure**: Number of {unit:label} where the selected polic(ies) denied access and the required controls were not satisfied</br>]D;]A;**User action required**: Number of {unit:label} where the selected report-only policy applied but user action (e.g. MFA or Terms of Use) would be required if the policy were enabled.</br>]D;]A;**Not applied**: Number of {unit:label} that are bypassing the selected polic(ies) because the sign-in did not match at least one of the assignments or conditions. ]]></Val>
+          <Val><![CDATA[**Total**: Number of {unit:label} in the {TimeRange}</br>]D;]A;**Success**: Number of {unit:label} where the selected polic(ies) granted access and the required controls were satisifed</br>]D;]A;**Failure**: Number of {unit:label} where the selected polic(ies) denied access and the required controls were not satisfied</br>]D;]A;**Not applied**: Number of {unit:label} that are bypassing the selected polic(ies) because the sign-in did not match at least one of the assignments or conditions. ]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[**Totalt**: Antal {unit:label} i {TimeRange}</br>]D;]A;**Slutförda**: Antal {unit:label} där valda principer beviljade åtkomst och de nödvändiga kontrollerna uppfyllda</br>]D;]A;**Fel**: Antal {unit:label} där de valda åtgärderna nekade åtkomst och de nödvändiga kontrollerna inte uppfylldes</br>]D;]A;**Användaråtgärd krävs**: Antal {unit:label} där den valda rapportprincipen tillämpades men användaråtgärd (t.ex. MFA eller användningsvillkor) krävs om principen aktiverades.</br>]D;]A;**Tillämpades inte**: Antal {unit:label} som kringgår de valda åtgärderna eftersom inloggningen inte matchade minst en av tilldelningarna eller villkoren. ]]></Val>
+            <Val><![CDATA[**Totalt**: Antal {unit:label} i {TimeRange}</br>]D;]A;**Slutförda**: Antal {unit:label} där valda principer beviljade åtkomst och de nödvändiga kontrollerna uppfyllda</br>]D;]A;**Fel**: Antal {unit:label} där de valda åtgärderna nekade åtkomst och de nödvändiga kontrollerna inte uppfylldes</br>]D;]A;**Tillämpades inte**: Antal {unit:label} som kringgår de valda åtgärderna eftersom inloggningen inte matchade minst en av tilldelningarna eller villkoren. ]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[**Total**: Number of {unit:label} in the {TimeRange}</br>]D;]A;**Success**: Number of {unit:label} where the selected polic(ies) granted access and the required controls were satisifed</br>]D;]A;**Failure**: Number of {unit:label} where the selected polic(ies) denied access and the required controls were not satisfied</br>]D;]A;**User action required**: Number of {unit:label} where the selected report-only policy applied but user action (e.g. MFA or Terms of Use) would be required if the policy were enabled.</br>]D;]A;**Not applied**: Number of {unit:label} that are bypassing the selected polic(ies) because the sign-in did not match at least one of the assignments or conditions. ]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -104,10 +107,13 @@
       </Item>
       <Item ItemId=";items.Serviceprincipalsigninstab.content.items.Usersigninindividualpolicies.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[User sign-in count - {resultName}]]></Val>
+          <Val><![CDATA[Service Principal sign-in count - {resultName}]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Antal användarinloggningar – {resultName}]]></Val>
+            <Val><![CDATA[Antal inloggningar för tjänstens huvudnamn – {resultName}]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[User sign-in count - {resultName}]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>

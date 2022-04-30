@@ -41,10 +41,13 @@
       </Item>
       <Item ItemId=";items.Serviceprincipalsigninstab.content.items.Instructions3.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[**Total**: Number of {unit:label} in the {TimeRange}</br>]D;]A;**Success**: Number of {unit:label} where the selected polic(ies) granted access and the required controls were satisifed</br>]D;]A;**Failure**: Number of {unit:label} where the selected polic(ies) denied access and the required controls were not satisfied</br>]D;]A;**User action required**: Number of {unit:label} where the selected report-only policy applied but user action (e.g. MFA or Terms of Use) would be required if the policy were enabled.</br>]D;]A;**Not applied**: Number of {unit:label} that are bypassing the selected polic(ies) because the sign-in did not match at least one of the assignments or conditions. ]]></Val>
+          <Val><![CDATA[**Total**: Number of {unit:label} in the {TimeRange}</br>]D;]A;**Success**: Number of {unit:label} where the selected polic(ies) granted access and the required controls were satisifed</br>]D;]A;**Failure**: Number of {unit:label} where the selected polic(ies) denied access and the required controls were not satisfied</br>]D;]A;**Not applied**: Number of {unit:label} that are bypassing the selected polic(ies) because the sign-in did not match at least one of the assignments or conditions. ]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[** 전체**: {TimeRange}의 {unit:label} 수</br>]D;]A;**성공**: 선택한 정책이 액세스 권한을 부여하고 필요한 제어가 충족한 {unit:label} 수</br>]D;]A;**실패**: 선택한 정책이 액세스를 거부하고 필요한 컨트롤이 충족되지 않은 {unit:label} 수</br>]D;]A;** 필요한 사용자 작업** : 선택한 보고서 전용 정책이 적용되었지만 정책이 사용될 경우 사용자 작업(예: MFA 또는 이용 약관)이 필요할 {unit:label} 수</br>]D;]A;**적용되지 않음** : 로그인이 할당 또는 조건 중 하나 이상과 일치하지 않았기 때문에 선택한 정책을 우회하는 {unit:label} 수. ]]></Val>
+            <Val><![CDATA[** 전체**: {TimeRange}의 {unit:label} 수</br>]D;]A;**성공**: 선택한 정책이 액세스 권한을 부여하고 필요한 제어가 충족한 {unit:label} 수</br>]D;]A;**실패**: 선택한 정책이 액세스를 거부하고 필요한 컨트롤이 충족되지 않은 {unit:label} 수</br>]D;]A;**적용되지 않음** : 로그인이 할당 또는 조건 중 하나 이상과 일치하지 않았기 때문에 선택한 정책을 우회하는 {unit:label} 수. ]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[**Total**: Number of {unit:label} in the {TimeRange}</br>]D;]A;**Success**: Number of {unit:label} where the selected polic(ies) granted access and the required controls were satisifed</br>]D;]A;**Failure**: Number of {unit:label} where the selected polic(ies) denied access and the required controls were not satisfied</br>]D;]A;**User action required**: Number of {unit:label} where the selected report-only policy applied but user action (e.g. MFA or Terms of Use) would be required if the policy were enabled.</br>]D;]A;**Not applied**: Number of {unit:label} that are bypassing the selected polic(ies) because the sign-in did not match at least one of the assignments or conditions. ]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -104,10 +107,13 @@
       </Item>
       <Item ItemId=";items.Serviceprincipalsigninstab.content.items.Usersigninindividualpolicies.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[User sign-in count - {resultName}]]></Val>
+          <Val><![CDATA[Service Principal sign-in count - {resultName}]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[사용자 로그인 수 - {resultName}]]></Val>
+            <Val><![CDATA[서비스 사용자 로그인 수 - {resultName}]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[User sign-in count - {resultName}]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
