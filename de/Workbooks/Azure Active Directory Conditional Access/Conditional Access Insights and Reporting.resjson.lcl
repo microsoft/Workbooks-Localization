@@ -41,10 +41,13 @@
       </Item>
       <Item ItemId=";items.Serviceprincipalsigninstab.content.items.Instructions3.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[**Total**: Number of {unit:label} in the {TimeRange}</br>]D;]A;**Success**: Number of {unit:label} where the selected polic(ies) granted access and the required controls were satisifed</br>]D;]A;**Failure**: Number of {unit:label} where the selected polic(ies) denied access and the required controls were not satisfied</br>]D;]A;**User action required**: Number of {unit:label} where the selected report-only policy applied but user action (e.g. MFA or Terms of Use) would be required if the policy were enabled.</br>]D;]A;**Not applied**: Number of {unit:label} that are bypassing the selected polic(ies) because the sign-in did not match at least one of the assignments or conditions. ]]></Val>
+          <Val><![CDATA[**Total**: Number of {unit:label} in the {TimeRange}</br>]D;]A;**Success**: Number of {unit:label} where the selected polic(ies) granted access and the required controls were satisifed</br>]D;]A;**Failure**: Number of {unit:label} where the selected polic(ies) denied access and the required controls were not satisfied</br>]D;]A;**Not applied**: Number of {unit:label} that are bypassing the selected polic(ies) because the sign-in did not match at least one of the assignments or conditions. ]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[**Gesamt**: Anzahl der {unit:label} im Zeitbereich "{TimeRange}"</br>]D;]A;**Erfolg**: Anzahl der {unit:label}, in denen die ausgewählten Richtlinien Zugriff gewährt haben und die erforderlichen Kontrollen erfüllt wurden</br>]D;]A;**Fehler**: Anzahl der {unit:label}, in denen die ausgewählten Richtlinien den Zugriff verweigert haben und die erforderlichen Kontrollen nicht erfüllt wurden</br>]D;]A;**Benutzeraktion erforderlich**: Anzahl der {unit:label}, in denen die ausgewählte reine Berichtsrichtlinie angewendet wurde, aber eine Benutzeraktion (z. B. MFA oder Nutzungsbedingungen) bei Aktivierung der Richtlinie erforderlich wäre</br>]D;]A;**Nicht angewendet**: Anzahl der {unit:label}, die die ausgewählten Richtlinien umgehen, weil die Anmeldung mit keiner der Zuweisungen oder Bedingungen übereinstimmte. ]]></Val>
+            <Val><![CDATA[**Gesamt**: Anzahl der {unit:label} während {TimeRange}</br>]D;]A;**Erfolg**: Anzahl der {unit:label}, in denen die ausgewählten Richtlinien Zugriff gewährt haben und die erforderlichen Kontrollen erfüllt wurden</br>]D;]A;**Fehler**: Anzahl der {unit:label}, in denen die ausgewählten Richtlinien den Zugriff verweigert haben und die erforderlichen Kontrollen nicht erfüllt wurden</br>]D;]A;**Nicht angewendet**: Anzahl der {unit:label}, die die ausgewählten Richtlinien umgehen, weil die Anmeldung mit keiner der Zuweisungen oder Bedingungen übereinstimmte. ]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[**Total**: Number of {unit:label} in the {TimeRange}</br>]D;]A;**Success**: Number of {unit:label} where the selected polic(ies) granted access and the required controls were satisifed</br>]D;]A;**Failure**: Number of {unit:label} where the selected polic(ies) denied access and the required controls were not satisfied</br>]D;]A;**User action required**: Number of {unit:label} where the selected report-only policy applied but user action (e.g. MFA or Terms of Use) would be required if the policy were enabled.</br>]D;]A;**Not applied**: Number of {unit:label} that are bypassing the selected polic(ies) because the sign-in did not match at least one of the assignments or conditions. ]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -104,10 +107,13 @@
       </Item>
       <Item ItemId=";items.Serviceprincipalsigninstab.content.items.Usersigninindividualpolicies.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[User sign-in count - {resultName}]]></Val>
+          <Val><![CDATA[Service Principal sign-in count - {resultName}]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Anzahl der Benutzeranmeldungen – {resultName}]]></Val>
+            <Val><![CDATA[Anzahl der Dienstprinzipalanmeldungen – {resultName}]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[User sign-in count - {resultName}]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>

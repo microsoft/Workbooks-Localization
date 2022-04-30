@@ -41,10 +41,13 @@
       </Item>
       <Item ItemId=";items.Serviceprincipalsigninstab.content.items.Instructions3.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[**Total**: Number of {unit:label} in the {TimeRange}</br>]D;]A;**Success**: Number of {unit:label} where the selected polic(ies) granted access and the required controls were satisifed</br>]D;]A;**Failure**: Number of {unit:label} where the selected polic(ies) denied access and the required controls were not satisfied</br>]D;]A;**User action required**: Number of {unit:label} where the selected report-only policy applied but user action (e.g. MFA or Terms of Use) would be required if the policy were enabled.</br>]D;]A;**Not applied**: Number of {unit:label} that are bypassing the selected polic(ies) because the sign-in did not match at least one of the assignments or conditions. ]]></Val>
+          <Val><![CDATA[**Total**: Number of {unit:label} in the {TimeRange}</br>]D;]A;**Success**: Number of {unit:label} where the selected polic(ies) granted access and the required controls were satisifed</br>]D;]A;**Failure**: Number of {unit:label} where the selected polic(ies) denied access and the required controls were not satisfied</br>]D;]A;**Not applied**: Number of {unit:label} that are bypassing the selected polic(ies) because the sign-in did not match at least one of the assignments or conditions. ]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[**Total**: Jumlah {unit:label} dalam {TimeRange}</br>]D;]A;**Berhasil**: Jumlah {unit:label} ketika kebijakan yang dipilih diberi akses dan kontrol yang diperlukan terpenuhi</br>]D;]A;**Kegagalan**: Jumlah {unit:label} ketika kebijakan yang dipilih ditolak aksesnya dan kontrol yang diperlukan tidak terpenuhi</br>]D;]A;**Tindakan pengguna diperlukan**: Jumlah {unit:label} ketika kebijakan lapor-saja yang dipilih diterapkan, namun tindakan pengguna (misalnya, MFA atau Ketentuan Penggunaan) akan diperlukan jika kebijakan tersebut diaktifkan.</br>]D;]A;**Tidak diterapkan**: Jumlah {unit:label} yang mengabaikan kebijakan yang dipilih karena proses masuk tidak cocok dengan setidaknya satu penetapan atau kondisi. ]]></Val>
+            <Val><![CDATA[**Total**: Jumlah {unit:label} pada {TimeRange}</br>]D;]A;**Sukses**: Jumlah {unit:label} tempat kebijakan yang dipilih memberikan akses dan kontrol yang diperlukan telah dipenuhi</br>]D;]A;**Gagal**: Jumlah {unit:label} saat kebijakan yang dipilih menolak akses dan kontrol yang diperlukan tidak terpenuhi</br>]D;]A;**Tidak diterapkan**: Jumlah {unit:label} yang mengabaikan kebijakan yang dipilih karena proses masuk tidak cocok dengan setidaknya salah satu penetapan atau kondisi. ]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[**Total**: Number of {unit:label} in the {TimeRange}</br>]D;]A;**Success**: Number of {unit:label} where the selected polic(ies) granted access and the required controls were satisifed</br>]D;]A;**Failure**: Number of {unit:label} where the selected polic(ies) denied access and the required controls were not satisfied</br>]D;]A;**User action required**: Number of {unit:label} where the selected report-only policy applied but user action (e.g. MFA or Terms of Use) would be required if the policy were enabled.</br>]D;]A;**Not applied**: Number of {unit:label} that are bypassing the selected polic(ies) because the sign-in did not match at least one of the assignments or conditions. ]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -104,10 +107,13 @@
       </Item>
       <Item ItemId=";items.Serviceprincipalsigninstab.content.items.Usersigninindividualpolicies.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[User sign-in count - {resultName}]]></Val>
+          <Val><![CDATA[Service Principal sign-in count - {resultName}]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Jumlah masuk pengguna - {resultName}]]></Val>
+            <Val><![CDATA[Jumlah masuk Prinsipal Layanan - {resultName}]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[User sign-in count - {resultName}]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
