@@ -41,10 +41,13 @@
       </Item>
       <Item ItemId=";items.Serviceprincipalsigninstab.content.items.Instructions3.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[**Total**: Number of {unit:label} in the {TimeRange}</br>]D;]A;**Success**: Number of {unit:label} where the selected polic(ies) granted access and the required controls were satisifed</br>]D;]A;**Failure**: Number of {unit:label} where the selected polic(ies) denied access and the required controls were not satisfied</br>]D;]A;**User action required**: Number of {unit:label} where the selected report-only policy applied but user action (e.g. MFA or Terms of Use) would be required if the policy were enabled.</br>]D;]A;**Not applied**: Number of {unit:label} that are bypassing the selected polic(ies) because the sign-in did not match at least one of the assignments or conditions. ]]></Val>
+          <Val><![CDATA[**Total**: Number of {unit:label} in the {TimeRange}</br>]D;]A;**Success**: Number of {unit:label} where the selected polic(ies) granted access and the required controls were satisifed</br>]D;]A;**Failure**: Number of {unit:label} where the selected polic(ies) denied access and the required controls were not satisfied</br>]D;]A;**Not applied**: Number of {unit:label} that are bypassing the selected polic(ies) because the sign-in did not match at least one of the assignments or conditions. ]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[**总计**: {TimeRange} 中的 {unit:label} 数量</br>]D;]A;**成功**: 所选策略授予访问权限且满足所需控制的 {unit:label} 数量</br>]D;]A;**失败**: 所选策略拒绝访问且不满足所需控制的 {unit:label} 数量</br>]D;]A;**需要用户操作**: 已应用所选仅限报表策略但启用了策略时需要用户操作(例如 MFA 或使用条款)的 {unit:label} 数量。</br>]D;]A;**未应用**: 由于登录与至少一个分配或条件不匹配而绕过所选授权的 {unit:label} 数量。]]></Val>
+            <Val><![CDATA[**总计**: {TimeRange} 内 {unit:label} 数</br>]D;]A;**成功**: {unit:label} 的数目，其中所选策略已授予访问权限，并已满足所需控制</br>]D;]A;**失败**: {unit:label} 的数目，其中所选策略已拒绝访问，但未满足所需的控制</br>]D;]A;**未应用**: 因为登录与至少一个分配或条件不匹配而绕过所选策略的 {unit:label} 数。 ]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[**Total**: Number of {unit:label} in the {TimeRange}</br>]D;]A;**Success**: Number of {unit:label} where the selected polic(ies) granted access and the required controls were satisifed</br>]D;]A;**Failure**: Number of {unit:label} where the selected polic(ies) denied access and the required controls were not satisfied</br>]D;]A;**User action required**: Number of {unit:label} where the selected report-only policy applied but user action (e.g. MFA or Terms of Use) would be required if the policy were enabled.</br>]D;]A;**Not applied**: Number of {unit:label} that are bypassing the selected polic(ies) because the sign-in did not match at least one of the assignments or conditions. ]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -104,10 +107,13 @@
       </Item>
       <Item ItemId=";items.Serviceprincipalsigninstab.content.items.Usersigninindividualpolicies.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[User sign-in count - {resultName}]]></Val>
+          <Val><![CDATA[Service Principal sign-in count - {resultName}]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[用户登录计数 - {resultName}]]></Val>
+            <Val><![CDATA[服务主体登录计数 - {resultName}]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[User sign-in count - {resultName}]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
