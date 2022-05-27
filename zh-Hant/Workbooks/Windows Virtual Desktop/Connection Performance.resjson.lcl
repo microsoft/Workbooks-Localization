@@ -68,23 +68,152 @@
       </Item>
       <Item ItemId=";@items.ConnectionPerformanceGroup.content.items.Timetoconnect.content.items.ConnectionPerformanceQueryParameters.c" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) ontent.parameters.eb4111b998754b9b8355692cd6088d63.description" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) ontent.parameters.c37c14666b2641689a6d92e2fa5927eb.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Select the state of the session for users establishing a connection. New Sessions tend to take longer to connect than Existing Sessions since existing sessions are already logged in to a host in the pool. Time to connect measures the time from when a user launches a Azure Virtual Desktop resource to when they begin seeing the remote resources, including the time a user takes to enter credentials.]]></Val>
+            <Val><![CDATA[Session State]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[選取工作階段狀態讓使用者建立連線。因為現有的工作階段已登入集區中的主機，所以新工作階段的連線時間，往往比現有工作階段的連線時間還長。連線時間會測量從使用者啟動 Azure 虛擬桌面資源到開始查看遠端資源的時間，包括使用者輸入認證的時間。]]></Val>
+              <Val><![CDATA[工作階段狀態]]></Val>
             </Tgt>
-            <Prev Cat="Text">
-              <Val><![CDATA[Select the state of the session for users establishing a connection. New Sessions tend to take longer to connect than Existing Sessions since existing sessions are already logged in to a host in the pool. Time to connect measures the time from when a user launches a Windows Virtual Desktop resource to when they begin seeing the remote resources, including the time a user takes to enter credentials.]]></Val>
-            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
-        <Item ItemId=";(...) ontent.parameters.eb4111b998754b9b8355692cd6088d63.label" ItemType="0" PsrId="306" Leaf="true">
+      </Item>
+      <Item ItemId=";@items.ConnectionPerformanceGroup.content.items.Timetoconnect.content.items.LogonTables.content.items.LongerConnec" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) tions.content.gridSettings.labelSettings.CorrelationId.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Session state]]></Val>
+            <Val><![CDATA[Details]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[工作階段狀態]]></Val>
+              <Val><![CDATA[詳細資料]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) tions.content.gridSettings.labelSettings.Hostname.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Host name]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[主機名稱]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) tions.content.gridSettings.labelSettings.ProductiveTime.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Time]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[時間]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) tions.content.gridSettings.labelSettings.TimeGenerated.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Start Time]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[開始時間]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) tions.content.gridSettings.labelSettings.UserName.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[User Name]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[使用者名稱]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) tions.content.title" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Top 20 instances of highest time to connect]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[連線時間最高的前 20 個實例]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
+      <Item ItemId=";@items.ConnectionPerformanceGroup.content.items.Timetoconnect.content.items.LogonTables.content.items.StageCharts." ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) content.items.ConnectStagesAll.content.chartSettings.seriesLabelSettings.0.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[User Route]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[使用者路由]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) content.items.ConnectStagesAll.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Connection stages: {HostnameText}]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[連線階段: {HostnameText}]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) content.items.LogonStagesAll.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Winlogon stages: {HostnameText}]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Winlogon 階段: {HostnameText}]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
+      <Item ItemId=";@items.ConnectionPerformanceGroup.content.items.Timetoconnect.content.items.LogonTables.content.items.StagesCharts" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) User.content.items.ConnectionStagesUser.content.title" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Connection stages]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[連線階段]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) User.content.items.LogonStageUser.content.title" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Winlogon stages]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Winlogon 階段]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
+      <Item ItemId=";@items.ConnectionPerformanceGroup.content.items.Timetoconnect.content.items.LogonTables.content.items.TopHostsByMe" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) dianTimeToConnect.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[No connections found for the selected scope]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[所選範圍內找不到任何連線]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) dianTimeToConnect.content.title" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Top 10 hosts with highest median time to connect]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[平均連線時間最長的前 10 部主機]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
+      <Item ItemId=";@items.ConnectionPerformanceGroup.content.items.Timetoconnect.content.items.LogonTables.content.items.text5.conten" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) t.json" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Please select a connection to display connection stages.]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[請選取連線以顯示連線階段。]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
@@ -130,57 +259,6 @@
             <Val><![CDATA[No connections found for the selected scope]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
               <Val><![CDATA[所選範圍內找不到任何連線]]></Val>
-            </Tgt>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-      </Item>
-      <Item ItemId=";@items.ConnectionPerformanceGroup.content.items.Timetoconnect.content.items.TopHostsByMedianTimeToConnect.content." ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) noDataMessage" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[No connections found for the selected scope]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[所選範圍內找不到任何連線]]></Val>
-            </Tgt>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-        <Item ItemId=";(...) title" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[Top 10 hosts with highest median time to connect]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[平均連線時間最長的前 10 部主機]]></Val>
-            </Tgt>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-      </Item>
-      <Item ItemId=";@items.ConnectionPerformanceGroup.content.items.Timetoconnect.content.items.TopUsersByMedianTimeToConnect.content." ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) gridSettings.labelSettings.UserName.label" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[User name]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[使用者名稱]]></Val>
-            </Tgt>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-        <Item ItemId=";(...) noDataMessage" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[No connections found for the selected scope]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[所選範圍內找不到任何連線]]></Val>
-            </Tgt>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-        <Item ItemId=";(...) title" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[Top 10 users with highest median time to connect]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[平均連線時間最長的前 10 名使用者]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
