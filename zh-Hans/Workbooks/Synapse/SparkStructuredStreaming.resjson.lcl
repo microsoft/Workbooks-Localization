@@ -56,9 +56,21 @@
       </Item>
       <Item ItemId=";items.NoSparkMetricsCLtable.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[## Missing Streaming Stats]D;]A;---]D;]A;]D;]A;The table SparkMetrics_CL is not found in the selected Workspace]D;]A;]D;]A;To visualize the metrics you need to setup Apache Spark application to send metrics and logs to your Log Analytics workspace: https://docs.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-azure-log-analytics and enable streaming metrics in your Spark application config. For example:]D;]A;]D;]A;Scala:]D;]A;]D;]A;`spark.conf.set("spark.sql.streaming.metricsEnabled", "true")`]D;]A;]D;]A;Notebook:]D;]A;]D;]A;`%%configure]D;]A;{]D;]A;    "conf":]D;]A;    {]D;]A;        "spark.sql.streaming.metricsEnabled": true]D;]A;    }]D;]A;}`]]></Val>
+          <Val><![CDATA[## Missing Streaming Stats]D;]A;]D;]A;The table `SparkMetrics_CL` is not found in the selected Workspace]D;]A;]D;]A;To visualize the metrics you need to [set up Apache Spark application to send metrics and logs to your Log Analytics workspace]5D;(https://docs.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-azure-log-analytics) and enable streaming metrics in your Spark application config. For example:]D;]A;]D;]A;Scala:]D;]A;]D;]A;`spark.conf.set("spark.sql.streaming.metricsEnabled", "true")`]D;]A;]D;]A;Notebook:]D;]A;]D;]A;`%%configure]D;]A;{]D;]A;    "conf":]D;]A;    {]D;]A;        "spark.sql.streaming.metricsEnabled": true]D;]A;    }]D;]A;}`]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[## 缺少流统计信息]D;]A;---]D;]A;]D;]A;在所选工作区中找不到表 SparkMetrics_CL]D;]A;]D;]A;要可视化指标，需要设置 Apache Spark 应用程序以将指标和日志发送到 Log Analytics 工作区: https://docs.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-azure-log-analytics，并在 Spark 应用程序配置中启用流式处理指标。例如:]D;]A;]D;]A;Scala:]D;]A;]D;]A;`spark.conf.set("spark.sql.streaming.metricsEnabled", "true")`]D;]A;]D;]A;笔记本:]D;]A;]D;]A;`%%configure]D;]A;{]D;]A;    “conf”:]D;]A;    {]D;]A;        “spark.sql.streaming.metricsEnabled”: true]D;]A;    }]D;]A;}`]]></Val>
+            <Val><![CDATA[## 缺少流式处理统计信息]D;]A;]D;]A;在所选工作区中找不到表 `SparkMetrics_CL`]D;]A;]D;]A;要可视化指标，需要 [设置 Apache Spark 应用程序以将指标和日志发送到 Log Analytics 工作区]5D;(https://docs.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-azure-log-analytics)，并在 Spark 应用程序配置中启用流式处理指标。例如:]D;]A;]D;]A;Scala:]D;]A;]D;]A;`spark.conf.set("spark.sql.streaming.metricsEnabled", "true")`]D;]A;]D;]A;笔记本:]D;]A;]D;]A;`%%configure]D;]A;{]D;]A;    "conf":]D;]A;    {]D;]A;        "spark.sql.streaming.metricsEnabled": true]D;]A;    }]D;]A;}`]]></Val>
+          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[## Missing Streaming Stats]D;]A;---]D;]A;]D;]A;The table SparkMetrics_CL is not found in the selected Workspace]D;]A;]D;]A;To visualize the metrics you need to setup Apache Spark application to send metrics and logs to your Log Analytics workspace: https://docs.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-azure-log-analytics and enable streaming metrics in your Spark application config. For example:]D;]A;]D;]A;Scala:]D;]A;]D;]A;`spark.conf.set("spark.sql.streaming.metricsEnabled", "true")`]D;]A;]D;]A;Notebook:]D;]A;]D;]A;`%%configure]D;]A;{]D;]A;    "conf":]D;]A;    {]D;]A;        "spark.sql.streaming.metricsEnabled": true]D;]A;    }]D;]A;}`]]></Val>
+          </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Noworkspace.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[## No valid Log Analytics Workspace in this subscription]D;]A;]D;]A;There are no Spark Pool configured to the Log Analytics Workspaces in this subscription]D;]A;]D;]A;To visualize the metrics you need to [set up Apache Spark application to send metrics and logs to your Log Analytics workspace]5D;(https://docs.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-azure-log-analytics).]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## 此订阅中没有有效的 Log Analytics 工作区]D;]A;]D;]A;此订阅中没有配置到 Log Analytics 工作区的 Spark 池]D;]A;]D;]A;要可视化指标，需要 [设置 Apache Spark 应用程序以将指标和日志发送到 Log Analytics 工作区]5D;(https://docs.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-azure-log-analytics)。]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
