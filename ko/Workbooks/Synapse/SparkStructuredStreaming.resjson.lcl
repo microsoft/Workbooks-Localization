@@ -56,9 +56,21 @@
       </Item>
       <Item ItemId=";items.NoSparkMetricsCLtable.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[## Missing Streaming Stats]D;]A;---]D;]A;]D;]A;The table SparkMetrics_CL is not found in the selected Workspace]D;]A;]D;]A;To visualize the metrics you need to setup Apache Spark application to send metrics and logs to your Log Analytics workspace: https://docs.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-azure-log-analytics and enable streaming metrics in your Spark application config. For example:]D;]A;]D;]A;Scala:]D;]A;]D;]A;`spark.conf.set("spark.sql.streaming.metricsEnabled", "true")`]D;]A;]D;]A;Notebook:]D;]A;]D;]A;`%%configure]D;]A;{]D;]A;    "conf":]D;]A;    {]D;]A;        "spark.sql.streaming.metricsEnabled": true]D;]A;    }]D;]A;}`]]></Val>
+          <Val><![CDATA[## Missing Streaming Stats]D;]A;]D;]A;The table `SparkMetrics_CL` is not found in the selected Workspace]D;]A;]D;]A;To visualize the metrics you need to [set up Apache Spark application to send metrics and logs to your Log Analytics workspace]5D;(https://docs.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-azure-log-analytics) and enable streaming metrics in your Spark application config. For example:]D;]A;]D;]A;Scala:]D;]A;]D;]A;`spark.conf.set("spark.sql.streaming.metricsEnabled", "true")`]D;]A;]D;]A;Notebook:]D;]A;]D;]A;`%%configure]D;]A;{]D;]A;    "conf":]D;]A;    {]D;]A;        "spark.sql.streaming.metricsEnabled": true]D;]A;    }]D;]A;}`]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[## 누락된 스트리밍 통계]D;]A;---]D;]A;]D;]A;선택한 작업 영역에서 테이블 SparkMetrics_CL을 찾을 수 없습니다]D;]A;]D;]A;메트릭을 시각화하려면 메트릭 및 로그를 Log Analytics 작업 영역으로 보내도록 Apache Spark 애플리케이션을 설정해야 합니다. https://docs.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-azure-log-analytics Spark 애플리케이션 구성에서 및 스트리밍 메트릭을 활성화합니다. 예: ]D;]A;]D;]A;스칼라:]D;]A;]D;]A;`spark.conf.set("spark.sql.streaming.metricsEnabled", "true")`]D;]A;]D;]A;Notebook:]D;]A;]D;]A;`%%configure]D;]A;{]D;]A;    "conf":]D;]A;    {]D;]A;        "spark.sql.streaming.metricsEnabled": true]D;]A;    }]D;]A;}`]]></Val>
+            <Val><![CDATA[## 누락된 스트리밍 통계]D;]A;]D;]A;선택한 작업 영역에서 테이블 `SparkMetrics_CL`을 찾을 수 없습니다.]D;]A;]D;]A;메트릭을 시각화하려면 [메트릭 및 로그를 Log Analytics 작업 영역으로 보내도록 Apache Spark 애플리케이션을 설정]5D;(https://docs.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-azure-log-analytics)하고 Spark 애플리케이션 구성에서 및 스트리밍 메트릭을 활성화해야 합니다. 예: ]D;]A;]D;]A;스칼라:]D;]A;]D;]A;`spark.conf.set("spark.sql.streaming.metricsEnabled", "true")`]D;]A;]D;]A;Notebook:]D;]A;]D;]A;`%%configure]D;]A;{]D;]A;    "conf":]D;]A;    {]D;]A;        "spark.sql.streaming.metricsEnabled": true]D;]A;    }]D;]A;}`]]></Val>
+          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[## Missing Streaming Stats]D;]A;---]D;]A;]D;]A;The table SparkMetrics_CL is not found in the selected Workspace]D;]A;]D;]A;To visualize the metrics you need to setup Apache Spark application to send metrics and logs to your Log Analytics workspace: https://docs.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-azure-log-analytics and enable streaming metrics in your Spark application config. For example:]D;]A;]D;]A;Scala:]D;]A;]D;]A;`spark.conf.set("spark.sql.streaming.metricsEnabled", "true")`]D;]A;]D;]A;Notebook:]D;]A;]D;]A;`%%configure]D;]A;{]D;]A;    "conf":]D;]A;    {]D;]A;        "spark.sql.streaming.metricsEnabled": true]D;]A;    }]D;]A;}`]]></Val>
+          </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Noworkspace.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[## No valid Log Analytics Workspace in this subscription]D;]A;]D;]A;There are no Spark Pool configured to the Log Analytics Workspaces in this subscription]D;]A;]D;]A;To visualize the metrics you need to [set up Apache Spark application to send metrics and logs to your Log Analytics workspace]5D;(https://docs.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-azure-log-analytics).]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## 이 구독에 유효한 Log Analytics 작업 영역이 없습니다.]D;]A;]D;]A;이 구독에 Log Analytics 작업 영역에 대해 구성된 Spark 풀이 없습니다.]D;]A;]D;]A;메트릭을 시각화하려면 [메트릭 및 로그를 Log Analytics 작업 영역으로 보내도록 Apache Spark 애플리케이션을 설정]5D;(https://docs.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-azure-log-analytics)해야 합니다.]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
