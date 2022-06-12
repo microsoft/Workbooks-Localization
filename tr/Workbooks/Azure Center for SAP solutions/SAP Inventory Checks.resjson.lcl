@@ -193,10 +193,13 @@
         </Item>
         <Item ItemId=";(...) gs.datadiskwa.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[WA]]></Val>
+            <Val><![CDATA[Write Accelerator]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[WA]]></Val>
+              <Val><![CDATA[Yazma Hızlandırıcısı]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[WA]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -1689,6 +1692,15 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
+      <Item ItemId=";items.groupSAPOverview.content.items.groupCompute.content.items.computedatadiskhelptext.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[* This table provides an overview of the **Data disk configuration** in the SAP system]D;]A;* SAP **HANA log filesystem** disks need to have **Write Acclerator** enabled for Premium_LRS disks. Learn more here: [Link]5D;(https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/sap/hana-vm-operations-storage)]D;]A;* See Column: **Write Accelerator** to check if the Write acceleration is on for the HANA log volume.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[* Bu tabloda, SAP sistemindeki **Veri diski yapılandırmasına** genel bir bakış sunulmaktadır]D;]A;* SAP **HANA günlük dosya sistemi** disklerinde, Premium_LRS diskleri için **Yazma Hızlandırıcı** etkinleştirilmiş olmalıdır. Daha fazla bilgiyi şuradan edinebilirsiniz: [Bağlantı]5D;(https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/sap/hana-vm-operations-storage)]D;]A;* Yazma hızlandırmanın HANA günlük biriminde açık olup olmadığını denetlemek için **Yazma Hızlandırıcı** sütununa bakın.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.groupSAPOverview.content.items.groupCompute.content.items.queryAzureComputeSummary.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Azure Compute Summary ]]></Val>
@@ -1784,10 +1796,13 @@
       </Item>
       <Item ItemId=";items.groupSAPOverview.content.items.groupCompute.content.items.textComputeImagetipCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Generation 2 VMs support key features that aren't supported in generation 1 VMs. These features include increased memory, Intel Software Guard Extensions (Intel SGX), and virtualized persistent memory (vPMEM). Generation 2 VMs running on-premises, have some features that aren't supported in Azure yet. For more information, see the Features and capabilities section.]D;]A;]D;]A;]D83D;]DCA1; Learn more about [Support for generation 2 VMs on Azure]5D;(https://docs.microsoft.com/en-us/azure/virtual-machines/generation-2)]]></Val>
+          <Val><![CDATA[1. Generation 2 VMs support key features that aren't supported in generation 1 VMs. These features include increased memory, Intel Software Guard Extensions (Intel SGX), and virtualized persistent memory (vPMEM). Generation 2 VMs running on-premises, have some features that aren't supported in Azure yet. For more information, see the Features and capabilities section.]D;]A;]D;]A;2. This table shows an overview the configuration of the VMs in the current VIS]D;]A;]D;]A;3. This table will also help you validate the following three configurations:]D;]A;]D;]A;	* Is the OS image used in the VM published by Azure or not. See column: **OS Image publisher**]D;]A;	* Is the VM a **second generation VM** or not. SAP recommends using second generation Azure VMS. See column: **OS Image SKU**]D;]A;	* Is the Boot diagnostics setting on for the VM or not. See column: **Boot Diagnostics**]D;]A;]D;]A;]D83D;]DCA1; Learn more about [Support for generation 2 VMs on Azure]5D;(https://docs.microsoft.com/en-us/azure/virtual-machines/generation-2)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[2. nesil sanal makineler, 1. nesil sanal makinelerde desteklenmeyen bazı önemli özellikleri destekler. Bu özellikler arasında artırılmış bellek, Intel Software Guard Extensions (Intel SGX) ve sanallaştırılmış kalıcı bellek (vPMEM) bulunur. Şirket içinde çalışan 2. nesil sanal makineler, Azure'da henüz desteklenmeyen bazı özelliklere sahiptir. Daha fazla bilgi için Özellikler ve yetenekler bölümüne bakın.]D;]A;]D;]A;]D83D;]DCA1; [Azure'da 2. nesil sanal makineler için destek]5D;(https://docs.microsoft.com/en-us/azure/virtual-machines/generation-2) hakkında daha fazla bilgi edinin]]></Val>
+            <Val><![CDATA[1. İkinci Nesil sanal makineler, birinci nesil sanal makinelerde desteklenmeyen başlıca özellikleri desteklemez. Bu özellikler arasında artırılmış bellek, Intel Software Guard Extensions (Intel SGX) ve sanallaştırılmış kalıcı bellek (vPMEM) vardır. Şirket içinde çalışan ikinci nesil sanal makineler, Azure'da henüz desteklenmeyen bazı özelliklere sahiptir. Daha fazla bilgi için Özellikler ve olanaklar bölümüne bakın.]D;]A;]D;]A;2. Bu tablo, geçerli VIS'de sanal makinelerin yapılandırmasına genel bir bakış sunar]D;]A;]D;]A;3. Bu tablo ayrıca aşağıdaki üç yapılandırmayı doğrulamanıza da yardımcı olur:]D;]A;]D;]A;* Sanal makinede kullanılan işletim sistemi görüntüsü Azure tarafından yayımlandı mı. Bkz. sütun: **İşletim Sistemi Görüntüsü yayımcısı**]D;]A;	* Sanal makine bir **ikinci nesil bir sanal makine mi** değil mi. SAP, ikinci nesil Azure sanal makineleri kullanılmasını önerir. Bkz. sütun: **İşletim Sistemi Görüntüsü SKU'su**]D;]A;	* Sanal makine için Önyükleme tanılamaları ayarı açık mı değil mi. Bkz. sütun: **Önyükleme Tanılamaları**]D;]A;]D;]A;]D83D;]DCA1; [Azure'da ikinci nesil sanal makineler için destek]5D;(https://docs.microsoft.com/en-us/azure/virtual-machines/generation-2) bölümünde daha fazla bilgi edinebilirsiniz]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Generation 2 VMs support key features that aren't supported in generation 1 VMs. These features include increased memory, Intel Software Guard Extensions (Intel SGX), and virtualized persistent memory (vPMEM). Generation 2 VMs running on-premises, have some features that aren't supported in Azure yet. For more information, see the Features and capabilities section.]D;]A;]D;]A;]D83D;]DCA1; Learn more about [Support for generation 2 VMs on Azure]5D;(https://docs.microsoft.com/en-us/azure/virtual-machines/generation-2)]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1874,12 +1889,12 @@
       </Item>
       <Item ItemId=";items.groupSAPOverview.content.items.groupConfigurationChecks.content.items.textLoadBalancer.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[]D83D;]DCA1;_Standard Load Balancer_]D;]A;]D;]A;To prevent this, different settings on Azure ILB, the SAP ASCS/SCS instance, and Windows cluster nodes must be configured to enable the so-called “keep alive” functionality.]D;]A;]D;]A;The keep alive functionality will prevent Azure ILB time out.]D;]A;Settings on Azure Basic ILB]D;]A;Make sure that ALL Azure ILB Load Balancing Rules have:]D;]A;“Idle timeout (minutes)” settings,  set to the maximum value of 30 minutes.]D;]A;“Floating IP (direct server return)” must be Enabled]D;]A;]D;]A;The Load balancers listed below are linked to the VMs in the VIS. It is possible that one of these Load balancers are associated with a different VIS. In that case you will be able to see the same load balancer again in this list shown for the other VIS.]D;]A;]D;]A;NOTE: You can enable Floating IP only during creation of an Azure ILB rule. Therefore, if “Floating IP” is disabled for an existing Azure ILB rules, you need to delete the Azure ILB rule and create them again with option “Enable Floating IP”]]></Val>
+          <Val><![CDATA[]D83D;]DCA1;_Standard Load Balancer_]D;]A;]D;]A;To prevent timeout, different settings on Azure ILB, the SAP ASCS/SCS instance, and Windows cluster nodes must be configured to enable the so-called “keep alive” functionality.]D;]A;]D;]A;The keep alive functionality will prevent Azure ILB time out.]D;]A;Settings on Azure Basic ILB]D;]A;Make sure that ALL Azure ILB Load Balancing Rules have:]D;]A;“Idle timeout (minutes)” settings,  set to the maximum value of 30 minutes.]D;]A;“Floating IP (direct server return)” must be Enabled]D;]A;]D;]A;The Load balancers listed below are linked to the VMs in the VIS. It is possible that one of these Load balancers are associated with a different VIS. In that case you will be able to see the same load balancer again in this list shown for the other VIS.]D;]A;]D;]A;NOTE: You can enable Floating IP only during creation of an Azure ILB rule. Therefore, if “Floating IP” is disabled for an existing Azure ILB rules, you need to delete the Azure ILB rule and create them again with option “Enable Floating IP”]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[]D83D;]DCA1;_Standart Load Balancer_]D;]A;]D;]A;Bunu önlemek için Azure ILB'deki farklı ayarlar, SAP ASCS/SCS örneği ve Windows küme düğümleri “canlı tutma” olarak adlandırılan işlevselliği etkinleştirmek üzere yapılandırılmalıdır.]D;]A;]D;]A;Canlı tutma işlevselliği Azure ILB zaman aşımını önler.]D;]A;Azure Temel ILB'deki ayarlar]D;]A;TÜM Azure ILB Yük Dengeleme Kuralları'nın şunlara sahip olduğundan emin olun:]D;]A;“Boşta kalma zaman aşımı (dakika)” ayarları maksimum 30 dakikaya ayarlanmalıdır.]D;]A;“Kayan IP (doğrudan sunucu dönüşü)” Etkin olmalıdır]D;]A;]D;]A;Aşağıda listelenen Yük dengeleyiciler, VIS'deki VM'lere bağlıdır. Bu Yük dengeleyicilerden biri farklı bir VIS ile ilişkili olabilir. Bu durumda, bu listede diğer VIS için gösterilen aynı yük dengeleyiciyi yeniden görebileceksiniz.]D;]A;]D;]A;NOT: Kayan IP, yalnızca bir Azure ILB kuralı oluşturulurken etkinleştirilebilir. Bu nedenle, mevcut Azure ILB'nin kuralında “Kayan IP” devre dışıysa Azure ILB kuralını silmeniz ve “Kayan IP'yi Etkinleştir” seçeneğiyle yeniden oluşturmanız gerekir]]></Val>
+            <Val><![CDATA[]D83D;]DCA1;_Standart Yük Dengeleyici_]D;]A;]D;]A;Zaman aşımını önlemek için Azure ILB'deki farklı ayarların, SAP ASCS/SCS örneğinin ve Windows kümesi düğümlerinin "canlı tutma" olarak bilinen işlevselliği etkinleştirmek üzere yapılandırılması gerekir.]D;]A;]D;]A;Canlı tutma işlevselliği Azure ILB'nin zaman aşımına uğramasını önler.]D;]A;Azure Temel ILB'deki ayarlar]D;]A;TÜM Azure ILB Yük Dengeleme Kuralları'nda şunların olduğundan emin olun:]D;]A;"Boşta kalma zaman aşımı (dakika)" ayarları maksimum değer olan 30 dakikaya ayarlanmalıdır.]D;]A;"Kayan IP (doğrudan sunucu dönüşü)" Etkin olmalıdır]D;]A;]D;]A;Aşağıdaki listelenen yük dengeleyiciler VIS'deki sanal makinelere bağlıdır. Bu yük dengeleyicilerden birinin farklı bir VIS ile ilişkili olması mümkündür. Böyle bir durumda aynı yük dengeleyiciyi diğer VIS için gösterilen listede tekrar görebilirsiniz.]D;]A;]D;]A;NOT: Kayan IP'yi yalnızca bir Azure ILB kuralı oluşturma sırasında etkinleştirebilirsiniz. Bu nedenle "Kayan IP" mevcut Azure ILB kuralları için devre dışıysa, Azure ILB kuralını silip "Kayan IP'yi Etkinleştir" seçeneği ile yeniden oluşturmanız gerekir]]></Val>
           </Tgt>
           <Prev Cat="Text">
-            <Val><![CDATA[]D83D;]DCA1;_Standard Load Balancer_]D;]A;]D;]A;To prevent this, different settings on Azure ILB, the SAP ASCS/SCS instance, and Windows cluster nodes must be configured to enable the so-called “keep alive” functionality.]D;]A;]D;]A;The keep alive functionality will prevent Azure ILB time out.]D;]A;Settings on Azure Basic ILB]D;]A;Make sure that ALL Azure ILB Load Balancing Rules have:]D;]A;“Idle timeout (minutes)” settings,  set to the maximum value of 30 minutes.]D;]A;“Floating IP (direct server return)” must be Enabled]D;]A;]D;]A;NOTE: You can enable Floating IP only during creation of an Azure ILB rule. Therefore, if “Floating IP” is disabled for an existing Azure ILB rules, you need to delete the Azure ILB rule and create them again with option “Enable Floating IP”]]></Val>
+            <Val><![CDATA[]D83D;]DCA1;_Standard Load Balancer_]D;]A;]D;]A;To prevent this, different settings on Azure ILB, the SAP ASCS/SCS instance, and Windows cluster nodes must be configured to enable the so-called “keep alive” functionality.]D;]A;]D;]A;The keep alive functionality will prevent Azure ILB time out.]D;]A;Settings on Azure Basic ILB]D;]A;Make sure that ALL Azure ILB Load Balancing Rules have:]D;]A;“Idle timeout (minutes)” settings,  set to the maximum value of 30 minutes.]D;]A;“Floating IP (direct server return)” must be Enabled]D;]A;]D;]A;The Load balancers listed below are linked to the VMs in the VIS. It is possible that one of these Load balancers are associated with a different VIS. In that case you will be able to see the same load balancer again in this list shown for the other VIS.]D;]A;]D;]A;NOTE: You can enable Floating IP only during creation of an Azure ILB rule. Therefore, if “Floating IP” is disabled for an existing Azure ILB rules, you need to delete the Azure ILB rule and create them again with option “Enable Floating IP”]]></Val>
           </Prev>
         </Str>
         <Disp Icon="Str" />
@@ -2015,6 +2030,15 @@
           <Val><![CDATA[### Config Checks]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[### Yapılandırma Denetimleri]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.groupSAPOverview.content.items.textadvisorrecommendationhelptext.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Azure Center for SAP solutions (ACSS) runs **quality checks** for all Virtual instances (VIS). These Quality checks validate if the SAP systems in ACSS are configured as per **best practices** recommended by **SAP and Azure**. If a VIS  is not configured as per the different best practices, you will see a corresponding **recommendation in Azure Advisor**.]D;]A;]D;]A;The below table shows all the recommendations for Central Service Instance, App instances and Databases in the VIS. ]D;]A;]D;]A;You can click on the instance name in the table below to see all recommendations for the respective instance. ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Azure Center for SAP solutions (ACSS), tüm Sanal örnekler (VIS) için *kalite denetimleri** çalıştırır. Bu kalite denetimleir ACSS'deki SAP sistemlerinin **SAP ve Azure** tarafından önerilen **en iyi uygulamalara** uygun olarak yapılandırılıp yapılandırılmadığını denetler. Bir VIS farklı en iyi uygulamalara uygun olarak yapılandırılmamışsa, buna karşılık gelen bir **Azure Danışmanı önerisi** görürsünüz.]D;]A;]D;]A;Aşağıdaki tabloda VIS'deki Merkezi Hizmet Örneği, Uygulama örnekleri ve Veritabanları gösterilmektedir. ]D;]A;]D;]A;Bir örneğin ilgili tüm önerilerini görmek için aşağıdaki tabloda örneğin adına tıklayın. ]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
