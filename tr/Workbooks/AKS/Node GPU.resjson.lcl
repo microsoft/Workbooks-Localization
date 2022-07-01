@@ -9,7 +9,7 @@
     <Disp Icon="Expand" Expand="true" Disp="true" LocTbl="false" />
     <Item ItemId=";Strings" ItemType="0" PsrId="306" Leaf="false">
       <Disp Icon="Str" Disp="true" LocTbl="false" />
-      <Item ItemId=";items.GPUGpuCountByMake.content.gridSettings.labelSettings.GPUcountbymake.label" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.GPUtab.content.items.GPUGpuCountByMake.content.gridSettings.labelSettings.GPUcountbymake.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Count]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -18,7 +18,7 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.GPUGpuCountByMake.content.gridSettings.labelSettings.gpuVendor.label" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.GPUtab.content.items.GPUGpuCountByMake.content.gridSettings.labelSettings.gpuVendor.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Make]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -27,7 +27,7 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.GPUGpuCountByMake.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.GPUtab.content.items.GPUGpuCountByMake.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[GPU Count by Make]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -36,7 +36,7 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.GPUMemoryUsage.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.GPUtab.content.items.GPUMemoryUsage.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[GPU Memory Usage]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -45,7 +45,7 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.GPUNodeCountByNodeStatus.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.GPUtab.content.items.GPUNodeCountByNodeStatus.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[GPU Node Count by Node Status]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -54,7 +54,7 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.GPUPodCountByK8SNamespace.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.GPUtab.content.items.GPUPodCountByK8SNamespace.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[GPU Pod Count by Kubernetes Namespace]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -63,7 +63,7 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.GPUPodCountByPodStatus.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.GPUtab.content.items.GPUPodCountByPodStatus.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[GPU Pod Count by Pod Status]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -72,11 +72,35 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.GPUUsage.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.GPUtab.content.items.GPUUsage.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[GPU Usage]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[GPU Kullanımı]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Overview.content.items.text0.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[As per the Kubernetes [upstream announcement]5D;(https://kubernetes.io/blog/2020/12/16/third-party-device-metrics-reaches-ga/#nvidia-gpu-metrics-deprecated), Kubernetes is deprecating GPU metrics that are being reported by the kubelet, for Kubernetes ver. 1.20+. This means Container Insights will no longer be able to collect the following metrics out of the box:]D;]A;* containerGpuDutyCycle]D;]A;* containerGpumemoryTotalBytes]D;]A;* containerGpumemoryUsedBytes]D;]A;]D;]A;To continue collecting GPU metrics through Container Insights, please migrate by December 31, 2022 to your GPU vendor specific metrics exporter and configure [Prometheus scraping]5D;(https://docs.microsoft.com/azure/azure-monitor/containers/container-insights-prometheus-integration) to scrape metrics from the deployed vendor specific exporter.]D;]A;]D;]A;As a temporary hotfix, for AKS, upgrade your GPU Node pool to the latest version or \*-2022.06.08 or higher. For Arc enabled Kubernetes, enable feature gate DisableAcceleratorUsageMetrics=false in Kubelet configuration of the node and restart the Kubelet. Once the upstream changes reach GA, this fix will not longer work, make plans to migrate to using your GPU vendor specific metrics exporter by December 31, 2022.]D;]A;]D;]A;For additional information visit [GPU monitoring]5D;(https://docs.microsoft.com/azure/azure-monitor/containers/container-insights-gpu-monitoring) in Container Insights.]D;]A;]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.links3.content.links.45f8e6cb863841b993047abfcf4ef129.linkLabel" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[GPU]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[GPU]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.links3.content.links.5c20ad894167418bba125aa6fc298614.linkLabel" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Overview]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Genel Bakış]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -131,24 +155,6 @@
           <Val><![CDATA[Filter the selected workspace by cluster id]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Seçili çalışma alanını küme kimliğine göre filtreleyin]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";settings.description" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[View the usage of your GPU Node and the node/pod counts]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[GPU Düğümünüzün kullanımını ve düğüm/pod sayılarını görüntüleyin]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Node GPU]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Düğüm GPU'su]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
