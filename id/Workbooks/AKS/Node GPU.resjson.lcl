@@ -84,6 +84,9 @@
       <Item ItemId=";items.Overview.content.items.text0.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[As per the Kubernetes [upstream announcement]5D;(https://kubernetes.io/blog/2020/12/16/third-party-device-metrics-reaches-ga/#nvidia-gpu-metrics-deprecated), Kubernetes is deprecating GPU metrics that are being reported by the kubelet, for Kubernetes ver. 1.20+. This means Container Insights will no longer be able to collect the following metrics out of the box:]D;]A;* containerGpuDutyCycle]D;]A;* containerGpumemoryTotalBytes]D;]A;* containerGpumemoryUsedBytes]D;]A;]D;]A;To continue collecting GPU metrics through Container Insights, please migrate by December 31, 2022 to your GPU vendor specific metrics exporter and configure [Prometheus scraping]5D;(https://docs.microsoft.com/azure/azure-monitor/containers/container-insights-prometheus-integration) to scrape metrics from the deployed vendor specific exporter.]D;]A;]D;]A;As a temporary hotfix, for AKS, upgrade your GPU Node pool to the latest version or \*-2022.06.08 or higher. For Arc enabled Kubernetes, enable feature gate DisableAcceleratorUsageMetrics=false in Kubelet configuration of the node and restart the Kubelet. Once the upstream changes reach GA, this fix will not longer work, make plans to migrate to using your GPU vendor specific metrics exporter by December 31, 2022.]D;]A;]D;]A;For additional information visit [GPU monitoring]5D;(https://docs.microsoft.com/azure/azure-monitor/containers/container-insights-gpu-monitoring) in Container Insights.]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Sesuai Kubernetes [pengumuman upstream]5D;(https://kubernetes.io/blog/2020/12/16/third-party-device-mettrics-reaches-ga/#nvidia-gpu-metrics-deprecated), Kubernetes menghentikan metrik GPU yang sedang dilaporkan oleh kubelet, untuk Kubernetes ver. 1.20+. Ini berarti Wawasan Kontainer tidak dapat lagi mengumpulkan metrik berikut secara langsung:]D;]A;* containerGpuDutyCycle]D;]A;* containerGpumemoryTotalBytes]D;]A;* containerGpumemoryUsedBytes]D;]A;]D;]A;Untuk terus mengumpulkan metrik GPU melalui Wawasan Kontainer, migrasikan paling lambat 31 Desember 2022 ke pengekspor metrik khusus vendor GPU Anda dan konfigurasikan [Prometheus scraping]5D;(https://docs.microsoft.com/azure/azure-monitor/containers/container-insights-prometheus-integration) untuk mengambil metrik dari pengekspor khusus vendor yang disebarkan.]D;]A;]D;]A;Sebagai hotfix sementara, untuk AKS, mutakhirkan kumpulan Node GPU Anda ke versi terbaru atau \*-2022.06.08 atau yang lebih tinggi. Untuk Kubernetes dengan dukungan Arc, aktifkan gerbang fitur DisableAcceleratorUsageMetrics=false dalam konfigurasi Kubelet node dan mulai ulang Kubelet. Setelah perubahan upstream mencapai GA, perbaikan ini tidak akan berfungsi lagi, buat rencana untuk bermigrasi menggunakan pengekspor metrik khusus vendor GPU Anda paling lambat 31 Desember 2022.]D;]A;]D;]A;Untuk informasi tambahan kunjungi [Pemantauan GPU]5D;(https://docs.microsoft.com/azure/azure-monitor/containers/container-insights-gpu-monitoring) di Wawasan Kontainer.]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -100,7 +103,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Overview]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Ringkasan]]></Val>
+            <Val><![CDATA[Gambaran Umum]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
