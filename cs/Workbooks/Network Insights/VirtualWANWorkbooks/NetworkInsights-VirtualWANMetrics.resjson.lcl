@@ -9,6 +9,27 @@
     <Disp Icon="Expand" Expand="true" Disp="true" LocTbl="false" />
     <Item ItemId=";Strings" ItemType="0" PsrId="306" Leaf="false">
       <Disp Icon="Str" Disp="true" LocTbl="false" />
+      <Item ItemId=";@items.HiddenGroup.content.items.ConsumedcapacitymetricV2.content.gridSettings.labelSettings.microsoftnetworkvpnga" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) tewaysTrafficAverageBandwidth.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Gateway S2S Bandwidth (Average)]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Šířka pásma brány S2S (průměr)]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) tewaysTrafficAverageBandwidthTimeline.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Gateway S2S Bandwidth Timeline]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Časová osa šířky pásma brány S2S]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
       <Item ItemId=";@items.HubGatewayLevelMetricsGroup.content.items.VirtualWANConnectionCounts.content.gridSettings.labelSettings.erC" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) onnectionCount.label" ItemType="0" PsrId="306" Leaf="true">
@@ -111,20 +132,38 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.FirewallStatus.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Firewall Status]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Stav firewallu]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
       <Item ItemId=";items.FirewallTotalDataProcessed.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Firewall Total Data Processed]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Celkový objem zpracovaných dat na firewallu]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.HiddenGroup.content.items.ConsumedcapacitymetricV2.content.gridSettings.labelSettings.Name.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[VPN Gateway]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[VPN Gateway]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.HiddenGroup.content.items.VirtualWANHublevelStatusandCapacitiesWithVPNGateway.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Virtual WAN Hub level Status and Capacities]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Stav a kapacity úrovně centra Virtual WAN]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.HiddenGroup.content.items.VirtualWANHublevelStatusandCapacitiesWithoutVPNGateway.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Virtual WAN Hub level Status and Capacities]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Stav a kapacity úrovně centra Virtual WAN]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -156,99 +195,6 @@
           <Prev Cat="Text">
             <Val><![CDATA[| **Configuration** | **Description** |]D;]A;| --- | --- |]D;]A;| Virtual WAN Hub Deployment Status | Diplays the Hub Vnet deployment status | ]D;]A;| Virtual WAN VPN Gateway Deployment Status and Scale Units | Diplays VPN Gateway deployment status provisioned capacity | ]D;]A;| Virtual WAN P2S Gateway Deployment Status and Scale Units | Diplays P2S Gateway deployment status provisioned capacity | ]D;]A;| Virtual WAN ER Gateway Deployment Status and Scale Units | Diplays ER Gateway deployment status provisioned capacity | ]D;]A;| Total Virtual WAN Hub Capcity | Is the total capapcity in Gbps of each hub and it is derived by adding the capacities of all the gateways in the Virtual WAN hub (Gateway capcacity is derived by # of gateway scale units * bandwidth of each scale unit in Gbps) | ]D;]A;]D;]A;]]></Val>
           </Prev>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Hublevelstatusandcapacitieswithoutfirewall.content.gridSettings.labelSettings.erGWMinScaleUnit.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[ER Gateway Scale Units]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Jednotky škálování brány ER]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Hublevelstatusandcapacitieswithoutfirewall.content.gridSettings.labelSettings.erGWStatus.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[ER Gateway Status]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Stav brány ER]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Hublevelstatusandcapacitieswithoutfirewall.content.gridSettings.labelSettings.hubId.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Virtual Hub]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Virtuální centrum]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Hublevelstatusandcapacitieswithoutfirewall.content.gridSettings.labelSettings.hubStatus.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Hub Deployment Status]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Stav nasazení centra]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Hublevelstatusandcapacitieswithoutfirewall.content.gridSettings.labelSettings.p2sGWScaleUnit.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[P2S Gateway Scale Units]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Jednotky škálování brány P2S]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Hublevelstatusandcapacitieswithoutfirewall.content.gridSettings.labelSettings.p2sGWStatus.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[P2S Gateway Status]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Stav brány P2S]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Hublevelstatusandcapacitieswithoutfirewall.content.gridSettings.labelSettings.totalHubCapacityInGbps.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Provisioned Hub Capacity (Gbps)]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Zřízená kapacita rozbočovače (Gb/s)]]></Val>
-          </Tgt>
-          <Prev Cat="Text">
-            <Val><![CDATA[Total Hub Capacity (Gbps)]]></Val>
-          </Prev>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Hublevelstatusandcapacitieswithoutfirewall.content.gridSettings.labelSettings.vpnGWScaleUnit.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[VPN Gateway Scale Units]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Jednotky škálování brány VPN]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Hublevelstatusandcapacitieswithoutfirewall.content.gridSettings.labelSettings.vpnGWStatus.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[VPN Gateway Status]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Stav brány VPN]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Hublevelstatusandcapacitieswithoutfirewall.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Hub level status and capacities without firewall]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Stav a kapacity úrovně centra bez firewallu]]></Val>
-          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -399,83 +345,11 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.VirtualWANHublevelStatusandCapacities.content.gridSettings.labelSettings.GatewayS2SBandwidthAverage.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Consumed Capacity]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Spotřebovaná kapacita]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.VirtualWANHublevelStatusandCapacities.content.gridSettings.labelSettings.TotalHubCapacityGbps.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Provisioned Hub Capacity (Gbps)]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Zřízená kapacita rozbočovače (Gb/s)]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.VirtualWANHublevelStatusandCapacities.content.gridSettings.labelSettings.firewallStatus.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Firewall Status]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Stav firewallu]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.VirtualWANHublevelStatusandCapacities.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[No virtual hubs found]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Nebyla nalezena žádná virtuální centra.]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.VirtualWANHublevelStatusandCapacities.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Virtual WAN Hub level Status and Capacities]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Stav a kapacity úrovně centra Virtual WAN]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
       <Item ItemId=";items.VirtualWANRegionalStatusandHubCapacitiesGbps.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No virtual WAN selected]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Není vybrána žádná virtuální síť WAN.]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.metric21.content.gridSettings.labelSettings.microsoftnetworkvpngatewaysTrafficAverageBandwidth.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Gateway S2S Bandwidth (Average)]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Šířka pásma brány S2S (průměr)]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.metric21.content.gridSettings.labelSettings.microsoftnetworkvpngatewaysTrafficAverageBandwidthTimeline.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Gateway S2S Bandwidth Timeline]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Časová osa šířky pásma brány S2S]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.metric21.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Consumed capacity metric]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Metrika využité kapacity]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -552,38 +426,11 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.query23.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Hub to VPN and Consumed cap]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Z rozbočovače do sítě VPN a využitá kapacita]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
       <Item ItemId=";items.text17.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[]D;]A;## Hub Gateway Level Metrics]D;]A;| **Metric** | **Description** |]D;]A;| --- | --- |]D;]A;|Virtual WAN Connection Counts| Displays the total number of Virtual WAN Connections of type VPN, P2S, ER and Vnet|]D;]A;|S2S Gateway Average Bandwidth| Average site-to-site aggregate bandwidth of a gateway in bytes per second|]D;]A;|P2S Gateway Average Bandwidth| Average point-to-site aggregate bandwidth of a gateway in bytes per second|]D;]A;|Express Route Gateway BitsInPerSecond| Bits ingressing Azure per second|]D;]A;|Express Route Gateway BitsOutPerSecond| Bits egressing Azure per second|]D;]A;|Firewall Total Data Processed|Total Data Processed by Azure Firewall in Virtual Hub|]D;]A;]D;]A;## S2S VPN Connection Metrics]D;]A;| **Metric** | **Description** |]D;]A;| --- | --- |]D;]A;|Tunnel Bandwidth| Average bandwidth of a tunnel in bytes per second|]D;]A;|Tunnel Egress Bytes| Outgoing bytes of a tunnel|]D;]A;|Tunnel Egress Packets| Outgoing packet count of a tunnel|]D;]A;|Tunnel Egress TS Mismatch Packet Drop| Outgoing packet drop count from traffic selector mismatch of a tunnel|]D;]A;|Tunnel Ingress Bytes| Incoming bytes of a tunnel|]D;]A;|Tunnel Ingress Packet| Incoming packet count of a tunnel|]D;]A;|Tunnel Ingress TS Mismatch Packet Drop| Incoming packet drop count from traffic selector mismatch of a tunnel|]D;]A;]D;]A;## P2S VPN Connection Metrics]D;]A;| **Metric** | **Description** |]D;]A;| --- | --- |]D;]A;|P2S Connection Count| Point-to-site connection count of a gateway|]D;]A;]D;]A;## ER Circuit Metrics]D;]A;| **Metric** | **Description** |]D;]A;| --- | --- |]D;]A;|ExpressRoute Circuit BitsInPerSecond| Bits ingressing Azure per second|]D;]A;|ExpressRoute Circuit BitsOutPerSecond| Bits egressing Azure per second|]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[]D;]A;## Metriky úrovně brány centra]D;]A;| **Metrika** | **Popis** |]D;]A;| --- | --- |]D;]A;| Počet připojení ke službě Virtual WAN| Zobrazuje celkový počet připojení ke službě Virtual WAN typu VPN, P2S, ER a Vnet.|]D;]A;|Průměrná šířka pásma brány S2S| Průměrná agregovaná šířka pásma site-to-site (S2S) brány v bajtech za sekundu|]D;]A;|Průměrná šířka pásma brány P2S| Průměrná agregovaná šířka pásma point-to-site (P2S) brány v bajtech za sekundu|]D;]A;|Brána Express Route – BitsInPerSecond| Počet bitů za sekundu při příchozím přenosu dat do Azure|]D;]A;|Brána Express Route – BitsOutPerSecond| Počet bitů za sekundu při výchozím přenosu dat z Azure|]D;]A;|Celkový objem zpracovaných dat na firewallu|Celkový objem dat zpracovaný službou Azure Firewall ve virtuálním centru|]D;]A;]D;]A;## Metriky připojení S2S VPN]D;]A;| **Metrika** | **Popis** |]D;]A;| --- | --- |]D;]A;|Šířka písma tunelového připojení| Průměrná šířka pásma tunelového připojení v bajtech za sekundu|]D;]A;|Bajty výchozího přenosu dat tunelového připojení| Odchozí bajty tunelového připojení|]D;]A;|Pakety výchozího přenosu dat tunelového připojení| Počet odchozích paketů tunelového připojení|]D;]A;|Zahozené pakety při nesouladu voliče přenosu v rámci výchozího přenosu dat tunelového připojení| Počet zahozených odchozích paketů z důvodu nesouladu voliče přenosu tunelového připojení|]D;]A;|Bajty příchozího přenosu dat tunelového připojení| Příchozí bajty tunelového připojení|]D;]A;|Pakety příchozího přenosu dat tunelového připojení| Počet příchozích paketů tunelového připojení|]D;]A;|Počet zahozených příchozích paketů z důvodu nesouladu voliče přenosu tunelového připojení| Počet zahozených příchozích paketů z důvodu nesouladu voliče přenosu tunelového připojení|]D;]A;]D;]A;## Metriky připojení P2S VPN]D;]A;| **Metrika** | **Popis** |]D;]A;| --- | --- |]D;]A;|Počet připojení P2S| Počet připojení point-to-site (P2S) brány|]D;]A;]D;]A;## Metriky okruhu ER]D;]A;| **Metrika** | **Popis** |]D;]A;| --- | --- |]D;]A;|Okruh ExpressRoute – BitsInPerSecond| Bity za sekundu při příchozím přenosu dat do Azure|]D;]A;|ExpressRoute Circuit – BitsOutPerSecond| Bity za sekundu při výchozím přenosu dat z Azure|]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.vpngatewaytohubsmatching.content.gridSettings.labelSettings.hubId.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Virtual Hub]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Virtuální rozbočovač]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.vpngatewaytohubsmatching.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[vpn gateway to hubs matching]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[brána VPN Gateway k rozbočovačům, které odpovídají]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
