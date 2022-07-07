@@ -9,6 +9,27 @@
     <Disp Icon="Expand" Expand="true" Disp="true" LocTbl="false" />
     <Item ItemId=";Strings" ItemType="0" PsrId="306" Leaf="false">
       <Disp Icon="Str" Disp="true" LocTbl="false" />
+      <Item ItemId=";@items.HiddenGroup.content.items.ConsumedcapacitymetricV2.content.gridSettings.labelSettings.microsoftnetworkvpnga" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) tewaysTrafficAverageBandwidth.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Gateway S2S Bandwidth (Average)]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Gateway-S2S-Bandbreite (Durchschnitt)]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) tewaysTrafficAverageBandwidthTimeline.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Gateway S2S Bandwidth Timeline]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Gateway-S2S-Bandbreitenzeitachse]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
       <Item ItemId=";@items.HubGatewayLevelMetricsGroup.content.items.VirtualWANConnectionCounts.content.gridSettings.labelSettings.erC" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) onnectionCount.label" ItemType="0" PsrId="306" Leaf="true">
@@ -111,20 +132,38 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.FirewallStatus.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Firewall Status]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Firewallstatus]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
       <Item ItemId=";items.FirewallTotalDataProcessed.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Firewall Total Data Processed]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Verarbeitete Firewalldaten gesamt]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.HiddenGroup.content.items.ConsumedcapacitymetricV2.content.gridSettings.labelSettings.Name.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[VPN Gateway]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[VPN-Gateway]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.HiddenGroup.content.items.VirtualWANHublevelStatusandCapacitiesWithVPNGateway.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Virtual WAN Hub level Status and Capacities]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Status und Kapazitäten auf Virtual WAN-Hub-Ebene]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.HiddenGroup.content.items.VirtualWANHublevelStatusandCapacitiesWithoutVPNGateway.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Virtual WAN Hub level Status and Capacities]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Status und Kapazitäten auf Virtual WAN-Hub-Ebene]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -156,99 +195,6 @@
           <Prev Cat="Text">
             <Val><![CDATA[| **Configuration** | **Description** |]D;]A;| --- | --- |]D;]A;| Virtual WAN Hub Deployment Status | Diplays the Hub Vnet deployment status | ]D;]A;| Virtual WAN VPN Gateway Deployment Status and Scale Units | Diplays VPN Gateway deployment status provisioned capacity | ]D;]A;| Virtual WAN P2S Gateway Deployment Status and Scale Units | Diplays P2S Gateway deployment status provisioned capacity | ]D;]A;| Virtual WAN ER Gateway Deployment Status and Scale Units | Diplays ER Gateway deployment status provisioned capacity | ]D;]A;| Total Virtual WAN Hub Capcity | Is the total capapcity in Gbps of each hub and it is derived by adding the capacities of all the gateways in the Virtual WAN hub (Gateway capcacity is derived by # of gateway scale units * bandwidth of each scale unit in Gbps) | ]D;]A;]D;]A;]]></Val>
           </Prev>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Hublevelstatusandcapacitieswithoutfirewall.content.gridSettings.labelSettings.erGWMinScaleUnit.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[ER Gateway Scale Units]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Skalierungseinheiten für ER-Gateways]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Hublevelstatusandcapacitieswithoutfirewall.content.gridSettings.labelSettings.erGWStatus.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[ER Gateway Status]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[ER-Gatewaystatus]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Hublevelstatusandcapacitieswithoutfirewall.content.gridSettings.labelSettings.hubId.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Virtual Hub]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Virtueller Hub]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Hublevelstatusandcapacitieswithoutfirewall.content.gridSettings.labelSettings.hubStatus.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Hub Deployment Status]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Hub-Bereitstellungsstatus]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Hublevelstatusandcapacitieswithoutfirewall.content.gridSettings.labelSettings.p2sGWScaleUnit.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[P2S Gateway Scale Units]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Skalierungseinheiten für P2S-Gateways]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Hublevelstatusandcapacitieswithoutfirewall.content.gridSettings.labelSettings.p2sGWStatus.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[P2S Gateway Status]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[P2S-Gatewaystatus]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Hublevelstatusandcapacitieswithoutfirewall.content.gridSettings.labelSettings.totalHubCapacityInGbps.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Provisioned Hub Capacity (Gbps)]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Bereitgestellte Hubkapazität (GBit/s)]]></Val>
-          </Tgt>
-          <Prev Cat="Text">
-            <Val><![CDATA[Total Hub Capacity (Gbps)]]></Val>
-          </Prev>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Hublevelstatusandcapacitieswithoutfirewall.content.gridSettings.labelSettings.vpnGWScaleUnit.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[VPN Gateway Scale Units]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Skalierungseinheiten für VPN-Gateways]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Hublevelstatusandcapacitieswithoutfirewall.content.gridSettings.labelSettings.vpnGWStatus.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[VPN Gateway Status]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[VPN-Gatewaystatus]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.Hublevelstatusandcapacitieswithoutfirewall.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Hub level status and capacities without firewall]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Status und Kapazitäten auf Hub-Ebene ohne Firewall]]></Val>
-          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -399,83 +345,11 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.VirtualWANHublevelStatusandCapacities.content.gridSettings.labelSettings.GatewayS2SBandwidthAverage.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Consumed Capacity]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Verbrauchte Kapazität]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.VirtualWANHublevelStatusandCapacities.content.gridSettings.labelSettings.TotalHubCapacityGbps.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Provisioned Hub Capacity (Gbps)]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Bereitgestellte Hubkapazität (GBit/s)]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.VirtualWANHublevelStatusandCapacities.content.gridSettings.labelSettings.firewallStatus.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Firewall Status]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Firewallstatus]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.VirtualWANHublevelStatusandCapacities.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[No virtual hubs found]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Keine virtuellen Hubs gefunden.]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.VirtualWANHublevelStatusandCapacities.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Virtual WAN Hub level Status and Capacities]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Status und Kapazitäten auf Virtual WAN-Hub-Ebene]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
       <Item ItemId=";items.VirtualWANRegionalStatusandHubCapacitiesGbps.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No virtual WAN selected]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Kein virtuelles WAN ausgewählt.]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.metric21.content.gridSettings.labelSettings.microsoftnetworkvpngatewaysTrafficAverageBandwidth.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Gateway S2S Bandwidth (Average)]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Gateway-S2S-Bandbreite (Durchschnitt)]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.metric21.content.gridSettings.labelSettings.microsoftnetworkvpngatewaysTrafficAverageBandwidthTimeline.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Gateway S2S Bandwidth Timeline]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Gateway-S2S-Bandbreitenzeitachse]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.metric21.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Consumed capacity metric]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Metrik für verbrauchte Kapazität]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -552,38 +426,11 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.query23.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Hub to VPN and Consumed cap]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Hub-zu-VPN und genutzte Obergrenze]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
       <Item ItemId=";items.text17.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[]D;]A;## Hub Gateway Level Metrics]D;]A;| **Metric** | **Description** |]D;]A;| --- | --- |]D;]A;|Virtual WAN Connection Counts| Displays the total number of Virtual WAN Connections of type VPN, P2S, ER and Vnet|]D;]A;|S2S Gateway Average Bandwidth| Average site-to-site aggregate bandwidth of a gateway in bytes per second|]D;]A;|P2S Gateway Average Bandwidth| Average point-to-site aggregate bandwidth of a gateway in bytes per second|]D;]A;|Express Route Gateway BitsInPerSecond| Bits ingressing Azure per second|]D;]A;|Express Route Gateway BitsOutPerSecond| Bits egressing Azure per second|]D;]A;|Firewall Total Data Processed|Total Data Processed by Azure Firewall in Virtual Hub|]D;]A;]D;]A;## S2S VPN Connection Metrics]D;]A;| **Metric** | **Description** |]D;]A;| --- | --- |]D;]A;|Tunnel Bandwidth| Average bandwidth of a tunnel in bytes per second|]D;]A;|Tunnel Egress Bytes| Outgoing bytes of a tunnel|]D;]A;|Tunnel Egress Packets| Outgoing packet count of a tunnel|]D;]A;|Tunnel Egress TS Mismatch Packet Drop| Outgoing packet drop count from traffic selector mismatch of a tunnel|]D;]A;|Tunnel Ingress Bytes| Incoming bytes of a tunnel|]D;]A;|Tunnel Ingress Packet| Incoming packet count of a tunnel|]D;]A;|Tunnel Ingress TS Mismatch Packet Drop| Incoming packet drop count from traffic selector mismatch of a tunnel|]D;]A;]D;]A;## P2S VPN Connection Metrics]D;]A;| **Metric** | **Description** |]D;]A;| --- | --- |]D;]A;|P2S Connection Count| Point-to-site connection count of a gateway|]D;]A;]D;]A;## ER Circuit Metrics]D;]A;| **Metric** | **Description** |]D;]A;| --- | --- |]D;]A;|ExpressRoute Circuit BitsInPerSecond| Bits ingressing Azure per second|]D;]A;|ExpressRoute Circuit BitsOutPerSecond| Bits egressing Azure per second|]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[]D;]A;## Metriken auf Hubgatewayebene]D;]A;| **Metrik** | ** Beschreibung ** |]D;]A;| --- | --- |]D;]A;|Anzahl von Virtual WAN-Verbindungen| Zeigt die Gesamtzahl der Virtual WAN-Verbindungen vom Typ "VPN", "P2S", "ER" und "VNET" an.|]D;]A;|Durchschnittliche S2S-Gatewaybandbreite| Durchschnittliche aggregierte Site-to-Site-Bandbreite eines Gateways in Byte pro Sekunde|]D;]A;|Durchschnittliche P2S-Gatewaybandbreite| Durchschnittliche aggregierte Point-to-Site-Bandbreite eines Gateways in Byte pro Sekunde|]D;]A;|ExpressRoute-Gateway: BitsInPerSecond| Bits, die pro Sekunde bei Azure eingehen|]D;]A;|ExpressRoute-Gateway: BitsOutPerSecond| Bits, die pro Sekunde aus Azure ausgehen|]D;]A;|Verarbeitete Firewalldaten gesamt|Gesamtzahl der von Azure Firewall in Virtual Hub verarbeiteten Daten|]D;]A;]D;]A;## S2S-VPN-Verbindungsmetriken]D;]A;| **Metrik** | **Beschreibung** |]D;]A;| --- | --- |]D;]A;|Tunnelbandbreite| Durchschnittliche Bandbreite eines Tunnels in Byte pro Sekunde|]D;]A;|Vom Tunnel ausgehende Bytes| Ausgehende Bytes eines Tunnels|]D;]A;|Vom Tunnel ausgehende Pakete| Anzahl ausgehender Pakete eines Tunnels|]D;]A;|Gelöschte ausgehende Pakete durch TS-Konflikt des Tunnels| Anzahl gelöschter ausgehender Pakete durch Datenverkehrsauswahl-Konflikt eines Tunnels|]D;]A;|Beim Tunnel eingehende Bytes| Eingehende Bytes eines Tunnels|]D;]A;|Bei Tunnel eingehende Pakete| Anzahl eingehender Pakete eines Tunnels|]D;]A;|Gelöschte eingehende Pakete durch TS-Konflikt des Tunnels| Anzahl gelöschter eingehender Pakete durch Datenverkehrsauswahl-Konflikt eines Tunnels|]D;]A;]D;]A;## P2S-VPN-Verbindungsmetriken]D;]A;| **Metrik** | **Beschreibung** |]D;]A;| --- | --- |]D;]A;|Anzahl von P2S-Verbindungen| Anzahl von Point-to-Site-Verbindungen eines Gateways|]D;]A;]D;]A;## ER-Leitungsmetriken]D;]A;| **Metrik** | **Beschreibung** |]D;]A;| --- | --- |]D;]A;|ExpressRoute-Leitung: BitsInPerSecond| Bei Azure eingehende Bits pro Sekunde|]D;]A;|ExpressRoute-Leitung: BitsOutPerSecond| Aus Azure ausgehende Bits pro Sekunde|]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.vpngatewaytohubsmatching.content.gridSettings.labelSettings.hubId.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Virtual Hub]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Virtueller Hub]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.vpngatewaytohubsmatching.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[vpn gateway to hubs matching]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Zuordnung von VPN Gateway zu Hubs]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
