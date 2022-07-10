@@ -87,6 +87,42 @@
           <Disp Icon="Str" />
         </Item>
       </Item>
+      <Item ItemId=";@items.Overview.content.items.CosmosDBAccountMetrics.content.gridSettings.labelSettings.HighestRUConsumingShard.la" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) bel" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Highest RU Consuming Shard]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Partition consommatrice de RU la plus élevée]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
+      <Item ItemId=";@items.Overview.content.items.CosmosDBAccountMetrics.content.gridSettings.labelSettings.HighestRUConsumingShardTim" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) eline.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Highest RU Consuming Shard Timeline]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Chronologie de partition consommatrice de RU la plus élevée]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
+      <Item ItemId=";@items.Overview.content.items.CosmosDBAccountMetrics.content.gridSettings.labelSettings.MongoClientRequestsTimelin" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) e.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[Mongo Client Requests Timeline]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Chronologie des demandes du client Mongo]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
       <Item ItemId=";@items.Overview.content.items.CosmosDBAccountMetrics.content.gridSettings.labelSettings.microsoftdocumentdbdatabas" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) eaccountsRequestsDataUsage.label" ItemType="0" PsrId="306" Leaf="true">
@@ -285,7 +321,7 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.Latency.content.items.ServerSideLatencyByRegion.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+      <Item ItemId=";items.LatencyCopy.content.items.Latency.content.items.ServerSideLatencyByRegionCopy.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Server Side Latency (Avg) By Region {DatabaseText} {ContainerText} ]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -294,11 +330,20 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.LatencyCopy.content.items.ServerSideLatencyByOperation.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+      <Item ItemId=";items.LatencyCopy.content.items.LatencyCopy.content.items.ServerSideLatencyByOperationCopy.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Server Side Latency (Avg) By Operation {DatabaseText} {ContainerText} ]]></Val>
+          <Val><![CDATA[ Server Side Latency (Avg) By Operation {DatabaseText} {ContainerText} ]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Latence côté serveur (moy.) par opération {DatabaseText} {ContainerText} ]]></Val>
+            <Val><![CDATA[ Latence côté serveur (moy.) par opération {DatabaseText} {ContainerText} ]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Overview.content.items.CosmosDBAccountMetrics.content.gridSettings.labelSettings.MongoClientRequests.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Mongo Client Requests]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Demandes client Mongo]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -393,6 +438,15 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
+      <Item ItemId=";items.Overview.content.items.text7.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[__NOTE:__ In the table above, if collection name is set to an empty value, this is because throughput is shared among collections within your database.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[__NOTE:__ Dans la table ci-dessus, si le nom de collection est défini sur une valeur vide, cela est dû au fait que le débit est partagé entre les collections au sein de votre base de données.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.Requests.content.items.TotalRequestsbyOperationType.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Client Requests by Operation {DatabaseText} {ContainerText} ]]></Val>
@@ -464,6 +518,15 @@
           <Val><![CDATA[Availability]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Disponibilité]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Tabs.content.links.9d7fbcc83ccc4e138106bf6116765dec.linkLabel" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Latency]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Latence]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
