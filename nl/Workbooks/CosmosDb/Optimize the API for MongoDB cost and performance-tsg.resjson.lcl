@@ -14,6 +14,9 @@
         <Item ItemId=";(...) e.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Mongo Requests Timeline]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Tijdlijn voor Mongo-aanvragen]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -57,6 +60,9 @@
       <Item ItemId=";items.HighestRUConsumingShardByPartitionKeyRangeID.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Highest RU Consuming Shard (%) By PartitionKeyRangeID]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Hoogste RU-verbruikende shard (%) door PartitionKeyRangeID]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -99,42 +105,63 @@
       <Item ItemId=";items.HighestRUConsumingShardHeatMap.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Highest RU Consuming Shard (Max) Heat Map By PartitionKeyRangeID]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Heatmap voor hoogste RU-verbruikende shard (max) door PartitionKeyRangeID]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.LogAnalyticsWorkspace.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Step 4. Enable Log Analytics for additional troubleshooting]D;]A;]D;]A;Use Azure Diagnostic Logs to identify which requests are returning 50s and how many RUs they consumed. This sample query aggregates at the minute level.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# Stap 4. Schakel Log Analytics in voor aanvullende probleemoplossing]D;]A;]D;]A;Diagnostische logboeken van Azure gebruiken om te identificeren welke aanvragen 50s retourneren en hoeveel RU's ze hebben verbruikt. Deze voorbeeldquery wordt geaggregeerd op minuutniveau.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.ThrottledPercentage.content.items.ThrottledPercentage.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Step 3: View your Throttled Request Percentage on specific collection]D;]A;]D;]A;The throttled request percentage is calculated by dividing your total number of request in a given time period by the number of requests that return 50 as the Error Code. ]D;]A;]D;]A;You can enable the Server Side Retry (SSR) feature and let the server retry these operations automatically. The requests are retried after a short delay for all collections in your account. This feature is a convenient alternative to handling rate-limiting errors in the client application.]D;]A;]D;]A;Requests are retried continuously (over and over again) until a 60-second timeout is reached. If the timeout is reached, the client will receive an ExceededTimeLimit exception (50).]D;]A;]D;]A;<span style="color:green"> If your throttled request percentage is 1-5% and your end to end latency is acceptable, this is a healthy sign that your RU/s are being fully utilized. **No action is required.** </span>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# Stap 3: Bekijk het percentage vertraagde aanvragen voor een specifieke verzameling]D;]A;]D;]A;Het percentage vertraagde aanvragen wordt berekend door het totale aantal aanvragen in een bepaalde periode te delen door het aantal aanvragen dat 50 als foutcode retourneert. ]D;]A;]D;]A;U kunt de functie Server Side Retry (SSR) inschakelen en de server deze bewerkingen automatisch opnieuw laten uitvoeren. De aanvragen worden opnieuw geprobeerd na een korte vertraging voor alle verzamelingen in uw account. Deze functie is een handig alternatief voor het afhandelen van frequentiebeperkingsfouten in de clienttoepassing.]D;]A;]D;]A;aanvragen worden continu opnieuw geprobeerd (steeds opnieuw) totdat een time-out van 60 seconden is bereikt. Als de time-out is bereikt, ontvangt de client een ExceededTimeLimit-uitzondering (50).]D;]A;]D;]A;<span style="color:green"> Als uw vertraagde aanvraagpercentage 1-5% is en uw end-to-end-latentie acceptabel is, is dit een goed teken dat uw RU/s volledig worden gebruikt. **Er is geen actie vereist.** </span>]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.ThrottledRequestPercentageTile.content.gridSettings.labelSettings.Addedcolumn.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Throttled Request Percentage]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Vertraagd aanvraagpercentage]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.ThrottledRequestPercentageTile.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Throttled Request Percentage]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Vertraagd aanvraagpercentage]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group1.content.items.query5.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Per Second Shard Usage Snapshot]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Momentopname van shard-gebruik per seconde]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.group1.content.items.text0.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<span style="font-size:15px;"> To give some background, the way Cosmos DB distributes  throughput is by evenly splitting the throughput across all shard key ranges.</span>]D;]A;]D;]A;<br/> ]D;]A;]D;]A;<span style="font-size:15px;">]D;]A;For example, if the max throughput is 20,000 RU/s and there are two shard key ranges, P1 and P2, each shard is capable of scaling to 10,000 RU/s. </span>]D;]A;]D;]A;]D;]A;<br/> ]D;]A;]D;]A;<span style="font-size:15px;">]D;]A;In the scenario to your right, you'll see 2 shards, where P1 goes up to 10K RU/s (100% utilization for that shard in a given second) and P2 reaches 2K RU/s (20% utilization for that shard in a given second). </span>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<span style="font-size:15px;"> De manier waarop Cosmos DB doorvoer distribueert, is door de doorvoer gelijkmatig te verdelen over alle shard-sleutelbereiken.</span>]D;]A;]D;]A;<br/> ]D;]A;]D;]A;<span style="font-size:15px;">]D;]A;Als de maximale doorvoer bijvoorbeeld 20.000 RU/s is en er twee shard-sleutelbereiken zijn, P1 en P2, kan elke shard schalen naar 10.000 RU/s. </span>]D;]A;]D;]A;]D;]A;<br/> ]D;]A;]D;]A;<span style="font-size:15px;">]D;]A;In het scenario aan de rechterkant ziet u twee shards, waarbij P1 tot 10.000 RU/s (100% gebruik voor die shard in een bepaalde seconde) en P2 2K RU/s bereikt (20% gebruik voor die shard in een bepaalde seconde). </span>]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -159,6 +186,9 @@
       <Item ItemId=";items.metric17.content.gridSettings.labelSettings.microsoftdocumentdbdatabaseaccountsRequestsMongoRequests.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Mongo Requests (Count)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Mongo-aanvragen (aantal)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -201,18 +231,27 @@
       <Item ItemId=";items.query26.content.gridSettings.labelSettings.percentage.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[IsThrottled ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[IsThrottled ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.query26.content.gridSettings.labelSettings.result.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Throttled Request Percentage]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Vertraagd aanvraagpercentage]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.query6.content.chartSettings.seriesLabelSettings.0.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Normalized RU]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Normalized RU]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -237,36 +276,54 @@
       <Item ItemId=";items.text0.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[]D;]A;<span style="font-size:40px;"> Optimize my API for MongoDB cost and performance </span>]D;]A;]D;]A;<br>]D;]A;]D;]A;## Step 1. Let's understand what Highest RU Consuming Shard means in Cosmos DB]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[]D;]A;<span style="font-size:40px;"> Mijn API optimaliseren voor MongoDB-kosten en -prestaties </span>]D;]A;]D;]A;<br>]D;]A;]D;]A;## stap 1. Laten we eens kijken wat Shard met de hoogste RU-verbruik betekent in Cosmos DB]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text0Copy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<br/>]D;]A;]D;]A;<span style="font-size:15px;"> The Highest RU Consuming Shard metric is used to see how well saturated the shard key ranges are with respect to your traffic. This metric provides a per second view of the maximum throughput utilization for shard key range. In the example to your left, you can see the Highest RU Consuming Shard graph spiking to 100% at 3PM. </span>]D;]A;]D;]A;<br/> ]D;]A;]D;]A;<span style="font-size:15px;">]D;]A;In a given second, if P1 has used 10,000 RUs, and P2 2,000 RUs, the normalized utilization is the MAX(10000 RU / 10,000 RU, 2000 RU / 10,000 RU) = 1.0 or 100% </span>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<br/>]D;]A;]D;]A;<span style="font-size:15px;"> De hoogste metrische waarde voor RU-verbruikende shards wordt gebruikt om te zien hoe goed de shard-sleutelbereiken zijn verzadigd ten opzichte van uw verkeer. Deze metrische waarde biedt een weergave per seconde van het maximale doorvoergebruik voor het shard-sleutelbereik. In het voorbeeld aan de linkerkant ziet u de piek van de Shard-grafiek met het hoogste RU-verbruik tot 100% om 15:00 uur. </span>]D;]A;]D;]A;<br/> ]D;]A;]D;]A;<span style="font-size:15px;">]D;]A; Als P1 in een bepaalde seconde 10.000 RU's heeft gebruikt en P2 2000 RU's, is het genormaliseerde gebruik de MAX(10000 RU/10.000 RU, 2000 RU /10.000 RU) = 1,0 of 100% </span>]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text11.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Step 2. Select a Database and/or Collection and time range you'd like to investigate]D;]A;]D;]A;<span style="font-size:15px;">  Now let's take a look at the Highest RU Consuming Shard for your account. This metric can tell you whether you have shard skewness or hot shards within a database or collection.  </span>]D;]A;]D;]A;<span style="font-size:15px;">]D;]A;Each __PartitionKeyRangeId__ maps to a one physical shard: ]D;]A;]D;]A;- If you see consistent or continuous spiking of physical shards to 100% (view Highest RU Consuming Shard (%) By PartitionKeyRangeID line graph on the left) OR ]D;]A;- There is one PartitionKeyRangeId that has significantly higher Highest RU Consuming Shard than others (for example, one is consistently at 100%, but others are at 30% or less, view Highest RU Consuming Shard (Max) Heat Map chart on the right) this can be a sign of a hot shard or shard skewness.  </span>]D;]A;]D;]A;<span style="font-size:15px; font-weight:bold;"> Note: For shared throughput databases, only select the relevant database without drilling down to the container level. </span> ]D;]A;<!-- (filtering at colleciton level wont work) TO-DO -->]D;]A;]D;]A;<span style="color:green;font-size:15px;"> In general, for a production workload, if you see infrequent spikes, and your end to end latency is acceptable, this is a healthy sign that the RU/s are being fully utilized. **No action is required.** </span>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# Stap 2. Selecteer een database en/of verzameling en het tijdsbereik dat u wilt onderzoeken]D;]A;]D;]A;<span style="font-size:15px;"> Laten we nu eens kijken naar de hoogste RU-verbruikende shard voor uw account. Met deze metrische waarde kunt u zien of u shard-scheefheid of dynamische shards binnen een database of verzameling hebt.  </span>]D;]A;]D;]A;<span style="font-size:15px;">]D;]A;Elke __PartitionKeyRangeId__ wordt toegewezen aan één fysieke shard: ]D;]A;]D;]A;- Als u een consistente of continue piek van fysieke shards ziet op 100% (bekijk de grafiek Met de hoogste RU-verbruiken shard (%) op PartitionKeyRangeID-lijngrafiek aan de linkerkant) OF ]D;]A;- Er is één PartitionKeyRangeId met een aanzienlijk hogere shard met hoogste RU-verbruik dan andere (bijvoorbeeld één is consistent op 100%, maar andere op 30% of minder, bekijk hoogste RU-verbruikende shard (max) heatmap-grafiek aan de rechterkant) dit kan een teken zijn van een hot shard of shard-scheefheid.  </span>]D;]A;]D;]A;<span style="font-size:15px; font-weight:bold;"> Opmerking: voor databases met gedeelde doorvoer selecteert u alleen de relevante database zonder in te zoomen op het containerniveau. </span> ]D;]A;<!-- (filtering at colleciton level wont work) TO-DO -->]D;]A;]D;]A;<span style="color:green;font-size:15px;"> In het algemeen is dit een goed teken, voor een productieworkload, als u onregelmatige pieken ziet en uw end-to-end-latentie acceptabel is. Dit is een goed teken dat RU's volledig worden gebruikt. **Er is geen actie vereist.** </span>]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text19.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[# Step 3: View your Throttled Request Percentage on specific collection]D;]A;]D;]A;Your throttled request percentage is calculated by dividing your total number of request in a given time period by the number of requests that return 50 as the Error Code. ]D;]A;]D;]A;<span style="color:red"> Your throttled percentage is greater than 5%. **Action is required. Please move forward to the next troubleshooting steps.** </span>]D;]A;]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[# Stap 3: Bekijk het percentage vertraagde aanvragen voor een specifieke verzameling]D;]A;]D;]A;Het percentage vertraagde aanvragen wordt berekend door het totale aantal aanvragen in een bepaalde periode te delen door het aantal aanvragen dat 50 als foutcode retourneert. ]D;]A;]D;]A;<span style="color:red"> Het vertraagde percentage is groter dan 5%. **Actie is vereist. Ga verder met de volgende stappen voor probleemoplossing.** </span>]D;]A;]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text24.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Enabling diagnostic logs incurs a separate charge for the Log Analytics service, which is billed based on the volume of data ingested. It's recommended you turn on diagnostic logs for a limited amount of time for debugging, and turn off when no longer required. See <a href="https://azure.microsoft.com/pricing/details/monitor/">pricing page</a> for details.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Voor het inschakelen van diagnostische logboeken worden afzonderlijke kosten in rekening gebracht voor de Log Analytics-service, die wordt gefactureerd op basis van het volume van de opgenomen gegevens. Het is raadzaam om diagnostische logboeken voor een beperkte tijd in te schakelen voor foutopsporing en uit te schakelen wanneer dit niet meer nodig is. Zie <a href="https://azure.microsoft.com/pricing/details/monitor/">de pagina met prijzen</a> voor meer informatie.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text25.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Turn on <a href="https://docs.microsoft.com/en-us/azure/cosmos-db/cosmosdb-monitor-resource-logs ">Log Analytics </a> and enable the MongoRequest Category. ]D;]A;]D;]A;### Once it is enabled, then you will be able to select the workspace from the dropdown below.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Schakel <a href="https://docs.microsoft.com/en-us/azure/cosmos-db/cosmosdb-monitor-resource-logs ">Log Analytics </a> in en schakel de MongoRequest-categorie in. ]D;]A;]D;]A;### Zodra deze is ingeschakeld, kunt u de werkruimte selecteren in de onderstaande vervolgkeuzelijst.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
