@@ -117,21 +117,6 @@
           <Disp Icon="Str" />
         </Item>
       </Item>
-      <Item ItemId=";@items.Usage.content.items.UsageDashboard.content.items.BillableTablesVolume.content.gridSettings.labelSettings.Ti" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) meSinceLastUpdate.label" ItemType="0" PsrId="306" Leaf="true">
-          <Str Cat="Text">
-            <Val><![CDATA[Usage Stats Updated]]></Val>
-            <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Statistiques d’utilisation mises à jour]]></Val>
-            </Tgt>
-            <Prev Cat="Text">
-              <Val><![CDATA[Usage Last Update]]></Val>
-            </Prev>
-          </Str>
-          <Disp Icon="Str" />
-        </Item>
-      </Item>
       <Item ItemId=";@items.Usage.content.items.UsageDashboard.content.items.IngestionLatency.content.items.IngestionLatencyPercentile." ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) content.parameters.adfc4e1e0bbe4ea8939de70911498cc2.description" ItemType="0" PsrId="306" Leaf="true">
@@ -157,10 +142,13 @@
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[{TableInFocus}: Ingestion Time (seconds)]]></Val>
+            <Val><![CDATA[{TableInFocus}: Total Ingestion Time (seconds)]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[{TableInFocus} : temps d’ingestion (secondes)]]></Val>
+              <Val><![CDATA[{TableInFocus} : durée totale d’ingestion (secondes)]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[{TableInFocus}: Ingestion Time (seconds)]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -181,10 +169,13 @@
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) itle" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[{TableInFocus}: Log Count by Resource]]></Val>
+            <Val><![CDATA[{TableInFocus}: Ingestion Statistics by Resource]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[{TableInFocus} : nombre de journaux par ressource]]></Val>
+              <Val><![CDATA[{TableInFocus} : statistiques d’ingestion par ressource]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[{TableInFocus}: Log Count by Resource]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
