@@ -39,12 +39,18 @@
       <Item ItemId=";items.ConfigureGroup.content.items.links3.content.links.90a3a666497549939e440d769800d1af.preText" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[You must have a workspace to use Update Compliance]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Update Compliance を使用するにはワークスペースが必要です]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.ConfigureGroup.content.items.parameters3.content.parameters.b5d3ae3e27c645ae9dd69c940ee79eba.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Select a Log Analytics Workspace to route data to.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[データのルーティング先となる Log Analytics ワークスペースを選択します。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -96,6 +102,9 @@
       <Item ItemId=";items.PrerequisiteGroup.content.items.text1.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[**New policy required**]D;]A;]D;]A;A new policy is required to use Update Compliance: "AllowUpdateComplianceProcessing". If you're already using Update Compliance and have configured your devices prior to May 10, 2021, you must configure devices with this additional policy. ]D;]A;<br></br>]D;]A;]D;]A;**Azure AD required**]D;]A;]D;]A;Beginning October 15, 2022, devices that are neither joined nor hybrid joined to Azure AD will no longer appear in Update Compliance. Learn more on how to enroll your devices into Azure AD <a href='' target='_blank'>How to: Plan your Azure AD join implementation</a>]D;]A;<br></br>]D;]A;]D;]A;**Log Analytics Workspace required**]D;]A;]D;]A;Choose an existing or configure a new Log Analytics Workspace. If you don't have one, see how to <a href='' target='_blank'>Create a Log Analytics workspace in the Azure portal</a>]D;]A;<br></br>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[**新しいポリシーが必要**]D;]A;]D;]A;Update Compliance を使用するには次の新しいポリシーが必要です: "AllowUpdateComplianceProcessing"。Update Compliance を既に使用しており、2021 年 5 月 10 日より前にデバイスを構成している場合は、この追加のポリシーを使用してデバイスを構成する必要があります。]D;]A;<br></br>]D;]A;]D;]A;**Azure AD が必要**]D;]A;]D;]A;2022 年 10 月 15 日以降、Azure AD に参加またはハイブリッド参加していないデバイスは Update Compliance に表示されなくなります。デバイスを Azure AD に登録する方法の詳細情報: <a href='' target='_blank'>方法: Azure AD 参加の実装を計画する</a>]D;]A;<br></br>]D;]A;]D;]A;**Log Analytics ワークスペースが必要**]D;]A;]D;]A;既存のものを選択するか、新しい Log Analytics ワークスペースを構成してください。ない場合は、<a href='' target='_blank'>Azure portal で Log Analytics ワークスペースを作成する</a>方法をご覧ください]D;]A;<br></br>]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -120,6 +129,9 @@
       <Item ItemId=";items.ReviewGroup.content.items.text4.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[**Configure**]D;]A;]D;]A;Azure Subscription: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {Subscription:name}]D;]A;]D;]A;Log Analytics Workspace: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {Workspace:name}]D;]A;]D;]A;Tenant ID: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {tenantId}]D;]A;]D;]A;<br/>]D;]A;]D;]A;**Note**]D;]A;]D;]A;Click the ‘Configure’ button below to configure configure update compliance for your organization. Once you finished the steps for get started with update compliance, we’re still processing your data as a first-time setup. This will typically take 24 hours. ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[**構成**]D;]A;]D;]A;Azure サブスクリプション: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {Subscription:name}]D;]A;]D;]A;Log Analytics ワークスペース: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {Workspace:name}]D;]A;]D;]A;テナント ID: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {tenantId}]D;]A;]D;]A;<br/>]D;]A;]D;]A;**注**]D;]A;]D;]A;下の [構成]5D; ボタンをクリックして、お客様の組織に合わせて Update Compliance を構成してください。Update Compliance の使用を開始するための手順が終わると、お客様のデータが初回セットアップとして処理されます。これには通常、24 時間かかります。 ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -136,7 +148,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Review + Create]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[確認および作成]]></Val>
+            <Val><![CDATA[確認と作成]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
