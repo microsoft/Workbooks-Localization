@@ -25,12 +25,12 @@
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) ontent.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[The CPU score is decided as follows:]D;]A;</br>]D;]A;</br>]D;]A;]D83D;]DD34; <strong>High</strong> - If the percentile 80 of the last day is higher than {CpuHighThreshold}%]D;]A;</br>]D;]A;]D83D;]DFE1; <strong>Medium</strong> - If the median of the percentile 90 of the last week is higher than {CpuLowThreshold}%]D;]A;</br>]D;]A;]D83D;]DFE2; <strong>Low</strong> - Otherwise]]></Val>
+            <Val><![CDATA[The CPU score is decided as follows:]D;]A;</br>]D;]A;</br>]D;]A;]D83D;]DD34; <strong>High</strong> - If the percentile 80 of the last day is higher than {CpuHighThreshold}%]D;]A;</br>]D;]A;]D83D;]DFE1; <strong>Medium</strong> - If the median of the percentile 90 of the last 7 days is higher than {CpuLowThreshold}%]D;]A;</br>]D;]A;]D83D;]DFE2; <strong>Low</strong> - Otherwise]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[A CPU-pontszám meghatározása a következőképpen történik:]D;]A;</br>]D;]A;</br>]D;]A;]D83D;]DD34; <strong>Magas</strong> – Ha a legutóbbi nap 80. percentilise {CpuHighThreshold}%-nál magasabb arányú]D;]A;</br>]D;]A;]D83D;]DFE1; <strong>Közepes</strong> – Ha a legutóbbi hét 90. percentilisének mediánja {CpuLowThreshold}%-nál magasabb arányú]D;]A;</br>]D;]A;]D83D;]DFE2; <strong>Alacsony</strong> – Egyéb eset]]></Val>
+              <Val><![CDATA[A CPU-pontszám meghatározása a következőképpen történik:]D;]A;</br>]D;]A;</br>]D;]A;]D83D;]DD34; <strong>Magas</strong> – Ha a legutóbbi nap 80. percentilise {CpuHighThreshold}%-nál magasabb arányú]D;]A;</br>]D;]A;]D83D;]DFE1; <strong>Közepes</strong> – Ha az elmúlt 7 nap 90. percentilisének mediánja {CpuLowThreshold}%-nál magasabb arányú]D;]A;</br>]D;]A;]D83D;]DFE2; <strong>Alacsony</strong> – Egyéb eset]]></Val>
             </Tgt>
             <Prev Cat="Text">
-              <Val><![CDATA[The CPU score is decided as follows:]D;]A;</br>]D;]A;</br>]D;]A;]D83D;]DD34; <strong>High</strong> - If the precentile 80 of the last day is higher than {CpuHighThreshold}%]D;]A;</br>]D;]A;]D83D;]DFE1; <strong>Medium</strong> - If the median of the precentile 90 of the last week is higher than {CpuLowThreshold}%]D;]A;</br>]D;]A;]D83D;]DFE2; <strong>Low</strong> - Otherwise]]></Val>
+              <Val><![CDATA[The CPU score is decided as follows:]D;]A;</br>]D;]A;</br>]D;]A;]D83D;]DD34; <strong>High</strong> - If the percentile 80 of the last day is higher than {CpuHighThreshold}%]D;]A;</br>]D;]A;]D83D;]DFE1; <strong>Medium</strong> - If the median of the percentile 90 of the last week is higher than {CpuLowThreshold}%]D;]A;</br>]D;]A;]D83D;]DFE2; <strong>Low</strong> - Otherwise]]></Val>
             </Prev>
           </Str>
           <Disp Icon="Str" />
@@ -64,10 +64,13 @@
         </Item>
         <Item ItemId=";(...) rviewtable.content.gridSettings.labelSettings.LastWeekPercentile90Median.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Last Week Percentile 90 Median]]></Val>
+            <Val><![CDATA[Last 7 days Percentile 90 Median]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Utolsó heti 90-es percentilis mediánja]]></Val>
+              <Val><![CDATA[Az elmúlt 7 nap 90. percentilisének mediánja]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[Last Week Percentile 90 Median]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
