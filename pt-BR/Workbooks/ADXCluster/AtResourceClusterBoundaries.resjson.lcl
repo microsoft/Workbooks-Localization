@@ -25,12 +25,12 @@
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) ontent.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[The CPU score is decided as follows:]D;]A;</br>]D;]A;</br>]D;]A;]D83D;]DD34; <strong>High</strong> - If the percentile 80 of the last day is higher than {CpuHighThreshold}%]D;]A;</br>]D;]A;]D83D;]DFE1; <strong>Medium</strong> - If the median of the percentile 90 of the last week is higher than {CpuLowThreshold}%]D;]A;</br>]D;]A;]D83D;]DFE2; <strong>Low</strong> - Otherwise]]></Val>
+            <Val><![CDATA[The CPU score is decided as follows:]D;]A;</br>]D;]A;</br>]D;]A;]D83D;]DD34; <strong>High</strong> - If the percentile 80 of the last day is higher than {CpuHighThreshold}%]D;]A;</br>]D;]A;]D83D;]DFE1; <strong>Medium</strong> - If the median of the percentile 90 of the last 7 days is higher than {CpuLowThreshold}%]D;]A;</br>]D;]A;]D83D;]DFE2; <strong>Low</strong> - Otherwise]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[A pontuação da CPU é decidida da seguinte forma:]D;]A;</br>]D;]A;</br>]D;]A;]D83D;]DD34; <strong>Alto</strong> - Se o percentil 80 do último dia estiver maior que {CpuHighThreshold}%]D;]A;</br>]D;]A;]D83D;]DFE1; <strong>Médio</strong> - Se a mediana do percentil 90 da última semana estiver maior que {CpuLowThreshold}%]D;]A;</br>]D;]A;]D83D;]DFE2; <strong>Baixo</strong> - Caso contrário]]></Val>
+              <Val><![CDATA[A pontuação da CPU é decidida da seguinte forma:]D;]A;</br>]D;]A;</br>]D;]A;]D83D;]DD34; <strong>Alta</strong> - Se o percentil 80 do último dia for superior a {CpuHighThreshold}%]D;]A;</br>]D;]A;]D83D;]DFE1; <strong>Média</strong> - Se a mediana do percentil 90 dos últimos 7 dias for superior a {CpuLowThreshold}%]D;]A;</br>]D;]A;]D83D;]DFE2; <strong>Baixa</strong> - Caso contrário]]></Val>
             </Tgt>
             <Prev Cat="Text">
-              <Val><![CDATA[The CPU score is decided as follows:]D;]A;</br>]D;]A;</br>]D;]A;]D83D;]DD34; <strong>High</strong> - If the precentile 80 of the last day is higher than {CpuHighThreshold}%]D;]A;</br>]D;]A;]D83D;]DFE1; <strong>Medium</strong> - If the median of the precentile 90 of the last week is higher than {CpuLowThreshold}%]D;]A;</br>]D;]A;]D83D;]DFE2; <strong>Low</strong> - Otherwise]]></Val>
+              <Val><![CDATA[The CPU score is decided as follows:]D;]A;</br>]D;]A;</br>]D;]A;]D83D;]DD34; <strong>High</strong> - If the percentile 80 of the last day is higher than {CpuHighThreshold}%]D;]A;</br>]D;]A;]D83D;]DFE1; <strong>Medium</strong> - If the median of the percentile 90 of the last week is higher than {CpuLowThreshold}%]D;]A;</br>]D;]A;]D83D;]DFE2; <strong>Low</strong> - Otherwise]]></Val>
             </Prev>
           </Str>
           <Disp Icon="Str" />
@@ -64,10 +64,13 @@
         </Item>
         <Item ItemId=";(...) rviewtable.content.gridSettings.labelSettings.LastWeekPercentile90Median.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Last Week Percentile 90 Median]]></Val>
+            <Val><![CDATA[Last 7 days Percentile 90 Median]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Mediana de 90 de Percentil da Última Semana]]></Val>
+              <Val><![CDATA[Mediana do Percentil 90 dos Últimos 7 dias]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[Last Week Percentile 90 Median]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>

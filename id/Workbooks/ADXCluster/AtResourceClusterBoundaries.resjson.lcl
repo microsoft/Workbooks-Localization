@@ -25,12 +25,12 @@
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) ontent.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[The CPU score is decided as follows:]D;]A;</br>]D;]A;</br>]D;]A;]D83D;]DD34; <strong>High</strong> - If the percentile 80 of the last day is higher than {CpuHighThreshold}%]D;]A;</br>]D;]A;]D83D;]DFE1; <strong>Medium</strong> - If the median of the percentile 90 of the last week is higher than {CpuLowThreshold}%]D;]A;</br>]D;]A;]D83D;]DFE2; <strong>Low</strong> - Otherwise]]></Val>
+            <Val><![CDATA[The CPU score is decided as follows:]D;]A;</br>]D;]A;</br>]D;]A;]D83D;]DD34; <strong>High</strong> - If the percentile 80 of the last day is higher than {CpuHighThreshold}%]D;]A;</br>]D;]A;]D83D;]DFE1; <strong>Medium</strong> - If the median of the percentile 90 of the last 7 days is higher than {CpuLowThreshold}%]D;]A;</br>]D;]A;]D83D;]DFE2; <strong>Low</strong> - Otherwise]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Skor CPU ditentukan sebagai berikut:]D;]A;</br>]D;]A;</br>]D;]A;]D83D;]DD34; <strong>Tinggi</strong> - Jika persentil 80 dari hari terakhir lebih tinggi dari {CpuHighThreshold}%]D;]A;</br>]D;]A;]D83D;]DFE1; <strong>Sedang</strong> - Jika median persentil 90 dari minggu terakhir lebih tinggi dari {CpuLowThreshold}%]D;]A;</br>]D;]A;]D83D;]DFE2; <strong>Rendah</strong> - Jika bukan keduanya]]></Val>
+              <Val><![CDATA[Skor CPU ditentukan sebagai berikut:]D;]A;</br>]D;]A;</br>]D;]A;]D83D;]DD34; <strong>Tinggi</strong> - Jika persentil 80 dari hari terakhir lebih tinggi dari {CpuHighThreshold}%]D;]A;</br>]D;]A;]D83D;]DFE1; <strong>Sedang</strong> - Jika median persentil 90 pada 7 hari terakhir lebih tinggi dari {CpuLowThreshold}%]D;]A;</br>]D;]A;]D83D;]DFE2; <strong>Rendah</strong> - Jika bukan keduanya]]></Val>
             </Tgt>
             <Prev Cat="Text">
-              <Val><![CDATA[The CPU score is decided as follows:]D;]A;</br>]D;]A;</br>]D;]A;]D83D;]DD34; <strong>High</strong> - If the precentile 80 of the last day is higher than {CpuHighThreshold}%]D;]A;</br>]D;]A;]D83D;]DFE1; <strong>Medium</strong> - If the median of the precentile 90 of the last week is higher than {CpuLowThreshold}%]D;]A;</br>]D;]A;]D83D;]DFE2; <strong>Low</strong> - Otherwise]]></Val>
+              <Val><![CDATA[The CPU score is decided as follows:]D;]A;</br>]D;]A;</br>]D;]A;]D83D;]DD34; <strong>High</strong> - If the percentile 80 of the last day is higher than {CpuHighThreshold}%]D;]A;</br>]D;]A;]D83D;]DFE1; <strong>Medium</strong> - If the median of the percentile 90 of the last week is higher than {CpuLowThreshold}%]D;]A;</br>]D;]A;]D83D;]DFE2; <strong>Low</strong> - Otherwise]]></Val>
             </Prev>
           </Str>
           <Disp Icon="Str" />
@@ -64,10 +64,13 @@
         </Item>
         <Item ItemId=";(...) rviewtable.content.gridSettings.labelSettings.LastWeekPercentile90Median.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[Last Week Percentile 90 Median]]></Val>
+            <Val><![CDATA[Last 7 days Percentile 90 Median]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Median Persentil Minggu Lalu 90]]></Val>
+              <Val><![CDATA[Median Persentil 90 pada 7 hari terakhir]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[Last Week Percentile 90 Median]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
