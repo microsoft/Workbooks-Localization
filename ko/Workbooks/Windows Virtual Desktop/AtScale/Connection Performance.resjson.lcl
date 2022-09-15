@@ -26,6 +26,9 @@
         <Item ItemId=";(...) labelSettings.GatewayRegion.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Gateway region]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[게이트웨이 영역]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -131,12 +134,18 @@
         <Item ItemId=";(...) content.items.ConnectStagesAll.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Connection stages: {HostpoolText}]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[연결 스테이지: {HostpoolText}]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
         <Item ItemId=";(...) content.items.LogonStagesAll.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Winlogon stages: {HostpoolText}]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Winlogon 스테이지: {HostpoolText}]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -228,18 +237,27 @@
       <Item ItemId=";items.ConnectionPerformanceGroup.content.items.Roundtriptimegroup.content.items.RTTbyregion.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[RTT by gateway region]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[게이트웨이 영역별 RTT]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.ConnectionPerformanceGroup.content.items.Roundtriptimegroup.content.items.RttTimeChart.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[RTT median and 95th percentile for {selectedRegion}]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[{selectedRegion}에 대한 RTT 중앙값 및 95번째 백분위수]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.ConnectionPerformanceGroup.content.items.Roundtriptimegroup.content.items.TopUsersByMedian.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[20 Top users by RTT median]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[RTT 중앙값별 상위 사용자 20명]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
