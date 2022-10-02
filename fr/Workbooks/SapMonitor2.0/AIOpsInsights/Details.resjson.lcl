@@ -15,7 +15,7 @@
           <Str Cat="Text">
             <Val><![CDATA[Event Type]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[Type d'événement]]></Val>
+              <Val><![CDATA[Type d’événement]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
@@ -26,6 +26,9 @@
         <Item ItemId=";(...) curedTime.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Occured Time]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Heure de l’occurrence]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -35,6 +38,9 @@
         <Item ItemId=";(...) tle.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[RCA]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[RCA]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -42,12 +48,18 @@
       <Item ItemId=";items.invalidTimeAlert.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[The selected time range is too narrow to provide valuable insights.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[L’intervalle de temps sélectionné est trop étroit pour fournir des insights utiles.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.selectionDetails.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<span>**SAP System** - {SID}</span>]D;]A;<br/>]D;]A;<span>**Providers** - {Provider:label}</span>]D;]A;<br/>]D;]A;<span>**Process** - {Process}</span>]D;]A;<br/>]D;]A;<span>**VM** - {VM:name}</span>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<span>**Système SAP** - {SID}</span>]D;]A;<br/>]D;]A;<span>**Fournisseurs** - {Provider:label}</span>]D;]A;<br/>]D;]A;<span>**Processus** - {Process}</span>]D;]A;<br/>]D;]A;<span>**Machine virtuelle** - {VM:name}</span>]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -55,7 +67,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Availability Status Trend]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Tendance de l'état de disponibilité]]></Val>
+            <Val><![CDATA[Tendance de l’état de disponibilité]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -63,6 +75,9 @@
       <Item ItemId=";items.visibilityCheck.content.items.processInsights.content.items.statTiles.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Availability Insights]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Informations sur la disponibilité]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -87,24 +102,36 @@
       <Item ItemId=";items.visibilityCheck.content.items.vmInsights.content.items.disclaimer.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[These insights are only provided for SAP downtimes caused by Azure VM health events. Root causes provided by Health events does not cover 100% of VM downtimes]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Ces insights sont fournis uniquement pour les temps d’arrêt SAP causés par des événements d’intégrité de la machine virtuelle Azure. Les causes principales fournies par les événements d’intégrité ne couvrent pas 100 % des temps d’arrêt de la machine virtuelle]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.visibilityCheck.content.items.vmInsights.content.items.rcaDetails.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<span style="font-size:0.8rem;">**{rcaAvailabilityState}**: Root Cause Analysis (RCA) - {rcaTitle}</span>]D;]A;]D;]A;<span style="font-size:0.8rem;">**Root Cause**</span><br>]D;]A;<span style="font-size:0.8rem;">{rcaDescription}</span><br><br>]D;]A;<span style="font-size:0.8rem;">**{rcaDateTime} UTC**</span><br>]D;]A;<span style="font-size:0.8rem;">**Instance Name:** {VM:name}</span><br>]D;]A;<span style="font-size:0.8rem;">**Azure Resource Id:** {VM:id}</span><br>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<span style="font-size:0.8rem;">**{rcaAvailabilityState}** : Analyse de la cause racine (RCA) - {rcaTitle}</span>]D;]A;]D;]A;<span style="font-size:0.8rem;">**Cause racine**</span><br>]D;]A;<span style="font-size:0.8rem;">{rcaDescription}</span><br><br>]D;]A;<span style="font-size:0.8rem;">**{rcaDateTime} UTC**</span><br>]D;]A;<span style="font-size:0.8rem;">**Nom de l’instance :** {VM:name}</span><br>]D;]A;<span style="font-size:0.8rem;">**ID de ressource Azure :** {VM:id}</span><br>]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.visibilityCheck.content.items.vmInsights.content.items.vmHealthEvents.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No health events have been logged in this time period.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Aucun événement d’intégrité n’a été enregistré pendant cette période.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.visibilityCheck.content.items.vmInsights.content.items.vmHealthEvents.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[VM Health Events]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Événements d’intégrité]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

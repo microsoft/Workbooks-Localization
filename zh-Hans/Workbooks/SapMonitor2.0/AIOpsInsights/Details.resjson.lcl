@@ -26,6 +26,9 @@
         <Item ItemId=";(...) curedTime.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Occured Time]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[发生时间]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -35,6 +38,9 @@
         <Item ItemId=";(...) tle.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[RCA]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[RCA]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -42,12 +48,18 @@
       <Item ItemId=";items.invalidTimeAlert.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[The selected time range is too narrow to provide valuable insights.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[所选时间范围太窄，无法提供有价值的见解。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.selectionDetails.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<span>**SAP System** - {SID}</span>]D;]A;<br/>]D;]A;<span>**Providers** - {Provider:label}</span>]D;]A;<br/>]D;]A;<span>**Process** - {Process}</span>]D;]A;<br/>]D;]A;<span>**VM** - {VM:name}</span>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<span>**SAP 系统** - {SID}</span>]D;]A;<br/>]D;]A;<span>**提供程序** - {Provider:label}</span>]D;]A;<br/>]D;]A;<span>**进程** - {Process}</span>]D;]A;<br/>]D;]A;<span>**VM** - {VM:name}</span>]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -63,6 +75,9 @@
       <Item ItemId=";items.visibilityCheck.content.items.processInsights.content.items.statTiles.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Availability Insights]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[可用性见解]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -87,24 +102,36 @@
       <Item ItemId=";items.visibilityCheck.content.items.vmInsights.content.items.disclaimer.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[These insights are only provided for SAP downtimes caused by Azure VM health events. Root causes provided by Health events does not cover 100% of VM downtimes]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[这些见解仅针对 Azure VM 运行状况事件导致的 SAP 停机时间。运行状况事件提供的根本原因不覆盖 100% 的 VM 停机时间]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.visibilityCheck.content.items.vmInsights.content.items.rcaDetails.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<span style="font-size:0.8rem;">**{rcaAvailabilityState}**: Root Cause Analysis (RCA) - {rcaTitle}</span>]D;]A;]D;]A;<span style="font-size:0.8rem;">**Root Cause**</span><br>]D;]A;<span style="font-size:0.8rem;">{rcaDescription}</span><br><br>]D;]A;<span style="font-size:0.8rem;">**{rcaDateTime} UTC**</span><br>]D;]A;<span style="font-size:0.8rem;">**Instance Name:** {VM:name}</span><br>]D;]A;<span style="font-size:0.8rem;">**Azure Resource Id:** {VM:id}</span><br>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<span style="font-size:0.8rem;">**{rcaAvailabilityState}**: 根本原因分析(RCA) - {rcaTitle}</span>]D;]A;]D;]A;<span style="font-size:0.8rem;">**根本原因**</span><br>]D;]A;<span style="font-size:0.8rem;">{rcaDescription}</span><br><br>]D;]A;<span style="font-size:0.8rem;">**{rcaDateTime} UTC**</span><br>]D;]A;<span style="font-size:0.8rem;">**实例名称:** {VM:name}</span><br>]D;]A;<span style="font-size:0.8rem;">**Azure 资源 ID:** {VM:id}</span><br>]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.visibilityCheck.content.items.vmInsights.content.items.vmHealthEvents.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No health events have been logged in this time period.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[此时间段内未记录任何运行状况事件。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.visibilityCheck.content.items.vmInsights.content.items.vmHealthEvents.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[VM Health Events]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[VM 运行状况事件]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>

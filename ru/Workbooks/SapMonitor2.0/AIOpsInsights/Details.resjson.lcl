@@ -26,6 +26,9 @@
         <Item ItemId=";(...) curedTime.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Occured Time]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Время возникновения]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -35,6 +38,9 @@
         <Item ItemId=";(...) tle.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[RCA]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[RCA]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -42,12 +48,18 @@
       <Item ItemId=";items.invalidTimeAlert.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[The selected time range is too narrow to provide valuable insights.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Выбранный диапазон времени слишком узкий для предоставления значимых аналитических сведений.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.selectionDetails.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<span>**SAP System** - {SID}</span>]D;]A;<br/>]D;]A;<span>**Providers** - {Provider:label}</span>]D;]A;<br/>]D;]A;<span>**Process** - {Process}</span>]D;]A;<br/>]D;]A;<span>**VM** - {VM:name}</span>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<span>**Система SAP** - {SID}</span>]D;]A;<br/>]D;]A;<span>**Поставщики** - {Provider:label}</span>]D;]A;<br/>]D;]A;<span>**Процесс** - {Process}</span>]D;]A;<br/>]D;]A;<span>**Виртуальная машина** - {VM:name}</span>]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -63,6 +75,9 @@
       <Item ItemId=";items.visibilityCheck.content.items.processInsights.content.items.statTiles.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Availability Insights]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Аналитика доступности]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -87,24 +102,36 @@
       <Item ItemId=";items.visibilityCheck.content.items.vmInsights.content.items.disclaimer.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[These insights are only provided for SAP downtimes caused by Azure VM health events. Root causes provided by Health events does not cover 100% of VM downtimes]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Эти аналитические сведения предоставляются только для простоев SAP, вызванных событиями работоспособности виртуальных машин Azure. Первопричины, предоставляемые событиями работоспособности, не охватывают 100% простоев виртуальных машин]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.visibilityCheck.content.items.vmInsights.content.items.rcaDetails.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<span style="font-size:0.8rem;">**{rcaAvailabilityState}**: Root Cause Analysis (RCA) - {rcaTitle}</span>]D;]A;]D;]A;<span style="font-size:0.8rem;">**Root Cause**</span><br>]D;]A;<span style="font-size:0.8rem;">{rcaDescription}</span><br><br>]D;]A;<span style="font-size:0.8rem;">**{rcaDateTime} UTC**</span><br>]D;]A;<span style="font-size:0.8rem;">**Instance Name:** {VM:name}</span><br>]D;]A;<span style="font-size:0.8rem;">**Azure Resource Id:** {VM:id}</span><br>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<span style="font-size:0.8rem;">**{rcaAvailabilityState}**: анализ первопричины (RCA) - {rcaTitle}</span>]D;]A;]D;]A;<span style="font-size:0.8rem;">**Первопричина**</span><br>]D;]A;<span style="font-size:0.8rem;">{rcaDescription}</span><br><br>]D;]A;<span style="font-size:0.8rem;">**{rcaDateTime} в формате UTC**</span><br>]D;]A;<span style="font-size:0.8rem;">**Имя экземпляра:** {VM:name}</span><br>]D;]A;<span style="font-size:0.8rem;">**Идентификатор ресурса Azure:** {VM:id}</span><br>]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.visibilityCheck.content.items.vmInsights.content.items.vmHealthEvents.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No health events have been logged in this time period.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[За этот период времени не зарегистрировано ни один из событий работоспособности.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.visibilityCheck.content.items.vmInsights.content.items.vmHealthEvents.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[VM Health Events]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[События работоспособности виртуальных машин]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
