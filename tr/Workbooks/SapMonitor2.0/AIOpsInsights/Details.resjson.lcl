@@ -26,6 +26,9 @@
         <Item ItemId=";(...) curedTime.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Occured Time]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Oluşma Zamanı]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -35,6 +38,9 @@
         <Item ItemId=";(...) tle.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[RCA]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[RCA]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -42,12 +48,18 @@
       <Item ItemId=";items.invalidTimeAlert.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[The selected time range is too narrow to provide valuable insights.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Seçilen zaman aralığı değerli içgörüler sağlamak için çok dar.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.selectionDetails.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<span>**SAP System** - {SID}</span>]D;]A;<br/>]D;]A;<span>**Providers** - {Provider:label}</span>]D;]A;<br/>]D;]A;<span>**Process** - {Process}</span>]D;]A;<br/>]D;]A;<span>**VM** - {VM:name}</span>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<span>**SAP Sistemi** - {SID}</span>]D;]A;<br/>]D;]A;<span>**Sağlayıcılar** - {Provider:label}</span>]D;]A;<br/>]D;]A;<span>**İşlem** - {Process}</span>]D;]A;<br/>]D;]A;<span>**VM** - {VM:name}</span>]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -63,6 +75,9 @@
       <Item ItemId=";items.visibilityCheck.content.items.processInsights.content.items.statTiles.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Availability Insights]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Kullanılabilirlik İçgörüleri]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -87,24 +102,36 @@
       <Item ItemId=";items.visibilityCheck.content.items.vmInsights.content.items.disclaimer.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[These insights are only provided for SAP downtimes caused by Azure VM health events. Root causes provided by Health events does not cover 100% of VM downtimes]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Bu içgörüler yalnızca Azure VM sistem durumu olaylarından kaynaklanan SAP kesinti süreleri için sağlanır. Sistem Durumu olayları tarafından sağlanan kök nedenler VM kesinti sürelerinin %100’ünü kapsamıyor]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.visibilityCheck.content.items.vmInsights.content.items.rcaDetails.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[<span style="font-size:0.8rem;">**{rcaAvailabilityState}**: Root Cause Analysis (RCA) - {rcaTitle}</span>]D;]A;]D;]A;<span style="font-size:0.8rem;">**Root Cause**</span><br>]D;]A;<span style="font-size:0.8rem;">{rcaDescription}</span><br><br>]D;]A;<span style="font-size:0.8rem;">**{rcaDateTime} UTC**</span><br>]D;]A;<span style="font-size:0.8rem;">**Instance Name:** {VM:name}</span><br>]D;]A;<span style="font-size:0.8rem;">**Azure Resource Id:** {VM:id}</span><br>]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[<span style="font-size:0.8rem;">**{rcaAvailabilityState}**: Kök Neden Analizi (RCA) - {rcaTitle}</span>]D;]A;]D;]A;<span style="font-size:0.8rem;">**Kök Neden**</span><br>]D;]A;<span style="font-size:0.8rem;">{rcaDescription}</span><br><br>]D;]A;<span style="font-size:0.8rem;">**{rcaDateTime} UTC**</span><br>]D;]A;<span style="font-size:0.8rem;">**Örnek Adı:** {VM:name}</span><br>]D;]A;<span style="font-size:0.8rem;">**Azure Kaynak Kimliği:** {VM:id}</span><br>]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.visibilityCheck.content.items.vmInsights.content.items.vmHealthEvents.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No health events have been logged in this time period.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Bu zaman diliminde hiçbir sistem durumu olayı günlüğe kaydedilmedi.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.visibilityCheck.content.items.vmInsights.content.items.vmHealthEvents.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[VM Health Events]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[VM Sistem Durumu Olayları]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
