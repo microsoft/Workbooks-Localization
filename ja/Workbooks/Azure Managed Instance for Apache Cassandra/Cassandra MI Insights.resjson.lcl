@@ -11,18 +11,33 @@
       <Disp Icon="Str" Disp="true" LocTbl="false" />
       <Item ItemId=";items.Allmemtableslivedatasize.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[All memtables live data size by node]]></Val>
+          <Val><![CDATA[All memtables live data size by node (average)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[ノード別のすべての memtables のライブ データ サイズ]]></Val>
+            <Val><![CDATA[ノード別のすべての memtables のライブ データ サイズ (平均)]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[All memtables live data size by node]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Allmemtablesoffheapsize.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[All memtables off heap size by node]]></Val>
+          <Val><![CDATA[All memtables off heap size by node (average)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[ノード別のヒープ サイズを除くすべての memtables]]></Val>
+            <Val><![CDATA[ノード別のヒープ サイズを除くすべての memtables (平均)]]></Val>
+          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[All memtables off heap size by node]]></Val>
+          </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.CPUusageactivebynodemax.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[CPU usage active by node (max)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[ノード別のアクティブな CPU 使用率 (最大)]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -54,120 +69,177 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
+      <Item ItemId=";items.Diskutilisationbynodemax.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Disk utilisation by node (max)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[ノード別のディスクの使用率 (最大)]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.Failuresbyrequesttype.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Failures by request type]]></Val>
+          <Val><![CDATA[Failures by request type (average)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[要求の種類別の失敗]]></Val>
+            <Val><![CDATA[要求の種類別の失敗 (平均)]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Failures by request type]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Livediskspaceused.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Live disk space used by node]]></Val>
+          <Val><![CDATA[Live disk space used by node (average)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[ノードで使用されたライブ ディスク領域]]></Val>
+            <Val><![CDATA[ノード別の使用されたライブ ディスク領域 (平均)]]></Val>
+          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Live disk space used by node]]></Val>
+          </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Memoryutilisationbynodemax.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Memory utilisation by node (max)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[ノード別のメモリの使用率 (最大)]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.P99Overallrequestlatency.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[P99 Overall request latency by request type]]></Val>
+          <Val><![CDATA[P99 Overall request latency by request type (average)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[P99 要求の種類別の全体的な要求の待機時間]]></Val>
+            <Val><![CDATA[P99 要求の種類別の全体的な要求の待機時間 (平均)]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[P99 Overall request latency by request type]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.P99Overallrequestlatency2.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[P99 Overall request latency by request type]]></Val>
+          <Val><![CDATA[P99 Overall request latency by request type (average)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[P99 要求の種類別の全体的な要求の待機時間]]></Val>
+            <Val><![CDATA[P99 要求の種類別の全体的な要求の待機時間 (平均)]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[P99 Overall request latency by request type]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.P99readlatencyinmicroseconds.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[P99 read latency (in microseconds) by keyspace]]></Val>
+          <Val><![CDATA[P99 read latency (in microseconds) by keyspace (average)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[P99 キースペース別の読み取り待機時間 (マイクロ秒)]]></Val>
+            <Val><![CDATA[P99 キースペース別の読み取り待機時間 (マイクロ秒) (平均)]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[P99 read latency (in microseconds) by keyspace]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.P99writelatencyinmicroseconds.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[P99 write latency (in microseconds) by keyspace]]></Val>
+          <Val><![CDATA[P99 write latency (in microseconds) by keyspace (average)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[P99 キースペース別の書き込み待機時間 (マイクロ秒)]]></Val>
+            <Val><![CDATA[P99 キースペース別の書き込み待機時間 (マイクロ秒) (平均)]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[P99 write latency (in microseconds) by keyspace]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Percentageoftablesrepaired.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Percentage of tables repaired by node]]></Val>
+          <Val><![CDATA[Percentage of tables repaired by node (average)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[ノードで修復されたテーブルの割合]]></Val>
+            <Val><![CDATA[ノード別の修復されたテーブルの割合 (平均)]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Percentage of tables repaired by node]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Percentageoftablesrepaired2.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Percentage of tables repaired by node]]></Val>
+          <Val><![CDATA[Percentage of tables repaired by node (average)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[ノードで修復されたテーブルの割合]]></Val>
+            <Val><![CDATA[ノード別の修復されたテーブルの割合 (平均)]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Percentage of tables repaired by node]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Preparedstatementsexecuted.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Prepared statements executed by node]]></Val>
+          <Val><![CDATA[Prepared statements executed by node (average)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[ノードで実行されたプリペアド ステートメント]]></Val>
+            <Val><![CDATA[ノード別の実行されたプリペアド ステートメント (平均)]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Prepared statements executed by node]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Regularstatementsexecutedbynode.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Regular statements executed by node]]></Val>
+          <Val><![CDATA[Regular statements executed by node (average)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[ノードで実行されたレギュラー ステートメント]]></Val>
+            <Val><![CDATA[ノード別の実行されたレギュラー ステートメント (平均)]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Regular statements executed by node]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Timeoutsbyrequesttype.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Timeouts by request type]]></Val>
+          <Val><![CDATA[Timeouts by request type (average)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[要求の種類別のタイムアウト]]></Val>
+            <Val><![CDATA[要求の種類別のタイムアウト (平均)]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Timeouts by request type]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Totaldiskspaceused.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Total disk space used by node]]></Val>
+          <Val><![CDATA[Total disk space used by node (average)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[ノードで使用されたディスク領域の合計]]></Val>
+            <Val><![CDATA[ノード別の使用されたディスク領域の合計 (平均)]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Total disk space used by node]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.activetasks.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[active tasks by pool name (avg)]]></Val>
+          <Val><![CDATA[active tasks by pool name (average)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[プール名別のアクティブなタスク (平均)]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[active tasks by pool name (avg)]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -263,28 +335,37 @@
       </Item>
       <Item ItemId=";items.maxpoolsize.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[max pool size by pool name (avg)]]></Val>
+          <Val><![CDATA[max pool size by pool name (average)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[プール名別の最大プール サイズ (平均)]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[max pool size by pool name (avg)]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.pendingcompactions.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[pending compactions by keyspace (avg)]]></Val>
+          <Val><![CDATA[pending compactions by keyspace (average)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[キースペース別の保留中の圧縮 (平均)]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[pending compactions by keyspace (avg)]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.pendingtasks.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[pending tasks by pool name (avg)]]></Val>
+          <Val><![CDATA[pending tasks by pool name (average)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[プール名別の保留中のタスク (平均)]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[pending tasks by pool name (avg)]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>

@@ -11,18 +11,33 @@
       <Disp Icon="Str" Disp="true" LocTbl="false" />
       <Item ItemId=";items.Allmemtableslivedatasize.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[All memtables live data size by node]]></Val>
+          <Val><![CDATA[All memtables live data size by node (average)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Semua ukuran data langsung memtable berdasarkan node]]></Val>
+            <Val><![CDATA[Semua ukuran data langsung memtable berdasarkan node (rata-rata)]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[All memtables live data size by node]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Allmemtablesoffheapsize.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[All memtables off heap size by node]]></Val>
+          <Val><![CDATA[All memtables off heap size by node (average)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Semua ukuran timbunan di luar memtable berdasarkan node]]></Val>
+            <Val><![CDATA[Semua ukuran tumpukan di luar memtable berdasarkan node (rata-rata)]]></Val>
+          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[All memtables off heap size by node]]></Val>
+          </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.CPUusageactivebynodemax.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[CPU usage active by node (max)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Penggunaan CPU aktif berdasarkan node (maksimal)]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -54,120 +69,177 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
+      <Item ItemId=";items.Diskutilisationbynodemax.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Disk utilisation by node (max)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Penggunaan disk berdasarkan node (maksimal)]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.Failuresbyrequesttype.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Failures by request type]]></Val>
+          <Val><![CDATA[Failures by request type (average)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Kegagalan berdasarkan tipe permintaan]]></Val>
+            <Val><![CDATA[Kegagalan berdasarkan tipe permintaan (rata-rata)]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Failures by request type]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Livediskspaceused.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Live disk space used by node]]></Val>
+          <Val><![CDATA[Live disk space used by node (average)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Ruang disk langsung yang digunakan oleh node]]></Val>
+            <Val><![CDATA[Ruang disk langsung yang digunakan berdasarkan node (rata-rata)]]></Val>
+          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Live disk space used by node]]></Val>
+          </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Memoryutilisationbynodemax.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Memory utilisation by node (max)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Penggunaan memori berdasarkan node (maksimal)]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.P99Overallrequestlatency.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[P99 Overall request latency by request type]]></Val>
+          <Val><![CDATA[P99 Overall request latency by request type (average)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Latensi permintaan Keseluruhan P99 berdasarkan tipe permintaan]]></Val>
+            <Val><![CDATA[Latensi permintaan Keseluruhan P99 berdasarkan tipe permintaan (rata-rata)]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[P99 Overall request latency by request type]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.P99Overallrequestlatency2.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[P99 Overall request latency by request type]]></Val>
+          <Val><![CDATA[P99 Overall request latency by request type (average)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Latensi permintaan Keseluruhan P99 berdasarkan tipe permintaan]]></Val>
+            <Val><![CDATA[Latensi permintaan Keseluruhan P99 berdasarkan tipe permintaan (rata-rata)]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[P99 Overall request latency by request type]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.P99readlatencyinmicroseconds.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[P99 read latency (in microseconds) by keyspace]]></Val>
+          <Val><![CDATA[P99 read latency (in microseconds) by keyspace (average)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Latensi baca P99 (dalam mikro detik) berdasarkan keyspace]]></Val>
+            <Val><![CDATA[Latensi baca P99 (dalam mikro detik) berdasarkan keyspace (rata-rata)]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[P99 read latency (in microseconds) by keyspace]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.P99writelatencyinmicroseconds.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[P99 write latency (in microseconds) by keyspace]]></Val>
+          <Val><![CDATA[P99 write latency (in microseconds) by keyspace (average)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Latensi tulis P99 (dalam mikro detik) berdasarkan keyspace]]></Val>
+            <Val><![CDATA[Latensi tulis P99 (dalam mikro detik) berdasarkan keyspace (rata-rata)]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[P99 write latency (in microseconds) by keyspace]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Percentageoftablesrepaired.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Percentage of tables repaired by node]]></Val>
+          <Val><![CDATA[Percentage of tables repaired by node (average)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Persentase tabel yang diperbaiki oleh node]]></Val>
+            <Val><![CDATA[Persentase tabel yang diperbaiki berdasarkan node (rata-rata)]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Percentage of tables repaired by node]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Percentageoftablesrepaired2.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Percentage of tables repaired by node]]></Val>
+          <Val><![CDATA[Percentage of tables repaired by node (average)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Persentase tabel yang diperbaiki oleh node]]></Val>
+            <Val><![CDATA[Persentase tabel yang diperbaiki berdasarkan node (rata-rata)]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Percentage of tables repaired by node]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Preparedstatementsexecuted.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Prepared statements executed by node]]></Val>
+          <Val><![CDATA[Prepared statements executed by node (average)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Pernyataan yang disiapkan yang dijalankan berdasarkan node]]></Val>
+            <Val><![CDATA[Pernyataan yang disiapkan dan dijalankan berdasarkan node (rata-rata)]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Prepared statements executed by node]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Regularstatementsexecutedbynode.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Regular statements executed by node]]></Val>
+          <Val><![CDATA[Regular statements executed by node (average)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Pernyataan reguler yang dijalankan berdasarkan node]]></Val>
+            <Val><![CDATA[Pernyataan reguler yang dijalankan berdasarkan node (rata-rata)]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Regular statements executed by node]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Timeoutsbyrequesttype.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Timeouts by request type]]></Val>
+          <Val><![CDATA[Timeouts by request type (average)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Kehabisan waktu berdasarkan tipe permintaan]]></Val>
+            <Val><![CDATA[Kehabisan waktu berdasarkan tipe permintaan (rata-rata)]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Timeouts by request type]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Totaldiskspaceused.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Total disk space used by node]]></Val>
+          <Val><![CDATA[Total disk space used by node (average)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Ruang disk total yang digunakan oleh node]]></Val>
+            <Val><![CDATA[Ruang disk total yang digunakan berdasarkan node (rata-rata)]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Total disk space used by node]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.activetasks.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[active tasks by pool name (avg)]]></Val>
+          <Val><![CDATA[active tasks by pool name (average)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[tugas aktif berdasarkan nama kumpulan (rata-rata)]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[active tasks by pool name (avg)]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -263,28 +335,37 @@
       </Item>
       <Item ItemId=";items.maxpoolsize.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[max pool size by pool name (avg)]]></Val>
+          <Val><![CDATA[max pool size by pool name (average)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[ukuran kumpulan maks berdasarkan nama kumpulan (rata-rata)]]></Val>
+            <Val><![CDATA[ukuran kumpulan maksimal berdasarkan nama kumpulan (rata-rata)]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[max pool size by pool name (avg)]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.pendingcompactions.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[pending compactions by keyspace (avg)]]></Val>
+          <Val><![CDATA[pending compactions by keyspace (average)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[pemadatan tertunda berdasarkan keyspace (rata-rata)]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[pending compactions by keyspace (avg)]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.pendingtasks.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[pending tasks by pool name (avg)]]></Val>
+          <Val><![CDATA[pending tasks by pool name (average)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[tugas tertunda berdasarkan nama kumpulan (rata-rata)]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[pending tasks by pool name (avg)]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
