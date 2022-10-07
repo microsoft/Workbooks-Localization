@@ -11,18 +11,33 @@
       <Disp Icon="Str" Disp="true" LocTbl="false" />
       <Item ItemId=";items.Allmemtableslivedatasize.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[All memtables live data size by node]]></Val>
+          <Val><![CDATA[All memtables live data size by node (average)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[所有内存表实时数据大小(按节点)]]></Val>
+            <Val><![CDATA[所有内存表实时数据大小(按节点)(平均值)]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[All memtables live data size by node]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Allmemtablesoffheapsize.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[All memtables off heap size by node]]></Val>
+          <Val><![CDATA[All memtables off heap size by node (average)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[所有内存表堆外大小(按节点)]]></Val>
+            <Val><![CDATA[所有内存表堆外大小(按节点)(平均值)]]></Val>
+          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[All memtables off heap size by node]]></Val>
+          </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.CPUusageactivebynodemax.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[CPU usage active by node (max)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[按节点活动 CPU 使用率(最大值)]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -54,120 +69,177 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
+      <Item ItemId=";items.Diskutilisationbynodemax.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Disk utilisation by node (max)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[磁盘使用率(按节点)(最大值)]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.Failuresbyrequesttype.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Failures by request type]]></Val>
+          <Val><![CDATA[Failures by request type (average)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[失败(按请求类型)]]></Val>
+            <Val><![CDATA[失败(按请求类型)(平均值)]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Failures by request type]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Livediskspaceused.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Live disk space used by node]]></Val>
+          <Val><![CDATA[Live disk space used by node (average)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[节点使用的实时磁盘空间]]></Val>
+            <Val><![CDATA[节点使用的实时磁盘空间(平均值)]]></Val>
+          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Live disk space used by node]]></Val>
+          </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Memoryutilisationbynodemax.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Memory utilisation by node (max)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[按节点内存使用率(最大值)]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.P99Overallrequestlatency.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[P99 Overall request latency by request type]]></Val>
+          <Val><![CDATA[P99 Overall request latency by request type (average)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[P99 总体请求延迟(按请求类型)]]></Val>
+            <Val><![CDATA[P99 总体请求延迟(按请求类型)(平均值)]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[P99 Overall request latency by request type]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.P99Overallrequestlatency2.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[P99 Overall request latency by request type]]></Val>
+          <Val><![CDATA[P99 Overall request latency by request type (average)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[P99 总体请求延迟(按请求类型)]]></Val>
+            <Val><![CDATA[P99 总体请求延迟(按请求类型)(平均值)]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[P99 Overall request latency by request type]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.P99readlatencyinmicroseconds.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[P99 read latency (in microseconds) by keyspace]]></Val>
+          <Val><![CDATA[P99 read latency (in microseconds) by keyspace (average)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[P99 读取延迟(按密钥空间)(微秒)]]></Val>
+            <Val><![CDATA[按密钥空间的 P99 读取延迟(微秒)(平均值)]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[P99 read latency (in microseconds) by keyspace]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.P99writelatencyinmicroseconds.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[P99 write latency (in microseconds) by keyspace]]></Val>
+          <Val><![CDATA[P99 write latency (in microseconds) by keyspace (average)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[P99 写入延迟(按密钥空间)(微秒)]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[P99 write latency (in microseconds) by keyspace]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Percentageoftablesrepaired.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Percentage of tables repaired by node]]></Val>
+          <Val><![CDATA[Percentage of tables repaired by node (average)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[节点修复的表的百分比]]></Val>
+            <Val><![CDATA[节点修复的表的百分比(平均值)]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Percentage of tables repaired by node]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Percentageoftablesrepaired2.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Percentage of tables repaired by node]]></Val>
+          <Val><![CDATA[Percentage of tables repaired by node (average)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[节点修复的表的百分比]]></Val>
+            <Val><![CDATA[节点修复的表的百分比(平均值)]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Percentage of tables repaired by node]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Preparedstatementsexecuted.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Prepared statements executed by node]]></Val>
+          <Val><![CDATA[Prepared statements executed by node (average)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[节点执行的已准备语句]]></Val>
+            <Val><![CDATA[节点执行的已准备语句(平均值)]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Prepared statements executed by node]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Regularstatementsexecutedbynode.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Regular statements executed by node]]></Val>
+          <Val><![CDATA[Regular statements executed by node (average)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[节点执行的常规语句]]></Val>
+            <Val><![CDATA[节点执行的常规语句(平均值)]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Regular statements executed by node]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Timeoutsbyrequesttype.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Timeouts by request type]]></Val>
+          <Val><![CDATA[Timeouts by request type (average)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[超时(按请求类型)]]></Val>
+            <Val><![CDATA[超时(按请求类型)(平均值)]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Timeouts by request type]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Totaldiskspaceused.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Total disk space used by node]]></Val>
+          <Val><![CDATA[Total disk space used by node (average)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[节点使用的总磁盘空间]]></Val>
+            <Val><![CDATA[节点使用的总磁盘空间(平均值)]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Total disk space used by node]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.activetasks.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[active tasks by pool name (avg)]]></Val>
+          <Val><![CDATA[active tasks by pool name (average)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[按池名称的活动任务(平均)]]></Val>
+            <Val><![CDATA[按池名称的活动任务(平均值)]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[active tasks by pool name (avg)]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -263,28 +335,37 @@
       </Item>
       <Item ItemId=";items.maxpoolsize.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[max pool size by pool name (avg)]]></Val>
+          <Val><![CDATA[max pool size by pool name (average)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[最大池大小(按池名称)(平均)]]></Val>
+            <Val><![CDATA[最大池大小(按池名称)(平均值)]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[max pool size by pool name (avg)]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.pendingcompactions.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[pending compactions by keyspace (avg)]]></Val>
+          <Val><![CDATA[pending compactions by keyspace (average)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[挂起的压缩(按密钥空间)(平均)]]></Val>
+            <Val><![CDATA[挂起的压缩(按密钥空间)(平均值)]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[pending compactions by keyspace (avg)]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.pendingtasks.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[pending tasks by pool name (avg)]]></Val>
+          <Val><![CDATA[pending tasks by pool name (average)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[挂起的任务(按池名称)(平均)]]></Val>
+            <Val><![CDATA[挂起的任务(按池名称)(平均值)]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[pending tasks by pool name (avg)]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
