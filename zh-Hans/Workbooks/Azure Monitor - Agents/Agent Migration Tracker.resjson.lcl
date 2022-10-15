@@ -38,6 +38,12 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
+        <Item ItemId=";(...) tings.SCOMAgent.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[SCOM Agent]]></Val>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
         <Item ItemId=";(...) tings.Time.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[AMA Status]]></Val>
@@ -165,6 +171,15 @@
           <Disp Icon="Str" />
         </Item>
       </Item>
+      <Item ItemId=";@items.AzureVMGroup.content.items.AzureVMGroup.content.items.AzureVMCombo.content.gridSettings.labelSettings.SCOMA" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) gent.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[SCOM Agent]]></Val>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
       <Item ItemId=";@items.AzureVMGroup.content.items.AzureVMGroup.content.items.AzureVMCombo.content.gridSettings.labelSettings.Time." ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) label" ItemType="0" PsrId="306" Leaf="true">
@@ -263,6 +278,12 @@
             <Tgt Cat="Text" Stat="Loc" Orig="New">
               <Val><![CDATA[位置]]></Val>
             </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) s.SCOMAgent.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[SCOM Agent]]></Val>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -455,10 +476,13 @@
       </Item>
       <Item ItemId=";items.DCRGroup.content.items.DCRMerged.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[   No Data Collection Rules exist in this subscription with this workspace as a target.]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[No Data Collection Rules exist in this subscription with this workspace as a target.]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[   此订阅中不存在以此工作区为目标的数据收集规则。]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[   No Data Collection Rules exist in this subscription with this workspace as a target.]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -525,6 +549,12 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
+      <Item ItemId=";items.DCRGroup.content.items.nodcrtext.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[No Data Collection Rules fond in the selected subscription with this workspace ({Workspace:label}) as a target. Consider converting your current data collections to Data Collection Rules - [read more here]5D;(https://docs.microsoft.com/en-us/azure/azure-monitor/agents/data-collection-rule-azure-monitor-agent)]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.HybridNoArc.content.items.HybridNoArcGroupshow.content.items.HybridText.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[This tab lists all the on-premises servers or servers managed via other clouds that have reported monitoring agent heartbeat signals in the last 7 days to the selected workspace ({Workspace:name}) from the legacy Log Analytics Agents (MMA/OMS). In order to migrate you must [install Arc agent]5D;(https://docs.microsoft.com/en-us/azure/azure-arc/servers/agent-overview) on these servers first, which is a prerequisite to install the Azure Monitor Agent.]]></Val>
@@ -567,6 +597,12 @@
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[# 台没有 Arc 的混合计算机]]></Val>
           </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.SubscriptionOverview.content.items.NoteaboutHybrid.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[You may have additional machines where the Log Analytics Agent has been deployed directly (not as an extension).  They can be viewed under **Workspace** tab -> migration tracker and/or **Hybrid without Arc** tab]]></Val>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -723,24 +759,6 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.WSOverviewGroup.content.items.Solutionsview.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[No solutions found in this workspace. Please select a different workspace using the drop-down menu at the top of this workbook.]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[在此工作区中找不到解决方案。请使用此工作簿顶部的下拉菜单选择其他工作区。]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.WSOverviewGroup.content.items.Solutionsview.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[{$rowCount} Solutions for {Workspace:name}]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[适用于 {Workspace:name} 的 {$rowCount} 个解决方案]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
       <Item ItemId=";items.WSOverviewGroup.content.items.WSOverviewtitle.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Workspace Overview]]></Val>
@@ -800,6 +818,33 @@
           <Val><![CDATA[Agents in {Workspace:label}]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[{Workspace:label} 中的代理]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.WSOverviewGroup.content.items.solutionsgroup.content.items.SolutionDataMerged.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[{$rowCount} Solutions for {Workspace:name}]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[适用于 {Workspace:name} 的 {$rowCount} 个解决方案]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.WSOverviewGroup.content.items.solutionsgroup.content.items.Solutionsview.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[No solutions found in this workspace. Please select a different workspace using the drop-down menu at the top of this workbook.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[在此工作区中找不到解决方案。请使用此工作簿顶部的下拉菜单选择其他工作区。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.WSOverviewGroup.content.items.solutionsgroup.content.items.Solutionsview.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[{$rowCount} Solutions for {Workspace:name}]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[适用于 {Workspace:name} 的 {$rowCount} 个解决方案]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -885,12 +930,21 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
+      <Item ItemId=";items.globalselectedtabparam.content.parameters.eb4c7bea78f243c7aa0558cc76a7495d.description" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Override selected tab parameter ]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.headertext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[# Azure Monitor Agent Migration Helper (Preview)]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[# Azure Monitor Agent Migration Helper]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[# Azure Monitor 代理迁移帮助程序(预览版)]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[# Azure Monitor Agent Migration Helper (Preview)]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -966,21 +1020,15 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.tabsnoagents.content.links.9b1233aebc6c4468a7cc4f440d7da128.linkLabel" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.tabsnoagents.content.links.9b1233aebc6c4468a7cc4f440d7da128.linkLabel" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Workspace Overview]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[Workspace Overview ({Workspace:label})]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
             <Val><![CDATA[工作区概述]]></Val>
           </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.tabsnoagents.content.links.f3200643ebe74b8ca648e79bdef52d5a.linkLabel" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Data Collection Rules]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[数据收集规则]]></Val>
-          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Workspace Overview]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
