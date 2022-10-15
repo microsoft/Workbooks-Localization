@@ -38,6 +38,15 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
+        <Item ItemId=";(...) tings.SCOMAgent.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[SCOM Agent]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Agente SCOM]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
         <Item ItemId=";(...) tings.Time.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[AMA Status]]></Val>
@@ -165,6 +174,18 @@
           <Disp Icon="Str" />
         </Item>
       </Item>
+      <Item ItemId=";@items.AzureVMGroup.content.items.AzureVMGroup.content.items.AzureVMCombo.content.gridSettings.labelSettings.SCOMA" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) gent.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[SCOM Agent]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Agente SCOM]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
       <Item ItemId=";@items.AzureVMGroup.content.items.AzureVMGroup.content.items.AzureVMCombo.content.gridSettings.labelSettings.Time." ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) label" ItemType="0" PsrId="306" Leaf="true">
@@ -262,6 +283,15 @@
             <Val><![CDATA[Location]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
               <Val><![CDATA[Localização]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) s.SCOMAgent.label" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[SCOM Agent]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Agente SCOM]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
@@ -455,10 +485,13 @@
       </Item>
       <Item ItemId=";items.DCRGroup.content.items.DCRMerged.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[   No Data Collection Rules exist in this subscription with this workspace as a target.]]></Val>
+          <Val><![CDATA[No Data Collection Rules exist in this subscription with this workspace as a target.]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[   Não existe nenhuma Regra de Recolha de Dados nesta subscrição com esta área de trabalho como destino.]]></Val>
+            <Val><![CDATA[Não existem nenhumas Regras de Recolha de Dados nesta subscrição com esta área de trabalho como destino.]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[   No Data Collection Rules exist in this subscription with this workspace as a target.]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -525,6 +558,15 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
+      <Item ItemId=";items.DCRGroup.content.items.nodcrtext.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[No Data Collection Rules fond in the selected subscription with this workspace ({Workspace:label}) as a target. Consider converting your current data collections to Data Collection Rules - [read more here]5D;(https://docs.microsoft.com/en-us/azure/azure-monitor/agents/data-collection-rule-azure-monitor-agent)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Não foram encontradas Regras de Recolha de Dados na subscrição selecionada com esta área de trabalho ({Workspace:label}) como destino. Considere converter as suas recolhas de dados atuais em Regras de Recolha de Dados - [leia mais aqui]5D;(https://docs.microsoft.com/en-us/azure/azure-monitor/agents/data-collection-rule-azure-monitor-agent)]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.HybridNoArc.content.items.HybridNoArcGroupshow.content.items.HybridText.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[This tab lists all the on-premises servers or servers managed via other clouds that have reported monitoring agent heartbeat signals in the last 7 days to the selected workspace ({Workspace:name}) from the legacy Log Analytics Agents (MMA/OMS). In order to migrate you must [install Arc agent]5D;(https://docs.microsoft.com/en-us/azure/azure-arc/servers/agent-overview) on these servers first, which is a prerequisite to install the Azure Monitor Agent.]]></Val>
@@ -566,6 +608,15 @@
           <Val><![CDATA[# Hybrid Machines without Arc]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[# Máquinas Virtuais Híbridas sem Arc]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.SubscriptionOverview.content.items.NoteaboutHybrid.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[You may have additional machines where the Log Analytics Agent has been deployed directly (not as an extension).  They can be viewed under **Workspace** tab -> migration tracker and/or **Hybrid without Arc** tab]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Pode ter máquinas adicionais onde o Agente de Análise de Registos foi implementado diretamente (não como uma extensão).  Estes podem ser vistos sob o separador **Área de trabalho** -> rastreador de migração e/ou separador **Híbrido sem Arc**]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -723,24 +774,6 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.WSOverviewGroup.content.items.Solutionsview.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[No solutions found in this workspace. Please select a different workspace using the drop-down menu at the top of this workbook.]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Não foram encontradas soluções nesta área de trabalho. Selecione uma área de trabalho diferente utilizando o menu pendente na parte superior deste livro.]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.WSOverviewGroup.content.items.Solutionsview.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[{$rowCount} Solutions for {Workspace:name}]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[{$rowCount} Soluções para {Workspace:name}]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
       <Item ItemId=";items.WSOverviewGroup.content.items.WSOverviewtitle.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Workspace Overview]]></Val>
@@ -800,6 +833,33 @@
           <Val><![CDATA[Agents in {Workspace:label}]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Agentes na {Workspace:label}]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.WSOverviewGroup.content.items.solutionsgroup.content.items.SolutionDataMerged.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[{$rowCount} Solutions for {Workspace:name}]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[{$rowCount} Soluções para {Workspace:name}]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.WSOverviewGroup.content.items.solutionsgroup.content.items.Solutionsview.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[No solutions found in this workspace. Please select a different workspace using the drop-down menu at the top of this workbook.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Não foram encontradas soluções nesta área de trabalho. Selecione uma área de trabalho diferente utilizando o menu pendente na parte superior deste livro.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.WSOverviewGroup.content.items.solutionsgroup.content.items.Solutionsview.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[{$rowCount} Solutions for {Workspace:name}]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[{$rowCount} Soluções para {Workspace:name}]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -885,12 +945,24 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
+      <Item ItemId=";items.globalselectedtabparam.content.parameters.eb4c7bea78f243c7aa0558cc76a7495d.description" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Override selected tab parameter ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Anular o parâmetro de separador selecionado ]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.headertext.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[# Azure Monitor Agent Migration Helper (Preview)]]></Val>
+          <Val><![CDATA[# Azure Monitor Agent Migration Helper]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[# Auxiliar de Migração de Agentes do Azure Monitor (Pré-visualização)]]></Val>
+            <Val><![CDATA[# Programa Auxiliar de Migração de Agente do Azure Monitor]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[# Azure Monitor Agent Migration Helper (Preview)]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -966,21 +1038,15 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.tabsnoagents.content.links.9b1233aebc6c4468a7cc4f440d7da128.linkLabel" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.tabsnoagents.content.links.9b1233aebc6c4468a7cc4f440d7da128.linkLabel" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Workspace Overview]]></Val>
+          <Val><![CDATA[Workspace Overview ({Workspace:label})]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Descrição Geral da Área de Trabalho]]></Val>
+            <Val><![CDATA[Descrição Geral da Área de Trabalho ({Workspace:label})]]></Val>
           </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.tabsnoagents.content.links.f3200643ebe74b8ca648e79bdef52d5a.linkLabel" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Data Collection Rules]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Regras de Recolha de Dados]]></Val>
-          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Workspace Overview]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
