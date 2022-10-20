@@ -111,7 +111,19 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.DevicesCount.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.IntroQualityUpdate.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Quality updates deliver both security and non-security fixes. These updates are cumulative, so installing the latest one will deliver all the available fixes for a specific feature update. This includes any out-of-band security fixes or servicing stack updates that might have been released previously. ]D;]A;]D;]A;*Note: A device can be in multiple deployments. The data here reflects devices that are taking updates across **all deployments***.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Kaliteli güncellemeler hem güvenlik hem de güvenlikle ilgili olmayan düzeltmeler sağlar. Bu güncellemeler birikimlidir, bu nedenle en son güncellemeyi yüklemek, belirli bir özellik güncellemesi için mevcut tüm düzeltmeleri sağlayacaktır. Bu, daha önce yayınlanmış olabilecek tüm bant dışı güvenlik düzeltmelerini veya hizmet yığını güncellemelerini içerir. ]D;]A;]D;]A; *Not: Bir cihaz birden fazla dağıtımda olabilir. Buradaki veriler, **tüm dağıtımlarda*** güncelleme alan cihazları yansıtır.]]></Val>
+          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Quality updates deliver both security and non-security fixes. These updates are cumulative, so installing the latest one will deliver all the available fixes for a specific feature update. This includes any out-of-band security fixes or servicing stack updates that might have been released previously. ]]></Val>
+          </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Latestsecurityupdate.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No devices]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -120,34 +132,7 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.DevicesCount.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Devices count]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Cihaz sayısı]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.IntroQualityUpdate.content.json" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Quality updates deliver both security and non-security fixes. These updates are cumulative, so installing the latest one will deliver all the available fixes for a specific feature update. This includes any out-of-band security fixes or servicing stack updates that might have been released previously. ]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Kalite güncelleştirmeleri hem güvenlik düzeltmeleri hem de güvenlik dışı düzeltmeler sağlar. Bunlar toplu güncelleştirmeler olduğundan, en sonuncusu yüklendiğinde belirli bir özellik güncelleştirmesi için tüm kullanılabilir düzeltmeler sunulur. Bunlar daha önce kullanıma sunulmuş olabilecek tüm bant dışı güvenlik düzeltmelerini veya hizmet yığını güncelleştirmelerini içerir. ]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.LatestSecurityUpdate.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[No security updates]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Güvenlik güncelleştirmesi yok]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.LatestSecurityUpdate.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Latestsecurityupdate.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Latest security update]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -156,7 +141,7 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.SecurityUpdateStatus.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Missingmultiplesecurityupdates.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No security updates missing]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -165,11 +150,29 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.SecurityUpdateStatus.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Missingmultiplesecurityupdates.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Security update status]]></Val>
+          <Val><![CDATA[Missing multiple security updates]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Güvenlik güncelleştirmesi durumu]]></Val>
+            <Val><![CDATA[Birden çok güvenlik güncellemesi eksik]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Missingonesecurityupdate.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[No devices which are not latest]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[En son olmayan cihaz yok]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Missingonesecurityupdate.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Missing one security update]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Bir güvenlik güncelleştirmesi eksik]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
