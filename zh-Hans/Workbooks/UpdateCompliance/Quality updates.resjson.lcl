@@ -111,7 +111,19 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.DevicesCount.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.IntroQualityUpdate.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Quality updates deliver both security and non-security fixes. These updates are cumulative, so installing the latest one will deliver all the available fixes for a specific feature update. This includes any out-of-band security fixes or servicing stack updates that might have been released previously. ]D;]A;]D;]A;*Note: A device can be in multiple deployments. The data here reflects devices that are taking updates across **all deployments***.]]></Val>
+          <Tgt Cat="Text" Stat="Update" Orig="New">
+            <Val><![CDATA[质量更新提供安全修补程序和非安全修补程序。这些更新是累积更新，因此安装最新的更新将为特定功能更新提供所有可用的修补程序。这包括以前可能已发布的任何带外安全修补程序或服务堆栈更新。]]></Val>
+          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Quality updates deliver both security and non-security fixes. These updates are cumulative, so installing the latest one will deliver all the available fixes for a specific feature update. This includes any out-of-band security fixes or servicing stack updates that might have been released previously. ]]></Val>
+          </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Latestsecurityupdate.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No devices]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -120,34 +132,7 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.DevicesCount.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Devices count]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[设备计数]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.IntroQualityUpdate.content.json" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Quality updates deliver both security and non-security fixes. These updates are cumulative, so installing the latest one will deliver all the available fixes for a specific feature update. This includes any out-of-band security fixes or servicing stack updates that might have been released previously. ]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[质量更新提供安全修补程序和非安全修补程序。这些更新是累积更新，因此安装最新的更新将为特定功能更新提供所有可用的修补程序。这包括以前可能已发布的任何带外安全修补程序或服务堆栈更新。]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.LatestSecurityUpdate.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[No security updates]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[无安全更新]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.LatestSecurityUpdate.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Latestsecurityupdate.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Latest security update]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -156,7 +141,7 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.SecurityUpdateStatus.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Missingmultiplesecurityupdates.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No security updates missing]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -165,12 +150,21 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.SecurityUpdateStatus.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Missingmultiplesecurityupdates.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Security update status]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[安全更新状态]]></Val>
-          </Tgt>
+          <Val><![CDATA[Missing multiple security updates]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Missingonesecurityupdate.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[No devices which are not latest]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Missingonesecurityupdate.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Missing one security update]]></Val>
         </Str>
         <Disp Icon="Str" />
       </Item>

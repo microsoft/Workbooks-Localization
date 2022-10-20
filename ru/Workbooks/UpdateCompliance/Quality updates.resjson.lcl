@@ -111,7 +111,19 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.DevicesCount.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.IntroQualityUpdate.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Quality updates deliver both security and non-security fixes. These updates are cumulative, so installing the latest one will deliver all the available fixes for a specific feature update. This includes any out-of-band security fixes or servicing stack updates that might have been released previously. ]D;]A;]D;]A;*Note: A device can be in multiple deployments. The data here reflects devices that are taking updates across **all deployments***.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Предоставляются исправления как для системы безопасности, так и не относящиеся к ней. Обновления являются накопительными, поэтому при установке последнего обновления будут установлены все доступные исправления в конкретном обновлении компонентов. К ним относятся все внеплановые исправления системы безопасности и обновления стека обслуживания, выпущенные ранее. ]D;]A;]D;]A;*Примечание. Устройство может находиться в нескольких развертываниях. В этих данных отображаются устройства, которые получают обновления во **всех развертываниях***.]]></Val>
+          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Quality updates deliver both security and non-security fixes. These updates are cumulative, so installing the latest one will deliver all the available fixes for a specific feature update. This includes any out-of-band security fixes or servicing stack updates that might have been released previously. ]]></Val>
+          </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Latestsecurityupdate.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No devices]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -120,34 +132,7 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.DevicesCount.content.title" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Devices count]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Число устройств]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.IntroQualityUpdate.content.json" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Quality updates deliver both security and non-security fixes. These updates are cumulative, so installing the latest one will deliver all the available fixes for a specific feature update. This includes any out-of-band security fixes or servicing stack updates that might have been released previously. ]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Предоставляются исправления как для системы безопасности, так и не относящиеся к ней. Обновления являются накопительными, поэтому при установке последнего обновления будут установлены все доступные исправления в конкретном обновлении. К ним относятся все аппаратные исправления безопасности и обновления стека обслуживания, выпущенные ранее. ]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.LatestSecurityUpdate.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[No security updates]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Нет обновлений безопасности]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.LatestSecurityUpdate.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Latestsecurityupdate.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Latest security update]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -156,7 +141,7 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.SecurityUpdateStatus.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Missingmultiplesecurityupdates.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No security updates missing]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -165,11 +150,29 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.SecurityUpdateStatus.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.Missingmultiplesecurityupdates.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Security update status]]></Val>
+          <Val><![CDATA[Missing multiple security updates]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Состояние обновления системы безопасности]]></Val>
+            <Val><![CDATA[Отсутствует несколько обновлений системы безопасности]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Missingonesecurityupdate.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[No devices which are not latest]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Нет устройств, не получивших последние обновления]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.Missingonesecurityupdate.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Missing one security update]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Отсутствует одно обновление системы безопасности]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
