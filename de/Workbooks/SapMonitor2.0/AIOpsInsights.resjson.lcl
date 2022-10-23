@@ -9,34 +9,7 @@
     <Disp Icon="Expand" Expand="true" Disp="true" LocTbl="false" />
     <Item ItemId=";Strings" ItemType="0" PsrId="306" Leaf="false">
       <Disp Icon="Str" Disp="true" LocTbl="false" />
-      <Item ItemId=";items.alertFilterOnNotice.content.json" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[The insights shown below have been filtered to a 1-hour window around the selected alert.]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Die unten gezeigten Erkenntnisse wurden in ein 1-Stunden-Fenster um die ausgewählte Warnung gefiltert.]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.alertsPane.content.items.alertFilters.content.parameters.2b6b387a685245a6819d05d190b1ab3d.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Severity]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Schweregrad]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.alertsPane.content.items.alertFilters.content.parameters.a5a5bff8c0514c0ebad69ff7fe141ef9.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Name]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Name]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.alertsPane.content.items.alertFilters.content.parameters.b339b20e2eed44848971bc0b1bd75ebf.label" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.alertsPane.content.items.alertFilters.content.parameters.7642d72de0ca456a967b3530f4891a2d.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[State]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -45,29 +18,32 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.alertsPane.content.items.alertFilters.content.parameters.df67bc48d7724cb4bbe54e3ffc58a906.label" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.alertsPane.content.items.alertFilters.content.parameters.a2f8d3756d4541fc9e1ce3bbdfeffbde.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Monitor Condition]]></Val>
+          <Val><![CDATA[Severity]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Monitorzustand]]></Val>
+            <Val><![CDATA[Schweregrad]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.alertsPane.content.items.alertsTitle.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[### {selTab} Alerts for {selSID}]]></Val>
+          <Val><![CDATA[### {selTab} Alerts for {sidTitle}]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[### {selTab} Warnungen für {selSID}]]></Val>
+            <Val><![CDATA[### {selTab} Warnungen für {sidTitle}]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[### {selTab} Alerts for {selSID}]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.alertsPane.content.items.firedAlerts.content.gridSettings.labelSettings.MonitorCondition.label" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.alertsPane.content.items.firedAlerts.content.gridSettings.labelSettings.AlertInfo.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Monitor Condition]]></Val>
+          <Val><![CDATA[Details]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Monitorzustand]]></Val>
+            <Val><![CDATA[Details]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -81,39 +57,36 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.alertsPane.content.items.firedAlerts.content.gridSettings.labelSettings.pInstance.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Provider]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Anbieter]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
       <Item ItemId=";items.alertsPane.content.items.firedAlerts.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[No alerts fired in the given time period.]]></Val>
+          <Val><![CDATA[No alerts found in this time range or no alert rules have been configured for this monitoring profile.]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Im angegebenen Zeitraum wurden keine Warnungen ausgegeben.]]></Val>
+            <Val><![CDATA[In diesem Zeitbereich wurden keine Warnungen gefunden, oder für dieses Überwachungsprofil wurden keine Warnungsregeln konfiguriert.]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[No alerts fired in the given time period.]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.alertsPane.content.items.noAlertPrompt.content.json" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.alertsPane.content.items.firedAlerts.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[No alerts have been fired in the given time period.]]></Val>
+          <Val><![CDATA[]D83D;]DCA1; Click on the alert row to see insights]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Im angegebenen Zeitraum wurden keine Warnungen ausgegeben.]]></Val>
+            <Val><![CDATA[]D83D;]DCA1; Klicken Sie auf die Warnungszeile, um Erkenntnisse anzuzeigen.]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.availability.content.items.availabilityInsightsTitle.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[### SAP System and VM Health Insights for {selSID}]]></Val>
+          <Val><![CDATA[### SAP System and VM Health Insights for {sidTitle}]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[### SAP-System- und VM-Integritätserkenntnisse für {selSID}]]></Val>
+            <Val><![CDATA[### SAP-System- und VM-Integritätserkenntnisse für {sidTitle}]]></Val>
           </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[### SAP System and VM Health Insights for {selSID}]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -135,6 +108,15 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
+      <Item ItemId=";items.availability.content.items.overallAvailability.content.gridSettings.labelSettings.Insights.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[VM and Process Insights]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[VM- und Prozesserkenntnisse]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.availability.content.items.overallAvailability.content.gridSettings.labelSettings.VMARMIDs.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[VM Name]]></Val>
@@ -149,6 +131,15 @@
           <Val><![CDATA[Process]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Prozess]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.availability.content.items.overallAvailability.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[]D83D;]DCA1;Selecting an alert filters these insights to a 1-hour window around the selected alert]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[]D83D;]DCA1;Durch Auswahl einer Warnung werden diese Erkenntnisse in ein 1-Stunden-Fenster um die ausgewählte Warnung gefiltert.]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -180,20 +171,29 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.parameters.content.parameters.c1bfdd3c98e2405e8cd87f568fcef9cc.label" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Tab Selected]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Registerkarte ausgewählt]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
       <Item ItemId=";items.starterBanner.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Select an SID to view insights.]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[Wählen Sie eine SID aus, um Erkenntnisse anzuzeigen.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.validationCheck.content.items.netweaverMissing.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Please add the SAP NetWeaver provider to view this workbook.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Fügen Sie den SAP NetWeaver-Anbieter hinzu, um diese Arbeitsmappe anzuzeigen.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.validationCheck.content.items.vmIdsMissing.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[There was an error fetching the virtual machines linked to SAP NetWeaver provider. Please reach out to support for further assistance.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Fehler beim Abrufen der virtuellen Computer, die mit dem SAP NetWeaver-Anbieter verknüpft sind. Wenden Sie sich an den Support, um weitere Unterstützung zu erhalten.]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
