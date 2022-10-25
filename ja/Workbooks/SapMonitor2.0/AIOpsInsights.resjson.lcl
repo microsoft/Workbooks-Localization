@@ -30,8 +30,8 @@
       <Item ItemId=";items.alertsPane.content.items.alertsTitle.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### {selTab} Alerts for {sidTitle}]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[### {selSID}の{selTab}アラート]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### {sidTitle} の {selTab} アラート]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[### {selTab} Alerts for {selSID}]]></Val>
@@ -60,8 +60,8 @@
       <Item ItemId=";items.alertsPane.content.items.firedAlerts.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No alerts found in this time range or no alert rules have been configured for this monitoring profile.]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[指定された期間内に発生したアラートはありません。]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[この時間範囲にアラートが見つからないか、この監視プロファイルに対してアラート ルールが構成されていません。]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[No alerts fired in the given time period.]]></Val>
@@ -72,14 +72,17 @@
       <Item ItemId=";items.alertsPane.content.items.firedAlerts.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[]D83D;]DCA1; Click on the alert row to see insights]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[]D83D;]DCA1; アラート行をクリックして分析情報を表示します]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.availability.content.items.availabilityInsightsTitle.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[### SAP System and VM Health Insights for {sidTitle}]]></Val>
-          <Tgt Cat="Text" Stat="Update" Orig="New">
-            <Val><![CDATA[### {selSID} の SAP システムと VM の正常性分析情報]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[### {sidTitle} の SAP システムと VM の正常性分析情報]]></Val>
           </Tgt>
           <Prev Cat="Text">
             <Val><![CDATA[### SAP System and VM Health Insights for {selSID}]]></Val>
@@ -108,6 +111,9 @@
       <Item ItemId=";items.availability.content.items.overallAvailability.content.gridSettings.labelSettings.Insights.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[VM and Process Insights]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[VM とプロセスの分析情報]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -132,6 +138,9 @@
       <Item ItemId=";items.availability.content.items.overallAvailability.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[]D83D;]DCA1;Selecting an alert filters these insights to a 1-hour window around the selected alert]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[]D83D;]DCA1;アラートを選択すると、これらの分析情報が、その選択したアラートの前後 1 時間の期間にフィルター処理されます]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -183,6 +192,9 @@
       <Item ItemId=";items.validationCheck.content.items.vmIdsMissing.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[There was an error fetching the virtual machines linked to SAP NetWeaver provider. Please reach out to support for further assistance.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[SAP NetWeaver プロバイダーにリンクされている仮想マシンのフェッチ中にエラーが発生しました。支援を受けるには、サポートにお問い合わせください。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
