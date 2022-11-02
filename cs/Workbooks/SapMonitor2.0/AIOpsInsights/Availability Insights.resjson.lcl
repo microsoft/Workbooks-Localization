@@ -9,9 +9,33 @@
     <Disp Icon="Expand" Expand="true" Disp="true" LocTbl="false" />
     <Item ItemId=";Strings" ItemType="0" PsrId="306" Leaf="false">
       <Disp Icon="Str" Disp="true" LocTbl="false" />
-      <Item ItemId=";@items.visibilityCheck.content.items.vmInsights.content.items.vmHealthEvents.content.gridSettings.labelSettings.oc" ItemType="0" PsrId="306" Leaf="false">
+      <Item ItemId=";@items.visibilityCheck.content.items.vmInsights.content.items.healthEventGroup.content.items.noInsightsNotice.cont" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) curedTime.label" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) ent.json" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[No health events have been logged in this time period.]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[V tomto časovém období se nezaprotokolovaly žádné události stavu.]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
+      <Item ItemId=";@items.visibilityCheck.content.items.vmInsights.content.items.healthEventGroup.content.items.rcaDetails.content.js" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) on" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[<span style="font-size:0.8rem;">Root Cause Analysis (RCA) - {rcaTitle}</span>]D;]A;]D;]A;<span style="font-size:0.8rem;">**Availability State:** {rcaAvailabilityState}</span><br/>]D;]A;<span style="font-size:0.8rem;">**Event Type:** {rcaEventType}</span><br/>]D;]A;<span style="font-size:0.8rem;">**Root Cause**</span><br/>]D;]A;<span style="font-size:0.8rem;">{rcaDescription}</span><br><br/>]D;]A;<span style="font-size:0.8rem;">**Occured Time (UTC):** {rcaDateTime}</span><br/>]D;]A;<span style="font-size:0.8rem;">**Resolution ETA (UTC):** {rcaResolution}</span><br/>]D;]A;<span style="font-size:0.8rem;">**Instance Name:** {VM:name}</span><br/>]D;]A;<span style="font-size:0.8rem;">**Azure Resource Id:** {VM:id}</span><br/>]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[<span style="font-size:0.8rem;">Analýza původní příčiny (RCA) – {rcaTitle}</span>]D;]A;]D;]A;<span style="font-size:0.8rem;">**Stav dostupnosti:** {rcaAvailabilityState}</span><br/>]D;]A;<span style="font-size:0.8rem;">**Typ události:** {rcaEventType}</span><br/>]D;]A;<span style="font-size:0.8rem;">**Původní příčina**</span><br/>]D;]A;<span style="font-size:0.8rem;">{rcaDescription}</span><br><br/>]D;]A;<span style="font-size:0.8rem;">**Čas výskytu (UTC):** {rcaDateTime}</span><br/>]D;]A;<span style="font-size:0.8rem;">**Odhadovaný čas vyřešení (UTC):** {rcaResolution}</span><br/>]D;]A;<span style="font-size:0.8rem;">**Název instance:** {VM:name}</span><br/>]D;]A;<span style="font-size:0.8rem;">**ID prostředku Azure:** {VM:id}</span><br/>]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
+      <Item ItemId=";@items.visibilityCheck.content.items.vmInsights.content.items.healthEventGroup.content.items.vmHealthEvents.conten" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) t.gridSettings.labelSettings.occuredTime.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Occured Time]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -20,10 +44,7 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
-      </Item>
-      <Item ItemId=";@items.visibilityCheck.content.items.vmInsights.content.items.vmHealthEvents.content.gridSettings.labelSettings.re" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) asonType.label" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) t.gridSettings.labelSettings.reasonType.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Reason Type]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -32,14 +53,20 @@
           </Str>
           <Disp Icon="Str" />
         </Item>
-      </Item>
-      <Item ItemId=";@items.visibilityCheck.content.items.vmInsights.content.items.vmHealthEvents.content.gridSettings.labelSettings.ti" ItemType="0" PsrId="306" Leaf="false">
-        <Disp Icon="Dir" LocTbl="false" />
-        <Item ItemId=";(...) tle.label" ItemType="0" PsrId="306" Leaf="true">
+        <Item ItemId=";(...) t.gridSettings.labelSettings.title.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[RCA]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
               <Val><![CDATA[RCA]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+        <Item ItemId=";(...) t.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[No health events have been logged in this time period.]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[V tomto časovém období se nezaprotokolovaly žádné události stavu.]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" />
@@ -126,25 +153,7 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.visibilityCheck.content.items.vmInsights.content.items.rcaDetails.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[<span style="font-size:0.8rem;">Root Cause Analysis (RCA) - {rcaTitle}</span>]D;]A;]D;]A;<span style="font-size:0.8rem;">**Availability State:** {rcaAvailabilityState}</span><br/>]D;]A;<span style="font-size:0.8rem;">**Event Type:** {rcaEventType}</span><br/>]D;]A;<span style="font-size:0.8rem;">**Root Cause**</span><br/>]D;]A;<span style="font-size:0.8rem;">{rcaDescription}</span><br><br/>]D;]A;<span style="font-size:0.8rem;">**Occured Time (UTC):** {rcaDateTime}</span><br/>]D;]A;<span style="font-size:0.8rem;">**Resolution ETA (UTC):** {rcaResolution}</span><br/>]D;]A;<span style="font-size:0.8rem;">**Instance Name:** {VM:name}</span><br/>]D;]A;<span style="font-size:0.8rem;">**Azure Resource Id:** {VM:id}</span><br/>]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[<span style="font-size:0.8rem;">Analýza původní příčiny (RCA) – {rcaTitle}</span>]D;]A;]D;]A;<span style="font-size:0.8rem;">**Stav dostupnosti:** {rcaAvailabilityState}</span><br/>]D;]A;<span style="font-size:0.8rem;">**Typ události:** {rcaEventType}</span><br/>]D;]A;<span style="font-size:0.8rem;">**Původní příčina**</span><br/>]D;]A;<span style="font-size:0.8rem;">{rcaDescription}</span><br><br/>]D;]A;<span style="font-size:0.8rem;">**Čas výskytu (UTC):** {rcaDateTime}</span><br/>]D;]A;<span style="font-size:0.8rem;">**Odhadovaný čas vyřešení (UTC):** {rcaResolution}</span><br/>]D;]A;<span style="font-size:0.8rem;">**Název instance:** {VM:name}</span><br/>]D;]A;<span style="font-size:0.8rem;">**ID prostředku Azure:** {VM:id}</span><br/>]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.visibilityCheck.content.items.vmInsights.content.items.vmHealthEvents.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[No health events have been logged in this time period.]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[V tomto časovém období se nezaprotokolovaly žádné události stavu.]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.visibilityCheck.content.items.vmInsights.content.items.vmHealthEvents.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.visibilityCheck.content.items.vmInsights.content.items.healthEventGroup.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[VM Health Events]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
