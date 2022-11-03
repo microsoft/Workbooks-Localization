@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<LCX SchemaVersion="6.0" Name="S:\output\loc\UpdateCompliance\Windows Update for Business reports enrollment.resjson" PsrId="306" SrcCul="en-US" xmlns="http://schemas.microsoft.com/locstudio/2006/6/lcx" TgtCul="hu-HU">
+<LCX SchemaVersion="6.0" Name="S:\output\loc\UpdateCompliance\Windows Update for Business reports enrollment.resjson" PsrId="306" FileType="1" SrcCul="en-US" TgtCul="hu-HU" xmlns="http://schemas.microsoft.com/locstudio/2006/6/lcx">
   <OwnedComments>
     <Cmt Name="Dev" />
     <Cmt Name="LcxAdmin" />
@@ -22,9 +22,6 @@
             <Val><![CDATA[### Unenrollment]D;]A;Click the "Confirm + unenroll" button below to unenroll from Windows Update for Business reports.]D;]A;<br></br>]D;]A;**Tenant ID**: {TenantID}]D;]A;]D;]A;]D;]A;**Workspace**: {SelectedWorkspaceName:name}]D;]A;]D;]A;]D;]A;Once the unenrollment process has completed, please refresh the page in order to re-enroll.]]></Val>
           </Str>
           <Disp Icon="Str" />
-          <Cmts>
-            <Cmt Name="Dev"><![CDATA[{Locked="{TenantID}","{SelectedWorkspaceName:name}"}]]></Cmt>
-          </Cmts>
         </Item>
         <Item ItemId=";(...) runLabel" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
@@ -52,13 +49,13 @@
             <Val><![CDATA[### Confirm your settings]D;]A;Click the save button below to confirm your Windows Update for Business reports configuration.]D;]A;<br></br>]D;]A;**Tenant ID**: {TenantID}]D;]A;]D;]A;]D;]A;**Subscription**: {SelectedSubscriptionId:label}]D;]A;]D;]A;]D;]A;**Workspace**: {SelectedWorkspaceName:name}]D;]A;]D;]A;]D;]A;Once the changes have been saved, please refresh the page to view your device data.]]></Val>
           </Str>
           <Disp Icon="Str" />
-          <Cmts>
-            <Cmt Name="Dev"><![CDATA[{Locked="{TenantID}","{SelectedSubscriptionId:label}","{SelectedWorkspaceName:name}"}]]></Cmt>
-          </Cmts>
         </Item>
         <Item ItemId=";(...) runLabel" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Save]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Mentés]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -72,6 +69,9 @@
       <Item ItemId=";items.AlreadyHasMapping.content.items.links4.content.links.a927f5b1454141f587ac4c5ca45d2403.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Unenroll]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Regisztráció megszüntetése]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -80,9 +80,6 @@
           <Val><![CDATA[&nbsp;<span style="font-weight:600">Tenant ID</span>: {TenantID}]D;]A;]D;]A;&nbsp;<span style="font-weight:600">Subscription</span>: {SelectedSubscriptionName:label}]D;]A;]D;]A;&nbsp;<span style="font-weight:600">Workspace</span>: {SelectedWorkspaceName}]]></Val>
         </Str>
         <Disp Icon="Str" />
-        <Cmts>
-          <Cmt Name="Dev"><![CDATA[{Locked="{TenantID}","{SelectedSubscriptionName:label}","{SelectedWorkspaceName}"}]]></Cmt>
-        </Cmts>
       </Item>
       <Item ItemId=";items.AlreadyHasMapping.content.items.text7Copy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
@@ -93,24 +90,36 @@
       <Item ItemId=";items.NoExistingMapping.content.items.links1.content.links.69d8915e378449f1b9b35493fffd7cb9.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Save settings]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Beállítások mentése]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.NoExistingMapping.content.items.links6.content.links.3de873fb86c04981aea0446eda0badbc.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Create new workspace]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Új munkaterület létrehozása]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.NoExistingMapping.content.items.parameters2.content.parameters.b0c778bdf15a414c84c1422e7be23ac7.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Subscription]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Előfizetés]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.NoExistingMapping.content.items.parameters2.content.parameters.c38abcb1a3834259bf4fa83fffc729cb.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Azure Log Analytics workspace]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Azure Log Analytics-munkaterület]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -119,9 +128,6 @@
           <Val><![CDATA[&nbsp;<span style="font-weight:600">Tenant ID</span>: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{TenantID}]]></Val>
         </Str>
         <Disp Icon="Str" />
-        <Cmts>
-          <Cmt Name="Dev"><![CDATA[{Locked="{TenantID}"}]]></Cmt>
-        </Cmts>
       </Item>
       <Item ItemId=";items.NoExistingMapping.content.items.text5.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
