@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LCX SchemaVersion="6.0" Name="S:\output\loc\Azure Backup\FAQ\Troubleshoot.resjson" PsrId="306" SrcCul="en-US" xmlns="http://schemas.microsoft.com/locstudio/2006/6/lcx" TgtCul="pt-BR">
+  <OwnedComments>
+    <Cmt Name="Dev" />
+    <Cmt Name="LcxAdmin" />
+    <Cmt Name="Rccx" />
+  </OwnedComments>
+  <Item ItemId=";String Table" ItemType="0" PsrId="306" Leaf="false">
+    <Disp Icon="Expand" Expand="true" Disp="true" LocTbl="false" />
+    <Item ItemId=";Strings" ItemType="0" PsrId="306" Leaf="false">
+      <Disp Icon="Str" Disp="true" LocTbl="false" />
+      <Item ItemId=";items.text0.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[## Troubleshooting issues]D;]A;]D;]A;If you observe data discrepancy issues in Backup Reports, perform these preliminary checks:]D;]A;]D;]A;1. Ensure that all vaults are sending the required [diagnostics logs to the Log Analytics workspace]5D;(https://aka.ms/AzureBackupDiagnosticsDocs).]D;]A;2. Ensure that you've selected right filters in the reports.]D;]A;3. Review the following limits:]D;]A;]D;]A;   - After you configure diagnostics, it might take up to 24 hours for the initial data push to complete. After data starts flowing into the Log Analytics workspace, you might not see data in the reports immediately because data for the current partial day isn't shown in the reports. We recommend you start viewing the reports two days after you configure your vaults to send data to Log Analytics.]D;]A;   - SQL log backup jobs are currently not displayed in Backup Reports.]D;]A;   - As mentioned above, the reports don't show data for the current partial day, and take only full days (UTC) into consideration.]D;]A;]D;]A;     For example, in the report, even if you select a time range of 23/3 4:30 PM – 24/3 10:00 AM, internally the query runs for the period 23/3 12:00 AM UTC – 24/3 11:59 PM UTC. This meaning that the time component of the datetime is overridden by the query.]D;]A;]D;]A;     Similarly, if today's date is March 29, data is only shown upto the end (11:59 pm UTC) of March 28. For jobs that were created on March 29, you can see them when you check the reports on the next day, that is, March 30.]D;]A;]D;]A;If none of the above explains the data seen in the report, please contact Microsoft Support.]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+    </Item>
+  </Item>
+</LCX>
