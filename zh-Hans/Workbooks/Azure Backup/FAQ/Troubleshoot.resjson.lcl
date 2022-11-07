@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<LCX SchemaVersion="6.0" Name="S:\output\loc\Azure Backup\FAQ\Troubleshoot.resjson" PsrId="306" SrcCul="en-US" xmlns="http://schemas.microsoft.com/locstudio/2006/6/lcx" TgtCul="zh-CN">
+<LCX SchemaVersion="6.0" Name="S:\output\loc\Azure Backup\FAQ\Troubleshoot.resjson" PsrId="306" FileType="1" SrcCul="en-US" TgtCul="zh-CN" xmlns="http://schemas.microsoft.com/locstudio/2006/6/lcx">
   <OwnedComments>
     <Cmt Name="Dev" />
     <Cmt Name="LcxAdmin" />
@@ -12,6 +12,9 @@
       <Item ItemId=";items.text0.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Troubleshooting issues]D;]A;]D;]A;If you observe data discrepancy issues in Backup Reports, perform these preliminary checks:]D;]A;]D;]A;1. Ensure that all vaults are sending the required [diagnostics logs to the Log Analytics workspace]5D;(https://aka.ms/AzureBackupDiagnosticsDocs).]D;]A;2. Ensure that you've selected right filters in the reports.]D;]A;3. Review the following limits:]D;]A;]D;]A;   - After you configure diagnostics, it might take up to 24 hours for the initial data push to complete. After data starts flowing into the Log Analytics workspace, you might not see data in the reports immediately because data for the current partial day isn't shown in the reports. We recommend you start viewing the reports two days after you configure your vaults to send data to Log Analytics.]D;]A;   - SQL log backup jobs are currently not displayed in Backup Reports.]D;]A;   - As mentioned above, the reports don't show data for the current partial day, and take only full days (UTC) into consideration.]D;]A;]D;]A;     For example, in the report, even if you select a time range of 23/3 4:30 PM – 24/3 10:00 AM, internally the query runs for the period 23/3 12:00 AM UTC – 24/3 11:59 PM UTC. This meaning that the time component of the datetime is overridden by the query.]D;]A;]D;]A;     Similarly, if today's date is March 29, data is only shown upto the end (11:59 pm UTC) of March 28. For jobs that were created on March 29, you can see them when you check the reports on the next day, that is, March 30.]D;]A;]D;]A;If none of the above explains the data seen in the report, please contact Microsoft Support.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## 疑难解答问题]D;]A;]D;]A;如果观察到备份报告中存在数据差异问题，请执行一下初步检查:]D;]A;]D;]A;1. 确保所有保管库都将所需的 [诊断日志发送到 Log Analytics 工作区]5D;(https://aka.ms/AzureBackupDiagnosticsDocs)。]D;]A;2. 确保已在报表中选择了正确的筛选器。]D;]A;3. 查看一下限制:]D;]A;]D;]A;   - 配置诊断后，最长可能需要 24 小时才能完成初始数据推送。数据开始流入 Log Analytics 工作区后，可能无法立即在报表中看到数据，因为报表中未显示当前部分日期的数据。建议在配置保管库以将数据发送到 Log Analytics 两天后开始查看报表。]D;]A;   - SQL 日志备份作业当前未显示在备份报表中。]D;]A;   - 如上所述，报表不显示当前部分日期的数据，并且仅考虑完整天数(UTC)。]D;]A;]D;]A;     例如，在报表中，即使选择时间范围为 3 月 23 日下午 4:30 - 3 月 24 日上午 10:00，查询也会在内部按时间段 3 月 23 日中午12:00 UTC - 3 月 24 日晚上 11:59 UTC 运行。这意味着，日期时间的时间组件已由查询所替代。]D;]A;]D;]A;     同样，如果今天的日期是 3 月 29 日，则数据仅显示到 3 月 28 日结束时(晚上 11:59 UTC)。对于在 3 月 29 日创建的作业，你可以在第二天检查报表时看到它们，即 3 月 30 日。]D;]A;]D;]A;如果上述任何内容都不能解释报表中看到的数据，请联系 Microsoft 支持。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
