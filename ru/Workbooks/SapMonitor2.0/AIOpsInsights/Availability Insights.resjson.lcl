@@ -9,6 +9,18 @@
     <Disp Icon="Expand" Expand="true" Disp="true" LocTbl="false" />
     <Item ItemId=";Strings" ItemType="0" PsrId="306" Leaf="false">
       <Disp Icon="Str" Disp="true" LocTbl="false" />
+      <Item ItemId=";@items.visibilityCheck.content.items.vmInsights.content.items.healthEventGroup.content.items.disclaimer.content.js" ItemType="0" PsrId="306" Leaf="false">
+        <Disp Icon="Dir" LocTbl="false" />
+        <Item ItemId=";(...) on" ItemType="0" PsrId="306" Leaf="true">
+          <Str Cat="Text">
+            <Val><![CDATA[These insights are only provided for SAP downtimes caused by Azure VM health events. Root causes provided by Health events does not cover 100% of VM downtimes]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Эти аналитические сведения предоставляются только для простоев SAP, вызванных событиями работоспособности виртуальных машин Azure. Первопричины, предоставляемые событиями работоспособности, не охватывают 100% простоев виртуальных машин]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" />
+        </Item>
+      </Item>
       <Item ItemId=";@items.visibilityCheck.content.items.vmInsights.content.items.healthEventGroup.content.items.noInsightsNotice.cont" ItemType="0" PsrId="306" Leaf="false">
         <Disp Icon="Dir" LocTbl="false" />
         <Item ItemId=";(...) ent.json" ItemType="0" PsrId="306" Leaf="true">
@@ -55,10 +67,13 @@
         </Item>
         <Item ItemId=";(...) t.gridSettings.labelSettings.title.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
-            <Val><![CDATA[RCA]]></Val>
+            <Val><![CDATA[Root Cause]]></Val>
             <Tgt Cat="Text" Stat="Loc" Orig="New">
-              <Val><![CDATA[RCA]]></Val>
+              <Val><![CDATA[Первопричина]]></Val>
             </Tgt>
+            <Prev Cat="Text">
+              <Val><![CDATA[RCA]]></Val>
+            </Prev>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -108,7 +123,70 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.visibilityCheck.content.items.processInsights.content.items.processAvailability.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.serviceDetails.content.json" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[**Service** - {Service}]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[**Служба** — {Service}]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.visibilityCheck.content.items.processInsights.content.items.hanaAvailTiles.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[{Process} Server Details]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Сведения о сервере для процесса {Process}]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.visibilityCheck.content.items.processInsights.content.items.hanaDiskUsage.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Disk Usage]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Использование диска]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.visibilityCheck.content.items.processInsights.content.items.hanaProcessAvailability.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Availability Status Trend]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Тренд состояния доступности]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.visibilityCheck.content.items.processInsights.content.items.hanaServiceAvailability.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Availability Status Trend]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Тренд состояния доступности]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.visibilityCheck.content.items.processInsights.content.items.hanaStatTiles.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[{Process} Server Load]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Загрузка сервера для процесса {Process}]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.visibilityCheck.content.items.processInsights.content.items.hanaStatTilesForService.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[{Service} Database Details]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Сведения о базе данных службы {Service}]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.visibilityCheck.content.items.processInsights.content.items.netweaverProcessAvailability.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Availability Status Trend]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
@@ -126,38 +204,20 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.visibilityCheck.content.items.viewMode.content.links.1512b1ce056b4e658ce63b50cc24aa3d.linkLabel" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Process]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Процесс]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.visibilityCheck.content.items.viewMode.content.links.339c0c1f834f4ee38bc44a965454f26a.linkLabel" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[VM]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Виртуальная машина]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";items.visibilityCheck.content.items.vmInsights.content.items.disclaimer.content.json" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[These insights are only provided for SAP downtimes caused by Azure VM health events. Root causes provided by Health events does not cover 100% of VM downtimes]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Эти аналитические сведения предоставляются только для простоев SAP, вызванных событиями работоспособности виртуальных машин Azure. Первопричины, предоставляемые событиями работоспособности, не охватывают 100% простоев виртуальных машин]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
       <Item ItemId=";items.visibilityCheck.content.items.vmInsights.content.items.healthEventGroup.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[VM Health Events]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
             <Val><![CDATA[События работоспособности виртуальных машин]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.visibilityCheck.content.items.vmInsights.content.items.vmAvailabilityMetric.content.title" ItemType="0" PsrId="306" InstFlg="true" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[VM Availability Metric ({TimeRange:label})]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Метрика доступности виртуальных машин ({TimeRange:label})]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
