@@ -9,6 +9,33 @@
     <Disp Icon="Expand" Expand="true" Disp="true" LocTbl="false" />
     <Item ItemId=";Strings" ItemType="0" PsrId="306" Leaf="false">
       <Disp Icon="Str" Disp="true" LocTbl="false" />
+      <Item ItemId=";items.SummaryGroup.content.items.text1.content.json" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[## Summary]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## 요약]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.numberOfUsersNotProtectedByApplication.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Number of users signing-in not protected by multi-factor authentication requirement by application]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[애플리케이션에 의한 다단계 인증 요구 사항으로 보호되지 않는 로그인 사용자 수]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.parameters2.content.parameters.00bcb57b307343ae924746e710e90132.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Device State]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[디바이스 상태]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";items.parameters2.content.parameters.1795c5d27fb64326b965f50b73f6151e.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Please set a time range to view sign-ins]]></Val>
@@ -27,84 +54,147 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.query0.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.parameters2.content.parameters.3157f4afc1934d769f26f71c93d6c392.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Users signing-in using Single Factor Auth by Application]]></Val>
+          <Val><![CDATA[Filter Graph Requests]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[애플리케이션별 단일 단계 인증을 사용하여 로그인하는 사용자]]></Val>
+            <Val><![CDATA[그래프 요청 필터링]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.query1.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.parameters2.content.parameters.9860a0e623f947389b7520e94805b343.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[There were no single factor authentication sign-ins using legacy authentication in this time frame]]></Val>
+          <Val><![CDATA[Filter based on trusted location]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[이 시간 프레임에 레거시 인증을 사용하는 단일 단계 인증 로그인이 없었습니다.]]></Val>
+            <Val><![CDATA[신뢰할 수 있는 위치를 기준으로 필터링]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.query1.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.parameters2.content.parameters.9860a0e623f947389b7520e94805b343.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Select an app and user to learn more]]></Val>
+          <Val><![CDATA[Trusted Location]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[앱 및 사용자를 선택하여 자세히 알아보기]]></Val>
+            <Val><![CDATA[신뢰할 수 있는 위치]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.query1b.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.parameters2.content.parameters.e19de9c890a74023901974d01441827a.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Single Factor Auth Signins by User]]></Val>
+          <Val><![CDATA[Legacy Authentication]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[사용자별 단일 단계 인증 로그인]]></Val>
+            <Val><![CDATA[레거시 인증]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.parameters2.content.parameters.efe68cc3eb8f461cafb072ede23dea14.description" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Scope the workbook for selected users]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[선택한 사용자의 통합 문서 범위 지정]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.parameters2.content.parameters.efe68cc3eb8f461cafb072ede23dea14.label" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Scope to users]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[사용자로 범위 지정]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.percentOfUsersNotProtectedByApplication.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Percent of users signing-in not protected by multi-factor authentication requirement by application]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[애플리케이션에 의한 다단계 인증 요구 사항으로 보호되지 않는 로그인 사용자 비율]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.query2.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Top users with high percentage of auths not protected by multi-factor authentication requirements]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[다단계 인증 요구 사항으로 보호되지 않는 인증 비율이 높은 상위 사용자]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.query3.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[There were no single factor authentication sign-ins in this time frame]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[이 시간 프레임에 단일 단계 인증 로그인이 없습니다.]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.query3.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Sign-ins Using Single Factor Authentication by Location]]></Val>
+          <Val><![CDATA[Select an application and user to learn more]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[위치별 단일 단계 인증을 사용한 로그인]]></Val>
+            <Val><![CDATA[애플리케이션 및 사용자를 선택하여 자세한 내용 보기]]></Val>
+          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Sign-ins Using Single Factor Authentication by Location]]></Val>
+          </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.query4.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Signins not protected by multi-factor auth requirement by user (top 10000)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[사용자가 다단계 인증 요구 사항으로 보호되지 않는 로그인(상위 10,000개)]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";items.query5.content.title" ItemType="0" PsrId="306" Leaf="true">
+      <Item ItemId=";items.query5Copy.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[Single Factor Auth Signins by Operating System]]></Val>
+          <Val><![CDATA[Percent of signins not protected by multi-factor authentication requirement by operating system]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[운영 체제별 단일 단계 인증 로그인]]></Val>
+            <Val><![CDATA[운영 체제에 의한 다단계 인증 요구 사항으로 보호되지 않는 로그인 비율]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.query6.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[All Sign-ins by Operating System]]></Val>
+          <Val><![CDATA[Number of sign-ins not protected by multi-factor authentication requirement by location]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[운영 체제별 모든 로그인]]></Val>
+            <Val><![CDATA[위치별 다단계 인증 요구 사항으로 보호되지 않는 로그인 수]]></Val>
+          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[All Sign-ins by Operating System]]></Val>
+          </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";items.query7.content.title" ItemType="0" PsrId="306" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Number of signins not protected by multi-factor authentication requirement by operating system]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[운영 체제에 의한 다단계 인증 요구 사항으로 보호되지 않는 로그인 수]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.text7.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
-          <Val><![CDATA[# Multi-Factor Authentication Gaps]D;]A;]D;]A;## Use this workbook to identify sign-ins and apps that are not protected by Multi-factor authentication requirements.]]></Val>
+          <Val><![CDATA[# Multi-Factor Authentication Gaps for Tenants using Conditional Access]D;]A;]D;]A;Use this workbook to identify sign-ins and apps that are not protected by multi-factor authentication requirements.]D;]A;]D;]A;To find the application names corresponding to the application IDs seen in this workbook, see - [Application IDs for commonly used Microsoft Applications]5D;(https://docs.microsoft.com/en-us/troubleshoot/azure/active-directory/verify-first-party-apps-sign-in#application-ids-for-commonly-used-microsoft-applications)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[# 다단계 인증 간격]D;]A;]D;]A;##이 통합 문서를 사용하여 다단계 인증 요구 사항으로 보호되지 않는 로그인 및 앱을 식별할 수 있습니다.]]></Val>
+            <Val><![CDATA[# 조건부 액세스를 사용하는 테넌트에 대한 Multi-Factor Authentication 간격]D;]A;]D;]A;이 통합 문서를 사용하여 다단계 인증 요구 사항으로 보호되지 않는 로그인 및 앱을 식별합니다.]D;]A;]D;]A;이 통합 문서에 표시된 애플리케이션 ID에 해당하는 애플리케이션 이름을 찾으려면 다음을 참조하세요. [일반적으로 사용되는 Microsoft 애플리케이션의 애플리케이션 ID]5D;(https://docs.microsoft.com/en-us/troubleshoot/azure/active-directory/verify-first-party-apps-sign-in#application-ids-for-commonly-used-microsoft-applications)]]></Val>
           </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";settings.name" ItemType="0" PsrId="306" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Multi-Factor Authentication Gaps]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[다단계 인증 간격]]></Val>
-          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[# Multi-Factor Authentication Gaps]D;]A;]D;]A;## Use this workbook to identify sign-ins and apps that are not protected by Multi-factor authentication requirements.]]></Val>
+          </Prev>
         </Str>
         <Disp Icon="Str" />
       </Item>
