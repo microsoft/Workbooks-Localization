@@ -1371,12 +1371,18 @@
       <Item ItemId=";items.Web.content.items.AppService.content.items.text3Copy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[> * Use Standard or Premium tier. These tiers support staging slots and automated backups.]D;]A;* Avoid scaling up or down. Instead, select a tier and instance size that meet your performance requirements under typical load, and then scale out the instances to handle changes in traffic volume. Scaling up and down may trigger an application restart.]D;]A;* Store configuration as app settings. Use app settings to hold configuration settings as app settings. Define the settings in your Resource Manager templates, or using PowerShell, so that you can apply them as part of an automated deployment / update process, which is more reliable.]D;]A;* Create separate App Service plans for production and test. Don't use slots on your production deployment for testing. All apps within the same App Service plan share the same VM instances. If you put production and test deployments in the same plan, it can negatively affect the production deployment. For example, load tests might degrade the live production site. By putting test deployments into a separate plan, you isolate them from the production version.]D;]A;* Separate web apps from web APIs. If your solution has both a web front end and a web API, consider decomposing them into separate App Service apps. This design makes it easier to decompose the solution by workload. You can run the web app and the API in separate App Service plans, so they can be scaled independently. If you don't need that level of scalability at first, you can deploy the apps into the same plan, and move them into separate plans later, if needed.]D;]A;* Avoid using the App Service backup feature to back up Azure SQL databases. Instead, use SQL Database automated backups. App Service backup exports the database to a SQL BACPAC file, which costs DTUs.]D;]A;* Deploy to a staging slot. Create a deployment slot for staging. Deploy application updates to the staging slot, and verify the deployment before swapping it into production. This reduces the chance of a bad update in production. It also ensures that all instances are warmed up before being swapped into production. Many applications have a significant warmup and cold-start time.]D;]A;* Create a deployment slot to hold the last-known-good (LKG) deployment. When you deploy an update to production, move the previous production deployment into the LKG slot. This makes it easier to roll back a bad deployment. If you discover a problem later, you can quickly revert to the LKG version.]D;]A;* Enable diagnostics logging, including application logging and web server logging. Logging is important for monitoring and diagnostics.]D;]A;* Log to blob storage. This makes it easier to collect and analyze the data.]D;]A;* Create a separate storage account for logs. Don't use the same storage account for logs and application data. This helps to prevent logging from reducing application performance.]D;]A;* Monitor performance. Use a performance monitoring service such as Application Insights to monitor application performance and behavior under load. Performance monitoring gives you real-time insight into the application. It enables you to diagnose issues and perform root-cause analysis of failures.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[> * Standard- of Premium-laag gebruiken. Deze lagen ondersteunen faseringssites en geautomatiseerde back-ups.]D;]A;* Vermijd omhoog of omlaag schalen. Selecteer in plaats daarvan een laag en een instantiegrootte die voldoen aan uw prestatievereisten onder normale belasting en schaal vervolgens de exemplaren uit om wijzigingen in het verkeersvolume te verwerken. Als u omhoog en omlaag schaalt, wordt de toepassing mogelijk opnieuw opgestart.]D;]A;* Sla de configuratie op als app-instellingen. Gebruik app-instellingen om configuratie-instellingen op te nemen als app-instellingen. Definieer de instellingen in uw Resource Manager-sjablonen of gebruik PowerShell, zodat u deze kunt toepassen als onderdeel van een geautomatiseerd implementatie-/updateproces, dat betrouwbaarder is.]D;]A;* Maak afzonderlijke App Service-plannen voor productie en test. Gebruik geen sites in uw productie-implementatie om te testen. Alle apps binnen hetzelfde App Service-plan delen dezelfde VM-exemplaren. Als u productie- en testimplementaties in hetzelfde plan plaatst, kan dit een negatieve invloed hebben op de productie-implementatie. Belastingstests kunnen bijvoorbeeld de live productiesite degraderen. Door testimplementaties in een afzonderlijk plan te plaatsen, kunt u ze isoleren van de productieversie.]D;]A;* Web-apps scheiden van web-API's. Als uw oplossing zowel een web-front-end als een web-API heeft, kunt u overwegen deze op te splitsen in afzonderlijke App Service-apps. Dit ontwerp maakt het eenvoudiger om de oplossing op workload te ontkoppelen. U kunt de web-app en de API in afzonderlijke App Service-plannen uitvoeren, zodat ze onafhankelijk kunnen worden geschaald. Als u dat schaalbaarheidsniveau in eerste instantie niet nodig hebt, kunt u de apps in hetzelfde plan implementeren en ze later, indien nodig, naar afzonderlijke abonnementen verplaatsen.]D;]A;* Vermijd het gebruik van de back-upfunctie App Service om back-ups te maken van Azure SQL databases. Gebruik in plaats daarvan SQL Database geautomatiseerde back-ups. App Service back-up exporteert de database naar een SQL BACPAC-bestand, wat DTU's kost.]D;]A;* Implementeren naar een staging-site. Maak een implementatiesite voor fasering. Implementeer toepassingsupdates in de staging-site en controleer de implementatie voordat u deze in productie zet. Dit vermindert de kans op een slechte update in productie. Het zorgt er ook voor dat alle exemplaren worden opgewarmd voordat ze naar productie worden gewisseld. Veel toepassingen hebben een aanzienlijke opwarm- en koude starttijd.]D;]A;* Maak een implementatiesite voor de LAATSTE BEKENDE GOEDE (LKG)-implementatie. Wanneer u een update naar productie implementeert, verplaatst u de vorige productie-implementatie naar de LKG-site. Dit maakt het eenvoudiger om een slechte implementatie terug te draaien. Als u later een probleem ontdekt, kunt u snel terugkeren naar de LKG-versie.]D;]A;* Diagnostische logboekregistratie inschakelen, inclusief logboekregistratie van toepassingen en logboekregistratie van webservers. Logboekregistratie is belangrijk voor bewaking en diagnose.]D;]A;* Aanmelden bij blobopslag. Dit maakt het eenvoudiger om de gegevens te verzamelen en te analyseren.]D;]A;* Maak een afzonderlijk opslagaccount voor logboeken. Gebruik niet hetzelfde opslagaccount voor logboeken en toepassingsgegevens. Dit helpt voorkomen dat logboekregistratie de prestaties van toepassingen vermindert.]D;]A;* Prestaties bewaken. Gebruik een service voor prestatiebewaking, zoals Application Insights, om de prestaties en het gedrag van toepassingen bij belasting te bewaken. Prestatiebewaking biedt u realtime inzicht in de toepassing. Hiermee kunt u problemen diagnosticeren en hoofdoorzaakanalyse van fouten uitvoeren.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Web.content.items.AppServicePlan.content.items.AppServicePlanquery.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No App Service plans found]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Geen App Service-plannen gevonden]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1398,12 +1404,18 @@
       <Item ItemId=";items.Web.content.items.AppServicePlan.content.items.aspsla.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[SLA for App Service Plan]D;]A;* There is no specific SLA tied to App service plan itself. The SLAs are applicable for the services running on the App Service plans.]D;]A;]D;]A;> SLA accurate at time of release. Latest information is available [here]5D;(https://azure.microsoft.com/support/legal/sla/app-service/)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[SLA voor App Service-plan]D;]A;* Er is geen specifieke SLA gekoppeld aan het App Service-plan zelf. De SLA's zijn van toepassing op de services die worden uitgevoerd op de App Service-abonnementen.]D;]A;]D;]A;> SLA nauwkeurig op het moment van release. De meest recente informatie is [hier]5D;(https://azure.microsoft.com/support/legal/sla/app-service/) beschikbaar]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Web.content.items.functionapp.content.items.kqlwebappappservicefuncappresourcesdetails.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[App Service - Function App]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[App Service - Functie-app]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1416,6 +1428,9 @@
       <Item ItemId=";items.Web.content.items.functionapp.content.items.text3CopyCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[* This section lists Function Apps running on an App Service Plan.]D;]A;* Filter using the subscriptions parameter as required.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[* In deze sectie vindt u een lijst met functie-apps die worden uitgevoerd op een App Service-abonnement.]D;]A;* Filter indien nodig met de parameter abonnementen.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1593,24 +1608,36 @@
       <Item ItemId=";items.parameters13.content.parameters.e929bc0108ec45febc6a4e0267460dfa.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[This will show the SLA information for the focus area]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Hiermee worden de SLA-gegevens voor het focusgebied weergegeven]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.parameters13.content.parameters.e929bc0108ec45febc6a4e0267460dfa.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Show SLA]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[SLA weergeven]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.summarygroup.content.items.ReliabilityScoreMessage.content.items.text1.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[]D83D;]DCA1; ]D;]A;_The Reliability Score given in this workbook represents an indication of the number of configurable reliability options that have been implemented. For instance Availability Zones, Availability Set, Sku, Backup, Site Recovery, etc._]D;]A;]D;]A;_The Reliability Score does not include a number for the 'default' reliability for any given resource type. For instance, the current lowest default SLA for any Single Instance Virtual Machine using Standard HDD Managed Disks for Operating System Disks and Data Disks, have an SLA of at least 95%._ ]D;]A;]D;]A;_The Reliability Score in this workbook will be 0% for such a Virtual Machine. The intention of the workbook is to provide visibility of the configurable options that can increase reliability._]D;]A;<br />]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[]D83D;]DCA1; ]D;]A;_De betrouwbaarheidsscore in deze werkmap geeft een indicatie weer van het aantal configureerbare betrouwbaarheidsopties dat is geïmplementeerd. Zo bevat het Beschikbaarheidszones, Beschikbaarheidsset, SKU, Back-up, Site Recovery, etc._]D;]A;]D;]A;_De Betrouwbaarheidsscore heeft geen getal voor de standaard betrouwbaarheid voor een bepaald resourcetype. De huidige laagste standaard-SLA voor elke virtuele machine met één exemplaar die gebruikmaakt van Standard - HDD Managed Disks voor besturingssysteemschijven en gegevensschijven, heeft bijvoorbeeld een SLA van ten minste 95%._ ]D;]A;]D;]A;_De betrouwbaarheidsscore in deze werkmap is 0% voor een dergelijke virtuele machine. De werkmap is bedoeld om inzicht te bieden in de configureerbare opties die de betrouwbaarheid verhogen._]D;]A;<br />]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.summarygroup.content.items.advisorgroup.content.items.advisorbyrecstep.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[By Recommendation]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Op aanbeveling]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1626,18 +1653,27 @@
       <Item ItemId=";items.summarygroup.content.items.advisorgroup.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Advisor - Reliability]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Advisor - Betrouwbaarheid]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.summarygroup.content.items.kqlsummaryreliabilityscorebyresourceenvironment.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Reliability Score by Resource Type, Environment and Resource]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Betrouwbaarheidsscore per resourcetype, omgeving en resource]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.summarygroup.content.items.kqlsummaryworkbookreliabilityscore.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Workbook Reliability Score]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Betrouwbaarheidsscore van werkmap]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
