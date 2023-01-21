@@ -797,6 +797,9 @@
         <Item ItemId=";(...) gs.ReliabilityScore.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Reliability Score]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[Оценка надежности]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -804,12 +807,18 @@
       <Item ItemId=";items.Advisor.content.items.AdvisorHelp.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[> Azure Advisor analyzes your configurations and usage telemetry and offers personalized, actionable recommendations to help you optimize your Azure resources for reliability, security, operational excellence, performance, and cost.]D;]A;]D;]A;* Azure Advisor is available automatically without any configuration.]D;]A;* The table in this workbook specifically relate to any reliability recommendations that may apply to the selected subscription(s).]D;]A;* Filter advisor recommendations using the subscriptions parameter as required.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[> Помощник по Azure анализирует конфигурации и телеметрию использования, а также предоставляет персонализированные рекомендации о действиях, которые помогут оптимизировать ресурсы Azure для обеспечения надежности, безопасности, эффективности работы, производительности и оптимизации затрат.]D;]A;]D;]A;* Помощник по Azure доступен автоматически без какой-либо настройки.]D;]A;* Таблица в этой книге относится к рекомендациям по надежности, которые могут применяться к выбранным подпискам.]D;]A;* Рекомендации помощника можно отфильтровать по подпискам.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Advisor.content.items.AdvisorHelpGov.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[> Azure Advisor recommendations are not yet available for Azure Government cloud]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[> Рекомендации Помощника по Azure еще не доступны в облаке Azure для государственных организаций]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -852,12 +861,18 @@
       <Item ItemId=";items.Advisor.content.items.query0.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Advisor - Reliability]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Помощник — надежность]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Backup.content.items.BackupHelp.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[> Azure Site Recovery can help your business to keep doing business during major IT outages. Azure Site Recovery offers ease of deployment, cost effectiveness, and dependability. <br>Deploy replication, failover, and recovery processes through Site Recovery to help keep your applications running during planned and unplanned outages.]D;]A;]D;]A;* Where configured, Azure Site Recovery protected Virtual Machines will be listed in a table. ]D;]A;* Ensure that each of the following parameters are selected from the drop down lists:]D;]A;	* Subscription]D;]A;	* Vault]D;]A;	* Resource Group]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[> Azure Site Recovery помогает вашему бизнесу продолжать работу во время крупных сбоев ИТ-систем. Azure Site Recovery предлагает легкое развертывание, оптимальные затраты и надежность. <br>Разверните процессы репликации, отработки отказа и восстановления через Site Recovery, чтобы поддерживать работу приложений во время планового и внепланового простоя.]D;]A;]D;]A;* Если этот параметр настроен, виртуальные машины под защитой Site Recovery будут перечислены в таблице. ]D;]A;* Убедитесь, что в раскрывающихся списках выбраны все следующие параметры.]D;]A;	* Подписка]D;]A;	* Хранилище]D;]A;	* Группа ресурсов]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -891,12 +906,18 @@
       <Item ItemId=";items.Compute.content.items.cVMsGroup.content.items.ClassicVM.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No classic VMs found]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Классические виртуальные машины не найдены]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Compute.content.items.cVMsGroup.content.items.ClassicVM.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Classic Virtual Machines]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Классические виртуальные машины]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -948,6 +969,9 @@
       <Item ItemId=";items.Containers.content.items.Help.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[* An Azure Kubernetes Service (AKS) cluster distributes resources such as nodes and storage across logical sections of underlying Azure infrastructure. This deployment model when using availability zones, ensures nodes in a given availability zone are physically separated from those defined in another availability zone. AKS clusters deployed with multiple availability zones configured across a cluster provide a higher level of availability to protect against a hardware failure or a planned maintenance event.]D;]A;* By defining node pools in a cluster to span multiple zones, nodes in a given node pool are able to continue operating even if a single zone has gone down. Your applications can continue to be available even if there is a physical failure in a single datacenter if orchestrated to tolerate failure of a subset of nodes.]D;]A;* You can only define availability zones when the cluster or node pool is created.]D;]A;Availability zone settings can't be updated after the cluster is created. You also can't update an existing, non-availability zone cluster to use availability zones.]D;]A;* The chosen node size (VM SKU) selected must be available across all availability zones selected.]D;]A;* Clusters with availability zones enabled require use of Azure Standard Load Balancers for distribution across zones. This load balancer type can only be defined at cluster create time.]D;]A;* Clusters with Availability Sets are recommended to move to VM Scale Sets for node pools. Availability Sets limits the management of nodepool capability such as upgrading Kubernetes versions for individual node pools and adding or removing node pools. Re-creation of cluster is required to move from Availability sets to scale sets.]D;]A;]D;]A;]D;]A;> Azure generally recommends to leverage [Availability Zone]5D;(https://learn.microsoft.com/azure/availability-zones/az-overview) for better High Availability within the region by leveraging multiple zones inside region. By architecting your solutions to use replicated services in zones, you can protect your apps and data from the loss of a datacenter. ]D;]A;]D;]A;> At this point, not all Azure regions and services support Availability Zones, the support matrix can be found [here]5D;(https://learn.microsoft.com/azure/availability-zones/az-region). Whenerver there is a Zonal recommendation for a particular service from this workbook, please note that that is applicable only for the regions supporting Availability Zones from the earlier list.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[* Кластер службы Azure Kubernetes (AKS) распределяет такие ресурсы, как узлы и хранилище, по логическим разделам базовой инфраструктуры Azure. Эта модель развертывания при использовании зон доступности гарантирует, что узлы в заданной зоне доступности физически отделены от узлов, определенных в другой зоне доступности. Кластеры AKS, развернутые с несколькими зонами доступности, настроенными в кластере, обеспечивают более высокий уровень доступности для защиты от сбоя оборудования или события планового обслуживания.]D;]A;* За счет определения пулов узлов в кластере для охвата нескольких зон, узлы в указанном пуле узлов могут продолжать работу даже при отказе одной зоны. Если настроено продолжение работы при отказе подмножества узлов, то приложение остается доступным, даже если в одном центре обработки данных произошел физический сбой.]D;]A;* Зоны доступности можно определить только при создании кластера или пула узлов.]D;]A;Параметры зоны доступности невозможно обновить после создания кластера. Обновить существующий кластер без зон доступности так, чтобы было возможно использование зон доступности, также невозможно.]D;]A;* Выбранный размер узла (SKU виртуальной машины) должен быть доступен во всех выбранных зонах доступности.]D;]A;* Кластеры с включенными зонами доступности требуют использования стандартных подсистем балансировки нагрузки Azure для распределения между зонами. Этот тип подсистемы балансировки нагрузки можно определить только во время создания кластера.]D;]A;* Кластеры с группами доступности рекомендуется переместить в масштабируемые наборы виртуальных машин для пулов узлов. Группы доступности ограничивают управление возможностями пула узлов, такими как обновление версий Kubernetes для отдельных пулов узлов и добавление или удаление пулов узлов. Для перемещения из групп доступности в масштабируемые наборы требуется повторное создание кластера.]D;]A;]D;]A;]D;]A;> В Azure рекомендуется использовать [зоны доступности]5D;(https://learn.microsoft.com/azure/availability-zones/az-overview) для обеспечения высокого уровня доступности в пределах региона. Для этого нужно использовать несколько зон внутри одного региона. Если предусмотреть использование реплицированных служб в зонах, можно защитить приложения и службы от потери центра обработки данных. ]D;]A;]D;]A;> В настоящее время не все регионы и службы Azure поддерживают зоны доступности. Таблица доступности находится [здесь]5D;(https://learn.microsoft.com/azure/availability-zones/az-region). Если для какой-либо службы из этой книги существует рекомендация по развертыванию в зонах, обратите внимание, что это относится только к регионам, поддерживающим зоны доступности, из приведенного выше списка.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -984,6 +1008,9 @@
       <Item ItemId=";items.Databases.content.items.AzSQL.content.items.text3Copy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[* Standard and Premium tiers provide a longer point-in-time restore period (35 days).]D;]A;* Enable SQL Database auditing. Auditing can be used to diagnose malicious attacks or human error.]D;]A;* Use Active Geo-Replication to create a readable secondary in a different region. If your primary database fails, or simply needs to be taken offline, perform a manual failover to the secondary database. Until you fail over, the secondary database remains read-only.]D;]A;* Consider using sharding to partition the database horizontally. Sharding can provide fault isolation.]D;]A;* Use point-in-time restore to recover from human error.]D;]A;* Use geo-restore to recover from a service outage. Geo-restore restores a database from a geo-redundant backup.]D;]A;]D;]A;> Azure generally recommends to leverage [Availability Zone]5D;(https://learn.microsoft.com/azure/availability-zones/az-overview) for better High Availability within the region by leveraging multiple zones inside region. By architecting your solutions to use replicated services in zones, you can protect your apps and data from the loss of a datacenter. ]D;]A;]D;]A;> At this point, not all Azure regions and services support Availability Zones, the support matrix can be found [here]5D;(https://learn.microsoft.com/azure/availability-zones/az-region). Whenerver there is a Zonal recommendation for a particular service from this workbook, please note that that is applicable only for the regions supporting Availability Zones from the earlier list.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[* Категории "Стандартный" и "Премиум" обеспечивают более длинный период восстановления до точки во времени (35 дней).]D;]A;* Включите аудит базы данных SQL. Аудит можно использовать для диагностики вредоносных атак или человеческих ошибок.]D;]A;* Используйте активную георепликацию для создания вторичной реплики для чтения в другом регионе. Если база данных-источник не работает или ее нужно просто отключить, выполните переход на другой ресурс вручную в базе данных-получателе. Пока не будет выполнена отработка отказа, база данных-получатель останется доступной только для чтения.]D;]A;* Подумайте об использовании сегментирования для горизонтального разделения базы данных. Сегментирование обеспечит изоляцию при сбое.]D;]A;* Используйте восстановление до точки во времени для восстановления после человеческой ошибки.]D;]A;* Используйте георепликацию для восстановления после сбоя службы. Георепликация восстанавливает базу данных из геоизбыточной резервной копии.]D;]A;]D;]A;> В Azure рекомендуется использовать [зоны доступности]5D;(https://learn.microsoft.com/azure/availability-zones/az-overview) для обеспечения высокого уровня доступности в пределах региона. Для этого нужно использовать несколько зон внутри одного региона. Если предусмотреть использование реплицированных служб в зонах, можно защитить приложения и службы от потери центра обработки данных. ]D;]A;]D;]A;> В настоящее время не все регионы и службы Azure поддерживают зоны доступности. Таблица доступности находится [здесь]5D;(https://learn.microsoft.com/azure/availability-zones/az-region). Если для какой-либо службы из этой книги существует рекомендация по развертыванию в зонах, обратите внимание, что это относится только к регионам, поддерживающим зоны доступности, из приведенного выше списка.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1005,6 +1032,9 @@
       <Item ItemId=";items.Databases.content.items.AzSynapse.content.items.text3CopyCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[* It is recommended to keep the geo-backup feature enabled. By default, Synapse Analytics takes a full backup of your data every 24 hours for disaster recovery.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[* Рекомендуется включить функцию георезервирования. По умолчанию Synapse Analytics требует полное резервное копирование данных каждые 24 часа для аварийного восстановления.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1020,6 +1050,9 @@
       <Item ItemId=";items.Databases.content.items.Cosmos.content.items.text0.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[[SLA for Azure Cosmos DB]5D;(https://azure.microsoft.com/support/legal/sla/cosmos-db/)]D;]A;* The service offers comprehensive 99.99% SLAs which covers the guarantees for throughput, consistency, availability and latency for the Azure Cosmos DB Database Accounts scoped to a single Azure region configured with any of the five Consistency Levels or Database Accounts spanning multiple Azure regions, configured with any of the four relaxed Consistency Levels]D;]A;* Azure Cosmos DB allows configuring multiple Azure regions as writable endpoints for a Database Account. In this configuration, Azure Cosmos DB offers 99.999% SLA for both read and write availability]D;]A;]D;]A;> SLA accurate at time of release. Latest information is available [here]5D;(https://azure.microsoft.com/support/legal/sla/cosmos-db/)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[[Соглашение об уровне обслуживания для Azure Cosmos DB]5D;(https://azure.microsoft.com/support/legal/sla/cosmos-db/)]D;]A;* Служба предлагает комплексные Соглашения об уровне обслуживания 99,99%, охватывающие гарантии пропускной способности, согласованности, доступности и задержки для учетных записей базы данных Cosmos DB, ограниченные одним регионом Azure, настроенным с любым из пяти уровней согласованности, или для учетных записей баз данных, охватывающих несколько регионов Azure, настроенных с любым из четырех нестрогих уровней согласованности.]D;]A;* Azure Cosmos DB позволяет настроить несколько регионов Azure в качестве доступных для записи конечных точек для учетной записи базы данных. В этой конфигурации Cosmos DB предлагает Соглашение об уровне обслуживания с уровнем доступности 99,999% для чтения и записи.]D;]A;]D;]A;> Текст соглашения об уровне обслуживания является точным на момент выпуска. Последние сведения доступны [здесь]5D;(https://azure.microsoft.com/support/legal/sla/cosmos-db/)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1032,18 +1065,27 @@
       <Item ItemId=";items.Databases.content.items.MySQL.content.items.kqldatabasemysqlflexibleresourcesdetails.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[MySQL - Flexible]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[MySQL — гибкий]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Databases.content.items.MySQL.content.items.kqldatabasemysqlsingleresourcesdetails.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[MySQL - Single]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[MySQL — один]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Databases.content.items.MySQL.content.items.mysqlsingleretirement.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Important]D;]A;]D;]A;* Azure Database for MySQL - Single Server is on the retirement path. We strongly recommend for you to upgrade to Azure Database for MySQL - Flexible Server. ]D;]A;]D;]A;> For more information about migrating to Azure Database for MySQL - Flexible Server, see [What's happening to Azure Database for MySQL Single Server]5D;(https://learn.microsoft.com/azure/mysql/single-server/whats-happening-to-mysql-single-server)?]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Важно]D;]A;]D;]A;* База данных Azure MySQL для одного сервера выводится из использования. Настоятельно рекомендуется выполнить обновление до базы данных Azure для MySQL с гибким сервером. ]D;]A;]D;]A;> Дополнительные сведения о переходе на базу данных Azure для MySQL с гибким сервером см. в статье ["Что происходит с базой данных Azure MySQL для одного сервера"]5D;(https://learn.microsoft.com/azure/mysql/single-server/whats-happening-to-mysql-single-server)?]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1056,6 +1098,9 @@
       <Item ItemId=";items.Databases.content.items.MySQL.content.items.text1.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[* It is recommended to create cross region read replicas in another region]D;]A;* Enable Availability Zone in Flexible server if the region supports Availability Zones]D;]A;* Enable backup storage redundancy as GRS instead of LRS]D;]A;* Validate and configure backup retention period]D;]A;]D;]A;> Azure generally recommends to leverage [Availability Zone]5D;(https://learn.microsoft.com/azure/availability-zones/az-overview) for better High Availability within the region by leveraging multiple zones inside region. By architecting your solutions to use replicated services in zones, you can protect your apps and data from the loss of a datacenter. ]D;]A;]D;]A;> At this point, not all Azure regions and services support Availability Zones, the support matrix can be found [here]5D;(https://learn.microsoft.com/azure/availability-zones/az-region). Whenerver there is a Zonal recommendation for a particular service from this workbook, please note that that is applicable only for the regions supporting Availability Zones from the earlier list.]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[* Рекомендуется создать реплики чтения между регионами в другом регионе]D;]A;* Включите зону доступности на гибком сервере, если регион поддерживает зоны доступности]D;]A;* Включите избыточность хранилища резервных копий как GRS вместо LRS]D;]A;* Проверьте и настройте период хранения резервных копий]D;]A;]D;]A;> В Azure рекомендуется использовать [зоны доступности]5D;(https://learn.microsoft.com/azure/availability-zones/az-overview) для обеспечения высокого уровня доступности в пределах региона. Для этого нужно использовать несколько зон внутри одного региона. Если предусмотреть использование реплицированных служб в зонах, можно защитить приложения и службы от потери центра обработки данных. ]D;]A;]D;]A;> В настоящее время не все регионы и службы Azure поддерживают зоны доступности. Таблица доступности находится [здесь]5D;(https://learn.microsoft.com/azure/availability-zones/az-region). Если для какой-либо службы из этой книги существует рекомендация по развертыванию в зонах, обратите внимание, что это относится только к регионам, поддерживающим зоны доступности, из приведенного выше списка.]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1071,6 +1116,9 @@
       <Item ItemId=";items.Databases.content.items.Redis.content.items.text0.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[[SLA for Azure Cache for Redis]5D;(https://azure.microsoft.com/support/legal/sla/cache/)]D;]A;]D;]A;* For any Standard, Premium, Enterprise, and Enterprise Flash tier Cache, we guarantee that you will have connectivity to the Cache Endpoint at least 99.9% of the time.]D;]A;* For any Enterprise and Enterprise Flash tier Cache deployed to three or more Availability Zones in the same Azure region, we guarantee that you will have connectivity to the Cache Endpoint at least 99.99% of the time.]D;]A;* For any Enterprise and Enterprise Flash tier Cache deployed (1) to at least three Azure regions and three or more Availability Zones in each region and (2) with active geo-replication enabled for all Cache instances, we guarantee that you will have connectivity to one regional Cache Endpoint at least 99.999% of the time.]D;]A;]D;]A;> SLA accurate at time of release. Latest information is available [here]5D;(https://azure.microsoft.com/support/legal/sla/cache/)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[[Соглашение об уровне обслуживания для кэша Azure для Redis]5D;(https://azure.microsoft.com/support/legal/sla/cache/)]D;]A;]D;]A;* Для любого кэша уровня Standard, Premium, Enterprise и Enterprise Flash мы гарантируем, что у вас будет подключение к конечной точке кэша не менее 99,9% времени.]D;]A;* i>Для любого кэша уровня Enterprise и Enterprise Flash, развернутого в трех или более зонах доступности в одном регионе Azure, мы гарантируем, что вы будете иметь подключение к конечной точке кэша не менее 99,99% времени.]D;]A;* Для любого кэша уровня Enterprise и Enterprise Flash развернуто (1) как минимум в трех регионах Azure и трех или более зонах доступности в каждом регионе и (2) с активной георепликацией, включенной для всех экземпляров кэша, мы гарантируем, что у вас будет подключение к одной региональной конечной точке кэша не менее 99,999% времени.]D;]A;]D;]A;> Текст соглашения об уровне обслуживания является точным на момент выпуска. Последние сведения доступны [здесь]5D;(https://azure.microsoft.com/support/legal/sla/cache/)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1128,12 +1176,18 @@
       <Item ItemId=";items.ExportStep.content.items.argconsolidatedgroup.content.items.kqlexportresourcesdetails.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Resources Details]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Сведения о ресурсах]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.ExportStep.content.items.argconsolidatedgroup.content.items.query2.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Advisor Recommendations by Impact]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Рекомендации Помощника по влиянию]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1164,6 +1218,9 @@
       <Item ItemId=";items.Integration.content.items.text3CopyCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[* Please note the Developer tier is for non-production use cases and evaluations. It does not offer an SLA.]D;]A;* API Management instances deleted using 2020-01-01-preview and later API versions will be soft-deleted and recoverable. APIM instances deleted using previous API versions will continue to be hard-deleted. Azure PowerShell and Azure CLI currently do not use the 2020-06-01-preview version and will also result in hard-delete behavior. Refer to [API Management soft-delete (preview)]5D;(https://learn.microsoft.com/azure/api-management/soft-delete) for more information.]D;]A;]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[* Обратите внимание, что уровень "Разработчик" используется для вариантов использования и оценок, не связанных с рабочей средой. Соглашение об уровне обслуживания не предлагается.]D;]A;* Экземпляры службы "Управление API", удаленные с помощью версии API 2020-01-01-preview и более поздних версий, будут обратимо удалены и могут быть восстановлены. Экземпляры APIM, удаленные с использованием предыдущих версий API, будут удаляться без возможности восстановления. Azure PowerShell и Azure CLI сейчас не используют версию 2020-06-01-preview, что также приведет к удалению без возможности восстановления. Дополнительные сведения см. в статье ["Удаление с возможностью восстановления в службе "Управление API" (предварительная версия)"]5D;(https://learn.microsoft.com/azure/api-management/soft-delete).]D;]A;]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1200,6 +1257,9 @@
       <Item ItemId=";items.Networking.content.items.AG.content.items.text3CopyCopyCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[* Deploy Application Gateway with at least two instances. A single instance is a single point of failure. Use two or more instances for redundancy and scalability. In order to qualify for the SLA, you must provision two or more medium or larger instances.]D;]A;* Capacity specifies the number of instances of an application gateway.]D;]A;* An Application Gateway can scale based on customer demand and span multiple availability zones for optimal availability.]D;]A;* Two autoscaling configuration types are supported:]D;]A;	* Fixed capacity mode. In this mode, the application gateway does not autoscale and operates at a fixed Scale Unit capacity.]D;]A;	* Autoscaling mode. In this mode, the application gateway autoscales based on the application traffic pattern.]D;]A;]D;]A;]D;]A;> Azure generally recommends to leverage [Availability Zone]5D;(https://learn.microsoft.com/azure/availability-zones/az-overview) for better High Availability within the region by leveraging multiple zones inside region. By architecting your solutions to use replicated services in zones, you can protect your apps and data from the loss of a datacenter. ]D;]A;]D;]A;> At this point, not all Azure regions and services support Availability Zones, the support matrix can be found [here]5D;(https://learn.microsoft.com/azure/availability-zones/az-region). Whenerver there is a Zonal recommendation for a particular service from this workbook, please note that that is applicable only for the regions supporting Availability Zones from the earlier list.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[* Разверните шлюз приложений по крайней мере с двумя экземплярами. Единственный экземпляр является единой точкой отказа. Используйте два или больше экземпляров для избыточности и масштабируемости. Чтобы получить возможность применять соглашение об уровне обслуживания, необходимо подготовить два или больше средних или более крупных экземпляров.]D;]A;* Емкость обозначает число экземпляров шлюза приложений.]D;]A;* Шлюз приложений можно масштабировать в соответствии с требованиями клиентов. Шлюз приложений может охватывать несколько зон доступности для оптимальной доступности.]D;]A;* Поддерживаются следующие два типа конфигурации автомасштабирования.]D;]A;	* Режим фиксированной емкости. В этом режиме шлюз приложений не выполняет автомасштабирование и работает с фиксированной емкостью в единицах масштабирования.]D;]A;	* Режим автомасштабирования. В этом режиме автомасштабирование шлюза приложений выполняется на основе шаблона трафика приложения.]D;]A;]D;]A;]D;]A;> В Azure рекомендуется использовать [зоны доступности]5D;(https://learn.microsoft.com/azure/availability-zones/az-overview) для обеспечения высокого уровня доступности в пределах региона. Для этого нужно использовать несколько зон внутри одного региона. Если предусмотреть использование реплицированных служб в зонах, можно защитить приложения и службы от потери центра обработки данных. ]D;]A;]D;]A;> В настоящее время не все регионы и службы Azure поддерживают зоны доступности. Таблица доступности находится [здесь]5D;(https://learn.microsoft.com/azure/availability-zones/az-region). Если для какой-либо службы из этой книги существует рекомендация по развертыванию в зонах, обратите внимание, что это относится только к регионам, поддерживающим зоны доступности, из приведенного выше списка.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1212,12 +1272,18 @@
       <Item ItemId=";items.Networking.content.items.LB.content.items.text3CopyCopyCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[* With Standard Load Balancer, you can scale your applications and create highly available services. Load balancer supports both inbound and outbound scenarios. Load balancer provides low latency and high throughput, and scales up to millions of flows for all TCP and UDP applications.]D;]A;* Increase availability by distributing resources within and across zones.]D;]A;]D;]A;> Azure generally recommends to leverage [Availability Zone]5D;(https://learn.microsoft.com/azure/availability-zones/az-overview) for better High Availability within the region by leveraging multiple zones inside region. By architecting your solutions to use replicated services in zones, you can protect your apps and data from the loss of a datacenter. ]D;]A;]D;]A;> At this point, not all Azure regions and services support Availability Zones, the support matrix can be found [here]5D;(https://learn.microsoft.com/azure/availability-zones/az-region). Whenerver there is a Zonal recommendation for a particular service from this workbook, please note that that is applicable only for the regions supporting Availability Zones from the earlier list.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[* С помощью Load Balancer (цен. категория "Стандартный") вы можете масштабировать приложения и создавать службы с высоким уровнем доступности. Подсистема балансировки нагрузки поддерживает входящие и исходящие сценарии. Подсистема балансировки нагрузки обеспечивает низкую задержку и высокую пропускную способность, а также масштабирование до миллионов потоков для всех приложений TCP и UDP.]D;]A;* Повышайте доступность путем распределения ресурсов в зонах и между зонами.]D;]A;]D;]A;> В Azure рекомендуется использовать [зоны доступности]5D;(https://learn.microsoft.com/azure/availability-zones/az-overview) для обеспечения высокого уровня доступности в пределах региона. Для этого нужно использовать несколько зон внутри одного региона. Если предусмотреть использование реплицированных служб в зонах, можно защитить приложения и службы от потери центра обработки данных. ]D;]A;]D;]A;> В настоящее время не все регионы и службы Azure поддерживают зоны доступности. Таблица доступности находится [здесь]5D;(https://learn.microsoft.com/azure/availability-zones/az-region). Если для какой-либо службы из этой книги существует рекомендация по развертыванию в зонах, обратите внимание, что это относится только к регионам, поддерживающим зоны доступности, из приведенного выше списка.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Networking.content.items.PIP.content.items.PublicIPaddressesandIPPrefixes.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Public IP addresses and IP Prefixes]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Общедоступные IP-адреса и префиксы IP-адресов]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1230,6 +1296,9 @@
       <Item ItemId=";items.Networking.content.items.VPNandERGW.content.items.query2.content.gridSettings.labelSettings.OSDisk.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Gateway Generation]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Создание шлюза]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1245,6 +1314,9 @@
       <Item ItemId=";items.Networking.content.items.VPNandERGW.content.items.query2.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[VPN and ExpressRoute Gateway]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Виртуальная частная сеть и шлюз ExpressRoute]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1281,6 +1353,9 @@
       <Item ItemId=";items.Networking.content.items.links5.content.links.947f178c58f843acac0a7eddf884c712.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[VPN and ExpressRoute Gateway]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Виртуальная частная сеть и шлюз ExpressRoute]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1296,6 +1371,9 @@
       <Item ItemId=";items.Networking.content.items.links5.content.links.c70315243e4c417b8675f49985b0e4a9.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Azure Front Door and CDN]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Azure Front Door и сеть доставки содержимого]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1303,7 +1381,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Load Balancer]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Load Balancer]]></Val>
+            <Val><![CDATA[Подсистема балансировки нагрузки]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -1317,12 +1395,18 @@
       <Item ItemId=";items.Overview.content.items.text1.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Indicates an implemented feature that can result in a more resilient implementation, a higher SLA, and/or increased ability to restore a service.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Обозначает реализованную функцию, которая может привести к более устойчивой реализации, более строгому соглашению об уровне обслуживания и/или большим возможностям восстановления службы.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overview.content.items.text2.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Indicates a feature that has not been implemented, and therefore can result in a less resilient implementation, a reduced SLA, and/or reduced ability to restore a service.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Обозначает функцию, которая не реализована и, следовательно, может привести к снижению отказоустойчивости реализации, снижению требований соглашения об уровне обслуживания и/или снижению возможности восстановления службы.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1335,36 +1419,54 @@
       <Item ItemId=";items.Storage.content.items.kqlstorageaccountresourcesdetails.content.gridSettings.labelSettings.ReadReplica.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Read Replication]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Репликация для чтения]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Storage.content.items.kqlstorageaccountresourcesdetails.content.gridSettings.labelSettings.SkuName.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Sku Name]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Наименование SKU]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Storage.content.items.text2CopyCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[[SLA for Storage Accounts]5D;(https://azure.microsoft.com/support/legal/sla/storage/)]D;]A;* We guarantee that at least 99.99% (99.9% for Cool Access Tier) of the time, we will successfully process requests to read data from Read Access-Geo Redundant Storage (RA-GRS) Accounts, provided that failed attempts to read data from the primary region are retried on the secondary region.]D;]A;* We guarantee that at least 99.9% (99% for Cool Access Tier) of the time, we will successfully process requests to read data from Locally Redundant Storage (LRS), Zone Redundant Storage (ZRS), and Geo Redundant Storage (GRS) Accounts.]D;]A;* We guarantee that at least 99.9% (99% for Cool Access Tier) of the time, we will successfully process requests to write data to Locally Redundant Storage (LRS), Zone Redundant Storage (ZRS), and Geo Redundant Storage (GRS) Accounts and Read Access-Geo Redundant Storage (RA-GRS) Accounts.]D;]A;]D;]A;> SLA accurate at time of release. Latest information is available [here]5D;(https://azure.microsoft.com/support/legal/sla/storage/)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[[Соглашение об уровне обслуживания для учетных записей хранения]5D;(https://azure.microsoft.com/support/legal/sla/storage/)]D;]A;* Мы гарантируем, что не менее 99,99% (99,9% для уровня доступа Cool) времени мы будем успешно обрабатывать запросы на чтение данных из учетных записей геоизбыточного хранилища с доступом на чтение (RA-GRS), при условии, что неудачные попытки чтения данных из основного региона повторяются в дополнительном регионе.]D;]A;* Мы гарантируем, что не менее 99,9% (99% для уровней доступа Cool) времени мы будем успешно обрабатывать запросы на чтение данных из локально избыточного хранилища (LRS), зонально избыточного хранилища (ZRS) и геоизбыточного хранилища (GRS).]D;]A;* Мы гарантируем, что не менее 99,9% (99% для уровней доступа Cool) времени мы будем успешно обрабатывать запросы на запись данных в учетные записи локально избыточного хранилища (LRS), зонально избыточного хранилища (ZRS) и геоизбыточного хранилища и геоизбыточного хранилища с доступом для чтения (RA-GRS)..]D;]A;]D;]A;> Текст соглашения об уровне обслуживания является точным на момент выпуска. Последние сведения доступны [здесь]5D;(https://azure.microsoft.com/support/legal/sla/storage/)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Storage.content.items.text3CopyCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[> * For application data, use read-access geo-redundant storage (RA-GRS). RA-GRS storage replicates the data to a secondary region, and provides read-only access from the secondary region. If there is a storage outage in the primary region, the application can read the data from the secondary region.]D;]A;* For VM disks, use managed disks. Managed disks provide better reliability for VMs in an availability set, because the disks are sufficiently isolated from each other to avoid single points of failure. Also, managed disks aren't subject to the IOPS limits of VHDs created in a storage account.]D;]A;* For Queue storage, create a backup queue in another region. For Queue storage, a read-only replica has limited use, because you can't queue or dequeue items. Instead, create a backup queue in a storage account in another region. If there is a storage outage, the application can use the backup queue, until the primary region becomes available again. That way, the application can still process new requests]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[> * Для данных приложения используйте геоизбыточное хранилище с доступом на чтение (RA-GRS). Хранилище RA-GRS реплицирует данные в дополнительный регион и предоставляет из дополнительного региона доступ только для чтения. При сбое хранилища в основном регионе приложение может считать данные из дополнительного региона.]D;]A;* Используйте управляемые диски в качестве виртуальных жестких дисков. Управляемые диски обеспечивают большую надежность для виртуальных машин в группе доступности, так как они достаточно изолированы друг от друга, что позволяет избежать появления единых точек отказа. Кроме того, на управляемые диски не распространяются ограничения на число операций ввода-вывода в секунду для виртуальных жестких дисков, созданных в учетных записях хранения.]D;]A;* Для хранения очередей создайте резервную очередь в другом регионе. Для хранилища очередей реплика, доступная только для чтения, имеет ограниченные варианты использования, так как поставить элементы в очередь или вывести их из очереди невозможно. Вместо этого создайте резервную очередь в учетной записи хранения в другом регионе. Если произошел сбой хранилища, приложение может использовать резервную очередь, пока основной регион не станет снова доступен. Это позволяет приложению все равно обрабатывать новые запросы]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Web.content.items.AppService.content.items.kqlwebappappsvcresourcesdetails.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[App Service - Web App]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Веб-приложение — служба приложений]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Web.content.items.AppService.content.items.text2Copy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[[SLA for App Service]5D;(https://azure.microsoft.com/support/legal/sla/app-service/)]D;]A;* We guarantee that Apps running in a customer subscription will be available 99.95% of the time. ]D;]A;* No SLA is provided for Apps under either the Free or Shared tiers.]D;]A;]D;]A;> SLA accurate at time of release. Latest information is available [here]5D;(https://azure.microsoft.com/support/legal/sla/app-service/)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[[Соглашение об уровне обслуживания для службы приложений]5D;(https://azure.microsoft.com/support/legal/sla/app-service/)]D;]A;* Гарантируется доступность приложений, работающих в подписке клиента, в течение 99,95% времени. ]D;]A;* Для приложений на уровне "Бесплатный" и "Общий" соглашение об уровне обслуживания не предоставляется.]D;]A;]D;]A;> Текст соглашения об уровне обслуживания является точным на момент выпуска. Последние сведения доступны [здесь]5D;(https://azure.microsoft.com/support/legal/sla/app-service/)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
