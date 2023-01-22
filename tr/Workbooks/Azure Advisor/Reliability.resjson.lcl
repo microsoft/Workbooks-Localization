@@ -1371,12 +1371,18 @@
       <Item ItemId=";items.Web.content.items.AppService.content.items.text3Copy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[> * Use Standard or Premium tier. These tiers support staging slots and automated backups.]D;]A;* Avoid scaling up or down. Instead, select a tier and instance size that meet your performance requirements under typical load, and then scale out the instances to handle changes in traffic volume. Scaling up and down may trigger an application restart.]D;]A;* Store configuration as app settings. Use app settings to hold configuration settings as app settings. Define the settings in your Resource Manager templates, or using PowerShell, so that you can apply them as part of an automated deployment / update process, which is more reliable.]D;]A;* Create separate App Service plans for production and test. Don't use slots on your production deployment for testing. All apps within the same App Service plan share the same VM instances. If you put production and test deployments in the same plan, it can negatively affect the production deployment. For example, load tests might degrade the live production site. By putting test deployments into a separate plan, you isolate them from the production version.]D;]A;* Separate web apps from web APIs. If your solution has both a web front end and a web API, consider decomposing them into separate App Service apps. This design makes it easier to decompose the solution by workload. You can run the web app and the API in separate App Service plans, so they can be scaled independently. If you don't need that level of scalability at first, you can deploy the apps into the same plan, and move them into separate plans later, if needed.]D;]A;* Avoid using the App Service backup feature to back up Azure SQL databases. Instead, use SQL Database automated backups. App Service backup exports the database to a SQL BACPAC file, which costs DTUs.]D;]A;* Deploy to a staging slot. Create a deployment slot for staging. Deploy application updates to the staging slot, and verify the deployment before swapping it into production. This reduces the chance of a bad update in production. It also ensures that all instances are warmed up before being swapped into production. Many applications have a significant warmup and cold-start time.]D;]A;* Create a deployment slot to hold the last-known-good (LKG) deployment. When you deploy an update to production, move the previous production deployment into the LKG slot. This makes it easier to roll back a bad deployment. If you discover a problem later, you can quickly revert to the LKG version.]D;]A;* Enable diagnostics logging, including application logging and web server logging. Logging is important for monitoring and diagnostics.]D;]A;* Log to blob storage. This makes it easier to collect and analyze the data.]D;]A;* Create a separate storage account for logs. Don't use the same storage account for logs and application data. This helps to prevent logging from reducing application performance.]D;]A;* Monitor performance. Use a performance monitoring service such as Application Insights to monitor application performance and behavior under load. Performance monitoring gives you real-time insight into the application. It enables you to diagnose issues and perform root-cause analysis of failures.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[> * Standart veya Premium katmanı kullanın. Bu katmanlar hazırlama yuvalarını ve otomatik yedeklemeleri destekliyor.]D;]A;* Ölçeği artırmaktan veya azaltmaktan sakının. Bunun yerine, normal yük altında performans gereksinimlerinizi karşılayan bir katman ve örnek boyutu seçin ve ardından öneklerin ölçeğini trafik hacmindeki değişiklikleri yönetecek şekilde genişletin. Ölçeği artırma ve azaltma bir uygulamanın yeniden başlatılmasını tetikleyebilir.]D;]A;* Yapılandırmayı uygulama ayarları olarak depolayın. Uygulama ayarlarını, yapılandırma ayarlarını uygulama ayarları olarak saklamak için kullanın. Ayarları Resource Manager şablonlarınızda veya Windows PowerShell’i kullanarak tanımlayın, böylece bu ayarları daha güvenilir olan otomatik bir dağıtım/güncelleştirme işleminin parçası olarak uygulayabilirsiniz.]D;]A;* Üretim ve test için ayrı App Service planları oluşturun. Üretim dağıtımınızda bulunan yuvaları test için kullanmayın. Aynı App Service planı içindeki tüm uygulamalar aynı VM örneklerini paylaşır. Üretim ve test dağıtımlarını aynı plana yerleştirirseniz, üretim dağıtımı olumsuz etkilenebilir. Örneğin, yük testleri canlı üretim sitesinin performansını düşürebilir. Test dağıtımlarını ayrı bir plana yerleştirerek bunları üretim dağıtımlarından yalıtın.]D;]A;* Web uygulamalarını web API’lerinden ayırın. Çözümünüz hem bir web ön ucu hem de bir web API’si içeriyorsa, bunları ayrı App Service uygulamalarına ayrıştırmayı deneyin. Bu tasarım çözümü iş yüküne göre ayrıştırmayı kolaylaştırır. Web uygulamasını ve web API’sini ayrı App Service planlarında çalıştırabilirsiniz, böylece bunlar bağımsız olarak ölçeklenebilir. Başlangıçta bu düzeyde ölçeklenebilirliğe ihtiyacınız yoksa uygulamaları aynı plana dağıtabilir ve daha sonra gerektiğinde bu uygulamaları ayrı planlara taşıyabilirsiniz.]D;]A;* Azure SQL veritabanlarını yedeklemek için App Service yedekleme özelliğini kullanmaktan kaçının. Bunun yerine, SQL Veritabanı otomatik yedekleme özelliğini kullanın. App Service yedeklemesi veritabanını bir SQL BACPAC dosyasına aktarır ve bu durum DTU kullanımına neden olur.]D;]A;* Bir hazırlama yuvasına dağıtın. Hazırlama için bir dağıtım yuvası oluşturun. Uygulama güncelleştirmelerini hazırlama yuvasına dağıtın ve üretime geçirmeden önce dağıtımı doğrulayın. Bu, üretimde hatalı güncelleştirme olasılığını azaltır. Ayrıca, tüm örneklerin üretime geçirilmeden önce hazırlanmasını sağlar. Birçok uygulamanın önemli bir hazırlık ve hazırlıksız başlatma süresi vardır.]D;]A;* Bilinen son iyi (LKG) yapılandırmayı saklamak için bir dağıtım yuvası oluşturun. Üretime bir güncelleştirme dağıttığınızda, önceki üretim dağıtımını LKG yuvasına taşıyın. Bu işlem, hatalı bir dağıtımı geri almayı kolaylaştırır. Daha sonra bir sorun bulursanız LKG sürümüne hızlı bir şekilde geri dönebilirsiniz.]D;]A;* Uygulama günlüğüne kaydetme ve web sunucusu günlüğüne kaydetme dahil tanılama günlüğüne kaydetmeyi etkinleştirin. Günlüğe kaydetme izleme ve tanılama için önemlidir.]D;]A;* Blob depolama günlüğüne kaydedin. Bu, verileri toplamayı ve analiz etmeyi kolaylaştırır.]D;]A;* Günlükler için ayrı bir depolama hesabı oluşturun. Günlükler ve uygulama verileri için aynı depolama hesabını kullanmayın. Bu, günlüğe kaydetme işleminin uygulama performansını düşürmesini engeller.]D;]A;* Performansı izleyin. Yük altındaki uygulama performansını ve davranışını izlemek için Application Insights gibi bir performans izleme hizmetini kullanın. Performans izleme size uygulama hakkında gerçek zamanlı içgörü sunar. Sorunları tanılamanıza ve hatalar için kök neden analizini yapmanıza olanak tanır.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Web.content.items.AppServicePlan.content.items.AppServicePlanquery.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No App Service plans found]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[App Service planı bulunamadı]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1392,30 +1398,45 @@
       <Item ItemId=";items.Web.content.items.AppServicePlan.content.items.asphelp.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[* Use isolated or Premium tier. These tiers support staging slots and automated backups.]D;]A;* Avoid scaling up or down. Instead, select a tier and instance size that meet your performance requirements under typical load, and then scale out the instances to handle changes in traffic volume. Scaling up and down may trigger an application restart.]D;]A;* Store configuration as app settings. Use app settings to hold configuration settings as app settings. Define the settings in your Resource Manager templates, or using PowerShell, so that you can apply them as part of an automated deployment / update process, which is more reliable.]D;]A;* Create separate App Service plans for production and test. Don't use slots on your production deployment for testing. All apps within the same App Service plan share the same VM instances. If you put production and test deployments in the same plan, it can negatively affect the production deployment. For example, load tests might degrade the live production site. By putting test deployments into a separate plan, you isolate them from the production version.]D;]A;* Separate web apps from web APIs. If your solution has both a web front end and a web API, consider decomposing them into separate App Service apps. This design makes it easier to decompose the solution by workload. You can run the web app and the API in separate App Service plans, so they can be scaled independently. If you don't need that level of scalability at first, you can deploy the apps into the same plan, and move them into separate plans later, if needed.]D;]A;* Create auto scaling configuration as part of App service plan.]D;]A;* Deploy App Service Plan in [availability zones]5D;(https://learn.microsoft.com/azure/reliability/migrate-app-service)]D;]A;]D;]A;> Azure generally recommends to leverage [Availability Zone]5D;(https://learn.microsoft.com/azure/availability-zones/az-overview) for better High Availability within the region by leveraging multiple zones inside region. By architecting your solutions to use replicated services in zones, you can protect your apps and data from the loss of a datacenter. ]D;]A;]D;]A;> At this point, not all Azure regions and services support Availability Zones, the support matrix can be found [here]5D;(https://learn.microsoft.com/azure/availability-zones/az-region). Whenerver there is a Zonal recommendation for a particular service from this workbook, please note that that is applicable only for the regions supporting Availability Zones from the earlier list.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[* Yalıtılmış veya Premium katmanı kullanın. Bu katmanlar hazırlama yuvalarını ve otomatik yedeklemeleri destekliyor.]D;]A;* Ölçeği artırmaktan veya azaltmaktan sakının. Bunun yerine, normal yük altında performans gereksinimlerinizi karşılayan bir katman ve örnek boyutu seçin ve ardından öneklerin ölçeğini trafik hacmindeki değişiklikleri yönetecek şekilde genişletin. Ölçeği artırma ve azaltma bir uygulamanın yeniden başlatılmasını tetikleyebilir.]D;]A;* Yapılandırmayı uygulama ayarları olarak depolayın. Uygulama ayarlarını, yapılandırma ayarlarını uygulama ayarları olarak saklamak için kullanın. Ayarları Resource Manager şablonlarınızda veya Windows PowerShell’i kullanarak tanımlayın, böylece bu ayarları daha güvenilir olan otomatik bir dağıtım/güncelleştirme işleminin parçası olarak uygulayabilirsiniz.]D;]A;* Üretim ve test için ayrı App Service planları oluşturun. Üretim dağıtımınızda bulunan yuvaları test için kullanmayın. Aynı App Service planı içindeki tüm uygulamalar aynı VM örneklerini paylaşır. Üretim ve test dağıtımlarını aynı plana yerleştirirseniz, üretim dağıtımı olumsuz etkilenebilir. Örneğin, yük testleri canlı üretim sitesinin performansını düşürebilir. Test dağıtımlarını ayrı bir plana yerleştirerek bunları üretim dağıtımlarından yalıtın.]D;]A;* Web uygulamalarını web API’lerinden ayırın. Çözümünüz hem bir web ön ucu hem de bir web API’si içeriyorsa, bunları ayrı App Service uygulamalarına ayrıştırmayı deneyin. Bu tasarım çözümü iş yüküne göre ayrıştırmayı kolaylaştırır. Web uygulamasını ve web API’sini ayrı App Service planlarında çalıştırabilirsiniz, böylece bunlar bağımsız olarak ölçeklenebilir. Başlangıçta bu düzeyde ölçeklenebilirliğe ihtiyacınız yoksa uygulamaları aynı plana dağıtabilir ve daha sonra gerektiğinde bu uygulamaları ayrı planlara taşıyabilirsiniz.]D;]A;* App Service planının parçası olarak otomatik ölçeklendirme yapılandırması oluşturun.]D;]A;* App Service Planını [kullanılabilirlik alanlarına]5D;(https://learn.microsoft.com/azure/reliability/migrate-app-service) dağıtın]D;]A;]D;]A;>Azure genellikle bölge içinde birden çok alandan yararlanarak bölge içinde daha iyi Yüksek Kullanılabilirlik sağlamak amacıyla [Kullanılabilirlik Alanından]5D;(https://learn.microsoft.com/azure/availability-zones/az-overview) yararlanmayı önerir. Çözümlerinizi bölgelerdeki çoğaltılmış hizmetleri kullanacak şekilde tasarlayarak uygulamalarınızı ve verilerinizi veri merkezindeki kayıplardan koruyabilirsiniz. ]D;]A;]D;]A;> Bu noktada, Azure bölgelerinin ve hizmetlerinin tümü Kullanılabilirlik Alanlarını desteklemiyor, destek matrisini [burada]5D;(https://learn.microsoft.com/azure/availability-zones/az-region) bulabilirsiniz. Bu çalışma kitabındaki belirli bir hizmet için Bölgesel bir öneri sunuluyorsa, lütfen bu önerinin yalnızca daha önceki listede yer alan Kullanılabilirlik Alanlarını destekleyen bölgeler için geçerli olduğunu unutmayın.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Web.content.items.AppServicePlan.content.items.aspsla.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[SLA for App Service Plan]D;]A;* There is no specific SLA tied to App service plan itself. The SLAs are applicable for the services running on the App Service plans.]D;]A;]D;]A;> SLA accurate at time of release. Latest information is available [here]5D;(https://azure.microsoft.com/support/legal/sla/app-service/)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[App Service Planı için SLA]D;]A;* App Service planının kendisine bağlı belirli bir SLA yok. SLA’lar App Service planlarında çalışan hizmetler için geçerlidir.]D;]A;]D;]A;> SLA yayın tarihinde doğrudur. En son bilgilere [buradan]5D;(https://azure.microsoft.com/support/legal/sla/app-service/) ulaşabilirsiniz]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Web.content.items.functionapp.content.items.kqlwebappappservicefuncappresourcesdetails.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[App Service - Function App]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[App Service - İşlev Uygulaması]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Web.content.items.functionapp.content.items.text2CopyCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[[SLA for App Service]5D;(https://azure.microsoft.com/support/legal/sla/app-service/)]D;]A;* We guarantee that Apps running in a customer subscription will be available 99.95% of the time. ]D;]A;* No SLA is provided for Apps under either the Free or Shared tiers.]D;]A;]D;]A;> SLA accurate at time of release. Latest information is available [here]5D;(https://azure.microsoft.com/support/legal/sla/app-service/)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[[App Service için SLA]5D;(https://azure.microsoft.com/support/legal/sla/app-service/)]D;]A;* Bir müşteri aboneliğinde çalışan Uygulamaların sürenin %99,95’inde kullanılabilir olacağını garanti ederiz. ]D;]A;* Ücretsiz veya Paylaşılan katmanları altındaki Uygulamalar için SLA sağlanmıyor.]D;]A;]D;]A;> SLA yayın tarihinde doğrudur. En son bilgilere [buradan]5D;(https://azure.microsoft.com/support/legal/sla/app-service/) ulaşabilirsiniz]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Web.content.items.functionapp.content.items.text3CopyCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[* This section lists Function Apps running on an App Service Plan.]D;]A;* Filter using the subscriptions parameter as required.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[* Bu bölümde bir App Service planında çalışan İşlev Uygulamaları listeleniyor.]D;]A;* Gerektiğinde abonelikler parametresini kullanarak filtreleyin.]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1593,24 +1614,36 @@
       <Item ItemId=";items.parameters13.content.parameters.e929bc0108ec45febc6a4e0267460dfa.description" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[This will show the SLA information for the focus area]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Bu, odak alanıyla ilgili SLA bilgilerini gösterir]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.parameters13.content.parameters.e929bc0108ec45febc6a4e0267460dfa.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Show SLA]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[SLA’yı göster]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.summarygroup.content.items.ReliabilityScoreMessage.content.items.text1.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[]D83D;]DCA1; ]D;]A;_The Reliability Score given in this workbook represents an indication of the number of configurable reliability options that have been implemented. For instance Availability Zones, Availability Set, Sku, Backup, Site Recovery, etc._]D;]A;]D;]A;_The Reliability Score does not include a number for the 'default' reliability for any given resource type. For instance, the current lowest default SLA for any Single Instance Virtual Machine using Standard HDD Managed Disks for Operating System Disks and Data Disks, have an SLA of at least 95%._ ]D;]A;]D;]A;_The Reliability Score in this workbook will be 0% for such a Virtual Machine. The intention of the workbook is to provide visibility of the configurable options that can increase reliability._]D;]A;<br />]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[]D83D;]DCA1; ]D;]A;_Bu çalışma kitabında verilen Güvenilirlik Puanı, uygulanmış yapılandırılabilir güvenilirlik seçeneklerinin sayısını temsil eder. Örneğin, Kullanılabilirlik Alanları, Kullanılabilirlik Kümesi, SKU, Backup, Site Recovery vb._]D;]A;]D;]A;_Güvenilirlik Puanı belirtilen herhangi bir kaynak türü için ‘varsayılan’ güvenilirlik sayısı içermez. Örneğin, İşletim Sistemi Diskleri ve Veri Diskleri için Standart HDD Yönetilen Disklerini kullanan bir Tek Örnekli Sanal Makine için geçerli en düşük varsayılan SLA, en az %95 SLA içerir._ ]D;]A;]D;]A;_Bu çalışma kitabındaki Güvenilirlik Puanı bu tür bir Sanal Makine için %0 olur. Çalışma kitabının amacı, güvenilirliği artırabilecek yapılandırılabilir seçeneklerin görünürlüğünü sağlamaktır._]D;]A;<br />]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.summarygroup.content.items.advisorgroup.content.items.advisorbyrecstep.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[By Recommendation]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Öneriye göre]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1626,18 +1659,27 @@
       <Item ItemId=";items.summarygroup.content.items.advisorgroup.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Advisor - Reliability]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Danışman - Güvenilirlik]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.summarygroup.content.items.kqlsummaryreliabilityscorebyresourceenvironment.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Reliability Score by Resource Type, Environment and Resource]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Kaynak Türüne, Ortama ve Kaynağa göre Güvenilirlik Puanı]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.summarygroup.content.items.kqlsummaryworkbookreliabilityscore.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Workbook Reliability Score]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Çalışma Kitabı Güvenilirlik Puanı]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
