@@ -797,6 +797,9 @@
         <Item ItemId=";(...) gs.ReliabilityScore.label" ItemType="0" PsrId="306" Leaf="true">
           <Str Cat="Text">
             <Val><![CDATA[Reliability Score]]></Val>
+            <Tgt Cat="Text" Stat="Loc" Orig="New">
+              <Val><![CDATA[信頼性スコア]]></Val>
+            </Tgt>
           </Str>
           <Disp Icon="Str" />
         </Item>
@@ -804,12 +807,18 @@
       <Item ItemId=";items.Advisor.content.items.AdvisorHelp.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[> Azure Advisor analyzes your configurations and usage telemetry and offers personalized, actionable recommendations to help you optimize your Azure resources for reliability, security, operational excellence, performance, and cost.]D;]A;]D;]A;* Azure Advisor is available automatically without any configuration.]D;]A;* The table in this workbook specifically relate to any reliability recommendations that may apply to the selected subscription(s).]D;]A;* Filter advisor recommendations using the subscriptions parameter as required.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[> Azure Advisor は、構成と利用統計情報を分析し、信頼性、セキュリティ、オペレーショナル エクセレンス、パフォーマンス、コストのために Azure リソースを最適化するのに役立つ、パーソナライズされ、アクションにつながる推奨事項を提供します。]D;]A;]D;]A;* Azure Advisor は構成なしで自動的に利用できます。]D;]A;* このブックのテーブルは、選択したサブスクリプションに適用される可能性のある信頼性に関する推奨事項と特に関連しています。]D;]A;* 必要に応じて、サブスクリプション パラメーターを使用して Advisor の推奨事項をフィルター処理してください。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Advisor.content.items.AdvisorHelpGov.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[> Azure Advisor recommendations are not yet available for Azure Government cloud]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[> Azure Advisor の推奨事項は、Azure Government クラウドではまだ利用できません]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -835,7 +844,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Last Updated]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[最終更新]]></Val>
+            <Val><![CDATA[最終更新日]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -852,18 +861,27 @@
       <Item ItemId=";items.Advisor.content.items.query0.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Advisor - Reliability]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Advisor - 信頼性]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Backup.content.items.BackupHelp.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[> Azure Site Recovery can help your business to keep doing business during major IT outages. Azure Site Recovery offers ease of deployment, cost effectiveness, and dependability. <br>Deploy replication, failover, and recovery processes through Site Recovery to help keep your applications running during planned and unplanned outages.]D;]A;]D;]A;* Where configured, Azure Site Recovery protected Virtual Machines will be listed in a table. ]D;]A;* Ensure that each of the following parameters are selected from the drop down lists:]D;]A;	* Subscription]D;]A;	* Vault]D;]A;	* Resource Group]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[> Azure Site Recovery は、IT の大規模な停止時にビジネスを継続するのに役立ちます。Azure Site Recovery では、デプロイの容易さ、コスト効率、信頼性が提供されます。<br>レプリケーション、フェールオーバー、復旧プロセスを Site Recovery でデプロイすることにより、計画された停止や計画外の停止中にアプリケーションを実行し続けることができます。]D;]A;]D;]A;* 構成すると、Azure Site Recovery で保護された Virtual Machines がテーブルに一覧表示されます。]D;]A;* 次の各パラメーターがドロップダウン リストから選択されていることを確認します。]D;]A;	* サブスクリプション]D;]A;	* Vault]D;]A;	* リソース グループ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Backup.content.items.BackupSLA.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[[SLA for Azure Site Recovery]5D;(https://azure.microsoft.com/support/legal/sla/site-recovery/)]D;]A;* For each Protected Instance configured for On-Premises-to-On-Premises Failover, we guarantee at least 99.9% availability of the Site Recovery service. Availability is calculated over a monthly billing cycle.]D;]A;* For each Protected Instance configured for On-Premises-to-Azure planned and unplanned Failover, we guarantee a two-hour Recovery Time Objective.]D;]A;* For each Protected Instance configured for Azure-to-Azure Failover, we guarantee a two-hour Recovery Time Objective.]D;]A;]D;]A;> SLA accurate at time of release. Latest information is available [here]5D;(https://azure.microsoft.com/support/legal/sla/site-recovery/)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[[Azure Site Recovery の SLA]5D;(https://azure.microsoft.com/support/legal/sla/site-recovery/)]D;]A;* オンプレミス間のフェールオーバー用に構成された保護されたインスタンスそれぞれにつき、Microsoft は、Site Recovery サービスについて 99.9% 以上の可用性を保証します。可用性は、月次の請求サイクルで計算されます。]D;]A;* オンプレミスと Azure 間の計画上および計画外のフェールオーバー用に構成された保護されたインスタンスそれぞれにつき、Microsoft は、2 時間の回復時間の目標を保証します。]D;]A;* Azure 間のフェールオーバー用に構成された保護されたインスタンスそれぞれにつき、Microsoft は、2 時間の回復時間の目標を保証します。]D;]A;]D;]A;> SLA はリリース時のものです。最新の情報は[こちら]5D;(https://azure.microsoft.com/support/legal/sla/site-recovery/)を参照してください。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -879,30 +897,45 @@
       <Item ItemId=";items.Compute.content.items.cVMSSGroup.content.items.text2.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[[SLA for Virtual Machine Scale Sets]5D;(https://azure.microsoft.com/support/legal/sla/virtual-machine-scale-sets/)]D;]A;* Virtual Machine Scale Sets is a free service, therefore, it does not have a financially backed SLA itself. However, if the Virtual Machine Scale Sets includes Virtual Machines in at least 2 Fault Domains, the availability of the underlying Virtual Machines SLA for two or more instances applies.]D;]A;* If the scale set contains a single Virtual Machine, the availability for a Single Instance Virtual Machine applies. See the [Virtual Machines SLA]5D;(https://azure.microsoft.com/support/legal/sla/virtual-machines/) for more details.]D;]A;]D;]A;> SLA accurate at time of release. Latest information is available [here]5D;(https://azure.microsoft.com/support/legal/sla/virtual-machine-scale-sets/)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[[Virtual Machine Scale Sets の SLA]5D;(https://azure.microsoft.com/support/legal/sla/virtual-machine-scale-sets/)]D;]A;* Virtual Machine Scale Sets は無料のサービスであるため、返金制度付きの SLA はありません。ただし、Virtual Machine Scale Sets の 2 つ以上の障害ドメインに Virtual Machines が含まれている場合は、基になる Virtual Machines の SLA の、2 つ以上のインスタンスに対する可用性が適用されます。]D;]A;* スケール セットに単一の仮想マシンのみが含まれる場合は、単一インスタンス仮想マシンの可用性が適用されます。詳細については、「[Virtual Machines の SLA]5D;(https://azure.microsoft.com/support/legal/sla/virtual-machines/)」を参照してください。]D;]A;]D;]A;> SLA はリリース時のものです。最新の情報は[こちら]5D;(https://azure.microsoft.com/support/legal/sla/virtual-machine-scale-sets/)を参照してください。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Compute.content.items.cVMSSGroup.content.items.text3.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[[Virtual machine scale set resiliency checklist]5D;(https://learn.microsoft.com/azure/architecture/checklist/resiliency-per-service#virtual-machines)]D;]A;]D;]A;* Avoid running a production workload on a single VM in a Scale set. A single VM deployment is not resilient to planned or unplanned maintenance. Instead, put multiple VMs in a virtual machine scale set, with a load balancer in front.]D;]A;* Put each application tier into a separate Scale Set. In an N-tier application, don't put VMs from different tiers into the same scale set. ]D;]A;* Make sure to select multiple fault domains for the scale set to achieve resiliency during failures.]D;]A;* Always enable Zone redundancy for VMs in scale sets whenever the region support zone redundancy]D;]A;* Enable Overprovision settings to create multiple VMs during scaling and remove failure VMs. This increases chances of successful provision during scaling event.]D;]A;* Choose the right VM size based on performance requirements. When moving an existing workload to Azure, start with the VM size that's the closest match to your on-premises servers. Then measure the performance of your actual workload with respect to CPU, memory, and disk IOPS, and adjust the size if needed. This helps to ensure the application behaves as expected in a cloud environment. Also, if you need multiple NICs, be aware of the NIC limit for each size.]D;]A;* Use managed disks for VHDs. Managed disks provide better reliability for VMs in an availability set, because the disks are sufficiently isolated from each other to avoid single points of failure. Also, managed disks aren't subject to the IOPS limits of VHDs created in a storage account.]D;]A;* Configure Azure Monitor. Collect and analyze monitoring data from Azure virtual machines including the guest operating system and the workloads that run in it.]D;]A;* VMs have to be running for disk information to be available.]D;]A;* VM SLAs apply to both operating system and data disks - only operating system disks are represented in this workbook.]D;]A;* Capacity specifies the number of virtual machines in the scale set.]D;]A;]D;]A;]D;]A;> Azure generally recommends to leverage [Availability Zone]5D;(https://learn.microsoft.com/azure/availability-zones/az-overview) for better High Availability within the region by leveraging multiple zones inside region. By architecting your solutions to use replicated services in zones, you can protect your apps and data from the loss of a datacenter. ]D;]A;]D;]A;> At this point, not all Azure regions and services support Availability Zones, the support matrix can be found [here]5D;(https://learn.microsoft.com/azure/availability-zones/az-region). Whenerver there is a Zonal recommendation for a particular service from this workbook, please note that that is applicable only for the regions supporting Availability Zones from the earlier list.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[[仮想マシン スケール セットの回復性のチェックリスト]5D;(https://learn.microsoft.com/azure/architecture/checklist/resiliency-per-service#virtual-machines)]D;]A;]D;]A;* スケール セット内の単一の VM で運用ワークロードを実行しない。単一の VM デプロイには計画メンテナンスや計画外メンテナンスに対する回復性がありません。代わりに、複数の VM を仮想マシン スケール セットに配置し、ロード バランサーを前面に配置します。]D;]A;* 各アプリケーション層を別々の可用性セットに配置する。N 層アプリケーションでは、異なる層の VM を同じスケール セットに配置しないでください。]D;]A;* 障害発生時の回復性を実現するため、スケール セットに対して複数の障害ドメインを選択する。]D;]A;* リージョンがゾーン冗長をサポートしている場合は常に、スケール セット内の VM のゾーン冗長を有効にする]D;]A;* オーバープロビジョニング設定を有効にして、スケーリング中に複数の VM を作成し、障害が発生した VM を削除する。これにより、スケーリング イベント中にプロビジョニングが成功する可能性が高くなります。]D;]A;* パフォーマンスの要件に基づいて適切な VM サイズを選択する。既存のワークロードを Azure に移動する場合は、オンプレミスのサーバーに最も近い VM サイズから開始します。次に、CPU、メモリ、ディスク IOPS について、実際のワークロードのパフォーマンスを測定し、必要に応じてサイズを調整します。こうすることは、アプリケーションをクラウド環境で期待どおりに動作させるのに役立ちます。また、複数の NIC が必要な場合は、各サイズの NIC の制限に注意してください。]D;]A;* VHD 用のマネージド ディスクを使用する。マネージド ディスクでは、ディスクが単一障害点にならないように相互に十分に分離されるため、可用性セット内の VM の信頼性が向上します。また、マネージド ディスクはストレージ アカウントで作成された VHD の IOPS 制限の対象ではありません。]D;]A;* Azure Monitor を構成する。ゲスト オペレーティング システムとそこで実行されるワークロードも含めて、Azure 仮想マシンから監視データを収集および分析します。]D;]A;* ディスク情報を利用するには、VM を実行する必要があります。]D;]A;* VM SLA はオペレーティング システムとデータ ディスクの両方に適用されます。このブックにはオペレーティング システム ディスクのみが表示されます。]D;]A;* 容量はスケール セット内の仮想マシンの数を指定します。]D;]A;]D;]A;]D;]A;> Azure では通常、リージョン内の複数のゾーンを活用することでリージョン内の高可用性を向上させるために、[可用性ゾーン]5D;(https://learn.microsoft.com/azure/availability-zones/az-overview)を活用することをお勧めします。ゾーンでレプリケートされたサービスを使用するようにソリューションを構築することで、データセンターの損失からアプリとデータを保護できます。]D;]A;]D;]A;> 現時点では、すべての Azure リージョンとサービスで Availability Zones がサポートされているわけではありません。サポート マトリックスについては、[こちら]5D;(https://learn.microsoft.com/azure/availability-zones/az-region)を参照してください。このブックの特定のサービスに対する Zones 関連の推奨事項がある場合、以前の一覧から Availability Zones をサポートしているリージョンにのみその推奨事項が適用されることにご注意ください。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Compute.content.items.cVMsGroup.content.items.ClassicVM.content.noDataMessage" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[No classic VMs found]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[クラシック VM が見つかりませんでした]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Compute.content.items.cVMsGroup.content.items.ClassicVM.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Classic Virtual Machines]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[クラシック Virtual Machines]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Compute.content.items.cVMsGroup.content.items.classicvmretirement.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[* Classic Virtual Machines are in path of retirement. Please migrate to Resource Manager based VMs immediately]D;]A;]D;]A;> Retirement announcement in the [docs]5D;(https://learn.microsoft.com/azure/virtual-machines/classic-vm-deprecation)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[* クラシック Virtual Machines は廃止される予定です。Resource Manager ベースの VM に直ちに移行してください]D;]A;]D;]A;> 廃止に関する[ドキュメント]5D;(https://learn.microsoft.com/azure/virtual-machines/classic-vm-deprecation)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -910,7 +943,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Virtual Machines]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[仮想マシン]]></Val>
+            <Val><![CDATA[Virtual Machines]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -918,12 +951,18 @@
       <Item ItemId=";items.Compute.content.items.cVMsGroup.content.items.text2.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[[SLA for Virtual Machines]5D;(https://azure.microsoft.com/support/legal/sla/virtual-machines/)]D;]A;* For all Virtual Machines that have two or more instances deployed across two or more Availability Zones in the same Azure region, we guarantee you will have Virtual Machine Connectivity to at least one instance at least 99.99% of the time.]D;]A;* For all Virtual Machines that have two or more instances deployed in the same Availability Set or in the same Dedicated Host Group, we guarantee you will have Virtual Machine Connectivity to at least one instance at least 99.95% of the time.]D;]A;* For any Single Instance Virtual Machine using Premium SSD or Ultra Disk for all Operating System Disks and Data Disks, we guarantee you will have Virtual Machine Connectivity of at least 99.9%.]D;]A;* For any Single Instance Virtual Machine using Standard SSD Managed Disks for Operating System Disk and Data Disks, we guarantee you will have Virtual Machine Connectivity of at least 99.5%.]D;]A;* For any Single Instance Virtual Machine using Standard HDD Managed Disks for Operating System Disks and Data Disks, we guarantee you will have Virtual Machine Connectivity of at least 95%.]D;]A;]D;]A;> SLA accurate at time of release. Latest information is available [here]5D;(https://azure.microsoft.com/support/legal/sla/virtual-machines/)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[[Virtual Machines の SLA]5D;(https://azure.microsoft.com/support/legal/sla/virtual-machines/)]D;]A;* 2 つ以上のインスタンスが同じ Azure リージョン内の 2 つ以上の Availability Zones にまたがってデプロイされているすべての Virtual Machines について、Microsoft は、99.99% 以上の時間において少なくとも 1 つのインスタンスに対する仮想マシン接続が確保されることを保証します。]D;]A;* 2 つ以上のインスタンスが同じ可用性セットまたは同じ Dedicated Host グループにデプロイされているすべての Virtual Machines について、Microsoft は、99.95% 以上の時間において少なくとも 1 つのインスタンスに対する仮想マシン接続が確保されることを保証します。]D;]A;* オペレーティング システム ディスクとデータ ディスクすべてに Premium SSD または Ultra Disk を使用している単一インスタンスの仮想マシンについて、Microsoft は、99.9% 以上の仮想マシン接続が確保されることを保証します。]D;]A;* オペレーティング システム ディスクとデータ ディスクに Standard SSD Managed Disks を使用している単一インスタンスの仮想マシンについて、Microsoft は、99.5% 以上の仮想マシン接続が確保されることを保証します。]D;]A;* オペレーティング システム ディスクとデータ ディスクに Standard HDD Managed Disks を使用している単一インスタンスの仮想マシンについて、Microsoft は、95% 以上の仮想マシン接続が確保されることを保証します。]D;]A;]D;]A;> SLA はリリース時のものです。最新の情報は[こちら]5D;(https://azure.microsoft.com/support/legal/sla/virtual-machines/)を参照してください。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Compute.content.items.cVMsGroup.content.items.text3.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[> [Virtual machine resilliency checklist]5D;(https://learn.microsoft.com/azure/architecture/checklist/resiliency-per-service#virtual-machines)]D;]A;* Avoid running a production workload on a single VM. A single VM deployment is not resilient to planned or unplanned maintenance. Instead, put multiple VMs in an availability set or virtual machine scale set, with a load balancer in front.]D;]A;* Specify an availability set when you provision the VM. Currently, there is no way to add a VM to an availability set after the VM is provisioned. When you add a new VM to an existing availability set, make sure to create a NIC for the VM, and add the NIC to the back-end address pool on the load balancer. Otherwise, the load balancer won't route network traffic to that VM.]D;]A;* Put each application tier into a separate Availability Set. In an N-tier application, don't put VMs from different tiers into the same availability set. VMs in an availability set are placed across fault domains (FDs) and update domains (UD). However, to get the redundancy benefit of FDs and UDs, every VM in the availability set must be able to handle the same client requests.]D;]A;* Replicate VMs using Azure Site Recovery. When you replicate Azure VMs using Site Recovery, all the VM disks are continuously replicated to the target region asynchronously. The recovery points are created every few minutes. This gives you a Recovery Point Objective (RPO) in the order of minutes. You can conduct disaster recovery drills as many times as you want, without affecting the production application or the ongoing replication.]D;]A;* Choose the right VM size based on performance requirements. When moving an existing workload to Azure, start with the VM size that's the closest match to your on-premises servers. Then measure the performance of your actual workload with respect to CPU, memory, and disk IOPS, and adjust the size if needed. This helps to ensure the application behaves as expected in a cloud environment. Also, if you need multiple NICs, be aware of the NIC limit for each size.]D;]A;* Use managed disks for VHDs. Managed disks provide better reliability for VMs in an availability set, because the disks are sufficiently isolated from each other to avoid single points of failure. Also, managed disks aren't subject to the IOPS limits of VHDs created in a storage account.]D;]A;* Install applications on a data disk, not the OS disk. Otherwise, you may reach the disk size limit.]D;]A;* Use Azure Backup to back up VMs. Backups protect against accidental data loss.]D;]A;* Enable diagnostic logs. Include basic health metrics, infrastructure logs, and boot diagnostics. Boot diagnostics can help you diagnose a boot failure if your VM gets into a nonbootable state.]D;]A;* Configure Azure Monitor. Collect and analyze monitoring data from Azure virtual machines including the guest operating system and the workloads that run in it.]D;]A;]D;]A;* Azure Security Center with Azure Defender is required for VM backup information.]D;]A;* VMs have to be running for disk information to be available.]D;]A;* VM SLAs apply to both operating system and data disks - only operating system disks are represented in this workbook.]D;]A;]D;]A;> Azure generally recommends to leverage [Availability Zone]5D;(https://learn.microsoft.com/azure/availability-zones/az-overview) for better High Availability within the region by leveraging multiple zones inside region. By architecting your solutions to use replicated services in zones, you can protect your apps and data from the loss of a datacenter. ]D;]A;]D;]A;> At this point, not all Azure regions and services support Availability Zones, the support matrix can be found [here]5D;(https://learn.microsoft.com/azure/availability-zones/az-region). Whenerver there is a Zonal recommendation for a particular service from this workbook, please note that that is applicable only for the regions supporting Availability Zones from the earlier list.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[> [仮想マシンの回復性チェックリスト]5D;(https://learn.microsoft.com/azure/architecture/checklist/resiliency-per-service#virtual-machines)]D;]A;* 単一の VM で運用ワークロードを実行しない。単一の VM デプロイには計画メンテナンスや計画外メンテナンスに対する回復性がありません。代わりに、複数の VM を可用性セットまたは仮想マシン スケール セットに配置し、ロード バランサーを前面に配置します。]D;]A;* VM をプロビジョニングするときに、可用性セットを指定する。現時点では、VM をプロビジョニングした後に、VM を可用性セットに追加する方法はありません。新しい VM を既存の可用性セットに追加するときは、その VM 用の NIC を作成し、NIC をロード バランサーのバックエンド アドレス プールに追加してください。そうしないと、ロード バランサーがその VM にネットワーク トラフィックをルーティングしなくなります。]D;]A;* 各アプリケーション層を別々の可用性セットに配置する。N 層アプリケーションでは、異なる層の VM を同じ可用性セットに配置しないでください。1 つの可用性セット内の VM は、複数の障害ドメイン (FD) と更新ドメイン (UD) にまたがって配置されています。ただし、FD と UD の冗長性の利点を活用するには、その可用性セット内のすべての VM が同じクライアント要求を処理できる必要があります。]D;]A;* Azure Site Recovery を使用して VM をレプリケートする。Site Recovery を使用して Azure VM をレプリケートすると、すべての VM ディスクが、ターゲット リージョンに継続的かつ非同期的にレプリケートされます。復旧ポイントは数分ごとに作成されます。これにより、回復ポイントの目標 (RPO) が分単位で設定されます。ディザスター リカバリー ドリルを、運用アプリケーションや実行中のレプリケーションに影響を与えることなく、必要な回数だけ実施できます。]D;]A;* パフォーマンスの要件に基づいて適切な VM サイズを選択する。既存のワークロードを Azure に移動する場合は、オンプレミスのサーバーに最も近い VM サイズから開始します。次に、CPU、メモリ、ディスク IOPS について、実際のワークロードのパフォーマンスを測定し、必要に応じてサイズを調整します。こうすることは、アプリケーションをクラウド環境で期待どおりに動作させるのに役立ちます。また、複数の NIC が必要な場合は、各サイズの NIC の制限に注意してください。]D;]A;* VHD 用のマネージド ディスクを使用する。マネージド ディスクでは、ディスクが単一障害点にならないように相互に十分に分離されるため、可用性セット内の VM の信頼性が向上します。また、マネージド ディスクはストレージ アカウントで作成された VHD の IOPS 制限の対象ではありません。]D;]A;* OS ディスクではなく、データ ディスクにアプリケーションをインストールする。そうしないと、ディスク サイズの上限に達する可能性があります。]D;]A;* Azure Backup を使用して VM をバックアップする。バックアップしておくことで、偶発的なデータ損失から保護できます。]D;]A;* 診断ログを有効にする。基本的な正常性メトリック、インフラストラクチャ ログ、ブート診断を含めます。ブート診断は、VM が起動不可能な状態になった場合に起動エラーを診断するのに役立ちます。]D;]A;* Azure Monitor を構成する。ゲスト オペレーティング システムとそこで実行されるワークロードも含めて、Azure 仮想マシンから監視データを収集および分析します。]D;]A;]D;]A;* VM バックアップ情報には、Azure Defender を含む Azure Security Center が必要です。]D;]A;* ディスク情報を利用するには、VM を実行する必要があります。]D;]A;* VM SLA はオペレーティング システムとデータ ディスクの両方に適用されます。このブックにはオペレーティング システム ディスクのみが表示されます。]D;]A;]D;]A;> Azure では通常、リージョン内の複数のゾーンを活用することでリージョン内の高可用性を向上させるために、[可用性ゾーン]5D;(https://learn.microsoft.com/azure/availability-zones/az-overview)を活用することをお勧めします。ゾーンでレプリケートされたサービスを使用するようにソリューションを構築することで、データセンターの損失からアプリとデータを保護できます。]D;]A;]D;]A;> 現時点では、すべての Azure リージョンとサービスで Availability Zones がサポートされているわけではありません。サポート マトリックスについては、[こちら]5D;(https://learn.microsoft.com/azure/availability-zones/az-region)を参照してください。このブックの特定のサービスに対する Zones 関連の推奨事項がある場合、以前の一覧から Availability Zones をサポートしているリージョンにのみその推奨事項が適用されることにご注意ください。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -931,7 +970,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Virtual Machines]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[仮想マシン]]></Val>
+            <Val><![CDATA[Virtual Machines]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -948,6 +987,9 @@
       <Item ItemId=";items.Containers.content.items.Help.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[* An Azure Kubernetes Service (AKS) cluster distributes resources such as nodes and storage across logical sections of underlying Azure infrastructure. This deployment model when using availability zones, ensures nodes in a given availability zone are physically separated from those defined in another availability zone. AKS clusters deployed with multiple availability zones configured across a cluster provide a higher level of availability to protect against a hardware failure or a planned maintenance event.]D;]A;* By defining node pools in a cluster to span multiple zones, nodes in a given node pool are able to continue operating even if a single zone has gone down. Your applications can continue to be available even if there is a physical failure in a single datacenter if orchestrated to tolerate failure of a subset of nodes.]D;]A;* You can only define availability zones when the cluster or node pool is created.]D;]A;Availability zone settings can't be updated after the cluster is created. You also can't update an existing, non-availability zone cluster to use availability zones.]D;]A;* The chosen node size (VM SKU) selected must be available across all availability zones selected.]D;]A;* Clusters with availability zones enabled require use of Azure Standard Load Balancers for distribution across zones. This load balancer type can only be defined at cluster create time.]D;]A;* Clusters with Availability Sets are recommended to move to VM Scale Sets for node pools. Availability Sets limits the management of nodepool capability such as upgrading Kubernetes versions for individual node pools and adding or removing node pools. Re-creation of cluster is required to move from Availability sets to scale sets.]D;]A;]D;]A;]D;]A;> Azure generally recommends to leverage [Availability Zone]5D;(https://learn.microsoft.com/azure/availability-zones/az-overview) for better High Availability within the region by leveraging multiple zones inside region. By architecting your solutions to use replicated services in zones, you can protect your apps and data from the loss of a datacenter. ]D;]A;]D;]A;> At this point, not all Azure regions and services support Availability Zones, the support matrix can be found [here]5D;(https://learn.microsoft.com/azure/availability-zones/az-region). Whenerver there is a Zonal recommendation for a particular service from this workbook, please note that that is applicable only for the regions supporting Availability Zones from the earlier list.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[* Azure Kubernetes Service (AKS) クラスターでは、ノードやストレージなどのリソースが、基になる Azure インフラストラクチャの複数の論理セクションに分散されます。このデプロイ モデルで可用性ゾーンを使用する場合、特定の可用性ゾーン内のノードは、別の可用性ゾーンで定義されているノードと確実に物理的に分離されます。1 つのクラスター全体に構成された複数の可用性ゾーンでデプロイされる AKS クラスターにより、ハードウェア障害または計画メンテナンス イベントから保護するための高レベルの可用性が実現されます]D;]A;* クラスター内のノード プールを複数のゾーンにまたがるように定義することで、1 つのゾーンがダウンした場合でも、特定のノード プール内のノードは動作を継続できます。1 つのデータセンターで物理的な障害が発生した場合でも、ノードのサブセットの障害に耐えられるよう調整できていれば、アプリケーションを引き続き利用できます。]D;]A;* 可用性ゾーンは、クラスターまたはノード プールの作成時にのみ定義できます。]D;]A;可用性ゾーンの設定は、クラスターの作成後は更新できません。また、既存の非可用性ゾーン クラスターを更新して可用性ゾーンを使用することはできません。]D;]A;* 選択したノード サイズ (VM SKU) は、選択したすべての可用性ゾーンで使用できる必要があります。]D;]A;* 可用性ゾーンが有効になっているクラスターでは、複数のゾーンへの分散のために Azure Standard Load Balancer を使用する必要があります。このロード バランサーの種類は、クラスターの作成時にのみ定義できます。]D;]A;* 可用性セットを使用するクラスターは、ノード プールの VM Scale Sets に移動することをお勧めします。可用性セットでは、個々のノード プールの Kubernetes バージョンのアップグレードや、ノード プールの追加または削除など、ノード プール機能の管理が制限されます。可用性セットからスケール セットに移動するには、クラスターを再作成する必要があります。]D;]A;]D;]A;]D;]A;> Azure では通常、リージョン内の複数のゾーンを活用することでリージョン内の高可用性を向上させるために、[可用性ゾーン]5D;(https://learn.microsoft.com/azure/availability-zones/az-overview)を活用することをお勧めします。ゾーンでレプリケートされたサービスを使用するようにソリューションを構築することで、データセンターの損失からアプリとデータを保護できます。]D;]A;]D;]A;> 現時点では、すべての Azure リージョンとサービスで Availability Zones がサポートされているわけではありません。サポート マトリックスについては、[こちら]5D;(https://learn.microsoft.com/azure/availability-zones/az-region)を参照してください。このブックの特定のサービスに対する Zones 関連の推奨事項がある場合、以前の一覧から Availability Zones をサポートしているリージョンにのみその推奨事項が適用されることにご注意ください。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -963,6 +1005,9 @@
       <Item ItemId=";items.Containers.content.items.text3.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[[SLA for Azure Kubernetes Service (AKS)]5D;(https://azure.microsoft.com/support/legal/sla/kubernetes-service/)]D;]A;* For customers who have purchased an Azure Kubernetes Service (AKS) Uptime SLA, we guarantee uptime of 99.95% for the Kubernetes API Server for AKS Clusters that use Azure Availability Zone and 99.9% for AKS Clusters that do not use Azure Availability Zone.]D;]A;* The availability of the agent nodes in your AKS Cluster is covered by the Virtual Machines SLA. Please see the [Virtual Machines SLA]5D;(https://azure.microsoft.com/support/legal/sla/virtual-machines/) for more details.]D;]A;]D;]A;> SLA accurate at time of release. Latest information is available [here]5D;(https://azure.microsoft.com/support/legal/sla/kubernetes-service/)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[[Azure Kubernetes Service (AKS) の SLA]5D;(https://azure.microsoft.com/support/legal/sla/kubernetes-service/)]D;]A;* Azure Kubernetes Service (AKS) Uptime SLA を購入したお客様を対象に、Microsoft は、Azure 可用性ゾーンを使用する AKS クラスターの Kubernetes API Server では 99.95%、Azure 可用性ゾーンを使用しない AKS クラスターでは 99.9% のアップタイムを保証します。]D;]A;* AKS クラスター内のエージェント ノードの可用性は、Virtual Machines SLA の対象です。詳細については、「[Virtual Machines の SLA]5D;(https://azure.microsoft.com/support/legal/sla/virtual-machines/)」を参照してください。]D;]A;]D;]A;> SLA はリリース時のものです。最新の情報は[こちら]5D;(https://azure.microsoft.com/support/legal/sla/kubernetes-service/)を参照してください。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -978,12 +1023,18 @@
       <Item ItemId=";items.Databases.content.items.AzSQL.content.items.text2Copy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[[SLA for Azure SQL Database]5D;(https://azure.microsoft.com/support/legal/sla/sql-database/)]D;]A;* Azure SQL Database Business Critical or Premium tiers configured as Zone Redundant Deployments have an availability guarantee of at least 99.995%.]D;]A;* Azure SQL Database Business Critical or Premium tiers not configured for Zone Redundant Deployments, General Purpose, Standard, or Basic tiers, or Hyperscale tier with two or more replicas have an availability guarantee of at least 99.99%.]D;]A;* Azure SQL Database Hyperscale tier with one replica has an availability guarantee of at least 99.95% and 99.9% for zero replicas.]D;]A;* Azure SQL Database Business Critical tier configured with geo-replication has a guarantee of Recovery point objective (RPO) of 5 sec for 100% of deployed hours.]D;]A;* Azure SQL Database Business Critical tier configured with geo-replication has a guarantee of Recovery time objective (RTO) of 30 sec for 100% of deployed hours.]D;]A;]D;]A;> SLA accurate at time of release. Latest information is available [here]5D;(https://azure.microsoft.com/support/legal/sla/sql-database/)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[[SLA for Azure SQL Database]5D;(https://azure.microsoft.com/support/legal/sla/sql-database/)]D;]A;* ゾーン冗長デプロイとして構成されている Azure SQL Database Business Critical レベルまたは Premium レベルでは、99.995% 以上の可用性が保証されます。]D;]A;* ゾーン冗長デプロイ用に構成されていない Azure SQL Database Business Critical レベルまたは Premium レベル、General Purpose、Standard、Basic の各レベル、または 2 つ以上のレプリカを持つ Hyperscale レベルでは、99.99% 以上の可用性が保証されます。]D;]A;* 1 つのレプリカを持つ Azure SQL Database Hyperscale レベルでは、99.95% 以上の可用性が保証されます。また、レプリカを持たない場合は、99.9% 以上の可用性が保証されます。]D;]A;* geo レプリケーションが構成されている Azure SQL Database Business Critical レベルでは、100% のデプロイ時間について、5 秒の回復ポイントの目標 (RPO) が保証されます。]D;]A;* geo レプリケーションが構成されている Azure SQL Database Business Critical レベルでは、100% のデプロイ時間について、30 秒の回復時間の目標 (RTO) が保証されます。]D;]A;]D;]A;> SLA はリリース時のものです。最新の情報は[こちら]5D;(https://azure.microsoft.com/support/legal/sla/sql-database/)を参照してください。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Databases.content.items.AzSQL.content.items.text3Copy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[* Standard and Premium tiers provide a longer point-in-time restore period (35 days).]D;]A;* Enable SQL Database auditing. Auditing can be used to diagnose malicious attacks or human error.]D;]A;* Use Active Geo-Replication to create a readable secondary in a different region. If your primary database fails, or simply needs to be taken offline, perform a manual failover to the secondary database. Until you fail over, the secondary database remains read-only.]D;]A;* Consider using sharding to partition the database horizontally. Sharding can provide fault isolation.]D;]A;* Use point-in-time restore to recover from human error.]D;]A;* Use geo-restore to recover from a service outage. Geo-restore restores a database from a geo-redundant backup.]D;]A;]D;]A;> Azure generally recommends to leverage [Availability Zone]5D;(https://learn.microsoft.com/azure/availability-zones/az-overview) for better High Availability within the region by leveraging multiple zones inside region. By architecting your solutions to use replicated services in zones, you can protect your apps and data from the loss of a datacenter. ]D;]A;]D;]A;> At this point, not all Azure regions and services support Availability Zones, the support matrix can be found [here]5D;(https://learn.microsoft.com/azure/availability-zones/az-region). Whenerver there is a Zonal recommendation for a particular service from this workbook, please note that that is applicable only for the regions supporting Availability Zones from the earlier list.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[* Standard レベルと Premium レベルでは、ポイントインタイム リストア期間が長くなります (35 日間)。]D;]A;* SQL Database 監査を有効にします。監査は、悪意のある攻撃や人的ミスの診断に使用できます。]D;]A;* アクティブ geo レプリケーションを使用して、別のリージョンに読み取り可能なセカンダリを作成します。プライマリ データベースに障害が発生したり、オフラインにしたりする必要がある場合、セカンダリ データベースへの手動フェールオーバーを実行します。セカンダリ データベースは、フェールオーバーするまでは読み取り専用のままです。]D;]A;シャーディングを使用してデータベースを水平方向にパーティション分割することを検討します。シャーディングを使用することで、障害を分離できます。]D;]A;* 人的ミスから復旧するには、ポイントインタイム リストアを使用します。]D;]A;* サービスの停止から復旧するには、geo リストアを使用します。geo リストアを実行すると、geo 冗長バックアップからデータベースが復元されます。]D;]A;]D;]A;> Azure では通常、リージョン内の複数のゾーンを活用することでリージョン内の高可用性を向上させるために、[可用性ゾーン]5D;(https://learn.microsoft.com/azure/availability-zones/az-overview)を活用することをお勧めします。ゾーンでレプリケートされたサービスを使用するようにソリューションを構築することで、データセンターの損失からアプリとデータを保護できます。]D;]A;]D;]A;> 現時点では、すべての Azure リージョンとサービスで Availability Zones がサポートされているわけではありません。サポート マトリックスについては、[こちら]5D;(https://learn.microsoft.com/azure/availability-zones/az-region)を参照してください。このブックの特定のサービスに対する Zones 関連の推奨事項がある場合、以前の一覧から Availability Zones をサポートしているリージョンにのみその推奨事項が適用されることにご注意ください。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -999,12 +1050,18 @@
       <Item ItemId=";items.Databases.content.items.AzSynapse.content.items.text2CopyCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[[SLA for Azure Synapse Analytics (formerly Azure SQL Data Warehouse)]5D;(https://azure.microsoft.com/support/legal/sla/synapse-analytics/)]D;]A;* We guarantee that, at least 99.9% of the time client operations executed on a Synapse Analytics database will succeed.]D;]A;]D;]A;> SLA accurate at time of release. Latest information is available [here]5D;(https://azure.microsoft.com/support/legal/sla/synapse-analytics/)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[[Azure Synapse Analytics (旧称 Azure SQL Data Warehouse) の SLA]5D;(https://azure.microsoft.com/support/legal/sla/synapse-analytics/)]D;]A;* Microsoft は、99.9% 以上の時間において、Azure Synapse データベースに対して実行されたクライアント操作が成功することを保証します。]D;]A;]D;]A;> SLA はリリース時のものです。最新の情報は[こちら]5D;(https://azure.microsoft.com/support/legal/sla/synapse-analytics/)を参照してください。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Databases.content.items.AzSynapse.content.items.text3CopyCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[* It is recommended to keep the geo-backup feature enabled. By default, Synapse Analytics takes a full backup of your data every 24 hours for disaster recovery.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[* geo バックアップ機能を有効にしておくことをお勧めします。既定では、Synapse Analytics はディザスター リカバリーのために 24 時間ごとにデータの完全バックアップを実行します。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1020,42 +1077,63 @@
       <Item ItemId=";items.Databases.content.items.Cosmos.content.items.text0.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[[SLA for Azure Cosmos DB]5D;(https://azure.microsoft.com/support/legal/sla/cosmos-db/)]D;]A;* The service offers comprehensive 99.99% SLAs which covers the guarantees for throughput, consistency, availability and latency for the Azure Cosmos DB Database Accounts scoped to a single Azure region configured with any of the five Consistency Levels or Database Accounts spanning multiple Azure regions, configured with any of the four relaxed Consistency Levels]D;]A;* Azure Cosmos DB allows configuring multiple Azure regions as writable endpoints for a Database Account. In this configuration, Azure Cosmos DB offers 99.999% SLA for both read and write availability]D;]A;]D;]A;> SLA accurate at time of release. Latest information is available [here]5D;(https://azure.microsoft.com/support/legal/sla/cosmos-db/)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[[Azure Cosmos DB の SLA]5D;(https://azure.microsoft.com/support/legal/sla/cosmos-db/)]D;]A;* このサービスでは、5 つの整合性レベルのいずれかで構成され、単一の Azure リージョンにスコープが設定された Azure Cosmos DB データベース アカウント、または 4 つの緩和された整合性レベルのいずれかで構成され、複数の Azure リージョンにまたがるデータベース アカウントについて、スループット、整合性、可用性、待機時間の保証をカバーする包括的な 99.99% の SLA が提供されます]D;]A;* Azure Cosmos DB を使用すると、複数の Azure リージョンをデータベース アカウントの書き込み可能なエンドポイントとして構成できます。この構成では、Azure Cosmos DB により、読み取りと書き込みの両方の可用性に対して 99.999% の SLA が提供されます]D;]A;]D;]A;> SLA はリリース時のものです。最新の情報は[こちら]5D;(https://azure.microsoft.com/support/legal/sla/cosmos-db/)を参照してください。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Databases.content.items.Cosmos.content.items.text1.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[* It is recommended to replicate the database across regions.]D;]A;* Leverage Availability Zones whenever the region supports Availability Zones. Availability Zone region support for Cosmos DB can be found [here]5D;(https://learn.microsoft.com/azure/availability-zones/az-region)]D;]A;* To ensure high write and read availability, configure your Azure Cosmos account to span at least two regions with multiple-write regions. This configuration will provide the highest availability, lowest latency, and best scalability for both reads and writes backed by SLAs.]D;]A;* For multi-region Azure Cosmos accounts that are configured with a single-write region, [enable automatic-failover by using Azure CLI or Azure portal]5D;(https://learn.microsoft.com/azure/cosmos-db/how-to-manage-database-account#automatic-failover). After you enable automatic failover, whenever there is a regional disaster, Cosmos DB will automatically failover your account.]D;]A;]D;]A;]D;]A;> Azure generally recommends to leverage [Availability Zone]5D;(https://learn.microsoft.com/azure/availability-zones/az-overview) for better High Availability within the region by leveraging multiple zones inside region. By architecting your solutions to use replicated services in zones, you can protect your apps and data from the loss of a datacenter. ]D;]A;]D;]A;> At this point, not all Azure regions and services support Availability Zones, the support matrix can be found [here]5D;(https://learn.microsoft.com/azure/availability-zones/az-region). Whenerver there is a Zonal recommendation for a particular service from this workbook, please note that that is applicable only for the regions supporting Availability Zones from the earlier list.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[* リージョン間でデータベースをレプリケートすることをお勧めします。]D;]A;* リージョンで Availability Zones がサポートされている場合は常に、Availability Zones を活用します。Cosmos DB の可用性ゾーンのリージョン サポートについては、[こちら]5D;(https://learn.microsoft.com/azure/availability-zones/az-region)を参照してください。]D;]A;* 書き込みと読み取りで高い可用性を確保するには、少なくとも 2 つのリージョンにまたがり、複数の書き込みリージョンを持つ Azure Cosmos アカウントを構成します。この構成では、SLA を利用した読み取りと書き込みの両方に対して、最高の可用性、最も短い待機時間、最適なスケーラビリティが提供されます。]D;]A;* 単一の書き込みリージョンで構成されているマルチリージョンの Azure Cosmos アカウントについては、[Azure CLI または Azure portal を使用した自動フェールオーバーの有効化]5D;(https://learn.microsoft.com/azure/cosmos-db/how-to-manage-database-account#automatic-failover)に関するページを参照してください。自動フェールオーバーを有効にすると、リージョンの障害が発生するたびに、Cosmos DB によってアカウントが自動的にフェールオーバーされます。]D;]A;]D;]A;]D;]A;> Azure では通常、リージョン内の複数のゾーンを活用することでリージョン内の高可用性を向上させるために、[可用性ゾーン]5D;(https://learn.microsoft.com/azure/availability-zones/az-overview)を活用することをお勧めします。ゾーンでレプリケートされたサービスを使用するようにソリューションを構築することで、データセンターの損失からアプリとデータを保護できます。]D;]A;]D;]A;> 現時点では、すべての Azure リージョンとサービスで Availability Zones がサポートされているわけではありません。サポート マトリックスについては、[こちら]5D;(https://learn.microsoft.com/azure/availability-zones/az-region)を参照してください。このブックの特定のサービスに対する Zones 関連の推奨事項がある場合、以前の一覧から Availability Zones をサポートしているリージョンにのみその推奨事項が適用されることにご注意ください。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Databases.content.items.MySQL.content.items.kqldatabasemysqlflexibleresourcesdetails.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[MySQL - Flexible]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[MySQL - フレキシブル]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Databases.content.items.MySQL.content.items.kqldatabasemysqlsingleresourcesdetails.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[MySQL - Single]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[MySQL - シングル]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Databases.content.items.MySQL.content.items.mysqlsingleretirement.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Important]D;]A;]D;]A;* Azure Database for MySQL - Single Server is on the retirement path. We strongly recommend for you to upgrade to Azure Database for MySQL - Flexible Server. ]D;]A;]D;]A;> For more information about migrating to Azure Database for MySQL - Flexible Server, see [What's happening to Azure Database for MySQL Single Server]5D;(https://learn.microsoft.com/azure/mysql/single-server/whats-happening-to-mysql-single-server)?]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[重要]D;]A;]D;]A;* Azure Database for MySQL - シングル サーバーは廃止される予定です。Azure Database for MySQL - フレキシブル サーバーにアップグレードすることを強くお勧めします。]D;]A;]D;]A;> Azure Database for MySQL - フレキシブル サーバーへの移行の詳細については、「[Azure Database for MySQL - シングル サーバーの現状]5D;(https://learn.microsoft.com/azure/mysql/single-server/whats-happening-to-mysql-single-server)」を参照してください。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Databases.content.items.MySQL.content.items.text0.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[[SLA for Azure Database for MySQL server]5D;(https://azure.microsoft.com/support/legal/sla/mysql/)]D;]A;* Single Server: We guarantee at least 99.99% of the time customers will have connectivity between their Microsoft Azure Database for MySQL Server and our Internet gateway]D;]A;* Flexible Server:]D;]A;	- We guarantee at least 99.99% of the time customers will have connectivity to their Microsoft Azure Database for MySQL – Flexible server configured with Zone Redundant High Availability.]D;]A;	- We guarantee at least 99.95% of the time customers will have connectivity to their Microsoft Azure Database for MySQL – Flexible server configured with Same Zone High Availability.]D;]A;	- We guarantee at least 99.9% of the time customers will have connectivity to their Microsoft Azure Database for MySQL – Flexible server configured without any redundancy.]D;]A;]D;]A;> SLA accurate at time of release. Latest information is available [here]5D;(https://azure.microsoft.com/support/legal/sla/mysql/)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[[Azure Database for MySQL サーバーの SLA]5D;(https://azure.microsoft.com/support/legal/sla/mysql/)]D;]A;* シングル サーバー: Microsoft は、99.99% 以上の時間において、お客様の Microsoft Azure Database for MySQL サーバーとMicrosoft のインターネット ゲートウェイの間の接続が確保されることを保証します]D;]A;* フレキシブル サーバー:]D;]A;	- Microsoft は、99.99% 以上の時間において、ゾーン冗長高可用性で構成された Microsoft Azure Database for MySQL – フレキシブル サーバーへの接続が確保されることを保証します。]D;]A;	- Microsoft は、99.95% 以上の時間において、同一ゾーン高可用性で構成された Microsoft Azure Database for MySQL – フレキシブル サーバーへの接続が確保されることを保証します。]D;]A;	- Microsoft は、99.9% 以上の時間において、冗長性なしで構成された Microsoft Azure Database for MySQL – フレキシブル サーバーへの接続が確保されることを保証します。]D;]A;]D;]A;> SLA はリリース時のものです。最新の情報は[こちら]5D;(https://azure.microsoft.com/support/legal/sla/mysql/)を参照してください。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Databases.content.items.MySQL.content.items.text1.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[* It is recommended to create cross region read replicas in another region]D;]A;* Enable Availability Zone in Flexible server if the region supports Availability Zones]D;]A;* Enable backup storage redundancy as GRS instead of LRS]D;]A;* Validate and configure backup retention period]D;]A;]D;]A;> Azure generally recommends to leverage [Availability Zone]5D;(https://learn.microsoft.com/azure/availability-zones/az-overview) for better High Availability within the region by leveraging multiple zones inside region. By architecting your solutions to use replicated services in zones, you can protect your apps and data from the loss of a datacenter. ]D;]A;]D;]A;> At this point, not all Azure regions and services support Availability Zones, the support matrix can be found [here]5D;(https://learn.microsoft.com/azure/availability-zones/az-region). Whenerver there is a Zonal recommendation for a particular service from this workbook, please note that that is applicable only for the regions supporting Availability Zones from the earlier list.]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[* リージョン間読み取りレプリカを別のリージョンに作成することをお勧めします]D;]A;* リージョンで Availability Zones がサポートされている場合は、フレキシブル サーバーで可用性ゾーンを有効にします]D;]A;* バックアップ ストレージの冗長性を、LRS ではなく GRS として有効にします]D;]A;* バックアップの保持期間を検証および構成します]D;]A;]D;]A;> Azure では通常、リージョン内の複数のゾーンを活用することでリージョン内の高可用性を向上させるために、[可用性ゾーン]5D;(https://learn.microsoft.com/azure/availability-zones/az-overview)を活用することをお勧めします。ゾーンでレプリケートされたサービスを使用するようにソリューションを構築することで、データセンターの損失からアプリとデータを保護できます。]D;]A;]D;]A;> 現時点では、すべての Azure リージョンとサービスで Availability Zones がサポートされているわけではありません。サポート マトリックスについては、[こちら]5D;(https://learn.microsoft.com/azure/availability-zones/az-region)を参照してください。このブックの特定のサービスに対する Zones 関連の推奨事項がある場合、以前の一覧から Availability Zones をサポートしているリージョンにのみその推奨事項が適用されることにご注意ください。]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1071,12 +1149,18 @@
       <Item ItemId=";items.Databases.content.items.Redis.content.items.text0.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[[SLA for Azure Cache for Redis]5D;(https://azure.microsoft.com/support/legal/sla/cache/)]D;]A;]D;]A;* For any Standard, Premium, Enterprise, and Enterprise Flash tier Cache, we guarantee that you will have connectivity to the Cache Endpoint at least 99.9% of the time.]D;]A;* For any Enterprise and Enterprise Flash tier Cache deployed to three or more Availability Zones in the same Azure region, we guarantee that you will have connectivity to the Cache Endpoint at least 99.99% of the time.]D;]A;* For any Enterprise and Enterprise Flash tier Cache deployed (1) to at least three Azure regions and three or more Availability Zones in each region and (2) with active geo-replication enabled for all Cache instances, we guarantee that you will have connectivity to one regional Cache Endpoint at least 99.999% of the time.]D;]A;]D;]A;> SLA accurate at time of release. Latest information is available [here]5D;(https://azure.microsoft.com/support/legal/sla/cache/)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[[Azure Cache for Redis の SLA]5D;(https://azure.microsoft.com/support/legal/sla/cache/)]D;]A;]D;]A;* Standard、Premium、Enterprise、Enterprise Flash の各レベルの Cache について、Microsoft は、99.9% 以上の時間において、Cache Endpoint への接続が確保されることを保証します。]D;]A;* Enterprise および Enterprise Flash レベルの Cache が同じ Azure リージョン内の 3 つ以上の Availability Zones にデプロイされている場合、Microsoft は、99.99% 以上の時間において、Cache Endpoint への接続が確保されることを保証します。]D;]A;* Enterprise および Enterprise Flash レベルの Cache が、(1) 少なくとも 3 つの Azure リージョンおよび各リージョン内の 3 つ以上の Availability Zones にデプロイされ、(2) アクティブ geo レプリケーションがすべての Cache インスタンスで有効になっている場合、Microsoft は、99.999% 以上の時間において、1 つのリージョンの Cache Endpoint への接続が確保されることを保証します。]D;]A;]D;]A;> SLA はリリース時のものです。最新の情報は[こちら]5D;(https://azure.microsoft.com/support/legal/sla/cache/)を参照してください。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Databases.content.items.Redis.content.items.text1.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[[Redis best practices]5D;(https://learn.microsoft.com/azure/architecture/framework/services/data/azure-cache-redis/reliability)]D;]A;]D;]A;* It is recommended to choose premium or enterprise tiers for better HA capability]D;]A;* Enable Availability Zone if the region supports Availability Zones]D;]A;* Maintain higher capacity and replica count greater than 1 for HA within a region]D;]A;* Geo replication is preferred for DR across regions (active geo replication in case of enterprise tier). In this case replicas greater than 1 is not supported.]D;]A;]D;]A;> Azure generally recommends to leverage [Availability Zone]5D;(https://learn.microsoft.com/azure/availability-zones/az-overview) for better High Availability within the region by leveraging multiple zones inside region. By architecting your solutions to use replicated services in zones, you can protect your apps and data from the loss of a datacenter. ]D;]A;]D;]A;> At this point, not all Azure regions and services support Availability Zones, the support matrix can be found [here]5D;(https://learn.microsoft.com/azure/availability-zones/az-region). Whenerver there is a Zonal recommendation for a particular service from this workbook, please note that that is applicable only for the regions supporting Availability Zones from the earlier list.]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[[Redis のベスト プラクティス]5D;(https://learn.microsoft.com/azure/architecture/framework/services/data/azure-cache-redis/reliability)]D;]A;]D;]A;* HA 機能を向上させるには、Premium レベルまたは Enterprise レベルを選択することをお勧めします]D;]A;* リージョンで Availability Zones がサポートされている場合は可用性ゾーンを有効にします]D;]A;* 1 つのリージョン内の HA については、高容量を維持し、レプリカ数が 1 より大きくなるようにします]D;]A;* リージョン間の DR では geo レプリケーションが推奨されます (Enterprise レベルの場合はアクティブ geo レプリケーション)。この場合、1 より大きいレプリカはサポートされていません。]D;]A;]D;]A;> Azure では通常、リージョン内の複数のゾーンを活用することでリージョン内の高可用性を向上させるために、[可用性ゾーン]5D;(https://learn.microsoft.com/azure/availability-zones/az-overview)を活用することをお勧めします。ゾーンでレプリケートされたサービスを使用するようにソリューションを構築することで、データセンターの損失からアプリとデータを保護できます。]D;]A;]D;]A;> 現時点では、すべての Azure リージョンとサービスで Availability Zones がサポートされているわけではありません。サポート マトリックスについては、[こちら]5D;(https://learn.microsoft.com/azure/availability-zones/az-region)を参照してください。このブックの特定のサービスに対する Zones 関連の推奨事項がある場合、以前の一覧から Availability Zones をサポートしているリージョンにのみその推奨事項が適用されることにご注意ください。]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1128,12 +1212,18 @@
       <Item ItemId=";items.ExportStep.content.items.argconsolidatedgroup.content.items.kqlexportresourcesdetails.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Resources Details]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[リソースの詳細]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.ExportStep.content.items.argconsolidatedgroup.content.items.query2.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Advisor Recommendations by Impact]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[影響別の Advisor の推奨事項]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1150,7 +1240,7 @@
         <Str Cat="Text">
           <Val><![CDATA[API Management]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[API Management ]]></Val>
+            <Val><![CDATA[API Management]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -1158,78 +1248,117 @@
       <Item ItemId=";items.Integration.content.items.text2Copy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[[SLA for API Management]5D;(https://azure.microsoft.com/support/legal/sla/api-management/)]D;]A;* We guarantee that API Management Service instances running in the Consumption Tier, Basic Tier, Standard Tier, and Premium Tier deployments scaled within a single region will respond to requests to perform operations at least 99.95% of the time.]D;]A;* We guarantee that API Management Service instances running in the Premium Tier with deployments scaled across two or more regions will respond to requests to perform operations at least 99.99% of the time.]D;]A;* No SLA is provided for the following:​]D;]A; * Developer tier of the API Management Service.]D;]A; * Any self-hosted API Management components.​]D;]A; ]D;]A;> SLA accurate at time of release. Latest information is available [here]5D;(https://azure.microsoft.com/support/legal/sla/api-management/)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[[API Management の SLA]5D;(https://azure.microsoft.com/support/legal/sla/api-management/)]D;]A;* Microsoft は、単一リージョン内でスケーリングされた従量課金レベル、Basic レベル、Standard レベル、Premium レベルの展開で実行される API Management サービス インスタンスが、99.95% 以上の時間において、操作の実行要求に応答することを保証します。]D;]A;* Microsoft は、展開が 2 つ以上のリージョンにまたがってスケーリングされた、Premium レベルで実行される API Management サービス インスタンスが、99.99% 以上の時間において、操作の実行要求に応答することを保証します。]D;]A;* 以下については SLA は提供されません。​]D;]A; * API Management サービスの Developer レベル。]D;]A; * 自己ホスト型の API Management コンポーネント。​]D;]A; ]D;]A;> SLA はリリース時のものです。最新の情報は[こちら]5D;(https://azure.microsoft.com/support/legal/sla/api-management/)を参照してください。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Integration.content.items.text3CopyCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[* Please note the Developer tier is for non-production use cases and evaluations. It does not offer an SLA.]D;]A;* API Management instances deleted using 2020-01-01-preview and later API versions will be soft-deleted and recoverable. APIM instances deleted using previous API versions will continue to be hard-deleted. Azure PowerShell and Azure CLI currently do not use the 2020-06-01-preview version and will also result in hard-delete behavior. Refer to [API Management soft-delete (preview)]5D;(https://learn.microsoft.com/azure/api-management/soft-delete) for more information.]D;]A;]D;]A;]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[* Developer レベルは非運用ユース ケースおよび評価用であることにご注意ください。SLA は提供されません。]D;]A;* 2020-01-01-preview 以降の API バージョンを使用して削除された API Management インスタンスは、論理的に削除されるため、回復できます。以前の API バージョンを使用して削除された APIM インスタンスは、引き続き物理的に削除されます。現在、Azure PowerShell および Azure CLI では 2020-06-01-preview バージョンを使用していないため、物理的な削除が実行されます。詳細については、「[API Management の論理的な削除 (プレビュー)]5D;(https://learn.microsoft.com/azure/api-management/soft-delete)」を参照してください。]D;]A;]D;]A;]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Networking.content.items.AF.content.items.AFSLA.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[[SLA for Azure Firewall]5D;(https://azure.microsoft.com/support/legal/sla/azure-firewall/)]D;]A;* Azure Firewall offers fully stateful native firewall capabilities for Virtual Network resources, with built-in high availability and the ability to scale automatically.]D;]A;* We guarantee that Azure Firewall will be available at least 99.95% of the time, when deployed within a single Availability Zone.]D;]A;* We guarantee that Azure Firewall will be available at least 99.99% of the time, when deployed within two or more Availability Zones in the same Azure region.]D;]A;]D;]A;> SLA accurate at time of release. Latest information is available [here]5D;(https://azure.microsoft.com/support/legal/sla/azure-firewall/)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[[Azure Firewall の SLA]5D;(https://azure.microsoft.com/support/legal/sla/azure-firewall/)]D;]A;* 組み込みの高可用性と自動的にスケーリングする機能を備えた Azure Firewall は、Virtual Network リソースに対して完全にステートフルでネイティブなファイアウォール機能を提供します。]D;]A;* Microsoft は、1 つの可用性ゾーン内にデプロイされる場合、99.95% 以上の時間において Azure Firewall が利用可能であることを保証します。]D;]A;* Microsoft は、同じ Azure リージョン内の 2 つ以上の Availability Zones 内にデプロイされる場合、99.99% 以上の時間において Azure Firewall が利用可能であることを保証します。]D;]A;]D;]A;> SLA はリリース時のものです。最新の情報は[こちら]5D;(https://azure.microsoft.com/support/legal/sla/azure-firewall/)を参照してください。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Networking.content.items.AF.content.items.text3CopyCopyCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[* Azure Firewall can be configured during deployment to span multiple Availability Zones for increased availability.]D;]A;* Refer to [Deploy an Azure Firewall with Availability Zones]5D;(https://learn.microsoft.com/azure/firewall/deploy-availability-zone-powershell) for more information.]D;]A;]D;]A;]D;]A;> Azure generally recommends to leverage [Availability Zone]5D;(https://learn.microsoft.com/azure/availability-zones/az-overview) for better High Availability within the region by leveraging multiple zones inside region. By architecting your solutions to use replicated services in zones, you can protect your apps and data from the loss of a datacenter. ]D;]A;]D;]A;> At this point, not all Azure regions and services support Availability Zones, the support matrix can be found [here]5D;(https://learn.microsoft.com/azure/availability-zones/az-region). Whenerver there is a Zonal recommendation for a particular service from this workbook, please note that that is applicable only for the regions supporting Availability Zones from the earlier list.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[* Azure Firewall は、デプロイの際に複数の Availability Zones にまたがるように構成して、可用性を向上できます。]D;]A;* 詳細については、[Availability Zones を使用した Azure Firewall のデプロイ]5D;(https://learn.microsoft.com/azure/firewall/deploy-availability-zone-powershell)に関するページを参照してください。]D;]A;]D;]A;]D;]A;> Azure では通常、リージョン内の複数のゾーンを活用することでリージョン内の高可用性を向上させるために、[可用性ゾーン]5D;(https://learn.microsoft.com/azure/availability-zones/az-overview)を活用することをお勧めします。ゾーンでレプリケートされたサービスを使用するようにソリューションを構築することで、データセンターの損失からアプリとデータを保護できます。]D;]A;]D;]A;> 現時点では、すべての Azure リージョンとサービスで Availability Zones がサポートされているわけではありません。サポート マトリックスについては、[こちら]5D;(https://learn.microsoft.com/azure/availability-zones/az-region)を参照してください。このブックの特定のサービスに対する Zones 関連の推奨事項がある場合、以前の一覧から Availability Zones をサポートしているリージョンにのみその推奨事項が適用されることにご注意ください。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Networking.content.items.AFD.content.items.AFDSLA.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[[SLA for Azure Front Door and Azure Front Door (classic)]5D;(https://azure.microsoft.com/support/legal/sla/frontdoor/)]D;]A;* We guarantee that at least 99.99% of the time Azure Front Door and Azure Front Door (classic) will respond to client requests and deliver the requested content without error. We will review and accept data from any commercially reasonable independent measurement system that you choose to monitor your content. You must select a set of agents from the measurement system's list of standard agents that are generally available and represent at least five geographically diverse locations in major worldwide metropolitan areas (excluding PR of China).]D;]A;]D;]A;> SLA accurate at time of release. Latest information is available [here]5D;(https://azure.microsoft.com/support/legal/sla/frontdoor/)]D;]A;]D;]A;[SLA for Content Delivery Network]5D;(https://azure.microsoft.com/support/legal/sla/cdn/)]D;]A;* We guarantee that at least 99.9% of the time CDN will respond to client requests and deliver the requested content without error. We will review and accept data from any commercially reasonable independent measurement system that you choose to monitor your content. You must select a set of agents from the measurement system’s list of standard agents that are generally available and represent at least five geographically diverse locations in major worldwide metropolitan areas (excluding PR of China).]D;]A;]D;]A;> SLA accurate at time of release. Latest information is available [here]5D;(https://azure.microsoft.com/support/legal/sla/cdn/)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[[Azure Front Door および Azure Front Door (クラシック) の SLA]5D;(https://azure.microsoft.com/support/legal/sla/frontdoor/)]D;]A;* Microsoft は、99.99% 以上の時間において、Azure Front Door および Azure Front Door (クラシック) がエラーなくクライアントの要求に応答し、要求されたコンテンツを配信することを保証します。Microsoft は、お客様がコンテンツを監視するために選択した商業的に合理的な独立した測定システムからのデータを確認し、受信します。お客様は、一般的に利用可能で、世界の主要な大都市圏 (中国の PR を除く) の 5 つ以上の異なる場所を代表する標準エージェントの測定システムのリストから、一連のエージェントを選択する必要があります。]D;]A;]D;]A;> SLA はリリース時のものです。最新の情報は[こちら]5D;(https://azure.microsoft.com/support/legal/sla/frontdoor/)を参照してください。]D;]A;]D;]A;[Content Delivery Network の SLA]5D;(https://azure.microsoft.com/support/legal/sla/cdn/)]D;]A;* Microsoft は、99.9% 以上の時間において、CDN がエラーなくクライアントの要求に応答し、要求されたコンテンツを配信することを保証します。Microsoft は、お客様がコンテンツを監視するために選択した商業的に合理的な独立した測定システムからのデータを確認し、受信します。お客様は、一般的に利用可能で、世界の主要な大都市圏 (中国の PR を除く) の 5 つ以上の異なる場所を代表する標準エージェントの測定システムのリストから、一連のエージェントを選択する必要があります。]D;]A;]D;]A;> SLA はリリース時のものです。最新の情報は[こちら]5D;(https://azure.microsoft.com/support/legal/sla/cdn/)を参照してください。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Networking.content.items.AG.content.items.WAFSLA.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[[SLA for Web Application Firewall]5D;(https://azure.microsoft.com/support/legal/sla/web-application-firewall/)]D;]A;* Web Application Firewall availability guarantees are included in the SLA of the deployment option chosen, Application Gateway or Azure Front Door. Please see the [Application Gateway SLA]5D;(https://azure.microsoft.com/support/legal/sla/application-gateway/), and [Azure Front Door SLA]5D;(https://azure.microsoft.com/support/legal/sla/frontdoor/) for more details.]D;]A;]D;]A;> SLA accurate at time of release. Latest information is available [here]5D;(https://azure.microsoft.com/support/legal/sla/web-application-firewall/)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[[Web Application Firewall の SLA]5D;(https://azure.microsoft.com/support/legal/sla/web-application-firewall/)]D;]A;* Web Application Firewall の可用性の保証は、選択したデプロイ オプション (Application Gateway または Azure Front Door) の SLA に含まれています。詳細については、[Application Gateway の SLA]5D;(https://azure.microsoft.com/support/legal/sla/application-gateway/) と、[Azure Front Door の SLA]5D;(https://azure.microsoft.com/support/legal/sla/frontdoor/) を参照してください。]D;]A;]D;]A;> SLA はリリース時のものです。最新の情報は[こちら]5D;(https://azure.microsoft.com/support/legal/sla/web-application-firewall/)を参照してください。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Networking.content.items.AG.content.items.text2CopyCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[[SLA for Application Gateway]5D;(https://azure.microsoft.com/support/legal/sla/application-gateway/)]D;]A;* We guarantee that each Application Gateway Cloud Service having two or more medium or larger instances, or deployments capable of supporting autoscale or zone redundancy, will be available at least 99.95% of the time.]D;]A;]D;]A;> SLA accurate at time of release. Latest information is available [here]5D;(https://azure.microsoft.com/support/legal/sla/application-gateway/)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[[Application Gateway の SLA]5D;(https://azure.microsoft.com/support/legal/sla/application-gateway/)]D;]A;* Microsoft は、2 つ以上の中から大規模のインスタンスまたは自動スケーリングもしくはゾーン冗長をサポートできるデプロイから成る各 Application Gateway クラウド サービスが、99.95% 以上の時間において利用可能であることを保証します。]D;]A;]D;]A;> SLA はリリース時のものです。最新の情報は[こちら]5D;(https://azure.microsoft.com/support/legal/sla/application-gateway/)を参照してください。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Networking.content.items.AG.content.items.text3CopyCopyCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[* Deploy Application Gateway with at least two instances. A single instance is a single point of failure. Use two or more instances for redundancy and scalability. In order to qualify for the SLA, you must provision two or more medium or larger instances.]D;]A;* Capacity specifies the number of instances of an application gateway.]D;]A;* An Application Gateway can scale based on customer demand and span multiple availability zones for optimal availability.]D;]A;* Two autoscaling configuration types are supported:]D;]A;	* Fixed capacity mode. In this mode, the application gateway does not autoscale and operates at a fixed Scale Unit capacity.]D;]A;	* Autoscaling mode. In this mode, the application gateway autoscales based on the application traffic pattern.]D;]A;]D;]A;]D;]A;> Azure generally recommends to leverage [Availability Zone]5D;(https://learn.microsoft.com/azure/availability-zones/az-overview) for better High Availability within the region by leveraging multiple zones inside region. By architecting your solutions to use replicated services in zones, you can protect your apps and data from the loss of a datacenter. ]D;]A;]D;]A;> At this point, not all Azure regions and services support Availability Zones, the support matrix can be found [here]5D;(https://learn.microsoft.com/azure/availability-zones/az-region). Whenerver there is a Zonal recommendation for a particular service from this workbook, please note that that is applicable only for the regions supporting Availability Zones from the earlier list.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[* 少なくとも 2 つのインスタンスのある Application Gateway をデプロイします。単一のインスタンスは、単一障害点です。冗長性とスケーラビリティを確保するため、2 つ以上のインスタンスを使用します。SLA の条件を満たすには、2 つ以上の中規模または大規模なインスタンスをプロビジョニングする必要があります。]D;]A;* 容量はアプリケーション ゲートウェイのインスタンス数を指定します。]D;]A;* Application Gateway は、顧客のニーズに合わせてスケーリングでき、最適な可用性を実現するために複数の可用性ゾーンにまたがって構成できます。]D;]A;* 次の 2 つの自動スケーリング構成の種類がサポートされています。]D;]A;	* 容量固定モード。このモードでは、アプリケーション ゲートウェイは自動スケーリングされず、固定スケール ユニット容量で動作します。]D;]A;	* 自動スケーリング モード。このモードでは、アプリケーション ゲートウェイはアプリケーション トラフィック パターンに基づいて自動スケーリングされます。]D;]A;]D;]A;]D;]A;> Azure では通常、リージョン内の複数のゾーンを活用することでリージョン内の高可用性を向上させるために、[可用性ゾーン]5D;(https://learn.microsoft.com/azure/availability-zones/az-overview)を活用することをお勧めします。ゾーンでレプリケートされたサービスを使用するようにソリューションを構築することで、データセンターの損失からアプリとデータを保護できます。]D;]A;]D;]A;> 現時点では、すべての Azure リージョンとサービスで Availability Zones がサポートされているわけではありません。サポート マトリックスについては、[こちら]5D;(https://learn.microsoft.com/azure/availability-zones/az-region)を参照してください。このブックの特定のサービスに対する Zones 関連の推奨事項がある場合、以前の一覧から Availability Zones をサポートしているリージョンにのみその推奨事項が適用されることにご注意ください。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Networking.content.items.LB.content.items.text2CopyCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[[SLA for Load Balancer]5D;(https://azure.microsoft.com/support/legal/sla/load-balancer/)]D;]A;* We guarantee that a Load Balanced Endpoint using Azure Standard Load Balancer, serving two or more Healthy Virtual Machine Instances, will be available 99.99% of the time.]D;]A;* Basic Load Balancer is excluded from this SLA.]D;]A;]D;]A;> SLA accurate at time of release. Latest information is available [here]5D;(https://azure.microsoft.com/support/legal/sla/load-balancer/)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[[Load Balancer の SLA]5D;(https://azure.microsoft.com/support/legal/sla/load-balancer/)]D;]A;* Microsoft は、Azure Standard Load Balancer を使用して負荷分散され、2 つ以上の正常な仮想マシン インスタンスにサービスを提供しているエンドポイントが、99.99% の時間において利用可能であることを保証します。]D;]A;* Basic Load Balancer はこの SLA に含まれません。]D;]A;]D;]A;> SLA はリリース時のものです。最新の情報は[こちら]5D;(https://azure.microsoft.com/support/legal/sla/load-balancer/)を参照してください。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Networking.content.items.LB.content.items.text3CopyCopyCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[* With Standard Load Balancer, you can scale your applications and create highly available services. Load balancer supports both inbound and outbound scenarios. Load balancer provides low latency and high throughput, and scales up to millions of flows for all TCP and UDP applications.]D;]A;* Increase availability by distributing resources within and across zones.]D;]A;]D;]A;> Azure generally recommends to leverage [Availability Zone]5D;(https://learn.microsoft.com/azure/availability-zones/az-overview) for better High Availability within the region by leveraging multiple zones inside region. By architecting your solutions to use replicated services in zones, you can protect your apps and data from the loss of a datacenter. ]D;]A;]D;]A;> At this point, not all Azure regions and services support Availability Zones, the support matrix can be found [here]5D;(https://learn.microsoft.com/azure/availability-zones/az-region). Whenerver there is a Zonal recommendation for a particular service from this workbook, please note that that is applicable only for the regions supporting Availability Zones from the earlier list.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[* Standard Load Balancer を使用すると、アプリケーションをスケーリングし、高可用性サービスを作成することができます。Load Balancer では受信シナリオと送信シナリオの両方がサポートされています。Load Balancer を使用すると、低遅延と高スループットを実現し、すべての TCP および UDP アプリケーションで数百万フローにまでスケーリングできます。]D;]A;* ゾーン内およびゾーン間でリソースを分散することにより、可用性を向上させます。]D;]A;]D;]A;> Azure では通常、リージョン内の複数のゾーンを活用することでリージョン内の高可用性を向上させるために、[可用性ゾーン]5D;(https://learn.microsoft.com/azure/availability-zones/az-overview)を活用することをお勧めします。ゾーンでレプリケートされたサービスを使用するようにソリューションを構築することで、データセンターの損失からアプリとデータを保護できます。]D;]A;]D;]A;> 現時点では、すべての Azure リージョンとサービスで Availability Zones がサポートされているわけではありません。サポート マトリックスについては、[こちら]5D;(https://learn.microsoft.com/azure/availability-zones/az-region)を参照してください。このブックの特定のサービスに対する Zones 関連の推奨事項がある場合、以前の一覧から Availability Zones をサポートしているリージョンにのみその推奨事項が適用されることにご注意ください。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Networking.content.items.PIP.content.items.PublicIPaddressesandIPPrefixes.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Public IP addresses and IP Prefixes]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[パブリック IP アドレスと IP プレフィックス]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Networking.content.items.PIP.content.items.text1.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[* Public IP addresses allow Internet resources to communicate inbound to Azure resources. More details in [Public IP address docs]5D;(https://learn.microsoft.com/azure/virtual-network/ip-services/public-ip-addresses)]D;]A;* A public IP address prefix is a reserved range of public IP addresses in Azure. More details in [Public IP address prefix docs]5D;(https://learn.microsoft.com/azure/virtual-network/ip-services/public-ip-address-prefix)]D;]A;]D;]A;> Azure generally recommends to leverage [Availability Zone]5D;(https://learn.microsoft.com/azure/availability-zones/az-overview) for better High Availability within the region by leveraging multiple zones inside region. By architecting your solutions to use replicated services in zones, you can protect your apps and data from the loss of a datacenter. ]D;]A;]D;]A;> At this point, not all Azure regions and services support Availability Zones, the support matrix can be found [here]5D;(https://learn.microsoft.com/azure/availability-zones/az-region). Whenerver there is a Zonal recommendation for a particular service from this workbook, please note that that is applicable only for the regions supporting Availability Zones from the earlier list.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[* パブリック IP アドレスを使用すると、インターネット リソースから Azure リソースへのインバウンド通信が可能になります。詳細については、[パブリック IP アドレスに関するドキュメント]5D;(https://learn.microsoft.com/azure/virtual-network/ip-services/public-ip-addresses)を参照してください。]D;]A;* パブリック IP アドレス プレフィックスとは、Azure でのパブリック IP アドレスの予約範囲です。詳細については、[パブリック IP アドレス プレフィックスに関するドキュメント]5D;(https://learn.microsoft.com/azure/virtual-network/ip-services/public-ip-address-prefix)を参照してください。]D;]A;]D;]A;> Azure では通常、リージョン内の複数のゾーンを活用することでリージョン内の高可用性を向上させるために、[可用性ゾーン]5D;(https://learn.microsoft.com/azure/availability-zones/az-overview)を活用することをお勧めします。ゾーンでレプリケートされたサービスを使用するようにソリューションを構築することで、データセンターの損失からアプリとデータを保護できます。]D;]A;]D;]A;> 現時点では、すべての Azure リージョンとサービスで Availability Zones がサポートされているわけではありません。サポート マトリックスについては、[こちら]5D;(https://learn.microsoft.com/azure/availability-zones/az-region)を参照してください。このブックの特定のサービスに対する Zones 関連の推奨事項がある場合、以前の一覧から Availability Zones をサポートしているリージョンにのみその推奨事項が適用されることにご注意ください。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Networking.content.items.VPNandERGW.content.items.query2.content.gridSettings.labelSettings.OSDisk.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Gateway Generation]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[ゲートウェイの生成]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1245,18 +1374,27 @@
       <Item ItemId=";items.Networking.content.items.VPNandERGW.content.items.query2.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[VPN and ExpressRoute Gateway]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[VPN および ExpressRoute ゲートウェイ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Networking.content.items.VPNandERGW.content.items.text0.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[[SLA for VNET Gateway]5D;(https://azure.microsoft.com/support/legal/sla/vpn-gateway/)]D;]A;* We guarantee 99.9% availability for each Basic Gateway for VPN or Basic Gateway for ExpressRoute.]D;]A;* We guarantee 99.95% availability for all Gateway for VPN SKUs excluding Basic.]D;]A;* We guarantee 99.95% availability for all Gateway for ExpressRoute SKUs excluding Basic.]D;]A;]D;]A;> SLA accurate at time of release. Latest information is available [here]5D;(https://azure.microsoft.com/support/legal/sla/vpn-gateway/)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[[VNET Gateway の SLA]5D;(https://azure.microsoft.com/support/legal/sla/vpn-gateway/)]D;]A;* Microsoft は、VPN 向け Basic Gateway または ExpressRoute 向け Basic Gateway のそれぞれについて 99.9% の可用性を保証します。]D;]A;* Microsoft は、VPN SKU の Basic を除くすべての Gateway について 99.95% の可用性を保証します。]D;]A;* Microsoft は、ExpressRoute SKU の Basic を除くすべての Gateway について 99.95% の可用性を保証します。]D;]A;]D;]A;> SLA はリリース時のものです。最新の情報は[こちら]5D;(https://azure.microsoft.com/support/legal/sla/vpn-gateway/)を参照してください。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Networking.content.items.VPNandERGW.content.items.text1.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[* Azure recommends to use latest generation VPN gateways which supports zones. Active-Active connection guidance in [VPN HA docs]5D;(https://learn.microsoft.com/azure/vpn-gateway/vpn-gateway-highlyavailable)]D;]A;* [Zone Redundant Gateways]5D;(https://learn.microsoft.com/azure/vpn-gateway/about-zone-redundant-vnet-gateways) are recommended to ensure gateway redundancy]D;]A;* Design Express Route with [HA Design]5D;(https://learn.microsoft.com/azure/expressroute/designing-for-high-availability-with-expressroute)]D;]A;* Increase availability by distributing resources within and across zones.]D;]A;]D;]A;> Azure generally recommends to leverage [Availability Zone]5D;(https://learn.microsoft.com/azure/availability-zones/az-overview) for better High Availability within the region by leveraging multiple zones inside region. By architecting your solutions to use replicated services in zones, you can protect your apps and data from the loss of a datacenter. ]D;]A;]D;]A;> At this point, not all Azure regions and services support Availability Zones, the support matrix can be found [here]5D;(https://learn.microsoft.com/azure/availability-zones/az-region). Whenerver there is a Zonal recommendation for a particular service from this workbook, please note that that is applicable only for the regions supporting Availability Zones from the earlier list.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[* Azure では、ゾーンをサポートする最新世代の VPN ゲートウェイを使用することをお勧めします。[VPN HA ドキュメント]5D;(https://learn.microsoft.com/azure/vpn-gateway/vpn-gateway-highlyavailable)のアクティブ/アクティブ接続に関するガイダンスを参照してください。]D;]A;* ゲートウェイの冗長性を確保するため、[ゾーン冗長ゲートウェイ]5D;(https://learn.microsoft.com/azure/vpn-gateway/about-zone-redundant-vnet-gateways)を使用することをお勧めします。]D;]A;* [HA 設計]5D;(https://learn.microsoft.com/azure/expressroute/designing-for-high-availability-with-expressroute)で Express Route を設計します。]D;]A;* ゾーン内およびゾーン間でリソースを分散することにより、可用性を向上させます。]D;]A;]D;]A;> Azure では通常、リージョン内の複数のゾーンを活用することでリージョン内の高可用性を向上させるために、[可用性ゾーン]5D;(https://learn.microsoft.com/azure/availability-zones/az-overview)を活用することをお勧めします。ゾーンでレプリケートされたサービスを使用するようにソリューションを構築することで、データセンターの損失からアプリとデータを保護できます。]D;]A;]D;]A;> 現時点では、すべての Azure リージョンとサービスで Availability Zones がサポートされているわけではありません。サポート マトリックスについては、[こちら]5D;(https://learn.microsoft.com/azure/availability-zones/az-region)を参照してください。このブックの特定のサービスに対する Zones 関連の推奨事項がある場合、以前の一覧から Availability Zones をサポートしているリージョンにのみその推奨事項が適用されることにご注意ください。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1264,7 +1402,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Azure Firewall]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Azure ファイアウォール]]></Val>
+            <Val><![CDATA[Azure Firewall]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -1281,6 +1419,9 @@
       <Item ItemId=";items.Networking.content.items.links5.content.links.947f178c58f843acac0a7eddf884c712.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[VPN and ExpressRoute Gateway]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[VPN および ExpressRoute ゲートウェイ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1296,6 +1437,9 @@
       <Item ItemId=";items.Networking.content.items.links5.content.links.c70315243e4c417b8675f49985b0e4a9.linkLabel" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Azure Front Door and CDN]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Azure Front Door と CDN]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
@@ -1311,60 +1455,90 @@
       <Item ItemId=";items.Overview.content.items.text0.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[## Reliability Workbook]D;]A;]D;]A;The objective of this workbook is to provide an overview of the configured state of deployment options that affect the resilience and/or availability SLA for common Azure resource types. The workbook is to be used as guidance only, and does not represent a guarantee for a service level.]D;]A;]D;]A;* Building a reliable application in the cloud is different from traditional application development. While historically you may have purchased levels of redundant higher-end hardware to minimize the chance of an entire application platform failing, in the cloud, we acknowledge up front that failures will happen. Instead of trying to prevent failures altogether, the goal is to minimize the effects of a single failing component.]D;]A;* To assess your workload using the tenets found in the Microsoft Azure Well-Architected Framework, see the [Microsoft Azure Well-Architected Review]5D;(https://learn.microsoft.com/assessments/?id=azure-architecture-review&mode=pre-assessment).]D;]A;* Reliable applications are:]D;]A;	* Resilient and recover gracefully from failures, and they continue to function with minimal downtime and data loss before full recovery.]D;]A;	* Highly available (HA) and run as designed in a healthy state with no significant downtime.]D;]A;* Understanding how these elements work together — and how they affect cost — is essential to building a reliable application. It can help you determine how much downtime is acceptable, the potential cost to your business, and which functions are necessary during a recovery.]D;]A;* Reliability considerations for individual Azure services are provided in the [Resiliency checklist for specific Azure services]5D;(https://learn.microsoft.com/azure/architecture/checklist/resiliency-per-service).]D;]A;]D;]A;> Reference: [Microsoft Azure Well-Architected Framework - Reliability Pillar]5D;(https://learn.microsoft.com/azure/architecture/framework/resiliency/overview)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[## 信頼性ブック]D;]A;]D;]A;このブックの目的は、一般的な Azure リソースの種類の回復性や可用性 SLA に影響を与えるデプロイ オプションの構成状態の概要を説明することです。このブックはガイダンスとしてのみ使用されるもので、サービス レベルの保証を表すものではありません。]D;]A;]D;]A;* クラウドでの信頼性の高いアプリケーションの構築は、従来のアプリケーション開発とは異なります。従来は、アプリケーション プラットフォーム全体に障害が発生する可能性を最小限に抑えるために、複数のレベルの冗長なハイエンド ハードウェアを購入する場合がありました。一方、クラウドでは、障害が発生することは織り込み済みで、障害を完全に防止しようとするのではなく、単一の障害コンポーネントの影響を最小限に抑えることが目標になります。]D;]A;* Microsoft Azure Well-Architected フレームワークで見つかったテナントを使用してワークロードを評価するには、[Microsoft Azure Well-Architected レビュー]5D;(https://learn.microsoft.com/assessments/?id=azure-architecture-review&mode=pre-assessment)を参照してください。]D;]A;* 信頼性の高いアプリケーションは:]D;]A;	* 回復性が高く、障害から正常に回復し、完全復旧前でもダウンタイムとデータ損失を最小限に抑えて機能し続けます。]D;]A;	* 高可用性 (HA) を備えており、大きなダウンタイムなく、正常な状態で設計されたとおりに動作します。]D;]A;* 信頼性の高いアプリケーションを構築するには、これらの要素がどのように相互に作用し、どのようにコストに影響するかを理解することが不可欠です。これは、許容されるダウンタイムの量、ビジネスに対する潜在的なコスト、回復中に必要な機能を特定するのに役立ちます。]D;]A;* 個々の Azure サービスの信頼性に関する考慮事項については、「[特定の Azure サービスの回復性のチェックリスト]5D;(https://learn.microsoft.com/azure/architecture/checklist/resiliency-per-service)」を参照してください。]D;]A;]D;]A;> リファレンス: [Microsoft Azure Well-Architected フレームワーク - 信頼性の重要な要素]5D;(https://learn.microsoft.com/azure/architecture/framework/resiliency/overview)]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overview.content.items.text1.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Indicates an implemented feature that can result in a more resilient implementation, a higher SLA, and/or increased ability to restore a service.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[より回復性の高い実装、より高い SLA、サービスの復元機能の向上につながる可能性のある実装機能を示します。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overview.content.items.text2.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Indicates a feature that has not been implemented, and therefore can result in a less resilient implementation, a reduced SLA, and/or reduced ability to restore a service.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[実装されていない機能を示しているため、実装の回復性低下、SLA の低下、サービスの復元機能の低下につながる可能性があります。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Overview.content.items.text3.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[* This workbook source is maintained publicly as OpenSource in [GitHub Repository]5D;(https://github.com/Azure/reliability-workbook). There is no Service Level guarantees or warranties associated with the usage of this workbook. Refer [license]5D;(https://github.com/Azure/reliability-workbook/blob/main/LICENSE) for more details.]D;]A;]D;]A;> If there are any bugs or suggestions for improvements, feel free to raise an issue in the above GitHub repository. In case you want to reach out to maintainers, please email to [FTA Reliability vTeam]5D;(mailto:fta-reliability-team@microsoft.com)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[* このブック ソースは、[GitHub リポジトリ]5D;(https://github.com/Azure/reliability-workbook)で OpenSource として公開管理されています。このブックの使用に関連するサービス レベルの保証はありません。詳細については、[ライセンス]5D;(https://github.com/Azure/reliability-workbook/blob/main/LICENSE)を参照してください。]D;]A;]D;]A;> バグや改善のための提案がある場合は、上記の GitHub リポジトリで問題提起できます。保守管理者への連絡をご希望の場合は、[FTA Reliability vTeam]5D;(mailto:fta-reliability-team@microsoft.com) にメールでお問い合わせください。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Storage.content.items.kqlstorageaccountresourcesdetails.content.gridSettings.labelSettings.ReadReplica.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Read Replication]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[読み取りレプリケーション]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Storage.content.items.kqlstorageaccountresourcesdetails.content.gridSettings.labelSettings.SkuName.label" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Sku Name]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[SKU 名]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Storage.content.items.text2CopyCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[[SLA for Storage Accounts]5D;(https://azure.microsoft.com/support/legal/sla/storage/)]D;]A;* We guarantee that at least 99.99% (99.9% for Cool Access Tier) of the time, we will successfully process requests to read data from Read Access-Geo Redundant Storage (RA-GRS) Accounts, provided that failed attempts to read data from the primary region are retried on the secondary region.]D;]A;* We guarantee that at least 99.9% (99% for Cool Access Tier) of the time, we will successfully process requests to read data from Locally Redundant Storage (LRS), Zone Redundant Storage (ZRS), and Geo Redundant Storage (GRS) Accounts.]D;]A;* We guarantee that at least 99.9% (99% for Cool Access Tier) of the time, we will successfully process requests to write data to Locally Redundant Storage (LRS), Zone Redundant Storage (ZRS), and Geo Redundant Storage (GRS) Accounts and Read Access-Geo Redundant Storage (RA-GRS) Accounts.]D;]A;]D;]A;> SLA accurate at time of release. Latest information is available [here]5D;(https://azure.microsoft.com/support/legal/sla/storage/)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[[ストレージ アカウントの SLA]5D;(https://azure.microsoft.com/support/legal/sla/storage/)]D;]A;* Microsoft は、99.99% (クール アクセス層では 99.9%) 以上の時間において、読み取りアクセス geo 冗長ストレージ (RA-GRS) アカウントからのデータの読み取り要求が正しく処理されることを保証します。ただし、プライマリ リージョンからのデータの読み取りに失敗した場合は、セカンダリ リージョンで読み取りを再試行します。]D;]A;* Microsoft は、99.9% (クール アクセス層では 99%) 以上の時間において、ローカル冗長ストレージ (LRS)、ゾーン冗長ストレージ (ZRS)、および geo 冗長ストレージ (GRS) の各アカウントからのデータの読み取り要求が正しく処理されることを保証します。]D;]A;* Microsoft は、99.9% (クール アクセス層では 99%) 以上の時間において、ローカル冗長ストレージ (LRS)、ゾーン冗長ストレージ (ZRS)、geo 冗長ストレージ (GRS) の各アカウント、および読み取りアクセス geo 冗長ストレージ (RA-GRS) アカウントへのデータの書き込み要求が正しく処理されることを保証します。]D;]A;]D;]A;> SLA はリリース時のものです。最新の情報は[こちら]5D;(https://azure.microsoft.com/support/legal/sla/storage/)を参照してください。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Storage.content.items.text3CopyCopy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[> * For application data, use read-access geo-redundant storage (RA-GRS). RA-GRS storage replicates the data to a secondary region, and provides read-only access from the secondary region. If there is a storage outage in the primary region, the application can read the data from the secondary region.]D;]A;* For VM disks, use managed disks. Managed disks provide better reliability for VMs in an availability set, because the disks are sufficiently isolated from each other to avoid single points of failure. Also, managed disks aren't subject to the IOPS limits of VHDs created in a storage account.]D;]A;* For Queue storage, create a backup queue in another region. For Queue storage, a read-only replica has limited use, because you can't queue or dequeue items. Instead, create a backup queue in a storage account in another region. If there is a storage outage, the application can use the backup queue, until the primary region becomes available again. That way, the application can still process new requests]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[> * アプリケーション データには、読み取りアクセス geo 冗長ストレージ (RA-GRS) を使用する。RA-GRS ストレージは、セカンダリ リージョンにデータをレプリケートし、セカンダリ リージョンからの読み取り専用アクセスを提供します。プライマリ リージョンでストレージが停止した場合、アプリケーションはセカンダリ リージョンからデータを読み取ることができます。]D;]A;* VM ディスクには、マネージド ディスクを使用する。マネージド ディスクでは、ディスクが単一障害点にならないように相互に十分に分離されるため、可用性セットに含まれる VM の信頼性が向上します。また、マネージド ディスクはストレージ アカウントで作成された VHD の IOPS 制限の対象ではありません。]D;]A;* Queue Storage では、別のリージョンにバックアップ キューを作成する。Queue Storage の場合、項目のキューやデキューができないため、読み取り専用レプリカの使用は制限されています。代わりに、別のリージョンのストレージ アカウントにバックアップ キューを作成します。ストレージに障害が発生した場合、アプリケーションは、プライマリ リージョンが再び使用可能になるまでバックアップ キューを使用できます。これにより、アプリケーションは、引き続き新しい要求を処理できます。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Web.content.items.AppService.content.items.kqlwebappappsvcresourcesdetails.content.title" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[App Service - Web App]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[App Service - Web アプリ]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
       <Item ItemId=";items.Web.content.items.AppService.content.items.text2Copy.content.json" ItemType="0" PsrId="306" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[[SLA for App Service]5D;(https://azure.microsoft.com/support/legal/sla/app-service/)]D;]A;* We guarantee that Apps running in a customer subscription will be available 99.95% of the time. ]D;]A;* No SLA is provided for Apps under either the Free or Shared tiers.]D;]A;]D;]A;> SLA accurate at time of release. Latest information is available [here]5D;(https://azure.microsoft.com/support/legal/sla/app-service/)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[[App Service の SLA]5D;(https://azure.microsoft.com/support/legal/sla/app-service/)]D;]A;* Microsoft は、お客様のサブスクリプションで実行される App が、99.95% の時間において利用可能であることを保証します。]D;]A;* Free レベルまたは Shared レベルのアプリについては、SLA は提供されません。]D;]A;]D;]A;> SLA はリリース時のものです。最新の情報は[こちら]5D;(https://azure.microsoft.com/support/legal/sla/app-service/)を参照してください。]]></Val>
+          </Tgt>
         </Str>
         <Disp Icon="Str" />
       </Item>
